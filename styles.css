@@ -83,7 +83,7 @@ body::before{
 }
 @media (max-width: 520px){
   body::before{
-    inset:8px;
+    inset:6px;
     border-width:2px;
   }
 }
@@ -109,7 +109,7 @@ body::after{
 }
 @media (max-width: 520px){
   body::after{
-    inset:8px;
+    inset:6px;
     background:
       linear-gradient(90deg, rgba(248,250,252,.50), rgba(248,250,252,0)) 0 0 / 100px 2px no-repeat,
       linear-gradient(180deg, rgba(248,250,252,.50), rgba(248,250,252,0)) 0 0 / 2px 100px no-repeat,
@@ -1102,25 +1102,43 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .brand__tag{ display:none; }
 }
 @media (max-width: 520px){
-  .container{ width: calc(100% - 48px); padding: 0 16px; }
+  .container{ width: calc(100% - 64px); padding: 0 20px; }
   .btn{ width: fit-content; }
   .form__row{ grid-template-columns: 1fr; }
-  .hero__inner{ padding: 20px 16px; }
+  .hero{ padding: 60px 0 20px; }
+  .hero__inner{ padding: 24px 20px; margin: 0 auto; }
+  .hero__copy{ padding: 0 4px; }
+  .lead{ padding: 0 6px; margin-left: 0; margin-right: 0; }
+  h1{ padding: 0 6px; margin-left: 0; margin-right: 0; }
   .section{ padding: 50px 0; }
-  .aisle{ padding: 14px 12px; }
-  .shelf{ padding: 12px 8px 16px; }
-  .product{ padding: 10px 8px; min-height: auto; }
-  .product__name{ font-size: 14px; word-wrap: break-word; overflow-wrap: break-word; }
-  .product__hint{ font-size: 12px; word-wrap: break-word; overflow-wrap: break-word; }
-  .modal__panel{ width: calc(100% - 24px); margin: 5vh auto; }
-  .modal__body{ padding: 12px 12px 6px; }
-  .modal__top{ padding: 12px 12px; }
-  .modal__actions{ padding: 10px 12px 12px; }
+  .section__head{ padding: 0 6px; }
+  .aisle{ padding: 16px 14px; }
+  .shelf{ padding: 14px 10px 18px; }
+  .product{ padding: 12px 10px; min-height: auto; }
+  .product__name{ font-size: 14px; word-wrap: break-word; overflow-wrap: break-word; padding: 0 2px; }
+  .product__hint{ font-size: 12px; word-wrap: break-word; overflow-wrap: break-word; padding: 0 2px; }
+  .modal__panel{ width: calc(100% - 32px); margin: 5vh auto; }
+  .modal__body{ padding: 14px 16px 8px; }
+  .modal__top{ padding: 14px 16px; }
+  .modal__actions{ padding: 12px 16px 14px; }
   h1, h2, h3{ word-wrap: break-word; overflow-wrap: break-word; }
   .section__head h2{ font-size: 22px; }
   .aisle h3{ word-wrap: break-word; overflow-wrap: break-word; }
   .nav__inner{ padding: 12px 0; }
   .brand{ min-width: auto; }
+  .pill{ padding: 6px 10px; margin: 0 4px; }
+  .callout{ padding: 16px 14px; }
+  .feature{ padding: 16px 14px; }
+  .cta{ padding: 20px 18px; }
+  .form{ padding: 14px 12px; }
+  p{ padding: 0 4px; }
+  .hero__cta{ padding: 0 4px; }
+  .hero__meta{ padding: 0 4px; }
+  .trust{ padding: 0 4px; }
+  .trust__label{ padding: 0 4px; }
+  .grid{ padding: 0 4px; }
+  .feature{ margin: 0 4px; }
+  .callout{ margin: 0 4px; }
 }
 
 @media (prefers-reduced-motion: reduce){
