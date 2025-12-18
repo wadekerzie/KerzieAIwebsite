@@ -1167,6 +1167,17 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .nav__links{ display:none; }
   .hamburger{ display:inline-block; }
   .brand__tag{ display:none; }
+  .nav__actions{
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .btn--ghost{ display:none; }
+  .icon-btn{ display:none; }
+  .btn{
+    font-size: 12px;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
 }
 @media (max-width: 520px){
   .container{ 
