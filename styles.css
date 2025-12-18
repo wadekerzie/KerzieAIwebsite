@@ -1155,11 +1155,22 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .brand__tag{ display:none; }
 }
 @media (max-width: 520px){
-  .container{ width: 100%; padding: 0 16px; max-width: 100%; box-sizing: border-box; }
+  .container{ width: 100%; padding: 0 20px; max-width: 100%; box-sizing: border-box; }
   .btn{ width: fit-content; }
   .form__row{ grid-template-columns: 1fr; }
   .hero{ padding: 60px 0 20px; }
-  .hero__inner{ padding: 18px 12px; margin: 0 auto; width: 100%; max-width: 100%; }
+  .hero__inner{ 
+    padding: 20px 18px 20px 20px; 
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 100%;
+    clip-path: none;
+    border-radius: 18px;
+  }
+  .hero__inner::before{
+    clip-path: none;
+    border-radius: 14px;
+  }
   .hero__copy{ padding: 0; width: 100%; max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
   .lead{ padding: 0; margin-left: 0; margin-right: 0; }
   h1{ padding: 0; margin-left: 0; margin-right: 0; }
