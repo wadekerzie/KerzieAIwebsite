@@ -658,6 +658,24 @@ h1{
   background: rgba(0,0,0,.10);
 }
 
+/* Brand strip (logo lockup variants) */
+.brand-strip{
+  margin-top: 12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.brand-strip__img{
+  width: 120px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 2px solid rgba(248,250,252,.14);
+  background: rgba(0,0,0,.12);
+  box-shadow: 0 12px 26px rgba(0,0,0,.22);
+}
+
 /* Sections */
 .section{
   padding: 70px 0;
@@ -1123,6 +1141,13 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .modal__body{ padding: 16px 18px 10px; }
   .modal__top{ padding: 16px 18px; }
   .modal__actions{ padding: 14px 18px 16px; }
+  /* Avoid left-edge overlap on small screens: remove skew transforms */
+  .deco-inline,
+  .wordmark,
+  .section__head h2{
+    transform: none;
+  }
+
   h1, h2, h3{ word-wrap: break-word; overflow-wrap: break-word; }
   .section__head h2{ font-size: 22px; }
   .aisle h3{ word-wrap: break-word; overflow-wrap: break-word; padding: 0 4px; }
@@ -1147,6 +1172,14 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .stat{ padding: 0 8px; }
   .quote{ padding: 0 8px; }
   .edu{ padding: 0 8px; }
+
+  .brand-strip{
+    padding: 0 8px;
+  }
+  .brand-strip__img{
+    width: 104px;
+    height: 40px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce){
