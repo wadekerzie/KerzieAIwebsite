@@ -133,6 +133,7 @@ button,input,textarea{ font:inherit; color:inherit; }
 .container{
   width:min(var(--max), calc(100% - 48px));
   margin-inline:auto;
+  box-sizing: border-box;
 }
 
 .skip-link{
@@ -438,6 +439,9 @@ main,
     rgba(0,0,0,.14);
   box-shadow: var(--shadow);
   clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .hero__inner::before{
   content:"";
@@ -476,6 +480,9 @@ h1{
   font-size: clamp(38px, 4.2vw, 58px);
   line-height:1.02;
   letter-spacing:-.8px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-width: 0;
 }
 
 /* Art Deco condensed inline display (primary header) */
@@ -504,6 +511,9 @@ h1{
   font-size: clamp(16px, 1.35vw, 18px);
   line-height:1.55;
   max-width: 58ch;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-width: 0;
 }
 .hero__cta{
   margin-top:20px;
@@ -1139,18 +1149,18 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .brand__tag{ display:none; }
 }
 @media (max-width: 520px){
-  .container{ width: calc(100% - 80px); padding: 0 24px; max-width: 100%; }
+  .container{ width: 100%; padding: 0 20px; max-width: 100%; box-sizing: border-box; }
   .btn{ width: fit-content; }
   .form__row{ grid-template-columns: 1fr; }
   .hero{ padding: 60px 0 20px; }
-  .hero__inner{ padding: 28px 24px; margin: 0 auto; }
-  .hero__copy{ padding: 0 8px; }
-  .lead{ padding: 0 8px; margin-left: 0; margin-right: 0; }
-  h1{ padding: 0 8px; margin-left: 0; margin-right: 0; }
+  .hero__inner{ padding: 20px 16px; margin: 0 auto; }
+  .hero__copy{ padding: 0; }
+  .lead{ padding: 0; margin-left: 0; margin-right: 0; }
+  h1{ padding: 0; margin-left: 0; margin-right: 0; }
   .section{ padding: 50px 0; }
-  .section__head{ padding: 0 8px; }
-  .section__head h2{ padding: 0 8px; }
-  .section__head p{ padding: 0 8px; }
+  .section__head{ padding: 0; }
+  .section__head h2{ padding: 0; }
+  .section__head p{ padding: 0; }
   .aisle{ padding: 18px 16px; }
   .shelf{ padding: 16px 12px 20px; }
   .product{ padding: 14px 12px; min-height: auto; }
@@ -1178,19 +1188,19 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .feature{ padding: 18px 16px; margin: 0 8px; }
   .cta{ padding: 22px 20px; }
   .form{ padding: 16px 14px; }
-  p{ padding: 0 8px; }
-  .hero__cta{ padding: 0 8px; }
-  .hero__meta{ padding: 0 8px; }
-  .trust{ padding: 0 8px; }
-  .trust__label{ padding: 0 8px; }
-  .grid{ padding: 0 8px; }
-  .list{ padding: 0 8px; }
-  .faq{ padding: 0 8px; }
-  .split{ padding: 0 8px; }
-  .stack{ padding: 0 8px; }
-  .stat{ padding: 0 8px; }
-  .quote{ padding: 0 8px; }
-  .edu{ padding: 0 8px; }
+  p{ padding: 0; }
+  .hero__cta{ padding: 0; }
+  .hero__meta{ padding: 0; }
+  .trust{ padding: 0; }
+  .trust__label{ padding: 0; }
+  .grid{ padding: 0; }
+  .list{ padding: 0; }
+  .faq{ padding: 0; }
+  .split{ padding: 0; }
+  .stack{ padding: 0; }
+  .stat{ padding: 0; }
+  .quote{ padding: 0; }
+  .edu{ padding: 0; }
 
   .brand-strip{
     padding: 0 8px;
