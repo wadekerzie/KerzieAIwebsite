@@ -1190,9 +1190,6 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
     overflow: visible !important;
     overflow-x: visible !important;
     box-sizing: border-box;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
   }
   .hero__inner::before{
     clip-path: none !important;
@@ -1206,10 +1203,6 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
     word-wrap: break-word !important;
     overflow: visible !important;
     box-sizing: border-box;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
   }
   .lead{ 
     padding: 0 !important; 
