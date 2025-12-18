@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+
+    <title>Applied AI Scouts — Join the List</title>
+    <meta
+      name="description"
+      content="Become an Applied AI Scout. Deploy workflow automations in real small businesses. Operator path. Join the list."
+    />
+    <meta name="theme-color" content="#0F172A" />
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <!-- Inter font (brand font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link rel="preload" href="../scouts.css?v=20251218a" as="style" />
+    <link rel="stylesheet" href="../scouts.css?v=20251218a" />
+  </head>
+  <body class="scout-body">
+    <a class="skip-link" href="#form">Skip to form</a>
+
+    <header class="scout-header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Applied AI Scouts home">Applied AI Scouts</a>
+        <nav class="header__actions" aria-label="Primary">
+          <a class="link" href="#what-is">What is a Scout?</a>
+          <a class="btn btn--amber btn--sm" href="#form">Join the list</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero hero--dark" aria-label="Hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="kicker">Operator path • Workflow deployment</div>
+            <h1 class="headline">BECOME AN APPLIED AI SCOUT.</h1>
+            <p class="subhead">Deploy real automation systems in small businesses. Build leverage. Control outcomes.</p>
+            <p class="microproof">Powered by real workflow deployment. Built inside the Zapier Solutions Partner network.</p>
+
+            <div class="hero__ctas">
+              <a class="btn btn--amber" href="#form">JOIN THE SCOUT LIST</a>
+              <a class="link link--muted" href="#what-is">WHAT IS A SCOUT?</a>
+            </div>
+
+            <div class="hero__signal">
+              <div class="signal__item"><span class="dot dot--amber" aria-hidden="true"></span> Limited onboarding capacity</div>
+              <div class="signal__item"><span class="dot" aria-hidden="true"></span> Built for high‑agency operators</div>
+            </div>
+          </div>
+
+          <div class="hero__form" id="form">
+            <div class="panel panel--form">
+              <div class="panel__head">
+                <div class="panel__title">Join the list</div>
+                <div class="panel__note">Waitlist / interest</div>
+              </div>
+
+              <form class="form" id="scoutForm" novalidate data-endpoint="">
+                <div class="grid grid--2">
+                  <label class="field">
+                    <span class="label">First name</span>
+                    <input class="input" name="first_name" autocomplete="given-name" required />
+                  </label>
+                  <label class="field">
+                    <span class="label">Last name</span>
+                    <input class="input" name="last_name" autocomplete="family-name" required />
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span class="label">Email</span>
+                  <input class="input" name="email" type="email" autocomplete="email" required />
+                </label>
+
+                <label class="field">
+                  <span class="label">Mobile phone</span>
+                  <input class="input" name="phone" type="tel" autocomplete="tel" required />
+                </label>
+
+                <div class="grid grid--2">
+                  <label class="field">
+                    <span class="label">City</span>
+                    <input class="input" name="city" autocomplete="address-level2" required />
+                  </label>
+                  <label class="field">
+                    <span class="label">State</span>
+                    <input class="input" name="state" autocomplete="address-level1" required />
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span class="label">Current situation</span>
+                  <select class="select" name="situation">
+                    <option value="" selected>Choose…</option>
+                    <option>Employed</option>
+                    <option>Entrepreneur</option>
+                    <option>In-between</option>
+                    <option>Student</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span class="label">How soon are you ready to deploy your first automation?</span>
+                  <select class="select" name="deploy_timeline" required>
+                    <option value="" selected>Choose…</option>
+                    <option>0–30 days</option>
+                    <option>31–60 days</option>
+                    <option>61–90 days</option>
+                    <option>Not sure</option>
+                  </select>
+                </label>
+
+                <label class="hp" aria-hidden="true">
+                  <span>Website</span>
+                  <input tabindex="-1" autocomplete="off" name="website" />
+                </label>
+
+                <input type="hidden" name="utm_source" />
+                <input type="hidden" name="utm_medium" />
+                <input type="hidden" name="utm_campaign" />
+                <input type="hidden" name="utm_content" />
+                <input type="hidden" name="utm_term" />
+                <input type="hidden" name="referrer" />
+                <input type="hidden" name="landing_page" />
+
+                <label class="check">
+                  <input class="check__box" type="checkbox" name="sms_consent" required />
+                  <span class="check__text">
+                    I agree to receive SMS updates about onboarding (message & data rates may apply).
+                  </span>
+                </label>
+
+                <button class="btn btn--amber btn--block" type="submit">GET ON THE LIST</button>
+                <div class="toast" id="formToast" role="status" aria-live="polite" hidden></div>
+                <p class="fineprint">No hype. No spam. If you want certainty, this isn’t for you.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="not-for">
+        <div class="container">
+          <div class="section__head">
+            <h2>THIS IS NOT…</h2>
+          </div>
+          <div class="panel panel--flat">
+            <ul class="bullets">
+              <li>Not a certification</li>
+              <li>Not a theory course</li>
+              <li>Not a shortcut to riches</li>
+              <li>Not for passive learners</li>
+            </ul>
+            <div class="callout-line">This is for people who deploy.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="what-is">
+        <div class="container">
+          <div class="section__head">
+            <h2>WHAT SCOUTS DO</h2>
+          </div>
+          <div class="grid grid--3">
+            <article class="card">
+              <div class="card__kicker">01</div>
+              <h3>Find ROI</h3>
+              <p>Identify friction inside real small businesses.</p>
+            </article>
+            <article class="card">
+              <div class="card__kicker">02</div>
+              <h3>Deploy Systems</h3>
+              <p>Implement automations that save time and increase throughput.</p>
+            </article>
+            <article class="card">
+              <div class="card__kicker">03</div>
+              <h3>Prove Outcomes</h3>
+              <p>Track measurable wins and build your portfolio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="why-now">
+        <div class="container">
+          <div class="section__head">
+            <h2>WHY NOW</h2>
+          </div>
+          <div class="panel panel--flat">
+            <p class="p">The window is open. Most people are still watching. Action beats credentials.</p>
+            <ul class="bullets bullets--tight">
+              <li>The window is open.</li>
+              <li>Most people are still watching.</li>
+              <li>Action beats credentials.</li>
+            </ul>
+            <p class="p p--muted">If you feel behind, good. That means you’re awake.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="what-you-get">
+        <div class="container">
+          <div class="section__head">
+            <h2>WHAT YOU GET</h2>
+          </div>
+          <div class="grid grid--2">
+            <div class="panel panel--flat">
+              <ul class="bullets bullets--tight">
+                <li>Early access to the Scout onboarding path</li>
+                <li>Invitations to pilot deployments</li>
+                <li>Templates / playbooks for small business automations</li>
+              </ul>
+            </div>
+            <div class="panel panel--flat">
+              <div class="callout-line">
+                We’re building this in public. It will be bumpy. If you want certainty, this isn’t for you.
+              </div>
+              <div class="section__cta">
+                <a class="btn btn--amber" href="#form">JOIN THE SCOUT LIST</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="who-we-help">
+        <div class="container">
+          <div class="section__head">
+            <h2>WHO WE HELP</h2>
+          </div>
+          <div class="panel panel--flat">
+            <div class="grid grid--2">
+              <div>
+                <div class="kicker">Scouts win</div>
+                <p class="p">Skills, leverage, and a portfolio built on real deployments.</p>
+              </div>
+              <div>
+                <div class="kicker">Small businesses win</div>
+                <p class="p">ROI and efficiency—measured in time saved and revenue protected or created.</p>
+              </div>
+            </div>
+            <p class="p p--muted">
+              We deploy real improvements in real operations—measured in time saved and revenue protected or created.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="proof">
+        <div class="container">
+          <div class="section__head">
+            <h2>PROOF (LIGHT)</h2>
+          </div>
+          <div class="grid grid--3">
+            <div class="panel panel--flat">
+              <div class="kicker">Network</div>
+              <div class="p p--strong">Zapier Solutions Partner</div>
+            </div>
+            <div class="panel panel--flat">
+              <div class="kicker">Implementation</div>
+              <div class="p p--strong">Workflow-first deployments</div>
+            </div>
+            <div class="panel panel--flat">
+              <div class="kicker">Measurement</div>
+              <div class="p p--strong">Measured ROI</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="faq">
+        <div class="container">
+          <div class="section__head">
+            <h2>FAQ</h2>
+          </div>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>What is an Applied AI Scout?</summary>
+              <div class="faq__body">A Scout finds workflow friction and helps deploy automation systems inside SMBs.</div>
+            </details>
+            <details class="faq__item">
+              <summary>Do I need to be technical?</summary>
+              <div class="faq__body">No. You need judgment, agency, and a willingness to deploy.</div>
+            </details>
+            <details class="faq__item">
+              <summary>Is this a course?</summary>
+              <div class="faq__body">No. This is deployment-oriented onboarding and real-world implementation.</div>
+            </details>
+            <details class="faq__item">
+              <summary>How do Scouts make money?</summary>
+              <div class="faq__body">By creating value through deployments and sharing in the upside. No guarantees.</div>
+            </details>
+            <details class="faq__item">
+              <summary>When does onboarding start?</summary>
+              <div class="faq__body">Rolling. If you’re a fit, you’ll get next steps by email/text.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="mobile-cta" id="mobileCta" role="region" aria-label="Join the list">
+      <div class="mobile-cta__inner">
+        <div class="mobile-cta__copy">Ready to deploy?</div>
+        <a class="btn btn--amber btn--sm" href="#form">Join the list</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">Applied AI Scouts</div>
+        <div class="footer__sub">A program of Kerzie AI Solutions | Zapier Solution Partner</div>
+        <div class="footer__legal">
+          Zapier is a trademark of Zapier, Inc. This program is not affiliated with or endorsed by Zapier, Inc.
+        </div>
+        <div class="footer__copy">© <span id="year"></span> Kerzie AI Solutions</div>
+      </div>
+    </footer>
+
+    <script src="../scouts.js?v=20251218" defer></script>
+  </body>
+</html>
+
+
