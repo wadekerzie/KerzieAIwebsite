@@ -1262,8 +1262,40 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .section__head h2{ font-size: 22px; }
   .aisle h3{ word-wrap: break-word; overflow-wrap: break-word; padding: 0 4px; }
   .aisle__sub{ padding: 0 4px; }
-  .nav__inner{ padding: 12px 0; }
-  .brand{ min-width: auto; }
+  .nav__inner{ 
+    padding: 12px 0 !important; 
+    gap: 8px !important;
+    flex-wrap: nowrap !important;
+  }
+  .brand{ 
+    min-width: auto !important; 
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+  }
+  .brand__lockup{
+    max-width: min(180px, 42vw) !important;
+    height: 32px !important;
+  }
+  .nav__actions{
+    gap: 6px !important;
+    flex-shrink: 0 !important;
+  }
+  .btn{
+    font-size: 11px !important;
+    padding: 8px 10px !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+  }
+  .btn--primary{
+    max-width: 130px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  .hamburger{
+    flex-shrink: 0 !important;
+    width: 36px !important;
+    height: 34px !important;
+  }
   .pill{ 
     padding: 6px 10px !important; 
     margin: 0 !important; 
