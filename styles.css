@@ -463,9 +463,12 @@ main,
   color:var(--muted);
   box-shadow: var(--shadow2);
   width: fit-content;
+  max-width: 100%;
   text-transform: uppercase;
   letter-spacing:.12em;
   font-weight:820;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .pill__dot{
   width:8px;
@@ -499,6 +502,9 @@ h1{
   text-shadow:
     0 1px 0 rgba(0,0,0,.55),
     0 18px 44px rgba(0,0,0,.45);
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .deco-inline .text-glow{
   color: var(--primary);
@@ -1149,12 +1155,12 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .brand__tag{ display:none; }
 }
 @media (max-width: 520px){
-  .container{ width: 100%; padding: 0 20px; max-width: 100%; box-sizing: border-box; }
+  .container{ width: 100%; padding: 0 16px; max-width: 100%; box-sizing: border-box; }
   .btn{ width: fit-content; }
   .form__row{ grid-template-columns: 1fr; }
   .hero{ padding: 60px 0 20px; }
-  .hero__inner{ padding: 20px 16px; margin: 0 auto; }
-  .hero__copy{ padding: 0; }
+  .hero__inner{ padding: 18px 12px; margin: 0 auto; width: 100%; max-width: 100%; }
+  .hero__copy{ padding: 0; width: 100%; max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
   .lead{ padding: 0; margin-left: 0; margin-right: 0; }
   h1{ padding: 0; margin-left: 0; margin-right: 0; }
   .section{ padding: 50px 0; }
@@ -1175,6 +1181,9 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .wordmark,
   .section__head h2{
     transform: none;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   h1, h2, h3{ word-wrap: break-word; overflow-wrap: break-word; }
@@ -1183,7 +1192,7 @@ input[aria-invalid="true"], textarea[aria-invalid="true"]{
   .aisle__sub{ padding: 0 4px; }
   .nav__inner{ padding: 12px 0; }
   .brand{ min-width: auto; }
-  .pill{ padding: 6px 10px; margin: 0 8px; }
+  .pill{ padding: 6px 10px; margin: 0; max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
   .callout{ padding: 18px 16px; margin: 0 8px; }
   .feature{ padding: 18px 16px; margin: 0 8px; }
   .cta{ padding: 22px 20px; }
