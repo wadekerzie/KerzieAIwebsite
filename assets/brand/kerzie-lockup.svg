@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="128" viewBox="0 0 520 128" fill="none" role="img" aria-label="Kerzie AI">
+  <title>Kerzie AI</title>
+  <defs>
+    <linearGradient id="k_g" x1="18" y1="18" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.52" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="k_g2" x1="28" y1="34" x2="102" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#3B82F6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0.88"/>
+    </linearGradient>
+    <radialGradient id="k_glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(42 34) rotate(45) scale(110)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="k_soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Mark (same geometry/colors as assets/logo-mark.svg) -->
+  <g transform="translate(0 0)">
+    <rect x="10" y="10" width="108" height="108" rx="34" fill="#070606"/>
+    <rect x="10.5" y="10.5" width="107" height="107" rx="33.5" stroke="url(#k_g)" stroke-opacity="0.55"/>
+    <rect x="10" y="10" width="108" height="108" rx="34" fill="url(#k_glow)"/>
+
+    <path
+      d="M64 28C44.118 28 28 44.118 28 64C28 83.882 44.118 100 64 100C83.882 100 100 83.882 100 64C100 44.118 83.882 28 64 28Z"
+      stroke="url(#k_g2)"
+      stroke-width="4.5"
+      stroke-opacity="0.95"
+    />
+
+    <path d="M48 44V84" stroke="url(#k_g2)" stroke-width="5.2" stroke-linecap="round" />
+    <path d="M52 64L82 44" stroke="url(#k_g2)" stroke-width="5.2" stroke-linecap="round" />
+    <path d="M52 64L84 84" stroke="url(#k_g2)" stroke-width="5.2" stroke-linecap="round" />
+
+    <g opacity="0.95">
+      <circle cx="84" cy="44" r="3.6" fill="#F8FAFC"/>
+      <circle cx="82" cy="64" r="3.6" fill="#3B82F6"/>
+      <circle cx="84" cy="84" r="3.6" fill="#F8FAFC"/>
+    </g>
+
+    <g filter="url(#k_soft)" opacity="0.30">
+      <path d="M26 58C44 48 74 46 102 54" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Wordmark + tagline (renders using loaded Inter on the page) -->
+  <g transform="translate(144 0)">
+    <text x="0" y="78" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="54" font-weight="900" letter-spacing="-0.02em">
+      Kerzie AI
+    </text>
+    <text x="2" y="104" fill="rgba(148,163,184,0.95)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="18" font-weight="700" letter-spacing="0.12em">
+      APPLIED AI • AUTOMATION
+    </text>
+  </g>
+</svg>
+
+

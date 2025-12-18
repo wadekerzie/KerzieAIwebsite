@@ -87,6 +87,10 @@ body::before{
     inset:4px;
     border-width:2px;
   }
+  .brand__lockup{
+    height: 32px;
+    max-width: min(260px, 62vw);
+  }
 }
 body::after{
   content:"";
@@ -229,6 +233,16 @@ main,
   gap:10px;
   min-width: 220px;
 }
+.brand--lockup{
+  gap: 0;
+  min-width: 0;
+}
+.brand__lockup{
+  display:block;
+  height: 40px;
+  width: auto;
+  max-width: min(320px, 52vw);
+}
 .brand__mark{
   width:46px;
   height:46px;
@@ -256,6 +270,10 @@ main,
   .brand__mark img{
     width:34px;
     height:34px;
+  }
+  .brand__lockup{
+    height: 36px;
+    max-width: min(300px, 56vw);
   }
 }
 .brand__text{
