@@ -71,15 +71,22 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="divider mt-12 mb-6" />
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[var(--foreground-muted)]">
-          <p>&copy; {new Date().getFullYear()} Kerzie Consulting LLC. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="hover:text-[var(--accent-blue)] transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-of-service" className="hover:text-[var(--accent-blue)] transition-colors">
-              Terms of Service
-            </Link>
+        <div className="flex flex-col items-center gap-4 text-sm text-[var(--foreground-muted)]">
+          {/* DBA Statement */}
+          <p className="text-center">
+            Kerzie AI Solutions (kerzie.ai) is a DBA of Kerzie Consulting LLC
+          </p>
+          {/* Copyright and Links */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+            <p>&copy; {new Date().getFullYear()} Kerzie Consulting LLC. All rights reserved.</p>
+            <div className="flex items-center gap-6">
+              <Link href="/privacy-policy" className="hover:text-[var(--accent-blue)] transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-of-service" className="hover:text-[var(--accent-blue)] transition-colors">
+                Terms of Service
+              </Link>
+            </div>
           </div>
         </div>
       </div>
