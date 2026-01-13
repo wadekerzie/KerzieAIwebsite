@@ -125,7 +125,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <MessageCircle className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Website chat</span>
+                  <span>Web chat/voice</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-[var(--accent-blue)]" />
@@ -139,10 +139,6 @@ export default function Home() {
                   <Share2 className="w-4 h-4 text-[var(--accent-blue)]" />
                   <span>Social media</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Google Business</span>
-                </div>
               </div>
             </div>
 
@@ -152,10 +148,10 @@ export default function Home() {
                 <Globe className="w-6 h-6" />
               </div>
               <h3 className="heading-md mb-4">
-                Your Website Rebuilt
+                Website & Google Business Profile
               </h3>
               <p className="text-[var(--foreground-muted)] text-lg mb-3">
-                Rebuilt to match your knowledge base.
+                Your website rebuilt to match your knowledge base, plus your Google Business Profile updated.
               </p>
               <ul className="text-[var(--foreground-muted)] space-y-2">
                 <li className="flex items-center gap-2">
@@ -169,6 +165,10 @@ export default function Home() {
                 <li className="flex items-center gap-2">
                   <span className="text-[var(--accent-blue)]">•</span>
                   Voice assistant included
+                </li>
+                <li className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-[var(--accent-blue)]" />
+                  Google Business Profile update
                 </li>
               </ul>
             </div>

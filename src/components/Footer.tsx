@@ -35,6 +35,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/try-unison" className="font-bold text-gradient hover:brightness-110 transition-all">
+                  Try Unison
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="text-[var(--foreground-muted)] hover:text-[var(--accent-blue)] transition-colors">
                   About Us
                 </Link>

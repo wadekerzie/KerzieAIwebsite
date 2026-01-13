@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/try-unison", label: "Try Unison" },
   { href: "/about", label: "About" },
   { href: "/zapier-partner", label: "Zapier Partner" },
 ];
@@ -60,8 +61,11 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`nav-link ${pathname === link.href ? "nav-link-active" : ""
-                    }`}
+                  className={`nav-link ${
+                    pathname === link.href ? "nav-link-active" : ""
+                  } ${
+                    link.href === "/try-unison" ? "font-bold text-gradient" : ""
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -93,8 +97,11 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`nav-link text-lg ${pathname === link.href ? "nav-link-active" : ""
-                    }`}
+                  className={`nav-link text-lg ${
+                    pathname === link.href ? "nav-link-active" : ""
+                  } ${
+                    link.href === "/try-unison" ? "font-bold text-gradient" : ""
+                  }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
