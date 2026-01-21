@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applied AI Scout Program | Kerzie AI Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Light & Warm Theme with Blue + Blush Accents */
+      --background: #faf8f5;
+      --background-secondary: #f5f1ed;
+      --background-card: #ffffff;
+      --foreground: #1a1a2e;
+      --foreground-muted: #6b6560;
+
+      /* Brand Colors - Logo Blue + Warm Blush */
+      --accent-blue: #7B9FE8;
+      --accent-blue-hover: #5A7FD6;
+      --warm-blush: #f0d5c4;
+      --deep-blush: #d4a090;
+      --border: #e8e0d8;
+
+      /* Shadows */
+      --shadow-sm: 0 2px 8px rgba(45, 42, 38, 0.04);
+      --shadow-md: 0 4px 20px rgba(45, 42, 38, 0.06);
+      --shadow-lg: 0 8px 30px rgba(45, 42, 38, 0.08);
+      --shadow-blue: 0 4px 16px rgba(123, 159, 232, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--foreground);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::selection {
+      background: var(--accent-blue);
+      color: white;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 2rem;
+      }
+    }
+
+    /* Header Section */
+    .header-section {
+      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--deep-blush) 100%);
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .header-section .company-info {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 3rem 0 4rem;
+    }
+
+    /* Welcome Card */
+    .welcome-card {
+      background: var(--background-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .welcome-card h2 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+
+    .welcome-card p {
+      color: var(--foreground-muted);
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .welcome-card .intro-text {
+      color: var(--foreground);
+      font-weight: 500;
+    }
+
+    /* Section Cards */
+    .section-card {
+      background: var(--background-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-card h3::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--deep-blush) 100%);
+      border-radius: 2px;
+    }
+
+    .section-card h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .section-card p {
+      color: var(--foreground-muted);
+      margin-bottom: 1rem;
+    }
+
+    /* Important Disclosures */
+    .disclosures-card {
+      background: linear-gradient(135deg, rgba(123, 159, 232, 0.08) 0%, rgba(212, 160, 144, 0.08) 100%);
+      border: 1px solid var(--accent-blue);
+    }
+
+    .disclosures-card h3::before {
+      background: var(--accent-blue);
+    }
+
+    .disclosure-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .disclosure-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: var(--foreground);
+      margin-bottom: 0.75rem;
+      padding-left: 0.5rem;
+    }
+
+    .disclosure-list li::before {
+      content: '•';
+      color: var(--accent-blue);
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    /* Version Info */
+    .version-info {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .version-info span {
+      font-size: 0.9rem;
+      color: var(--foreground-muted);
+    }
+
+    .version-info strong {
+      color: var(--foreground);
+    }
+
+    /* Agreement Sections */
+    .agreement-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .agreement-section:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Bullet Lists */
+    .bullet-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      color: var(--foreground-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .bullet-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55rem;
+      width: 6px;
+      height: 6px;
+      background: var(--accent-blue);
+      border-radius: 50%;
+    }
+
+    /* Compensation Tiers */
+    .tier-card {
+      background: var(--background-secondary);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .tier-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tier-row:last-child {
+      border-bottom: none;
+    }
+
+    .tier-label {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+
+    .tier-value {
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: var(--warm-blush);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .highlight-box p {
+      color: var(--foreground);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: var(--background-secondary);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .cta-card {
+      background: var(--background-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      padding: 2.5rem;
+    }
+
+    .cta-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+
+    .cta-card p {
+      color: var(--foreground-muted);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Button */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2.5rem;
+      background: var(--accent-blue);
+      color: white;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow-blue);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-blue-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(123, 159, 232, 0.4);
+    }
+
+    .btn-primary svg {
+      margin-left: 0.5rem;
+    }
+
+    /* Divider */
+    .section-divider {
+      text-align: center;
+      padding: 2.5rem 0 1.5rem;
+    }
+
+    .section-divider span {
+      display: inline-block;
+      padding: 0 0 0.75rem 0;
+      background: transparent;
+      color: var(--foreground);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 3px solid;
+      border-image: linear-gradient(135deg, var(--accent-blue) 0%, var(--deep-blush) 100%) 1;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--foreground);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-section {
+        padding: 3rem 0 2rem;
+      }
+
+      .section-card,
+      .welcome-card,
+      .cta-card {
+        padding: 1.5rem;
+      }
+
+      .version-info {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-section">
+    <div class="container">
+      <h1>APPLIED AI SCOUT PROGRAM</h1>
+      <div class="company-info">
+        <strong>Kerzie Consulting LLC</strong> (DBA Kerzie AI Solutions)<br>
+        6005 Autumn Way, McKinney, TX 75072
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Welcome Card -->
+      <div class="welcome-card animate-in">
+        <h2>Welcome to the Applied AI Scout Program.</h2>
+        <p class="intro-text">Thank you for your interest in becoming an Applied AI Scout for Kerzie Consulting LLC,
+          doing business as Kerzie AI Solutions ("Company").</p>
+        <p>Applied AI Scouts introduce qualified businesses to Kerzie AI Solutions' applied AI, automation, and
+          consulting services. Scouts are compensated when those introductions result in contracted, deployed, billed,
+          and paid customers, under the terms outlined below.</p>
+        <p>This page contains the full Applied AI Scout Agreement and Code of Conduct. You will review these terms here,
+          then proceed to a secure onboarding form where you will provide your legal information, confirm your
+          agreement, and sign electronically.</p>
+      </div>
+
+      <!-- Important Disclosures -->
+      <div class="section-card disclosures-card animate-in delay-1">
+        <h3>IMPORTANT PROGRAM DISCLOSURES</h3>
+        <p><strong>By continuing, you acknowledge and understand that:</strong></p>
+        <ul class="disclosure-list">
+          <li>This role is as an independent contractor (1099), not an employee.</li>
+          <li>Compensation is performance-based, not hourly or salary.</li>
+          <li>You are responsible for complying with all applicable laws related to outreach, marketing, privacy, and
+            communications.</li>
+          <li>You must represent yourself and the Company professionally, ethically, and truthfully.</li>
+          <li>Failure to comply with these terms may result in immediate removal from the program.</li>
+        </ul>
+        <div class="version-info">
+          <span><strong>Effective Date:</strong> January 22, 2025</span>
+          <span><strong>Agreement Version:</strong> v1.0</span>
+        </div>
+      </div>
+
+      <!-- Section Divider -->
+      <div class="section-divider">
+        <span>Applied AI Scout Agreement</span>
+      </div>
+
+      <!-- Agreement Intro -->
+      <div class="section-card animate-in">
+        <p>This Applied AI Scout Agreement ("Agreement") is entered into by and between <strong>Kerzie Consulting
+            LLC</strong>, a Texas limited liability company, doing business as Kerzie AI Solutions, with its principal
+          place of business at 6005 Autumn Way, McKinney, TX 75072 ("Company"), and the individual or entity who submits
+          the onboarding form and electronically signs this Agreement ("Scout").</p>
+      </div>
+
+      <!-- Purpose -->
+      <div class="section-card animate-in">
+        <h3>Purpose</h3>
+        <p>Scout will identify and introduce qualified prospective customers to the Company's applied AI and automation
+          services. The Company retains sole discretion to accept or reject any prospect. Scout is eligible for
+          compensation only as expressly defined in this Agreement.</p>
+      </div>
+
+      <!-- Independent Contractor -->
+      <div class="section-card animate-in">
+        <h3>Independent Contractor Relationship</h3>
+        <p>Scout is an independent contractor and not an employee, partner, agent, or joint venturer of the Company.
+          Scout has no authority to bind the Company.</p>
+        <p>Scout is solely responsible for all federal, state, and local taxes, insurance, licenses, permits, and
+          business expenses related to their activities.</p>
+      </div>
+
+      <!-- Scope of Work -->
+      <div class="section-card animate-in">
+        <h3>Scope of Work</h3>
+        <h4>Scout Will:</h4>
+        <ul class="bullet-list">
+          <li>Identify qualified business prospects aligned with the Company's target customer profile</li>
+          <li>Submit prospects into the Company's CRM with complete and accurate information</li>
+          <li>Use only approved messaging and materials</li>
+          <li>Conduct outreach professionally, ethically, and lawfully</li>
+        </ul>
+        <h4>Scout Will Not:</h4>
+        <ul class="bullet-list">
+          <li>Represent themselves as an employee or authorized representative</li>
+          <li>Quote pricing, guarantee outcomes, or negotiate contracts</li>
+          <li>Collect sensitive personal information</li>
+          <li>Use deceptive or unlawful outreach practices</li>
+        </ul>
+      </div>
+
+      <!-- Lead Qualification -->
+      <div class="section-card animate-in">
+        <h3>Lead Qualification and Attribution</h3>
+        <p>A lead is considered qualified only if:</p>
+        <ul class="bullet-list">
+          <li>It represents a legitimate business with expressed interest</li>
+          <li>Is not already active in Company systems</li>
+          <li>Is first submitted by Scout with required CRM fields completed</li>
+        </ul>
+        <div class="highlight-box">
+          <p>The Company's determination regarding lead qualification and attribution is final.</p>
+        </div>
+      </div>
+
+      <!-- Compensation -->
+      <div class="section-card animate-in">
+        <h3>Compensation</h3>
+
+        <h4>Setup Fee Commission</h4>
+        <p>Scout earns <strong>20% of the setup fee</strong>, currently $500, equal to <strong>$100 per
+            customer</strong>. The setup fee commission is earned only after the customer is contracted, deployed,
+          billed, and paid.</p>
+
+        <h4>Monthly Recurring Revenue (MRR) Commission</h4>
+        <p>Scout earns commission on collected monthly recurring revenue based on the number of active, paying customers
+          attributed to the Scout at the time of payout:</p>
+
+        <div class="tier-card">
+          <div class="tier-row">
+            <span class="tier-label">Customers 1–2</span>
+            <span class="tier-value">20% of collected MRR</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Customers 3–9</span>
+            <span class="tier-value">35% of collected MRR</span>
+          </div>
+          <div class="tier-row">
+            <span class="tier-label">Customers 10+</span>
+            <span class="tier-value">50% of collected MRR</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Commission tiers adjust if customers cancel or stop paying.</p>
+      </div>
+
+      <!-- Payout Schedule -->
+      <div class="section-card animate-in">
+        <h3>Payout Schedule</h3>
+        <ul class="bullet-list">
+          <li>Payouts are issued <strong>monthly only</strong>, on the <strong>15th of each month</strong></li>
+          <li>Commissions are paid for customers who were billed and paid in the prior calendar month</li>
+          <li>Payments are issued via ACH or an approved electronic payment method</li>
+        </ul>
+      </div>
+
+      <!-- Refunds and Clawbacks -->
+      <div class="section-card animate-in">
+        <h3>Refunds and Clawbacks</h3>
+        <p>No commission is earned on unpaid, refunded, or charged-back invoices. The Company may offset future
+          commissions to recover previously paid amounts related to refunded revenue.</p>
+      </div>
+
+      <!-- Confidentiality -->
+      <div class="section-card animate-in">
+        <h3>Confidentiality</h3>
+        <p>Scout agrees to protect all non-public Company information, including customer data, pricing, internal
+          materials, systems, and processes. Confidentiality obligations survive termination.</p>
+      </div>
+
+      <!-- Intellectual Property -->
+      <div class="section-card animate-in">
+        <h3>Intellectual Property</h3>
+        <p>All Company branding, materials, training content, and systems remain the exclusive property of the Company.
+          Scout receives a limited, revocable license to use these materials only while active and compliant.</p>
+      </div>
+
+      <!-- Termination -->
+      <div class="section-card animate-in">
+        <h3>Termination</h3>
+        <p>The Company may terminate Scout participation immediately for violations of this Agreement or the Code of
+          Conduct. Upon termination, Scout access to Company systems and materials ends immediately.</p>
+      </div>
+
+      <!-- Governing Law -->
+      <div class="section-card animate-in">
+        <h3>Governing Law</h3>
+        <p>This Agreement is governed by the laws of the State of Texas.</p>
+      </div>
+
+      <!-- Section Divider -->
+      <div class="section-divider">
+        <span>Applied AI Scout Code of Conduct</span>
+      </div>
+
+      <!-- Code of Conduct - Purpose -->
+      <div class="section-card animate-in">
+        <h3>Purpose</h3>
+        <p>This Code of Conduct defines expectations for how Applied AI Scouts represent Kerzie AI Solutions and
+          interact with prospects and customers.</p>
+      </div>
+
+      <!-- Professional Conduct -->
+      <div class="section-card animate-in">
+        <h3>Professional Conduct</h3>
+        <p>Scouts must communicate respectfully, professionally, and honestly at all times.</p>
+      </div>
+
+      <!-- Brand Representation -->
+      <div class="section-card animate-in">
+        <h3>Brand Representation</h3>
+        <p>Scouts must represent themselves as Applied AI Scouts, not employees, and must use only approved messaging
+          and materials. Guarantees, exaggerated claims, or unapproved pricing statements are prohibited.</p>
+      </div>
+
+      <!-- Ethical Outreach -->
+      <div class="section-card animate-in">
+        <h3>Ethical Outreach</h3>
+        <p>Scouts may not engage in spam, unlawful mass messaging, deceptive claims, impersonation, or high-pressure
+          tactics.</p>
+      </div>
+
+      <!-- Data Privacy -->
+      <div class="section-card animate-in">
+        <h3>Data Privacy</h3>
+        <p>Scouts must protect prospect data, use Company systems exclusively for lead submission, and never sell,
+          share, or reuse prospect data outside the program.</p>
+      </div>
+
+      <!-- Violations -->
+      <div class="section-card animate-in">
+        <h3>Violations</h3>
+        <div class="highlight-box">
+          <p>Violations of this Code of Conduct may result in immediate removal from the program and forfeiture of
+            unpaid commissions related to the violation.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card animate-in">
+        <h3>NEXT STEP</h3>
+        <p>If you have read and understand the Applied AI Scout Agreement and Code of Conduct, click the button below to
+          proceed to onboarding. You will confirm your agreement and sign electronically.</p>
+        <button type="button" class="btn-primary" onclick="openOnboardingForm()">
+          Continue to Onboarding
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kerzie AI Solutions. All rights reserved. | <a href="https://kerzie.ai">kerzie.ai</a></p>
+    </div>
+  </footer>
+
+  <!-- GHL Onboarding Form Embed - Hidden until button click -->
+  <div id="ghl-form-container" style="display:none;">
+    <div id="ghl-form-overlay"
+      style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);z-index:9998;backdrop-filter:blur(4px);"
+      onclick="closeOnboardingForm()"></div>
+    <div id="ghl-form-wrapper"
+      style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;max-width:600px;max-height:90vh;background:#fff;border-radius:16px;z-index:9999;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);">
+      <button onclick="closeOnboardingForm()"
+        style="position:absolute;top:12px;right:12px;width:32px;height:32px;border:none;background:#f5f1ed;border-radius:50%;cursor:pointer;font-size:18px;color:#6b6560;z-index:10000;">&times;</button>
+      <iframe src="https://api.leadconnectorhq.com/widget/form/oSZYcNdJvUxDQXXPtoAE"
+        style="width:100%;height:80vh;border:none;" id="ghl-form-iframe" title="Scout - Onboarding Form">
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    function openOnboardingForm() {
+      document.getElementById('ghl-form-container').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeOnboardingForm() {
+      document.getElementById('ghl-form-container').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        closeOnboardingForm();
+      }
+    });
+  </script>
+
+</body>
+
+</html>

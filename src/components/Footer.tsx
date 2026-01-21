@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/zapier-partner" className="text-[var(--foreground-muted)] hover:text-[var(--accent-blue)] transition-colors">
-                  Zapier Partner
+                  Zapier® Partner
                 </Link>
               </li>
               <li>

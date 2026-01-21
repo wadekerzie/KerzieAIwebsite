@@ -57,15 +57,15 @@ export default function TryUnisonDemo() {
               <ul className="space-y-2 text-[var(--foreground-muted)]">
                 <li className="flex items-start gap-2">
                   <span className="text-[var(--accent-blue)] mt-1">•</span>
-                  &quot;What is Unison and how much does it cost?&quot;
+                  &quot;Can you tell me about Unison?&quot;
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[var(--accent-blue)] mt-1">•</span>
-                  &quot;Tell me about the Applied AI Scout program&quot;
+                  &quot;What does Unison cost?&quot;
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[var(--accent-blue)] mt-1">•</span>
-                  &quot;I want to schedule a setup call&quot;
+                  &quot;Can I schedule a call to talk about Unison in my business?&quot;
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[var(--accent-blue)] mt-1">•</span>
@@ -97,18 +97,18 @@ export default function TryUnisonDemo() {
                   onClick={() => openChatbot("phone")}
                   className="btn-primary w-full"
                 >
-                  <span>469-329-1233</span>
+                  <span>469-933-0930</span>
                 </button>
               </div>
             </div>
 
-            {/* Live Chat - Top right */}
+            {/* Website Chat and Voice - Top right */}
             <div className="card text-center">
               <div className="flex flex-col items-center h-full">
                 <div className="icon-box w-20 h-20 mx-auto mb-4 rounded-2xl shadow-lg">
                   <MessageSquare className="w-10 h-10" />
                 </div>
-                <h3 className="heading-md mb-4">Live Chat</h3>
+                <h3 className="heading-md mb-4">Website Chat & Voice</h3>
                 <p className="text-[var(--foreground)] text-lg leading-relaxed">
                   Click the chat widget to the right to use either text or call us with your voice directly using the chat widget.
                 </p>

@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/try-unison", label: "Try Unison" },
   { href: "/about", label: "About" },
-  { href: "/zapier-partner", label: "Zapier Partner" },
+  { href: "/zapier-partner", label: "Zapier® Partner" },
 ];
 
 const scoutLink = {

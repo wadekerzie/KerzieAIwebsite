@@ -16,6 +16,8 @@ import {
   Zap,
   Clock,
   Shield,
+  Facebook,
+  Instagram,
 } from "lucide-react";
 
 export default function Home() {
@@ -34,7 +36,7 @@ export default function Home() {
             {/* Main Heading */}
             <h1 className="heading-xl mb-6 animate-fade-in-up">
               Stop Manually Responding to{" "}
-              <span className="text-gradient">Every Call, Text, and Email</span>
+              <span className="text-gradient">Every Customer Interaction</span>
             </h1>
 
             {/* Subheadline */}
@@ -96,98 +98,97 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            {/* Card 1 */}
-            <div className="card card-hover">
-              <div className="icon-box mb-6">
-                <Brain className="w-6 h-6" />
+          <div className="flex flex-col gap-6 lg:gap-8 max-w-5xl mx-auto">
+            {/* First Row - Two Cards Side by Side */}
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+              {/* Card 1 - One Knowledge Base */}
+              <div className="card card-hover">
+                <div className="icon-box mb-6">
+                  <Brain className="w-6 h-6" />
+                </div>
+                <h3 className="heading-md mb-4">
+                  One Knowledge Base
+                </h3>
+                <p className="text-[var(--foreground-muted)] text-lg">
+                  We build your single source of truth—consistent, accurate, and always available.
+                </p>
               </div>
-              <h3 className="heading-md mb-4">
-                One Knowledge Base
-              </h3>
-              <p className="text-[var(--foreground-muted)] text-lg">
-                We build your single source of truth—consistent, accurate, and always available.
-              </p>
+
+              {/* Card 2 - Every Channel Covered */}
+              <div className="card card-hover">
+                <div className="icon-box mb-6">
+                  <Network className="w-6 h-6" />
+                </div>
+                <h3 className="heading-md mb-4">
+                  Every Channel Covered
+                </h3>
+                <div className="grid grid-cols-2 gap-3 text-[var(--foreground-muted)]">
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-[var(--accent-blue)]" />
+                    <span>Phone calls</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MessageCircle className="w-4 h-4 text-[var(--accent-blue)]" />
+                    <span>Website Chat & Voice</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MessageSquare className="w-4 h-4 text-[var(--accent-blue)]" />
+                    <span>Text Messages</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Facebook className="w-4 h-4 text-[var(--accent-blue)]" />
+                    <span>Facebook Messages</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Instagram className="w-4 h-4 text-[var(--accent-blue)]" />
+                    <span>Instagram DMs</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-[var(--accent-blue)]" />
+                    <span>Email - coming soon</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="card card-hover">
-              <div className="icon-box mb-6">
-                <Network className="w-6 h-6" />
-              </div>
-              <h3 className="heading-md mb-4">
-                Every Channel Covered
-              </h3>
-              <div className="grid grid-cols-2 gap-3 text-[var(--foreground-muted)]">
-                <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Phone calls</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MessageCircle className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Web chat/voice</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Email</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MessageSquare className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Text/SMS</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Share2 className="w-4 h-4 text-[var(--accent-blue)]" />
-                  <span>Social media</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="card card-hover">
-              <div className="icon-box mb-6">
-                <Globe className="w-6 h-6" />
-              </div>
-              <h3 className="heading-md mb-4">
-                Website & Google Business Profile
-              </h3>
-              <p className="text-[var(--foreground-muted)] text-lg mb-3">
-                Your website rebuilt to match your knowledge base, plus your Google Business Profile updated.
-              </p>
-              <ul className="text-[var(--foreground-muted)] space-y-2">
-                <li className="flex items-center gap-2">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  Hosted by us (free forever)
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  AI chatbot included
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  Voice assistant included
-                </li>
-                <li className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[var(--accent-blue)]" />
-                  Google Business Profile update
-                </li>
-              </ul>
-            </div>
-
-            {/* Card 4 - Pricing */}
+            {/* Second Row - Full Width Pricing Card */}
             <div className="card card-hover">
               <div className="icon-box mb-6">
                 <DollarSign className="w-6 h-6" />
               </div>
-              <h3 className="heading-md mb-4">
+              <h3 className="heading-md mb-6">
                 Simple Pricing
               </h3>
-              <div className="mb-6">
-                <div className="text-3xl font-bold text-[var(--accent-blue)]">$500 setup</div>
-                <div className="text-3xl font-bold text-[var(--accent-blue)]">$500/month</div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Monthly Option */}
+                <div className="bg-[var(--background-secondary)] border border-[var(--border)] rounded-lg p-6">
+                  <h4 className="text-xl font-bold text-[var(--foreground)] mb-4">Monthly</h4>
+                  <div className="mb-4">
+                    <div className="text-3xl font-bold text-[var(--accent-blue)]">$500 Setup</div>
+                    <div className="text-3xl font-bold text-[var(--accent-blue)]">$500/Month</div>
+                  </div>
+                  <p className="text-[var(--foreground-muted)]">
+                    Everything included. No hidden fees. No per-message charges.
+                  </p>
+                </div>
+
+                {/* Annual Option */}
+                <div className="bg-[var(--background-secondary)] border-2 border-[var(--accent-blue)] rounded-lg p-6 relative">
+                  <div className="absolute -top-3 left-6 bg-[var(--accent-blue)] text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Best Value
+                  </div>
+                  <h4 className="text-xl font-bold text-[var(--foreground)] mb-4">Annual Prepay</h4>
+                  <div className="mb-4">
+                    <div className="text-3xl font-bold text-[var(--accent-blue)] line-through opacity-50">$500 Setup</div>
+                    <div className="text-3xl font-bold text-[var(--accent-blue)]">$0 Setup</div>
+                    <div className="text-3xl font-bold text-[var(--accent-blue)]">$6,000/Annually</div>
+                  </div>
+                  <p className="text-[var(--foreground-muted)]">
+                    Pay for 12 months upfront and get free Setup.
+                  </p>
+                </div>
               </div>
-              <p className="text-[var(--foreground-muted)]">
-                Everything included. No hidden fees. No per-message charges.
-              </p>
             </div>
           </div>
 
@@ -225,7 +226,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 mt-0.5">✗</span>
-                      Emails pile up
+                      Social Media DMs
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 mt-0.5">✗</span>
@@ -246,7 +247,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 mt-0.5">→</span>
-                      Frustrated customers
+                      Totally Forgotten
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 mt-0.5">→</span>
@@ -267,34 +268,18 @@ export default function Home() {
       </section>
 
       {/* Why We're Different */}
-      <section className="section section-warm">
+      <section className="section section-warm py-16">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-lg mb-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="heading-lg mb-6">
               Why We&apos;re <span className="text-gradient">Different</span>
             </h2>
-            <div className="card mb-10">
-              <div className="grid md:grid-cols-2 gap-8 text-left mb-8">
-                <div>
-                  <h4 className="text-[var(--foreground-muted)] font-medium mb-2">Digital Agencies</h4>
-                  <p className="text-[var(--foreground)]">
-                    Handle chat and email, but won&apos;t touch your phone—they don&apos;t understand telecom.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-[var(--foreground-muted)] font-medium mb-2">Phone Systems</h4>
-                  <p className="text-[var(--foreground)]">
-                    Handle calls, but can&apos;t integrate with modern digital communication.
-                  </p>
-                </div>
-              </div>
-              <div className="divider mb-8" />
-              <div className="text-center">
-                <p className="text-xl text-[var(--foreground)]">
-                  We handle <span className="text-gradient font-semibold">everything</span>. Experts in both telecom AND applied AI.
-                </p>
-              </div>
-            </div>
+            <p className="text-2xl text-[var(--foreground)] font-medium mb-4">
+              We&apos;re experts in both <span className="text-gradient font-semibold">telecom</span> and <span className="text-gradient font-semibold">applied AI</span>.
+            </p>
+            <p className="text-lg text-[var(--foreground-muted)]">
+              Most companies understand one or the other. We understand both—and that&apos;s how we deliver unified communication that actually works.
+            </p>
           </div>
         </div>
       </section>

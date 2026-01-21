@@ -16,14 +16,14 @@ export default function ZapierPartner() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <span className="badge mb-6 inline-block">
-              Zapier Silver Solution Partner
+              Zapier® Silver Solution Partner
             </span>
             <h1 className="heading-xl mb-6">
               Automation Excellence with{" "}
-              <span className="text-gradient">Zapier</span>
+              <span className="text-gradient">Zapier®</span>
             </h1>
             <p className="text-xl text-[var(--foreground-muted)] max-w-3xl mx-auto mb-10">
-              As a Zapier Silver Solution Partner, our team of Zapier experts
+              As a Zapier® Silver Solution Partner, our team of Zapier® experts
               helps businesses automate workflows and increase efficiency
               through custom integrations.
             </p>
@@ -33,14 +33,14 @@ export default function ZapierPartner() {
               {/* Horizontal lockup for desktop (md and up) */}
               <img
                 src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/6949628783fecf1245e06ad2.png"
-                alt="Kerzie AI - Zapier Silver Solution Partner"
+                alt="Kerzie AI - Zapier® Silver Solution Partner"
                 className="hidden md:block w-auto max-w-[700px] lg:max-w-[800px]"
                 style={{ height: 'auto' }}
               />
               {/* Vertical lockup for mobile only */}
               <img
                 src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/69495ca3eb54326748a24f41.png"
-                alt="Kerzie AI - Zapier Silver Solution Partner"
+                alt="Kerzie AI - Zapier® Silver Solution Partner"
                 className="md:hidden w-auto max-w-[320px]"
                 style={{ height: 'auto' }}
               />
@@ -59,7 +59,7 @@ export default function ZapierPartner() {
                 Means
               </h2>
               <p className="text-xl text-[var(--foreground-muted)]">
-                Our Zapier Silver Solution Partner status validates our
+                Our Zapier® Silver Solution Partner status validates our
                 expertise in automation.
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function ZapierPartner() {
                   Verified Expertise
                 </h3>
                 <p className="text-[var(--foreground-muted)]">
-                  Completed Zapier&apos;s foundational training and
+                  Completed Zapier®&apos;s foundational training and
                   certification requirements.
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default function ZapierPartner() {
                   Ongoing Training
                 </h3>
                 <p className="text-[var(--foreground-muted)]">
-                  Continuous education on new Zapier features and best
+                  Continuous education on new Zapier® features and best
                   practices.
                 </p>
               </div>
@@ -198,7 +198,7 @@ export default function ZapierPartner() {
             Ready to Automate Your Business?
           </h2>
           <p className="text-xl text-[var(--foreground)] opacity-80 mb-10 max-w-2xl mx-auto">
-            Schedule a discovery call and let our Zapier experts show you how
+            Schedule a discovery call and let our Zapier® experts show you how
             automation can transform your operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
