@@ -17,6 +17,8 @@ import {
   MapPin,
   DollarSign,
   Clock,
+  Facebook,
+  Instagram,
 } from "lucide-react";
 
 // 54 Reasons data
@@ -179,11 +181,12 @@ const steps = [
     title: "We Deploy Across Every Channel",
     description: "Your knowledge base powers every customer interaction with AI retrieval:",
     channels: [
-      { icon: Phone, label: "Phone calls (voice AI)" },
-      { icon: MessageCircle, label: "Website chatbot" },
-      { icon: Mail, label: "Email responses" },
-      { icon: MessageSquare, label: "Text/SMS" },
-      { icon: MapPin, label: "Google Business Profile" },
+      { icon: Phone, label: "Phone calls" },
+      { icon: MessageCircle, label: "Website Chat & Voice" },
+      { icon: MessageSquare, label: "Text Messages" },
+      { icon: Facebook, label: "Facebook Messages" },
+      { icon: Instagram, label: "Instagram DMs" },
+      { icon: Mail, label: "Email - coming soon" },
     ],
   },
   {
@@ -193,10 +196,10 @@ const steps = [
     description:
       "When a customer reaches out, AI delivers actual solutions from your knowledge base:",
     examples: [
-      { icon: Calendar, text: "Appointment booking with calendar sync" },
-      { icon: MapPin, text: "Turn-by-turn directions to your location" },
-      { icon: DollarSign, text: "Pricing for their specific project" },
-      { icon: Clock, text: "Order status from your CRM" },
+      { icon: Calendar, text: "Appointment Booking With Calendar Sync" },
+      { icon: MessageCircle, text: "Instant Answers to \"Should I Call You or Not?\" Questions" },
+      { icon: Clock, text: "After-Hours Lead Capture That Actually Converts" },
+      { icon: Sparkles, text: "Every Answer Is Consistent — No Matter How They Reach You" },
     ],
   },
 ];
@@ -249,37 +252,6 @@ export default function HowItWorks() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="card text-left mb-8">
-              <p className="text-[var(--foreground-muted)] mb-4">
-                You don&apos;t get to control WHICH reason they&apos;re
-                contacting you about. And you don&apos;t control whether they
-                call, text, email, or use your chatbot.
-              </p>
-              <p className="text-[var(--foreground)] font-semibold mb-6">
-                But you CAN control whether they get real answers that solve
-                their problem:
-              </p>
-              <ul className="space-y-3 text-[var(--foreground-muted)]">
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  Directions to your facility—so they actually show up
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  Your delivery schedule—pulled from your CRM in real-time
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  Appointment availability—booked while you sleep
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[var(--accent-blue)]">•</span>
-                  Pricing for their exact scenario—not &quot;call us for a
-                  quote&quot;
-                </li>
-              </ul>
             </div>
 
             <button
@@ -355,19 +327,18 @@ export default function HowItWorks() {
                 ))}
               </div>
             </div>
-            <div className="p-6 border-t border-[var(--border)] bg-[var(--background-secondary)]">
-              <p className="text-[var(--foreground-muted)] text-center mb-4">
+            <div className="px-4 py-3 pb-4 border-t border-[var(--border)] bg-[var(--background-secondary)]">
+              <p className="text-[var(--foreground-muted)] text-center mb-2 text-sm">
                 Your current setup handles maybe 10-15 of these. We handle all
                 54.
                 <br />
-                Same professional response. Whether they call, text, email, or
-                chat. 24/7.
+                Same professional response 24/7.
               </p>
               <div className="text-center">
                 <Link
                   href="/schedule"
                   onClick={() => setModalOpen(false)}
-                  className="btn-primary"
+                  className="btn-primary text-xs px-5 py-1.5"
                 >
                   <span>Get Started</span>
                 </Link>

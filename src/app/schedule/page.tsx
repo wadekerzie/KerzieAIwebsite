@@ -27,32 +27,26 @@ export default function SchedulePage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="section section-cream">
+            <section className="py-4 section-cream">
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
                         {/* Badge */}
-                        <div className="badge mb-8 animate-fade-in">
+                        <div className="badge mb-3 animate-fade-in">
                             <Calendar className="w-4 h-4 mr-2" />
                             <span>Get Started</span>
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="heading-xl mb-6 animate-fade-in-up">
+                        <h1 className="heading-xl mb-0 animate-fade-in-up">
                             Book Your{" "}
                             <span className="text-gradient">Setup Call</span>
                         </h1>
-
-                        {/* Subheading */}
-                        <p className="text-xl text-[var(--foreground-muted)] mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
-                            See how one knowledge base can power instant responses across every
-                            channel—phone, text, email, chat, and more. $500 setup + $500/month, everything included.
-                        </p>
                     </div>
                 </div>
             </section>
 
             {/* Calendar Embed Section */}
-            <section className="section section-warm">
+            <section className="pt-6 pb-12 section-warm">
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <div className="card">
@@ -139,7 +133,7 @@ export default function SchedulePage() {
                         Want to Learn More First?
                     </h2>
                     <p className="text-xl text-[var(--foreground-muted)] mb-8 max-w-2xl mx-auto">
-                        See how Kerzie AI works and why we&apos;re different before booking your consultation.
+                        See how Kerzie AI works and why we&apos;re different before booking your call.
                     </p>
                     <Link href="/how-it-works" className="btn-secondary text-lg px-8 py-4">
                         <span>

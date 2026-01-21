@@ -57,11 +57,11 @@ export default function About() {
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-3 text-[var(--foreground-muted)]">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    Handle website chat
+                    Might handle website chat
                   </li>
                   <li className="flex items-start gap-3 text-[var(--foreground-muted)]">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    Handle email automation
+                    Spend digital ad budgets
                   </li>
                   <li className="flex items-start gap-3 text-[var(--foreground-muted)]">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -73,7 +73,7 @@ export default function About() {
                     But they won&apos;t touch your phone.
                   </p>
                   <p className="text-[var(--foreground-muted)]">
-                    They don&apos;t understand telecom infrastructure, voice AI,
+                    They don&apos;t understand telecom infrastructure, AI,
                     or how to route calls intelligently.
                   </p>
                 </div>
@@ -134,8 +134,7 @@ export default function About() {
                     Telecom Expertise
                   </h4>
                   <p className="text-[var(--foreground-muted)] text-sm">
-                    70+ years combined experience in telecommunications
-                    infrastructure.
+                    30+ years experience in telecommunications infrastructure.
                   </p>
                 </div>
                 <div className="bg-[var(--background-secondary)] rounded-xl p-6">
@@ -154,16 +153,13 @@ export default function About() {
                     Automation
                   </h4>
                   <p className="text-[var(--foreground-muted)] text-sm">
-                    Zapier Silver Solution Partner. We connect everything seamlessly.
+                    Zapier® Silver Solution Partner. We connect everything seamlessly.
                   </p>
                 </div>
               </div>
 
-              <p className="text-xl text-[var(--foreground)] text-center">
-                We handle{" "}
-                <span className="text-gradient font-semibold">everything</span>
-                . Phone, chat, email, text, social—unified under one intelligent
-                knowledge base.
+              <p className="text-2xl text-[var(--foreground)] text-center font-medium">
+                We handle <span className="text-gradient">everything</span>
               </p>
             </div>
           </div>
