@@ -1,0 +1,1077 @@
+<!doctype html>
+<!-- Applied AI Scouts Landing Page - Strategic Partnership Positioning -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f8fafc" />
+    <title>Certified AI Scout Partnership — Kerzie AI</title>
+    <meta
+      name="description"
+      content="A selective strategic partnership program for experienced sales professionals. Join Kerzie AI as a Certified AI Scout and lead the SMB automation revolution."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Certified AI Scout Partnership — Kerzie AI" />
+    <meta property="og:description" content="A selective strategic partnership for experienced sales professionals and consultants. Powered by a Zapier Silver Solution Partner." />
+    <meta property="og:image" content="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/69499e04ff33b21462f3a419.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Certified AI Scout Partnership — Kerzie AI" />
+    <meta property="twitter:description" content="A selective strategic partnership for experienced sales professionals and consultants. Powered by a Zapier Silver Solution Partner." />
+    <meta property="twitter:image" content="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/69499e04ff33b21462f3a419.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        /* Corporate Professional Theme with Kerzie Warmth */
+        --background: #F0D5C4;
+        --background-secondary: #f5ebe4;
+        --background-card: #ffffff;
+        --foreground: #0f172a;
+        --foreground-muted: #64748b;
+
+        /* Professional Blue Palette */
+        --accent-primary: #1e40af;
+        --accent-primary-hover: #1e3a8a;
+        --accent-light: #dbeafe;
+        --accent-border: #93c5fd;
+        --border: #e2e8f0;
+
+        /* Status Colors */
+        --success: #16a34a;
+        --success-bg: #dcfce7;
+        --error: #dc2626;
+        --error-bg: #fee2e2;
+
+        /* Shadows */
+        --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+        --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
+        --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+        /* Layout */
+        --max-width: 1200px;
+        --radius: 8px;
+        --radius-lg: 12px;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+        color: var(--foreground);
+        background: var(--background);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      button, input, textarea, select { font: inherit; color: inherit; }
+
+      ::selection {
+        background: var(--accent-primary);
+        color: white;
+      }
+
+      /* Container */
+      .container {
+        width: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+      @media (min-width: 1024px) {
+        .container { padding: 0 2rem; }
+      }
+
+      /* ===== HEADER ===== */
+      .scout-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: #F0D5C4;
+        border-bottom: 1px solid var(--border);
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+      }
+      .brand__lockup {
+        height: 44px;
+        width: auto;
+        max-width: 280px;
+        display: block;
+      }
+      @media (max-width: 560px) {
+        .brand__lockup {
+          height: 36px;
+          max-width: min(200px, 50vw);
+        }
+        .header__actions .btn-primary {
+          padding: 0.5rem 0.875rem;
+          font-size: 0.75rem;
+        }
+      }
+      .header__actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      /* ===== TYPOGRAPHY ===== */
+      .heading-xl {
+        font-size: clamp(1.875rem, 5vw, 3rem);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--foreground);
+        margin: 0;
+      }
+      .heading-lg {
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--foreground);
+        margin: 0;
+      }
+      .heading-md {
+        font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+        font-weight: 600;
+        line-height: 1.3;
+        color: var(--foreground);
+        margin: 0;
+      }
+      .text-accent {
+        color: var(--accent-primary);
+      }
+      .subhead {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: var(--foreground-muted);
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      /* ===== SECTIONS ===== */
+      .section {
+        padding: 4rem 0;
+        position: relative;
+      }
+      .section-white {
+        background: white;
+      }
+      .section-light {
+        background: var(--background);
+      }
+      .section-slate {
+        background: var(--background-secondary);
+      }
+      .section__head {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .section__head h2 {
+        font-size: 0.8125rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--accent-primary);
+        margin: 0 0 0.75rem;
+      }
+      .section__head .heading-lg {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* ===== BUTTONS ===== */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.875rem 1.75rem;
+        background: var(--accent-primary);
+        color: white;
+        font-weight: 600;
+        font-size: 0.9375rem;
+        border-radius: var(--radius);
+        border: none;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .btn-primary:hover {
+        background: var(--accent-primary-hover);
+      }
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.875rem 1.75rem;
+        background: transparent;
+        color: var(--foreground);
+        font-weight: 600;
+        font-size: 0.9375rem;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .btn-secondary:hover {
+        border-color: var(--accent-primary);
+        color: var(--accent-primary);
+      }
+      .btn-sm {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+      }
+
+      /* ===== CARDS ===== */
+      .card {
+        background: var(--background-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        padding: 1.5rem;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        padding: 4rem 0 3rem;
+        background: white;
+        border-bottom: 1px solid var(--border);
+      }
+      .hero__copy {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .hero__badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.375rem 0.875rem;
+        background: var(--accent-light);
+        border: 1px solid var(--accent-border);
+        border-radius: 9999px;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: var(--accent-primary);
+        margin-bottom: 1.5rem;
+      }
+      .hero__ctas {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* ===== CREDIBILITY BAR ===== */
+      .credibility-bar {
+        padding: 2rem 0;
+        background: var(--background-secondary);
+        border-bottom: 1px solid var(--border);
+      }
+      .credibility-bar__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .credibility-bar__logo {
+        height: 48px;
+        width: auto;
+      }
+      .credibility-bar__logo--desktop {
+        display: block;
+      }
+      .credibility-bar__logo--mobile {
+        display: none;
+        max-width: 280px;
+        height: auto;
+      }
+      @media (max-width: 560px) {
+        .credibility-bar__inner {
+          flex-direction: column;
+          text-align: center;
+        }
+        .credibility-bar__logo--desktop {
+          display: none;
+        }
+        .credibility-bar__logo--mobile {
+          display: block;
+        }
+      }
+
+      /* ===== QUALIFICATION GRID ===== */
+      .qual-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      @media (max-width: 768px) {
+        .qual-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .qual-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+      }
+      .qual-card--ideal {
+        border-top: 3px solid var(--success);
+      }
+      .qual-card--not {
+        border-top: 3px solid var(--error);
+      }
+      .qual-card__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 1.25rem;
+        color: var(--foreground);
+      }
+      .qual-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .qual-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.875rem;
+        line-height: 1.5;
+        color: var(--foreground);
+      }
+      .qual-list li:last-child {
+        margin-bottom: 0;
+      }
+      .qual-icon {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+      }
+      .qual-icon--check {
+        color: var(--success);
+      }
+      .qual-icon--x {
+        color: var(--error);
+      }
+
+      /* ===== TIMELINE ===== */
+      .timeline {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .timeline__item {
+        display: flex;
+        gap: 1.5rem;
+        position: relative;
+        padding-bottom: 2rem;
+      }
+      .timeline__item:last-child {
+        padding-bottom: 0;
+      }
+      .timeline__item:not(:last-child)::before {
+        content: '';
+        position: absolute;
+        left: 19px;
+        top: 40px;
+        bottom: 0;
+        width: 2px;
+        background: var(--border);
+      }
+      .timeline__marker {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        background: var(--accent-primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.875rem;
+      }
+      .timeline__content {
+        flex: 1;
+        padding-top: 0.5rem;
+      }
+      .timeline__title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--foreground);
+        margin: 0 0 0.375rem;
+      }
+      .timeline__desc {
+        font-size: 0.9375rem;
+        color: var(--foreground-muted);
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      /* ===== VIDEO SECTION ===== */
+      .video-section {
+        padding: 4rem 0;
+        background: white;
+      }
+      .video-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .video-embed {
+        aspect-ratio: 16 / 9;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+      }
+      .video-embed iframe {
+        width: 100%;
+        height: 100%;
+      }
+      .video-cta {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      /* ===== INCOME MODEL ===== */
+      .income-panel {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .income-panel__list {
+        list-style: none;
+        margin: 0 0 1.5rem;
+        padding: 0;
+      }
+      .income-panel__list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+        color: var(--foreground-muted);
+        line-height: 1.6;
+      }
+      .income-panel__list li::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: var(--accent-primary);
+        border-radius: 50%;
+        margin-top: 0.5rem;
+        flex-shrink: 0;
+      }
+      .income-example {
+        padding: 1.25rem;
+        border-radius: var(--radius);
+        background: var(--background-secondary);
+        border: 1px solid var(--border);
+      }
+      .income-example__label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--accent-primary);
+        margin: 0 0 0.5rem;
+      }
+      .income-example p {
+        margin: 0;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        color: var(--foreground);
+      }
+
+      /* ===== FINAL CTA ===== */
+      .final-cta {
+        padding: 4rem 0;
+        background: var(--accent-primary);
+        text-align: center;
+      }
+      .final-cta__inner {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .final-cta h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 700;
+        color: white;
+        margin: 0 0 1rem;
+      }
+      .final-cta p {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.85);
+        margin: 0 0 1.5rem;
+        line-height: 1.6;
+      }
+      .final-cta .btn-primary {
+        background: white;
+        color: var(--accent-primary);
+      }
+      .final-cta .btn-primary:hover {
+        background: var(--background);
+      }
+
+      /* ===== NOTICE BOX ===== */
+      .notice-box {
+        background: var(--background-secondary);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1rem 1.25rem;
+        margin-top: 1.5rem;
+        font-size: 0.875rem;
+        color: var(--foreground-muted);
+        line-height: 1.6;
+      }
+      .notice-box strong {
+        color: var(--foreground);
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        background: white;
+        border-top: 1px solid var(--border);
+        padding: 2.5rem 0;
+      }
+      .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .footer__brand {
+        font-weight: 600;
+        color: var(--foreground);
+        margin-bottom: 0.25rem;
+      }
+      .footer__sub {
+        font-size: 0.875rem;
+        color: var(--foreground-muted);
+        margin-bottom: 0.5rem;
+      }
+      .footer__legal {
+        font-size: 0.75rem;
+        color: var(--foreground-muted);
+        opacity: 0.8;
+        margin-bottom: 0.25rem;
+      }
+      .footer__copy {
+        font-size: 0.8125rem;
+        color: var(--foreground-muted);
+      }
+      .footer__links a {
+        display: block;
+        font-size: 0.8125rem;
+        color: var(--foreground-muted);
+        margin-bottom: 0.5rem;
+        transition: color 0.2s ease;
+      }
+      .footer__links a:hover {
+        color: var(--accent-primary);
+      }
+
+      /* ===== MODAL ===== */
+      .scout-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .scout-modal-overlay.is-open {
+        display: flex;
+      }
+      .scout-modal-content {
+        background: white;
+        border-radius: var(--radius-lg);
+        width: 100%;
+        max-width: 600px;
+        max-height: 90vh;
+        overflow: hidden;
+        position: relative;
+        box-shadow: var(--shadow-lg);
+      }
+      .scout-modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        background: var(--background-secondary);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        color: var(--foreground-muted);
+        z-index: 10;
+        transition: background 0.2s ease;
+      }
+      .scout-modal-close:hover {
+        background: var(--border);
+      }
+      .scout-modal-iframe {
+        width: 100%;
+        height: 80vh;
+        max-height: 800px;
+        border: none;
+        display: block;
+      }
+
+      /* ===== MOBILE OPTIMIZATIONS ===== */
+      @media (max-width: 768px) {
+        .section {
+          padding: 2.5rem 0;
+        }
+        .section__head {
+          margin-bottom: 1.5rem;
+        }
+        .section__head h2 {
+          font-size: 0.75rem;
+          margin-bottom: 0.5rem;
+        }
+        .hero {
+          padding: 2.5rem 0 2rem;
+        }
+        .hero__badge {
+          font-size: 0.75rem;
+          padding: 0.3rem 0.75rem;
+          margin-bottom: 1rem;
+        }
+        .heading-xl {
+          font-size: 1.625rem;
+        }
+        .heading-lg {
+          font-size: 1.375rem;
+        }
+        .subhead {
+          font-size: 1rem;
+        }
+        .credibility-bar {
+          padding: 1.25rem 0;
+        }
+        .credibility-bar__logo {
+          height: 40px;
+        }
+        .credibility-bar__text {
+          font-size: 0.875rem;
+        }
+        .timeline__item {
+          padding-bottom: 1.5rem;
+          gap: 1rem;
+        }
+        .timeline__marker {
+          width: 32px;
+          height: 32px;
+          font-size: 0.75rem;
+        }
+        .timeline__item:not(:last-child)::before {
+          left: 15px;
+          top: 32px;
+        }
+        .timeline__title {
+          font-size: 1rem;
+        }
+        .timeline__desc {
+          font-size: 0.875rem;
+        }
+        .timeline__content {
+          padding-top: 0.25rem;
+        }
+        .qual-card {
+          padding: 1.5rem;
+        }
+        .qual-card__title {
+          font-size: 1.125rem;
+          margin-bottom: 1rem;
+        }
+        .qual-list li {
+          font-size: 0.9375rem;
+          margin-bottom: 0.75rem;
+        }
+        .income-panel {
+          padding: 1.5rem;
+        }
+        .final-cta {
+          padding: 3rem 0;
+        }
+        .final-cta h2 {
+          font-size: 1.375rem;
+        }
+        .notice-box {
+          font-size: 0.8125rem;
+          padding: 0.875rem 1rem;
+        }
+        .video-section {
+          padding: 2.5rem 0;
+        }
+      }
+
+      /* ===== REDUCED MOTION ===== */
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .btn-primary:hover,
+        .btn-secondary:hover { transform: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="scout-header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Kerzie AI home">
+          <img
+            class="brand__lockup"
+            src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/6948b098aca6ab2c5901f57a.png"
+            alt="Kerzie AI"
+            width="150"
+            height="44"
+            decoding="async"
+          />
+        </a>
+        <nav class="header__actions" aria-label="Primary">
+          <a class="btn-primary btn-sm" href="#" onclick="openScoutPopup(); return false;">Apply Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__copy">
+            <div class="hero__badge">Strategic Partnership Program</div>
+            <h1 class="heading-xl">
+              Become a Certified AI Scout: <span class="text-accent">A Strategic Partnership with Kerzie AI</span>
+            </h1>
+            <p class="subhead" style="margin-top: 1.25rem;">
+              We are seeking experienced sales professionals and consultants to lead the SMB automation revolution. Powered by Kerzie AI, a Zapier® Silver Solution Partner.
+            </p>
+            <div class="hero__ctas">
+              <a class="btn-primary" href="#criteria" onclick="smoothScroll('criteria'); return false;">Review Partnership Criteria</a>
+              <a class="btn-secondary" href="#process" onclick="smoothScroll('process'); return false;">View Selection Process</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Credibility Bar -->
+      <section class="credibility-bar">
+        <div class="container">
+          <div class="credibility-bar__inner">
+            <img
+              src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/6949628783fecf1245e06ad2.png"
+              alt="Zapier Silver Solution Partner"
+              class="credibility-bar__logo credibility-bar__logo--desktop"
+            />
+            <img
+              src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/69495ca3eb54326748a24f41.png"
+              alt="Zapier Silver Solution Partner"
+              class="credibility-bar__logo credibility-bar__logo--mobile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Who We Are Looking For -->
+      <section class="section section-light" id="criteria">
+        <div class="container">
+          <div class="section__head">
+            <h2>Partner Criteria</h2>
+            <p class="heading-lg">Who We Are Looking For</p>
+          </div>
+          <div class="qual-grid">
+            <div class="qual-card qual-card--ideal">
+              <h3 class="qual-card__title">The Ideal Partner</h3>
+              <ul class="qual-list">
+                <li>
+                  <svg class="qual-icon qual-icon--check" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Experienced in B2B sales or consulting
+                </li>
+                <li>
+                  <svg class="qual-icon qual-icon--check" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Has an existing network of SMB owners
+                </li>
+                <li>
+                  <svg class="qual-icon qual-icon--check" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Understands consultative selling
+                </li>
+                <li>
+                  <svg class="qual-icon qual-icon--check" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  Looking for a serious recurring revenue stream
+                </li>
+              </ul>
+            </div>
+            <div class="qual-card qual-card--not">
+              <h3 class="qual-card__title">Not For You If</h3>
+              <ul class="qual-list">
+                <li>
+                  <svg class="qual-icon qual-icon--x" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                  You are looking for "get rich quick"
+                </li>
+                <li>
+                  <svg class="qual-icon qual-icon--x" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                  You have no professional sales experience
+                </li>
+                <li>
+                  <svg class="qual-icon qual-icon--x" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                  You are unwilling to learn technical concepts
+                </li>
+                <li>
+                  <svg class="qual-icon qual-icon--x" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                  You want passive income without upfront work
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video-section" id="video">
+        <div class="container">
+          <div class="section__head">
+            <h2>Transparency First</h2>
+            <p class="heading-lg">The Reality of the Role</p>
+          </div>
+          <div class="video-container">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/pyqFqJXENu8"
+                title="The Reality of the AI Scout Role"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-cta">
+              <a class="btn-primary" href="#" onclick="openScoutPopup(); return false;">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Selection Process -->
+      <section class="section section-slate" id="process">
+        <div class="container">
+          <div class="section__head">
+            <h2>The Selection Process</h2>
+            <p class="heading-lg">A Structured Vetting Process</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__marker">1</div>
+              <div class="timeline__content">
+                <h3 class="timeline__title">Watch the Video Above</h3>
+                <p class="timeline__desc">We expect you to watch the full orientation video. If it hasn't scared you off, you're ready for what's next.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__marker">2</div>
+              <div class="timeline__content">
+                <h3 class="timeline__title">Professional Application Review</h3>
+                <p class="timeline__desc">Submit your application with details about your professional background, sales experience, and existing network. Our team reviews each application individually.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__marker">3</div>
+              <div class="timeline__content">
+                <h3 class="timeline__title">Strategic Interview</h3>
+                <p class="timeline__desc">Qualified candidates are invited to a video interview where we discuss your approach, assess mutual fit, and answer your questions about the program.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__marker">4</div>
+              <div class="timeline__content">
+                <h3 class="timeline__title">Onboarding & Certification</h3>
+                <p class="timeline__desc">Accepted partners complete our certification program, gaining the knowledge and tools needed to identify and qualify automation opportunities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="notice-box" style="max-width: 700px; margin: 2rem auto 0;">
+            <strong>Note:</strong> Acceptance into the AI Scout program is not guaranteed. We maintain selective criteria to ensure quality partnerships and mutual success.
+          </div>
+        </div>
+      </section>
+
+      <!-- Income Model -->
+      <section class="section section-white" id="income">
+        <div class="container">
+          <div class="section__head">
+            <h2>Compensation Structure</h2>
+            <p class="heading-lg">Performance-Based Income Model</p>
+          </div>
+          <div class="income-panel">
+            <p style="margin: 0 0 1rem; color: var(--foreground-muted); line-height: 1.6;">
+              Your income is tied directly to the recurring revenue generated by the automation systems Kerzie AI deploys. No salary caps. Income scales with the opportunities you identify and qualify.
+            </p>
+            <ul class="income-panel__list">
+              <li>Partners earn up to 50% of setup and recurring revenue</li>
+              <li>Income is monthly and uncapped</li>
+              <li>This model requires consistent effort and relationship building</li>
+            </ul>
+            <div class="income-example">
+              <p class="income-example__label">Example Scenario</p>
+              <p>
+                A single automation sold at <strong>$500/month</strong> with a <strong>$500 setup fee</strong> at 50% commission = <strong>$250 upfront + $250/month recurring</strong>. That represents $3,250 in your first year from one client, with ongoing monthly payments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final-cta">
+        <div class="container">
+          <div class="final-cta__inner">
+            <h2>Ready to Be Considered?</h2>
+            <p>
+              If you meet our criteria and are prepared for a structured vetting process, we invite you to apply. Qualified candidates will be contacted for the next steps.
+            </p>
+            <a class="btn-primary" href="#" onclick="openScoutPopup(); return false;">Apply Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="footer__brand">Certified AI Scout Program</div>
+          <div class="footer__sub">A program of Kerzie AI Solutions | Zapier Silver Solution Partner</div>
+          <div class="footer__legal">
+            Zapier is a trademark of Zapier, Inc. This program is not affiliated with or endorsed by Zapier, Inc.
+          </div>
+          <div class="footer__copy">© <span id="year"></span> Kerzie AI Solutions</div>
+        </div>
+        <div class="footer__links" style="text-align: right;">
+          <a href="https://kerzieconsulting.com/privacy-policy" target="_blank">Privacy Policy</a>
+          <a href="https://kerzieconsulting.com/terms-of-service" target="_blank">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function initYear() {
+        const y = document.getElementById("year");
+        if (y) y.textContent = String(new Date().getFullYear());
+      }
+
+      function smoothScroll(id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      initYear();
+    </script>
+
+    <!-- Modal Popup -->
+    <div class="scout-modal-overlay" id="scoutModal">
+      <div class="scout-modal-content">
+        <button class="scout-modal-close" id="scoutModalClose" type="button">&times;</button>
+        <iframe
+          class="scout-modal-iframe"
+          id="scoutFormIframe"
+          src="about:blank"
+          data-src="https://api.leadconnectorhq.com/widget/form/X7LiSLnLsiPhH3Bn6XcH"
+          title="AI Scout Partnership Application"
+        ></iframe>
+      </div>
+    </div>
+
+    <script>
+      function openScoutPopup() {
+        var modal = document.getElementById('scoutModal');
+        var iframe = document.getElementById('scoutFormIframe');
+        if (modal && iframe) {
+          if (iframe.src === 'about:blank' || !iframe.src) {
+            iframe.src = iframe.getAttribute('data-src');
+          }
+          modal.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+        return false;
+      }
+
+      function closeScoutPopup() {
+        var modal = document.getElementById('scoutModal');
+        if (modal) {
+          modal.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+        return false;
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var modal = document.getElementById('scoutModal');
+        var closeBtn = document.getElementById('scoutModalClose');
+
+        if (modal) {
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeScoutPopup();
+          });
+        }
+        if (closeBtn) {
+          closeBtn.addEventListener('click', closeScoutPopup);
+        }
+      });
+    </script>
+  </body>
+</html>
