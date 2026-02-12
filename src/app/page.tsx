@@ -86,6 +86,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="section section-white">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-xl shadow-lg"
+                src="https://www.youtube.com/embed/7TtsF--CVsA?si=7SeGAc2IM-qeLf5s"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What You Get Section */}
       <section className="section section-warm">
         <div className="container mx-auto">
