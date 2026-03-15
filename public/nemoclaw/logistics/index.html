@@ -673,12 +673,39 @@
     </div>
 
     <script>
+    /*────────────────────────────────────────────────────────
+      GHL WEBHOOK — paste your Inbound Webhook URL here.
+      Create a Workflow in GHL → Trigger: Inbound Webhook →
+      copy the URL and replace the placeholder below.
+    ────────────────────────────────────────────────────────*/
+    var GHL_WEBHOOK='https://services.leadconnectorhq.com/hooks/REPLACE_WITH_YOUR_WEBHOOK_ID';
+
+    function sendToGHL(payload){
+        return fetch(GHL_WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(err){console.error('GHL webhook error:',err)});
+    }
+
     /* ROI Calculator */
     const A={};
     function sel(e,s){e.parentElement.querySelectorAll('.opt').forEach(b=>b.classList.remove('sel'));e.classList.add('sel');A[s]=e.dataset.value;setTimeout(()=>{s<3?go(s+1):res()},250)}
     function go(s){document.querySelectorAll('.f-step').forEach(e=>e.classList.remove('active'));document.querySelector(`[data-step="${s}"]`).classList.add('active');document.getElementById('progress').style.width=((s-1)/3*100)+'%'}
     function res(){document.querySelectorAll('.f-step').forEach(e=>e.classList.remove('active'));document.querySelector('[data-step="results"]').classList.add('active');document.getElementById('progress').style.width='100%';const nr=parseInt(A[1])||2,sv=parseInt(A[2])||60000,hc=nr*sv,nc=22500,s=hc-nc;document.getElementById('hireCost').textContent='$'+hc.toLocaleString();document.getElementById('resSave').textContent=s>0?'$'+s.toLocaleString():'Break even'}
-    function submit(){const co=document.getElementById('cCo').value.trim(),nm=document.getElementById('cNm').value.trim(),ph=document.getElementById('cPh').value.trim(),em=document.getElementById('cEm').value.trim(),ro=document.getElementById('cRo').value;if(!co||!nm||!ph||!em){alert('Please fill in all fields.');return}console.log('Lead:',{co,nm,ph,em,ro,A,v:'logistics',t:new Date().toISOString()});document.querySelectorAll('.f-step').forEach(e=>e.classList.remove('active'));document.querySelector('[data-step="thanks"]').classList.add('active')}
+    function submit(){
+        var co=document.getElementById('cCo').value.trim(),nm=document.getElementById('cNm').value.trim(),ph=document.getElementById('cPh').value.trim(),em=document.getElementById('cEm').value.trim(),ro=document.getElementById('cRo').value;
+        if(!co||!nm||!ph||!em){alert('Please fill in all fields.');return}
+        var btn=document.querySelector('.intake-btn');btn.disabled=true;btn.textContent='Submitting...';
+        sendToGHL({
+            full_name:nm, company_name:co, email:em, phone:ph,
+            roles_needed:ro,
+            roi_roles_count:A[1]||'', roi_cost_per_hire:A[2]||'', roi_role_type:A[3]||'',
+            vertical:'logistics', form_type:'roi_calculator',
+            tags:['nemoclaw-install','nemoclaw-logistics','roi-calculator'],
+            source:'nemoclaw-logistics-roi',
+            submitted:new Date().toISOString()
+        }).then(function(){
+            document.querySelectorAll('.f-step').forEach(function(e){e.classList.remove('active')});
+            document.querySelector('[data-step="thanks"]').classList.add('active');
+        });
+    }
 
     /* Schedule Modal */
     function openModal(){document.getElementById('scheduleModal').classList.add('open');document.body.style.overflow='hidden'}
@@ -692,10 +719,8 @@
         const now=new Date();
         const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
         function ord(n){const s=['th','st','nd','rd'];const v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}
-        // Find next Monday at least 8 days out
         let d=new Date(now);d.setDate(d.getDate()+8);
         while(d.getDay()!==1)d.setDate(d.getDate()+1);
-        // Show 2 weeks, skip 1, then show 4 more = 6 options
         let count=0,shown=0;
         while(shown<6){
             if(count===2){d.setDate(d.getDate()+7);count++;continue}
@@ -709,10 +734,23 @@
 
     function submitModal(e){
         e.preventDefault();
-        const data={name:document.getElementById('mName').value.trim(),company:document.getElementById('mCompany').value.trim(),title:document.getElementById('mTitle').value.trim(),email:document.getElementById('mEmail').value.trim(),phone:document.getElementById('mPhone').value.trim(),week:document.getElementById('mWeek').value,vertical:'logistics',submitted:new Date().toISOString()};
-        console.log('NemoClaw Install Request:',data);
-        document.getElementById('scheduleForm').style.display='none';
-        document.getElementById('modalThanks').style.display='block';
+        var btn=document.querySelector('.mf-btn');btn.disabled=true;btn.textContent='Submitting...';
+        var data={
+            full_name:document.getElementById('mName').value.trim(),
+            company_name:document.getElementById('mCompany').value.trim(),
+            contact_title:document.getElementById('mTitle').value.trim(),
+            email:document.getElementById('mEmail').value.trim(),
+            phone:document.getElementById('mPhone').value.trim(),
+            preferred_install_week:document.getElementById('mWeek').value,
+            vertical:'logistics', form_type:'schedule_install',
+            tags:['nemoclaw-install','nemoclaw-logistics','schedule-install'],
+            source:'nemoclaw-logistics-modal',
+            submitted:new Date().toISOString()
+        };
+        sendToGHL(data).then(function(){
+            document.getElementById('scheduleForm').style.display='none';
+            document.getElementById('modalThanks').style.display='block';
+        });
     }
     </script>
 
