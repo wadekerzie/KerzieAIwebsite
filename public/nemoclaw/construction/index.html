@@ -239,6 +239,13 @@
         .mf-btn:hover{background:#047857;transform:translateY(-1px)}
         .mf-note{font-size:11px;color:var(--fg-light);text-align:center;margin-top:8px;line-height:1.4}
 
+        /* BOOKING MODAL */
+        .book-ov{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
+        .book-ov.open{display:flex}
+        .book-box{background:var(--white);border-radius:16px;padding:0;max-width:600px;width:100%;max-height:90vh;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative;animation:modalIn .25s ease}
+        .book-box .modal-x{position:absolute;top:10px;right:10px;z-index:10}
+        .book-box iframe{width:100%;height:700px;border:none}
+
         @media(max-width:640px){
             .hero-top{flex-direction:column;gap:16px}
             .hero-stats{flex-wrap:wrap}
@@ -249,6 +256,7 @@
             .bot-cta{margin:40px 12px}
             .bot-ctas{flex-direction:column;align-items:center}
             .modal{padding:24px;margin:10px}
+            .book-box iframe{height:600px}
         }
     </style>
 </head>
@@ -617,7 +625,7 @@
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                     Schedule Install
                 </a>
-                <a href="https://kerzie.ai/schedule" class="bc-sec">Book a 30-Min Call First</a>
+                <a href="#" onclick="openBooking();return false" class="bc-sec">Book a 30-Min Call First</a>
             </div>
         </div>
     </div>
@@ -676,6 +684,14 @@
         </div>
     </div>
 
+    <!-- BOOKING MODAL -->
+    <div class="book-ov" id="bookingModal">
+        <div class="book-box">
+            <button class="modal-x" onclick="closeBooking()">&times;</button>
+            <iframe src="https://api.leadconnectorhq.com/widget/bookings/kerzie-ai-team" scrolling="yes"></iframe>
+        </div>
+    </div>
+
     <script>
     /* Email form submissions to wade@kerzie.ai via FormSubmit */
     function sendForm(payload,subject){
@@ -710,7 +726,13 @@
     function openModal(){document.getElementById('scheduleModal').classList.add('open');document.body.style.overflow='hidden'}
     function closeModal(){document.getElementById('scheduleModal').classList.remove('open');document.body.style.overflow=''}
     document.getElementById('scheduleModal').addEventListener('click',function(e){if(e.target===this)closeModal()});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
+
+    /* Booking Modal */
+    function openBooking(){document.getElementById('bookingModal').classList.add('open');document.body.style.overflow='hidden'}
+    function closeBooking(){document.getElementById('bookingModal').classList.remove('open');document.body.style.overflow=''}
+    document.getElementById('bookingModal').addEventListener('click',function(e){if(e.target===this)closeBooking()});
+
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal();closeBooking()}});
 
     /* Generate week-of options dynamically */
     (function(){
