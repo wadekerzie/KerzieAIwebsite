@@ -217,6 +217,28 @@
         .footer{text-align:center;padding:24px 20px;font-size:12px;color:var(--fg-light)}
         .footer a{color:var(--blue);text-decoration:none;font-weight:600}
 
+        /* MODAL */
+        .modal-ov{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
+        .modal-ov.open{display:flex}
+        .modal{background:var(--white);border-radius:16px;padding:32px;max-width:480px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative;animation:modalIn .25s ease}
+        @keyframes modalIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        .modal-x{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:none;background:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--fg-light);transition:all .2s}
+        .modal-x:hover{background:#e5e7eb;color:var(--fg)}
+        .modal-hdr{text-align:center;margin-bottom:20px}
+        .modal-hdr h2{font-size:22px;font-weight:900;margin-bottom:4px}
+        .modal-hdr p{font-size:13px;color:var(--fg-light)}
+        .mf label{display:block;font-size:12px;font-weight:700;color:var(--fg);margin-bottom:4px;margin-top:14px}
+        .mf label:first-child{margin-top:0}
+        .mf input,.mf select{width:100%;padding:11px 14px;border:2px solid #e5e7eb;border-radius:8px;font-size:14px;font-family:inherit;transition:border-color .2s;background:var(--bg);-webkit-appearance:none}
+        .mf input:focus,.mf select:focus{outline:none;border-color:var(--accent);background:var(--white)}
+        .mf input::placeholder{color:#9ca3af}
+        .mf-consent{display:flex;align-items:flex-start;gap:8px;margin-top:16px}
+        .mf-consent input[type="checkbox"]{width:16px;height:16px;margin-top:1px;flex-shrink:0;accent-color:var(--accent)}
+        .mf-consent span{font-size:11px;color:var(--fg-light);line-height:1.4}
+        .mf-btn{width:100%;padding:14px;background:var(--green);color:var(--white);border:none;border-radius:8px;font-size:15px;font-weight:800;font-family:inherit;cursor:pointer;transition:all .2s;box-shadow:0 3px 12px rgba(5,150,105,.25);margin-top:20px}
+        .mf-btn:hover{background:#047857;transform:translateY(-1px)}
+        .mf-note{font-size:11px;color:var(--fg-light);text-align:center;margin-top:8px;line-height:1.4}
+
         @media(max-width:640px){
             .hero-top{flex-direction:column;gap:16px}
             .hero-stats{flex-wrap:wrap}
@@ -226,6 +248,7 @@
             .res-comp{grid-template-columns:1fr}.rc-vs{display:none}
             .bot-cta{margin:40px 12px}
             .bot-ctas{flex-direction:column;align-items:center}
+            .modal{padding:24px;margin:10px}
         }
     </style>
 </head>
@@ -235,7 +258,7 @@
         <a href="https://kerzie.ai"><img src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/6948b098aca6ab2c5901f57a.png" alt="Kerzie.ai"></a>
         <div class="nav-r">
             <span class="nav-badge">NemoClaw</span>
-            <a href="#calculator" class="nav-cta">Schedule Install — $22,500</a>
+            <a href="#" onclick="openModal();return false" class="nav-cta">Schedule Install — $22,500</a>
         </div>
     </nav>
 
@@ -247,7 +270,7 @@
                 <h1>Stop hiring blind.<br><span class="hi">Install NemoClaw first.</span></h1>
                 <p class="hero-p">Before you add more dispatchers, coordinators, or admin staff — install NemoClaw, stand up AI agents for those roles, and <strong>see what they can handle.</strong> We install the command center in <strong>1 week.</strong> Your team provisions agents and assigns the work.</p>
                 <div class="hero-ctas">
-                    <a href="#calculator" class="btn-primary">
+                    <a href="#" onclick="openModal();return false" class="btn-primary">
                         Schedule Your Install
                         <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -463,7 +486,7 @@
             <div class="price-amt">$22,500</div>
             <div class="price-sub">Flat fee &bull; 1 week &bull; Fixed scope</div>
             <p class="price-note">Most companies spend more than this each year on a single coordinator or dispatcher. For less than that, you get a permanent AI workforce platform you own.</p>
-            <a href="#calculator" class="price-cta">
+            <a href="#" onclick="openModal();return false" class="price-cta">
                 Schedule Your Install
                 <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -590,7 +613,7 @@
             <h2>$22,500. One week. A permanent AI workforce platform.</h2>
             <p>Most companies spend more than this on a single coordinator. Install NemoClaw and see what agents handle before you post another listing.</p>
             <div class="bot-ctas">
-                <a href="#calculator" class="bc-pri">
+                <a href="#" onclick="openModal();return false" class="bc-pri">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                     Schedule Install
                 </a>
@@ -603,15 +626,98 @@
 
     <div class="sticky">
         <div class="sticky-t"><strong>$22,500 flat.</strong> 1 week. Your AI workforce command center.</div>
-        <a href="#calculator" class="sticky-b">Schedule Install</a>
+        <a href="#" onclick="openModal();return false" class="sticky-b">Schedule Install</a>
+    </div>
+
+    <!-- SCHEDULE MODAL -->
+    <div class="modal-ov" id="scheduleModal">
+        <div class="modal">
+            <button class="modal-x" onclick="closeModal()">&times;</button>
+            <div class="modal-hdr">
+                <h2>Schedule Your Install</h2>
+                <p>$22,500 flat &bull; 1 week &bull; On-site</p>
+            </div>
+            <form class="mf" id="scheduleForm" onsubmit="submitModal(event)">
+                <label for="mName">Full name</label>
+                <input type="text" id="mName" placeholder="Your full name" required>
+
+                <label for="mCompany">Company</label>
+                <input type="text" id="mCompany" placeholder="Company name" required>
+
+                <label for="mTitle">Title</label>
+                <input type="text" id="mTitle" placeholder="Your title" required>
+
+                <label for="mEmail">Email address</label>
+                <input type="email" id="mEmail" placeholder="you@company.com" required>
+
+                <label for="mPhone">Phone number</label>
+                <input type="tel" id="mPhone" placeholder="(555) 555-5555" required>
+
+                <label for="mWeek">Preferred install start week</label>
+                <select id="mWeek" required>
+                    <option value="" disabled selected>Select a week...</option>
+                </select>
+
+                <div class="mf-consent">
+                    <input type="checkbox" id="mConsent" required>
+                    <span>I consent to Kerzie AI contacting me via email and phone regarding my NemoClaw installation inquiry. We respect your privacy and will never share your information.</span>
+                </div>
+
+                <button type="submit" class="mf-btn">Request My Install Date</button>
+                <p class="mf-note">We'll confirm exact days and times within 1 business day.</p>
+            </form>
+            <div id="modalThanks" style="display:none">
+                <div class="ty">
+                    <div class="chk"><svg width="24" height="24" fill="none" stroke="#059669" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+                    <h3>Request received.</h3>
+                    <p>We'll reach out within 1 business day to confirm your install week and finalize scheduling.<br><strong>In the meantime — freeze those job postings.</strong></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
+    /* ROI Calculator */
     const A={};
     function sel(e,s){e.parentElement.querySelectorAll('.opt').forEach(b=>b.classList.remove('sel'));e.classList.add('sel');A[s]=e.dataset.value;setTimeout(()=>{s<3?go(s+1):res()},250)}
     function go(s){document.querySelectorAll('.f-step').forEach(e=>e.classList.remove('active'));document.querySelector(`[data-step="${s}"]`).classList.add('active');document.getElementById('progress').style.width=((s-1)/3*100)+'%'}
     function res(){document.querySelectorAll('.f-step').forEach(e=>e.classList.remove('active'));document.querySelector('[data-step="results"]').classList.add('active');document.getElementById('progress').style.width='100%';const nr=parseInt(A[1])||2,sv=parseInt(A[2])||65000,hc=nr*sv,nc=22500,s=hc-nc;document.getElementById('hireCost').textContent='$'+hc.toLocaleString();document.getElementById('resSave').textContent=s>0?'$'+s.toLocaleString():'Break even'}
     function submit(){const co=document.getElementById('cCo').value.trim(),nm=document.getElementById('cNm').value.trim(),ph=document.getElementById('cPh').value.trim(),em=document.getElementById('cEm').value.trim(),ro=document.getElementById('cRo').value;if(!co||!nm||!ph||!em){alert('Please fill in all fields.');return}console.log('Lead:',{co,nm,ph,em,ro,A,v:'construction',t:new Date().toISOString()});document.querySelectorAll('.f-step').forEach(e=>e.classList.remove('active'));document.querySelector('[data-step="thanks"]').classList.add('active')}
+
+    /* Schedule Modal */
+    function openModal(){document.getElementById('scheduleModal').classList.add('open');document.body.style.overflow='hidden'}
+    function closeModal(){document.getElementById('scheduleModal').classList.remove('open');document.body.style.overflow=''}
+    document.getElementById('scheduleModal').addEventListener('click',function(e){if(e.target===this)closeModal()});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
+
+    /* Generate week-of options dynamically */
+    (function(){
+        const sel=document.getElementById('mWeek');
+        const now=new Date();
+        const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+        function ord(n){const s=['th','st','nd','rd'];const v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}
+        // Find next Monday at least 8 days out
+        let d=new Date(now);d.setDate(d.getDate()+8);
+        while(d.getDay()!==1)d.setDate(d.getDate()+1);
+        // Show 2 weeks, skip 1, then show 4 more = 6 options
+        let count=0,shown=0;
+        while(shown<6){
+            if(count===2){d.setDate(d.getDate()+7);count++;continue}
+            const opt=document.createElement('option');
+            opt.value=d.toISOString().split('T')[0];
+            opt.textContent='Week of '+months[d.getMonth()]+' '+ord(d.getDate());
+            sel.appendChild(opt);
+            d.setDate(d.getDate()+7);count++;shown++;
+        }
+    })();
+
+    function submitModal(e){
+        e.preventDefault();
+        const data={name:document.getElementById('mName').value.trim(),company:document.getElementById('mCompany').value.trim(),title:document.getElementById('mTitle').value.trim(),email:document.getElementById('mEmail').value.trim(),phone:document.getElementById('mPhone').value.trim(),week:document.getElementById('mWeek').value,vertical:'construction',submitted:new Date().toISOString()};
+        console.log('NemoClaw Install Request:',data);
+        document.getElementById('scheduleForm').style.display='none';
+        document.getElementById('modalThanks').style.display='block';
+    }
     </script>
 
 </body>
