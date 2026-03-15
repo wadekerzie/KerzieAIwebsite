@@ -677,15 +677,13 @@
     </div>
 
     <script>
-    /*────────────────────────────────────────────────────────
-      GHL WEBHOOK — paste your Inbound Webhook URL here.
-      Create a Workflow in GHL → Trigger: Inbound Webhook →
-      copy the URL and replace the placeholder below.
-    ────────────────────────────────────────────────────────*/
-    var GHL_WEBHOOK='https://services.leadconnectorhq.com/hooks/REPLACE_WITH_YOUR_WEBHOOK_ID';
-
-    function sendToGHL(payload){
-        return fetch(GHL_WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(err){console.error('GHL webhook error:',err)});
+    /* Email form submissions to wade@kerzie.ai via FormSubmit */
+    function sendForm(payload,subject){
+        return fetch('https://formsubmit.co/ajax/wade@kerzie.ai',{
+            method:'POST',
+            headers:{'Content-Type':'application/json','Accept':'application/json'},
+            body:JSON.stringify(Object.assign({_subject:subject,_template:'table'},payload))
+        }).catch(function(err){console.error('Form submit error:',err)});
     }
 
     /* ROI Calculator */
@@ -697,15 +695,12 @@
         var co=document.getElementById('cCo').value.trim(),nm=document.getElementById('cNm').value.trim(),ph=document.getElementById('cPh').value.trim(),em=document.getElementById('cEm').value.trim(),ro=document.getElementById('cRo').value;
         if(!co||!nm||!ph||!em){alert('Please fill in all fields.');return}
         var btn=document.querySelector('.intake-btn');btn.disabled=true;btn.textContent='Submitting...';
-        sendToGHL({
-            full_name:nm, company_name:co, email:em, phone:ph,
-            roles_needed:ro,
-            roi_roles_count:A[1]||'', roi_cost_per_hire:A[2]||'', roi_role_type:A[3]||'',
-            vertical:'construction', form_type:'roi_calculator',
-            tags:['nemoclaw-install','nemoclaw-construction','roi-calculator'],
-            source:'nemoclaw-construction-roi',
-            submitted:new Date().toISOString()
-        }).then(function(){
+        sendForm({
+            Name:nm, Company:co, Email:em, Phone:ph,
+            'Roles Needed':ro,
+            'ROI — Roles Count':A[1]||'', 'ROI — Cost Per Hire':A[2]?'$'+parseInt(A[2]).toLocaleString():'', 'ROI — Role Type':A[3]||'',
+            Vertical:'Construction', Form:'ROI Calculator'
+        },'NemoClaw ROI Lead — '+co).then(function(){
             document.querySelectorAll('.f-step').forEach(function(e){e.classList.remove('active')});
             document.querySelector('[data-step="thanks"]').classList.add('active');
         });
@@ -739,19 +734,16 @@
     function submitModal(e){
         e.preventDefault();
         var btn=document.querySelector('.mf-btn');btn.disabled=true;btn.textContent='Submitting...';
-        var data={
-            full_name:document.getElementById('mName').value.trim(),
-            company_name:document.getElementById('mCompany').value.trim(),
-            contact_title:document.getElementById('mTitle').value.trim(),
-            email:document.getElementById('mEmail').value.trim(),
-            phone:document.getElementById('mPhone').value.trim(),
-            preferred_install_week:document.getElementById('mWeek').value,
-            vertical:'construction', form_type:'schedule_install',
-            tags:['nemoclaw-install','nemoclaw-construction','schedule-install'],
-            source:'nemoclaw-construction-modal',
-            submitted:new Date().toISOString()
-        };
-        sendToGHL(data).then(function(){
+        var weekText=document.getElementById('mWeek').options[document.getElementById('mWeek').selectedIndex].text;
+        sendForm({
+            Name:document.getElementById('mName').value.trim(),
+            Company:document.getElementById('mCompany').value.trim(),
+            Title:document.getElementById('mTitle').value.trim(),
+            Email:document.getElementById('mEmail').value.trim(),
+            Phone:document.getElementById('mPhone').value.trim(),
+            'Preferred Install Week':weekText,
+            Vertical:'Construction', Form:'Schedule Install'
+        },'NemoClaw Install Request — '+document.getElementById('mCompany').value.trim()).then(function(){
             document.getElementById('scheduleForm').style.display='none';
             document.getElementById('modalThanks').style.display='block';
         });
