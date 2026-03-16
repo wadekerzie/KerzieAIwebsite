@@ -21,10 +21,28 @@ const scoutLink = {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [bannerDismissed, setBannerDismissed] = useState(false);
   const pathname = usePathname();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
+      {/* NemoClaw announcement banner */}
+      {!bannerDismissed && (
+        <div className="bg-[#7c3aed] text-white text-center text-sm py-2 px-4 relative">
+          <Link href="/nemoclaw" className="hover:underline font-medium">
+            <span className="font-bold">NEW:</span> NemoClaw Command Center Install — AI agents for your operation. $22,500 flat. 1 week.{" "}
+            <span className="underline">Learn more →</span>
+          </Link>
+          <button
+            onClick={(e) => { e.preventDefault(); setBannerDismissed(true); }}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-lg leading-none"
+            aria-label="Dismiss banner"
+          >
+            ×
+          </button>
+        </div>
+      )}
+
       {/* Logo section with warm blush background */}
       <div style={{ backgroundColor: '#f0d5c4' }} className="py-4 px-4 lg:px-6">
         <div className="container mx-auto flex items-center justify-between">

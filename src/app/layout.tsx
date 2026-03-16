@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main className="pt-[calc(4.5rem)] lg:pt-[calc(5rem+3.5rem)]">
+        <main className="pt-[calc(4.5rem+2.25rem)] lg:pt-[calc(5rem+3.5rem+2.25rem)]">
           {children}
         </main>
         <Footer />
