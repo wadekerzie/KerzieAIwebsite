@@ -24,6 +24,19 @@
         "offers": { "@type": "Offer", "price": "22500", "priceCurrency": "USD" }
     }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": [
+            {"@type":"Question","name":"What is NemoClaw?","acceptedAnswer":{"@type":"Answer","text":"NemoClaw is NVIDIA's open-source enterprise AI agent platform. It lets you run fleets of AI agents on your own infrastructure — agents that read documents, make decisions within guardrails, take actions across your systems, and collaborate with your staff."}},
+            {"@type":"Question","name":"How long does the NemoClaw install take?","acceptedAnswer":{"@type":"Answer","text":"One week, kickoff to live platform. Day 1 is deployment and security hardening. Days 2–4 cover SSO, messaging, and API integrations. Day 5 delivers the provisioning playbook and a working reference agent."}},
+            {"@type":"Question","name":"What does the $22,500 NemoClaw install include?","acceptedAnswer":{"@type":"Answer","text":"Platform deployment, SSO integration, messaging integration (Slack/Teams), API wiring to TMS, WMS, and ERP systems, sandbox and guardrail configuration, and a provisioning playbook with a working reference agent."}},
+            {"@type":"Question","name":"Do I need to replace my current logistics software?","acceptedAnswer":{"@type":"Answer","text":"No. NemoClaw integrates with your existing tools — TMS, WMS, ERP, carrier APIs, CRM, email, and file storage. AI agents work alongside your current software."}},
+            {"@type":"Question","name":"What happens after the NemoClaw install?","acceptedAnswer":{"@type":"Answer","text":"Your team uses the provisioning playbook to create new AI agents, assign them roles and system access, and let them start handling real work like shipment exceptions, route planning, customer service, and warehouse coordination."}},
+            {"@type":"Question","name":"Who installs NemoClaw on-site?","acceptedAnswer":{"@type":"Answer","text":"Wade Kerzie (Founder) and Gavin M. Matthews (Partner) from Kerzie AI. AI infrastructure is all we do."}}
+        ]
+    }
+    </script>
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         :root{--bg:#FDF6F0;--fg:#1a1a2e;--fg-mid:#4a5568;--fg-light:#64748b;--blue:#1e40af;--green:#059669;--green-light:#d1fae5;--white:#fff;--red:#dc2626;--red-light:#fef2f2;--accent:#7c3aed;--accent-light:#ede9fe;--dark:#0f172a}
@@ -213,6 +226,18 @@
         .footer{text-align:center;padding:24px 20px;font-size:12px;color:var(--fg-light)}
         .footer a{color:var(--blue);text-decoration:none;font-weight:600}
 
+        /* FAQ */
+        .faq{max-width:900px;margin:0 auto;padding:28px 20px 0}
+        .faq h2{font-size:clamp(20px,3.5vw,28px);font-weight:900;line-height:1.15;margin-bottom:16px}
+        .faq-item{border-bottom:1px solid rgba(0,0,0,.08);padding:16px 0}
+        .faq-q{font-size:15px;font-weight:700;color:var(--fg);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px}
+        .faq-q::after{content:'+';font-size:20px;font-weight:400;color:var(--fg-light);transition:transform .2s;flex-shrink:0}
+        .faq-item.open .faq-q::after{transform:rotate(45deg)}
+        .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;font-size:14px;color:var(--fg-mid);line-height:1.7}
+        .faq-item.open .faq-a{max-height:300px}
+        .faq-a p{margin-top:10px}
+        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
         /* MODAL */
         .modal-ov{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
         .modal-ov.open{display:flex}
@@ -312,7 +337,8 @@
         <div class="s-tag accent">How it works</div>
         <h2>NemoClaw is your AI org chart.</h2>
         <p>We install the command center — one platform that sits at the top. Your team provisions AI agents underneath it, just like adding direct reports. Each agent gets a role, system access, and guardrails. <strong>Think of it as an org chart where every box below the command center is an AI employee.</strong></p>
-        <div class="org">
+        <div class="org" role="img" aria-label="Org chart showing NemoClaw Command Center at the top, with five AI agent roles reporting to it: Shipment Exception, Route and Load Planning, Customer Service Inbox, Warehouse Coordinator, and Ops Reporting and Insights.">
+            <p class="sr-only">NemoClaw Command Center sits at the top of your AI org chart. Below it, your team provisions AI agents for Shipment Exception Handling, Route and Load Planning, Customer Service Inbox, Warehouse Coordination, and Ops Reporting and Insights roles.</p>
             <div class="org-tree">
                 <div class="org-node">
                     <div class="org-box cmd">NemoClaw Command Center<span class="org-sub">Installed by Kerzie AI &bull; 1 week</span></div>
@@ -611,6 +637,18 @@
         </div>
     </div>
 
+    <!-- FAQ -->
+    <div class="faq" id="faq">
+        <div class="s-tag accent">Frequently asked questions</div>
+        <h2>Common questions about NemoClaw installs</h2>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is NemoClaw?</div><div class="faq-a"><p>NemoClaw is NVIDIA's open-source enterprise AI agent platform. It lets you run fleets of AI agents on your own infrastructure — agents that read documents, make decisions within guardrails, take actions across your systems, and collaborate with your staff. You own and control the entire platform.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How long does the install take?</div><div class="faq-a"><p>One week, kickoff to live platform. Day 1 is deployment and security hardening. Days 2–4 cover SSO, messaging, and API integrations. Day 5 delivers the provisioning playbook and a working reference agent. By Friday your team can start provisioning AI agents for real work.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What does the $22,500 include?</div><div class="faq-a"><p>Everything needed to get NemoClaw running in your environment: platform deployment, SSO integration, messaging integration (Slack/Teams), API wiring to your TMS, WMS, and ERP systems, sandbox and guardrail configuration, and a provisioning playbook with a working reference agent. Fixed scope, no surprises.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need to replace my current software?</div><div class="faq-a"><p>No. NemoClaw integrates with your existing tools — your TMS, WMS, ERP, carrier APIs, CRM, email, and file storage. AI agents work alongside your current software, not instead of it. Think of it as adding a new layer of AI workers on top of what you already have.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What happens after the install?</div><div class="faq-a"><p>Your team uses the provisioning playbook to create new AI agents, assign them roles and system access, and let them start handling real work. You can provision agents for shipment exceptions, route planning, customer service, warehouse coordination, or any custom ops role. The platform is yours permanently.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Who shows up on-site?</div><div class="faq-a"><p>Wade Kerzie (Founder) and Gavin M. Matthews (Partner) from Kerzie AI. These are the two practitioners who lead every install — not consultants reading a playbook. AI infrastructure is all we do.</p></div></div>
+    </div>
+
     <!-- BOTTOM CTA -->
     <div style="padding:0 20px">
         <div class="bot-cta">
@@ -626,7 +664,7 @@
         </div>
     </div>
 
-    <footer class="footer"><p>&copy; 2025 <a href="https://kerzie.ai">Kerzie.ai</a> &bull; McKinney, TX &bull; NemoClaw Command Center Install</p></footer>
+    <footer class="footer"><p>&copy; 2026 <a href="https://kerzie.ai">Kerzie.ai</a> &bull; McKinney, TX &bull; NemoClaw Command Center Install</p></footer>
 
     <div class="sticky">
         <div class="sticky-t"><strong>$22,500 flat.</strong> 1 week. Your AI workforce command center.</div>
