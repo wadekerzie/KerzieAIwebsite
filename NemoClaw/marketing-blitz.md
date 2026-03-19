@@ -2,9 +2,36 @@
 
 All content below is ready to post. Just copy, paste, and go.
 
+> **Strategic pivot (March 18, 2026):** After Jensen's GTC keynote, we broadened from construction/logistics-only to ALL industries in DFW. The main landing page (kerzie.ai/nemoclaw) is now industry-agnostic. Construction and logistics pages remain as vertical deep-dives. New three-part offering: Agent Strategy Session (Day 1) + NemoClaw Install (Days 2-4) + Agent Training (Day 5). Core framing: "AI tool → AI employee" and "every CEO needs an agent strategy."
+
 ---
 
-## LINKEDIN POST #1 — Wade (Saturday morning, 7-8am CT)
+## CORE MESSAGING FRAMEWORK (Post-Jensen Keynote)
+
+**The insight:** Jensen undersold NemoClaw to the general audience. He spoke to developers who already know OpenClaw. Our buyers don't.
+
+**The shift:** AI tool → AI employee.
+- Most companies bolt on chatbots and one-off automations. A tool for this, a tool for that.
+- NemoClaw is different: it's an AI employee with full context of your organization that can resourcefully execute complete workflows 24/7.
+- Not a chatbot. Not a copilot. A digital employee that does real work.
+
+**Why this matters for sales calls:** When you say "AI employee," the buyer asks "How do we manage it?" — which leads directly into the support tier upsell (First 5 Agents workshop, 30/60/90-day engagement).
+
+---
+
+## IMAGE PROMPTS (Nano Banana)
+
+**For Post #2 (Gavin — logistics/command center):**
+> A wide-angle photo of a modern operations center with a large curved monitor displaying a dashboard with 5 glowing purple agent status cards. The room is dimly lit with warm ambient light. A person in a polo shirt stands in front of the screen with arms crossed, looking confident. Shallow depth of field. Cinematic lighting. 16:9 landscape.
+
+**For Post #3 (install week / chatbot vs employee):**
+> Option A (recommended): Skip AI image. Use Canva — cream background (#FDF6F0), large bold text "AI chatbot vs. AI employee", subtitle "One answers questions. The other does the job.", purple accent bar, Kerzie.ai logo in corner.
+>
+> Option B (AI-generated): A split-screen image. Left side: a generic chat widget bubble on a laptop screen, muted gray tones. Right side: a vibrant purple command dashboard showing 6 active agent tiles with role labels, warm office lighting. Clean, modern, 16:9 landscape.
+
+---
+
+## LINKEDIN POST #1 — Wade (Monday morning, 7-8am CT — March 16)
 
 Most construction companies hire their way out of admin bottlenecks.
 
@@ -24,37 +51,47 @@ https://kerzie.ai/nemoclaw/construction
 
 ---
 
-## LINKEDIN POST #2 — Gavin (Saturday afternoon)
+## LINKEDIN POST #2 — Gavin (Monday afternoon — March 16)
 
-NVIDIA open-sourced NemoClaw. That changes everything for mid-market operations.
+Most companies exploring AI are bolting on chatbots and one-off automations. A tool for this, a tool for that.
 
-For the first time, a logistics or distribution company can run AI agents on their own infrastructure — not someone else's SaaS platform. Agents that handle shipment exceptions, route planning, customer service inquiries, warehouse coordination, and ops reporting.
+Yesterday Jensen Huang announced NemoClaw — and if you blinked, you missed why it matters.
 
-We install the command center in 1 week. Flat fee. Your team provisions agents after that — like adding digital employees to your org chart.
+NemoClaw isn't another tool. It's an AI employee that understands your entire operation. It has full context of your org — your systems, your processes, your data — and can resourcefully execute complete workflows 24/7.
 
-This isn't a demo or a pilot. It's a permanent platform you own.
+Not a chatbot. Not a copilot. A digital employee that does real work.
 
-$22,500. One week. Done.
+We're installing it for construction and logistics companies now. One week. Your infrastructure. Your data stays in-house.
 
-https://kerzie.ai/nemoclaw/logistics
+https://kerzie.ai/nemoclaw
 
 ---
 
-## LINKEDIN POST #3 — Either (Sunday or Monday)
+## LINKEDIN POST #3 — Either (Tuesday or Wednesday — March 17-18) — BROAD / INDUSTRY-AGNOSTIC
 
-Here's exactly what happens during a NemoClaw install week:
+Jensen Huang said every CEO needs an agent strategy. Here's what that actually means.
 
-Day 1: Platform deployment + security hardening
-Day 2: SSO integration — AI agents get identity just like employees
-Day 3: Messaging integration — agents show up in Slack or Teams
-Day 4: API wiring to your dispatch, ERP, CRM, and file storage
-Day 5: Sandbox configuration, guardrails, playbook delivery, reference agent goes live
+Most companies hear "AI" and think chatbot. A widget on your website that answers FAQs.
 
-By Friday your team can provision AI agents for any admin or coordination role and start assigning them real work.
+That's not what we're talking about.
 
-$22,500. No subscription. No recurring platform fees. You own it.
+An AI agent is a digital employee. It has full context of your organization — your systems, your processes, your data — and it executes complete workflows autonomously. 24/7. With guardrails.
 
-We're booking install weeks now: https://kerzie.ai/nemoclaw
+Here's the difference:
+
+→ A chatbot answers "What's my order status?"
+→ An AI agent checks the TMS, finds the delay, reclassifies the shipment, notifies the customer, and flags your ops team — before anyone asks.
+
+→ A chatbot suggests "You might want to follow up with this lead."
+→ An AI agent scores the lead, drafts the proposal, routes it for approval, and schedules the follow-up — while you sleep.
+
+NemoClaw is NVIDIA's platform for standing up these agents inside your infrastructure. Your data stays in-house. Every action is logged. Human approval gates on anything sensitive.
+
+We install it in 1 week. $22,500 flat. Then we train your team to provision agents — like onboarding new hires.
+
+If your company is ready to move early and take a competitive leap — not "explore AI" for the next 18 months — this is for you.
+
+https://kerzie.ai/nemoclaw
 
 ---
 
@@ -62,9 +99,9 @@ We're booking install weeks now: https://kerzie.ai/nemoclaw
 
 Hey [First Name] — saw your post about [something relevant / or: been meaning to reach out].
 
-We just launched something I think applies to what you're dealing with at [Company]. We're installing NVIDIA's AI agent platform (NemoClaw) for [construction / logistics] companies.
+We just launched something I think applies to what you're dealing with at [Company]. We're installing NVIDIA's AI agent platform (NemoClaw) for companies that want to deploy AI employees — not chatbots — inside their own infrastructure.
 
-1-week install, $22,500 flat, runs on your infrastructure. Your team provisions AI agents for roles like dispatch, estimating, documentation — whatever admin or coordination work is eating your bandwidth.
+1-week install, $22,500 flat, runs on your servers. We start with an agent strategy session to map where AI agents fit your operation, then install the platform and train your team to provision agents for roles like operations, customer service, documentation, scheduling — whatever work is eating your bandwidth.
 
 Would you be open to a quick 10-minute look? Totally fine if the timing's not right.
 
@@ -74,13 +111,15 @@ Would you be open to a quick 10-minute look? Totally fine if the timing's not ri
 
 Hey [First Name] — I know this is out of the blue, so I'll keep it short.
 
-We install AI workforce platforms for [construction / logistics] companies. 1 week, flat fee, your infrastructure. The platform lets your team stand up AI agents for dispatch, estimating, documentation, customer service — and see what they can handle before you hire for those roles.
+Jensen Huang just said every CEO needs an agent strategy. We help companies build one — then install the platform to execute it.
 
-If you're dealing with admin bottlenecks or have open coordinator/dispatcher positions, this might be worth 10 minutes of your time.
+We deploy NVIDIA's NemoClaw AI agent platform on your infrastructure. 1 week, flat fee. Your team provisions AI agents for operations, customer service, documentation, scheduling — like onboarding digital employees.
+
+If you're curious what an agent strategy looks like for [their industry], I can walk you through it in 10 minutes.
 
 Either way — happy to connect. No pressure.
 
-https://kerzie.ai/nemoclaw/[construction or logistics]
+https://kerzie.ai/nemoclaw
 
 ---
 
@@ -152,13 +191,15 @@ AMA about the tech, the process, or where AI actually fits in logistics operatio
 
 Hey [First Name],
 
-Quick note — we just launched a 1-week install service for NVIDIA's AI agent platform, specifically for [construction / logistics] operations.
+Quick note — we're now installing NVIDIA's AI agent platform (NemoClaw) for companies that are ready to move early on AI.
 
-The short version: $22,500 flat fee, we deploy the platform on your infrastructure, and your team can provision AI agents for roles like dispatch, estimating, documentation, and coordination. Agents work like digital employees — with roles, permissions, and guardrails.
+The short version: we start with an agent strategy session to map where AI employees fit your operation, then install the platform on your infrastructure in 1 week. $22,500 flat. Your team provisions AI agents after that — like onboarding new hires with roles, permissions, and guardrails.
+
+This isn't a chatbot or a SaaS subscription. These are digital employees running 24/7 on your systems.
 
 Thought of you because [personalize: "you mentioned staffing challenges last time we talked" / "I know you're scaling operations" / "this seems relevant to what you're building"].
 
-Here's the page: https://kerzie.ai/nemoclaw/[construction or logistics]
+Here's the page: https://kerzie.ai/nemoclaw
 
 No pressure at all — just wanted you to see it.
 
@@ -170,21 +211,22 @@ Wade
 
 **Title:** Now offering NemoClaw Command Center installs
 
-**Body:** Kerzie AI now installs NVIDIA's NemoClaw AI agent platform for construction and logistics companies. 1-week deployment, $22,500 flat fee. AI agents for dispatch, estimating, documentation, customer service, and more — running on your infrastructure. Book your install week at kerzie.ai/nemoclaw
+**Body:** Kerzie AI installs NVIDIA's NemoClaw AI agent platform for DFW companies ready to deploy AI employees — not chatbots. We start with an agent strategy session, install the platform on your infrastructure in 1 week ($22,500 flat), and train your team to provision AI agents for operations, customer service, documentation, scheduling, and more. Book your strategy session at kerzie.ai/nemoclaw
 
 ---
 
 ## LOOM VIDEO SCRIPT (5 minutes)
 
-Record yourself walking through the construction page. Hit these points:
+Record yourself walking through the main NemoClaw page (kerzie.ai/nemoclaw). Hit these points:
 
-1. "Hey, I'm Wade from Kerzie AI. Let me show you what we just launched." (10 sec)
-2. Scroll through the hero — explain the core value prop in your own words (30 sec)
-3. Stop at the org chart — "This is how NemoClaw works. We install the command center at the top. Your team provisions AI agents underneath — like adding direct reports." (30 sec)
-4. Show the 6 deliverables — skim through quickly (45 sec)
-5. Stop at the price card — "22,500 flat, one week, fixed scope. Most companies spend more than this on a single coordinator per year." (20 sec)
-6. Click Schedule Install — show the modal form (15 sec)
-7. Quick ROI calculator demo — click through it (30 sec)
-8. Close: "If you're hiring for admin or coordination roles right now, freeze those listings for a week and talk to us first. Link's in the description." (15 sec)
+1. "Hey, I'm Wade from Kerzie AI. Jensen Huang just said every CEO needs an agent strategy. Let me show you what that actually looks like." (15 sec)
+2. Scroll through the hero — explain the AI tool vs AI employee framing in your own words (30 sec)
+3. Stop at the three offering cards — "We start with strategy, then install, then train your team. One week, all three." (30 sec)
+4. Stop at the org chart — "This is how NemoClaw works. The Command Center sits at the top. Your team provisions AI agents underneath — like adding direct reports." (30 sec)
+5. Show the 6 deliverables — skim through, emphasize Day 1 strategy session is new (45 sec)
+6. Stop at the price card — "22,500 flat, one week, fixed scope. Strategy, install, and training included." (20 sec)
+7. Mention the qualifier — "We're selective. This is for companies ready to move now, not explore for the next 18 months." (15 sec)
+8. Click Schedule Install — show the modal form with industry dropdown (15 sec)
+9. Close: "If you're a CEO or ops leader in DFW and you want an agent strategy — not a chatbot pitch — book a call. Link's in the description." (15 sec)
 
 Post the Loom natively on LinkedIn (download the video and upload directly — native video gets 3-5x more reach than a link).
