@@ -210,7 +210,7 @@ export default function HowItWorks() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section section-cream">
+      <section className="section-hero section-cream">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <span className="badge mb-6 inline-block">The Process</span>
@@ -226,19 +226,19 @@ export default function HowItWorks() {
       </section>
 
       {/* 54 Reasons Intro */}
-      <section className="section section-warm">
+      <section className="section section-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="heading-lg mb-4">
               There Are <span className="text-gradient">54 Reasons</span>{" "}
               Customers Contact Your Business
             </h2>
-            <p className="text-xl text-[var(--foreground-muted)] mb-12">
+            <p className="text-xl text-[var(--foreground-muted)] mb-8">
               Your current setup handles maybe 10-15 of these. We handle all 54.
             </p>
 
             {/* Category Stats */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {Object.entries(reasons54).map(([key, category]) => (
                 <div key={key} className="stat-card card-hover">
                   <div
@@ -351,7 +351,7 @@ export default function HowItWorks() {
       {/* The Process Steps */}
       <section className="section section-cream">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="heading-lg mb-4">
               The <span className="text-gradient">Process</span>
             </h2>
@@ -437,23 +437,23 @@ export default function HowItWorks() {
       </section>
 
       {/* CTA Section */}
-      <section className="section section-warm">
+      <section className="section-compact section-warm">
         <div className="container mx-auto text-center">
           <h2 className="heading-lg mb-4">
             Ready to <span className="text-gradient">Get Started?</span>
           </h2>
-          <p className="text-xl text-[var(--foreground-muted)] mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-[var(--foreground-muted)] mb-6 max-w-2xl mx-auto">
             Schedule a discovery call and see how Unison can transform your
             customer communication.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/schedule" className="btn-primary text-lg px-8 py-4">
+            <Link href="/schedule" className="btn-primary btn-lg">
               <span>
                 Book Your Setup Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </span>
             </Link>
-            <Link href="/about" className="btn-secondary text-lg px-8 py-4">
+            <Link href="/about" className="btn-secondary btn-lg">
               <span>Learn About Us</span>
             </Link>
           </div>

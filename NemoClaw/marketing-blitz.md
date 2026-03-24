@@ -95,6 +95,32 @@ https://kerzie.ai/nemoclaw
 
 ---
 
+## LINKEDIN POST #4 — Wade (Founder voice, text-only, Wednesday March 18)
+
+I've been in business operations for 30 years. Sold $380M+ in services. Built teams. Closed deals. Run P&Ls.
+
+Nothing prepared me for what I watched happen this week.
+
+Jensen Huang stood on stage Monday and said every CEO needs an agent strategy. Not a chatbot. Not a copilot. An agent strategy.
+
+And I realized: most of the CEOs I know don't even know what that means yet.
+
+Here's the gap I'm watching open in real time:
+
+A small number of companies are deploying AI employees right now — agents that understand their entire operation and execute complete workflows 24/7. Not answering FAQs. Doing the work.
+
+Everyone else is still debating whether to "explore AI" next quarter.
+
+That gap is going to become permanent. Not in 5 years. In the next 12-18 months.
+
+I'm not saying this to sell you something. I'm saying this because I've spent two years going deep on this technology, and the distance between what's possible and what most companies think is possible is the widest I've ever seen in my career.
+
+If you're a CEO or ops leader and you don't have an agent strategy yet — you need one. Yesterday.
+
+> **Self-comment (within 5 min):** "Happy to walk through what an agent strategy actually looks like if anyone's curious. DMs open."
+
+---
+
 ## LINKEDIN DM TEMPLATE — Warm Outreach (personalize the first line)
 
 Hey [First Name] — saw your post about [something relevant / or: been meaning to reach out].

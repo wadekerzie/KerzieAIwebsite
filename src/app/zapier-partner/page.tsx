@@ -12,7 +12,7 @@ export default function ZapierPartner() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section section-cream">
+      <section className="section-hero section-cream">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <span className="badge mb-6 inline-block">
@@ -50,10 +50,10 @@ export default function ZapierPartner() {
       </section>
 
       {/* What This Partnership Means */}
-      <section className="section section-warm">
+      <section className="section section-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="heading-lg mb-4">
                 What This <span className="text-gradient">Partnership</span>{" "}
                 Means
@@ -112,7 +112,7 @@ export default function ZapierPartner() {
       <section className="section section-cream">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="heading-lg mb-4">
                 How We <span className="text-gradient">Help</span>
               </h2>
@@ -192,17 +192,17 @@ export default function ZapierPartner() {
       </section>
 
       {/* CTA Section */}
-      <section className="section section-blush">
+      <section className="section-compact section-blush">
         <div className="container mx-auto text-center">
           <h2 className="heading-lg mb-4 text-[var(--foreground)]">
             Ready to Automate Your Business?
           </h2>
-          <p className="text-xl text-[var(--foreground)] opacity-80 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-[var(--foreground)] opacity-80 mb-6 max-w-2xl mx-auto">
             Schedule a discovery call and let our Zapier® experts show you how
             automation can transform your operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/schedule" className="btn-primary text-lg px-8 py-4">
+            <Link href="/schedule" className="btn-primary btn-lg">
               <span>
                 Book Your Setup Call
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -210,7 +210,7 @@ export default function ZapierPartner() {
             </Link>
             <Link
               href="/how-it-works"
-              className="btn-secondary text-lg px-8 py-4 bg-white/50"
+              className="btn-secondary btn-lg bg-white/50"
             >
               <span>See How It Works</span>
             </Link>

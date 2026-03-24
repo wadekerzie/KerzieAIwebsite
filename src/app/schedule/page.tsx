@@ -46,7 +46,7 @@ export default function SchedulePage() {
             </section>
 
             {/* Calendar Embed Section */}
-            <section className="pt-6 pb-12 section-warm">
+            <section className="pt-6 pb-12 section-white">
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <div className="card">
@@ -127,7 +127,7 @@ export default function SchedulePage() {
             </section>
 
             {/* Alternative CTA */}
-            <section className="section section-warm">
+            <section className="section section-white">
                 <div className="container mx-auto text-center">
                     <h2 className="heading-lg mb-4">
                         Want to Learn More First?
@@ -135,7 +135,7 @@ export default function SchedulePage() {
                     <p className="text-xl text-[var(--foreground-muted)] mb-8 max-w-2xl mx-auto">
                         See how Kerzie AI works and why we&apos;re different before booking your call.
                     </p>
-                    <Link href="/how-it-works" className="btn-secondary text-lg px-8 py-4">
+                    <Link href="/how-it-works" className="btn-secondary btn-lg">
                         <span>
                             See How It Works
                             <ArrowRight className="w-5 h-5 ml-2" />

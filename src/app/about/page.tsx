@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section section-cream">
+      <section className="section-hero section-cream">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <span className="badge mb-6 inline-block">About Kerzie AI</span>
@@ -33,10 +33,10 @@ export default function About() {
       </section>
 
       {/* The Gap Section */}
-      <section className="section section-warm">
+      <section className="section section-white">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="heading-lg mb-4">
                 The <span className="text-gradient">Gap</span> in the Market
               </h2>
@@ -45,10 +45,10 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
               {/* Digital Agencies */}
               <div className="card">
-                <div className="icon-box-light mb-6">
+                <div className="icon-box-light mb-4">
                   <Globe className="w-6 h-6" />
                 </div>
                 <h3 className="heading-md mb-4">
@@ -81,7 +81,7 @@ export default function About() {
 
               {/* Phone Systems */}
               <div className="card">
-                <div className="icon-box-light mb-6">
+                <div className="icon-box-light mb-4">
                   <Phone className="w-6 h-6" />
                 </div>
                 <h3 className="heading-md mb-4">
@@ -116,7 +116,7 @@ export default function About() {
             {/* Kerzie AI - Unison */}
             <div className="card">
               <div className="flex items-center gap-4 mb-6">
-                <div className="icon-box w-16 h-16 rounded-2xl">
+                <div className="icon-box icon-box-lg rounded-2xl">
                   <Brain className="w-8 h-8" />
                 </div>
                 <div>
@@ -170,7 +170,7 @@ export default function About() {
       <section className="section section-cream">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="heading-lg mb-4">
                 Our <span className="text-gradient">Approach</span>
               </h2>
@@ -235,23 +235,23 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="section section-blush">
+      <section className="section-compact section-blush">
         <div className="container mx-auto text-center">
           <h2 className="heading-lg mb-4 text-[var(--foreground)]">
             Ready to Work With Experts?
           </h2>
-          <p className="text-xl text-[var(--foreground)] opacity-80 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-[var(--foreground)] opacity-80 mb-6 max-w-2xl mx-auto">
             Schedule a discovery call and see how our unique combination of
             telecom and AI expertise can transform your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/schedule" className="btn-primary text-lg px-8 py-4">
+            <Link href="/schedule" className="btn-primary btn-lg">
               <span>
                 Book Your Setup Call
                 <ArrowRight className="w-5 h-5 ml-2" />
               </span>
             </Link>
-            <Link href="/how-it-works" className="btn-secondary text-lg px-8 py-4 bg-white/50">
+            <Link href="/how-it-works" className="btn-secondary btn-lg bg-white/50">
               <span>See How It Works</span>
             </Link>
           </div>

@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kerzie AI | AI-Powered Customer Communication",
+  title: "Kerzie AI | Applied AI Implementation & Systems Architecture",
   description:
-    "Stop manually responding to every call, text, and email. One system answers questions, provides pricing, and schedules appointments—instantly, professionally, 24/7.",
+    "Applied AI implementation company based in McKinney, TX. Production AI deployments, NemoClaw Command Center installs, AI-powered communications, and custom app development for small-to-mid-size businesses.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main className="pt-[calc(4.5rem+2.25rem)] lg:pt-[calc(5rem+3.5rem+2.25rem)]">
+        <main className="pt-14 lg:pt-16">
           {children}
         </main>
         <Footer />

@@ -15,10 +15,22 @@
   --deep-blush: #d4a090;
   --border: #e8e0d8;
 
+  /* Dark section */
+  --background-dark: #1a1a2e;
+  --background-dark-card: #252542;
+  --foreground-dark: #f0ece8;
+  --foreground-dark-muted: #a8a4a0;
+  --border-dark: #3a3a52;
+
+  /* Subtle accent background */
+  --background-accent: #eef2fa;
+
   /* Shadows */
+  --shadow-xs: 0 1px 3px rgba(45, 42, 38, 0.03);
   --shadow-sm: 0 2px 8px rgba(45, 42, 38, 0.04);
   --shadow-md: 0 4px 20px rgba(45, 42, 38, 0.06);
   --shadow-lg: 0 8px 30px rgba(45, 42, 38, 0.08);
+  --shadow-card-hover: 0 12px 40px rgba(45, 42, 38, 0.1);
   --shadow-blue: 0 4px 16px rgba(123, 159, 232, 0.3);
 }
 
@@ -48,16 +60,24 @@ html {
 }
 
 /* ===== TYPOGRAPHY ===== */
+.heading-display {
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--foreground);
+}
+
 .heading-xl {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   color: var(--foreground);
 }
 
 .heading-lg {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -65,10 +85,24 @@ html {
 }
 
 .heading-md {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
   font-weight: 600;
   line-height: 1.3;
   color: var(--foreground);
+}
+
+.heading-sm {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--foreground);
+}
+
+.subheading {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--foreground-muted);
 }
 
 /* Blue to Blush gradient - bridges both brand colors */
@@ -84,14 +118,61 @@ html {
   background: var(--background-card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
   padding: 2rem;
   transition: all 0.3s ease;
 }
 
 .card-hover:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.card-featured {
+  background: var(--background-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.card-featured:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.card-accent-top {
+  border-top: 3px solid var(--accent-blue);
+}
+
+.card-accent-left {
+  border-left: 3px solid var(--accent-blue);
+}
+
+.card-sm {
+  background: var(--background-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-xs);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card-dark {
+  background: var(--background-dark-card);
+  border: 1px solid var(--border-dark);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
 }
 
 /* ===== BUTTONS ===== */
@@ -99,18 +180,19 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   background: var(--accent-blue);
   color: white;
   font-weight: 600;
-  border-radius: 12px;
+  font-size: 0.9375rem;
+  border-radius: 10px;
   box-shadow: var(--shadow-blue);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
   background: var(--accent-blue-hover);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(123, 159, 232, 0.4);
 }
 
@@ -124,13 +206,14 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   background: transparent;
   color: var(--foreground);
   font-weight: 600;
-  border-radius: 12px;
+  font-size: 0.9375rem;
+  border-radius: 10px;
   border: 1px solid var(--border);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-secondary:hover {
@@ -145,22 +228,76 @@ html {
   gap: 0.5rem;
 }
 
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.0625rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+}
+
 /* ===== SECTIONS ===== */
 .section {
-  padding: 5rem 0;
+  padding: 3rem 0;
   position: relative;
 }
 
-.section-cream {
-  background: var(--background);
+@media (min-width: 1024px) {
+  .section {
+    padding: 4rem 0;
+  }
 }
 
-.section-warm {
-  background: var(--background-secondary);
+.section-hero {
+  padding: 4rem 0 3rem;
+  position: relative;
 }
 
-.section-blush {
-  background: var(--warm-blush);
+@media (min-width: 1024px) {
+  .section-hero {
+    padding: 5rem 0 4rem;
+  }
+}
+
+.section-compact {
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .section-compact {
+    padding: 3rem 0;
+  }
+}
+
+.section-cream { background: var(--background); }
+.section-white { background: #ffffff; }
+.section-warm { background: var(--background-secondary); }
+.section-accent { background: var(--background-accent); }
+.section-blush { background: var(--warm-blush); }
+
+.section-dark {
+  background: var(--background-dark);
+  color: var(--foreground-dark);
+}
+.section-dark .heading-display,
+.section-dark .heading-xl,
+.section-dark .heading-lg,
+.section-dark .heading-md {
+  color: var(--foreground-dark);
+}
+.section-dark .stat-number {
+  color: var(--accent-blue);
+}
+.section-dark .stat-card {
+  background: var(--background-dark-card);
+  border-color: var(--border-dark);
+}
+.section-dark p,
+.section-dark .subheading {
+  color: var(--foreground-dark-muted);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -220,25 +357,33 @@ html {
 
 /* ===== ICON CONTAINERS ===== */
 .icon-box {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   background: var(--accent-blue);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  flex-shrink: 0;
+}
+
+.icon-box-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 12px;
 }
 
 .icon-box-light {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   background: var(--warm-blush);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--accent-blue);
+  flex-shrink: 0;
 }
 
 /* ===== CUSTOM SCROLLBAR ===== */
