@@ -5,24 +5,37 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-const serviceLinks = [
-  { href: "/services/unison", label: "Unison — AI-Powered Communications" },
-  { href: "/nemoclaw", label: "NemoClaw Command Center" },
-  { href: "/services/app-development", label: "App Development" },
-  { href: "/services/ai-consulting", label: "AI Consulting & Implementation" },
+const ventureLinks = [
+  { href: "/ventures/unison", label: "Unison" },
+  { href: "/ventures/zorli", label: "Zorli" },
+  { href: "/ventures/gotaguy", label: "GotaGuy" },
+  { href: "/services/nemoclaw", label: "NemoClaw / OpenClaw" },
+  { href: "/ventures/ai-os", label: "AI Operating System" },
+];
+
+const serviceMenuLinks = [
+  { href: "/services", label: "Services Overview" },
+  { href: "/services/implementation", label: "AI Implementation" },
+  { href: "/services/training", label: "AI Training" },
+  { href: "/services/nemoclaw", label: "NemoClaw" },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [venturesOpen, setVenturesOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileVenturesOpen, setMobileVenturesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const pathname = usePathname();
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const venturesRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (venturesRef.current && !venturesRef.current.contains(event.target as Node)) {
+        setVenturesOpen(false);
+      }
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
         setServicesOpen(false);
       }
     }
@@ -30,18 +43,19 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
+    setMobileVenturesOpen(false);
     setMobileServicesOpen(false);
+    setVenturesOpen(false);
     setServicesOpen(false);
   }, [pathname]);
 
+  const isVentureActive = pathname.startsWith("/ventures");
   const isServiceActive = pathname.startsWith("/services") || pathname === "/nemoclaw";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      {/* Main navigation bar — glassmorphism */}
       <div className="bg-white/80 backdrop-blur-md border-b border-[var(--border)] shadow-sm">
         <div className="container mx-auto">
           <div className="flex items-center justify-between h-14 lg:h-16">
@@ -63,18 +77,47 @@ export default function Header() {
                 Home
               </Link>
 
-              {/* Services Dropdown */}
-              <div ref={dropdownRef} className="relative">
+              {/* Ventures Dropdown */}
+              <div ref={venturesRef} className="relative">
                 <button
-                  onClick={() => setServicesOpen(!servicesOpen)}
+                  onClick={() => { setVenturesOpen(!venturesOpen); setServicesOpen(false); }}
+                  className={`nav-link flex items-center gap-1 ${isVentureActive ? "nav-link-active" : ""}`}
+                >
+                  Ventures
+                  <ChevronDown className={`w-4 h-4 transition-transform ${venturesOpen ? "rotate-180" : ""}`} />
+                </button>
+                {venturesOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-72 bg-white rounded-xl border border-[var(--border)] shadow-lg overflow-hidden animate-fade-in z-50">
+                    {ventureLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className={`block px-5 py-3 text-sm transition-colors hover:bg-[var(--background-secondary)] ${
+                          pathname === link.href
+                            ? "text-[var(--accent-blue)] font-semibold bg-[var(--background-secondary)]"
+                            : "text-[var(--foreground-muted)]"
+                        }`}
+                        onClick={() => setVenturesOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Services Dropdown */}
+              <div ref={servicesRef} className="relative">
+                <button
+                  onClick={() => { setServicesOpen(!servicesOpen); setVenturesOpen(false); }}
                   className={`nav-link flex items-center gap-1 ${isServiceActive ? "nav-link-active" : ""}`}
                 >
                   Services
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {servicesOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-80 bg-white rounded-xl border border-[var(--border)] shadow-lg overflow-hidden animate-fade-in z-50">
-                    {serviceLinks.map((link) => (
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl border border-[var(--border)] shadow-lg overflow-hidden animate-fade-in z-50">
+                    {serviceMenuLinks.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
@@ -100,10 +143,10 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/contact"
-                className={`nav-link ${pathname === "/contact" ? "nav-link-active" : ""}`}
+                href="/partner"
+                className={`nav-link ${pathname === "/partner" ? "nav-link-active" : ""}`}
               >
-                Contact Us
+                Partner With Us
               </Link>
             </nav>
 
@@ -140,6 +183,28 @@ export default function Header() {
                 Home
               </Link>
 
+              {/* Mobile Ventures Accordion */}
+              <button
+                onClick={() => setMobileVenturesOpen(!mobileVenturesOpen)}
+                className={`nav-link text-lg flex items-center justify-between w-full text-left ${isVentureActive ? "nav-link-active" : ""}`}
+              >
+                Ventures
+                <ChevronDown className={`w-5 h-5 transition-transform ${mobileVenturesOpen ? "rotate-180" : ""}`} />
+              </button>
+              {mobileVenturesOpen && (
+                <div className="pl-4 flex flex-col gap-1">
+                  {ventureLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={`nav-link text-base ${pathname === link.href ? "nav-link-active" : ""}`}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+
               {/* Mobile Services Accordion */}
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
@@ -150,13 +215,11 @@ export default function Header() {
               </button>
               {mobileServicesOpen && (
                 <div className="pl-4 flex flex-col gap-1">
-                  {serviceLinks.map((link) => (
+                  {serviceMenuLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className={`nav-link text-base ${
-                        pathname === link.href ? "nav-link-active" : ""
-                      }`}
+                      className={`nav-link text-base ${pathname === link.href ? "nav-link-active" : ""}`}
                     >
                       {link.label}
                     </Link>
@@ -172,10 +235,10 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/contact"
-                className={`nav-link text-lg ${pathname === "/contact" ? "nav-link-active" : ""}`}
+                href="/partner"
+                className={`nav-link text-lg ${pathname === "/partner" ? "nav-link-active" : ""}`}
               >
-                Contact Us
+                Partner With Us
               </Link>
 
               <div className="pt-4 mt-2 border-t border-[var(--border)]">

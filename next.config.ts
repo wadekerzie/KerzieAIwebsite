@@ -20,8 +20,23 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/services/nemoclaw",
-        destination: "/nemoclaw",
+        source: "/services/unison",
+        destination: "/ventures/unison",
+        permanent: true,
+      },
+      {
+        source: "/services/app-development",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/services/ai-consulting",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/ventures/nemoclaw",
+        destination: "/services/nemoclaw",
         permanent: true,
       },
     ];

@@ -1,243 +1,213 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  Zap,
-  Shield,
-  MessageSquare,
-  Cpu,
-  Code,
-  BarChart3,
-  CheckCircle,
-  Target,
-  Rocket,
-} from "lucide-react";
+import { ArrowRight, Cpu, Users, Lightbulb } from "lucide-react";
 
-const services = [
-  {
-    icon: MessageSquare,
-    title: "Unison — AI-Powered Communications",
-    description:
-      "One knowledge base powers every customer channel—phone, text, chat, social. 24/7 instant responses.",
-    href: "/services/unison",
-    featured: true,
-  },
-  {
-    icon: Cpu,
-    title: "NemoClaw Command Center",
-    description:
-      "NVIDIA\u2019s AI agent platform installed on your infrastructure. AI employees, not chatbots. 1-week deployment.",
-    href: "/nemoclaw",
-    featured: true,
-    purple: true,
-  },
-  {
-    icon: Code,
-    title: "App Development",
-    description:
-      "Custom AI-powered applications built for your specific business workflows and operational needs.",
-    href: "/services/app-development",
-  },
-  {
-    icon: BarChart3,
-    title: "AI Consulting & Implementation",
-    description:
-      "ROI-first AI strategy and systems architecture. We implement what we recommend—no slide decks.",
-    href: "/services/ai-consulting",
-  },
-];
+export const metadata = {
+  title: "Kerzie AI | AI-Powered Everything",
+  description:
+    "Kerzie AI is a venture studio. We build AI-native companies, license AI products to small businesses, and partner with operators to implement AI across their entire business.",
+};
 
-const pillars = [
+const ventures = [
   {
-    icon: Target,
-    title: "Proof-First Methodology",
-    description:
-      "We don\u2019t sell concepts. Every engagement delivers a working system with measurable results before you scale.",
+    name: "Unison",
+    description: "AI-powered inbound communications for small business.",
+    status: "Live",
+    href: "/ventures/unison",
+    comingSoon: false,
   },
   {
-    icon: Rocket,
-    title: "Production-Ready Deployments",
-    description:
-      "Live AI systems in production with real users—not prototypes or demos. If it doesn\u2019t ship, it doesn\u2019t count.",
+    name: "Zorli",
+    description: "AI-powered consumer app, now on the Apple App Store.",
+    status: "Live",
+    href: "/ventures/zorli",
+    comingSoon: false,
   },
   {
-    icon: Shield,
-    title: "Built for Small Business",
-    description:
-      "Enterprise-grade AI at price points that make sense. Fixed fees, clear scope, no surprise invoices.",
+    name: "GotaGuy",
+    description: "SMS-first home repair, live and expanding nationally.",
+    status: "Live",
+    href: "/ventures/gotaguy",
+    comingSoon: false,
+  },
+  {
+    name: "NemoClaw / OpenClaw",
+    description: "AI command center installation and strategy.",
+    status: "Live",
+    href: "/services/nemoclaw",
+    comingSoon: false,
+  },
+  {
+    name: "AI Operating System",
+    description: "Small business AI operating system.",
+    status: "Coming Soon",
+    href: "/ventures/ai-os",
+    comingSoon: true,
   },
 ];
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="section-hero section-cream">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="badge mb-6 animate-fade-in">
-              <Zap className="w-4 h-4 mr-2" />
-              <span>Applied AI Implementation</span>
-            </div>
-
+          <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-display mb-4 animate-fade-in-up">
-              AI That Actually Works{" "}
-              <span className="text-gradient">in&nbsp;Your&nbsp;Business</span>
+              AI-Powered Everything.
             </h1>
-
-            <p className="subheading mb-8 max-w-2xl mx-auto animate-fade-in-up delay-100">
-              We build and deploy production AI systems for small-to-mid-size
-              companies. Not slide decks. Not proofs of concept.
-              Working systems that deliver&nbsp;ROI.
+            <p className="text-xl text-[var(--foreground-muted)] mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
+              Kerzie AI is a venture studio. We build AI-native companies, license AI products to
+              small businesses, and partner with operators to implement AI across their entire business.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-in-up delay-200">
-              <Link href="/schedule" className="btn-primary btn-lg">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
+              <Link href="/ventures" className="btn-primary btn-lg">
                 <span>
-                  Book a Call
+                  See Our Ventures
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </span>
               </Link>
-              <Link href="#services" className="btn-secondary btn-lg">
-                <span>See Our Services</span>
+              <Link href="/partner" className="btn-secondary btn-lg">
+                <span>Partner With Us</span>
               </Link>
             </div>
 
-            {/* Trust Signals */}
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-[var(--foreground-muted)] animate-fade-in delay-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[var(--accent-blue)]" />
-                <span>Zapier Silver Solution Partner</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[var(--accent-blue)]" />
-                <span>Live AI Deployments in Production</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[var(--accent-blue)]" />
-                <span>McKinney, TX</span>
-              </div>
-            </div>
+            {/* Trust Strip */}
+            <p className="mt-10 text-sm text-[var(--foreground-muted)] animate-fade-in delay-300">
+              Zapier Silver Solution Partner&nbsp;&nbsp;|&nbsp;&nbsp;Apps in the Apple App
+              Store&nbsp;&nbsp;|&nbsp;&nbsp;Live AI Deployments in Production&nbsp;&nbsp;|&nbsp;&nbsp;McKinney, TX
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Services — Bento Grid */}
-      <section id="services" className="section section-white">
+      {/* Ventures Grid */}
+      <section className="section section-white">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="heading-lg mb-3">
-              What We <span className="text-gradient">Build</span>
-            </h2>
-            <p className="subheading max-w-2xl mx-auto">
-              Four service lines, one goal: AI that delivers measurable results
-            </p>
+            <h2 className="heading-lg mb-3">What We&apos;re Building</h2>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto">
-            {services.map((service) => (
-              <Link
-                key={service.title}
-                href={service.href}
-                className={`${service.featured ? "card-featured" : "card"} card-hover group ${
-                  service.purple ? "" : service.featured ? "card-accent-top" : ""
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {ventures.map((v) => (
+              <div
+                key={v.name}
+                className={`card flex flex-col justify-between ${
+                  v.comingSoon
+                    ? "opacity-70 border-dashed border-2 border-[var(--border)]"
+                    : "card-hover"
                 }`}
-                style={service.purple ? { borderLeft: "3px solid #7c3aed" } : undefined}
               >
-                <div
-                  className={`icon-box ${service.featured ? "icon-box-lg" : ""} mb-4`}
-                  style={service.purple ? { background: "#7c3aed" } : undefined}
-                >
-                  <service.icon className={service.featured ? "w-6 h-6" : "w-5 h-5"} />
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="heading-md">{v.name}</h3>
+                    <span
+                      className={`badge text-xs px-2 py-1 rounded-full font-medium ${
+                        v.comingSoon
+                          ? "bg-[var(--background-secondary)] text-[var(--foreground-muted)]"
+                          : "bg-[var(--background-accent)] text-[var(--accent-blue)]"
+                      }`}
+                    >
+                      {v.status}
+                    </span>
+                  </div>
+                  <p className="text-[var(--foreground-muted)]">{v.description}</p>
                 </div>
-                <h3 className="heading-md mb-2">{service.title}</h3>
-                <p className={`text-[var(--foreground-muted)] mb-3 ${service.featured ? "" : "text-sm"}`}>
-                  {service.description}
-                </p>
-                <span
-                  className={`inline-flex items-center gap-1 font-medium text-sm group-hover:gap-2 transition-all ${
-                    service.purple ? "text-[#7c3aed]" : "text-[var(--accent-blue)]"
-                  }`}
-                >
-                  Learn More <ArrowRight className="w-4 h-4" />
-                </span>
-              </Link>
+                <div className="mt-5">
+                  <Link
+                    href={v.href}
+                    className="text-[var(--accent-blue)] text-sm font-semibold hover:underline flex items-center gap-1"
+                  >
+                    Learn More <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Social Proof — Dark Section */}
-      <section className="section section-dark">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-lg mb-6">
-              Real Systems. <span className="text-gradient">Real&nbsp;Results.</span>
-            </h2>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <div className="card-dark text-center">
-                <div className="stat-number mb-2">Live</div>
-                <p className="text-sm">
-                  GoHighLevel Voice AI in production — real customers, real calls
-                </p>
-              </div>
-              <div className="card-dark text-center">
-                <div className="stat-number mb-2">98</div>
-                <p className="text-sm">
-                  AACI score — Applied AI Competency Index
-                </p>
-              </div>
-              <div className="card-dark text-center">
-                <div className="stat-number mb-2">Silver</div>
-                <p className="text-sm">
-                  Zapier Solution Partner — verified automation expertise
-                </p>
-              </div>
-            </div>
-            <p className="text-base max-w-2xl mx-auto">
-              We ship production systems, not pitch decks. Every proof point above
-              represents a live deployment with real users and real&nbsp;revenue.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Kerzie AI */}
+      {/* Services Teaser */}
       <section className="section section-cream">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="heading-lg mb-3">
-              Why <span className="text-gradient">Kerzie&nbsp;AI</span>
-            </h2>
+            <h2 className="heading-lg mb-3">We Also Work With You</h2>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {pillars.map((pillar) => (
-              <div key={pillar.title} className="text-center">
-                <div className="icon-box icon-box-lg rounded-2xl mx-auto mb-4">
-                  <pillar.icon className="w-6 h-6" />
-                </div>
-                <h3 className="heading-md mb-2">
-                  {pillar.title}
-                </h3>
-                <p className="text-[var(--foreground-muted)] text-sm">
-                  {pillar.description}
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="icon-box-lg mx-auto mb-4">
+                <Cpu className="w-7 h-7" />
               </div>
-            ))}
+              <h3 className="heading-md mb-2">AI Implementation</h3>
+              <p className="text-[var(--foreground-muted)]">
+                We map, build, and deploy AI systems inside your business operations.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="icon-box-lg mx-auto mb-4">
+                <Users className="w-7 h-7" />
+              </div>
+              <h3 className="heading-md mb-2">AI Training</h3>
+              <p className="text-[var(--foreground-muted)]">
+                We upskill your team so AI becomes a competitive advantage, not a liability.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="icon-box-lg mx-auto mb-4">
+                <Lightbulb className="w-7 h-7" />
+              </div>
+              <h3 className="heading-md mb-2">Strategy and Advisory</h3>
+              <p className="text-[var(--foreground-muted)]">
+                We help leadership make smart AI decisions before the wrong vendors do.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/services" className="btn-secondary btn-lg">
+              <span>See All Services</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA Banner — Compact */}
+      {/* Studio Credibility */}
+      <section className="section section-dark">
+        <div className="container mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="heading-lg text-[var(--foreground-dark)] mb-3">Why Kerzie AI</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="bg-[var(--background-dark-card)] p-6 rounded-xl border border-[var(--border-dark)]">
+              <h3 className="heading-md text-[var(--foreground-dark)] mb-3">
+                We Build, Not Just Consult
+              </h3>
+              <p className="text-[var(--foreground-dark-muted)]">
+                We have skin in the game. Every tool we recommend, we have built with or deployed ourselves.
+              </p>
+            </div>
+            <div className="bg-[var(--background-dark-card)] p-6 rounded-xl border border-[var(--border-dark)]">
+              <h3 className="heading-md text-[var(--foreground-dark)] mb-3">
+                AI-Native From Day One
+              </h3>
+              <p className="text-[var(--foreground-dark-muted)]">
+                Not retrofitting AI into old processes. We architect for AI from the ground up.
+              </p>
+            </div>
+            <div className="bg-[var(--background-dark-card)] p-6 rounded-xl border border-[var(--border-dark)]">
+              <h3 className="heading-md text-[var(--foreground-dark)] mb-3">
+                Operator-First Mindset
+              </h3>
+              <p className="text-[var(--foreground-dark-muted)]">
+                Our founder has 30+ years in enterprise sales and operations. We speak business, not just tech.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
       <section className="section-compact section-blush">
         <div className="container mx-auto text-center">
-          <h2 className="heading-lg mb-3 text-[var(--foreground)]">
-            Ready to Put AI to Work in&nbsp;Your&nbsp;Business?
-          </h2>
-          <p className="subheading mb-6 max-w-2xl mx-auto" style={{ color: "var(--foreground)", opacity: 0.8 }}>
-            Schedule a discovery call and see what production AI looks like
-            for your operation.
-          </p>
+          <h2 className="heading-lg mb-6">Ready to put AI to work?</h2>
           <Link href="/schedule" className="btn-primary btn-lg">
             <span>
               Book a Call
