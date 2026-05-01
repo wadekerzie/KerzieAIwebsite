@@ -251,13 +251,13 @@ html {
 }
 
 .section-hero {
-  padding: 4rem 0 3rem;
+  padding: 2.5rem 0 2rem;
   position: relative;
 }
 
 @media (min-width: 1024px) {
   .section-hero {
-    padding: 5rem 0 4rem;
+    padding: 3rem 0 2.5rem;
   }
 }
 

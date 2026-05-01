@@ -56,8 +56,8 @@ export default function Home() {
               AI-Powered Everything.
             </h1>
             <p className="text-xl text-[var(--foreground-muted)] mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
-              Kerzie AI is a venture studio. We build AI-native companies, license AI products to
-              small businesses, and partner with operators to implement AI across their entire business.
+              We build AI-native companies, license AI products to small businesses, and partner
+              with operators to implement AI end-to-end.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
