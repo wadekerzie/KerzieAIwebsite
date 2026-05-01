@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "GotaGuy | Kerzie AI Ventures",
   description:
-    "GotaGuy is an SMS-first home repair service, live in McKinney, TX. National rollout coming.",
+    "GotaGuy is an SMS-first home repair service, live in McKinney, TX and Aurora, CO. National rollout coming.",
 };
 
 export default function GotaGuyPage() {
@@ -17,12 +17,12 @@ export default function GotaGuyPage() {
           <div className="max-w-3xl mx-auto text-center">
             <span className="badge mb-6 inline-flex">
               <span className="bg-[var(--background-accent)] text-[var(--accent-blue)] text-xs font-medium px-2 py-1 rounded-full">
-                Live in McKinney, TX
+                Live in McKinney, TX and Aurora, CO
               </span>
             </span>
             <h1 className="heading-xl mb-4 animate-fade-in-up">GotaGuy</h1>
             <p className="text-xl text-[var(--foreground-muted)] mb-4 max-w-2xl mx-auto animate-fade-in-up delay-100">
-              SMS-first home repair, live in McKinney, TX.
+              SMS-first home repair, live in McKinney, TX and Aurora, CO.
             </p>
             <p className="text-lg text-[var(--foreground-muted)] mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200">
               Homeowners text to get connected with a trusted technician. Simple, fast, local.
