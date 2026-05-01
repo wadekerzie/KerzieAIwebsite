@@ -74,8 +74,7 @@ export default function Home() {
 
             {/* Trust Strip */}
             <p className="mt-10 text-sm text-[var(--foreground-muted)] animate-fade-in delay-300">
-              Zapier Silver Solution Partner&nbsp;&nbsp;|&nbsp;&nbsp;Apps in the Apple App
-              Store&nbsp;&nbsp;|&nbsp;&nbsp;Live AI Deployments in Production&nbsp;&nbsp;|&nbsp;&nbsp;McKinney, TX
+              Zapier Silver Solution Partner&nbsp;&nbsp;|&nbsp;&nbsp;Apps in the Apple App Store&nbsp;&nbsp;|&nbsp;&nbsp;Live AI Deployments in Production
             </p>
           </div>
         </div>
