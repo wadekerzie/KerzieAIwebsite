@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "What We Built", href: "#what-we-built", anchor: true },
   { label: "Our Work", href: "/ventures", anchor: false },
   { label: "Work With Us", href: "https://kerzie.ai/schedule", anchor: false },
 ];
@@ -79,13 +78,6 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-[#2D3154] w-full px-6 pt-4 pb-10">
           <nav className="flex flex-col gap-7">
-            <a
-              href="#what-we-built"
-              onClick={() => setMobileOpen(false)}
-              className="text-[#AABBCC] text-lg font-medium no-underline hover:text-white transition-colors duration-200"
-            >
-              What We Built
-            </a>
             <Link
               href="/ventures"
               onClick={() => setMobileOpen(false)}
