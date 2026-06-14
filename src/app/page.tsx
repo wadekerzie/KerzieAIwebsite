@@ -1,220 +1,162 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, Cpu, Users, Lightbulb } from "lucide-react";
 
-export const metadata = {
-  title: "Kerzie AI | AI-Powered Everything",
-  description:
-    "Kerzie AI is a venture studio. We build AI-native companies, license AI products to small businesses, and partner with operators to implement AI across their entire business.",
-};
-
-const ventures = [
+const products = [
+  {
+    name: "GotaGuy",
+    hook: "Your faucet has been dripping for three days.",
+    body: "You Googled plumbers. First one: voicemail. Second one: booked until next Thursday. Third gave you a number over the phone that felt made up. You said you'd call back. You haven't. The faucet is still dripping.",
+    href: "/ventures/gotaguy",
+  },
   {
     name: "Unison",
-    description: "AI-powered inbound communications for small business.",
-    status: "Live",
+    hook: "Someone calls your law firm at 7:05pm.",
+    body: "They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.",
     href: "/ventures/unison",
-    comingSoon: false,
   },
   {
     name: "Zorli",
-    description: "AI-powered consumer app, now on the Apple App Store.",
-    status: "Live",
+    hook: "Your teenager calls while you're watching a movie.",
+    body: "They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.",
     href: "/ventures/zorli",
-    comingSoon: false,
   },
   {
-    name: "GotaGuy",
-    description: "SMS-first home repair, live and expanding nationally.",
-    status: "Live",
-    href: "/ventures/gotaguy",
-    comingSoon: false,
-  },
-  {
-    name: "NemoClaw / OpenClaw",
-    description: "AI command center installation and strategy.",
-    status: "Live",
-    href: "/services/nemoclaw",
-    comingSoon: false,
-  },
-  {
-    name: "AI Operating System",
-    description: "Small business AI operating system.",
-    status: "Coming Soon",
-    href: "/ventures/ai-os",
-    comingSoon: true,
+    name: "Ad2Action",
+    hook: "You paid for the ad.",
+    body: "Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.",
+    href: "/ventures/ad2action",
   },
 ];
 
 export default function Home() {
+  const blockRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const bridgeRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (bridgeRef.current) observer.observe(bridgeRef.current);
+    blockRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <>
-      {/* Hero */}
-      <section className="section-hero section-cream">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="heading-display mb-4 animate-fade-in-up">
-              AI-Powered Everything.
-            </h1>
-            <p className="text-xl text-[var(--foreground-muted)] mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
-              Kerzie AI is an AI Studio. We build AI-native companies, license AI products to
-              small businesses, and implement AI end-to-end.
-            </p>
+    <div className="bg-[#1A1B2E] min-h-screen">
+      <style>{`
+        .scroll-reveal {
+          opacity: 0;
+          transform: translateY(32px);
+          transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .scroll-reveal.revealed {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      `}</style>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
-              <Link href="/ventures" className="btn-primary btn-lg">
-                <span>
-                  See Our Ventures
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </span>
-              </Link>
-              <Link href="/partner" className="btn-secondary btn-lg">
-                <span>Partner With Us</span>
-              </Link>
-            </div>
+      {/* Act One: The Belief */}
+      <section className="px-6 pt-10 lg:pt-16 pb-8 max-w-3xl mx-auto">
+        <h1 className="text-white text-[40px] lg:text-[64px] leading-none font-black tracking-tight mb-4">
+          The world is best when technology just works.
+        </h1>
+        <p className="text-[#6B9FD4] text-2xl font-semibold leading-snug mb-3">
+          The best tech should feel the easiest.
+        </p>
+        <p className="text-[#AABBCC] text-lg sm:text-xl leading-relaxed max-w-2xl">
+          We build products that fix things people stopped expecting to get fixed.
+          No courses. No explanations. No consulting decks.
+          We ship and it works.
+        </p>
+      </section>
 
-            {/* Trust Strip */}
-            <p className="mt-10 text-sm text-[var(--foreground-muted)] animate-fade-in delay-300">
-              Zapier Silver Solution Partner&nbsp;&nbsp;|&nbsp;&nbsp;Apps in the Apple App Store&nbsp;&nbsp;|&nbsp;&nbsp;Live AI Deployments in Production
-            </p>
-          </div>
+      {/* Bridge: why the products are possible */}
+      <section className="px-6 pt-8 pb-6 max-w-3xl mx-auto text-center">
+        <div ref={bridgeRef} className="scroll-reveal">
+          <p className="text-[#AABBCC] text-sm font-medium tracking-widest uppercase mb-3">
+            Built on the world&apos;s most advanced AI
+          </p>
+          <p className="text-white text-2xl font-medium leading-relaxed">
+            Anthropic, OpenAI, Google, and DeepSeek spent billions building the most powerful reasoning engines in history. We use them to fix a leaky faucet, answer your phone at 7pm, and find your Netflix password.
+          </p>
         </div>
       </section>
 
-      {/* Ventures Grid */}
-      <section className="section section-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="heading-lg mb-3">What We&apos;re Building</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {ventures.map((v) => (
+      {/* Coral divider */}
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="w-12 h-0.5 bg-[#E8896A]" />
+      </div>
+
+      {/* Act Two: The Problems */}
+      <section id="what-we-built" className="bg-[#1E2035] w-full">
+        <div className="px-6 pt-12 pb-20 max-w-3xl mx-auto">
+          <p className="text-[#6B9FD4] text-xs font-semibold tracking-[0.2em] uppercase mb-14">
+            What we fixed
+          </p>
+          <div className="space-y-8">
+            {products.map((product, i) => (
               <div
-                key={v.name}
-                className={`card flex flex-col justify-between ${
-                  v.comingSoon
-                    ? "opacity-70 border-dashed border-2 border-[var(--border)]"
-                    : "card-hover"
-                }`}
+                key={product.name}
+                ref={(el) => { blockRefs.current[i] = el; }}
+                className="border-l-2 border-[#E8896A] pl-6 scroll-reveal"
+                style={{ transitionDelay: `${i * 150}ms` }}
               >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="heading-md">{v.name}</h3>
-                    <span
-                      className={`badge text-xs px-2 py-1 rounded-full font-medium ${
-                        v.comingSoon
-                          ? "bg-[var(--background-secondary)] text-[var(--foreground-muted)]"
-                          : "bg-[var(--background-accent)] text-[var(--accent-blue)]"
-                      }`}
-                    >
-                      {v.status}
-                    </span>
-                  </div>
-                  <p className="text-[var(--foreground-muted)]">{v.description}</p>
-                </div>
-                <div className="mt-5">
-                  <Link
-                    href={v.href}
-                    className="text-[var(--accent-blue)] text-sm font-semibold hover:underline flex items-center gap-1"
-                  >
-                    Learn More <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
+                <p className="text-white text-[26px] font-semibold leading-snug mb-3">
+                  {product.hook}
+                </p>
+                <p className="text-[#AABBCC] text-base leading-relaxed mb-5">
+                  {product.body}
+                </p>
+                <Link
+                  href={product.href}
+                  className="text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-150"
+                >
+                  {product.name} &rarr;
+                </Link>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services Teaser */}
-      <section className="section section-cream">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="heading-lg mb-3">We Also Work With You</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="icon-box-lg mx-auto mb-4">
-                <Cpu className="w-7 h-7" />
-              </div>
-              <h3 className="heading-md mb-2">AI Implementation</h3>
-              <p className="text-[var(--foreground-muted)]">
-                We map, build, and deploy AI systems inside your business operations.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="icon-box-lg mx-auto mb-4">
-                <Users className="w-7 h-7" />
-              </div>
-              <h3 className="heading-md mb-2">AI Training</h3>
-              <p className="text-[var(--foreground-muted)]">
-                We upskill your team so AI becomes a competitive advantage, not a liability.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="icon-box-lg mx-auto mb-4">
-                <Lightbulb className="w-7 h-7" />
-              </div>
-              <h3 className="heading-md mb-2">Strategy and Advisory</h3>
-              <p className="text-[var(--foreground-muted)]">
-                We help leadership make smart AI decisions before the wrong vendors do.
-              </p>
-            </div>
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/services" className="btn-secondary btn-lg">
-              <span>See All Services</span>
-            </Link>
-          </div>
-        </div>
+      {/* Act Three: The Question */}
+      <section id="whats-broken" className="w-full px-8 sm:px-16 lg:px-24 pt-12 pb-36">
+        <div className="w-12 h-0.5 bg-[#E8896A] my-6" />
+        <h2 className="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4">
+          What problem hurts the most?
+        </h2>
+        <p className="text-[#AABBCC] text-base mb-10">
+          Don't worry about the solution. Just tell us the problem. The longer the better.
+        </p>
+        <form onSubmit={(e) => e.preventDefault()} className="max-w-2xl">
+          <textarea
+            name="problem"
+            rows={7}
+            placeholder="Describe the problem..."
+            className="w-full bg-transparent border border-[#AABBCC]/20 text-[#AABBCC] placeholder:text-[#AABBCC]/30 px-4 py-3 text-base focus:outline-none focus:border-[#6B9FD4] resize-none transition-colors duration-150"
+          />
+          <button
+            type="submit"
+            className="mt-4 px-8 py-3 bg-[#6B9FD4] text-[#1A1B2E] font-semibold text-sm tracking-wide hover:bg-white transition-colors duration-150"
+          >
+            Send it
+          </button>
+        </form>
       </section>
 
-      {/* Studio Credibility */}
-      <section className="section section-dark">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="heading-lg text-[var(--foreground-dark)] mb-3">Why Kerzie AI</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-[var(--background-dark-card)] p-6 rounded-xl border border-[var(--border-dark)]">
-              <h3 className="heading-md text-[var(--foreground-dark)] mb-3">
-                We Build, Not Just Consult
-              </h3>
-              <p className="text-[var(--foreground-dark-muted)]">
-                We have skin in the game. Every tool we recommend, we have built with or deployed ourselves.
-              </p>
-            </div>
-            <div className="bg-[var(--background-dark-card)] p-6 rounded-xl border border-[var(--border-dark)]">
-              <h3 className="heading-md text-[var(--foreground-dark)] mb-3">
-                AI-Native From Day One
-              </h3>
-              <p className="text-[var(--foreground-dark-muted)]">
-                Not retrofitting AI into old processes. We architect for AI from the ground up.
-              </p>
-            </div>
-            <div className="bg-[var(--background-dark-card)] p-6 rounded-xl border border-[var(--border-dark)]">
-              <h3 className="heading-md text-[var(--foreground-dark)] mb-3">
-                Operator-First Mindset
-              </h3>
-              <p className="text-[var(--foreground-dark-muted)]">
-                Our founder has 30+ years in enterprise sales and operations. We speak business, not just tech.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="section-compact section-blush">
-        <div className="container mx-auto text-center">
-          <h2 className="heading-lg mb-6">Ready to put AI to work?</h2>
-          <Link href="/schedule" className="btn-primary btn-lg">
-            <span>
-              Book a Call
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </span>
-          </Link>
-        </div>
-      </section>
-    </>
+    </div>
   );
 }
