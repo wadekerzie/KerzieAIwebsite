@@ -1,64 +1,164 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, ExternalLink } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "GotaGuy | Kerzie AI Ventures",
-  description:
-    "GotaGuy is an SMS-first home repair service, live in McKinney, TX and Aurora, CO. National rollout coming.",
-};
+export default function GotaGuy() {
+  const revealRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-export default function GotaGuyPage() {
-  /* <!-- STUB: expand with final copy --> */
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("revealed");
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    revealRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <>
-      <section className="section-hero section-cream">
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="badge mb-6 inline-flex">
-              <span className="bg-[var(--background-accent)] text-[var(--accent-blue)] text-xs font-medium px-2 py-1 rounded-full">
-                Live in McKinney, TX and Aurora, CO
-              </span>
-            </span>
-            <h1 className="heading-xl mb-4 animate-fade-in-up">GotaGuy</h1>
-            <p className="text-xl text-[var(--foreground-muted)] mb-4 max-w-2xl mx-auto animate-fade-in-up delay-100">
-              SMS-first home repair, live in McKinney, TX and Aurora, CO.
-            </p>
-            <p className="text-lg text-[var(--foreground-muted)] mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200">
-              Homeowners text to get connected with a trusted technician. Simple, fast, local.
-              National rollout coming soon.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
-              <a
-                href="https://gotaguy.chat"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary btn-lg"
-              >
-                <span>
-                  Visit GotaGuy
-                  <ExternalLink className="w-5 h-5 ml-2" />
-                </span>
-              </a>
-              <Link href="/schedule" className="btn-secondary btn-lg">
-                <span>Book a Call</span>
-              </Link>
-            </div>
+    <div className="bg-[#1A1B2E] min-h-screen">
+      <style>{`
+        .scroll-reveal {
+          opacity: 0;
+          transform: translateY(32px);
+          transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .scroll-reveal.revealed {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      `}</style>
+
+      {/* Back link */}
+      <div className="max-w-3xl mx-auto px-6 pt-8">
+        <Link
+          href="/"
+          className="text-[#AABBCC] text-sm hover:text-white transition-colors duration-150"
+        >
+          &larr; Back to kerzie.ai
+        </Link>
+      </div>
+
+      {/* Section 1: The Problem */}
+      <section className="px-6 pt-16 pb-12 max-w-3xl mx-auto">
+        <h1 className="text-white text-[40px] font-black leading-none tracking-tight mb-6">
+          Finding a contractor is a part-time job.
+        </h1>
+        <p className="text-[#AABBCC] text-base leading-relaxed">
+          You post on Nextdoor. You call three numbers. One voicemail. One quote that feels made up. One guy who never shows. The repair takes an hour. Finding someone takes a week.
+        </p>
+      </section>
+
+      {/* Coral divider */}
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="w-12 h-0.5 bg-[#E8896A]" />
+      </div>
+
+      {/* Section 2: Why it exists */}
+      <section className="px-6 pt-12 pb-12 max-w-3xl mx-auto">
+        <div
+          ref={(el) => { revealRefs.current[0] = el; }}
+          className="border-l-2 border-[#E8896A] pl-6 scroll-reveal"
+          style={{ transitionDelay: "0ms" }}
+        >
+          <p className="text-white text-[26px] font-semibold leading-snug mb-3">
+            The existing platforms make money whether your job gets done or not.
+          </p>
+          <p className="text-[#AABBCC] text-base leading-relaxed">
+            Angi, Thumbtack, HomeAdvisor charge contractors for leads. Whether the job gets done or not. They built a bidding war because bidding wars generate revenue. The homeowner experience being slow and frustrating is not a bug. It is the business model.
+          </p>
+        </div>
+      </section>
+
+      {/* Coral divider */}
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="w-12 h-0.5 bg-[#E8896A]" />
+      </div>
+
+      {/* Section 3: What got built */}
+      <section className="px-6 pt-12 pb-12 max-w-3xl mx-auto">
+        <div
+          ref={(el) => { revealRefs.current[1] = el; }}
+          className="border-l-2 border-[#E8896A] pl-6 scroll-reveal"
+          style={{ transitionDelay: "150ms" }}
+        >
+          <p className="text-white text-[26px] font-semibold leading-snug mb-3">
+            So we built GotaGuy.
+          </p>
+          <p className="text-[#AABBCC] text-base leading-relaxed">
+            You text. We scope it. A contractor shows up. You pay when it is done. No app. No account. No forms. No bidding. The whole thing happens in your text messages.
+          </p>
+        </div>
+      </section>
+
+      {/* Coral divider */}
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="w-12 h-0.5 bg-[#E8896A]" />
+      </div>
+
+      {/* Section 4: How it works */}
+      <section className="px-6 pt-12 pb-12 max-w-3xl mx-auto">
+        <div
+          ref={(el) => { revealRefs.current[2] = el; }}
+          className="scroll-reveal"
+          style={{ transitionDelay: "300ms" }}
+        >
+          <p className="text-[#6B9FD4] text-sm font-medium tracking-widest uppercase mb-8">
+            How it works
+          </p>
+          <div className="border-l-2 border-[#E8896A] pl-6 flex flex-col gap-4">
+            {[
+              "Quote in 90 seconds.",
+              "Confirm.",
+              "Schedule on your timeframe.",
+              "Contractor shows up when you said.",
+              "Work gets done. Pay on your phone.",
+            ].map((step) => (
+              <p key={step} className="text-white text-lg font-medium">
+                {step}
+              </p>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="section-compact section-blush">
-        <div className="container mx-auto text-center">
-          <h2 className="heading-lg mb-6">More from Kerzie AI</h2>
-          <Link href="/ventures" className="btn-secondary btn-lg">
-            <span>
-              See All Ventures
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </span>
-          </Link>
+      {/* Coral divider */}
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="w-12 h-0.5 bg-[#E8896A]" />
+      </div>
+
+      {/* Section 5: CTA */}
+      <section className="px-6 pt-12 pb-24 max-w-3xl mx-auto text-center">
+        <div
+          ref={(el) => { revealRefs.current[3] = el; }}
+          className="scroll-reveal"
+          style={{ transitionDelay: "450ms" }}
+        >
+          <h2 className="text-white text-2xl font-bold mb-3">
+            See GotaGuy in action.
+          </h2>
+          <p className="text-[#AABBCC] mb-8">
+            Live in McKinney/Dallas TX and Aurora/Denver CO. More markets coming.
+          </p>
+          <a
+            href="https://gotaguy.chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-[#6B9FD4] text-[#6B9FD4] px-8 py-3 text-sm font-semibold hover:bg-[#6B9FD4] hover:text-[#1A1B2E] transition-colors duration-200"
+          >
+            Visit GotaGuy
+          </a>
         </div>
       </section>
-    </>
+
+    </div>
   );
 }
