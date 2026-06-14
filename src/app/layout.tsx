@@ -15,17 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kerzie AI | Applied AI Implementation & Systems Architecture",
+  title: "Kerzie AI",
   description:
-    "Applied AI implementation company based in McKinney, TX. Production AI deployments, NemoClaw Command Center installs, AI-powered communications, and custom app development for small-to-mid-size businesses.",
+    "We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
   },
 };
 
