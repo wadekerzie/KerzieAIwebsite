@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* Act Three: The Question */}
-      <section id="whats-broken" className="w-full px-8 sm:px-16 lg:px-24 pt-12 pb-36">
+      <section id="whats-broken" className="w-full px-8 sm:px-16 lg:px-24 pt-12 pb-12">
         <div className="w-12 h-0.5 bg-[#E8896A] my-6" />
         <h2 className="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4">
           What problem hurts the most?
