@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const products = [
@@ -33,6 +33,26 @@ const products = [
 export default function Home() {
   const blockRefs = useRef<(HTMLDivElement | null)[]>([]);
   const bridgeRef = useRef<HTMLDivElement | null>(null);
+  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const problem = (form.elements.namedItem("problem") as HTMLTextAreaElement).value.trim();
+    if (!problem) return;
+    setSending(true);
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ problem }),
+      });
+      setSubmitted(true);
+    } finally {
+      setSending(false);
+    }
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -141,20 +161,27 @@ export default function Home() {
         <p className="text-[#AABBCC] text-base mb-10">
           Don't worry about the solution. Just tell us the problem. The longer the better.
         </p>
-        <form onSubmit={(e) => e.preventDefault()} className="max-w-2xl">
-          <textarea
-            name="problem"
-            rows={7}
-            placeholder="Describe the problem..."
-            className="w-full bg-transparent border border-[#AABBCC]/20 text-[#AABBCC] placeholder:text-[#AABBCC]/30 px-4 py-3 text-base focus:outline-none focus:border-[#6B9FD4] resize-none transition-colors duration-150"
-          />
-          <button
-            type="submit"
-            className="mt-4 px-8 py-3 bg-[#6B9FD4] text-[#1A1B2E] font-semibold text-sm tracking-wide hover:bg-white transition-colors duration-150"
-          >
-            Send it
-          </button>
-        </form>
+        {submitted ? (
+          <p className="text-[#6B9FD4] text-base max-w-2xl">
+            Got it. We&apos;ll be in touch.
+          </p>
+        ) : (
+          <form onSubmit={handleSubmit} className="max-w-2xl">
+            <textarea
+              name="problem"
+              rows={7}
+              placeholder="Describe the problem..."
+              className="w-full bg-transparent border border-[#AABBCC]/20 text-[#AABBCC] placeholder:text-[#AABBCC]/30 px-4 py-3 text-base focus:outline-none focus:border-[#6B9FD4] resize-none transition-colors duration-150"
+            />
+            <button
+              type="submit"
+              disabled={sending}
+              className="mt-4 px-8 py-3 bg-[#6B9FD4] text-[#1A1B2E] font-semibold text-sm tracking-wide hover:bg-white transition-colors duration-150 disabled:opacity-50"
+            >
+              {sending ? "Sending..." : "Send it"}
+            </button>
+          </form>
+        )}
       </section>
 
     </div>
