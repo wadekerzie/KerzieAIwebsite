@@ -173,6 +173,9 @@ export default function Home() {
               placeholder="Describe the problem..."
               className="w-full bg-transparent border border-[#AABBCC]/20 text-[#AABBCC] placeholder:text-[#AABBCC]/30 px-4 py-3 text-base focus:outline-none focus:border-[#6B9FD4] resize-none transition-colors duration-150"
             />
+            <p className="mt-3 text-[#AABBCC] text-sm italic">
+              If you want us to respond, tell us how to reach you.
+            </p>
             <button
               type="submit"
               disabled={sending}
