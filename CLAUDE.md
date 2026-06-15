@@ -71,7 +71,8 @@ understand what we fixed and why it needed fixing.
 
 ### Homepage - Three acts
 1. The belief. Why we exist. MTP front and center.
-   "The world is best when technology just works."
+   "Life is best when technology just works."
+   Subheadline: "The world's best tech feels the easiest."
    Under 30 seconds to understand who this is and why they built things.
 2. The problems. Not product names. Not feature lists.
    Plain human language problem statements with coral left border accent.

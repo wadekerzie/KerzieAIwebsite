@@ -91,10 +91,10 @@ export default function Home() {
       {/* Act One: The Belief */}
       <section className="px-6 pt-10 lg:pt-16 pb-8 max-w-3xl mx-auto">
         <h1 className="text-white text-[40px] lg:text-[64px] leading-none font-black tracking-tight mb-4">
-          The world is best when technology just works.
+          Life is best when technology just works.
         </h1>
         <p className="text-[#6B9FD4] text-2xl font-semibold leading-snug mb-3">
-          The best tech should feel the easiest.
+          The world&apos;s best tech feels the easiest.
         </p>
         <p className="text-[#AABBCC] text-lg sm:text-xl leading-relaxed max-w-2xl">
           We build products that fix things people stopped expecting to get fixed.

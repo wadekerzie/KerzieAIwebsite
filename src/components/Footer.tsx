@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="py-12 max-w-3xl mx-auto px-6 flex flex-col gap-6">
 
         <p className="text-[#AABBCC] text-sm italic text-center">
-          The world is best when technology just works.
+          Life is best when technology just works.
         </p>
 
         <div className="h-px bg-[#2D3154] w-full" />
