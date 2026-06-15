@@ -148,7 +148,7 @@ export default function Zorli() {
             Zorli is on the App Store. Free to try.
           </p>
           <a
-            href="https://apps.apple.com/us/app/zorli/id6743108257"
+            href="https://apps.apple.com/us/app/zorli-ai-vault/id6757083833"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-[#6B9FD4] text-[#6B9FD4] px-8 py-3 text-sm font-semibold hover:bg-[#6B9FD4] hover:text-[#1A1B2E] transition-colors duration-200"
