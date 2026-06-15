@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Our Work", href: "/ventures", anchor: false },
+  { label: "The People", href: "/team", anchor: false },
   { label: "Work With Us", href: "https://kerzie.ai/schedule", anchor: false },
 ];
 
@@ -84,6 +85,13 @@ export default function Header() {
               className="text-[#AABBCC] text-lg font-medium no-underline hover:text-white transition-colors duration-200"
             >
               Our Work
+            </Link>
+            <Link
+              href="/team"
+              onClick={() => setMobileOpen(false)}
+              className="text-[#AABBCC] text-lg font-medium no-underline hover:text-white transition-colors duration-200"
+            >
+              The People
             </Link>
             <a
               href="https://kerzie.ai/schedule"
