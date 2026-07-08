@@ -138,10 +138,6 @@ export default function Home() {
                         loading="lazy"
                         className="k-photo aspect-[4/3]"
                       />
-                      <figcaption className="k-figcap text-left">
-                        <span className="idx">{`FIG 0${i + 1} `}</span>
-                        {`/ ${product.clock}`}
-                      </figcaption>
                     </figure>
                   </div>
                   <div className="lg:col-span-9 border-l-2 border-[#E8896A] pl-6 lg:pl-8">

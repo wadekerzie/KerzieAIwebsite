@@ -54,10 +54,6 @@ export default function ProductStory(props: ProductStoryProps) {
               alt={props.imageAlt ?? ""}
               className="k-photo aspect-[21/9]"
             />
-            <figcaption className="k-figcap">
-              <span className="idx">{"FIG 01 "}</span>
-              {`/ ${props.clock}`}
-            </figcaption>
           </figure>
         )}
       </section>

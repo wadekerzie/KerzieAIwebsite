@@ -30,12 +30,14 @@ export default function Header() {
       <div className="px-6 lg:px-12">
         <div className="flex items-center justify-between h-14 lg:h-16">
 
-          {/* Wordmark: the domain is the brand, coral is the punctuation */}
-          <Link
-            href="/"
-            className="k-mono text-white text-[15px] font-medium tracking-tight k-focus"
-          >
-            kerzie<span className="text-[#E8896A]">.</span>ai
+          {/* Logo + wordmark */}
+          <Link href="/" className="flex items-center flex-shrink-0 k-focus">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/6948b098aca6ab2c5901f57a.png"
+              alt="Kerzie AI Logo"
+              className="h-8 md:h-10"
+            />
           </Link>
 
           {/* Desktop nav */}

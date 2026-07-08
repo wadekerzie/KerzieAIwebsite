@@ -695,20 +695,6 @@ a:focus-visible .k-arrow {
   filter: saturate(0.85);
 }
 
-.k-figcap {
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.625rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(170, 187, 204, 0.45);
-  margin-top: 0.625rem;
-}
-
-.k-figcap .idx {
-  color: var(--k-coral);
-  margin-right: 0.75em;
-}
-
 /* --- Focus visibility --- */
 .k-focus:focus-visible {
   outline: 2px solid var(--k-accent);
