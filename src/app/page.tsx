@@ -1,29 +1,38 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
+import ProblemForm from "@/components/ProblemForm";
+
+export const metadata = {
+  title: "Kerzie AI",
+  description:
+    "Life is best when technology just works. We build products that fix things people stopped expecting to get fixed.",
+};
 
 const products = [
   {
     name: "GotaGuy",
+    clock: "DAY 3",
     hook: "Your faucet has been dripping for three days.",
     body: "You Googled plumbers. First one: voicemail. Second one: booked until next Thursday. Third gave you a number over the phone that felt made up. You said you'd call back. You haven't. The faucet is still dripping.",
     href: "/ventures/gotaguy",
   },
   {
     name: "Unison",
+    clock: "7:05 PM",
     hook: "Someone calls your law firm at 7:05pm.",
     body: "They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.",
     href: "/ventures/unison",
   },
   {
     name: "Zorli",
+    clock: "8 MIN",
     hook: "Your teenager calls while you're watching a movie.",
     body: "They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.",
     href: "/ventures/zorli",
   },
   {
     name: "Ad2Action",
+    clock: "+14 HRS",
     hook: "You paid for the ad.",
     body: "Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.",
     href: "/ventures/ad2action",
@@ -31,160 +40,131 @@ const products = [
 ];
 
 export default function Home() {
-  const blockRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const bridgeRef = useRef<HTMLDivElement | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [sending, setSending] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const problem = (form.elements.namedItem("problem") as HTMLTextAreaElement).value.trim();
-    if (!problem) return;
-    setSending(true);
-    try {
-      await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ problem }),
-      });
-      setSubmitted(true);
-    } finally {
-      setSending(false);
-    }
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (bridgeRef.current) observer.observe(bridgeRef.current);
-    blockRefs.current.forEach((el) => {
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
-      <style>{`
-        .scroll-reveal {
-          opacity: 0;
-          transform: translateY(32px);
-          transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        }
-        .scroll-reveal.revealed {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      `}</style>
+    <div className="bg-[#1A1B2E]">
 
-      {/* Act One: The Belief */}
-      <section className="px-6 pt-10 lg:pt-16 pb-8 max-w-3xl mx-auto">
-        <h1 className="text-white text-[40px] lg:text-[64px] leading-none font-black tracking-tight mb-4">
-          Life is best when technology just works.
+      {/* ============ ACT ONE: THE BELIEF ============ */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 min-h-[min(calc(100svh-4rem),50rem)] flex flex-col justify-center pt-16 pb-12">
+        <h1 className="k-rise k-rise-1 text-white font-bold tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.5vw,5.5rem)]">
+          Life is best when
+          <br />
+          technology{" "}
+          <span className="k-serif font-normal">just works</span>
+          <span className="text-[#E8896A]">.</span>
         </h1>
-        <p className="text-[#6B9FD4] text-2xl font-semibold leading-snug mb-3">
+
+        <p className="k-rise k-rise-2 mt-7 text-[#6B9FD4] text-[clamp(1.25rem,2.2vw,1.625rem)] font-medium">
           The world&apos;s best tech feels the easiest.
         </p>
-        <p className="text-[#AABBCC] text-lg sm:text-xl leading-relaxed max-w-2xl">
-          We build products that fix things people stopped expecting to get fixed.
-          No courses. No explanations. No consulting decks.
-          We ship and it works.
-        </p>
-      </section>
 
-      {/* Bridge: why the products are possible */}
-      <section className="px-6 pt-8 pb-6 max-w-3xl mx-auto text-center">
-        <div ref={bridgeRef} className="scroll-reveal">
-          <p className="text-[#AABBCC] text-sm font-medium tracking-widest uppercase mb-3">
-            Built on the world&apos;s most advanced AI
-          </p>
-          <p className="text-white text-2xl font-medium leading-relaxed">
-            Anthropic, OpenAI, Google, and DeepSeek spent billions building the most powerful reasoning engines in history. We use them to fix a leaky faucet, answer your phone at 7pm, and find your Netflix password.
-          </p>
+        <p className="k-rise k-rise-3 mt-8 text-[#AABBCC] text-lg leading-relaxed max-w-xl">
+          We build products that fix things people stopped expecting to get
+          fixed. No courses. No explanations. No consulting decks. We ship and
+          it works.
+        </p>
+
+        {/* The index: what's on the bench */}
+        <div className="k-rise k-rise-4 mt-20 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs tracking-[0.15em] text-[#AABBCC]/50">
+          {products.map((p, i) => (
+            <span key={p.name} className="flex items-baseline gap-x-3">
+              <Link
+                href={p.href}
+                className="hover:text-white transition-colors duration-200 k-focus"
+              >
+                {p.name.toUpperCase()}
+              </Link>
+              {i < products.length - 1 && (
+                <span className="text-[#E8896A]/60">/</span>
+              )}
+            </span>
+          ))}
         </div>
       </section>
 
-      {/* Coral divider */}
-      <div className="max-w-3xl mx-auto px-6">
-        <div className="w-12 h-0.5 bg-[#E8896A]" />
-      </div>
+      {/* ============ THE ENGINES ============ */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 lg:pt-10 pb-24 lg:pb-32">
+        <Reveal>
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div className="lg:col-span-3 mb-8 lg:mb-0">
+              <p className="k-label">
+                <span className="idx">01</span>The Engines
+              </p>
+            </div>
+            <div className="lg:col-span-9">
+              <p className="text-white text-[clamp(1.375rem,2.6vw,1.875rem)] font-medium leading-snug max-w-3xl">
+                Anthropic, OpenAI, Google, and DeepSeek spent billions building
+                the most powerful reasoning engines in history. We use them to{" "}
+                <span className="k-serif font-normal">
+                  fix a leaky faucet, answer your phone at 7pm, and find your
+                  Netflix password.
+                </span>
+              </p>
+            </div>
+          </div>
+        </Reveal>
+      </section>
 
-      {/* Act Two: The Problems */}
-      <section id="what-we-built" className="bg-[#1E2035] w-full">
-        <div className="px-6 pt-12 pb-20 max-w-3xl mx-auto">
-          <p className="text-[#6B9FD4] text-xs font-semibold tracking-[0.2em] uppercase mb-14">
-            What we fixed
-          </p>
-          <div className="space-y-8">
+      {/* ============ ACT TWO: THE PROBLEMS ============ */}
+      <section id="what-we-built" className="bg-[#1E2035]">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+          <Reveal>
+            <p className="k-label mb-16 lg:mb-20">
+              <span className="idx">02</span>What We Fixed
+            </p>
+          </Reveal>
+
+          <div className="space-y-16 lg:space-y-24">
             {products.map((product, i) => (
-              <div
-                key={product.name}
-                ref={(el) => { blockRefs.current[i] = el; }}
-                className="border-l-2 border-[#E8896A] pl-6 scroll-reveal"
-                style={{ transitionDelay: `${i * 150}ms` }}
-              >
-                <p className="text-white text-[26px] font-semibold leading-snug mb-3">
-                  {product.hook}
-                </p>
-                <p className="text-[#AABBCC] text-base leading-relaxed mb-5">
-                  {product.body}
-                </p>
-                <Link
-                  href={product.href}
-                  className="text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-150"
-                >
-                  {product.name} &rarr;
-                </Link>
-              </div>
+              <Reveal key={product.name} delay={i % 2 === 0 ? 0 : 100}>
+                <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+                  {/* Time is the villain */}
+                  <div className="lg:col-span-3 mb-4 lg:mb-0 lg:text-right">
+                    <p className="k-mono text-[clamp(1.5rem,2.8vw,2.25rem)] text-[#AABBCC]/40 leading-none tracking-tight">
+                      {product.clock}
+                    </p>
+                  </div>
+                  <div className="lg:col-span-9 border-l-2 border-[#E8896A] pl-6 lg:pl-8">
+                    <h3 className="text-white text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-4">
+                      {product.hook}
+                    </h3>
+                    <p className="text-[#AABBCC] text-base leading-relaxed max-w-2xl mb-6">
+                      {product.body}
+                    </p>
+                    <Link
+                      href={product.href}
+                      className="k-link text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-200"
+                    >
+                      {product.name} <span className="k-arrow">&rarr;</span>
+                    </Link>
+                  </div>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Act Three: The Question */}
-      <section id="whats-broken" className="w-full px-8 sm:px-16 lg:px-24 pt-12 pb-12">
-        <div className="w-12 h-0.5 bg-[#E8896A] my-6" />
-        <h2 className="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4">
-          What problem hurts the most?
-        </h2>
-        <p className="text-[#AABBCC] text-base mb-10">
-          Don't worry about the solution. Just tell us the problem. The longer the better.
-        </p>
-        {submitted ? (
-          <p className="text-[#6B9FD4] text-base max-w-2xl">
-            Got it. We&apos;ll be in touch.
-          </p>
-        ) : (
-          <form onSubmit={handleSubmit} className="max-w-2xl">
-            <textarea
-              name="problem"
-              rows={7}
-              placeholder="Describe the problem..."
-              className="w-full bg-transparent border border-[#AABBCC]/20 text-[#AABBCC] placeholder:text-[#AABBCC]/30 px-4 py-3 text-base focus:outline-none focus:border-[#6B9FD4] resize-none transition-colors duration-150"
-            />
-            <p className="mt-3 text-[#AABBCC] text-sm italic">
-              If you want us to respond, tell us how to reach you.
-            </p>
-            <button
-              type="submit"
-              disabled={sending}
-              className="mt-4 px-8 py-3 bg-[#6B9FD4] text-[#1A1B2E] font-semibold text-sm tracking-wide hover:bg-white transition-colors duration-150 disabled:opacity-50"
-            >
-              {sending ? "Sending..." : "Send it"}
-            </button>
-          </form>
-        )}
+      {/* ============ ACT THREE: THE QUESTION ============ */}
+      <section id="whats-broken" className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+        <Reveal>
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div className="lg:col-span-3 mb-8 lg:mb-0">
+              <p className="k-label">
+                <span className="idx">03</span>The Question
+              </p>
+            </div>
+            <div className="lg:col-span-9">
+              <h2 className="text-white text-[clamp(2rem,4.5vw,3.25rem)] font-bold tracking-[-0.02em] leading-[1.05] mb-5">
+                What problem hurts the most?
+              </h2>
+              <p className="text-[#AABBCC] text-base mb-10 max-w-xl">
+                Don&apos;t worry about the solution. Just tell us the problem.
+                The longer the better.
+              </p>
+              <ProblemForm />
+            </div>
+          </div>
+        </Reveal>
       </section>
 
     </div>

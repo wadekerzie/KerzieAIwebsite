@@ -23,27 +23,31 @@ export default function SchedulePage() {
     <div className="bg-[#1A1B2E] min-h-screen">
 
       {/* Back link */}
-      <div className="max-w-3xl mx-auto px-6 pt-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="text-[#AABBCC] text-sm hover:text-white transition-colors duration-150"
+          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
         >
-          &larr; Back to kerzie.ai
+          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
         </Link>
       </div>
 
       {/* Header */}
-      <section className="px-6 pt-12 pb-10 max-w-3xl mx-auto">
-        <h1 className="text-white text-[32px] font-black leading-tight tracking-tight mb-3">
-          Let&apos;s talk about what hurts.
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
+        <p className="k-rise k-rise-1 k-label mb-8">Work With Us</p>
+        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
+          Let&apos;s talk about{" "}
+          <span className="k-serif font-normal">what hurts</span>
+          <span className="text-[#E8896A]">.</span>
         </h1>
-        <p className="text-[#AABBCC] text-base">
-          Pick a time. Tell us the problem. We will come with ideas, not a pitch deck.
+        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl">
+          Pick a time. Tell us the problem. We will come with ideas, not a
+          pitch deck.
         </p>
       </section>
 
       {/* Calendar embed */}
-      <section className="px-6 pb-24 max-w-3xl mx-auto">
+      <section className="max-w-4xl mx-auto px-6 lg:px-12 pb-24">
         <iframe
           src="https://api.leadconnectorhq.com/widget/booking/WUgRL3oHU40oA05SIaVT"
           style={{
@@ -57,17 +61,29 @@ export default function SchedulePage() {
           title="Book Your Free Consultation"
         />
         {/* SMS Consent Disclosure */}
-        <div className="mt-6 text-sm text-[#AABBCC]/60">
+        <div className="mt-8 text-sm text-[#AABBCC]/50 leading-relaxed max-w-2xl">
           <p className="mb-2">
-            By providing your phone number, you consent to receive SMS messages from Kerzie Consulting LLC (DBA Kerzie AI)
-            regarding your scheduled appointment and work status updates. Message frequency: up to 5 messages/month.
-            Message and data rates may apply.
+            By providing your phone number, you consent to receive SMS messages
+            from Kerzie Consulting LLC (DBA Kerzie AI) regarding your scheduled
+            appointment and work status updates. Message frequency: up to 5
+            messages/month. Message and data rates may apply.
           </p>
           <p>
             Reply STOP to unsubscribe. Reply HELP for help. View our{" "}
-            <Link href="/privacy-policy" className="hover:text-[#AABBCC] transition-colors duration-150">Privacy Policy</Link>{" "}
+            <Link
+              href="/privacy-policy"
+              className="hover:text-[#AABBCC] transition-colors duration-150"
+            >
+              Privacy Policy
+            </Link>{" "}
             and{" "}
-            <Link href="/terms-of-service" className="hover:text-[#AABBCC] transition-colors duration-150">Terms of Service</Link>.
+            <Link
+              href="/terms-of-service"
+              className="hover:text-[#AABBCC] transition-colors duration-150"
+            >
+              Terms of Service
+            </Link>
+            .
           </p>
         </div>
       </section>

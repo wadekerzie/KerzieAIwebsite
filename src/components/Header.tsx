@@ -1,111 +1,109 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Our Work", href: "/ventures", anchor: false },
-  { label: "The People", href: "/team", anchor: false },
-  { label: "Work With Us", href: "https://kerzie.ai/schedule", anchor: false },
+  { label: "Our Work", href: "/ventures" },
+  { label: "The People", href: "/team" },
+  { label: "Work With Us", href: "/schedule" },
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setMobileOpen(false);
-  };
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#2D3154]">
-      <div className="px-6 lg:px-10">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 bg-[#1A1B2E] transition-shadow duration-300"
+      style={{
+        boxShadow: scrolled ? "0 1px 0 rgba(170,187,204,0.13)" : "none",
+      }}
+    >
+      <div className="px-6 lg:px-12">
         <div className="flex items-center justify-between h-14 lg:h-16">
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
-            <img
-              src="https://storage.googleapis.com/msgsndr/Dg5W9eZap2oolpBTgwTZ/media/6948b098aca6ab2c5901f57a.png"
-              alt="Kerzie AI Logo"
-              className="h-8 md:h-10"
-            />
+          {/* Wordmark: the domain is the brand, coral is the punctuation */}
+          <Link
+            href="/"
+            className="k-mono text-white text-[15px] font-medium tracking-tight k-focus"
+          >
+            kerzie<span className="text-[#E8896A]">.</span>ai
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) =>
-              link.anchor ? (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="text-[#AABBCC] text-sm font-medium no-underline hover:text-white transition-colors duration-200"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-[#AABBCC] text-sm font-medium no-underline hover:text-white transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+          {/* Desktop nav */}
+          <nav className="hidden lg:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="k-link text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Desktop CTA */}
-          <button
-            onClick={() => scrollTo("whats-broken")}
-            className="hidden lg:block border border-[#6B9FD4] text-[#6B9FD4] text-sm font-medium px-5 py-2 hover:bg-[#6B9FD4] hover:text-[#1A1B2E] transition-all duration-200 ease-in-out"
+          <Link
+            href="/#whats-broken"
+            className="hidden lg:inline-block k-btn-ghost !px-5 !py-2 k-focus"
           >
             Tell Us What Hurts
-          </button>
+          </Link>
 
-          {/* Mobile Hamburger */}
+          {/* Mobile toggle */}
           <button
-            className="lg:hidden p-2 text-[#6B9FD4]"
+            className="lg:hidden p-2 -mr-2 text-[#6B9FD4] k-focus"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileOpen ? (
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" strokeWidth="1.5" />
+              </svg>
+            ) : (
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                <path d="M2 6.5H20M2 15.5H20" stroke="currentColor" strokeWidth="1.5" />
+              </svg>
+            )}
           </button>
 
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#2D3154] w-full px-6 pt-4 pb-10">
-          <nav className="flex flex-col gap-7">
+        <div className="lg:hidden bg-[#1A1B2E] w-full px-6 pt-6 pb-12 border-t border-[rgba(170,187,204,0.13)]">
+          <nav className="flex flex-col gap-8">
+            {navLinks.map((link, i) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="text-white text-2xl font-medium k-focus"
+              >
+                <span className="k-mono text-[#E8896A] text-xs mr-4 align-middle">
+                  0{i + 1}
+                </span>
+                {link.label}
+              </Link>
+            ))}
             <Link
-              href="/ventures"
+              href="/#whats-broken"
               onClick={() => setMobileOpen(false)}
-              className="text-[#AABBCC] text-lg font-medium no-underline hover:text-white transition-colors duration-200"
-            >
-              Our Work
-            </Link>
-            <Link
-              href="/team"
-              onClick={() => setMobileOpen(false)}
-              className="text-[#AABBCC] text-lg font-medium no-underline hover:text-white transition-colors duration-200"
-            >
-              The People
-            </Link>
-            <a
-              href="https://kerzie.ai/schedule"
-              onClick={() => setMobileOpen(false)}
-              className="text-[#AABBCC] text-lg font-medium no-underline hover:text-white transition-colors duration-200"
-            >
-              Work With Us
-            </a>
-            <button
-              onClick={() => scrollTo("whats-broken")}
-              className="self-start border border-[#6B9FD4] text-[#6B9FD4] text-sm font-medium px-5 py-2 hover:bg-[#6B9FD4] hover:text-[#1A1B2E] transition-all duration-200 ease-in-out"
+              className="k-btn-ghost self-start mt-2 k-focus"
             >
               Tell Us What Hurts
-            </button>
+            </Link>
           </nav>
         </div>
       )}

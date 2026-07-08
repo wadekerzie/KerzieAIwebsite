@@ -37,15 +37,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 }
 
 /* Base Styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  background: #1A1B2E;
+  color: #AABBCC;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
 /* Smooth Scrolling */
@@ -55,8 +55,8 @@ html {
 
 /* Selection Color */
 ::selection {
-  background: var(--accent-blue);
-  color: white;
+  background: #6B9FD4;
+  color: #1A1B2E;
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -392,16 +392,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background-secondary);
+  background: #1A1B2E;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: #2D3154;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--foreground-muted);
+  background: #6B9FD4;
 }
 
 /* ===== RESPONSIVE UTILITIES ===== */
@@ -484,4 +484,225 @@ html {
   border: 1px solid var(--border);
   border-radius: 12px;
   box-shadow: var(--shadow-sm);
+}
+
+/* ============================================================
+   KERZIE REDESIGN SYSTEM
+   Canvas #1A1B2E / Surface #1E2035 / Accent #6B9FD4
+   Body #AABBCC / Coral #E8896A (punctuation only)
+   ============================================================ */
+
+:root {
+  --k-canvas: #1A1B2E;
+  --k-surface: #1E2035;
+  --k-ink: #FFFFFF;
+  --k-body: #AABBCC;
+  --k-accent: #6B9FD4;
+  --k-coral: #E8896A;
+  --k-hairline: rgba(170, 187, 204, 0.13);
+}
+
+/* --- Two voices: builder (Inter) and human (serif italic) --- */
+.k-serif {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* --- Rail label: mono, numbered, quiet --- */
+.k-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--k-accent);
+  font-weight: 500;
+}
+
+.k-label .idx {
+  color: var(--k-coral);
+  margin-right: 0.75em;
+}
+
+/* --- Mono meta text (timestamps, footers, indices) --- */
+.k-mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+/* --- Hairline rules --- */
+.k-hairline {
+  height: 1px;
+  background: var(--k-hairline);
+}
+
+/* --- Scroll reveal: settle, don't perform --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--d, 0ms);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* --- Hero entrance: pure CSS, staggered rise --- */
+@keyframes k-rise {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.k-rise {
+  opacity: 0;
+  animation: k-rise 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.k-rise-1 { animation-delay: 0.05s; }
+.k-rise-2 { animation-delay: 0.18s; }
+.k-rise-3 { animation-delay: 0.32s; }
+.k-rise-4 { animation-delay: 0.48s; }
+
+/* --- Page enter (App Router template) --- */
+@keyframes k-page {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.k-page-enter {
+  animation: k-page 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* --- Coral underline: slides in from the left on hover --- */
+.k-link {
+  position: relative;
+  display: inline-block;
+}
+
+.k-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1px;
+  width: 100%;
+  background: var(--k-coral);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.k-link:hover::after,
+.k-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* --- Arrow nudge --- */
+.k-arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+a:hover .k-arrow,
+a:focus-visible .k-arrow {
+  transform: translateX(5px);
+}
+
+/* --- Ghost button (set display via utility classes; keeping it out of
+   this rule lets `hidden` responsive utilities win) --- */
+.k-btn-ghost {
+  border: 1px solid var(--k-accent);
+  color: var(--k-accent);
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.k-btn-ghost:hover,
+.k-btn-ghost:focus-visible {
+  background: var(--k-accent);
+  color: var(--k-canvas);
+}
+
+/* --- Solid button --- */
+.k-btn-solid {
+  background: var(--k-accent);
+  color: var(--k-canvas);
+  padding: 0.8rem 2.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background-color 0.25s ease;
+}
+
+.k-btn-solid:hover:not(:disabled),
+.k-btn-solid:focus-visible {
+  background: #ffffff;
+}
+
+.k-btn-solid:disabled {
+  opacity: 0.5;
+}
+
+/* --- The one question textarea --- */
+.k-field {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--k-hairline);
+  color: var(--k-body);
+  padding: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  resize: none;
+  caret-color: var(--k-coral);
+  transition: border-color 0.25s ease;
+}
+
+.k-field::placeholder {
+  color: rgba(170, 187, 204, 0.3);
+}
+
+.k-field:focus {
+  outline: none;
+  border-color: var(--k-accent);
+}
+
+/* --- Focus visibility --- */
+.k-focus:focus-visible {
+  outline: 2px solid var(--k-accent);
+  outline-offset: 3px;
+}
+
+/* --- Reduced motion: everything arrives instantly --- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .k-rise,
+  .k-page-enter {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }
