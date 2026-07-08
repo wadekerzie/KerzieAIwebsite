@@ -11,6 +11,8 @@ export default function Ad2ActionPage() {
     <ProductStory
       clock="+14 HRS"
       hook="You paid for the ad."
+      image="/evidence/ad2action.jpg"
+      imageAlt="An empty home office at night with a closed laptop on the desk"
       problemBody="Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired a confirmation email. You followed up Friday morning. They did not remember why they clicked. You bought their attention at peak interest and responded at zero interest."
       whyLabel="Why It Stays Broken"
       whyHook="Ad platforms optimize for the click. Nobody optimizes for what happens after."

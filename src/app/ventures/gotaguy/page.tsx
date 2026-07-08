@@ -11,6 +11,8 @@ export default function GotaGuyPage() {
     <ProductStory
       clock="DAY 3"
       hook="Finding a contractor is a part-time job."
+      image="/evidence/gotaguy.jpg"
+      imageAlt="A kitchen faucet dripping in a dark kitchen at night"
       problemBody="You post on Nextdoor. You call three numbers. One voicemail. One quote that feels made up. One guy who never shows. The repair takes an hour. Finding someone takes a week."
       whyLabel="Why It Stays Broken"
       whyHook="The existing platforms make money whether your job gets done or not."

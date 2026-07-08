@@ -11,6 +11,8 @@ export default function ZorliPage() {
     <ProductStory
       clock="8 MIN"
       hook="Your teenager calls while you are watching a movie."
+      image="/evidence/zorli.jpg"
+      imageAlt="A living room at night with a movie paused on the television"
       problemBody="They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week."
       whyLabel="Why It Stays Broken"
       whyHook="Information does not disappear. It scatters."

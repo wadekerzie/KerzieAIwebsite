@@ -15,6 +15,8 @@ const products = [
     hook: "Your faucet has been dripping for three days.",
     body: "You Googled plumbers. First one: voicemail. Second one: booked until next Thursday. Third gave you a number over the phone that felt made up. You said you'd call back. You haven't. The faucet is still dripping.",
     href: "/ventures/gotaguy",
+    image: "/evidence/gotaguy.jpg",
+    imageAlt: "A kitchen faucet dripping in a dark kitchen at night",
   },
   {
     name: "Unison",
@@ -22,6 +24,8 @@ const products = [
     hook: "Someone calls your law firm at 7:05pm.",
     body: "They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.",
     href: "/ventures/unison",
+    image: "/evidence/unison.jpg",
+    imageAlt: "An unanswered office phone on a reception desk after hours",
   },
   {
     name: "Zorli",
@@ -29,6 +33,8 @@ const products = [
     hook: "Your teenager calls while you're watching a movie.",
     body: "They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.",
     href: "/ventures/zorli",
+    image: "/evidence/zorli.jpg",
+    imageAlt: "A living room at night with a movie paused on the television",
   },
   {
     name: "Ad2Action",
@@ -36,6 +42,8 @@ const products = [
     hook: "You paid for the ad.",
     body: "Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.",
     href: "/ventures/ad2action",
+    image: "/evidence/ad2action.jpg",
+    imageAlt: "An empty home office at night with a closed laptop on the desk",
   },
 ];
 
@@ -117,11 +125,24 @@ export default function Home() {
             {products.map((product, i) => (
               <Reveal key={product.name} delay={i % 2 === 0 ? 0 : 100}>
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-                  {/* Time is the villain */}
+                  {/* Time is the villain; the scene is the evidence */}
                   <div className="lg:col-span-3 mb-4 lg:mb-0 lg:text-right">
                     <p className="k-mono text-[clamp(1.5rem,2.8vw,2.25rem)] text-[#AABBCC]/40 leading-none tracking-tight">
                       {product.clock}
                     </p>
+                    <figure className="hidden lg:block mt-8">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={product.image}
+                        alt={product.imageAlt}
+                        loading="lazy"
+                        className="k-photo aspect-[4/3]"
+                      />
+                      <figcaption className="k-figcap text-left">
+                        <span className="idx">{`FIG 0${i + 1} `}</span>
+                        {`/ ${product.clock}`}
+                      </figcaption>
+                    </figure>
                   </div>
                   <div className="lg:col-span-9 border-l-2 border-[#E8896A] pl-6 lg:pl-8">
                     <h3 className="text-white text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-4">

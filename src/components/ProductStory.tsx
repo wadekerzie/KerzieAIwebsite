@@ -5,6 +5,8 @@ export type ProductStoryProps = {
   clock: string;
   hook: string;
   problemBody: string;
+  image?: string;
+  imageAlt?: string;
   whyLabel: string;
   whyHook: string;
   whyBody: string;
@@ -43,6 +45,21 @@ export default function ProductStory(props: ProductStoryProps) {
         <p className="k-rise k-rise-3 mt-8 text-[#AABBCC] text-lg leading-relaxed max-w-2xl">
           {props.problemBody}
         </p>
+
+        {props.image && (
+          <figure className="k-rise k-rise-4 mt-14 lg:mt-16">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={props.image}
+              alt={props.imageAlt ?? ""}
+              className="k-photo aspect-[21/9]"
+            />
+            <figcaption className="k-figcap">
+              <span className="idx">{"FIG 01 "}</span>
+              {`/ ${props.clock}`}
+            </figcaption>
+          </figure>
+        )}
       </section>
 
       {/* Why nothing fixed it */}
