@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#1A1B2E] transition-shadow duration-300"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#2D3154] transition-shadow duration-300"
       style={{
         boxShadow: scrolled ? "0 1px 0 rgba(170,187,204,0.13)" : "none",
       }}
@@ -84,7 +84,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#1A1B2E] w-full px-6 pt-6 pb-12 border-t border-[rgba(170,187,204,0.13)]">
+        <div className="lg:hidden bg-[#2D3154] w-full px-6 pt-6 pb-12 border-t border-[rgba(170,187,204,0.13)]">
           <nav className="flex flex-col gap-8">
             {navLinks.map((link, i) => (
               <Link
