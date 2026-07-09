@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>AI Execution Plan | Kerzie AI</title>
+  <style>
+    :root {
+      --ink: #111318;
+      --muted: #5a606b;
+      --line: #d9dde3;
+      --blue: #1d5f9f;
+      --blue-dark: #123c64;
+      --beige: #f3efe7;
+      --brand-beige: #efd4c3;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eceff3;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 8.5in;
+      margin: 24px auto;
+      padding: 0.62in;
+      background: var(--paper);
+      box-shadow: 0 18px 60px rgba(17, 19, 24, 0.16);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 9px;
+      background: linear-gradient(90deg, var(--ink), var(--blue));
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin: -0.62in -0.62in 30px;
+      padding: 0.42in 0.62in 0.28in;
+      background: var(--brand-beige);
+      border-bottom: 1px solid rgba(17, 19, 24, 0.12);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      width: 232px;
+      height: 70px;
+      overflow: hidden;
+    }
+
+    .brand img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .tag {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+      line-height: 1.4;
+    }
+
+    h1 {
+      font-size: 27px;
+      margin: 0 0 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .subhead {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 26px;
+    }
+
+    h2 {
+      font-size: 17px;
+      margin: 30px 0 10px;
+      color: var(--blue-dark);
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 14.5px;
+      margin: 18px 0 6px;
+    }
+
+    p { margin: 0 0 12px; font-size: 14px; }
+
+    ul { margin: 0 0 14px; padding-left: 20px; }
+    li { font-size: 14px; margin-bottom: 6px; }
+
+    .callout {
+      background: var(--beige);
+      border-left: 4px solid var(--blue);
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+
+    .level {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+
+    .level h3 { margin-top: 0; color: var(--blue-dark); }
+
+    .level .when {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .week {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .week .num {
+      flex: 0 0 74px;
+      font-weight: 700;
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .week .what { font-size: 14px; }
+
+    .invest {
+      background: var(--blue-dark);
+      color: #fff;
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin: 16px 0;
+    }
+
+    .invest .amount {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .invest p { color: rgba(255, 255, 255, 0.92); }
+    .invest p:last-child { margin-bottom: 0; }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      .page { margin: 0; padding: 22px; }
+      header { margin: -22px -22px 22px; padding: 18px 22px 14px; }
+      .week { flex-direction: column; gap: 2px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img src="/kerzie-ai-logo-transparent.png" alt="Kerzie AI">
+      </div>
+      <div class="tag">
+        AI Execution Plan<br>
+        Prepared for the WWT AT&amp;T Account Team<br>
+        July 2026 &middot; Confidential
+      </div>
+    </header>
+
+    <h1>The AI Execution Plan</h1>
+    <p class="subhead">Thirty days. Eighteen team members. A defined, verified operating level for every one of them.</p>
+
+    <div class="callout">
+      The end state in one sentence: every rep walks into every meeting already prepped, already aligned, and the team's account picture lives in one place.
+    </div>
+
+    <h2>The Objective</h2>
+    <p>In 30 days, move all 18 members of the AT&amp;T account team from wherever they are today to a defined, verified operating level with Claude, so the team runs on a shared account execution rhythm instead of 18 individual experiments.</p>
+    <p>This is not AI training. Nobody watches videos. Every milestone below is something a team member does, with their hands on the keyboard, verified in their own account.</p>
+
+    <h2>How It Works: Assess, Group, Level Up</h2>
+    <p>Week one starts with a working session with team leadership. We define the outcomes this team must be able to produce, then build a custom AI Execution Assessment backwards from those outcomes, specific to WWT and the AT&amp;T account. All 18 members take it that same week.</p>
+    <p>The assessment does two jobs. It gives leadership an honest baseline, and it lets us group people by where they actually are. Cohorts are formed by proficiency level, so nobody sits through material below their level and nobody gets left at the starting line. Sessions run virtually in small groups, with in-person available where it accelerates things.</p>
+    <p>Progress is tracked against three levels. Leadership sees exactly who has reached what level at every point in the engagement.</p>
+
+    <h2>The Three Levels</h2>
+
+    <div class="level">
+      <h3>Level 1: Established</h3>
+      <div class="when">Every team member, by end of week 2</div>
+      <ul>
+        <li>Custom instructions populated: WWT principles digitized, their role, and AT&amp;T account team context. That field is never empty again.</li>
+        <li>A master context brain: a working project built from their own 30-plus minute voice memo covering responsibilities, reporting rhythms, systems, and relationships, expanded through a structured follow-up interview with Claude.</li>
+        <li>Basic fluency check passed: navigates projects, retrieves prior work, and continues a working thread without help.</li>
+      </ul>
+    </div>
+
+    <div class="level">
+      <h3>Level 2: Operating</h3>
+      <div class="when">Every team member, by day 30 &middot; verified on real work, not exercises</div>
+      <ul>
+        <li>Ran a complete meeting cycle: pre-meeting brief from their context brain, meeting captured, transcript fed back, follow-ups and action items extracted.</li>
+        <li>Produced a management-ready weekly update from working context in minutes, not hours.</li>
+        <li>Generated Salesforce field updates from meeting output instead of typing them from memory.</li>
+        <li>Established the recording habit: business conversations flow into their context brain as source material.</li>
+        <li>Passed the prep-ready test: for a scheduled customer meeting, ready the day it was scheduled, not the night before.</li>
+      </ul>
+    </div>
+
+    <div class="level">
+      <h3>Level 3: Compounding</h3>
+      <div class="when">Quick adopters, as many as get there</div>
+      <ul>
+        <li>Built at least one recurring intelligence routine: competitor and market monitoring, executive sound-bite tracking, or account news feeding briefs automatically.</li>
+        <li>Contributing to the shared team dashboard.</li>
+        <li>Taught one workflow back to the team. This is how the team keeps leveling after the engagement ends.</li>
+      </ul>
+    </div>
+
+    <p>Realistic expectation: everyone reaches Level 2, and an engagement like this typically produces 2 or 3 rock stars at Level 3 who become the team's internal engine.</p>
+
+    <h2>Team-Level Milestones</h2>
+    <ul>
+      <li>WWT principles digitized as a shared custom instruction block every member runs.</li>
+      <li>A single-URL shared AT&amp;T account dashboard, version 1: projects, initiatives, responsibilities, and account intelligence in one place.</li>
+      <li>Leadership scoreboard: baseline and closing assessment results for all 18, level attainment, and usage trend. WWT already tracks usage, so the adoption curve shows up in numbers leadership already looks at.</li>
+    </ul>
+
+    <h2>The 30-Day Schedule</h2>
+    <div class="week"><div class="num">Week 1</div><div class="what">Alignment and baseline. Leadership outcomes session, custom assessment built and taken by all 18, cohorts formed by proficiency level, voice memo homework assigned.</div></div>
+    <div class="week"><div class="num">Week 2</div><div class="what">Foundation. Cohort working sessions plus short 1:1 slots. Every member leaves week 2 at Level 1.</div></div>
+    <div class="week"><div class="num">Week 3</div><div class="what">The meeting cycle and the reporting rhythm, run on live meetings from each person's actual calendar. Quick adopters identified and given Level 3 tracks.</div></div>
+    <div class="week"><div class="num">Week 4</div><div class="what">Compounding and verification. Team dashboard assembled, Level 3 pushes, closing assessment against the milestone checklist, and a leadership readout: scoreboard, before and after, and the operating rhythm going forward.</div></div>
+
+    <h2>What Leadership Provides</h2>
+    <p>This works at 10% adoption without these conditions. It works at full team level with them:</p>
+    <ul>
+      <li>Participation is mandated, not optional professional development.</li>
+      <li>Session time is protected: phones down, cameras on, calendars blocked.</li>
+      <li>Claude licenses active for all 18 before week 1.</li>
+      <li>The principles card content and account team context made available in week 1.</li>
+      <li>A leader visible in the room: the sales leader opens each week.</li>
+    </ul>
+
+    <h2>Why Wade</h2>
+    <ul>
+      <li>35 years in technology sales, carrying the same heritage as this team: strategic accounts, large-team selling, quota pressure, and the reporting stack that comes with it.</li>
+      <li>3.5 years of daily, hands-on AI implementation. Everything Kerzie AI operates was built with AI and runs on AI: a mobile app live in the App Store, GotaGuy, a live SMS-based home repair service, and the agent systems behind both.</li>
+      <li>Not a PowerPoint warrior. This engagement is hands on keyboards, standing over shoulders, the way adoption actually happens.</li>
+    </ul>
+
+    <h2>Investment</h2>
+    <div class="invest">
+      <div class="amount">$3,000 per team member</div>
+      <p>For the 18-person AT&amp;T team: $54,000. Additional members join at the same per-member rate, so the roster can grow without renegotiating anything.</p>
+      <p>Includes the leadership outcomes session, the custom WWT/AT&amp;T assessment, all cohort sessions and 1:1 time across the 30 days, the digitized principles instruction block, the team dashboard version 1, and the closing leadership readout.</p>
+    </div>
+    <p>For calibration: a single manager-level consultant from a large firm bills roughly $2,500 to $4,500 per day, which puts one person delivering slideware for a month at $60,000 to $90,000 before travel. This engagement costs less than that, touches all 18 keyboards, and leaves the team running a system instead of holding a binder.</p>
+
+    <h2>After The AT&amp;T Team</h2>
+    <p>When this team sets the bar, the natural question inside WWT becomes "which team is next." That conversation belongs after the results exist. Nothing in this engagement is conditioned on it.</p>
+
+    <h2>The Next Step</h2>
+    <p>Confirm the internal path. Schedule the week 1 leadership session. The 30-day clock starts there. Wade is prepared to move as fast as WWT is.</p>
+
+    <footer>
+      <span>Kerzie AI &middot; Wade Kerzie &middot; wade@kerzie.ai</span>
+      <span>Prepared for WWT internal review. Please do not distribute outside WWT.</span>
+    </footer>
+  </div>
+</body>
+</html>
