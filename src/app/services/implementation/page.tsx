@@ -1,52 +1,49 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "AI Implementation | Kerzie AI Services",
+  title: "AI Implementation | Kerzie AI",
   description:
-    "Kerzie AI embeds AI into your business operations end-to-end. From workflow analysis to live production deployment.",
+    "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment.",
 };
 
 export default function ImplementationPage() {
-  /* <!-- STUB: expand with final copy --> */
   return (
-    <>
-      <section className="section-hero section-cream">
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="badge mb-6 inline-flex">AI Implementation</div>
-            <h1 className="heading-xl mb-4 animate-fade-in-up">AI Implementation</h1>
-            <p className="text-xl text-[var(--foreground-muted)] mb-10 max-w-2xl mx-auto animate-fade-in-up delay-100">
-              We embed AI into your business operations end-to-end. Workflow analysis, system
-              design, build, and live production deployment. No slide decks. No proofs of concept.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
-              <Link href="/schedule" className="btn-primary btn-lg">
-                <span>
-                  Book a Call
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </span>
-              </Link>
-              <Link href="/services" className="btn-secondary btn-lg">
-                <span>All Services</span>
-              </Link>
-            </div>
-          </div>
-        </div>
+    <div className="bg-[#1A1B2E] min-h-screen">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
+        <Link
+          href="/services"
+          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+        >
+          &larr; WORK WITH US
+        </Link>
+      </div>
+
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-14">
+        <p className="k-rise k-rise-1 k-label mb-8">AI Implementation</p>
+        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
+          We build it <span className="k-serif font-normal">inside</span> your
+          business<span className="text-[#E8896A]">.</span>
+        </h1>
+        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl leading-relaxed">
+          Workflow analysis, system design, build, and live production
+          deployment. End-to-end. No slide decks. No proofs of concept. The
+          deliverable is the thing, running.
+        </p>
       </section>
 
-      <section className="section-compact section-blush">
-        <div className="container mx-auto text-center">
-          <h2 className="heading-lg mb-6">Ready to put AI to work?</h2>
-          <Link href="/schedule" className="btn-primary btn-lg">
-            <span>
-              Book a Call
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </span>
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(170,187,204,0.13)] pt-14">
+        <Reveal>
+          <p className="text-white text-xl font-medium mb-6 max-w-xl">
+            Bring us the workflow that hurts. We will come back with what we
+            would build, how long it takes, and what it costs.
+          </p>
+          <Link href="/schedule" className="k-btn-ghost k-focus inline-block">
+            Pick a time <span className="k-arrow">&rarr;</span>
           </Link>
-        </div>
+        </Reveal>
       </section>
-    </>
+    </div>
   );
 }

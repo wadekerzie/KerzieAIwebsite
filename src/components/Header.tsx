@@ -6,7 +6,7 @@ import Link from "next/link";
 const navLinks = [
   { label: "Our Work", href: "/ventures" },
   { label: "The People", href: "/team" },
-  { label: "Work With Us", href: "/schedule" },
+  { label: "Work With Us", href: "/services" },
 ];
 
 export default function Header() {

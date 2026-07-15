@@ -1,90 +1,107 @@
 import Link from "next/link";
-import { ArrowRight, Cpu, Zap, Terminal } from "lucide-react";
 import type { Metadata } from "next";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Services | Kerzie AI",
+  title: "Work With Us | Kerzie AI",
   description:
-    "Kerzie AI embeds AI into your business operations. AI implementation, the AI Fast-Track Session, and NemoClaw strategy for companies ready to move.",
+    "Three ways to work with Kerzie AI: the AI Fast-Track Session, AI implementation, and NemoClaw enterprise AI command centers.",
 };
 
-const services = [
+const offers = [
   {
-    icon: Cpu,
-    title: "AI Implementation",
-    description:
-      "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment.",
-    href: "/services/implementation",
-  },
-  {
-    icon: Zap,
+    label: "01",
     title: "AI Fast-Track Session",
-    description:
-      "Three hours at your computer, in your business, on your own $20 AI subscription. One painful workflow moved from manual to working before we are done. $750 flat.",
+    price: "$750 flat",
+    body: "Three hours at your computer, in your business, on your own $20 AI subscription. One painful workflow moved from manual to working before we are done. You leave with it working.",
     href: "/services/fast-track",
+    cta: "Read how it works",
   },
   {
-    icon: Terminal,
+    label: "02",
+    title: "AI Implementation",
+    price: "Scoped per project",
+    body: "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept.",
+    href: "/services/implementation",
+    cta: "What we build",
+  },
+  {
+    label: "03",
     title: "NemoClaw / OpenClaw",
-    description:
-      "AI command center installation and enterprise strategy. NemoClaw installs in one week. OpenClaw covers broader enterprise AI architecture.",
+    price: "Enterprise",
+    body: "AI command center installation and enterprise strategy. NemoClaw installs in one week. OpenClaw covers broader enterprise AI architecture.",
     href: "/services/nemoclaw",
+    cta: "The command center",
   },
 ];
 
 export default function ServicesPage() {
   return (
-    <>
-      <section className="section-hero section-cream">
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-xl mb-4 animate-fade-in-up">We Work With You</h1>
-            <p className="text-xl text-[var(--foreground-muted)] max-w-2xl mx-auto animate-fade-in-up delay-100">
-              Beyond our ventures, we partner directly with businesses to implement AI, get
-              owners working in one fast-track session, and deploy enterprise-grade AI command
-              centers.
-            </p>
-          </div>
-        </div>
+    <div className="bg-[#1A1B2E] min-h-screen">
+      {/* Back link */}
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
+        <Link
+          href="/"
+          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+        >
+          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+        </Link>
+      </div>
+
+      {/* Header */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-14">
+        <p className="k-rise k-rise-1 k-label mb-8">Work With Us</p>
+        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
+          Three ways in<span className="text-[#E8896A]">.</span>
+        </h1>
+        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl leading-relaxed">
+          Start small and leave with something working, or bring us a workflow
+          worth rebuilding end-to-end. Either way: shipping, not slide decks.
+        </p>
       </section>
 
-      <section className="section section-white">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {services.map((s) => (
-              <div key={s.title} className="card card-hover flex flex-col justify-between">
-                <div>
-                  <div className="icon-box-lg mb-4">
-                    <s.icon className="w-6 h-6" />
-                  </div>
-                  <h2 className="heading-md mb-3">{s.title}</h2>
-                  <p className="text-[var(--foreground-muted)]">{s.description}</p>
+      {/* Offers */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+        <div className="space-y-0">
+          {offers.map((o, i) => (
+            <Reveal key={o.title} delay={i * 80}>
+              <div className="border-t border-[rgba(170,187,204,0.13)] py-12 lg:grid lg:grid-cols-12 lg:gap-8">
+                <div className="lg:col-span-3 mb-4 lg:mb-0">
+                  <p className="k-label">{o.label}</p>
+                  <p className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mt-3">
+                    {o.price}
+                  </p>
                 </div>
-                <div className="mt-6">
-                  <Link
-                    href={s.href}
-                    className="text-[var(--accent-blue)] text-sm font-semibold hover:underline flex items-center gap-1"
-                  >
-                    Learn More <ArrowRight className="w-4 h-4" />
+                <div className="lg:col-span-9">
+                  <h2 className="text-white text-2xl font-bold tracking-tight mb-3">
+                    {o.title}
+                  </h2>
+                  <p className="text-[#AABBCC] text-lg leading-relaxed max-w-2xl mb-5">
+                    {o.body}
+                  </p>
+                  <Link href={o.href} className="k-link k-focus text-[#6B9FD4] font-medium">
+                    {o.cta} <span className="k-arrow">&rarr;</span>
                   </Link>
                 </div>
               </div>
-            ))}
-          </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 
-      <section className="section-compact section-blush">
-        <div className="container mx-auto text-center">
-          <h2 className="heading-lg mb-6">Ready to put AI to work?</h2>
-          <Link href="/schedule" className="btn-primary btn-lg">
-            <span>
-              Book a Call
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </span>
+      {/* Closer */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(170,187,204,0.13)] pt-14">
+        <Reveal>
+          <p className="text-white text-xl font-medium mb-6 max-w-xl">
+            Not sure which one fits?{" "}
+            <span className="k-serif font-normal">Tell us what hurts</span> and
+            we will point you at the smallest thing that fixes it.
+          </p>
+          <Link href="/schedule" className="k-btn-ghost k-focus inline-block">
+            Pick a time <span className="k-arrow">&rarr;</span>
           </Link>
-        </div>
+        </Reveal>
       </section>
-    </>
+    </div>
   );
 }
