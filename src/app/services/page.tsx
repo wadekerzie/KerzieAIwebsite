@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Work With Us | Kerzie AI",
   description:
-    "Three ways to work with Kerzie AI: the AI Fast-Track Session, AI implementation, and NemoClaw enterprise AI command centers.",
+    "Two ways to work with Kerzie AI: the AI Fast-Track Session and end-to-end AI implementation.",
 };
 
 const offers = [
@@ -21,17 +21,9 @@ const offers = [
     label: "02",
     title: "AI Implementation",
     price: "Scoped per project",
-    body: "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept.",
+    body: "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept. And if you are already running an AI agent you are not sure you can trust, that is an implementation problem too. Bring it to us.",
     href: "/services/implementation",
     cta: "What we build",
-  },
-  {
-    label: "03",
-    title: "NemoClaw / OpenClaw",
-    price: "Enterprise",
-    body: "AI command center installation and enterprise strategy. NemoClaw installs in one week. OpenClaw covers broader enterprise AI architecture.",
-    href: "/services/nemoclaw",
-    cta: "The command center",
   },
 ];
 
@@ -52,7 +44,7 @@ export default function ServicesPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-14">
         <p className="k-rise k-rise-1 k-label mb-8">Work With Us</p>
         <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
-          Three ways in<span className="text-[#E8896A]">.</span>
+          Two ways in<span className="text-[#E8896A]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl leading-relaxed">
           Start small and leave with something working, or bring us a workflow
