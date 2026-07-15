@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import Reveal from "@/components/Reveal";
 
 export type ProductStoryProps = {
@@ -12,6 +13,8 @@ export type ProductStoryProps = {
   whyBody: string;
   builtHook: string;
   builtBody: string;
+  demo?: ReactNode;
+  demoLabel?: string;
   steps: string[];
   ctaHook: string;
   ctaSub: string;
@@ -101,6 +104,18 @@ export default function ProductStory(props: ProductStoryProps) {
           </div>
         </Reveal>
       </section>
+
+      {/* The live demo, when the product can show itself */}
+      {props.demo && (
+        <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20 lg:pb-28">
+          <Reveal>
+            <p className="k-label text-center mb-10">
+              {props.demoLabel ?? "Watch It Happen"}
+            </p>
+            {props.demo}
+          </Reveal>
+        </section>
+      )}
 
       {/* How it works */}
       <section className="bg-[#1E2035]">

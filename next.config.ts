@@ -39,6 +39,36 @@ const nextConfig: NextConfig = {
         destination: "/services/nemoclaw",
         permanent: true,
       },
+      {
+        source: "/contact",
+        destination: "/schedule",
+        permanent: true,
+      },
+      {
+        source: "/about",
+        destination: "/team",
+        permanent: true,
+      },
+      {
+        source: "/how-it-works",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/partner",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/zapier-partner",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/services/training",
+        destination: "/services/fast-track",
+        permanent: true,
+      },
     ];
   },
 };

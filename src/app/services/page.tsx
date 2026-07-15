@@ -52,6 +52,18 @@ export default function ServicesPage() {
         </p>
       </section>
 
+      {/* Evidence */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-14">
+        <Reveal>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/evidence/workbench.jpg"
+            alt="A builder's workbench at night: worn hand tools on a pegboard beside an open laptop, one warm shop lamp"
+            className="k-photo"
+          />
+        </Reveal>
+      </section>
+
       {/* Offers */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
         <div className="space-y-0">

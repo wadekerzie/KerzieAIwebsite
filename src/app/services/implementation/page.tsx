@@ -33,6 +33,17 @@ export default function ImplementationPage() {
         </p>
       </section>
 
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+        <Reveal>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/evidence/implementation.jpg"
+            alt="A small business back office at night: one monitor glowing over a tidy desk, filing trays stacked, a warm desk lamp burning low"
+            className="k-photo"
+          />
+        </Reveal>
+      </section>
+
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(170,187,204,0.13)] pt-14">
         <Reveal>
           <p className="text-white text-xl font-medium mb-6 max-w-xl">

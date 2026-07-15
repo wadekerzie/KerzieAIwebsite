@@ -3,36 +3,36 @@ import Link from "next/link";
 export default function PrivacyPolicy() {
     return (
         <>
-            <section className="section-hero section-cream">
+            <section className="pt-24 pb-16 bg-[#1A1B2E]">
                 <div className="container mx-auto">
                     <div className="max-w-4xl mx-auto">
-                        <h1 className="heading-xl mb-6">Privacy Policy</h1>
-                        <p className="text-[var(--foreground-muted)] mb-8">
+                        <h1 className="text-white text-4xl font-bold tracking-tight mb-6">Privacy Policy</h1>
+                        <p className="text-[#AABBCC] mb-8">
                             Last Updated: January 2, 2026
                         </p>
 
                         <div className="prose prose-lg max-w-none">
                             {/* Introduction */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Introduction</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Introduction</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     Kerzie Consulting LLC, doing business as Kerzie AI (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;),
                                     respects your privacy and is committed to protecting your personal information. This Privacy
                                     Policy explains how we collect, use, disclose, and safeguard your information when you visit
                                     our website or use our services.
                                 </p>
-                                <p className="text-[var(--foreground-muted)]">
+                                <p className="text-[#AABBCC]">
                                     By using our services, you consent to the data practices described in this policy.
                                 </p>
                             </div>
 
                             {/* Information We Collect */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Information We Collect</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Information We Collect</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     We may collect the following types of information:
                                 </p>
-                                <ul className="list-disc pl-6 space-y-2 text-[var(--foreground-muted)]">
+                                <ul className="list-disc pl-6 space-y-2 text-[#AABBCC]">
                                     <li><strong>Personal Information:</strong> Name, email address, phone number, and business information you provide when contacting us or scheduling a consultation.</li>
                                     <li><strong>Communication Data:</strong> Records of communications with us, including emails, phone calls, and text messages.</li>
                                     <li><strong>Usage Data:</strong> Information about how you interact with our website, including IP address, browser type, and pages visited.</li>
@@ -40,12 +40,12 @@ export default function PrivacyPolicy() {
                             </div>
 
                             {/* SMS/Text Messaging Terms */}
-                            <div className="card mb-8 border-2 border-[var(--accent-blue)]">
-                                <h2 className="heading-md mb-4 text-[var(--accent-blue)]">SMS/Text Messaging Terms</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border-2 border-[#6B9FD4] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4 text-[#6B9FD4]">SMS/Text Messaging Terms</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     By providing your phone number and opting in to receive SMS messages from Kerzie AI, you agree to the following:
                                 </p>
-                                <ul className="list-disc pl-6 space-y-3 text-[var(--foreground-muted)] mb-6">
+                                <ul className="list-disc pl-6 space-y-3 text-[#AABBCC] mb-6">
                                     <li>
                                         <strong>Consent:</strong> You consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI)
                                         regarding work status updates, appointment reminders, and service-related communications.
@@ -68,8 +68,8 @@ export default function PrivacyPolicy() {
                                         Your information may only be shared with our SMS service providers solely for the purpose of delivering messages to you.
                                     </li>
                                 </ul>
-                                <div className="bg-[var(--background-secondary)] rounded-lg p-4">
-                                    <p className="text-sm text-[var(--foreground-muted)]">
+                                <div className="bg-[#252542] rounded-lg p-4">
+                                    <p className="text-sm text-[#AABBCC]">
                                         <strong>Summary:</strong> By opting in, you agree to receive up to 5 SMS messages per month.
                                         Message and data rates may apply. Reply STOP to unsubscribe. Reply HELP for help.
                                     </p>
@@ -77,12 +77,12 @@ export default function PrivacyPolicy() {
                             </div>
 
                             {/* How We Use Your Information */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">How We Use Your Information</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">How We Use Your Information</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     We use the information we collect to:
                                 </p>
-                                <ul className="list-disc pl-6 space-y-2 text-[var(--foreground-muted)]">
+                                <ul className="list-disc pl-6 space-y-2 text-[#AABBCC]">
                                     <li>Provide, operate, and maintain our services</li>
                                     <li>Communicate with you about our services, including sending work status updates via SMS</li>
                                     <li>Respond to your inquiries and provide customer support</li>
@@ -93,12 +93,12 @@ export default function PrivacyPolicy() {
                             </div>
 
                             {/* Information Sharing */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Information Sharing and Disclosure</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Information Sharing and Disclosure</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
                                 </p>
-                                <ul className="list-disc pl-6 space-y-2 text-[var(--foreground-muted)]">
+                                <ul className="list-disc pl-6 space-y-2 text-[#AABBCC]">
                                     <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our business, including SMS delivery providers. These providers are bound by confidentiality agreements.</li>
                                     <li><strong>Legal Requirements:</strong> We may disclose information if required by law, court order, or governmental authority.</li>
                                     <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
@@ -106,9 +106,9 @@ export default function PrivacyPolicy() {
                             </div>
 
                             {/* Data Security */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Data Security</h2>
-                                <p className="text-[var(--foreground-muted)]">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Data Security</h2>
+                                <p className="text-[#AABBCC]">
                                     We implement appropriate technical and organizational measures to protect your personal information against unauthorized access,
                                     alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure,
                                     and we cannot guarantee absolute security.
@@ -116,12 +116,12 @@ export default function PrivacyPolicy() {
                             </div>
 
                             {/* Your Rights */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Your Rights</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Your Rights</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     You have the right to:
                                 </p>
-                                <ul className="list-disc pl-6 space-y-2 text-[var(--foreground-muted)]">
+                                <ul className="list-disc pl-6 space-y-2 text-[#AABBCC]">
                                     <li>Access and receive a copy of your personal information</li>
                                     <li>Request correction of inaccurate personal information</li>
                                     <li>Request deletion of your personal information</li>
@@ -131,25 +131,25 @@ export default function PrivacyPolicy() {
                             </div>
 
                             {/* Contact Information */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Contact Us</h2>
-                                <p className="text-[var(--foreground-muted)] mb-4">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Contact Us</h2>
+                                <p className="text-[#AABBCC] mb-4">
                                     If you have any questions about this Privacy Policy or our data practices, please contact us:
                                 </p>
-                                <div className="bg-[var(--background-secondary)] rounded-lg p-6">
-                                    <p className="text-[var(--foreground)] font-semibold mb-2">Kerzie Consulting LLC</p>
-                                    <p className="text-[var(--foreground-muted)]">DBA: Kerzie AI</p>
-                                    <p className="text-[var(--foreground-muted)]">6005 Autumn Way</p>
-                                    <p className="text-[var(--foreground-muted)]">McKinney, Texas 75072</p>
-                                    <p className="text-[var(--foreground-muted)] mt-2">Phone: +1 (214) 668-7986</p>
-                                    <p className="text-[var(--foreground-muted)]">Email: wade@kerzieconsulting.com</p>
+                                <div className="bg-[#252542] rounded-lg p-6">
+                                    <p className="text-white font-semibold mb-2">Kerzie Consulting LLC</p>
+                                    <p className="text-[#AABBCC]">DBA: Kerzie AI</p>
+                                    <p className="text-[#AABBCC]">6005 Autumn Way</p>
+                                    <p className="text-[#AABBCC]">McKinney, Texas 75072</p>
+                                    <p className="text-[#AABBCC] mt-2">Phone: +1 (214) 668-7986</p>
+                                    <p className="text-[#AABBCC]">Email: wade@kerzieconsulting.com</p>
                                 </div>
                             </div>
 
                             {/* Changes to Policy */}
-                            <div className="card mb-8">
-                                <h2 className="heading-md mb-4">Changes to This Privacy Policy</h2>
-                                <p className="text-[var(--foreground-muted)]">
+                            <div className="bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-8 mb-8">
+                                <h2 className="text-white text-xl font-semibold mb-4">Changes to This Privacy Policy</h2>
+                                <p className="text-[#AABBCC]">
                                     We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page
                                     and updating the &quot;Last Updated&quot; date. Your continued use of our services after any changes constitutes acceptance of the updated policy.
                                 </p>

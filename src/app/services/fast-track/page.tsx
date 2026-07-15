@@ -52,6 +52,18 @@ export default function FastTrackPage() {
         </div>
       </section>
 
+      {/* Evidence */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+        <Reveal>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/evidence/fast-track.jpg"
+            alt="A kitchen table at night: a glowing laptop, two coffee mugs, handwritten notes, and two chairs pulled close together"
+            className="k-photo"
+          />
+        </Reveal>
+      </section>
+
       {/* The problem with AI demos */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
@@ -108,10 +120,36 @@ export default function FastTrackPage() {
         </Reveal>
       </section>
 
+      {/* The first one */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">04 &mdash; The First One</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              A McKinney professional photography studio. Husband and wife, 25
+              plus years in business. He shoots, she does the marketing. Neither
+              had ever touched AI.
+            </p>
+            <p>
+              One session: their own AI subscription set up, live changes
+              shipped to their website, a marketing workflow started, and an
+              action tracker built.
+            </p>
+            <p className="text-white font-medium">
+              Three hours after I left, he sat back down at the same window and
+              kept working. Alone.{" "}
+              <span className="k-serif font-normal">
+                That is the bar: not impressed, self-sufficient.
+              </span>
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Before we book */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; Before We Book</p>
+          <p className="k-label mb-6">05 &mdash; Before We Book</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Not everyone is a fit, and I would rather tell you that before you
@@ -143,7 +181,7 @@ export default function FastTrackPage() {
       {/* The price */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; The Price</p>
+          <p className="k-label mb-6">06 &mdash; The Price</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p className="text-white text-xl font-semibold">
               $750, flat. That covers the intake review, the 3-hour working
@@ -164,7 +202,7 @@ export default function FastTrackPage() {
         className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]"
       >
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; The Intake</p>
+          <p className="k-label mb-6">07 &mdash; The Intake</p>
           <p className="text-[#AABBCC] text-lg max-w-2xl mb-10">
             Five minutes. This tells us both whether the session is worth your
             $750 and my three hours.

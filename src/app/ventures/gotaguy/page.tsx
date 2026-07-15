@@ -1,4 +1,5 @@
 import ProductStory from "@/components/ProductStory";
+import GotaGuyThread from "@/components/GotaGuyThread";
 
 export const metadata = {
   title: "GotaGuy | Kerzie AI",
@@ -19,6 +20,8 @@ export default function GotaGuyPage() {
       whyBody="Angi, Thumbtack, HomeAdvisor charge contractors for leads. Whether the job gets done or not. They built a bidding war because bidding wars generate revenue. The homeowner experience being slow and frustrating is not a bug. It is the business model."
       builtHook="So we built GotaGuy."
       builtBody="You text. We scope it. A contractor shows up. You pay when it is done. No app. No account. No forms. No bidding. The whole thing happens in your text messages."
+      demo={<GotaGuyThread />}
+      demoLabel="Watch It Happen"
       steps={[
         "Quote in 90 seconds.",
         "Confirm.",
