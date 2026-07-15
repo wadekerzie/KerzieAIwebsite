@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { ArrowRight, Cpu, Users, Terminal } from "lucide-react";
+import { ArrowRight, Cpu, Zap, Terminal } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | Kerzie AI",
   description:
-    "Kerzie AI embeds AI into your business operations. AI implementation, AI training, and NemoClaw strategy for companies ready to move.",
+    "Kerzie AI embeds AI into your business operations. AI implementation, the AI Fast-Track Session, and NemoClaw strategy for companies ready to move.",
 };
 
 const services = [
@@ -17,11 +17,11 @@ const services = [
     href: "/services/implementation",
   },
   {
-    icon: Users,
-    title: "AI Training",
+    icon: Zap,
+    title: "AI Fast-Track Session",
     description:
-      "Hands-on AI training for teams and leadership. We upskill your people so AI becomes a competitive advantage, not a liability.",
-    href: "/services/training",
+      "Three hours at your computer, in your business, on your own $20 AI subscription. One painful workflow moved from manual to working before we are done. $750 flat.",
+    href: "/services/fast-track",
   },
   {
     icon: Terminal,
@@ -40,8 +40,9 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-xl mb-4 animate-fade-in-up">We Work With You</h1>
             <p className="text-xl text-[var(--foreground-muted)] max-w-2xl mx-auto animate-fade-in-up delay-100">
-              Beyond our ventures, we partner directly with businesses to implement AI, train
-              teams, and deploy enterprise-grade AI command centers.
+              Beyond our ventures, we partner directly with businesses to implement AI, get
+              owners working in one fast-track session, and deploy enterprise-grade AI command
+              centers.
             </p>
           </div>
         </div>
