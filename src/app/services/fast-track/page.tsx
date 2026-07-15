@@ -126,7 +126,16 @@ export default function FastTrackPage() {
           <p className="k-label mb-6">04 &mdash; The First One</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
-              A McKinney professional photography studio. Husband and wife, 25
+              Kurt and Tana Nelson run{" "}
+              <a
+                href="https://www.innovativeimagesphotos.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="k-link k-focus text-[#6B9FD4]"
+              >
+                Innovative Images
+              </a>
+              , a McKinney professional photography studio. Husband and wife, 25
               plus years in business. He shoots, she does the marketing. Neither
               had ever touched AI.
             </p>
