@@ -20,8 +20,8 @@ const people = [
     role: "Technical Specialist. Colorado market. Making sure the work actually gets done.",
     href: "#",
     external: false,
-    photo: null,
-    initials: "AJ",
+    photo: "/aaron.jpg",
+    initials: null,
   },
 ];
 
