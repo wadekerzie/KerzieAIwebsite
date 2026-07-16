@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 export const metadata = {
   title: "Our Work | Kerzie AI",
   description:
-    "Every product starts with a problem worth fixing. GotaGuy, Unison, Zorli, Ad2Action.",
+    "Every product starts with a problem worth fixing. GotaGuy, Unison, Zorli, Ad2Action, TrueSeat.",
 };
 
 const products = [
@@ -31,6 +31,12 @@ const products = [
     clock: "+14 HRS",
     problem: "You paid for the ad. You responded too late. They forgot they clicked.",
     href: "/ventures/ad2action",
+  },
+  {
+    name: "TrueSeat",
+    clock: "7 SEC",
+    problem: "A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.",
+    href: "/ventures/trueseat",
   },
 ];
 
