@@ -38,6 +38,18 @@ const products = [
     problem: "A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.",
     href: "/ventures/trueseat",
   },
+  {
+    name: "Executive Legacy",
+    clock: "40 YRS",
+    problem: "Forty years of judgment retires at the end of the year. The phone keeps ringing anyway.",
+    href: "/ventures/executive-legacy",
+  },
+  {
+    name: "TrueNorth",
+    clock: "2 AM",
+    problem: "Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.",
+    href: "/ventures/truenorth",
+  },
 ];
 
 export default function VenturesPage() {
