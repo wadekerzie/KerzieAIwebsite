@@ -58,7 +58,7 @@ export default function FastTrackPage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/evidence/fast-track.jpg"
-            alt="A kitchen table at sunrise: golden light through the window, a glowing laptop, steam rising from a fresh coffee, handwritten notes mid-thought"
+            alt="Three seasoned business owners at a kitchen table in warm morning light: a silver-haired woman with reading glasses at the laptop keyboard, two others leaning in over her shoulders, all smiling at the screen"
             className="k-photo"
           />
         </Reveal>
@@ -150,6 +150,15 @@ export default function FastTrackPage() {
               <span className="k-serif font-normal">
                 That is the bar: not impressed, self-sufficient.
               </span>
+            </p>
+            <p>
+              When I sent him the next piece, a voice-capture setup for his
+              phone, he texted me this on day one, unprompted:{" "}
+              <span className="k-serif text-white">
+                &quot;I absolutely love this new voice memos to Claude so far.
+                Done 4 items and a couple of them while doing other task.&quot;
+              </span>{" "}
+              Typo his. Receipt real.
             </p>
           </div>
         </Reveal>
