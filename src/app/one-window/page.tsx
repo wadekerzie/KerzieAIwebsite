@@ -8,8 +8,7 @@ export const metadata: Metadata = {
     "The complete AI working environment in one document. Load it into Claude, ChatGPT, Codex, or Gemini and your AI builds your operating system with you. $99, one time.",
 };
 
-// TODO: replace with the live Stripe payment link before launch
-const CHECKOUT_URL = "STRIPE_LINK_PENDING";
+const CHECKOUT_URL = "https://buy.stripe.com/fZu4gAgDda7TarOfNc3cc00";
 
 const builds = [
   "The one-folder workspace: everything your AI needs to know, on disk, not lost in a chat thread.",
