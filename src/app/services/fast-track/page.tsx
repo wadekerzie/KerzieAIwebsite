@@ -58,7 +58,7 @@ export default function FastTrackPage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/evidence/fast-track.jpg"
-            alt="A kitchen table at night: a glowing laptop, two coffee mugs, handwritten notes, and two chairs pulled close together"
+            alt="A kitchen table at sunrise: golden light through the window, a glowing laptop, steam rising from a fresh coffee, handwritten notes mid-thought"
             className="k-photo"
           />
         </Reveal>
