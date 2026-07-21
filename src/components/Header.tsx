@@ -53,13 +53,21 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <Link
-            href="/#whats-broken"
-            className="hidden lg:inline-block k-btn-ghost !px-5 !py-2 k-focus"
-          >
-            Tell Us What Hurts
-          </Link>
+          {/* Desktop CTAs */}
+          <div className="hidden lg:flex items-center gap-3">
+            <Link
+              href="/#whats-broken"
+              className="k-btn-ghost !px-5 !py-2 k-focus"
+            >
+              Tell Us What Hurts
+            </Link>
+            <Link
+              href="/speaking"
+              className="k-btn-solid !px-5 !py-2 k-focus"
+            >
+              Book Wade
+            </Link>
+          </div>
 
           {/* Mobile toggle */}
           <button
@@ -105,6 +113,13 @@ export default function Header() {
               className="k-btn-ghost self-start mt-2 k-focus"
             >
               Tell Us What Hurts
+            </Link>
+            <Link
+              href="/speaking"
+              onClick={() => setMobileOpen(false)}
+              className="k-btn-solid self-start k-focus"
+            >
+              Book Wade
             </Link>
           </nav>
         </div>

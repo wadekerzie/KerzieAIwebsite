@@ -17,10 +17,6 @@ const TOPICS = [
     body: "What it actually looks like to run marketing, sales ops, product, and finance through one AI working session a day. Live walkthrough available.",
   },
   {
-    title: "Your phone is about to answer itself.",
-    body: "Wade is an active user in AT&T's North Texas AI call-screening pilot. A first-person report on carrier AI, what it filters, and what it means for every business that answers a phone.",
-  },
-  {
     title: "My own method died in six weeks.",
     body: "Wade built a two-AI workflow, taught it, then watched the tools make it obsolete. What that pace does to best practices, training budgets, and anyone selling AI advice.",
   },
