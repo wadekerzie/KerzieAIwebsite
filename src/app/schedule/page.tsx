@@ -34,15 +34,16 @@ export default function SchedulePage() {
 
       {/* Header */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
-        <p className="k-rise k-rise-1 k-label mb-8">Work With Us</p>
+        <p className="k-rise k-rise-1 k-label mb-8">Schedule</p>
         <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
-          Let&apos;s talk about{" "}
-          <span className="k-serif font-normal">what hurts</span>
+          Let&apos;s put it{" "}
+          <span className="k-serif font-normal">on the calendar</span>
           <span className="text-[#E8896A]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl">
-          Pick a time. Tell us the problem. We will come with ideas, not a
-          pitch deck.
+          A business problem, a podcast, a stage, or a question about AI.
+          Whatever brought you here, this is the direct line to my calendar.
+          Pick a time that works and let&apos;s talk.
         </p>
       </section>
 
@@ -58,7 +59,7 @@ export default function SchedulePage() {
           }}
           scrolling="no"
           id="WUgRL3oHU40oA05SIaVT_1767737997591"
-          title="Book Your Free Consultation"
+          title="Schedule time with Wade"
         />
         {/* SMS Consent Disclosure */}
         <div className="mt-8 text-sm text-[#AABBCC]/50 leading-relaxed max-w-2xl">
