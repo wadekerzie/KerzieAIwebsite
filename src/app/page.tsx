@@ -161,6 +161,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ AUDIENCE DOOR: SALES TEAMS ============ */}
+      <section className="border-t border-[rgba(170,187,204,0.13)] bg-[#1E2035]">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
+          <Reveal>
+            <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
+              <div className="lg:col-span-8">
+                <p className="k-label mb-4">Leading a sales team?</p>
+                <p className="text-white text-[clamp(1.375rem,2.6vw,1.875rem)] font-medium leading-snug max-w-2xl">
+                  Your reps have AI licenses. That is not the same as{" "}
+                  <span className="k-serif font-normal">using</span> them.
+                </p>
+              </div>
+              <div className="lg:col-span-4 mt-6 lg:mt-0 lg:text-right">
+                <Link
+                  href="/services/sales-teams"
+                  className="k-link text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-200"
+                >
+                  For Sales Teams <span className="k-arrow">&rarr;</span>
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ============ ACT THREE: THE QUESTION ============ */}
       <section id="whats-broken" className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
         <Reveal>
