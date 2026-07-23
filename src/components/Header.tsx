@@ -21,7 +21,6 @@ const navLinks: NavLink[] = [
       { label: "AI Operating System", href: "/ventures/ai-os" },
     ],
   },
-  { label: "The People", href: "/team" },
   {
     label: "Work With Us",
     href: "/services",
@@ -32,6 +31,7 @@ const navLinks: NavLink[] = [
       { label: "For Sales Teams", href: "/services/sales-teams", hint: "Book a call" },
     ],
   },
+  { label: "The People", href: "/team" },
   { label: "Newsletter", href: "/subscribe" },
 ];
 
