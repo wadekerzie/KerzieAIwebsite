@@ -18,6 +18,12 @@ export default function Footer() {
           </span>
           <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3">
             <Link
+              href="/subscribe"
+              className="k-link text-[#AABBCC]/70 text-sm hover:text-white transition-colors duration-200"
+            >
+              Newsletter
+            </Link>
+            <Link
               href="/privacy-policy"
               className="k-link text-[#AABBCC]/70 text-sm hover:text-white transition-colors duration-200"
             >

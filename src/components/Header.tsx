@@ -32,6 +32,7 @@ const navLinks: NavLink[] = [
       { label: "For Sales Teams", href: "/services/sales-teams", hint: "Book a call" },
     ],
   },
+  { label: "Newsletter", href: "/subscribe" },
 ];
 
 function Caret() {
