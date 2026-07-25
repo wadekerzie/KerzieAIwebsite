@@ -7,6 +7,9 @@ type NavChild = { label: string; href: string; hint?: string };
 type NavLink = { label: string; href: string; children?: NavChild[] };
 
 const navLinks: NavLink[] = [
+  // Deliberately no dropdown. /the-line is reachable only from inside the
+  // essay, so the nav never advertises an offer page hanging off the argument.
+  { label: "The Kerzie Effect", href: "/kerzie-effect" },
   {
     label: "Our Work",
     href: "/ventures",
