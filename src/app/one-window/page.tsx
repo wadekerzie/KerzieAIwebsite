@@ -5,18 +5,19 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "The One-Window Setup | Kerzie AI",
   description:
-    "The complete AI working environment in one document. Load it into Claude, ChatGPT, Codex, or Gemini and your AI builds your operating system with you. $99, one time.",
+    "The complete AI working environment in one document. Paste it into Claude and it interviews you about your business, builds your operating system around your answers, and connects your accounts. Mac. $99, one time.",
 };
 
 const CHECKOUT_URL = "https://buy.stripe.com/fZu4gAgDda7TarOfNc3cc00";
 
 const builds = [
+  "An interview about your business first, before a single file gets created. Nothing in your setup is generic.",
   "The one-folder workspace: everything your AI needs to know, on disk, not lost in a chat thread.",
-  "The operating manual your AI loads every session, with the five standing rules that prevent AI disasters.",
-  "A single working tracker your whole business runs from, updated in plain language.",
-  "Memory rules, so corrections stick and context survives model changes.",
-  "Automated routines: a daily email sweep, weekly ops checks, and watchers that alert only when something changes.",
-  "The voice-capture pipeline: talk into your phone, and the thought is processed into next steps by the time you sit down.",
+  "Your operating manual, written in your words, loaded every session, with the five standing rules that prevent AI disasters.",
+  "A working tracker seeded with what you already told it is falling through the cracks, so it is useful the moment it exists.",
+  "Your accounts connected one at a time, walked through click by click, and verified. Gmail, Calendar, Drive, and your browser.",
+  "One painful thing from your own week, done end to end, before the first sitting is over.",
+  "Three routines proposed and ranked from what you said hurts, and the first one built.",
   "Cost-control and model-routing rules, learned the expensive way so you do not have to.",
 ];
 
@@ -40,12 +41,17 @@ export default function OneWindowPage() {
           <span className="text-[#E8896A]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-xl leading-relaxed">
-          The complete AI working environment, in one document you load into your
-          AI. It asks you the questions. It does the building. It is the exact
-          framework my own businesses run on every day.
+          The complete AI working environment, in one document you paste into
+          Claude. It interviews you about your business, builds your operating
+          system around your answers, and connects your accounts with you. It is
+          the exact framework my own businesses run on every day.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-white text-2xl font-semibold">
           $99, one time<span className="text-[#E8896A]">.</span>
+        </p>
+        <p className="k-rise k-rise-3 mt-4 text-[#AABBCC]/80 text-base max-w-xl leading-relaxed">
+          Mac, and a $20 per month Claude subscription. Windows is not covered
+          yet.
         </p>
         <div className="k-rise k-rise-4 mt-10">
           <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
@@ -78,6 +84,13 @@ export default function OneWindowPage() {
               not to you. Your AI reads it and becomes the builder. You answer
               its questions.
             </p>
+            <p>
+              Four things are on you: install the Claude desktop app, run one
+              command your Mac needs, make a folder, and paste. The document
+              walks you through all four in plain language, including what to do
+              when the one confusing part goes wrong. Everything after that,
+              Claude drives.
+            </p>
           </div>
         </Reveal>
       </section>
@@ -100,8 +113,18 @@ export default function OneWindowPage() {
               </span>
             </p>
             <p>
-              This setup uses the AI subscription you already pay for and the
-              phone already in your pocket. Nothing new to buy, charge, or wear.
+              This setup uses the Mac you already own and the AI subscription
+              you already pay for. Nothing new to buy, charge, or wear.
+            </p>
+            <p>
+              The phone half of that, talking into your pocket and having the
+              thought waiting on your desk, is a separate free kit:{" "}
+              <Link href="/free/capture-kit" className="k-link k-focus text-[#6B9FD4]">
+                the Capture Kit
+              </Link>
+              . Fair warning, it is iPhone only and the Shortcut setup is fiddly.
+              It is a bonus, not part of this. Your operating system works
+              completely without it.
             </p>
           </div>
         </Reveal>
@@ -111,6 +134,10 @@ export default function OneWindowPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
           <p className="k-label mb-6">03 &mdash; What Your AI Builds With You</p>
+          <p className="max-w-2xl text-[#AABBCC] text-lg leading-relaxed mb-8">
+            In this order, and the order is the point. Nothing gets built before
+            it knows what you actually do.
+          </p>
           <ul className="max-w-2xl space-y-4">
             {builds.map((t) => (
               <li
@@ -137,12 +164,21 @@ export default function OneWindowPage() {
             <p>
               <span className="text-white font-medium">Do I need to be technical?</span>{" "}
               No. Your AI is the technical one. If you can describe your business
-              and answer questions about it, you can do this.
+              and answer questions about it, you can do this. You will type one
+              command into your Mac, once, copied straight off the page.
             </p>
             <p>
-              <span className="text-white font-medium">Which AI?</span> Written
-              AI-agnostic. Claude with file access is the best fit; ChatGPT,
-              Codex, and Gemini work too.
+              <span className="text-white font-medium">Which AI?</span> Claude,
+              specifically the Code tab in the Claude desktop app, on a Claude
+              Pro plan at $20 per month. Earlier versions of this were written to
+              work with any assistant. That made it worse. Committing to one
+              setup is what lets the document walk you through the real install,
+              the real click paths, and the real place it breaks.
+            </p>
+            <p>
+              <span className="text-white font-medium">Mac or Windows?</span> Mac
+              today. Windows is a genuinely different install path and I am not
+              going to ship instructions I have not done myself.
             </p>
             <p>
               <span className="text-white font-medium">Is this real?</span> It is
