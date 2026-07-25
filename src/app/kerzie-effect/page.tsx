@@ -590,21 +590,22 @@ export default function KerzieEffectPage() {
           knowledge barrier. It does not touch the calendar.
         </P>
 
-        <H2>What actually survives</H2>
+        <H2>What&rsquo;s actually left</H2>
         <P>
-          Strip out everything the Kerzie effect can reach, and what&rsquo;s left is
-          short: things that require a licensed third party by law, things that
-          transfer real financial or legal risk off your books, things that
-          require physical presence, and judgment on a genuinely new situation
-          that hasn&rsquo;t happened before, the kind no outline can anticipate
-          because the answer doesn&rsquo;t exist yet.
+          Remove everything the Kerzie effect can&rsquo;t touch, work that requires a
+          licensed third party by law, work that transfers real financial or
+          legal risk off your books, work that requires physical presence, and
+          judgment on a genuinely new situation that hasn&rsquo;t happened before,
+          the kind no outline can anticipate because the answer doesn&rsquo;t exist
+          yet. Take all of that off the table, and the list that&rsquo;s left is
+          still long.
         </P>
         <P>
-          Everything else, anything that&rsquo;s really just packaged synthesis, a
-          generic training deck, a standard audit, a boilerplate strategy
-          framework, a piece of software that&rsquo;s mostly workflow templates, is
-          running on the same clock now, whatever industry label it happens to
-          wear.
+          That list is most of what gets sold as expertise: packaged synthesis,
+          a generic training deck, a standard audit, a boilerplate strategy
+          framework, a piece of software that&rsquo;s mostly workflow templates. All
+          of it is running on the same clock now, whatever industry label it
+          happens to wear.
         </P>
         <P>
           That gives you one test, and it works on any business, including
