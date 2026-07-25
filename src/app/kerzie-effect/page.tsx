@@ -670,6 +670,15 @@ export default function KerzieEffectPage() {
 
         <div className="k-hairline w-full mt-16" />
 
+        <p className="mt-10 text-[#AABBCC]/80 leading-relaxed max-w-xl">
+          If you finished this on the wrong side of the line, I wrote a separate
+          page on{" "}
+          <Link href="/the-line" className="k-link k-focus text-[#6B9FD4]">
+            what to do about it
+          </Link>
+          .
+        </p>
+
         <div className="mt-10">
           <p className="k-label mb-5">Follow where the line moves</p>
           <p className="text-[#AABBCC] leading-relaxed max-w-xl">
