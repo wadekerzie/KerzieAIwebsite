@@ -26,16 +26,28 @@ export default function OneWindowAccessPage() {
         <div className="mt-8 max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
           <p>Download the document, then do exactly this:</p>
           <ol className="list-decimal list-outside ml-5 space-y-3">
-            <li>Open your AI: Claude (best fit), ChatGPT, Codex, or Gemini.</li>
-            <li>Paste the entire document in, or attach the file.</li>
+            <li>
+              Read <span className="text-white font-medium">Part 1</span> and do
+              the four steps in it. About 20 minutes, and it gets your Mac
+              ready. Do not skip ahead.
+            </li>
+            <li>
+              With your folder open in the{" "}
+              <span className="text-white font-medium">Code</span> tab of the
+              Claude desktop app, paste in the rest of the document, or attach
+              the file.
+            </li>
             <li>
               Say:{" "}
               <span className="k-serif text-white">
-                &quot;Walk me through this setup, step by step. Ask me the
-                questions as you go.&quot;
+                &quot;Read this whole document. Follow it in order. Interview me
+                first, before you build anything.&quot;
               </span>
             </li>
-            <li>Give it about an hour. The first-week plan inside paces the rest.</li>
+            <li>
+              Answer its questions in plain language. Give it about an hour. It
+              tells you what to do next when the hour is up.
+            </li>
           </ol>
         </div>
         <div className="mt-10">
