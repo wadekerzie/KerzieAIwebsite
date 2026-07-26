@@ -557,6 +557,114 @@ export default function KerzieEffectPage() {
           outline.
         </P>
 
+        <H2>The physical layer is a floor, not a moat</H2>
+        <P>
+          Everyone who reads this far finds the same escape hatch, and I want to
+          close it, because I think it&rsquo;s the most misread part of this whole
+          thing.
+        </P>
+        <P>
+          The hatch goes: fine, but somebody still has to show up. Somebody
+          still has to own the warehouse, drive the truck, climb the ladder, and
+          put their hands on the equipment. No model in a browser tab is doing
+          that. All true. And it protects far less than the people relying on it
+          think.
+        </P>
+        <P>
+          Picture a large services organization that handles inventory,
+          delivery, and installation for a national carrier. Real warehouses.
+          Real trucks. Certified technicians in real buildings. Nothing about
+          the Kerzie effect touches any of that directly, and I don&rsquo;t expect it
+          to any time soon.
+        </P>
+        <P>
+          But look at what the invoice is actually for. Physical work almost
+          never gets sold by itself. It arrives wrapped in the knowledge work
+          around it: the design, the configuration, the staging plan, the
+          sequencing, the project management, the integration, the
+          documentation, the engineers who decide what goes where and in what
+          order and why. All of it priced together as one number, and most of
+          the margin living in the wrapper, not the truck.
+        </P>
+        <P>
+          That last part isn&rsquo;t a hunch. The public companies in this business
+          report it every quarter. Insight Enterprises did about $8.7 billion in
+          net sales in 2024, and product was 81 percent of it against 19 percent
+          for services. That 19 percent produced 57 percent of the company&rsquo;s
+          gross profit. The small number is where the money is. ePlus shows the
+          same shape more plainly, because they break the two out: product gross
+          margin around 23 percent, professional services at 39.5 percent.
+        </P>
+        <P>
+          And there&rsquo;s a sharper test sitting inside ePlus&rsquo;s own numbers. In
+          August 2024 they bought a company that does precisely the physical
+          layer I&rsquo;ve been describing, logistics, configuration, cabling, and
+          installation across large store and branch footprints. Their
+          professional services revenue jumped 48 percent, which they attribute
+          mainly to that acquisition. In the same year, their professional
+          services gross margin fell from 44.1 percent to 39.5 percent. I&rsquo;m not
+          going to claim one number caused the other, because they didn&rsquo;t say
+          that. I&rsquo;ll just point out that the year a services business absorbed a
+          large hands-on deployment operation is the year its services margin
+          dropped by more than four points, and ask you to sit with why that
+          would be.
+        </P>
+        <P>
+          So the Kerzie effect doesn&rsquo;t come for the physical work. It comes for
+          the wrapper. When the buyer&rsquo;s own AI can do the design and the
+          sequencing and the configuration, using the buyer&rsquo;s own network data,
+          which the vendor never had in the first place, the buyer doesn&rsquo;t fire
+          the vendor. Firing the vendor was never the move. The buyer unbundles.
+          The call sounds like this: just house it, deliver it, and install it.
+          We&rsquo;ll take it from there.
+        </P>
+        <Callout>
+          Say it plainly, because this is the part that gets missed: the Kerzie
+          effect doesn&rsquo;t eliminate physical work. It strands it. It separates
+          the high-margin knowledge layer from the low-margin physical layer,
+          and the buyer keeps only the layer they can&rsquo;t do themselves.
+        </Callout>
+        <P>
+          What&rsquo;s left is still a real business. It&rsquo;s just a different business
+          at a different margin, and here&rsquo;s the part that should worry anyone in
+          it: it&rsquo;s a business with a completely different competitive set. The
+          day your scope of work is house it, deliver it, install it, you are
+          being priced against every other outfit that owns a warehouse and a
+          truck. The thing that made you hard to replace, knowing what should go
+          where and in what order, isn&rsquo;t yours anymore. It&rsquo;s the buyer&rsquo;s, and
+          they didn&rsquo;t buy it from anyone. Your relationship, your history, your
+          bench of engineers, none of it shows up on an invoice that only has
+          logistics on it.
+        </P>
+        <P>
+          That&rsquo;s worse than a rate cut, and it&rsquo;s worse in a specific way. The
+          knowledge layer was what made the relationship sticky in the first
+          place. It&rsquo;s the reason the buyer called you instead of running a bid.
+          Strip it out and you haven&rsquo;t just lost the margin on that layer,
+          you&rsquo;ve lost the reason anyone had to not run a bid.
+        </P>
+        <P>
+          The defense is already in this essay, in the limits section below.
+          Physical presence by itself isn&rsquo;t a moat, but two things sitting next
+          to it are. Risk transfer is real: if the installation carries a
+          service level agreement with actual penalties attached, that&rsquo;s a
+          product no buyer generates for themselves, because what they&rsquo;re buying
+          is somewhere for the failure to live. And a genuine physical network
+          is real: certified crews, parts on a shelf within four hours in forty
+          markets, coverage nobody can stand up quickly. Neither of those is
+          synthesis. Neither can be handed over in a proposal.
+        </P>
+        <P>
+          So the same test I&rsquo;d apply anywhere else applies here, it just has to
+          be asked more precisely. Not &ldquo;can an AI do what we do.&rdquo; Ask: if my
+          client&rsquo;s own AI wrote the design and handed it to us finished, what is
+          still on our invoice, and what is it worth? If the honest answer is
+          most of it, you&rsquo;re in good shape and you should price that part out
+          loud, separately, where the buyer can see it. If the honest answer is
+          the truck, then the truck is your number, and you want to know that
+          now rather than at renewal.
+        </P>
+
         <H2>The honest limits</H2>
         <P>
           I want to be direct about where this doesn&rsquo;t apply, because a thesis
@@ -599,6 +707,14 @@ export default function KerzieEffectPage() {
           the kind no outline can anticipate because the answer doesn&rsquo;t exist
           yet. Take all of that off the table, and the list that&rsquo;s left is
           still long.
+        </P>
+        <P>
+          One caution on that third one, since I just spent a section on it.
+          Physical presence survives as work. It does not automatically survive
+          as margin, because the money in physical services usually sits in the
+          knowledge wrapped around the work rather than in the work itself. Put
+          physical presence on the safe list if you want, but put it there for
+          the labor, not for the invoice.
         </P>
         <P>
           That list is most of what gets sold as expertise: packaged synthesis,
