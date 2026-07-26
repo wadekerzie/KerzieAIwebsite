@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       "Why the vendor relationship you've had for ten years might not survive the next two. A named, demonstrable mechanism for how AI actually hits Main Street knowledge work.",
     type: "article",
-    publishedTime: "2026-07-24",
+    publishedTime: "2026-07-26",
     authors: ["Wade Kerzie"],
   },
 };
@@ -79,7 +79,7 @@ export default function KerzieEffectPage() {
 
       <article className="max-w-3xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-24">
         <p className="k-label mb-8">
-          <span className="idx">Essay</span>Wade Kerzie &middot; July 24, 2026
+          <span className="idx">Essay</span>Wade Kerzie &middot; July 26, 2026
         </p>
 
         <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.5rem,6vw,4rem)]">
