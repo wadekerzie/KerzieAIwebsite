@@ -187,8 +187,30 @@ export default function KerzieEffectPage() {
 
         <Section>The two phases</Section>
         <P>
-          It helps to walk through this as a flow, because it doesn&rsquo;t stop
-          where most people would assume it stops.
+          Before the flow, one thing worth naming, because it explains why this
+          lands as hard as it does. Think about every proposal that got read and
+          never signed. Not the ones where the buyer thought the seller was
+          wrong, and not the ones where they were too busy. The ordinary ones,
+          that sat.
+        </P>
+        <Note>
+          The price was never what stopped them. The unanswered question was.
+        </Note>
+        <P>
+          They didn&rsquo;t sign because of the question mark still hanging there
+          when they got to the last page: is this going to return more than it
+          costs me? Nobody could answer that. Not even the person who wrote it,
+          and it was that person&rsquo;s job to make it sound like the answer was
+          yes. Run it the other way and you can see it plainly. If that same
+          proposal came with a guarantee attached, sign here and this returns
+          double what it costs, it would have been signed before the meeting
+          ended. The price was never the obstacle. Not knowing was. And what a
+          buyer can do now, for free, in about a minute, is answer that question
+          for themselves before they spend anything.
+        </P>
+        <P>
+          It helps to walk through the rest as a flow, because it doesn&rsquo;t
+          stop where most people would assume it stops.
         </P>
         <Callout>Phase one: the buyer harvests the free proposal.</Callout>
         <P>
@@ -533,6 +555,34 @@ export default function KerzieEffectPage() {
           keep talking about is not a metaphor. It&rsquo;s measurable, and it cuts
           in both directions.
         </P>
+        <Note>
+          Most people put the line far to the right of where it actually sits.
+          It is closer to you than you think, and it keeps moving your way.
+        </Note>
+        <P>
+          I&rsquo;ve been saying &ldquo;the line&rdquo; for several thousand words
+          now without telling you where it is, so let me fix that, because I
+          think almost everyone puts it in the wrong place. Picture AI
+          competency as a continuum. On the far left is the person who says
+          &ldquo;I&rsquo;m using AI,&rdquo; and what they mean is they type a
+          question into a chatbot and read the answer. On the far right is a
+          fully AI-operated company, autonomous systems running the business end
+          to end. The line you have to cross to do everything I just
+          demonstrated sits much further left than most people assume. It is
+          past the chatbot, and it is nowhere near the far end. And it keeps
+          moving toward you, because the tools keep getting simpler.
+        </P>
+        <P>
+          That matters for how you read the rest of this. If you had the line
+          pictured way out at the right edge, you probably concluded this
+          doesn&rsquo;t apply to you for a few more years. It does. You are
+          closer to it than you think, and so is the buyer sitting across from
+          you.
+        </P>
+        <Callout>
+          Nobody has to become technical. The line sits well short of that, and
+          it is drifting closer every time an interface gets simpler.
+        </Callout>
         <P>
           So say the whole thing as plainly as I can. You start with a
           quantified business problem. You either send it out and get a
@@ -549,6 +599,31 @@ export default function KerzieEffectPage() {
           version of the scope of work in hand, which is exactly the document
           this industry hands out for free every time someone asks for a quote.
         </P>
+        <Note>
+          The seller&rsquo;s recommendation is shaped by what the seller happens
+          to sell. The AI has no service line to protect.
+        </Note>
+        <P>
+          There&rsquo;s a fair objection to all of this that I should answer
+          before going further: why would a buyer trust what the AI hands back?
+          They can&rsquo;t verify it either. That&rsquo;s true, and here&rsquo;s
+          why it still comes out ahead. Every recommendation a seller makes is
+          shaped by what that seller happens to offer. Not dishonestly, usually
+          not even consciously, but a firm that sells training programs finds
+          training problems, and a firm that sells software finds software
+          problems. I have done this myself, for thirty years, and I&rsquo;d be
+          lying if I said otherwise. The AI has no service line to protect. It
+          has no quota, no utilization target, and nothing to upsell you in the
+          spring. That doesn&rsquo;t make it right. It makes it disinterested,
+          which is a different and rarer thing, and it means the options it lays
+          out are the options, not the options that happen to be for sale.
+        </P>
+        <Callout>
+          So don&rsquo;t pay for a playbook. And don&rsquo;t pay for somebody
+          else&rsquo;s judgment either. Get the playbook, which they will hand
+          you for free, run it against your own numbers, and then apply the one
+          thing that was always yours: your judgment about your own business.
+        </Callout>
 
         <Section>It doesn&rsquo;t stay inside professional services</Section>
         <P>
@@ -787,6 +862,29 @@ export default function KerzieEffectPage() {
           expertise. It relocates that expertise, and it relocates it to whoever
           picks it up first.
         </Callout>
+        <P>
+          It also isn&rsquo;t predictable by job title, which took me a while to
+          accept. In a two person business I know well, the person who crossed
+          the line was the owner, because in a shop that small there isn&rsquo;t
+          anybody else. In a company with a real payroll and a full org chart,
+          it was the controller, who saw it before anyone above him did. Neither
+          one is technical.
+        </P>
+        <Note>
+          The qualification isn&rsquo;t a title or a skill. It&rsquo;s a sentence:
+          I know we should be using AI here, and I don&rsquo;t know how.
+        </Note>
+        <P>
+          What they had in common was a sentence I hear constantly now: I know
+          we should be using AI in this business, and I don&rsquo;t know how. That
+          sentence is the whole qualification. It is somebody who has correctly
+          worked out that their own knowledge is the only thing standing in the
+          way, and who believes, in their gut, that if that one thing changed the
+          business would get better. That belief is doing more work than any
+          credential. If you have ever said that sentence to yourself, you are
+          already most of the way to the line I described earlier, which is a lot
+          closer than you were picturing it.
+        </P>
         <P>
           And almost nobody will. I want to say that plainly, because it&rsquo;s the
           whole reason there&rsquo;s an opening here at all. Every time an interface
