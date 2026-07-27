@@ -334,7 +334,7 @@ export default function KerzieEffectPage() {
           schedule template, the stuff that&rsquo;s actually most of the revenue.
           And it literally is most of the revenue: by Source Global Research&rsquo;s
           2024 count, strategy work is about $57 billion of the $263 billion
-          global consulting market. The other four fifths is this.
+          global consulting market. The other 80 percent is this.
         </P>
 
         <Case
@@ -555,12 +555,12 @@ export default function KerzieEffectPage() {
           Once you see the mechanism, you stop seeing it as a consulting
           problem.
         </P>
-        <Note>It does not stop at consulting. Most software is a license on somebody else&rsquo;s workflow, and you use a fifth of it.</Note>
+        <Note>It does not stop at consulting. Most software is a license on somebody else&rsquo;s workflow, and you use 20 percent of it.</Note>
         <P>
           Most software is a license to use somebody else&rsquo;s codified workflow,
           and most people use a small slice of what they pay for. Everybody who
-          has ever opened Excel or QuickBooks knows they&rsquo;re using maybe a
-          fifth of the product. That slice, the part you actually use, is
+          has ever opened Excel or QuickBooks knows they&rsquo;re using maybe
+          20 percent of the product. That slice, the part you actually use, is
           exactly the size of thing an AI can now build you directly, tuned to
           your business, without a license.
         </P>
