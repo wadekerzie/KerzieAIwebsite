@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { CAPTURE_KIT_MD } from "@/content/captureKit";
 
 export const metadata: Metadata = {
-  title: "Your Capture Kit | Kerzie AI",
+  title: "Your Mobile Capture Kit | Kerzie AI",
   robots: { index: false, follow: false },
 };
 
@@ -150,13 +150,13 @@ export default function CaptureKitAccessPage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 pb-8">
-        <p className="k-label mb-6">Here Is Your Capture Kit</p>
+        <p className="k-label mb-6">Here Is Your Mobile Capture Kit</p>
         <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3rem)]">
           Ten minutes of setup, one habit
           <span className="text-[#E8896A]">.</span>
         </h1>
         <div className="mt-8 flex flex-wrap gap-4 items-center">
-          <a href="/downloads/capture-kit.md" download className="k-btn-solid k-focus inline-block">
+          <a href="/downloads/mobile-capture-kit.md" download className="k-btn-solid k-focus inline-block">
             Download the kit <span className="k-arrow">&rarr;</span>
           </a>
           <p className="text-sm text-[#6d7585]">

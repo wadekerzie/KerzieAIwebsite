@@ -19,6 +19,8 @@ export default function Ad2ActionPage() {
       whyBody="That window is where leads die. Not because your product is wrong. Because your response was late. Eight minutes after someone clicks is worth more than eight hours of follow up the next day."
       builtHook="So we built Ad2Action."
       builtBody="Instant lead response the moment someone converts on your ad. Not an autoresponder. A real conversation that starts while they still remember clicking."
+      builtImage="/evidence/after-ad2action.jpg"
+      builtImageAlt="A business owner at a sunlit desk reading a reply that came in while the lead was still warm"
       steps={[
         "Lead converts on your ad.",
         "Ad2Action fires immediately.",

@@ -19,6 +19,8 @@ export default function UnisonPage() {
       whyBody="The lead does not wait. The window between someone reaching out and someone else answering them is measured in minutes not hours. Every hour you wait cuts your odds of closing that lead in half."
       builtHook="So we built Unison."
       builtBody="Omnichannel lead response that answers immediately across every channel. Phone, text, web form, email. The lead gets a real response in seconds. You get the conversation in your inbox."
+      builtImage="/evidence/after-unison.jpg"
+      builtImageAlt="A receptionist on a headset in a bright office, taking the call"
       steps={[
         "Lead comes in on any channel.",
         "Unison responds immediately.",

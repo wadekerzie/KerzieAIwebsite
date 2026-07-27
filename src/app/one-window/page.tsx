@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   title: "The One-Window Setup | Kerzie AI",
   description:
     "The complete AI working environment in one document. Paste it into Claude and it interviews you about your business, builds your operating system around your answers, and connects your accounts. Mac. $99, one time.",
+  openGraph: {
+    type: "article",
+    title: "The One-Window Setup",
+    description:
+      "The complete AI working environment in one document. Paste it into Claude and it interviews you about your business, builds your operating system around your answers, and connects your accounts. Mac. $99, one time.",
+    url: "https://kerzie.ai/one-window",
+    images: [{ url: "/og/one-window.jpg", width: 1200, height: 630, alt: "Two colleagues working side by side at one laptop." }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og/one-window.jpg"] },
 };
 
 const CHECKOUT_URL = "https://buy.stripe.com/fZu4gAgDda7TarOfNc3cc00";
@@ -119,8 +128,8 @@ export default function OneWindowPage() {
             <p>
               The phone half of that, talking into your pocket and having the
               thought waiting on your desk, is a separate free kit:{" "}
-              <Link href="/free/capture-kit" className="k-link k-focus text-[#6B9FD4]">
-                the Capture Kit
+              <Link href="/free/mobile-capture-kit" className="k-link k-focus text-[#6B9FD4]">
+                the Mobile Capture Kit
               </Link>
               . Fair warning, it is iPhone only and the Shortcut setup is fiddly.
               It is a bonus, not part of this. Your operating system works

@@ -3,9 +3,18 @@ import type { Metadata } from "next";
 import GateForm from "@/components/GateForm";
 
 export const metadata: Metadata = {
-  title: "The Capture Kit (Free) | Kerzie AI",
+  title: "The Mobile Capture Kit (Free) | Kerzie AI",
   description:
     "A free 10-minute phone setup: talk your thoughts into your phone, two taps, and your AI processes them into next steps. Works with Claude, ChatGPT, or Gemini.",
+  openGraph: {
+    type: "article",
+    title: "The Mobile Capture Kit (Free)",
+    description:
+      "A free 10-minute phone setup: talk your thoughts into your phone, two taps, and your AI processes them into next steps. Works with Claude, ChatGPT, or Gemini.",
+    url: "https://kerzie.ai/free/mobile-capture-kit",
+    images: [{ url: "/og/mobile-capture-kit.jpg", width: 1200, height: 630, alt: "A man walking on a park path, talking into his phone." }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og/mobile-capture-kit.jpg"] },
 };
 
 export default function CaptureKitGatePage() {
@@ -21,7 +30,7 @@ export default function CaptureKitGatePage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-label mb-8">The Capture Kit &middot; Free</p>
+        <p className="k-label mb-8">The Mobile Capture Kit &middot; Free</p>
         <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.5rem)]">
           You never have to remember what you were thinking{" "}
           <span className="k-serif font-normal">an hour ago</span>

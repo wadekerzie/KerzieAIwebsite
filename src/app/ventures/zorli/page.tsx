@@ -19,6 +19,8 @@ export default function ZorliPage() {
       whyBody="Across apps, notes, texts, emails, browser bookmarks. The problem is not memory. It is retrieval. You have the answer. Finding it costs you more time than the answer is worth."
       builtHook="So we built Zorli."
       builtBody="One place for the information you actually need to find again. Not another note app. A retrieval system. You put it in once. You get it back instantly."
+      builtImage="/evidence/after-zorli.jpg"
+      builtImageAlt="A man on his sofa in afternoon light, finding what he needed on his phone straight away"
       steps={[
         "Save it once.",
         "Search in plain language.",

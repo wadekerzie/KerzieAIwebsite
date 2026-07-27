@@ -324,7 +324,7 @@ Write these into their CLAUDE.md and then actually do them. They are what keeps 
 
 ## One optional extra, and it is free
 
-There is a companion piece called the Capture Kit, free at **kerzie.ai/free/capture-kit**. It is the voice-memo pipeline: they talk into their phone in the car, and the thought is a dated file waiting in their workspace before they get home. You then read it, connect it to what they are working on, and propose the next step.
+There is a companion piece called the Mobile Capture Kit, free at **kerzie.ai/free/mobile-capture-kit**. It is the voice-memo pipeline: they talk into their phone in the car, and the thought is a dated file waiting in their workspace before they get home. You then read it, connect it to what they are working on, and propose the next step.
 
 **Tell them the truth about it before they try.** It is iPhone only, it is built on Apple Shortcuts, and the setup is fiddly. There are three places where the Shortcuts app auto-fills the wrong thing and the whole chain silently breaks. The kit documents every one of them, but it still takes patience and a willingness to push through a screen that is not obvious.
 

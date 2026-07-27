@@ -19,6 +19,24 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Renamed 2026-07-27: "Capture Kit" was too generic to say what it is.
+      // The old paths were live for a week and are pasted in a few places, so
+      // they keep resolving.
+      {
+        source: "/free/capture-kit",
+        destination: "/free/mobile-capture-kit",
+        permanent: true,
+      },
+      {
+        source: "/free/capture-kit/access",
+        destination: "/free/mobile-capture-kit/access",
+        permanent: true,
+      },
+      {
+        source: "/downloads/capture-kit.md",
+        destination: "/downloads/mobile-capture-kit.md",
+        permanent: true,
+      },
       {
         source: "/services/unison",
         destination: "/ventures/unison",

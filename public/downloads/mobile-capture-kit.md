@@ -1,4 +1,4 @@
-# The Capture Kit
+# The Mobile Capture Kit
 
 **From Kerzie AI. Ten minutes of setup, one habit: you never have to remember
 what you were thinking an hour ago.**

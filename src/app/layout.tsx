@@ -34,10 +34,38 @@ const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
+const SITE_DESCRIPTION =
+  "We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.";
+
 export const metadata: Metadata = {
+  // Required for Next to emit absolute og:image URLs. Without it every card
+  // resolves relative and scrapers show a blank placeholder.
+  metadataBase: new URL("https://kerzie.ai"),
   title: "Kerzie AI",
-  description:
-    "We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.",
+  description: SITE_DESCRIPTION,
+  // Site-wide fallback card. Any page that does not set its own og:image
+  // inherits this instead of rendering blank.
+  openGraph: {
+    type: "website",
+    siteName: "Kerzie AI",
+    title: "Kerzie AI",
+    description: SITE_DESCRIPTION,
+    url: "https://kerzie.ai",
+    images: [
+      {
+        url: "/og/default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Three people working together at one laptop at a kitchen table.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kerzie AI",
+    description: SITE_DESCRIPTION,
+    images: ["/og/default.jpg"],
+  },
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },

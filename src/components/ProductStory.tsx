@@ -6,6 +6,8 @@ export type ProductStoryProps = {
   clock: string;
   hook: string;
   problemBody: string;
+  // The problem photograph. Deliberately the pain, and deliberately dark:
+  // each one is pinned to its hook copy, which is usually after hours.
   image?: string;
   imageAlt?: string;
   whyLabel: string;
@@ -13,6 +15,11 @@ export type ProductStoryProps = {
   whyBody: string;
   builtHook: string;
   builtBody: string;
+  // The after. Without this the page shows the pain in a photograph and then
+  // only describes the resolution in words, so every venture story ended on
+  // its problem picture with nothing to answer it.
+  builtImage?: string;
+  builtImageAlt?: string;
   demo?: ReactNode;
   demoLabel?: string;
   steps: string[];
@@ -100,6 +107,16 @@ export default function ProductStory(props: ProductStoryProps) {
               <p className="text-[#AABBCC] text-base leading-relaxed max-w-2xl">
                 {props.builtBody}
               </p>
+              {props.builtImage && (
+                <figure className="mt-10 lg:mt-12">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={props.builtImage}
+                    alt={props.builtImageAlt ?? ""}
+                    className="k-photo aspect-[21/9]"
+                  />
+                </figure>
+              )}
             </div>
           </div>
         </Reveal>

@@ -4,8 +4,12 @@
 
 import { NextResponse } from "next/server";
 
+// The magnet slug doubles as the Beehiiv utm_source, so it stays "capture-kit"
+// even though the product is now the Mobile Capture Kit. Renaming it would
+// split one lead magnet's subscriber attribution across two tags for a change
+// no subscriber ever sees. The public path moved; the tag did not.
 const MAGNETS: Record<string, string> = {
-  "capture-kit": "/free/capture-kit/access",
+  "capture-kit": "/free/mobile-capture-kit/access",
   "first-reps": "/free/first-reps/access",
 };
 

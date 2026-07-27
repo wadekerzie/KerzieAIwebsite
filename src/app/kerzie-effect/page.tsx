@@ -29,6 +29,22 @@ export const metadata: Metadata = {
     publishedTime: "2026-07-24",
     modifiedTime: "2026-07-27",
     authors: ["Wade Kerzie"],
+    url: "https://kerzie.ai/kerzie-effect",
+    images: [
+      {
+        url: "/og/kerzie-effect.jpg",
+        width: 1200,
+        height: 630,
+        alt: "A woman at a kitchen table reading a printed proposal beside an open laptop.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Kerzie Effect",
+    description:
+      "The most valuable thing you sell is the document you hand over for free to win the work.",
+    images: ["/og/kerzie-effect.jpg"],
   },
 };
 
