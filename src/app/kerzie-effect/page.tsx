@@ -26,7 +26,8 @@ export const metadata: Metadata = {
     description:
       "The most valuable thing you sell is the document you hand over for free to win the work. A named, demonstrable mechanism for how AI actually hits Main Street knowledge work, and who it elevates.",
     type: "article",
-    publishedTime: "2026-07-26",
+    publishedTime: "2026-07-24",
+    modifiedTime: "2026-07-27",
     authors: ["Wade Kerzie"],
   },
 };
@@ -64,7 +65,8 @@ export default function KerzieEffectPage() {
       <EssayMasthead
         kicker="Essay"
         author="Wade Kerzie"
-        date="July 26, 2026"
+        date="July 24, 2026"
+        revised="July 27, 2026"
         title={
           <>
             The Kerzie Effect<span className="dot">.</span>
@@ -413,7 +415,7 @@ export default function KerzieEffectPage() {
         <Sow
           items={[
             "Week 1: shadow the front desk and hygiene team for two days. Find where recall calls and treatment case presentations actually break down.",
-            "Week 2: build a recall script with objection handling, a chair hour production target against the practice's own fee schedule, and a hand-off script between the dentist and the treatment coordinator.",
+            "Week 2: build a recall script with objection handling, a chair hour production target against the practice’s own fee schedule, and a hand-off script between the dentist and the treatment coordinator.",
             "Week 3: run a half day, in person training session, role playing the new scripts with the team.",
             "Week 4: a 30 day follow-up call comparing recall and case acceptance numbers to baseline.",
           ]}

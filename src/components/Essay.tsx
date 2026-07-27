@@ -15,20 +15,30 @@ import Link from "next/link";
 export function EssaySheet({
   children,
   after,
+  backHref = "/",
+  backLabel,
 }: {
   children: React.ReactNode;
   /* Site furniture — subscribe, next-step links. Rendered below the sheet,
      back on the navy: the document ends, then the website resumes. */
   after?: React.ReactNode;
+  /* Where the back link goes. An appendix points at its argument, not home. */
+  backHref?: string;
+  backLabel?: string;
 }) {
   return (
     <div className="bg-[#1A1B2E] min-h-screen pb-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 pb-6 p-noprint">
         <Link
-          href="/"
+          href={backHref}
           className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr;{" "}
+          {backLabel ?? (
+            <>
+              KERZIE<span className="text-[#E8896A]">.</span>AI
+            </>
+          )}
         </Link>
       </div>
 
@@ -53,24 +63,29 @@ export function EssayMasthead({
   kicker,
   author,
   date,
+  revised,
   title,
   deck,
 }: {
   kicker: string;
   author: string;
+  /* Date of publication. This never moves once a piece is out: it is the
+     record of when the argument was made. Later edits go in `revised`. */
   date: string;
+  revised?: string;
   title: React.ReactNode;
   deck: React.ReactNode;
 }) {
   return (
     <header>
-      {/* Three explicit lines: in the gutter they stack right-aligned, and
-          the gutter is too narrow to break "Wade Kerzie · July 26, 2026"
+      {/* Explicit lines: in the gutter they stack right-aligned, and the
+          gutter is too narrow to break "Wade Kerzie · July 24, 2026"
           anywhere that looks deliberate. Inline on small screens. */}
       <p className="p-kicker">
         <span className="idx">{kicker}</span>
         <span className="who">{author}</span>
         <span className="when">{date}</span>
+        {revised ? <span className="revised">Revised {revised}</span> : null}
       </p>
       <h1 className="p-title">{title}</h1>
       <p className="p-deck">{deck}</p>

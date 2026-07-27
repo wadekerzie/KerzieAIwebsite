@@ -809,6 +809,8 @@ a:focus-visible .k-arrow {
 
 .p-kicker .idx { color: var(--p-coral); margin-right: 0.9em; }
 .p-kicker .when::before { content: "\00b7"; margin: 0 0.6em; }
+.p-kicker .revised { color: var(--p-faint); }
+.p-kicker .revised::before { content: "\00b7"; margin: 0 0.6em; }
 
 .p-title {
   margin-top: 2rem;
@@ -848,9 +850,13 @@ a:focus-visible .k-arrow {
 
   .p-kicker .idx,
   .p-kicker .who,
-  .p-kicker .when { display: block; margin-right: 0; }
+  .p-kicker .when,
+  .p-kicker .revised { display: block; margin-right: 0; }
 
-  .p-kicker .when::before { content: none; }
+  .p-kicker .when::before,
+  .p-kicker .revised::before { content: none; }
+
+  .p-kicker .revised { margin-top: 0.9rem; }
 
   .p-title { margin-top: 0; }
 }
@@ -1120,6 +1126,54 @@ a:focus-visible .k-arrow {
 
 .p-ai-line + .p-ai-line { margin-top: 0.65rem; }
 
+/* --- Buttons on paper ---------------------------------------------------
+   The appendix has real offers on it, so it needs real buttons. Squared and
+   inked rather than the navy-canvas blue, so they sit on the sheet instead of
+   floating above it. Never printed. */
+
+.p-btn {
+  display: inline-block;
+  background: var(--p-ink);
+  color: var(--p-sheet);
+  padding: 0.8rem 1.6rem;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background-color 0.25s ease;
+}
+
+.p-btn:hover,
+.p-btn:focus-visible { background: var(--p-coral); }
+
+.p-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: var(--p-ink);
+  border: 1px solid var(--p-ink);
+  padding: calc(0.8rem - 1px) calc(1.6rem - 1px);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.p-btn-ghost:hover,
+.p-btn-ghost:focus-visible {
+  background: var(--p-ink);
+  color: var(--p-sheet);
+}
+
+/* A price is a claim, not decoration. */
+.p-price {
+  margin-top: 1.5rem;
+  font-family: var(--font-text-serif), Georgia, serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--p-ink);
+}
+
 /* --- Links, rules, colophon --------------------------------------------- */
 
 .p-link {
@@ -1166,6 +1220,8 @@ a:focus-visible .k-arrow {
 
   header,
   footer,
+  .p-btn,
+  .p-btn-ghost,
   .p-noprint { display: none !important; }
 
   main { padding-top: 0 !important; }
