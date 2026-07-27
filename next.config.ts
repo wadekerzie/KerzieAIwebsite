@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // /scheduling was the booking path on the old kerzieconsulting.com site
+      // and it is still muscle memory. Wade hand-typed it into a McKinney
+      // Chamber pitch on 2026-07-21 and again in the reply, so the decision
+      // maker who was just introduced clicked a 404 twice. This redirect
+      // repairs every copy of that link already sitting in somebody's inbox.
+      {
+        source: "/scheduling",
+        destination: "/schedule",
+        permanent: true,
+      },
       // Renamed 2026-07-27: "Capture Kit" was too generic to say what it is.
       // The old paths were live for a week and are pasted in a few places, so
       // they keep resolving.
