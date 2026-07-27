@@ -716,3 +716,515 @@ a:focus-visible .k-arrow {
     scroll-behavior: auto;
   }
 }
+
+/* ============================================================================
+   THE PAPER — essay shell
+   ----------------------------------------------------------------------------
+   An essay is a document, not a page. The navy canvas becomes the desk; the
+   essay sits on a sheet with visible edges, so the reader can see where the
+   argument starts and where it stops. A webpage has no edges. A thesis does.
+
+   Everything below is scoped to `.paper` so it can never leak into the rest
+   of the site. Used by src/components/Essay.tsx.
+   ========================================================================== */
+
+.paper {
+  /* Ink on paper. Darkened variants of the brand accents so they clear AA
+     contrast against the sheet — the navy-canvas coral/blue do not. */
+  --p-sheet: #FBF9F4;
+  --p-inset: #F2EEE6;
+  --p-ink: #1A1B2E;
+  --p-body: #262B3D;
+  --p-muted: #656B7D;
+  --p-faint: #656B7D;
+  --p-rule: rgba(26, 27, 46, 0.14);
+  --p-rule-soft: rgba(26, 27, 46, 0.08);
+  --p-coral: #B04E2B;
+  --p-accent: #2B5D96;
+
+  /* Gutter geometry. The text column is offset right to open a margin the
+     notes hang in; below `lg` the gutter collapses and notes go inline. */
+  --p-gutter: 12rem;
+  --p-gutter-gap: 3.25rem;
+  --p-measure: 35rem;
+
+  position: relative;
+  max-width: 59.5rem;
+  margin: 0 auto;
+  background: var(--p-sheet);
+  color: var(--p-body);
+  font-family: var(--font-text-serif), Georgia, "Times New Roman", serif;
+  counter-reset: p-section;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.22),
+    0 28px 80px -24px rgba(0, 0, 0, 0.6);
+}
+
+/* A whisper of a top edge, so the sheet reads as a physical thing catching
+   light rather than a white rectangle. */
+.paper::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.paper-inner {
+  padding: 4rem 1.75rem 3.5rem;
+}
+
+.paper-col {
+  max-width: var(--p-measure);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .paper-inner { padding: 5.5rem 4rem 4.5rem; }
+
+  /* Keep navy visible either side once there is room for it: the sheet has to
+     read as laid ON something. Below this the phone gets a full-bleed sheet,
+     because a phone has no room for a desk. */
+  .paper { width: calc(100% - 4rem); }
+}
+
+@media (min-width: 1024px) {
+  .paper-inner { padding: 6.5rem 4.5rem 5rem; }
+  .paper-col {
+    margin-inline: 0;
+    margin-left: calc(var(--p-gutter) + var(--p-gutter-gap));
+  }
+}
+
+/* --- Masthead ------------------------------------------------------------ */
+
+.p-kicker {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--p-muted);
+}
+
+.p-kicker .idx { color: var(--p-coral); margin-right: 0.9em; }
+.p-kicker .when::before { content: "\00b7"; margin: 0 0.6em; }
+
+.p-title {
+  margin-top: 2rem;
+  font-family: var(--font-text-serif), Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(2.5rem, 5.5vw, 3.75rem);
+  line-height: 1.04;
+  letter-spacing: -0.022em;
+  color: var(--p-ink);
+}
+
+.p-title .dot { color: var(--p-coral); }
+
+.p-deck {
+  margin-top: 1.25rem;
+  font-family: var(--font-text-serif), Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+  line-height: 1.4;
+  color: var(--p-muted);
+}
+
+/* The masthead line hangs in the gutter beside the title, so the margin reads
+   as a designed column from the first screen rather than dead space that only
+   fills in once the notes start. */
+@media (min-width: 1024px) {
+  .paper header { position: relative; }
+
+  .p-kicker {
+    position: absolute;
+    top: 1.1rem;
+    right: calc(100% + var(--p-gutter-gap));
+    width: var(--p-gutter);
+    text-align: right;
+    line-height: 2;
+  }
+
+  .p-kicker .idx,
+  .p-kicker .who,
+  .p-kicker .when { display: block; margin-right: 0; }
+
+  .p-kicker .when::before { content: none; }
+
+  .p-title { margin-top: 0; }
+}
+
+/* --- Abstract: the paper states its claim before it argues it ------------- */
+
+.p-abstract {
+  margin-top: 3rem;
+  padding: 1.5rem 0 1.75rem;
+  border-top: 1px solid var(--p-ink);
+  border-bottom: 1px solid var(--p-rule);
+}
+
+.p-abstract-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--p-coral);
+}
+
+.p-abstract-body {
+  margin-top: 0.9rem;
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  color: var(--p-body);
+}
+
+/* --- Running text -------------------------------------------------------- */
+
+.p-p {
+  margin-top: 1.35rem;
+  font-size: 1.1875rem;
+  line-height: 1.72;
+  color: var(--p-body);
+}
+
+.p-p strong { color: var(--p-ink); font-weight: 600; }
+
+/* One drop cap, on the opening paragraph. One is craft; one per section is
+   costume. */
+.p-p--open { margin-top: 2.5rem; }
+
+.p-p--open::first-letter {
+  float: left;
+  font-size: 4.15em;
+  line-height: 0.8;
+  font-weight: 600;
+  color: var(--p-coral);
+  padding-right: 0.07em;
+  margin-top: 0.045em;
+}
+
+/* --- Sections: numbered, with the numeral hung in the gutter -------------- */
+
+.p-section {
+  position: relative;
+  margin-top: 3.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--p-rule);
+  font-family: var(--font-text-serif), Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--p-ink);
+  counter-increment: p-section;
+  break-after: avoid;
+}
+
+.p-section::before {
+  content: counter(p-section, upper-roman);
+  display: block;
+  margin-bottom: 0.7rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.28em;
+  color: var(--p-coral);
+}
+
+@media (min-width: 1024px) {
+  .p-section::before {
+    position: absolute;
+    top: 1.75rem;
+    right: calc(100% + var(--p-gutter-gap));
+    width: var(--p-gutter);
+    margin: 0;
+    text-align: right;
+    font-size: 0.75rem;
+  }
+}
+
+/* --- Margin notes: editorial, not scholarly ------------------------------
+   Zero-height in the flow, so a note hangs beside whatever follows it
+   without disturbing the text column. Below `lg` it becomes a normal block
+   above the paragraph, ruled on the left. */
+
+.p-note { position: relative; height: 0; }
+
+.p-note > span {
+  display: block;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  line-height: 1.62;
+  letter-spacing: 0.01em;
+  color: var(--p-muted);
+}
+
+@media (max-width: 1023px) {
+  .p-note { height: auto; margin-top: 1.75rem; }
+  .p-note > span {
+    border-left: 2px solid var(--p-coral);
+    padding-left: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-note > span {
+    position: absolute;
+    top: 1.9rem;
+    right: calc(100% + var(--p-gutter-gap));
+    width: var(--p-gutter);
+    text-align: right;
+  }
+  /* Hairline tying the note to its text, drawn in the gap. */
+  .p-note > span::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: calc(100% + 0.9rem);
+    width: 1.4rem;
+    height: 1px;
+    background: var(--p-coral);
+  }
+}
+
+/* --- The thesis statement: the money block ------------------------------- */
+
+.p-thesis {
+  margin-top: 2.75rem;
+  padding: 2rem 0 2.25rem;
+  border-top: 2px solid var(--p-ink);
+  border-bottom: 2px solid var(--p-ink);
+  text-align: center;
+  break-inside: avoid;
+}
+
+.p-thesis-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--p-coral);
+}
+
+.p-thesis-body {
+  margin-top: 1.1rem;
+  font-size: clamp(1.25rem, 2.6vw, 1.5rem);
+  line-height: 1.42;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--p-ink);
+}
+
+/* --- Callouts: a claim stated flat, not decorated ------------------------ */
+
+.p-callout {
+  margin-top: 2.5rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--p-coral);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--p-ink);
+}
+
+/* --- Cases: the evidence, framed as evidence ---------------------------- */
+
+.p-case {
+  margin-top: 4rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--p-ink);
+  break-after: avoid;
+}
+
+.p-case-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--p-coral);
+}
+
+.p-case-title {
+  margin-top: 0.7rem;
+  font-family: var(--font-text-serif), Georgia, serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--p-ink);
+}
+
+/* --- Scope of work: an exhibit, captioned ------------------------------- */
+
+.p-sow {
+  margin-top: 1.75rem;
+  padding: 1.35rem 1.5rem 1.5rem;
+  border: 1px solid var(--p-rule);
+  background: var(--p-inset);
+  break-inside: avoid;
+}
+
+.p-sow-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--p-muted);
+}
+
+.p-sow-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.p-sow-list li {
+  border-left: 2px solid var(--p-coral);
+  padding-left: 0.9rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--p-body);
+}
+
+/* --- AI output: the machine gets a different voice ----------------------
+   Serif is the human argument; the transcripts are set in sans on purpose.
+   The typeface itself marks where Wade stops and the model starts. */
+
+.p-ai {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem 1.4rem;
+  border: 1px solid var(--p-rule);
+  border-left: 3px solid var(--p-accent);
+  background: #FFFFFF;
+  break-inside: avoid;
+}
+
+.p-ai-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--p-accent);
+  margin-bottom: 0.85rem;
+}
+
+.p-ai-line {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.68;
+  color: #3A4054;
+}
+
+.p-ai-line + .p-ai-line { margin-top: 0.65rem; }
+
+/* --- Links, rules, colophon --------------------------------------------- */
+
+.p-link {
+  color: var(--p-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(43, 93, 150, 0.4);
+  transition: text-decoration-color 0.25s ease;
+}
+
+.p-link:hover { text-decoration-color: var(--p-coral); }
+
+.p-rule { height: 1px; background: var(--p-rule); }
+
+.p-colophon {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--p-ink);
+}
+
+.p-colophon-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--p-coral);
+}
+
+.p-colophon-body {
+  margin-top: 0.9rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  line-height: 1.75;
+  color: var(--p-faint);
+}
+
+/* --- Print: the sheet is already the document --------------------------- */
+
+@media print {
+  @page { margin: 0.9in 0.85in; }
+
+  body { background: #fff !important; }
+
+  header,
+  footer,
+  .p-noprint { display: none !important; }
+
+  main { padding-top: 0 !important; }
+
+  .paper {
+    max-width: none;
+    box-shadow: none;
+    background: #fff;
+    --p-body: #000;
+    --p-ink: #000;
+    --p-muted: #333;
+  }
+
+  .paper::before { display: none; }
+  .paper-inner { padding: 0; }
+  .paper-col { margin-left: 0; max-width: none; }
+
+  .p-p { font-size: 11.5pt; line-height: 1.55; }
+
+  /* Notes come back inline — there is no gutter on a printed page. */
+  .p-note { height: auto; margin-top: 1rem; }
+  .p-note > span {
+    position: static;
+    width: auto;
+    text-align: left;
+    border-left: 2px solid #000;
+    padding-left: 0.6rem;
+    font-style: italic;
+  }
+  .p-note > span::after { display: none; }
+
+  .p-section::before { position: static; width: auto; text-align: left; margin-bottom: 0.4rem; }
+
+  .p-ai, .p-sow, .p-thesis, .p-case { break-inside: avoid; }
+
+  /* A printed link that cannot be clicked should say where it went. */
+  .p-link::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #444;
+  }
+}
+
+/* --- Paper chip: the essay's nav entry ----------------------------------
+   A small sheet laid on the navy bar, squared off so it never reads as a
+   button next to the rounded CTAs. Same warm white as the essay sheet, so
+   clicking it lands somewhere the eye already expects. */
+
+.k-paper-chip {
+  background: #FBF9F4;
+  color: #1A1B2E;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.k-paper-chip:hover,
+.k-paper-chip:focus-visible {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+}

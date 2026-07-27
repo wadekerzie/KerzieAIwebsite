@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif, Geist_Mono } from "next/font/google";
+import {
+  Inter,
+  Instrument_Serif,
+  Geist_Mono,
+  Source_Serif_4,
+} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,6 +23,14 @@ const instrumentSerif = Instrument_Serif({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+// Text serif for long-form essays set on paper. Instrument Serif is a display
+// face and gets tiring past a few lines; this one is built for running text.
+const sourceSerif = Source_Serif_4({
+  variable: "--font-text-serif",
+  style: ["normal", "italic"],
   subsets: ["latin"],
 });
 
@@ -44,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${instrumentSerif.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${instrumentSerif.variable} ${geistMono.variable} ${sourceSerif.variable} antialiased`}
       >
         <Header />
         <main className="pt-14 lg:pt-16">

@@ -1,98 +1,94 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import SubscribeForm from "@/components/SubscribeForm";
+import {
+  EssaySheet,
+  EssayMasthead,
+  Abstract,
+  P,
+  Section,
+  Note,
+  Thesis,
+  Callout,
+  Case,
+  Sow,
+  Ai,
+  AiLine,
+  Colophon,
+} from "@/components/Essay";
 
 export const metadata: Metadata = {
   title: "The Kerzie Effect | Kerzie AI",
   description:
-    "Once a buyer has the seller's scope of work and the buyer's own context, an AI can synthesize, and now execute, what used to require paying for the seller's time. Named, defined, and demonstrated across three industries.",
+    "The most valuable thing you sell is the document you hand over for free to win the work. Once a buyer has the seller's scope of work and their own context, an AI can synthesize, and now execute, what used to require paying for the seller's time.",
   openGraph: {
     title: "The Kerzie Effect",
     description:
-      "Why the vendor relationship you've had for ten years might not survive the next two. A named, demonstrable mechanism for how AI actually hits Main Street knowledge work.",
+      "The most valuable thing you sell is the document you hand over for free to win the work. A named, demonstrable mechanism for how AI actually hits Main Street knowledge work, and who it elevates.",
     type: "article",
     publishedTime: "2026-07-26",
     authors: ["Wade Kerzie"],
   },
 };
 
-function P({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="text-[#AABBCC] text-lg leading-relaxed mt-6">{children}</p>
-  );
-}
-
-function H2({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="text-white font-bold tracking-[-0.02em] text-2xl lg:text-3xl mt-16">
-      {children}
-    </h2>
-  );
-}
-
-function Sow({ items }: { items: string[] }) {
-  return (
-    <ul className="mt-6 flex flex-col gap-3">
-      {items.map((item, i) => (
-        <li
-          key={i}
-          className="border-l-2 border-[#E8896A] pl-4 text-[#AABBCC] leading-relaxed"
-        >
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function Ai({ children }: { children: React.ReactNode }) {
-  return (
-    <blockquote className="mt-6 bg-[#1E2035] border border-[rgba(170,187,204,0.15)] rounded-sm px-6 py-5 flex flex-col gap-3">
-      {children}
-    </blockquote>
-  );
-}
-
-function AiLine({ children }: { children: React.ReactNode }) {
-  return <p className="text-[#c9d4de] leading-relaxed">{children}</p>;
-}
-
-function Callout({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="text-white text-lg leading-relaxed mt-6 font-semibold">
-      {children}
+// Everything that is website rather than document: it sits below the sheet on
+// the navy, and it does not print.
+const afterMatter = (
+  <>
+    <p className="text-[#AABBCC]/80 leading-relaxed max-w-xl">
+      If you finished this on the wrong side of the line, I wrote a separate
+      page on{" "}
+      <Link href="/the-line" className="k-link k-focus text-[#6B9FD4]">
+        what to do about it
+      </Link>
+      .
     </p>
-  );
-}
+
+    <div className="mt-10">
+      <p className="k-label mb-5">Follow where the line moves</p>
+      <p className="text-[#AABBCC] leading-relaxed max-w-xl">
+        I write up what I&rsquo;m actually seeing, twice a week, Tuesday and
+        Thursday. What I built, what broke, what it cost. If I haven&rsquo;t
+        done it myself, it doesn&rsquo;t go in.
+      </p>
+      <div className="mt-6">
+        <SubscribeForm source="kerzie-effect-essay" />
+      </div>
+    </div>
+  </>
+);
 
 export default function KerzieEffectPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
-        <Link
-          href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
-        >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
-        </Link>
-      </div>
+    <EssaySheet after={afterMatter}>
+      <EssayMasthead
+        kicker="Essay"
+        author="Wade Kerzie"
+        date="July 26, 2026"
+        title={
+          <>
+            The Kerzie Effect<span className="dot">.</span>
+          </>
+        }
+        deck={
+          <>
+            The most valuable thing you sell is the document you hand over for
+            free to win the work.
+          </>
+        }
+      />
 
-      <article className="max-w-3xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-24">
-        <p className="k-label mb-8">
-          <span className="idx">Essay</span>Wade Kerzie &middot; July 26, 2026
-        </p>
+      <Abstract>
+        Once a buyer has the seller&rsquo;s scope of work and the buyer&rsquo;s
+        own context, an AI can synthesize, and now execute, what used to
+        require paying for the seller&rsquo;s time. Named here, walked through
+        its two phases, demonstrated across three industries at real prices,
+        and bounded by the places it does not reach. The mechanism cuts both
+        ways. It strands anyone whose product is synthesis, and it elevates
+        whoever inside a company picks it up first.
+      </Abstract>
 
-        <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.5rem,6vw,4rem)]">
-          The Kerzie Effect<span className="text-[#E8896A]">.</span>
-        </h1>
-        <p className="mt-6 k-serif text-[#AABBCC] text-xl lg:text-2xl leading-snug">
-          Why the vendor relationship you&rsquo;ve had for ten years might not
-          survive the next two.
-        </p>
-
-        <div className="k-hairline w-full mt-10" />
-
-        <P>Here&rsquo;s what nobody in professional services is saying out loud yet.</P>
+        <P open>Here&rsquo;s what nobody in professional services is saying out loud yet.</P>
         <P>
           For as long as there have been experts, there have been buyers who
           couldn&rsquo;t do what the expert did. That gap, between what you know and
@@ -106,7 +102,7 @@ export default function KerzieEffectPage() {
           it has noticed yet.
         </P>
 
-        <H2>Where I saw it</H2>
+        <Section>Where I saw it</Section>
         <P>
           I was writing a proposal for a client engagement. Standard shape:
           assess where their people are, build a plan to get them where they
@@ -121,6 +117,7 @@ export default function KerzieEffectPage() {
           execute it. They need an AI that can read the outline and their own
           context, and go.
         </P>
+        <Note>Receipt. I ran the buyer side of this on myself: I needed two of the six sessions, and never paid for the course.</Note>
         <P>
           I&rsquo;m not describing a hypothetical. I&rsquo;ve done the buyer side of this
           myself. I&rsquo;ve sat through free webinars where someone selling a paid
@@ -131,15 +128,13 @@ export default function KerzieEffectPage() {
         </P>
         <P>That&rsquo;s the whole mechanism, and it needs a name.</P>
 
-        <div className="mt-8 border-l-2 border-[#E8896A] pl-6 py-1">
-          <p className="text-white text-xl lg:text-2xl leading-snug font-semibold">
-            The Kerzie effect: once a buyer has the seller&rsquo;s scope of work and
-            the buyer&rsquo;s own context, an AI can synthesize, and now execute,
-            what used to require paying for the seller&rsquo;s time.
-          </p>
-        </div>
+        <Thesis>
+          The Kerzie effect: once a buyer has the seller&rsquo;s scope of work and
+          the buyer&rsquo;s own context, an AI can synthesize, and now execute,
+          what used to require paying for the seller&rsquo;s time.
+        </Thesis>
 
-        <H2>Why now</H2>
+        <Section>Why now</Section>
         <P>
           I want to be precise about what actually changed, because it isn&rsquo;t
           what most people assume.
@@ -179,8 +174,16 @@ export default function KerzieEffectPage() {
           to cross to trigger the Kerzie effect didn&rsquo;t move because people got
           more capable. It moved because the interface got out of the way.
         </P>
+        <P>
+          Worth noting who that puts in play. It isn&rsquo;t only owners. Anyone
+          inside a company who understands their own operation well enough to
+          describe it can now cross the same line, without a technical
+          background and without asking anyone&rsquo;s permission. Hold onto that,
+          because it changes who this essay is actually about, and I come back to
+          it at the end.
+        </P>
 
-        <H2>The two phases</H2>
+        <Section>The two phases</Section>
         <P>
           It helps to walk through this as a flow, because it doesn&rsquo;t stop
           where most people would assume it stops.
@@ -214,6 +217,7 @@ export default function KerzieEffectPage() {
           plan, the part that used to require paying someone to synthesize, was
           handed to her for free the moment she asked for a quote.
         </P>
+        <Note>Phase one does not announce itself. It arrives as a trimmed retainer, not a canceled contract.</Note>
         <P>
           If she sounds hypothetical, the agency world&rsquo;s own numbers say she
           isn&rsquo;t. Focus Digital&rsquo;s 2026 agency churn report found 60 percent of
@@ -241,6 +245,7 @@ export default function KerzieEffectPage() {
           The AI is the vendor, the discovery call, and the execution, all in
           one sitting.
         </P>
+        <Note>Phase two is the harder claim: the buyer stops needing anyone to tell them what the work is.</Note>
         <P>
           That&rsquo;s the actual end state of the Kerzie effect, and it&rsquo;s a
           different claim than &ldquo;AI does the work cheaper.&rdquo; It&rsquo;s that the buyer
@@ -253,7 +258,7 @@ export default function KerzieEffectPage() {
           anything for them.
         </P>
 
-        <H2>This isn&rsquo;t new. It&rsquo;s just fast now</H2>
+        <Section>This isn&rsquo;t new. It&rsquo;s just fast now</Section>
         <P>
           Every version of this has happened before, and every time, it
           followed the same shape.
@@ -288,7 +293,7 @@ export default function KerzieEffectPage() {
           It&rsquo;s already here, waiting for a buyer to point it at you.
         </P>
 
-        <H2>What this actually looks like</H2>
+        <Section>What this actually looks like</Section>
         <P>
           I went looking for a real company&rsquo;s private proposal to use as the
           proof here, and I want to tell you honestly what I found instead,
@@ -330,9 +335,10 @@ export default function KerzieEffectPage() {
           global consulting market. The other four fifths is this.
         </P>
 
-        <h3 className="text-white font-semibold text-xl mt-12">
-          HVAC and plumbing: the accounts receivable and invoicing fix
-        </h3>
+        <Case
+          label="Case I &middot; HVAC and plumbing"
+          title="The accounts receivable and invoicing fix"
+        />
         <P>
           Trades businesses routinely carry tens of thousands of dollars in
           aging receivables because invoicing is manual, payment terms are
@@ -340,7 +346,7 @@ export default function KerzieEffectPage() {
           AR management for a small business runs roughly twelve to thirty
           thousand dollars a year. A bounded, one-time process fix, not an
           ongoing service, prices below that: call it{" "}
-          <strong className="text-white">$9,500, one time, over a 90 day engagement</strong>.
+          <strong>$9,500, one time, over a 90 day engagement</strong>.
           The private version of that proposal looks like this:
         </P>
         <Sow
@@ -379,9 +385,10 @@ export default function KerzieEffectPage() {
         <Ai>
           <AiLine>&ldquo;I have API and browser access to your ServiceTitan account and your QuickBooks Payments setup. Want me to load these terms and the follow-up cadence in now, or schedule it to go live at the start of next month?&rdquo;</AiLine>
         </Ai>
+        <Note>The claim, first of three. Not a recommendation. An offer to go execute, inside the buyer&rsquo;s own systems.</Note>
         <P>
           A printed proposal could never do that last part.{" "}
-          <strong className="text-white">
+          <strong>
             This is the magic moment. This is the Kerzie effect.
           </strong>{" "}
           Not the scripts. Not even the plan. The moment an AI stops
@@ -390,16 +397,17 @@ export default function KerzieEffectPage() {
           right now.
         </P>
 
-        <h3 className="text-white font-semibold text-xl mt-12">
-          Dental: the front office and hygiene upskilling playbook
-        </h3>
+        <Case
+          label="Case II &middot; Dental"
+          title="The front office and hygiene upskilling playbook"
+        />
         <P>
           Comprehensive dental practice consulting is typically custom quoted,
           with entry level retainers starting around $395 a month for basic
           support and full engagements running well beyond that once real
           training is involved. A bounded, one-time upskilling project, not an
           open-ended coaching retainer: call it{" "}
-          <strong className="text-white">$6,800, one time, over 4 weeks, including one on-site training day</strong>.
+          <strong>$6,800, one time, over 4 weeks, including one on-site training day</strong>.
           The private version looks like this:
         </P>
         <Sow
@@ -433,22 +441,24 @@ export default function KerzieEffectPage() {
         <Ai>
           <AiLine>&ldquo;I have API and browser access to your Dentrix system, including the recall list and the scheduling calendar. Want me to load this into the recall workflow now, or schedule the rollout for your next team meeting?&rdquo;</AiLine>
         </Ai>
+        <Note>Second industry. Same moment, in a practice management system instead of an invoicing platform.</Note>
         <P>
           A printed proposal could never do that last part either.{" "}
-          <strong className="text-white">This is the magic moment again.</strong>{" "}
+          <strong>This is the magic moment again.</strong>{" "}
           Same shift, different industry: not a recommendation about what the
           practice should do, but a live offer to go do it, inside the system
           the practice already runs on, today or on a schedule the owner picks.
         </P>
 
-        <h3 className="text-white font-semibold text-xl mt-12">
-          Restaurants: the prime cost and scheduling fix
-        </h3>
+        <Case
+          label="Case III &middot; Restaurants"
+          title="The prime cost and scheduling fix"
+        />
         <P>
           Restaurant consulting typically runs $150 to $350 an hour, and
           operators commonly recover the fee within months through cost savings
           alone. A focused, 4 week prime cost engagement: call it{" "}
-          <strong className="text-white">$11,000 flat</strong>, roughly the
+          <strong>$11,000 flat</strong>, roughly the
           middle of that hourly range across the actual hours the work takes.
           The private version looks like this:
         </P>
@@ -482,10 +492,11 @@ export default function KerzieEffectPage() {
         <Ai>
           <AiLine>&ldquo;I have API and browser access to your Toast POS and your 7shifts account. Want me to update the recipe costing and rebuild next week&rsquo;s schedule now, or schedule it to start Monday?&rdquo;</AiLine>
         </Ai>
+        <Note>Third industry. The mechanism is not industry-specific, which is the whole point of running it three times.</Note>
         <P>
           Same as the other two, a printed proposal stops right before that
           last line.{" "}
-          <strong className="text-white">Third industry, same magic moment.</strong>{" "}
+          <strong>Third industry, same magic moment.</strong>{" "}
           Trades, healthcare, hospitality, it doesn&rsquo;t matter. Once someone has
           crossed the competency line and is working from one window, this is
           what happens next every time: not a recommendation, an offer to
@@ -496,7 +507,10 @@ export default function KerzieEffectPage() {
           None of those took a week to produce, and none of them needed anyone
           with a badge, a car, or a billable hour. They needed the outline, a
           few sentences of real context, one word of approval, and about a
-          minute.
+          minute. And notice what the context actually was in each case: the
+          receivables number, the hygiene production rate, the prime cost
+          percentage. That&rsquo;s not consultant knowledge. That&rsquo;s knowledge
+          somebody inside the business already has in their head.
         </P>
         <P>
           I want to be direct about what this does and doesn&rsquo;t prove. It
@@ -534,11 +548,12 @@ export default function KerzieEffectPage() {
           this industry hands out for free every time someone asks for a quote.
         </P>
 
-        <H2>It doesn&rsquo;t stay inside professional services</H2>
+        <Section>It doesn&rsquo;t stay inside professional services</Section>
         <P>
           Once you see the mechanism, you stop seeing it as a consulting
           problem.
         </P>
+        <Note>It does not stop at consulting. Most software is a license on somebody else&rsquo;s workflow, and you use a fifth of it.</Note>
         <P>
           Most software is a license to use somebody else&rsquo;s codified workflow,
           and most people use a small slice of what they pay for. Everybody who
@@ -557,7 +572,7 @@ export default function KerzieEffectPage() {
           outline.
         </P>
 
-        <H2>The physical layer is a floor, not a moat</H2>
+        <Section>The physical layer is a floor, not a moat</Section>
         <P>
           Everyone who reads this far finds the same escape hatch, and I want to
           close it, because I think it&rsquo;s the most misread part of this whole
@@ -609,6 +624,7 @@ export default function KerzieEffectPage() {
           dropped by more than four points, and ask you to sit with why that
           would be.
         </P>
+        <Note>The physical layer is not eliminated. It is stranded: the margin separates from the labor.</Note>
         <P>
           So the Kerzie effect doesn&rsquo;t come for the physical work. It comes for
           the wrapper. When the buyer&rsquo;s own AI can do the design and the
@@ -665,7 +681,8 @@ export default function KerzieEffectPage() {
           now rather than at renewal.
         </P>
 
-        <H2>The honest limits</H2>
+        <Section>The honest limits</Section>
+        <Note>Where it stops. A thesis that pretends it has no edges is not a thesis, it is a slogan.</Note>
         <P>
           I want to be direct about where this doesn&rsquo;t apply, because a thesis
           that pretends it has no edges isn&rsquo;t a thesis, it&rsquo;s a slogan.
@@ -698,7 +715,7 @@ export default function KerzieEffectPage() {
           knowledge barrier. It does not touch the calendar.
         </P>
 
-        <H2>What&rsquo;s actually left</H2>
+        <Section>What&rsquo;s actually left</Section>
         <P>
           Remove everything the Kerzie effect can&rsquo;t touch, work that requires a
           licensed third party by law, work that transfers real financial or
@@ -734,7 +751,72 @@ export default function KerzieEffectPage() {
           plainly, because that&rsquo;s the part worth charging for.
         </P>
 
-        <H2>Seller beware, buyer&rsquo;s advantage</H2>
+        <Section>The other side of the ledger</Section>
+        <P>
+          Everything up to here is written from the seller&rsquo;s chair, because
+          that&rsquo;s the chair I sit in. But there&rsquo;s a person in every one of
+          these examples that I&rsquo;ve been calling &ldquo;the buyer,&rdquo; and I
+          want to stop being vague about who that actually is.
+        </P>
+        <Note>
+          Companies don&rsquo;t cross competency lines. A specific person inside
+          one does, and that person is already on payroll.
+        </Note>
+        <P>
+          It isn&rsquo;t a company. Companies don&rsquo;t cross competency lines. In
+          each of those three cases, somebody specific sat down with the scope of
+          work and their own numbers and did the thing. In the plumbing company
+          it&rsquo;s the office manager who already knew where the receivables were
+          buried. In the dental practice it&rsquo;s the treatment coordinator.
+          Nobody hired anyone. Nobody ran a search. Someone already on payroll
+          picked up a tool that finally got simple enough to use, and work that
+          used to cost $9,500 to buy got done from one window.
+        </P>
+        <P>
+          Let me be clear that this next part is my expectation and not something
+          I can source. I don&rsquo;t think the number of jobs three years from now
+          is the interesting question. The count could hold roughly flat and this
+          would still be one of the larger changes to work I&rsquo;ve seen, because
+          what shifts isn&rsquo;t how many jobs there are. It&rsquo;s what the job is.
+          The titles mostly stay. The skill underneath them turns over.
+        </P>
+        <Callout>
+          The Kerzie effect doesn&rsquo;t only strand the people who sell
+          expertise. It relocates that expertise, and it relocates it to whoever
+          picks it up first.
+        </Callout>
+        <P>
+          And almost nobody will. I want to say that plainly, because it&rsquo;s the
+          whole reason there&rsquo;s an opening here at all. Every time an interface
+          gets simple, the capability becomes available to everyone and gets used
+          by a small fraction, and that fraction is disproportionately valuable
+          for a while. I don&rsquo;t expect a whole company to cross this line. I
+          expect one or two people per department to cross it, and I expect them
+          to end up running things they weren&rsquo;t running before, because
+          they&rsquo;re the only ones who can.
+        </P>
+        <Note>
+          The seat changes: from performing one slice of the work to
+          orchestrating all of it. That seat is harder to cut.
+        </Note>
+        <P>
+          If you&rsquo;re the person in your company who can take a scope of work,
+          your own systems, and your own numbers, and produce the thing that used
+          to get purchased, you haven&rsquo;t automated yourself out of a job.
+          You&rsquo;ve moved from performing one slice of the work to orchestrating
+          the whole of it, which is a different seat and a much harder one to cut.
+          The competency line isn&rsquo;t only the thing that decides which vendors
+          survive. Inside a company, it decides which people become load-bearing.
+        </P>
+        <P>
+          It&rsquo;s the same mechanism, read from the other chair. It strands you
+          if what you sell is synthesis. It elevates you if you&rsquo;re the one who
+          learns to run it. Most of the worry I hear about this comes from people
+          who know they&rsquo;re in one of those two positions and haven&rsquo;t worked
+          out which.
+        </P>
+
+        <Section>Seller beware, buyer&rsquo;s advantage</Section>
         <P>
           I used to think the danger in this business was someone building a
           better version of what I do. The actual danger is simpler. It&rsquo;s a
@@ -783,39 +865,26 @@ export default function KerzieEffectPage() {
           in my own business and in the ones I talk to. I&rsquo;m going to keep
           writing about where it moves next.
         </P>
+        <P>
+          One closing thought, and it&rsquo;s the one I&rsquo;d want if I were reading
+          this instead of writing it. Whether this lands on you as a threat or as
+          an opening comes down to a single question, and it isn&rsquo;t about your
+          industry or your title. It&rsquo;s whether you&rsquo;re on the side of the
+          competency line that gets synthesized, or the side that does the
+          synthesizing. That line is not hard to cross anymore. That&rsquo;s the
+          entire point of this essay, and it&rsquo;s the part that cuts both ways.
+        </P>
 
-        <div className="k-hairline w-full mt-16" />
-
-        <p className="mt-10 text-[#AABBCC]/80 leading-relaxed max-w-xl">
-          If you finished this on the wrong side of the line, I wrote a separate
-          page on{" "}
-          <Link href="/the-line" className="k-link k-focus text-[#6B9FD4]">
-            what to do about it
-          </Link>
-          .
-        </p>
-
-        <div className="mt-10">
-          <p className="k-label mb-5">Follow where the line moves</p>
-          <p className="text-[#AABBCC] leading-relaxed max-w-xl">
-            I write up what I&rsquo;m actually seeing, twice a week, Tuesday and
-            Thursday. What I built, what broke, what it cost. If I haven&rsquo;t
-            done it myself, it doesn&rsquo;t go in.
-          </p>
-          <div className="mt-6">
-            <SubscribeForm source="kerzie-effect-essay" />
-          </div>
-        </div>
-
-        <p className="mt-12 k-mono text-[#AABBCC]/50 text-xs leading-relaxed">
-          Sources: Dell&rsquo;Acqua et al., &ldquo;Navigating the Jagged Technological
+        <Colophon>
+          Dell&rsquo;Acqua et al., &ldquo;Navigating the Jagged Technological
           Frontier,&rdquo; HBS/BCG field experiment (Organization Science, 2026).
           Source Global Research, consulting service line data, 2024. HFS
           Research / IBM Market Impact Report, 2025. Focus Digital, 2026 agency
-          churn report. Pricing benchmarks: published AR outsourcing, dental
-          consulting, and restaurant consulting rate ranges, 2025-2026.
-        </p>
-      </article>
-    </div>
+          churn report. Insight Enterprises and ePlus, FY2024 annual reports.
+          Pricing benchmarks: published AR outsourcing, dental consulting, and
+          restaurant consulting rate ranges, 2025-2026.
+        </Colophon>
+
+    </EssaySheet>
   );
 }

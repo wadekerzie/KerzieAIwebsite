@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 type NavChild = { label: string; href: string; hint?: string };
-type NavLink = { label: string; href: string; children?: NavChild[] };
+type NavLink = { label: string; href: string; children?: NavChild[]; paper?: boolean };
 
 const navLinks: NavLink[] = [
   // Deliberately no dropdown. /the-line is reachable only from inside the
   // essay, so the nav never advertises an offer page hanging off the argument.
-  { label: "The Kerzie Effect", href: "/kerzie-effect" },
+  // Rendered as a paper chip, not a nav link: the white square in the bar
+  // rhymes with the sheet the essay sits on, so the thesis reads as an
+  // artifact the site holds rather than another page in the menu.
+  { label: "The Kerzie Effect", href: "/kerzie-effect", paper: true },
   {
     label: "Our Work",
     href: "/ventures",
@@ -126,7 +129,11 @@ export default function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="k-link text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+                  className={
+                    link.paper
+                      ? "k-paper-chip text-sm k-focus"
+                      : "k-link text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+                  }
                 >
                   {link.label}
                 </Link>
