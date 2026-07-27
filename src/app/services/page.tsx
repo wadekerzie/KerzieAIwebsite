@@ -57,8 +57,8 @@ export default function ServicesPage() {
         <Reveal>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/evidence/workbench.jpg"
-            alt="A builder's workbench at night: worn hand tools on a pegboard beside an open laptop, one warm shop lamp"
+            src="/evidence/services.jpg"
+            alt="Four people working together around a table in daylight, laptops and printed pages between them"
             className="k-photo"
           />
         </Reveal>

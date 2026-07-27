@@ -37,8 +37,8 @@ export default function ImplementationPage() {
         <Reveal>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/evidence/implementation.jpg"
-            alt="A small business back office at night: one monitor glowing over a tidy desk, filing trays stacked, a warm desk lamp burning low"
+            src="/evidence/implementation-working.jpg"
+            alt="A business owner working alone at her own desk in daylight, running the system herself"
             className="k-photo"
           />
         </Reveal>
