@@ -229,6 +229,27 @@ This file loads into every future session. It is the difference between an assis
 
 One file. Their businesses as sections. Every open item gets a short ID like `G5` or `W9` so they can say "done G5" in plain language and you update the file.
 
+**Separate open work from finished work from the very first day.** Structure the file like this, and never mix the two:
+
+```
+# <Their Name>'s Actions
+
+## OPEN
+### <Business or project>
+- [ ] G5. <status + the next action + where the detail lives>
+
+## COMPLETED
+- 2026-07-14  G3. <one line saying what happened, and where the detail lives>
+```
+
+Why this matters more than it sounds: a single running list where half the lines are already checked off gets harder to read every week, and the operator ends up scanning past their own finished work to find what still needs them. **The open section should answer one question - what is still worth your attention right now - and nothing else.**
+
+Three rules that keep it that way:
+
+- **When an item is done, move it.** Do not leave a checked box sitting in the open section. Collapse it to one line, date it, and put it under COMPLETED.
+- **Keep open items short.** Status, the next action, and a pointer to where the detail lives. History belongs in the project's own file, not inside a live item.
+- **When COMPLETED gets long, move the oldest entries into `ACTIONS_ARCHIVE.md`** and leave the one-line receipts behind. The tracker is a working surface, not a record of everything that ever happened. Nothing is ever deleted, only moved.
+
 **Seed it from the interview.** Everything they mentioned as falling through the cracks, meaning to get to, or resenting doing is an item. This file should be useful the moment it is created, not an empty template. Mark each item as theirs to decide or yours to execute.
 
 ## Phase 3 - Connectors, walked through one at a time
