@@ -55,7 +55,7 @@ export default function FastTrackPage() {
           $999 flat for the room<span className="text-[#E8896A]">.</span>
         </p>
         <p className="k-rise k-rise-3 mt-2 text-[#AABBCC] text-base">
-          Bring three and it is $333 each.
+          One person or three. Same price.
         </p>
         <div className="k-rise k-rise-4 mt-10">
           <a href="#intake" className="k-btn-solid k-focus inline-block">
