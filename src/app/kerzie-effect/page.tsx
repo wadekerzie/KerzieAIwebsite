@@ -807,6 +807,31 @@ export default function KerzieEffectPage() {
           internal priority to actually build and run the thing. AI removes the
           knowledge barrier. It does not touch the calendar.
         </P>
+        <P>
+          And a seller running a real learning loop still owns something. The
+          sharpest version of this objection came from over at OpenExO: the moat
+          is the rate of improvement, not the state of the data on any given
+          day. That is a fair hit and I will concede the mechanism. A scope of
+          work is a snapshot. What a firm actually owns is not the document, it
+          is the rate at which the document gets better, and a buyer holding one
+          proposal cannot capture that.
+        </P>
+        <P>
+          Here is why I think the argument still holds. Both things are true at
+          once. The static playbook is finished, which is the effect I named.
+          And a firm that genuinely improves its playbook every quarter has
+          something to sell that no buyer can harvest in an afternoon. The
+          problem is that most professional services firms do not run that loop.
+          Ask yours what their methodology learned in the last ninety days,
+          which engagement taught it, and what changed in the deliverable as a
+          result. A real answer is specific and a little embarrassing, because
+          learning usually starts with something that did not work. A version
+          number on a template is not an answer.
+        </P>
+        <Note>
+          The improvement rate is a real moat. It is just not a moat most of
+          them have built.
+        </Note>
 
         <Section>What&rsquo;s actually left</Section>
         <P>
