@@ -12,8 +12,8 @@ const offers = [
   {
     label: "01",
     title: "AI Fast-Track Session",
-    price: "$750 flat",
-    body: "Three hours at your computer, in your business, on your own $20 AI subscription. One painful workflow moved from manual to working before we are done. You leave with it working.",
+    price: "$999 flat for the room",
+    body: "Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with the One-Window Setup. Bring three and it is $333 each.",
     href: "/services/fast-track",
     cta: "Read how it works",
   },

@@ -209,11 +209,12 @@ export default function OneWindowPage() {
             </p>
             <p>
               Rather have it built WITH you: your machine, your accounts, one
-              real workflow shipped before I leave the call? That is the{" "}
+              real workflow shipped before I leave the room? That is the{" "}
               <Link href="/services/fast-track" className="k-link k-focus text-[#6B9FD4]">
                 AI Fast-Track Session
               </Link>{" "}
-              at $750, and this document is included.
+              at $999 for up to three people, and this document is included for
+              every one of them.
             </p>
           </div>
           <div className="mt-10">

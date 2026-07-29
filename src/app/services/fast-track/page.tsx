@@ -6,13 +6,21 @@ import FastTrackIntakeForm from "@/components/FastTrackIntakeForm";
 export const metadata: Metadata = {
   title: "AI Fast-Track Session | Kerzie AI",
   description:
-    "Three hours. Your computer, your business, your own AI subscription. We set it up together and ship one real piece of work before we are done. $750 flat.",
+    "Three hours, one room, up to three people. Each on your own machine, your own accounts, your own $20 AI subscription. Everyone ships one real piece of their own work before we are done. $999 flat for the room.",
 };
+
+const specs = [
+  "Three hours, one sitting.",
+  "One to three people, in one room, in person.",
+  "Each person on their own machine, with their own logins open.",
+  "Each person on their own $20 per month Claude subscription, set up live.",
+  "The $99 One-Window Setup included for every person in the room.",
+];
 
 const takeaways = [
   "A working Claude setup on your own machine, under your own $20 per month subscription.",
   "Connected to the real accounts your business runs on.",
-  "One painful workflow moved from manual to working. Your call which one; the intake helps us pick.",
+  "One painful workflow moved from manual to working, per person. Your call which one; the intake helps us pick.",
   "A simple action system you can run every day.",
   "A check-in from me 30 days later to see what stuck.",
 ];
@@ -38,12 +46,16 @@ export default function FastTrackPage() {
           <span className="text-[#E8896A]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-xl leading-relaxed">
-          Three hours. Your computer, your business, your own $20 AI
-          subscription. We set it up together and ship one real piece of work
+          Three hours. One room. Up to three people, each at your own machine,
+          in your own accounts, on your own $20 AI subscription. We set it up
+          together and every person ships one real piece of their own work
           before we are done.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-white text-2xl font-semibold">
-          $750 flat<span className="text-[#E8896A]">.</span>
+          $999 flat for the room<span className="text-[#E8896A]">.</span>
+        </p>
+        <p className="k-rise k-rise-3 mt-2 text-[#AABBCC] text-base">
+          Bring three and it is $333 each.
         </p>
         <div className="k-rise k-rise-4 mt-10">
           <a href="#intake" className="k-btn-solid k-focus inline-block">
@@ -91,7 +103,7 @@ export default function FastTrackPage() {
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>Not a class. Not a demo. Not a report you file away.</p>
             <p>
-              A working session. We sit down at your computer, with your
+              A working session. We sit down at your computers, in your
               accounts, and set up AI to do real work in your business. Then we
               do some of that work, together, before the session ends.
             </p>
@@ -103,10 +115,38 @@ export default function FastTrackPage() {
         </Reveal>
       </section>
 
+      {/* The specifics */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">03 &mdash; The Specifics</p>
+          <ul className="max-w-2xl space-y-4 mb-6">
+            {specs.map((s) => (
+              <li
+                key={s}
+                className="border-l border-[#E8896A] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+              >
+                {s}
+              </li>
+            ))}
+          </ul>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p className="text-white font-medium">
+              Bring the people who will actually use it.
+            </p>
+            <p>
+              Three people set up beats one person set up, and the price is the
+              same either way. The most common way a session like this gets
+              wasted is one person learning it and then becoming the bottleneck
+              for everyone else.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* What you leave with */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; What You Leave With</p>
+          <p className="k-label mb-6">04 &mdash; What You Leave With</p>
           <ul className="max-w-2xl space-y-4">
             {takeaways.map((t) => (
               <li
@@ -123,7 +163,7 @@ export default function FastTrackPage() {
       {/* The first one */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; The First One</p>
+          <p className="k-label mb-6">05 &mdash; The First One</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Kurt and Tana Nelson run{" "}
@@ -167,7 +207,7 @@ export default function FastTrackPage() {
       {/* Before we book */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; Before We Book</p>
+          <p className="k-label mb-6">06 &mdash; Before We Book</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Not everyone is a fit, and I would rather tell you that before you
@@ -183,9 +223,10 @@ export default function FastTrackPage() {
                 is what the free demos are for.
               </li>
               <li>
-                You show up with an active $20 per month Claude subscription and
-                your logins ready. If that feels like too much before we start,
-                this session is not for you yet.
+                Everyone coming shows up with an active $20 per month Claude
+                subscription, their own machine, and their logins ready. If that
+                feels like too much before we start, this session is not for you
+                yet.
               </li>
             </ol>
             <p>
@@ -199,11 +240,23 @@ export default function FastTrackPage() {
       {/* The price */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; The Price</p>
+          <p className="k-label mb-6">07 &mdash; The Price</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p className="text-white text-xl font-semibold">
-              $750, flat. That covers the intake review, the 3-hour working
-              session, and the 30-day check-in.
+              $999, flat. That is the room, not the seat.
+            </p>
+            <p>
+              It covers the intake review, the 3-hour working session, the
+              30-day check-in, and a $99 One-Window Setup for every person who
+              sits down.
+            </p>
+            <p>
+              Come alone and it is three hours of my time on the workflow that
+              is costing you the most. Bring three and it is{" "}
+              <span className="text-white font-medium">$333 each</span>, about
+              $111 an hour per person, and each of you still walks out with the
+              One-Window Setup. Same price either way, so the question is only
+              how many people you want working on the other side of it.
             </p>
             <p>
               If what we find during the session is bigger than three hours can
@@ -220,10 +273,10 @@ export default function FastTrackPage() {
         className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]"
       >
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; The Intake</p>
+          <p className="k-label mb-6">08 &mdash; The Intake</p>
           <p className="text-[#AABBCC] text-lg max-w-2xl mb-10">
             Five minutes. This tells us both whether the session is worth your
-            $750 and my three hours.
+            $999 and my three hours. Tell me how many of you are coming.
           </p>
           <div className="max-w-2xl">
             <FastTrackIntakeForm />

@@ -120,9 +120,10 @@ export default function TheLinePage() {
       <Section>If you&rsquo;re missing the crossing</Section>
       <P>
         Three hours at your desk, on your machine, with your accounts and your
-        own AI subscription. We set it up together and ship one real piece of
-        your own work before the session ends. Not a class, not a demo on
-        someone else&rsquo;s screen.
+        own AI subscription. Bring up to two more people and they do the same
+        thing beside you, each on their own machine. We set it up together and
+        every person ships one real piece of their own work before the session
+        ends. Not a class, not a demo on someone else&rsquo;s screen.
       </P>
       <Note>The bar is not impressed. The bar is self-sufficient.</Note>
       <P>
@@ -130,7 +131,10 @@ export default function TheLinePage() {
         Three hours after I left, he sat back down at the same window and kept
         working, alone. That is the bar: not impressed, self-sufficient.
       </P>
-      <p className="p-price">$750 flat, and the one-window document is included.</p>
+      <p className="p-price">
+        $999 flat for up to three people, and the one-window document is
+        included for each of them.
+      </p>
       <p className="mt-6">
         <Link href="/services/fast-track" className="p-btn k-focus">
           The AI Fast-Track Session <span className="k-arrow">&rarr;</span>
@@ -172,7 +176,7 @@ export default function TheLinePage() {
         enough could assemble most of it themselves, and the price reflects
         exactly that. The three hours at your desk, with your accounts, on the
         workflow that actually hurts, is the part that can&rsquo;t be
-        substituted. That&rsquo;s the $750.
+        substituted. That&rsquo;s the $999.
       </P>
       <Callout>
         Neither one makes you immune to any of this. They put you on the side of

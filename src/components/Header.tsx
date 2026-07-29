@@ -32,7 +32,7 @@ const navLinks: NavLink[] = [
     href: "/services",
     children: [
       { label: "The One-Window Setup", href: "/one-window", hint: "$99" },
-      { label: "AI Fast-Track Session", href: "/services/fast-track", hint: "$750" },
+      { label: "AI Fast-Track Session", href: "/services/fast-track", hint: "$999" },
       { label: "AI Implementation", href: "/services/implementation", hint: "Scoped" },
       { label: "For Sales Teams", href: "/services/sales-teams", hint: "Book a call" },
     ],
