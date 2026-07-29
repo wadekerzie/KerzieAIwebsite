@@ -214,7 +214,9 @@ export default function OneWindowPage() {
                 AI Fast-Track Session
               </Link>{" "}
               at $999 for up to three people, and this document is included for
-              every one of them.
+              every one of them. Take this $99 off the top and the session runs
+              $900. Split across three people and three hours, that is $100 an
+              hour each to have it installed instead of read.
             </p>
           </div>
           <div className="mt-10">

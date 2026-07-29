@@ -251,12 +251,25 @@ export default function FastTrackPage() {
               sits down.
             </p>
             <p>
-              Come alone and it is three hours of my time on the workflow that
-              is costing you the most. Bring three and it is{" "}
-              <span className="text-white font-medium">$333 each</span>, about
-              $111 an hour per person, and each of you still walks out with the
-              One-Window Setup. Same price either way, so the question is only
-              how many people you want working on the other side of it.
+              Run the comparison you are already running. You were going to buy
+              the $99 One-Window Setup anyway, so take it off the top. That puts
+              the session itself at $900. Bring three people and that is{" "}
+              <span className="text-white font-medium">
+                $100 an hour, per person
+              </span>
+              , to have it built with you instead of by you. And all three of
+              you still walk out with the Setup.
+            </p>
+            <p>
+              The Setup is the same document either way. The difference is
+              whether it gets read or whether it gets installed, in your
+              accounts, on the workflow that is actually costing you money,
+              before anyone leaves the room.
+            </p>
+            <p>
+              Come alone and it is three hours of my time on the one workflow
+              hurting you most. Same price either way, so the only real question
+              is how many people you want working on the other side of it.
             </p>
             <p>
               If what we find during the session is bigger than three hours can
