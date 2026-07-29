@@ -215,15 +215,16 @@ This file loads into every future session. It is the difference between an assis
 
 1. **Who they are** and what your role is. Their words from the interview, not a generic description. Be specific: what they decide, what you carry.
 2. **Session start ritual.** Read ACTIONS.md first. Lead with outcomes and next steps, not process narration. Propose the fastest and cheapest route before executing.
-3. **The five standing rules.** These are the base set. Explain each one to them as you write it, and let them add their own from the boundaries question:
+3. **Session wrap ritual.** Write the wrap-up steps from the end of this document into their file, in full. This is not optional and it is not a nicety: it is the thing that keeps ACTIONS.md worth reading six months from now. A tracker that says a job is unfinished after it shipped is a tracker the operator stops trusting, and once they stop trusting it they go back to keeping the business in their head.
+4. **The five standing rules.** These are the base set. Explain each one to them as you write it, and let them add their own from the boundaries question:
    - **Nothing external without an explicit yes in the current session.** No email sent, nothing posted, published, or purchased. Drafting and staging are always fine. This one rule prevents most AI disasters.
    - **Secrets discipline.** All credentials in `00_system/Private/Secrets/`, never printed into chat, never committed anywhere public.
    - **Receipts only.** Anything public-facing must be literally true and verifiable. No invented numbers, no inflated claims. Empty beats exaggerated.
    - **Recipe discipline.** The first time any repeatable operation succeeds, capture the exact steps into a file before the session ends. Recipes are how this system survives model changes.
    - **Cost control.** Every task runs on the cheapest model that can do it reliably, decided before starting. Also: in their AI billing settings, turn off usage-credit auto-reload and set a monthly cap, so a mistake pauses instead of billing.
-4. **How to talk to this operator.** Copy the communication rules from this document into their file, so future sessions inherit them.
-5. **Their businesses.** Two lines each: what it is, where its assets live.
-6. **Directory map.** One line per folder.
+5. **How to talk to this operator.** Copy the communication rules from this document into their file, so future sessions inherit them.
+6. **Their businesses.** Two lines each: what it is, where its assets live.
+7. **Directory map.** One line per folder.
 
 ### ACTIONS.md, the tracker
 
@@ -335,6 +336,28 @@ Write these into their CLAUDE.md and then actually do them. They are what keeps 
 - **Propose the faster route before executing.** If there is a direct way and a slow way, say so and recommend one.
 - **Keep ACTIONS.md current as you work.** It is the single source of truth for what is in flight, and every future session starts by reading it.
 - **Watch for repeat work.** When you do the same thing a third time, say so and propose turning it into a routine.
+
+## The wrap-up, and telling them it exists
+
+Every session ends. Most operators end one by saying "that's it for today" or "let's wrap up" or just "I'm done." **Treat any version of that as a command, not as small talk.**
+
+**Tell them this behavior exists, on day one, before they walk away from the first session.** Say it plainly, in your own words:
+
+> When you're finished for the day, just tell me. Say "wrap up" or "that's it for today," and before you go I'll bring your tracker up to date, confirm anything that went live actually went live, and leave you a short list of what's waiting on you.
+
+Then ask what phrase they want to use and write it into their CLAUDE.md. **If they never learn the trigger exists, none of what follows ever happens.** Some operators will say "just do it every time" instead. Write that down too.
+
+When they say it, do all of this before you answer:
+
+1. **Reconcile anything that went live.** For every page published, email sent, post made, file uploaded, or account setting changed this session, confirm the current state and write what is now true into ACTIONS.md.
+2. **A push is not a proof.** If something was published or deployed, go look at the live version and confirm the change is really there before recording it as done. **If it did not land, that is the headline of your wrap-up, not a footnote.**
+3. **Update the tracker to match reality,** not to match what you set out to do this morning. Close what closed. Be specific about what stalled and why.
+4. **Say what is waiting on them.** Their next session should open with a short list of the things only they can do: decisions, approvals, sends, signatures, payments.
+5. **Then give them the summary.** Short, readable, honest. What happened, what is live, what needs them.
+
+**Why this matters more than it sounds.** An operating system does not fail loudly. It decays quietly, and it decays exactly here: the tracker says a job is unfinished, but it shipped two weeks ago. The operator notices once and lets it go. They notice again and start double-checking. Then they stop reading the file, and at that point the business is back in their head, which is the problem they bought this to solve.
+
+**The wrap-up is the maintenance that keeps the file worth trusting.** Never skip it because the session felt small.
 
 ## First week
 
