@@ -13,6 +13,10 @@ const navLinks: NavLink[] = [
   // rhymes with the sheet the essay sits on, so the thesis reads as an
   // artifact the site holds rather than another page in the menu.
   { label: "The Kerzie Effect", href: "/kerzie-effect", paper: true },
+  // The second paper chip. Two white squares side by side read as a matched
+  // pair, the site's body of work: the Effect is the firm-level argument, the
+  // Clock is the person-level one.
+  { label: "The Consequence Clock", href: "/consequence-clock", paper: true },
   {
     label: "Our Work",
     href: "/ventures",
