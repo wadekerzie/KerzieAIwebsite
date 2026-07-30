@@ -89,14 +89,16 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-10">
+          {/* Desktop nav. Full bar only where it genuinely fits on one line:
+              two paper chips plus five nav items plus two CTAs need xl. Below
+              that, the burger menu carries everything. */}
+          <nav className="hidden xl:flex items-center gap-5 2xl:gap-8 mr-4">
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label} className="relative group">
                   <Link
                     href={link.href}
-                    className="k-link inline-flex items-center gap-1.5 text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+                    className="k-link inline-flex items-center gap-1.5 whitespace-nowrap text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
                     aria-haspopup="true"
                   >
                     {link.label}
@@ -135,8 +137,8 @@ export default function Header() {
                   href={link.href}
                   className={
                     link.paper
-                      ? "k-paper-chip text-sm k-focus"
-                      : "k-link text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+                      ? "k-paper-chip text-[13px] k-focus"
+                      : "k-link whitespace-nowrap text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
                   }
                 >
                   {link.label}
@@ -146,16 +148,16 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             <Link
               href="/#whats-broken"
-              className="k-btn-ghost !px-5 !py-2 k-focus"
+              className="k-btn-ghost !px-4 !py-2 whitespace-nowrap k-focus"
             >
               Tell Us What Hurts
             </Link>
             <Link
               href="/speaking"
-              className="k-btn-solid !px-5 !py-2 k-focus"
+              className="k-btn-solid !px-4 !py-2 whitespace-nowrap k-focus"
             >
               Book Wade
             </Link>
@@ -163,7 +165,7 @@ export default function Header() {
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden p-2 -mr-2 text-[#6B9FD4] k-focus"
+            className="xl:hidden p-2 -mr-2 text-[#6B9FD4] k-focus"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
@@ -184,7 +186,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#2D3154] w-full px-6 pt-6 pb-12 border-t border-[rgba(170,187,204,0.13)] max-h-[calc(100vh-3.5rem)] overflow-y-auto">
+        <div className="xl:hidden bg-[#2D3154] w-full px-6 pt-6 pb-12 border-t border-[rgba(170,187,204,0.13)] max-h-[calc(100vh-3.5rem)] overflow-y-auto">
           <nav className="flex flex-col gap-8">
             {navLinks.map((link, i) => (
               <div key={link.label}>
