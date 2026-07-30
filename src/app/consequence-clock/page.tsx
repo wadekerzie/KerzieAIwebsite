@@ -7,6 +7,7 @@ import {
   Abstract,
   P,
   Section,
+  Note,
   Thesis,
   Callout,
   Colophon,
@@ -128,6 +129,7 @@ export default function ConsequenceClockPage() {
         most repetitive hours of his week. I sent him the whole solution in a
         Teams message.
       </P>
+      <Note>The whole essay is in this message. Everything after it is me learning to read the silence.</Note>
       <P>
         He never replied. Not a no, not a &ldquo;let&rsquo;s discuss.&rdquo;
         Silence.
@@ -138,6 +140,7 @@ export default function ConsequenceClockPage() {
         all. I remember sitting there thinking: I just handed this man the keys
         to the kingdom. Why isn&rsquo;t he excited about this?
       </P>
+      <Note>He is not the villain of this story. He is the clock, doing what clocks do.</Note>
       <P>
         It took me a while to understand what I had actually done. That
         solution did not read to him as a gift. It put a spotlight on his
@@ -185,6 +188,7 @@ export default function ConsequenceClockPage() {
         is how fast being wrong turns into cost, and how visible that cost is
         when it arrives.
       </P>
+      <Note>The hands are not three speeds. They are three visibilities.</Note>
       <P>
         Think about the three hands on a clock face. You can watch the second
         hand move. The minute hand you only catch by glancing back. The hour
@@ -247,6 +251,7 @@ export default function ConsequenceClockPage() {
         included. Then an org chart of one, where the only clock left is the
         customer&rsquo;s, and the customer samples continuously.
       </P>
+      <Note>Receipt. I sat in this room, on the vendor side, for months of meetings.</Note>
       <P>
         Let me tell you what hour-hand time actually looks like from inside a
         conference room, because I sat in this specific one. At one point in my
@@ -297,6 +302,7 @@ export default function ConsequenceClockPage() {
         reward for finishing early is more work at the same pay, which is not a
         return on speed. It is a tax on it.
       </P>
+      <Note>Same code, two labels, two verdicts. The label did the judging.</Note>
       <P>
         <strong>Second, there is real downside.</strong> Visible speed
         re-prices everyone else&rsquo;s normal. The fast worker is not read as
@@ -403,6 +409,7 @@ export default function ConsequenceClockPage() {
         you look slow, which gets you noticed in exactly the way you do not
         want.
       </P>
+      <Note>9:04 AM, not 9:00. Precision is part of the camouflage.</Note>
       <P>
         So they do the rational thing. They schedule it. The finished work sits
         in a queue with a send time of Friday, 9:04 AM. The company receives
@@ -469,6 +476,7 @@ export default function ConsequenceClockPage() {
         output it never receives. The surplus does not disappear. It stops
         being the company&rsquo;s.
       </P>
+      <Note>The slack between done and delivered is the seed round nobody reports.</Note>
       <P>
         And here is why the third resolution does not hold either. A person
         quietly running their own operation inside the slack of a paycheck is
@@ -507,6 +515,7 @@ export default function ConsequenceClockPage() {
         I believe this plays out in an uncomfortable way, and I believe the
         discomfort arrives through the job titles.
       </P>
+      <Note>The computer did this to job titles once already. Nobody remembers voting on it.</Note>
       <P>
         Take the most optimistic case on jobs. Say the total number of jobs in
         this country three years from now is exactly what it is today, not one

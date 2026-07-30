@@ -176,7 +176,7 @@ export default function Header() {
               </svg>
             ) : (
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                <path d="M2 6.5H20M2 15.5H20" stroke="currentColor" strokeWidth="1.5" />
+                <path d="M2 5H20M2 11H20M2 17H20" stroke="currentColor" strokeWidth="1.5" />
               </svg>
             )}
           </button>
