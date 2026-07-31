@@ -123,6 +123,11 @@ export function Section({ children }: { children: React.ReactNode }) {
 
 /* Editorial marginalia, not citations. Zero-height in the flow: place one
    immediately before the paragraph it should sit beside. */
+// MARGIN NOTES ARE NOT OPTIONAL (Wade's rule, 2026-07-31, after the Blast Door
+// first shipped without them): every essay page uses <Note> margin notes at its
+// key beats - short aphoristic lines, ~6-10 per essay, placed BEFORE the
+// paragraph they annotate. See kerzie-effect and consequence-clock for the
+// register. An essay PR without Notes is incomplete.
 export function Note({ children }: { children: React.ReactNode }) {
   return (
     <div className="p-note" aria-hidden="false">

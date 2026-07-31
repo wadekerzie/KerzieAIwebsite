@@ -7,6 +7,7 @@ import {
   Abstract,
   P,
   Section,
+  Note,
   Thesis,
   Callout,
   Colophon,
@@ -113,6 +114,7 @@ export default function BlastDoorPage() {
         learn this. I&rsquo;d better be first. I&rsquo;d better get really
         good at it.
       </P>
+      <Note>The chainsaw was free. The hacksaw won anyway.</Note>
       <P>
         The complete opposite happened. People rebelled. They&rsquo;d heard AI
         makes mistakes. They&rsquo;d heard AI was evil, that the robots were
@@ -129,6 +131,7 @@ export default function BlastDoorPage() {
         the solution, and get paid for it. That combination has a shelf life,
         and I believe the shelf life is short.
       </Thesis>
+      <Note>Held loosely: the number. Held firmly: the direction.</Note>
       <P>
         Maybe less than three years. That number is my belief, not a
         measurement, and I&rsquo;ll hold it loosely. The direction is what
@@ -146,6 +149,7 @@ export default function BlastDoorPage() {
         and deployed for roughly the cost of the electricity it took to think
         about it.
       </P>
+      <Note>Not out-competed. Out-existed. Nobody has to beat you.</Note>
       <P>
         Now put yourself on the wrong side of that. Say you had an idea. A
         garage project, a side hustle, a small business built on solving one
@@ -181,6 +185,7 @@ export default function BlastDoorPage() {
         which exists to pull other operators through the same door I went
         through.
       </P>
+      <Note>Homes break. Calls get missed. Hires go wrong. Build there.</Note>
       <P>
         Notice the pattern in those bets: each one sits on something about
         human behavior that does not change. That&rsquo;s deliberate, and
@@ -193,6 +198,7 @@ export default function BlastDoorPage() {
         human behavior has the best odds of mattering on both sides of the
         door.
       </P>
+      <Note>Two, maybe three years of fevered pace. Thirty years of watching it pay.</Note>
       <P>
         Here&rsquo;s what I&rsquo;m actually racing for. My family needs me as
         a provider, and they&rsquo;re going to need providing for whether
@@ -262,6 +268,7 @@ export default function BlastDoorPage() {
         little guy.
       </P>
       <P>I call bullshit, and I&rsquo;m allowed to, because I tested it.</P>
+      <Note>Receipt: real plans, real submissions, real silence.</Note>
       <P>
         I have real businesses with real receipts. Working products, live
         customers, revenue that arrived this week, business plans built to be
@@ -309,6 +316,7 @@ export default function BlastDoorPage() {
         separates a business from a costume: revenue you can point at versus a
         suffix you rented.
       </P>
+      <Note>A month can be manufactured. A year has to be earned.</Note>
       <P>
         Second tell: monthly income. When someone tells you they make $500,000
         a month, ask yourself why they didn&rsquo;t say $6 million a year. A
@@ -333,6 +341,7 @@ export default function BlastDoorPage() {
         Let me tell you about the Titanic, because I can&rsquo;t stop thinking
         about the timeline.
       </P>
+      <Note>The ship told them what was happening two hours before the water did.</Note>
       <P>
         From the moment it struck the iceberg to the moment it went under was
         roughly two hours and forty minutes. For most of the first two hours,
@@ -368,6 +377,7 @@ export default function BlastDoorPage() {
         scheduled for Friday and your evenings are quiet and the deck still
         feels level.
       </P>
+      <Note>Lifeboats get built on warm, level decks or not at all.</Note>
       <P>
         And here&rsquo;s where I plan to be standing when the door closes. The
         measure of success I actually want is not a number. It&rsquo;s a
