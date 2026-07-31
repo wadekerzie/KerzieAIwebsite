@@ -541,7 +541,7 @@ OUT = ROOT / "dashboard" / "dashboard.html"
 CHIPS = {
     "live": ("Live", "c-live"),
     "warm": ("Warm", "c-warm"),
-    "wade": ("Wade", "c-wade"),
+    "wade": ("Wade", "c-user"),
     "them": ("Their move", "c-them"),
     "gated": ("Gated", "c-gated"),
     "parked": ("Parked", "c-parked"),
@@ -680,28 +680,28 @@ def main():
 :root {{
   --ground:#F7F6F1; --panel:#FFFFFF; --ink:#23272E; --sub:#6B6F76;
   --line:#E4E1D7; --accent:#2A5D66; --accent-ink:#FFFFFF;
-  --live:#2F7D4F; --warm:#B0631F; --wadec:#8A4FA8; --gated:#A6841F;
+  --live:#2F7D4F; --warm:#B0631F; --userc:#8A4FA8; --gated:#A6841F;
   --parked:#7A7E86; --closed:#B0453B; --done:#3A7D6C; --watchc:#4F6FA8;
   --chipbg:rgba(0,0,0,.05);
 }}
 @media (prefers-color-scheme: dark) {{ :root {{
   --ground:#15181D; --panel:#1C2027; --ink:#E7E5DE; --sub:#9A9EA6;
   --line:#2C313A; --accent:#7FB6BF; --accent-ink:#10262A;
-  --live:#5DBB87; --warm:#DA9A55; --wadec:#C08FDD; --gated:#D2B04C;
+  --live:#5DBB87; --warm:#DA9A55; --userc:#C08FDD; --gated:#D2B04C;
   --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#88A6DD;
   --chipbg:rgba(255,255,255,.07);
 }} }}
 :root[data-theme="dark"] {{
   --ground:#15181D; --panel:#1C2027; --ink:#E7E5DE; --sub:#9A9EA6;
   --line:#2C313A; --accent:#7FB6BF; --accent-ink:#10262A;
-  --live:#5DBB87; --warm:#DA9A55; --wadec:#C08FDD; --gated:#D2B04C;
+  --live:#5DBB87; --warm:#DA9A55; --userc:#C08FDD; --gated:#D2B04C;
   --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#88A6DD;
   --chipbg:rgba(255,255,255,.07);
 }}
 :root[data-theme="light"] {{
   --ground:#F7F6F1; --panel:#FFFFFF; --ink:#23272E; --sub:#6B6F76;
   --line:#E4E1D7; --accent:#2A5D66; --accent-ink:#FFFFFF;
-  --live:#2F7D4F; --warm:#B0631F; --wadec:#8A4FA8; --gated:#A6841F;
+  --live:#2F7D4F; --warm:#B0631F; --userc:#8A4FA8; --gated:#A6841F;
   --parked:#7A7E86; --closed:#B0453B; --done:#3A7D6C; --watchc:#4F6FA8;
   --chipbg:rgba(0,0,0,.05);
 }}
@@ -746,7 +746,7 @@ td.when, td.col0 {{ white-space:nowrap; font-weight:600;
   background:var(--chipbg); white-space:nowrap; }}
 .c-live {{ color:var(--live); box-shadow:inset 0 0 0 1px var(--live); }}
 .c-warm {{ color:var(--warm); box-shadow:inset 0 0 0 1px var(--warm); }}
-.c-wade {{ color:var(--wadec); box-shadow:inset 0 0 0 1px var(--wadec); }}
+.c-user {{ color:var(--userc); box-shadow:inset 0 0 0 1px var(--userc); }}
 .c-them {{ color:var(--watchc); box-shadow:inset 0 0 0 1px var(--watchc); }}
 .c-gated {{ color:var(--gated); box-shadow:inset 0 0 0 1px var(--gated); }}
 .c-parked {{ color:var(--parked); box-shadow:inset 0 0 0 1px var(--parked); }}
@@ -787,13 +787,13 @@ td.when, td.col0 {{ white-space:nowrap; font-weight:600;
     panels.forEach(function (p) {{
       p.classList.toggle("active", p.dataset.panel === String(i));
     }});
-    try {{ localStorage.setItem("wadeos-tab", String(i)); }} catch (e) {{}}
+    try {{ localStorage.setItem("singlepane-tab", String(i)); }} catch (e) {{}}
   }}
   btns.forEach(function (b) {{
     b.addEventListener("click", function () {{ show(b.dataset.tab); }});
   }});
   var saved = 0;
-  try {{ saved = parseInt(localStorage.getItem("wadeos-tab") || "0", 10) || 0; }} catch (e) {{}}
+  try {{ saved = parseInt(localStorage.getItem("singlepane-tab") || "0", 10) || 0; }} catch (e) {{}}
   if (saved >= panels.length) saved = 0;
   show(saved);
 }})();
