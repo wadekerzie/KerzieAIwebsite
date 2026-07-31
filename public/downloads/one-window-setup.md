@@ -678,32 +678,32 @@ def main():
     page = f"""<title>Wade OS - Single Pane</title>
 <style>
 :root {{
-  --ground:#F7F6F1; --panel:#FFFFFF; --ink:#23272E; --sub:#6B6F76;
-  --line:#E4E1D7; --accent:#2A5D66; --accent-ink:#FFFFFF;
-  --live:#2F7D4F; --warm:#B0631F; --userc:#8A4FA8; --gated:#A6841F;
-  --parked:#7A7E86; --closed:#B0453B; --done:#3A7D6C; --watchc:#4F6FA8;
-  --chipbg:rgba(0,0,0,.05);
+  --ground:#F5F6FA; --panel:#FFFFFF; --ink:#232538; --sub:#5F6478;
+  --line:#DFE3EE; --accent:#C4633F; --accent-ink:#FFFFFF;
+  --live:#2F7D53; --warm:#B0631F; --userc:#7C4FA8; --gated:#A6841F;
+  --parked:#7A7E8A; --closed:#B0453B; --done:#3A7D6C; --watchc:#4A6FA8;
+  --chipbg:rgba(26,27,46,.05);
 }}
 @media (prefers-color-scheme: dark) {{ :root {{
-  --ground:#15181D; --panel:#1C2027; --ink:#E7E5DE; --sub:#9A9EA6;
-  --line:#2C313A; --accent:#7FB6BF; --accent-ink:#10262A;
+  --ground:#14151F; --panel:#1A1B2E; --ink:#E9EAF2; --sub:#AABBCC;
+  --line:#2C2E48; --accent:#E8896A; --accent-ink:#1A1B2E;
   --live:#5DBB87; --warm:#DA9A55; --userc:#C08FDD; --gated:#D2B04C;
-  --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#88A6DD;
+  --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#8FB3E8;
   --chipbg:rgba(255,255,255,.07);
 }} }}
 :root[data-theme="dark"] {{
-  --ground:#15181D; --panel:#1C2027; --ink:#E7E5DE; --sub:#9A9EA6;
-  --line:#2C313A; --accent:#7FB6BF; --accent-ink:#10262A;
+  --ground:#14151F; --panel:#1A1B2E; --ink:#E9EAF2; --sub:#AABBCC;
+  --line:#2C2E48; --accent:#E8896A; --accent-ink:#1A1B2E;
   --live:#5DBB87; --warm:#DA9A55; --userc:#C08FDD; --gated:#D2B04C;
-  --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#88A6DD;
+  --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#8FB3E8;
   --chipbg:rgba(255,255,255,.07);
 }}
 :root[data-theme="light"] {{
-  --ground:#F7F6F1; --panel:#FFFFFF; --ink:#23272E; --sub:#6B6F76;
-  --line:#E4E1D7; --accent:#2A5D66; --accent-ink:#FFFFFF;
-  --live:#2F7D4F; --warm:#B0631F; --userc:#8A4FA8; --gated:#A6841F;
-  --parked:#7A7E86; --closed:#B0453B; --done:#3A7D6C; --watchc:#4F6FA8;
-  --chipbg:rgba(0,0,0,.05);
+  --ground:#F5F6FA; --panel:#FFFFFF; --ink:#232538; --sub:#5F6478;
+  --line:#DFE3EE; --accent:#C4633F; --accent-ink:#FFFFFF;
+  --live:#2F7D53; --warm:#B0631F; --userc:#7C4FA8; --gated:#A6841F;
+  --parked:#7A7E8A; --closed:#B0453B; --done:#3A7D6C; --watchc:#4A6FA8;
+  --chipbg:rgba(26,27,46,.05);
 }}
 * {{ box-sizing:border-box; }}
 body {{ background:var(--ground); color:var(--ink); margin:0;
@@ -714,6 +714,7 @@ a {{ color:var(--accent); }}
 .brand {{ display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }}
 .brand h1 {{ font-size:15px; margin:0; letter-spacing:.14em; font-weight:700; }}
 .brand h1 .thin {{ font-weight:400; color:var(--sub); }}
+.brand h1 .dot {{ color:var(--accent); }}
 .built {{ color:var(--sub); font-size:12px; }}
 .tabs {{ display:flex; gap:2px; margin-top:10px; overflow-x:auto; }}
 .tabbtn {{ appearance:none; border:1px solid transparent; border-bottom:none;
@@ -771,7 +772,7 @@ td.when, td.col0 {{ white-space:nowrap; font-weight:600;
 @media (max-width:640px) {{ td {{ min-width:90px; }} main {{ padding:14px; }} }}
 </style>
 <div class="masthead">
-  <div class="brand"><h1>WADE OS <span class="thin">/ SINGLE PANE</span></h1>
+  <div class="brand"><h1>WADE OS<span class="dot">.</span> <span class="thin">SINGLE PANE</span></h1>
   <span class="built">data as of {html.escape(latest)} &middot; built {html.escape(built)} CT</span></div>
   <nav class="tabs" role="tablist">{"".join(nav)}</nav>
 </div>
