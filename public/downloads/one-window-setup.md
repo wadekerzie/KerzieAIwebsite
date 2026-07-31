@@ -337,6 +337,38 @@ Write these into their CLAUDE.md and then actually do them. They are what keeps 
 - **Keep ACTIONS.md current as you work.** It is the single source of truth for what is in flight, and every future session starts by reading it.
 - **Watch for repeat work.** When you do the same thing a third time, say so and propose turning it into a routine.
 
+## Phase 6 - The Single Pane (day 2 or 3, not day 1)
+
+This is the piece that makes the to-do list go away. Whatever the operator has been using to
+see their own workload - paper, a tasks app, sticky notes, a list inside Microsoft or Google -
+this replaces it.
+
+**The Single Pane is one private web page: every project they run is a tab, and inside each tab
+is a table of what is true right now, what happens next, and what it is waiting on.** On top sits
+their ONE next step, highlighted, with every dated deadline below it sorted by date. It opens in
+the panel right next to this window, in any browser, and on their phone.
+
+Three rules, and they are the whole design:
+
+1. **ACTIONS.md stays canonical.** The pane is a VIEW of the tracker, never a second place to
+   edit. If they disagree, the tracker wins and the pane gets regenerated.
+2. **Current state only.** No history on the pane, ever. History lives in the project files.
+3. **It refreshes at every wrap-up.** That is why it stays true when every other dashboard the
+   operator has tried went stale.
+
+**How to build it:** the complete instructions and the generator script are in **Appendix A**
+at the end of this document. The short version: you keep small data files (one per tab) with
+the current state, a deterministic script turns them into one polished HTML page in a second,
+and you publish it to a stable private link the operator bookmarks once. Building it costs one
+short session. Keeping it alive costs nothing, because the refresh rides the wrap-up you are
+already doing.
+
+**When you finish building it, add one line to the wrap-up ritual below: after the tracker is
+reconciled, update the pane's data files, rebuild, and republish to the same link.** Then show
+the operator the link on their phone. That moment - their whole operation in their pocket,
+current as of an hour ago - is when this stops being a chat tool in their head and becomes
+their operating system.
+
 ## The wrap-up, and telling them it exists
 
 Every session ends. Most operators end one by saying "that's it for today" or "let's wrap up" or just "I'm done." **Treat any version of that as a command, not as small talk.**
@@ -363,6 +395,7 @@ When they say it, do all of this before you answer:
 
 - **Day 1:** Everything above. Foundation, connectors, one real task done.
 - **Day 2:** The first routine, whichever one they picked. Watch one full run.
+- **Day 2 or 3:** The Single Pane (Phase 6). From this day on, their to-do list lives on one link.
 - **Day 3 to 5:** One real project through the system end to end.
 - **Week 2:** A second routine, and their first captured recipes. By now they should be able to tell you what they want automated without being asked.
 
@@ -384,8 +417,436 @@ Their job in this system is to decide, approve, sell, and show up. If you are as
 
 ## When you want a hand (from Wade)
 
-This document is the do-it-yourself rung. If you would rather have it built with you, on your machine, with your accounts, and one real workflow shipped before I leave the call, plus a 30-day check-in, that is the AI Fast-Track Session at $750: kerzie.ai/services/fast-track.
+This document is the do-it-yourself rung. If you would rather have it built with you, on your machine, with your accounts, and one real workflow shipped before I leave the call, that is the AI Fast-Track Session at $999 for up to three people, with this document included: kerzie.ai/services/fast-track.
 
 Questions, stall points, or wins: wade@kerzie.ai. I read everything.
+
+
+---
+
+# APPENDIX A - BUILDING THE SINGLE PANE (written to your AI)
+
+This is the full build recipe Phase 6 refers to. Everything here builds ONLY from this
+operator's own environment - their projects, their tracker, their words.
+
+## Step 1 — Interview (5 minutes, conversational)
+
+Before building, ask the user (a few questions at a time, not a form):
+
+1. Which projects or areas should be tabs? (Read their tracker/CLAUDE.md first and PROPOSE a
+   tab list; let them edit. 4-8 tabs is the sweet spot.)
+2. What is their ONE next step right now? (The Overview tab leads with a single highlighted
+   next action — one, not a list. If they keep a queue, the queue collapses under it.)
+3. Any dated deadlines or follow-up clocks to surface? (These become the Overview "Clocks"
+   table, sorted by date.)
+4. Anything that should NOT appear? (Sensitive projects can be excluded entirely.)
+
+## Step 2 — Data files
+
+Create a `dashboard/data/` folder in their working directory. One JSON file per tab. Two shapes:
+
+**Overview tab** (`00_overview.json`):
+
+```json
+{
+  "type": "overview",
+  "order": 0,
+  "tab": "Overview",
+  "updated": "YYYY-MM-DD",
+  "headline": "One sentence: the state of everything right now",
+  "next": {
+    "label": "YOUR NEXT STEP",
+    "title": "The one thing to do next",
+    "detail": "Why it matters and what done looks like.",
+    "link": "https://... (optional)",
+    "link_label": "Open it"
+  },
+  "queue": ["Then this", "Then this"],
+  "clocks": [["Mon 9/1", "What happens or is due", "Who owns it"]],
+  "watch": ["Anything being monitored that isn't an action yet"]
+}
+```
+
+**Project tabs** (`01_projectname.json`, `02_...`):
+
+```json
+{
+  "order": 1,
+  "tab": "Project Name",
+  "title": "Project Name - one-line description",
+  "updated": "YYYY-MM-DD",
+  "sections": [
+    {
+      "heading": "Section heading",
+      "note": "Optional context line. Where the canonical tracker lives, ground rules, etc.",
+      "columns": ["Item", "Status", "Next"],
+      "rows": [
+        ["The thing", "{live}Short status in plain words", "The next concrete action"]
+      ]
+    }
+  ]
+}
+```
+
+**Status chips** — start any cell with one of these tokens and it renders as a colored chip:
+`{live}` (in motion), `{warm}` (a human responded, relationship warm), `{wade}` — **rename this
+one**: in the builder script below, edit the CHIPS table so the key and label match YOUR user's
+name (it means "waiting on the user"), `{them}` (waiting on someone else), `{gated}` (blocked
+on a prerequisite), `{parked}` (deliberately later), `{closed}` (dead/rejected), `{done}`,
+`{watch}`. Links: `[label](https://url)` inside any cell.
+
+**Writing the rows is the craft.** Status in plain words a stranger could act on. Next step
+concrete enough to start. No item numbering systems, no jargon from old sessions, no history
+trails. If a row needs three sentences of backstory, the backstory belongs in the project file
+and the row gets a pointer.
+
+## Step 3 — The builder script
+
+Save this verbatim as `tools/build_dashboard.py` (adjust the two paths at the top if the user's
+layout differs — DATA is the folder from Step 2, OUT is where the HTML lands). It is
+deterministic and costs zero tokens to run. Python 3, stdlib only.
+
+Then edit the `CHIPS` entry `"wade"` to the user's own name/label as noted above, and the
+masthead title in the HTML (`WADE OS / SINGLE PANE` — change to the user's own operation name;
+it appears once in the `page = f"""` block).
+
+```python
+#!/usr/bin/env python3
+"""Wade OS dashboard generator.
+
+Reads 00_system/dashboard/data/*.json (curated current-state, updated at session
+wrap) and emits a single self-contained tabbed HTML file at
+00_system/dashboard/dashboard.html. Deterministic, zero tokens: run it any time.
+
+    python3 00_system/tools/build_dashboard.py
+
+Publish: Artifact tool on the output file (stable URL, see dashboard/README.md).
+
+Cell syntax in data files:
+  "{live}Clock running - sent 7/30"   -> status chip + text
+  chips: live, warm, wade, them, gated, parked, closed, done, watch
+  [label](https://url) -> link
+"""
+import json
+import html
+import re
+import sys
+from datetime import datetime
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent  # 00_system/
+DATA = ROOT / "dashboard" / "data"
+OUT = ROOT / "dashboard" / "dashboard.html"
+
+CHIPS = {
+    "live": ("Live", "c-live"),
+    "warm": ("Warm", "c-warm"),
+    "wade": ("Wade", "c-wade"),
+    "them": ("Their move", "c-them"),
+    "gated": ("Gated", "c-gated"),
+    "parked": ("Parked", "c-parked"),
+    "closed": ("Closed", "c-closed"),
+    "done": ("Done", "c-done"),
+    "watch": ("Watch", "c-watch"),
+}
+
+CHIP_RE = re.compile(r"\{(%s)\}" % "|".join(CHIPS))
+LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+CHIP_TOKEN = "\x00CHIP%d\x00"
+
+
+def cell(text):
+    """Render a cell: {chip} tokens anywhere, markdown links, escaped text."""
+    chips = []
+
+    def stash(m):
+        label, cls = CHIPS[m.group(1)]
+        chips.append(f'<span class="chip {cls}">{label}</span>')
+        return CHIP_TOKEN % (len(chips) - 1)
+
+    text = CHIP_RE.sub(stash, text)
+    out, pos = [], 0
+    for lm in LINK_RE.finditer(text):
+        out.append(html.escape(text[pos:lm.start()]))
+        out.append(
+            f'<a href="{html.escape(lm.group(2))}" target="_blank" rel="noopener">'
+            f"{html.escape(lm.group(1))}</a>"
+        )
+        pos = lm.end()
+    out.append(html.escape(text[pos:]))
+    rendered = "".join(out)
+    for i, chip_html in enumerate(chips):
+        rendered = rendered.replace(CHIP_TOKEN % i, chip_html + " ")
+    return rendered
+
+
+def render_table(section):
+    h = []
+    if section.get("heading"):
+        h.append(f'<h2>{html.escape(section["heading"])}</h2>')
+    if section.get("note"):
+        h.append(f'<p class="note">{cell(section["note"])}</p>')
+    h.append('<div class="tablewrap"><table><thead><tr>')
+    for c in section["columns"]:
+        h.append(f"<th>{html.escape(c)}</th>")
+    h.append("</tr></thead><tbody>")
+    for row in section["rows"]:
+        h.append("<tr>")
+        for i, v in enumerate(row):
+            h.append(f'<td class="col{i}">{cell(str(v))}</td>')
+        h.append("</tr>")
+    h.append("</tbody></table></div>")
+    return "".join(h)
+
+
+def render_overview(d):
+    h = ['<div class="ov">']
+    h.append(f'<p class="headline">{cell(d["headline"])}</p>')
+    n = d["next"]
+    h.append('<div class="nextcard">')
+    h.append(f'<div class="nextlabel">{html.escape(n["label"])}</div>')
+    h.append(f'<div class="nexttitle">{html.escape(n["title"])}</div>')
+    h.append(f'<p class="nextdetail">{cell(n["detail"])}</p>')
+    if n.get("link"):
+        h.append(
+            f'<a class="nextbtn" href="{html.escape(n["link"])}" target="_blank" '
+            f'rel="noopener">{html.escape(n.get("link_label", "Open"))}</a>'
+        )
+    h.append("</div>")
+    q = d.get("queue", [])
+    if q:
+        h.append(
+            f'<details class="queue"><summary>Then, one at a time '
+            f"({len(q)} queued - in reading order, not all at once)</summary><ol>"
+        )
+        for item in q:
+            h.append(f"<li>{cell(item)}</li>")
+        h.append("</ol></details>")
+    h.append("<h2>Clocks &amp; deadlines</h2>")
+    h.append('<div class="tablewrap"><table><thead><tr>'
+             "<th>When</th><th>What</th><th>Whose</th></tr></thead><tbody>")
+    for when, what, who in d.get("clocks", []):
+        h.append(
+            f'<tr><td class="when">{html.escape(when)}</td>'
+            f"<td>{cell(what)}</td><td>{html.escape(who)}</td></tr>"
+        )
+    h.append("</tbody></table></div>")
+    w = d.get("watch", [])
+    if w:
+        h.append("<h2>On watch</h2><ul class='watchlist'>")
+        for item in w:
+            h.append(f"<li>{cell(item)}</li>")
+        h.append("</ul>")
+    h.append("</div>")
+    return "".join(h)
+
+
+def main():
+    files = sorted(DATA.glob("*.json"))
+    if not files:
+        sys.exit(f"No data files in {DATA}")
+    tabs = []
+    for f in files:
+        try:
+            tabs.append(json.loads(f.read_text()))
+        except json.JSONDecodeError as e:
+            sys.exit(f"{f.name}: invalid JSON - {e}")
+    tabs.sort(key=lambda t: t.get("order", 99))
+    built = datetime.now().strftime("%a %b %-d, %Y %-I:%M %p")
+    latest = max(t.get("updated", "") for t in tabs)
+
+    nav, panels = [], []
+    for i, t in enumerate(tabs):
+        name = t["tab"]
+        nav.append(
+            f'<button class="tabbtn" data-tab="{i}" role="tab" '
+            f'aria-selected="{"true" if i == 0 else "false"}">{html.escape(name)}</button>'
+        )
+        body = (
+            render_overview(t)
+            if t.get("type") == "overview"
+            else "".join(render_table(s) for s in t.get("sections", []))
+        )
+        title = (
+            f'<p class="tabtitle">{html.escape(t["title"])} '
+            f'<span class="upd">data as of {html.escape(t.get("updated", ""))}</span></p>'
+            if t.get("title")
+            else ""
+        )
+        panels.append(f'<section class="panel" data-panel="{i}" role="tabpanel">{title}{body}</section>')
+
+    page = f"""<title>Wade OS - Single Pane</title>
+<style>
+:root {{
+  --ground:#F7F6F1; --panel:#FFFFFF; --ink:#23272E; --sub:#6B6F76;
+  --line:#E4E1D7; --accent:#2A5D66; --accent-ink:#FFFFFF;
+  --live:#2F7D4F; --warm:#B0631F; --wadec:#8A4FA8; --gated:#A6841F;
+  --parked:#7A7E86; --closed:#B0453B; --done:#3A7D6C; --watchc:#4F6FA8;
+  --chipbg:rgba(0,0,0,.05);
+}}
+@media (prefers-color-scheme: dark) {{ :root {{
+  --ground:#15181D; --panel:#1C2027; --ink:#E7E5DE; --sub:#9A9EA6;
+  --line:#2C313A; --accent:#7FB6BF; --accent-ink:#10262A;
+  --live:#5DBB87; --warm:#DA9A55; --wadec:#C08FDD; --gated:#D2B04C;
+  --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#88A6DD;
+  --chipbg:rgba(255,255,255,.07);
+}} }}
+:root[data-theme="dark"] {{
+  --ground:#15181D; --panel:#1C2027; --ink:#E7E5DE; --sub:#9A9EA6;
+  --line:#2C313A; --accent:#7FB6BF; --accent-ink:#10262A;
+  --live:#5DBB87; --warm:#DA9A55; --wadec:#C08FDD; --gated:#D2B04C;
+  --parked:#9AA0A8; --closed:#E07B70; --done:#6FBFA9; --watchc:#88A6DD;
+  --chipbg:rgba(255,255,255,.07);
+}}
+:root[data-theme="light"] {{
+  --ground:#F7F6F1; --panel:#FFFFFF; --ink:#23272E; --sub:#6B6F76;
+  --line:#E4E1D7; --accent:#2A5D66; --accent-ink:#FFFFFF;
+  --live:#2F7D4F; --warm:#B0631F; --wadec:#8A4FA8; --gated:#A6841F;
+  --parked:#7A7E86; --closed:#B0453B; --done:#3A7D6C; --watchc:#4F6FA8;
+  --chipbg:rgba(0,0,0,.05);
+}}
+* {{ box-sizing:border-box; }}
+body {{ background:var(--ground); color:var(--ink); margin:0;
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }}
+a {{ color:var(--accent); }}
+.masthead {{ position:sticky; top:0; z-index:5; background:var(--ground);
+  border-bottom:1px solid var(--line); padding:14px 20px 0; }}
+.brand {{ display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }}
+.brand h1 {{ font-size:15px; margin:0; letter-spacing:.14em; font-weight:700; }}
+.brand h1 .thin {{ font-weight:400; color:var(--sub); }}
+.built {{ color:var(--sub); font-size:12px; }}
+.tabs {{ display:flex; gap:2px; margin-top:10px; overflow-x:auto; }}
+.tabbtn {{ appearance:none; border:1px solid transparent; border-bottom:none;
+  background:transparent; color:var(--sub); font:inherit; font-size:13.5px;
+  padding:8px 14px; cursor:pointer; border-radius:6px 6px 0 0; white-space:nowrap; }}
+.tabbtn:hover {{ color:var(--ink); }}
+.tabbtn[aria-selected="true"] {{ background:var(--panel); color:var(--ink);
+  border-color:var(--line); font-weight:600; }}
+.tabbtn:focus-visible {{ outline:2px solid var(--accent); outline-offset:-2px; }}
+main {{ max-width:1120px; margin:0 auto; padding:20px; }}
+.panel {{ display:none; }}
+.panel.active {{ display:block; }}
+.tabtitle {{ margin:0 0 14px; font-size:17px; font-weight:650; }}
+.tabtitle .upd {{ color:var(--sub); font-size:12.5px; font-weight:400; margin-left:8px; }}
+h2 {{ font-size:13px; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--sub); margin:26px 0 8px; }}
+.note {{ color:var(--sub); font-size:13px; margin:0 0 10px; max-width:75ch; }}
+.tablewrap {{ overflow-x:auto; background:var(--panel); border:1px solid var(--line);
+  border-radius:8px; }}
+table {{ border-collapse:collapse; width:100%; font-size:13.5px; }}
+th {{ text-align:left; font-size:11.5px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--sub); font-weight:600; padding:9px 12px; border-bottom:1px solid var(--line); }}
+td {{ padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;
+  min-width:110px; max-width:420px; }}
+tr:last-child td {{ border-bottom:none; }}
+td.when, td.col0 {{ white-space:nowrap; font-weight:600;
+  font-variant-numeric:tabular-nums; max-width:none; }}
+.chip {{ display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; padding:1px 7px 2px; border-radius:99px;
+  background:var(--chipbg); white-space:nowrap; }}
+.c-live {{ color:var(--live); box-shadow:inset 0 0 0 1px var(--live); }}
+.c-warm {{ color:var(--warm); box-shadow:inset 0 0 0 1px var(--warm); }}
+.c-wade {{ color:var(--wadec); box-shadow:inset 0 0 0 1px var(--wadec); }}
+.c-them {{ color:var(--watchc); box-shadow:inset 0 0 0 1px var(--watchc); }}
+.c-gated {{ color:var(--gated); box-shadow:inset 0 0 0 1px var(--gated); }}
+.c-parked {{ color:var(--parked); box-shadow:inset 0 0 0 1px var(--parked); }}
+.c-closed {{ color:var(--closed); box-shadow:inset 0 0 0 1px var(--closed); }}
+.c-done {{ color:var(--done); box-shadow:inset 0 0 0 1px var(--done); }}
+.c-watch {{ color:var(--watchc); box-shadow:inset 0 0 0 1px var(--watchc); }}
+.ov .headline {{ font-size:16px; font-weight:600; margin:0 0 16px; max-width:70ch; }}
+.nextcard {{ background:var(--panel); border:1px solid var(--line);
+  border-left:4px solid var(--accent); border-radius:8px; padding:16px 18px; }}
+.nextlabel {{ font-size:11px; font-weight:700; letter-spacing:.12em; color:var(--accent); }}
+.nexttitle {{ font-size:19px; font-weight:700; margin:6px 0 6px; text-wrap:balance; }}
+.nextdetail {{ margin:0 0 12px; color:var(--sub); max-width:75ch; }}
+.nextbtn {{ display:inline-block; background:var(--accent); color:var(--accent-ink);
+  text-decoration:none; font-weight:600; font-size:13.5px; padding:7px 16px;
+  border-radius:6px; }}
+.queue {{ margin:14px 0 0; color:var(--sub); font-size:13.5px; }}
+.queue summary {{ cursor:pointer; font-weight:600; }}
+.queue ol {{ margin:8px 0 0; padding-left:22px; }}
+.queue li {{ margin:4px 0; }}
+.watchlist {{ margin:0; padding-left:20px; font-size:13.5px; }}
+.watchlist li {{ margin:5px 0; max-width:80ch; }}
+@media (max-width:640px) {{ td {{ min-width:90px; }} main {{ padding:14px; }} }}
+</style>
+<div class="masthead">
+  <div class="brand"><h1>WADE OS <span class="thin">/ SINGLE PANE</span></h1>
+  <span class="built">data as of {html.escape(latest)} &middot; built {html.escape(built)} CT</span></div>
+  <nav class="tabs" role="tablist">{"".join(nav)}</nav>
+</div>
+<main>{"".join(panels)}</main>
+<script>
+(function () {{
+  var btns = document.querySelectorAll(".tabbtn");
+  var panels = document.querySelectorAll(".panel");
+  function show(i) {{
+    btns.forEach(function (b) {{
+      b.setAttribute("aria-selected", b.dataset.tab === String(i) ? "true" : "false");
+    }});
+    panels.forEach(function (p) {{
+      p.classList.toggle("active", p.dataset.panel === String(i));
+    }});
+    try {{ localStorage.setItem("wadeos-tab", String(i)); }} catch (e) {{}}
+  }}
+  btns.forEach(function (b) {{
+    b.addEventListener("click", function () {{ show(b.dataset.tab); }});
+  }});
+  var saved = 0;
+  try {{ saved = parseInt(localStorage.getItem("wadeos-tab") || "0", 10) || 0; }} catch (e) {{}}
+  if (saved >= panels.length) saved = 0;
+  show(saved);
+}})();
+</script>
+"""
+    OUT.write_text(page)
+    print(f"Built {OUT} ({len(tabs)} tabs, data as of {latest})")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Run it:
+
+```bash
+python3 tools/build_dashboard.py
+```
+
+## Step 4 — Publish
+
+Two options, in order of preference:
+
+1. **Claude artifact (recommended):** publish the generated HTML with the Artifact tool. The
+   URL is stable across republishes from the same setup — the user bookmarks it once. It opens
+   in the Claude side panel and on their phone. It is private unless they share it.
+2. **Local file:** open `dashboard/dashboard.html` in the browser. Works with zero accounts,
+   but no phone access and no side-panel rendering.
+
+Record the published URL in the README you create (Step 5) so every future session republishes
+to the SAME url instead of minting a new one.
+
+## Step 5 — Make it survive
+
+1. Write a short `dashboard/README.md`: where the data lives, how to build, the stable URL,
+   and the refresh ritual.
+2. **Add the refresh to the user's session-wrap ritual** (their CLAUDE.md): at every wrap,
+   after reconciling the tracker against reality, update the data files for anything that
+   changed, rebuild, republish to the stable URL. This is the step that keeps it alive.
+3. First refresh test: change one status, rebuild, republish, confirm the user sees the change
+   at the same URL.
+
+## Guardrails (non-negotiable)
+
+- Never invent a status. If you don't know the current state of something, say UNVERIFIED in
+  the row and go check, or ask the user.
+- The dashboard never becomes the place work is tracked. Tracker first, dashboard second,
+  always in that order.
+- If a row asserts something about a live surface (a published page, a sent message), verify
+  against that surface before writing it.
+- Sensitive items the user excluded stay excluded — do not helpfully re-add them.
+
+**Done when:** the user opens one bookmarked link, sees every project as a tab, their single
+next step on top, and says the statuses are true.
 
 *(c) Kerzie AI Solutions. Single-operator license: use it for your business, do not redistribute the document itself.*

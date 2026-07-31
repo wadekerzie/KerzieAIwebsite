@@ -27,6 +27,7 @@ const builds = [
   "Your accounts connected one at a time, walked through click by click, and verified. Gmail, Calendar, Drive, and your browser.",
   "One painful thing from your own week, done end to end, before the first sitting is over.",
   "Three routines proposed and ranked from what you said hurts, and the first one built.",
+  "The Single Pane: every project you run as a tab on one private page - current status, next step, what it's waiting on - refreshed every time you wrap a session.",
   "Cost-control and model-routing rules, learned the expensive way so you do not have to.",
 ];
 
@@ -160,10 +161,41 @@ export default function OneWindowPage() {
         </Reveal>
       </section>
 
+      {/* The to-do list goes away */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">04 &mdash; Your To-Do List Goes Away</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              However you track your own workload today - paper, a tasks app, a
+              list inside Microsoft or Google, the back of your head - the setup
+              replaces it with something better.
+            </p>
+            <p className="text-white font-medium">
+              The Single Pane: one private page where every project you run is a
+              tab. Inside each tab, a table of what is true right now, what
+              happens next, and what it is waiting on. On top, your one next
+              step, and every deadline sorted by date.
+            </p>
+            <p>
+              It opens in the panel right next to your working window, in any
+              browser, and on your phone. And it does not go stale like every
+              dashboard you have tried, because your AI refreshes it as part of
+              closing every session. You never update it. You just look at it.
+            </p>
+            <p>
+              I am looking at mine right now, in the same window I am writing
+              this from. Three ventures, two outreach campaigns, a job pipeline,
+              a content calendar, a YouTube channel. One glance.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Straight answers */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; Straight Answers</p>
+          <p className="k-label mb-6">05 &mdash; Straight Answers</p>
           <div className="max-w-2xl space-y-5 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               <span className="text-white font-medium">Is this a course?</span>{" "}
@@ -202,7 +234,7 @@ export default function OneWindowPage() {
       {/* Price + ladder */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; The Price</p>
+          <p className="k-label mb-6">06 &mdash; The Price</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p className="text-white text-xl font-semibold">
               $99, one time. Instant access after checkout.
