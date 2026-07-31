@@ -17,6 +17,9 @@ const navLinks: NavLink[] = [
   // pair, the site's body of work: the Effect is the firm-level argument, the
   // Clock is the person-level one.
   { label: "The Consequence Clock", href: "/consequence-clock", paper: true },
+  // The third paper chip (2026-07-31). The set: Effect = firms, Clock =
+  // people, Blast Door = the time limit on both.
+  { label: "The Blast Door", href: "/blast-door", paper: true },
   {
     label: "Our Work",
     href: "/ventures",
