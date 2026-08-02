@@ -478,6 +478,10 @@ Create a `dashboard/data/` folder in their working directory. One JSON file per 
   "tab": "Project Name",
   "title": "Project Name - one-line description",
   "updated": "YYYY-MM-DD",
+  "next": {
+    "wade": [["Action the USER must take", "One line of context (optional)"]],
+    "claude": [["Action the AI takes next", "Context (optional)"]]
+  },
   "sections": [
     {
       "heading": "Section heading",
@@ -487,9 +491,22 @@ Create a `dashboard/data/` folder in their working directory. One JSON file per 
         ["The thing", "{live}Short status in plain words", "The next concrete action"]
       ]
     }
-  ]
+  ],
+  "done": [["YYYY-MM-DD", "One-line receipt of something completed or shipped"]]
 }
 ```
+
+**The triage layout (standing design, part of the product):** every tab reads top-down as
+(1) **moves first** - "YOUR MOVES" and "CLAUDE'S MOVES" cards side by side at the top, holding
+only the actions waiting on a human or queued for the AI (the `next` key; the `"wade"` key
+always means the user); (2) **working state in the middle** - the sections: things in motion
+or waiting on the outside world; (3) **done collapses to the bottom** - the `done` list renders
+as a collapsed "Done - last 7 days" line-per-item receipt; (4) **nothing completed lives on the
+pane forever** - at build time, done entries older than 7 days move automatically to
+`dashboard/archive.md`, off the pane, readable any time the user asks. Long-running stable
+state that needs no action compresses into a note-only section (empty `columns`/`rows`) titled
+something like "Running quietly." A pane that accumulates finished work stops being read; a
+pane that leads with next moves gets read every day.
 
 **Status chips** — start any cell with one of these tokens and it renders as a colored chip:
 `{live}` (in motion), `{warm}` (a human responded, relationship warm), `{wade}` — **rename this
@@ -534,12 +551,14 @@ import json
 import html
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent  # 00_system/
 DATA = ROOT / "dashboard" / "data"
 OUT = ROOT / "dashboard" / "dashboard.html"
+ARCHIVE = ROOT / "dashboard" / "archive.md"
+DONE_WINDOW_DAYS = 7
 
 CHIPS = {
     "live": ("Live", "c-live"),
@@ -589,6 +608,8 @@ def render_table(section):
         h.append(f'<h2>{html.escape(section["heading"])}</h2>')
     if section.get("note"):
         h.append(f'<p class="note">{cell(section["note"])}</p>')
+    if not section.get("rows"):  # note-only section (e.g. a live-surfaces summary line)
+        return "".join(h)
     h.append('<div class="tablewrap"><table><thead><tr>')
     for c in section["columns"]:
         h.append(f"<th>{html.escape(c)}</th>")
@@ -600,6 +621,75 @@ def render_table(section):
         h.append("</tr>")
     h.append("</tbody></table></div>")
     return "".join(h)
+
+
+def render_next(next_block):
+    """Top-of-tab moves: Wade's first, Claude's second. Items are [action] or
+    [action, context]."""
+    def card(owner, cls, empty_msg):
+        items = next_block.get(owner, [])
+        h = [f'<div class="movecard {cls}">'
+             f'<div class="movelabel">{"YOUR MOVES" if owner == "wade" else "CLAUDE&#x27;S MOVES"}</div>']
+        if items:
+            h.append('<ul class="movelist">')
+            for it in items:
+                action = it[0] if isinstance(it, list) else it
+                ctx = it[1] if isinstance(it, list) and len(it) > 1 else ""
+                h.append(f"<li>{cell(str(action))}")
+                if ctx:
+                    h.append(f'<span class="ctx">{cell(str(ctx))}</span>')
+                h.append("</li>")
+            h.append("</ul>")
+        else:
+            h.append(f'<p class="movenone">{empty_msg}</p>')
+        h.append("</div>")
+        return "".join(h)
+
+    return ('<div class="nextwrap">'
+            + card("wade", "wade", "Nothing waiting on you.")
+            + card("claude", "claude", "Nothing queued.")
+            + "</div>")
+
+
+def render_done(done_rows):
+    if not done_rows:
+        return ""
+    h = [f'<details class="donewrap"><summary>Done - last {DONE_WINDOW_DAYS} days '
+         f"({len(done_rows)})</summary><ul>"]
+    for d, summary in sorted(done_rows, reverse=True):
+        h.append(f'<li><span class="donedate">{html.escape(d)}</span>{cell(summary)}</li>')
+    h.append("</ul></details>")
+    return "".join(h)
+
+
+def roll_done_window(tabs, files):
+    """Move done entries older than DONE_WINDOW_DAYS into archive.md and rewrite
+    the data file. Completed items needing no follow-up leave the pane; the
+    archive is readable on request, never rendered."""
+    cutoff = (date.today() - timedelta(days=DONE_WINDOW_DAYS)).isoformat()
+    archived_lines = []
+    for t, f in zip(tabs, files):
+        done = t.get("done")
+        if not done:
+            continue
+        keep = [r for r in done if str(r[0]) >= cutoff]
+        expire = [r for r in done if str(r[0]) < cutoff]
+        if expire:
+            for d, summary in sorted(expire):
+                archived_lines.append(f"- {d} [{t.get('tab', f.stem)}] {summary}")
+            t["done"] = keep
+            f.write_text(json.dumps(t, indent=1) + "\n")
+    if archived_lines:
+        stamp = date.today().isoformat()
+        block = f"\n## Archived {stamp}\n\n" + "\n".join(archived_lines) + "\n"
+        if not ARCHIVE.exists():
+            ARCHIVE.write_text(
+                "# Single Pane archive\n\nCompleted items that rolled off the pane's "
+                f"{DONE_WINDOW_DAYS}-day done window. Shown to Wade only on request.\n" + block
+            )
+        else:
+            ARCHIVE.write_text(ARCHIVE.read_text() + block)
+        print(f"Archived {len(archived_lines)} expired done item(s) to {ARCHIVE.name}")
 
 
 def render_overview(d):
@@ -654,7 +744,9 @@ def main():
             tabs.append(json.loads(f.read_text()))
         except json.JSONDecodeError as e:
             sys.exit(f"{f.name}: invalid JSON - {e}")
-    tabs.sort(key=lambda t: t.get("order", 99))
+    roll_done_window(tabs, files)
+    order = sorted(range(len(tabs)), key=lambda i: tabs[i].get("order", 99))
+    tabs = [tabs[i] for i in order]
     built = datetime.now().strftime("%a %b %-d, %Y %-I:%M %p")
     latest = max(t.get("updated", "") for t in tabs)
 
@@ -665,11 +757,14 @@ def main():
             f'<button class="tabbtn" data-tab="{i}" role="tab" '
             f'aria-selected="{"true" if i == 0 else "false"}">{html.escape(name)}</button>'
         )
-        body = (
-            render_overview(t)
-            if t.get("type") == "overview"
-            else "".join(render_table(s) for s in t.get("sections", []))
-        )
+        if t.get("type") == "overview":
+            body = render_overview(t)
+        else:
+            body = (
+                (render_next(t["next"]) if t.get("next") is not None else "")
+                + "".join(render_table(s) for s in t.get("sections", []))
+                + render_done(t.get("done", []))
+            )
         title = (
             f'<p class="tabtitle">{html.escape(t["title"])} '
             f'<span class="upd">data as of {html.escape(t.get("updated", ""))}</span></p>'
@@ -772,6 +867,24 @@ td.when, td.col0 {{ white-space:nowrap; font-weight:600;
 .queue li {{ margin:4px 0; }}
 .watchlist {{ margin:0; padding-left:20px; font-size:13.5px; }}
 .watchlist li {{ margin:5px 0; max-width:80ch; }}
+.nextwrap {{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:0 0 8px; }}
+@media (max-width:760px) {{ .nextwrap {{ grid-template-columns:1fr; }} }}
+.movecard {{ background:var(--panel); border:1px solid var(--line); border-radius:8px;
+  padding:12px 16px 14px; }}
+.movecard.wade {{ border-left:4px solid var(--accent); }}
+.movecard.claude {{ border-left:4px solid var(--watchc); }}
+.movelabel {{ font-size:11px; font-weight:700; letter-spacing:.12em; }}
+.movecard.wade .movelabel {{ color:var(--accent); }}
+.movecard.claude .movelabel {{ color:var(--watchc); }}
+.movelist {{ margin:8px 0 0; padding-left:18px; font-size:13.5px; }}
+.movelist li {{ margin:6px 0; }}
+.movelist .ctx {{ color:var(--sub); font-size:12.5px; display:block; font-weight:400; }}
+.movenone {{ margin:8px 0 0; color:var(--sub); font-size:13px; }}
+.donewrap {{ margin:24px 0 0; color:var(--sub); font-size:13px; }}
+.donewrap summary {{ cursor:pointer; font-weight:600; }}
+.donewrap ul {{ margin:8px 0 0; padding-left:20px; }}
+.donewrap li {{ margin:4px 0; max-width:90ch; }}
+.donedate {{ font-variant-numeric:tabular-nums; font-weight:600; margin-right:6px; }}
 @media (max-width:640px) {{ td {{ min-width:90px; }} main {{ padding:14px; }} }}
 </style>
 <div class="masthead">
