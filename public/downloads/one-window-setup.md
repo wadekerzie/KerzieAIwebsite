@@ -353,21 +353,24 @@ Three rules, and they are the whole design:
 1. **ACTIONS.md stays canonical.** The pane is a VIEW of the tracker, never a second place to
    edit. If they disagree, the tracker wins and the pane gets regenerated.
 2. **Current state only.** No history on the pane, ever. History lives in the project files.
-3. **It refreshes at every wrap-up.** That is why it stays true when every other dashboard the
-   operator has tried went stale.
+3. **It is LIVE from the day it is born.** A tiny local server rebuilds the page whenever the
+   data changes and the page reloads itself within seconds. An aged pane kills trust in the
+   whole operating system - the operator must never open it and wonder if it is current. The
+   wrap-up sweep is the backstop, not the mechanism.
 
-**How to build it:** the complete instructions and the generator script are in **Appendix A**
-at the end of this document. The short version: you keep small data files (one per tab) with
-the current state, a deterministic script turns them into one polished HTML page in a second,
-and you publish it to a stable private link the operator bookmarks once. Building it costs one
-short session. Keeping it alive costs nothing, because the refresh rides the wrap-up you are
-already doing.
+**How to build it:** the complete instructions, the generator script, and the live server are
+in **Appendix A** at the end of this document. The short version: you keep small data files
+(one per tab) with the current state, a deterministic script turns them into one polished HTML
+page in a second, and a small local server keeps that page live - it rebuilds on any data
+change and the page reloads itself within seconds. Building it costs one short session.
+Keeping it alive costs nothing, because updating the data files becomes part of doing the work.
 
-**When you finish building it, add one line to the wrap-up ritual below: after the tracker is
-reconciled, update the pane's data files, rebuild, and republish to the same link.** Then show
-the operator the link on their phone. That moment - their whole operation in their pocket,
-current as of an hour ago - is when this stops being a chat tool in their head and becomes
-their operating system.
+**When you finish building it, add two standing behaviors: (1) whenever a session changes real
+state - something ships, closes, or gets scheduled - update the pane's data files in the same
+breath; (2) at wrap-up, sweep for anything missed and refresh the phone snapshot if one
+exists.** Then change one status while the operator watches the pane, and let them see it move
+on its own. That moment - their whole operation updating itself in front of them - is when this
+stops being a chat tool in their head and becomes their operating system.
 
 ## The wrap-up, and telling them it exists
 
@@ -814,28 +817,129 @@ Run it:
 python3 tools/build_dashboard.py
 ```
 
-## Step 4 — Publish
+## Step 4 — Serve it LIVE (this is the product, not an option)
 
-Two options, in order of preference:
+**Standing rule: an aged pane kills trust. The pane must move by itself from the day it is
+born, so build the live server, not a static page you remember to refresh.**
 
-1. **Claude artifact (recommended):** publish the generated HTML with the Artifact tool. The
-   URL is stable across republishes from the same setup — the user bookmarks it once. It opens
-   in the Claude side panel and on their phone. It is private unless they share it.
-2. **Local file:** open `dashboard/dashboard.html` in the browser. Works with zero accounts,
-   but no phone access and no side-panel rendering.
+Create `tools/serve_dashboard.py`:
 
-Record the published URL in the README you create (Step 5) so every future session republishes
-to the SAME url instead of minting a new one.
+```python
+#!/usr/bin/env python3
+"""Live single-pane server.
+
+Serves the dashboard at http://localhost:8787 and keeps it LIVE: it rebuilds
+dashboard.html whenever any data/*.json changes, and the served page polls
+/version every 3 seconds and reloads itself. Any session that edits a data
+file updates the pane within seconds - no manual refresh step exists.
+"""
+import subprocess
+import sys
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "dashboard" / "data"
+OUT = ROOT / "dashboard" / "dashboard.html"
+BUILD = ROOT / "tools" / "build_dashboard.py"
+PORT = 8787
+
+RELOAD_JS = """
+<script>
+(function () {
+  let v = null;
+  async function tick() {
+    try {
+      const r = await fetch('/version', {cache: 'no-store'});
+      const t = await r.text();
+      if (v === null) { v = t; }
+      else if (t !== v) { location.reload(); }
+    } catch (e) {}
+  }
+  setInterval(tick, 3000);
+  tick();
+})();
+</script>
+"""
+
+
+def data_version():
+    return "|".join(f"{p.name}:{p.stat().st_mtime_ns}" for p in sorted(DATA.glob("*.json")))
+
+
+def rebuild_if_stale():
+    out_mtime = OUT.stat().st_mtime_ns if OUT.exists() else 0
+    newest = max((p.stat().st_mtime_ns for p in DATA.glob("*.json")), default=0)
+    if newest > out_mtime:
+        subprocess.run([sys.executable, str(BUILD)], check=True)
+
+
+class Handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path.startswith("/version"):
+            body = data_version().encode()
+            self.send_response(200)
+            self.send_header("Content-Type", "text/plain")
+            self.send_header("Cache-Control", "no-store")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        try:
+            rebuild_if_stale()
+            html_text = OUT.read_text()
+        except Exception as e:
+            html_text = f"<h1>Dashboard build error</h1><pre>{e}</pre>"
+        body = (html_text + RELOAD_JS).encode()
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def log_message(self, fmt, *args):
+        pass
+
+
+if __name__ == "__main__":
+    server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+    print(f"Single pane live at http://localhost:{PORT}")
+    server.serve_forever()
+```
+
+The reload script is injected at serve time only, so `dashboard.html` on disk stays clean.
+If the user runs Claude Code with a browser side panel, register the server in
+`.claude/launch.json` (name it `single-pane`, port 8787) so "show me the pane" opens it
+straight into the panel:
+
+```json
+{
+  "name": "single-pane",
+  "runtimeExecutable": "python3",
+  "runtimeArgs": ["tools/serve_dashboard.py"],
+  "port": 8787
+}
+```
+
+**Snapshot copy (secondary, optional):** publish the generated HTML with the Artifact tool
+for phone/tablet access away from the machine. Label it for what it is - a snapshot, refreshed
+at session wraps - and record the stable URL in the README so future sessions republish to the
+SAME url instead of minting a new one. The live localhost pane is the primary surface; the
+artifact is never presented as the live view.
 
 ## Step 5 — Make it survive
 
-1. Write a short `dashboard/README.md`: where the data lives, how to build, the stable URL,
-   and the refresh ritual.
-2. **Add the refresh to the user's session-wrap ritual** (their CLAUDE.md): at every wrap,
-   after reconciling the tracker against reality, update the data files for anything that
-   changed, rebuild, republish to the stable URL. This is the step that keeps it alive.
-3. First refresh test: change one status, rebuild, republish, confirm the user sees the change
-   at the same URL.
+1. Write a short `dashboard/README.md`: where the data lives, how to build, how to serve,
+   the snapshot URL if one exists, and the refresh discipline.
+2. **Add refresh-on-change to the user's CLAUDE.md standing behaviors:** whenever a session
+   changes real state (something ships, closes, gets scheduled), it updates the data files in
+   the same breath - not at wrap, not "later." The live server makes every edit visible within
+   seconds; the discipline is what keeps the pane truthful.
+3. Session wrap remains the backstop: reconcile the tracker against reality, sweep the data
+   files for anything missed, and refresh the artifact snapshot if one exists.
+4. First live test: change one status in a data file while the user watches the pane, and let
+   them see it move on its own. That moment is the product.
 
 ## Guardrails (non-negotiable)
 
