@@ -18,8 +18,7 @@ const people = [
   {
     name: "Aaron Jones",
     role: "Technical Specialist. Colorado market. Making sure the work actually gets done.",
-    // Interim link until pro.aaronjones.com exists
-    href: "https://www.linkedin.com/in/apjones-ai/",
+    href: "https://aaronpjones.com/",
     external: true,
     photo: "/aaron.jpg",
     initials: null,
