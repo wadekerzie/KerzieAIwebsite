@@ -62,13 +62,23 @@ export default function OneWindowBusinessPage() {
           Mac, and a $20 per month Claude subscription. Windows is not covered
           yet.
         </p>
-        <p className="k-rise k-rise-3 mt-5 text-[#AABBCC]/80 text-base max-w-xl leading-relaxed">
-          Setting it up for your own work rather than a company?{" "}
-          <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
-            The personal door is here
+        <div className="k-rise k-rise-4 mt-8 max-w-xl">
+          <Link
+            href="/one-window"
+            className="k-focus block rounded-lg bg-white p-5 sm:p-6 hover:bg-[#F3F4F8] transition-colors duration-200"
+          >
+            <p className="k-mono text-[11px] tracking-[0.15em] text-[#C4633F] font-bold mb-2">
+              SETTING IT UP FOR YOURSELF?
+            </p>
+            <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
+              There is a door for running your own work: the job, the projects,
+              the commitments. Same product, same price.
+            </p>
+            <p className="mt-3 text-[#C4633F] font-semibold">
+              The Personal Setup <span className="k-arrow">&rarr;</span>
+            </p>
           </Link>
-          . Same product, same price.
-        </p>
+        </div>
         <div className="k-rise k-rise-4 mt-10">
           <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
             Get the Setup <span className="k-arrow">&rarr;</span>

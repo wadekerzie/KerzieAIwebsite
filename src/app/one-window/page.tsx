@@ -57,13 +57,23 @@ export default function OneWindowPage() {
           around your answers, and connects your accounts with you. It is the
           exact framework my own operation runs on every day.
         </p>
-        <p className="k-rise k-rise-3 mt-5 text-[#AABBCC]/80 text-base max-w-xl leading-relaxed">
-          Running a company with customers and crews?{" "}
-          <Link href="/one-window/business" className="k-link k-focus text-[#6B9FD4]">
-            The small business door is here
+        <div className="k-rise k-rise-4 mt-8 max-w-xl">
+          <Link
+            href="/one-window/business"
+            className="k-focus block rounded-lg bg-white p-5 sm:p-6 hover:bg-[#F3F4F8] transition-colors duration-200"
+          >
+            <p className="k-mono text-[11px] tracking-[0.15em] text-[#C4633F] font-bold mb-2">
+              RUNNING A BUSINESS?
+            </p>
+            <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
+              There is a door built for owners: follow-ups, quotes, the tracker,
+              your marketing. Same product, same price.
+            </p>
+            <p className="mt-3 text-[#C4633F] font-semibold">
+              The Small Business Setup <span className="k-arrow">&rarr;</span>
+            </p>
           </Link>
-          . Same product, told for owners.
-        </p>
+        </div>
         <p className="k-rise k-rise-3 mt-6 text-white text-2xl font-semibold">
           $99, one time<span className="text-[#E8896A]">.</span>
         </p>
