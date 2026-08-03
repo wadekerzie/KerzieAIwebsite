@@ -62,6 +62,13 @@ export default function OneWindowBusinessPage() {
           Mac, and a $20 per month Claude subscription. Windows is not covered
           yet.
         </p>
+        <p className="k-rise k-rise-3 mt-5 text-[#AABBCC]/80 text-base max-w-xl leading-relaxed">
+          Setting it up for your own work rather than a company?{" "}
+          <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
+            The personal door is here
+          </Link>
+          . Same product, same price.
+        </p>
         <div className="k-rise k-rise-4 mt-10">
           <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
             Get the Setup <span className="k-arrow">&rarr;</span>

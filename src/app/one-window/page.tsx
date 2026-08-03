@@ -45,16 +45,24 @@ export default function OneWindowPage() {
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">The One-Window Setup</p>
+        <p className="k-rise k-rise-1 k-label mb-8">The One-Window Setup &mdash; Your Personal OS</p>
         <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          Your whole business, <span className="k-serif font-normal">one window</span>
+          Everything you run, <span className="k-serif font-normal">one window</span>
           <span className="text-[#E8896A]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-xl leading-relaxed">
           The complete AI working environment, in one document you paste into
-          Claude. It interviews you about your business, builds your operating
-          system around your answers, and connects your accounts with you. It is
-          the exact framework my own businesses run on every day.
+          Claude. It interviews you about your work - the job, the projects, the
+          side ventures, the commitments - builds your personal operating system
+          around your answers, and connects your accounts with you. It is the
+          exact framework my own operation runs on every day.
+        </p>
+        <p className="k-rise k-rise-3 mt-5 text-[#AABBCC]/80 text-base max-w-xl leading-relaxed">
+          Running a company with customers and crews?{" "}
+          <Link href="/one-window/business" className="k-link k-focus text-[#6B9FD4]">
+            The small business door is here
+          </Link>
+          . Same product, told for owners.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-white text-2xl font-semibold">
           $99, one time<span className="text-[#E8896A]">.</span>
