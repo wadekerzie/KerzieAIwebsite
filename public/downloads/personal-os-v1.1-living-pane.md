@@ -690,6 +690,14 @@ artifact is never presented as the live view.
 4. First live test: change one status in a data file while the user watches the pane, and let
    them see it move on its own. That moment is the product.
 
+## The session-start rule (added Aug 2026 - core function, not polish)
+
+At the START of every session, before anything else, put the pane on screen in the side
+panel next to your working window: in Claude Code, send the pane's HTML file with the
+SendUserFile tool using display "render". You open a session, your operating system is
+already looking back at you, current. If your Claude does not do this unprompted, tell it
+once to add the behavior to its standing rules - it applies from every session after.
+
 ## Guardrails (non-negotiable)
 
 - Never invent a status. If you don't know the current state of something, say UNVERIFIED in
