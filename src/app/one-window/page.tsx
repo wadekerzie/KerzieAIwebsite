@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     description:
       "I talk. The work gets done. The complete AI working environment in one document you paste into Claude. Mac. $99, one time.",
     url: "https://kerzie.ai/one-window",
-    images: [{ url: "/og/one-window.jpg", width: 1200, height: 630, alt: "Two colleagues working side by side at one laptop." }],
+    images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
-  twitter: { card: "summary_large_image", images: ["/og/one-window.jpg"] },
+  twitter: { card: "summary_large_image", images: ["/og/one-window-talk.jpg"] },
 };
 
 const CHECKOUT_URL = "https://buy.stripe.com/fZu4gAgDda7TarOfNc3cc00";
