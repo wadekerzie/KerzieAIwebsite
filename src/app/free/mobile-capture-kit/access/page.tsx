@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { CAPTURE_KIT_MD } from "@/content/captureKit";
 
 export const metadata: Metadata = {
-  title: "Your Mobile Capture Kit | Kerzie AI",
+  title: "Your Voice Command Center | Kerzie AI",
   robots: { index: false, follow: false },
 };
 
@@ -150,7 +150,7 @@ export default function CaptureKitAccessPage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 pb-8">
-        <p className="k-label mb-6">Here Is Your Mobile Capture Kit</p>
+        <p className="k-label mb-6">Here Is Your Voice Command Center</p>
         <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3rem)]">
           Ten minutes of setup, one habit
           <span className="text-[#E8896A]">.</span>

@@ -5,12 +5,12 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "The One-Window Setup | Kerzie AI",
   description:
-    "The complete AI working environment in one document. Paste it into Claude and it interviews you about your business, builds your operating system around your answers, and connects your accounts. Mac. $99, one time.",
+    "You say what needs to happen. One AI window that knows your work drafts, tracks, and stages it for your yes. The whole learning curve is one habit. Mac. $99, one time.",
   openGraph: {
     type: "article",
     title: "The One-Window Setup",
     description:
-      "The complete AI working environment in one document. Paste it into Claude and it interviews you about your business, builds your operating system around your answers, and connects your accounts. Mac. $99, one time.",
+      "I talk. The work gets done. The complete AI working environment in one document you paste into Claude. Mac. $99, one time.",
     url: "https://kerzie.ai/one-window",
     images: [{ url: "/og/one-window.jpg", width: 1200, height: 630, alt: "Two colleagues working side by side at one laptop." }],
   },
@@ -18,9 +18,10 @@ export const metadata: Metadata = {
 };
 
 const CHECKOUT_URL = "https://buy.stripe.com/fZu4gAgDda7TarOfNc3cc00";
+const UPGRADE_PASS_URL = "https://buy.stripe.com/bJeaEY2Mn7ZLgQc8kK3cc01";
 
 const builds = [
-  "An interview about your business first, before a single file gets created. Nothing in your setup is generic.",
+  "An interview about your work first, before a single file gets created. Nothing in your setup is generic.",
   "The one-folder workspace: everything your AI needs to know, on disk, not lost in a chat thread.",
   "Your operating manual, written in your words, loaded every session, with the five standing rules that prevent AI disasters.",
   "A working tracker seeded with what you already told it is falling through the cracks, so it is useful the moment it exists.",
@@ -47,15 +48,15 @@ export default function OneWindowPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
         <p className="k-rise k-rise-1 k-label mb-8">The One-Window Setup &mdash; Your Personal OS</p>
         <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          Everything you run, <span className="k-serif font-normal">one window</span>
+          I talk. <span className="k-serif font-normal">The work gets done</span>
           <span className="text-[#E8896A]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-xl leading-relaxed">
-          The complete AI working environment, in one document you paste into
-          Claude. It interviews you about your work - the job, the projects, the
-          side ventures, the commitments - builds your personal operating system
-          around your answers, and connects your accounts with you. It is the
-          exact framework my own operation runs on every day.
+          One window. One AI that actually knows your work - the job, the
+          projects, the side ventures, the commitments. You say what needs to
+          happen. It drafts, tracks, and stages. You approve. Built by one
+          document you paste into Claude; it interviews you and builds your
+          operating system around your answers.
         </p>
         <div className="k-rise k-rise-4 mt-8 max-w-xl">
           <Link
@@ -88,10 +89,91 @@ export default function OneWindowPage() {
         </div>
       </section>
 
+      {/* The 16,000 words */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">01 &mdash; Your 16,000 Words</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              Researchers once wired people with recorders to settle how much
+              the average person talks. The answer: about 16,000 words a day.
+            </p>
+            <p>
+              That is a 60 page document, every day, spoken into the air and
+              gone by dinner. The idea you had in the car is in there. The
+              commitment you made in the hallway is in there. The email you
+              meant to send is in there. All of it said out loud, captured by
+              nobody.
+            </p>
+            <p className="text-white font-medium">
+              The One-Window Setup exists to catch those words and turn them
+              into finished work.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* 1965 */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">02 &mdash; This Existed In 1965</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              In 1965 an executive walked out of a meeting talking, and
+              somebody wrote down every word. She checked it against what he
+              had said before, threw out the repeats, and routed the rest: this
+              goes to accounting, this becomes a letter, draft it for his
+              signature.
+            </p>
+            <p>
+              Talk went in. Action came out. That was the whole system. We
+              deleted that layer because it cost a salary, and everybody below
+              the corner office never had it at all.
+            </p>
+            <p className="text-white font-medium">
+              That layer is back. This time it costs $99, and everybody gets
+              one.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* The one habit */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">03 &mdash; The One Habit</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              Here is what almost everyone gets wrong about AI: they picture a
+              curriculum. Months of studying, keeping up with model releases,
+              learning which tool does what. That imagined climb is why most
+              people never start.
+            </p>
+            <p className="text-white font-medium">
+              The whole learning curve is one habit: record what you say.
+            </p>
+            <p>
+              Talk to the window at your desk. Talk to your phone between
+              meetings. That is the entire skill. You already produce the raw
+              material, 16,000 words at a time. The setup does the rest: it
+              interviews you about your work once, then it knows your projects,
+              your people, and your voice, and it turns your talk into drafts,
+              trackers, and follow-ups, staged for your yes.
+            </p>
+            <p>
+              And you do not need to wait for a better AI. I run my operation
+              on today&apos;s models, and I honestly could not tell you what a
+              smarter one would add to this. The gap was never the model. The
+              gap was that nobody built the window.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Why a document */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; Why The Product Is A Document</p>
+          <p className="k-label mb-6">04 &mdash; Why The Product Is A Document</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Most people run AI as a chat window: ask a question, get an answer,
@@ -99,8 +181,8 @@ export default function OneWindowPage() {
             </p>
             <p>
               The operators getting real leverage run it as an operating system:
-              one window where the AI reads the state of the business, carries
-              the execution, and remembers.
+              one window where the AI reads the state of the work, carries the
+              execution, and remembers.
             </p>
             <p className="text-white font-medium">
               Getting from the first mode to the second is a setup problem. Most
@@ -123,45 +205,10 @@ export default function OneWindowPage() {
         </Reveal>
       </section>
 
-      {/* Already in your hand */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
-        <Reveal>
-          <p className="k-label mb-6">02 &mdash; No New Hardware</p>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
-            <p>
-              There is a wave of AI gadgets right now that record your voice and
-              hand you summaries: pins, pendants, pocket recorders. Another
-              device, another app, another subscription.
-            </p>
-            <p className="text-white font-medium">
-              The capability is already in your hand.{" "}
-              <span className="k-serif font-normal">
-                And it is better, because it feeds YOUR AI, with your context,
-                not a vendor&apos;s summary app.
-              </span>
-            </p>
-            <p>
-              This setup uses the Mac you already own and the AI subscription
-              you already pay for. Nothing new to buy, charge, or wear.
-            </p>
-            <p>
-              The phone half of that, talking into your pocket and having the
-              thought waiting on your desk, is a separate free kit:{" "}
-              <Link href="/free/mobile-capture-kit" className="k-link k-focus text-[#6B9FD4]">
-                the Mobile Capture Kit
-              </Link>
-              . Fair warning, it is iPhone only and the Shortcut setup is fiddly.
-              It is a bonus, not part of this. Your operating system works
-              completely without it.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
       {/* What your AI builds */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; What Your AI Builds With You</p>
+          <p className="k-label mb-6">05 &mdash; What Your AI Builds With You</p>
           <p className="max-w-2xl text-[#AABBCC] text-lg leading-relaxed mb-8">
             In this order, and the order is the point. Nothing gets built before
             it knows what you actually do.
@@ -182,7 +229,7 @@ export default function OneWindowPage() {
       {/* The to-do list goes away */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; Your To-Do List Goes Away</p>
+          <p className="k-label mb-6">06 &mdash; Your To-Do List Goes Away</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               However you track your own workload today - paper, a tasks app, a
@@ -210,21 +257,104 @@ export default function OneWindowPage() {
         </Reveal>
       </section>
 
+      {/* No new hardware */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">07 &mdash; No New Hardware</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              There is a wave of AI gadgets right now that record your voice and
+              hand you summaries: pins, pendants, pocket recorders. Another
+              device, another app, another subscription.
+            </p>
+            <p className="text-white font-medium">
+              The capability is already in your hand.{" "}
+              <span className="k-serif font-normal">
+                And it is better, because it feeds YOUR AI, with your context,
+                not a vendor&apos;s summary app.
+              </span>
+            </p>
+            <p>
+              This setup uses the Mac you already own and the AI subscription
+              you already pay for. Nothing new to buy, charge, or wear.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* The offer */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">08 &mdash; The Offer</p>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p className="text-white text-xl font-semibold">
+              The One-Window Setup: $99, one time. Instant access after
+              checkout.
+            </p>
+            <p className="text-white text-xl font-semibold">
+              The Upgrade Pass: $149 for six months. Then it ends, on purpose.
+            </p>
+            <p>
+              Every upgrade I build for my own OS, packaged and pushed to you:
+              at least one upgrade a month for the full six months. The first
+              four are already built - the Living Pane, the Clean Handoff, the
+              Weekly Tune-Up, and the Nightly Dream - and the stream keeps
+              coming as I keep building.
+            </p>
+            <p className="text-white font-medium">
+              This pass is designed to end. If you take the upgrades, by month
+              six you will not need to buy improvements, because you will be
+              making your own. That is not a marketing line; it is the product
+              working. I am not building a payment you forget to cancel. I am
+              walking you across the line where you do not need me.
+            </p>
+            <p>
+              <span className="text-white font-medium">The guarantee:</span>{" "}
+              the first sitting ends with one real thing from your week done
+              end to end. If it does not, I refund the $99 and you keep the
+              document.
+            </p>
+            <p>
+              Rather have it built WITH you: your machine, your accounts, one
+              real workflow shipped before I leave the room? That is the{" "}
+              <Link href="/services/fast-track" className="k-link k-focus text-[#6B9FD4]">
+                AI Fast-Track Session
+              </Link>{" "}
+              at $999 for up to three people, and this document is included for
+              every one of them. Take this $99 off the top and the session runs
+              $900. Split across three people and three hours, that is $100 an
+              hour each to have it installed instead of read.
+            </p>
+          </div>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
+              Get the Setup for $99 <span className="k-arrow">&rarr;</span>
+            </a>
+            <a
+              href={UPGRADE_PASS_URL}
+              className="k-focus inline-block rounded-lg border border-[#E8896A] px-6 py-3 text-[#E8896A] font-semibold hover:bg-[#E8896A] hover:text-[#1A1B2E] transition-colors duration-200"
+            >
+              Add the Upgrade Pass for $149 <span className="k-arrow">&rarr;</span>
+            </a>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Straight answers */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; Straight Answers</p>
+          <p className="k-label mb-6">09 &mdash; Straight Answers</p>
           <div className="max-w-2xl space-y-5 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              <span className="text-white font-medium">Do I need to know AI?</span>{" "}
+              If you can talk, you qualify. The setup interviews you; you never
+              write a prompt. You will type one command into your Mac, once,
+              copied straight off the page.
+            </p>
             <p>
               <span className="text-white font-medium">Is this a course?</span>{" "}
               No. It is a working document. About an hour gets the foundation
               running; the first-week plan inside paces the rest.
-            </p>
-            <p>
-              <span className="text-white font-medium">Do I need to be technical?</span>{" "}
-              No. Your AI is the technical one. If you can describe your business
-              and answer questions about it, you can do this. You will type one
-              command into your Mac, once, copied straight off the page.
             </p>
             <p>
               <span className="text-white font-medium">Which AI?</span> Claude,
@@ -249,30 +379,30 @@ export default function OneWindowPage() {
         </Reveal>
       </section>
 
-      {/* Price + ladder */}
+      {/* Free rung */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; The Price</p>
+          <p className="k-label mb-6">10 &mdash; Not Ready? Take The Habit For Free</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
-            <p className="text-white text-xl font-semibold">
-              $99, one time. Instant access after checkout.
+            <p>
+              Take the <span className="text-white font-medium">Voice Command Center</span>{" "}
+              free. Ten minutes of setup, one habit: talk into your phone, and
+              the thought is waiting in your AI the next time you sit down.
+              Works with whatever AI you already use. Fair warning: iPhone
+              only, and the Shortcut setup is fiddly.
             </p>
             <p>
-              Rather have it built WITH you: your machine, your accounts, one
-              real workflow shipped before I leave the room? That is the{" "}
-              <Link href="/services/fast-track" className="k-link k-focus text-[#6B9FD4]">
-                AI Fast-Track Session
-              </Link>{" "}
-              at $999 for up to three people, and this document is included for
-              every one of them. Take this $99 off the top and the session runs
-              $900. Split across three people and three hours, that is $100 an
-              hour each to have it installed instead of read.
+              If the habit sticks, you will know exactly what the full window
+              is worth before you spend a dollar.
             </p>
           </div>
-          <div className="mt-10">
-            <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
-              Get the Setup for $99 <span className="k-arrow">&rarr;</span>
-            </a>
+          <div className="mt-8">
+            <Link
+              href="/free/mobile-capture-kit"
+              className="k-focus inline-block rounded-lg border border-[rgba(170,187,204,0.4)] px-6 py-3 text-[#AABBCC] font-semibold hover:border-white hover:text-white transition-colors duration-200"
+            >
+              Get the Voice Command Center free <span className="k-arrow">&rarr;</span>
+            </Link>
           </div>
         </Reveal>
       </section>

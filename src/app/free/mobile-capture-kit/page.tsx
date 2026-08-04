@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import GateForm from "@/components/GateForm";
 
 export const metadata: Metadata = {
-  title: "The Mobile Capture Kit (Free) | Kerzie AI",
+  title: "The Voice Command Center (Free) | Kerzie AI",
   description:
     "A free 10-minute phone setup: talk your thoughts into your phone, two taps, and your AI processes them into next steps. Works with Claude, ChatGPT, or Gemini.",
   openGraph: {
     type: "article",
-    title: "The Mobile Capture Kit (Free)",
+    title: "The Voice Command Center (Free)",
     description:
       "A free 10-minute phone setup: talk your thoughts into your phone, two taps, and your AI processes them into next steps. Works with Claude, ChatGPT, or Gemini.",
     url: "https://kerzie.ai/free/mobile-capture-kit",
@@ -30,7 +30,7 @@ export default function CaptureKitGatePage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-label mb-8">The Mobile Capture Kit &middot; Free</p>
+        <p className="k-label mb-8">The Voice Command Center &middot; Free</p>
         <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.5rem)]">
           You never have to remember what you were thinking{" "}
           <span className="k-serif font-normal">an hour ago</span>
@@ -50,9 +50,9 @@ export default function CaptureKitGatePage() {
           </span>
         </p>
         <div className="mt-10">
-          <GateForm magnet="capture-kit" buttonLabel="Send me the kit" />
+          <GateForm magnet="capture-kit" buttonLabel="Send me the Voice Command Center" />
           <p className="mt-4 text-sm text-[#6d7585]">
-            You get the kit instantly plus the Kerzie AI newsletter, one real
+            You get it instantly plus the Kerzie AI newsletter, one real
             operator note a week. Unsubscribe any time.
           </p>
         </div>
