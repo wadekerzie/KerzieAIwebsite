@@ -102,6 +102,27 @@ export default function OneWindowBusinessPage() {
         </div>
       </section>
 
+
+      {/* The explainer - the video is the demo */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-4">
+        <div className="max-w-2xl">
+          <p className="k-label mb-4">80 Seconds, And The Video Is The Demo</p>
+          <video
+            controls
+            preload="metadata"
+            playsInline
+            className="w-full rounded-lg border border-[rgba(170,187,204,0.2)]"
+          >
+            <source src="/videos/one-window-explainer.mp4" type="video/mp4" />
+          </video>
+          <p className="mt-3 text-[#AABBCC]/70 text-sm leading-relaxed">
+            That is my AI avatar, built and scripted from my own spoken words by
+            my operating system. Made the same way everything else here gets
+            made: I talked, the work got done.
+          </p>
+        </div>
+      </section>
+
       {/* The 16,000 words */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
