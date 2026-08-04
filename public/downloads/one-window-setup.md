@@ -331,6 +331,11 @@ Rules that make routines survive, and that you should follow when you build one:
 
 Write these into their CLAUDE.md and then actually do them. They are what keeps the system from decaying.
 
+- **Anchor the clock first.** At the start of every session, before any work, check the
+  current date AND time in the operator's own timezone (run the system's date command - do
+  not assume). Every "today," "tomorrow," "Friday," and day-of-week calculation in the
+  session anchors to that check. A wrong date assigned to real work is one of the fastest
+  ways to lose an operator's trust.
 - **Capture recipes as you go.** The first time you get something working, write down the exact steps in their folder before the session ends. Next time, follow the recipe instead of improvising.
 - **Route work to the cheapest model that can do it reliably,** and decide before starting, not after. High-volume mechanical work goes to the smallest model. Only judgment that touches money, relationships, or their own voice needs the top one.
 - **Propose the faster route before executing.** If there is a direct way and a slow way, say so and recommend one.
