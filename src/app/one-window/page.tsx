@@ -79,8 +79,8 @@ export default function OneWindowPage() {
           $99, one time<span className="text-[#E8896A]">.</span>
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#AABBCC]/80 text-base max-w-xl leading-relaxed">
-          Mac, and a $20 per month Claude subscription. Windows is not covered
-          yet.
+          System requirements: a Mac, and a $20 per month Claude
+          subscription. Windows is not supported yet.
         </p>
         <div className="k-rise k-rise-4 mt-10">
           <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
