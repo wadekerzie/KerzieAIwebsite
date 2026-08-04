@@ -287,6 +287,11 @@ export default function FastTrackPage() {
       >
         <Reveal>
           <p className="k-label mb-6">08 &mdash; The Intake</p>
+          <p className="text-white font-medium text-lg max-w-2xl mb-4">
+            The test of the session is the test of everything we do: did
+            technology just get simpler for you, and did something real ship
+            before you left the room.
+          </p>
           <p className="text-[#AABBCC] text-lg max-w-2xl mb-10">
             Five minutes. This tells us both whether the session is worth your
             $999 and my three hours. Tell me how many of you are coming.

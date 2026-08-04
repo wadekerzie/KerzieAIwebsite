@@ -169,6 +169,11 @@ export default function SalesTeamsPage() {
             Let&apos;s prove it with a few of your people
             <span className="text-[#E8896A]">.</span>
           </h2>
+          <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
+            The pilot holds the same promise we make everywhere: simpler, not
+            additional. If AI adds a step to a rep&apos;s day, it is dead on
+            arrival - so we build it into the way they already sell.
+          </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-10 leading-relaxed">
             A 30-day pilot, scored from day one. If it works, you will see it. If
             it does not, you will know that too.

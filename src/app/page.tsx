@@ -199,6 +199,11 @@ export default function Home() {
               <h2 className="text-white text-[clamp(2rem,4.5vw,3.25rem)] font-bold tracking-[-0.02em] leading-[1.05] mb-5">
                 What problem hurts the most?
               </h2>
+              <p className="text-[#AABBCC] text-base mb-4 max-w-xl">
+                Everything above started as somebody&apos;s problem. That&apos;s
+                the whole business: find where technology is failing a person,
+                and make it simple enough to actually help.
+              </p>
               <p className="text-[#AABBCC] text-base mb-10 max-w-xl">
                 Don&apos;t worry about the solution. Just tell us the problem.
                 The longer the better.

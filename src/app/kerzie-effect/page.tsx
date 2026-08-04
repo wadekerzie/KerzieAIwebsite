@@ -1015,6 +1015,10 @@ export default function KerzieEffectPage() {
           synthesizing. That line is not hard to cross anymore. That&rsquo;s the
           entire point of this essay, and it&rsquo;s the part that cuts both ways.
         </P>
+        <P>
+          Helping people cross it is the business. Making the technology simple
+          enough that you can - that&rsquo;s the whole job.
+        </P>
 
         <Colophon>
           Dell&rsquo;Acqua et al., &ldquo;Navigating the Jagged Technological

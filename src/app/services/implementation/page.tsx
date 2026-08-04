@@ -46,6 +46,11 @@ export default function ImplementationPage() {
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(170,187,204,0.13)] pt-14">
         <Reveal>
+          <p className="text-[#AABBCC] text-lg mb-4 max-w-xl">
+            We only build things that make the technology disappear into the
+            work. If it needs a training course afterward, we built the wrong
+            thing.
+          </p>
           <p className="text-white text-xl font-medium mb-6 max-w-xl">
             Bring us the workflow that hurts. We will come back with what we
             would build, how long it takes, and what it costs.

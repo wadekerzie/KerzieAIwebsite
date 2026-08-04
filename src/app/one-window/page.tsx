@@ -128,7 +128,7 @@ export default function OneWindowPage() {
             </p>
             <p className="text-white font-medium">
               The One-Window Setup exists to catch those words and turn them
-              into finished work.
+              into finished work. Simpler, not additional.
             </p>
           </div>
         </Reveal>
@@ -308,6 +308,11 @@ export default function OneWindowPage() {
         <Reveal>
           <p className="k-label mb-6">08 &mdash; The Offer</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              This is the simplest true version of everything I write about:
+              one window, technology carrying the load instead of adding to
+              it. The $99 is just the door.
+            </p>
             <p className="text-white text-xl font-semibold">
               The One-Window Setup: $99, one time. Instant access after
               checkout.

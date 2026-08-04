@@ -77,6 +77,11 @@ export default function SubscribePage() {
             clients. I am not reporting on this from the outside. I am the one
             with the receipts.
           </p>
+          <p className="text-[#AABBCC] leading-relaxed mt-4">
+            Why I publish them: to prove, twice a week, that this technology is
+            finally simple enough to actually help a regular person. The
+            receipts just keep me honest.
+          </p>
         </div>
       </section>
     </div>

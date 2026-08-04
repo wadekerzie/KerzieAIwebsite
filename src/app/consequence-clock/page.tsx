@@ -549,6 +549,11 @@ export default function ConsequenceClockPage() {
         years to learn and one unanswered Teams message to finally see:
       </P>
       <Callout>Never let a building set your clock.</Callout>
+      <P>
+        I write about this because the fix is finally available to a regular
+        person. The technology to run on your own clock is here, it is cheap,
+        and my whole job is making it simple enough to use.
+      </P>
 
       <Colophon>
         Sources, each verified against the original before publication: Ethan

@@ -45,6 +45,10 @@ export default function TeamPage() {
         <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           The people behind the work.
         </h1>
+        <p className="k-rise k-rise-3 text-[#AABBCC] text-lg max-w-2xl mt-6">
+          What we share: the belief that life is best when technology just
+          works, and the stubbornness to make it that way for other people.
+        </p>
       </section>
 
       {/* Profiles */}
