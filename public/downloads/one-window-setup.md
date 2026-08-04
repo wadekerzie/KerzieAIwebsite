@@ -370,9 +370,11 @@ page in a second, and a small local server keeps that page live - it rebuilds on
 change and the page reloads itself within seconds. Building it costs one short session.
 Keeping it alive costs nothing, because updating the data files becomes part of doing the work.
 
-**When you finish building it, add three standing behaviors: (1) whenever a session changes real
-state - something ships, closes, or gets scheduled - update the pane's data files in the same
-breath; (2) at wrap-up, sweep for anything missed and refresh the phone snapshot if one
+**The pane's one non-negotiable claim: it is up to date at ALL times. If the pitch is "your
+to-do list goes away," then a stale pane is a broken promise - the operator must never open it
+and wonder. When you finish building it, add three standing behaviors: (1) whenever a session
+changes real state - something ships, closes, or gets scheduled - update the pane's data files
+in the same breath, a ten-second edit, NEVER batched to a wrap-up or a refresh cadence; (2) at wrap-up, sweep for anything missed and refresh the phone snapshot if one
 exists; (3) AT THE START OF EVERY SESSION, before anything else, put the pane on screen in the
 side panel next to this window (in Claude Code, send the pane's HTML file with the SendUserFile
 tool using display "render"). The operator must SEE their operating system, current, every
@@ -940,6 +942,13 @@ python3 tools/build_dashboard.py
 ```
 
 ## Step 4 — Serve it LIVE (this is the product, not an option)
+
+**Also bake a self-refresh into the generated page itself** (a one-line
+`setTimeout(function(){location.reload()}, 60000)` at the end of the page script): the local
+server hot-reloads on data changes, but the operator will sometimes view the pane somewhere
+that does not hot-reload - a side panel, a phone, a published snapshot. The page reloading
+itself every 60 seconds means every surface converges on current within a minute, hands-free.
+
 
 **Standing rule: an aged pane kills trust. The pane must move by itself from the day it is
 born, so build the live server, not a static page you remember to refresh.**

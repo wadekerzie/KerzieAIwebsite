@@ -690,6 +690,16 @@ artifact is never presented as the live view.
 4. First live test: change one status in a data file while the user watches the pane, and let
    them see it move on its own. That moment is the product.
 
+## The all-times rule (added Aug 2026 - the pane's one non-negotiable)
+
+The pane is up to date at ALL times, or the promise is broken. Two mechanics deliver it:
+(1) your Claude updates the pane's data files IN THE SAME BREATH as the work - the moment
+something ships, closes, or gets scheduled, never batched to session wrap-up; (2) the pane
+page itself carries a 60-second self-refresh (one line: setTimeout(function(){location.reload()},
+60000)) so any surface that does not hot-reload - a side panel, a phone - converges on current
+within a minute. If your pane ever shows a finished item as your next step, tell your Claude
+to adopt both mechanics as standing rules; they apply from every session after.
+
 ## The session-start rule (added Aug 2026 - core function, not polish)
 
 At the START of every session, before anything else, put the pane on screen in the side
