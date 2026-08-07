@@ -144,6 +144,22 @@ state that needs no action compresses into a note-only section (empty `columns`/
 something like "Running quietly." A pane that accumulates finished work stops being read; a
 pane that leads with next moves gets read every day.
 
+**Call numbers (folded into v1.1 on 2026-08-07 - part of the pane, not an add-on).** Every item
+on the pane shows its short tracker ID in brackets at the end of the line: `Call Justin about the
+proposal [W3]`. This is not decoration. Without it your Claude will refer to items by ID in
+conversation while the pane shows no ID anywhere, and you will hunt every card by wording to find
+the one being discussed. Three parts, all required:
+
+1. **A short-ID scheme in the tracker** - one letter per project area plus a number (`W1`, `G14`).
+   If the tracker has none, create it before building the pane, and never renumber or reuse an ID:
+   a retired number that comes back makes every old note point at the wrong thing.
+2. **The ID rendered in the pane's visible text**, dimmer than the item text and the same size. Put
+   it only on items that actually have a tracker entry - never on clocks, stats, or context rows,
+   because an ID on the pane is a promise that the ID exists in the tracker.
+3. **The two-way rule in CLAUDE.md**: chat prose stays plain language and never asks the user to
+   approve something by ID alone, but always shows the ID alongside so they can find it - and the
+   user can command by it ("done W3", "park G12").
+
 **Status chips** — start any cell with one of these tokens and it renders as a colored chip:
 `{live}` (in motion), `{warm}` (a human responded, relationship warm), `{wade}` — **rename this
 one**: in the builder script below, edit the CHIPS table so the key and label match YOUR user's
