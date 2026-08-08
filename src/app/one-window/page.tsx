@@ -5,12 +5,12 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "The One-Window Setup | Kerzie AI",
   description:
-    "You say what needs to happen. One AI window that knows your work drafts, tracks, and stages it for your yes. The whole learning curve is one habit. Mac. $99, one time.",
+    "3 hours. 2 new habits. 1 window. 0 to-do list. One AI window that knows your work drafts, tracks, and stages it for your yes. Mac. $99, one time.",
   openGraph: {
     type: "article",
     title: "The One-Window Setup",
     description:
-      "I talk. The work gets done. The complete AI working environment in one document you paste into Claude. Mac. $99, one time.",
+      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One document you paste into Claude. Mac. $99, one time.",
     url: "https://kerzie.ai/one-window",
     images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
@@ -90,6 +90,52 @@ export default function OneWindowPage() {
       </section>
 
 
+      {/* The countdown - 3-2-1-0 */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-lg overflow-hidden border border-[rgba(170,187,204,0.2)] bg-[rgba(170,187,204,0.2)] max-w-4xl">
+          {[
+            {
+              n: "3",
+              t: "hours",
+              d: "from pasting one document to running your business in one window.",
+            },
+            {
+              n: "2",
+              t: "new habits",
+              d: "record what you say, and give it one place to land.",
+            },
+            {
+              n: "1",
+              t: "window",
+              d: "one AI that knows your work and turns talk into finished work.",
+            },
+            {
+              n: "0",
+              t: "to-do list",
+              d: "gone, replaced by a pane your AI keeps current for you.",
+            },
+          ].map((c) => (
+            <div key={c.n} className="bg-[#1A1B2E] p-6">
+              <p
+                className={`text-5xl lg:text-6xl font-bold tracking-tight ${
+                  c.n === "0" ? "text-[#E8896A]" : "text-white"
+                }`}
+              >
+                {c.n}
+              </p>
+              <p className="k-mono mt-2 text-[11px] tracking-[0.15em] uppercase text-[#AABBCC]">
+                {c.t}
+              </p>
+              <p className="mt-3 text-[#AABBCC]/80 text-sm leading-relaxed">{c.d}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-5 text-[#AABBCC]/70 text-sm">
+          A countdown does not stop at one. It lands on zero
+          <span className="text-[#E8896A]">.</span>
+        </p>
+      </section>
+
       {/* The explainer - the video is the demo */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-4">
         <div className="max-w-2xl">
@@ -162,7 +208,7 @@ export default function OneWindowPage() {
       {/* The one habit */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; The One Habit</p>
+          <p className="k-label mb-6">03 &mdash; The Two Habits</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Here is what almost everyone gets wrong about AI: they picture a
@@ -171,15 +217,18 @@ export default function OneWindowPage() {
               people never start.
             </p>
             <p className="text-white font-medium">
-              The whole learning curve is one habit: record what you say.
+              The whole learning curve is two habits: record what you say, and
+              give it one place to land.
             </p>
             <p>
               Talk to the window at your desk. Talk to your phone between
-              meetings. That is the entire skill. You already produce the raw
-              material, 16,000 words at a time. The setup does the rest: it
-              interviews you about your work once, then it knows your projects,
-              your people, and your voice, and it turns your talk into drafts,
-              trackers, and follow-ups, staged for your yes.
+              meetings. That is the first habit, and you already produce the
+              raw material, 16,000 words at a time. The second habit is two
+              clicks: your words land in a folder your window watches. The
+              setup does the rest: it interviews you about your work once, then
+              it knows your projects, your people, and your voice, and it turns
+              your talk into drafts, trackers, and follow-ups, staged for your
+              yes.
             </p>
             <p>
               And you do not need to wait for a better AI. I run my operation
@@ -273,6 +322,10 @@ export default function OneWindowPage() {
               I am looking at mine right now, in the same window I am writing
               this from. Three ventures, two outreach campaigns, a job pipeline,
               a content calendar, a YouTube channel. One glance.
+            </p>
+            <p className="text-white font-medium">
+              This is the zero the countdown lands on. Three hours, two habits,
+              one window, zero to-do list.
             </p>
           </div>
         </Reveal>
