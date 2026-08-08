@@ -5,12 +5,12 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "The One-Window Setup for Small Business | Kerzie AI",
   description:
-    "You say what needs to happen. One AI that knows your business drafts, chases, tracks, and stages it for your yes. The whole learning curve is one habit. Mac. $99, one time.",
+    "3 hours. 2 new habits. 1 window. 0 to-do list. One AI that knows your business drafts, chases, tracks, and stages it for your yes. Mac. $99, one time.",
   openGraph: {
     type: "article",
     title: "The One-Window Setup for Small Business",
     description:
-      "I talk. The work gets done. One AI window that knows your business and carries the office work. $99, one time.",
+      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One AI window that knows your business and carries the office work. $99, one time.",
     url: "https://kerzie.ai/one-window/business",
     images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
@@ -102,6 +102,56 @@ export default function OneWindowBusinessPage() {
         </div>
       </section>
 
+
+      {/* The countdown - 3-2-1-0 */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-lg overflow-hidden border border-[rgba(170,187,204,0.2)] bg-[rgba(170,187,204,0.2)] max-w-4xl">
+          {[
+            {
+              n: "3",
+              t: "hours",
+              d: "from pasting one document to running your business in one window.",
+            },
+            {
+              n: "2",
+              t: "new habits",
+              d: "record what you say, and give it one place to land.",
+            },
+            {
+              n: "1",
+              t: "window",
+              d: "one AI that knows your customers, your jobs, and your voice.",
+            },
+            {
+              n: "0",
+              t: "to-do list",
+              d: "gone, replaced by a pane your AI keeps current for you.",
+            },
+          ].map((c) => (
+            <div key={c.n} className="bg-[#1A1B2E] p-6">
+              <p
+                className={`text-5xl lg:text-6xl font-bold tracking-tight ${
+                  c.n === "0" ? "text-[#E8896A]" : "text-white"
+                }`}
+              >
+                {c.n}
+              </p>
+              <p className="k-mono mt-2 text-[11px] tracking-[0.15em] uppercase text-[#AABBCC]">
+                {c.t}
+              </p>
+              <p className="mt-3 text-[#AABBCC]/80 text-sm leading-relaxed">{c.d}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-5 text-[#AABBCC]/70 text-sm">
+          Put in the three hours yourself for $99, or have them{" "}
+          <Link href="/services/fast-track" className="k-link k-focus text-[#6B9FD4]">
+            done with you for $999
+          </Link>
+          . Either way the countdown lands on zero
+          <span className="text-[#E8896A]">.</span>
+        </p>
+      </section>
 
       {/* The explainer - the video is the demo */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-4">
@@ -199,7 +249,7 @@ export default function OneWindowBusinessPage() {
       {/* The one habit */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; The One Habit</p>
+          <p className="k-label mb-6">04 &mdash; The Two Habits</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Here is what almost everyone gets wrong about AI: they picture a
@@ -208,15 +258,18 @@ export default function OneWindowBusinessPage() {
               people never start.
             </p>
             <p className="text-white font-medium">
-              The whole learning curve is one habit: record what you say.
+              The whole learning curve is two habits: record what you say, and
+              give it one place to land.
             </p>
             <p>
               Talk to the window at your desk. Talk to your phone from the
-              truck. That is the entire skill. You already produce the raw
-              material, 16,000 words at a time. The setup does the rest: it
-              interviews you about your business once, then it knows your
-              customers, your prices, and your voice, and it turns your talk
-              into drafts, trackers, and follow-ups, staged for your yes.
+              truck. That is the first habit, and you already produce the raw
+              material, 16,000 words at a time. The second habit is two
+              clicks: your words land in a folder your window watches. The
+              setup does the rest: it interviews you about your business once,
+              then it knows your customers, your prices, and your voice, and
+              it turns your talk into drafts, trackers, and follow-ups, staged
+              for your yes.
             </p>
             <p>
               And you do not need to wait for a better AI. I run my companies
