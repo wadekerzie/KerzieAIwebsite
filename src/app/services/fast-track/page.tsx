@@ -6,7 +6,7 @@ import FastTrackIntakeForm from "@/components/FastTrackIntakeForm";
 export const metadata: Metadata = {
   title: "AI Fast-Track Session | Kerzie AI",
   description:
-    "Three hours, one room, up to three people. Each on your own machine, your own accounts, your own $20 AI subscription. Everyone ships one real piece of their own work before we are done. $999 flat for the room.",
+    "3 hours. 2 new habits. 1 window. 0 to-do list. One room, up to three people, each on your own machine, your own accounts, your own $20 AI subscription. Everyone ships one real piece of their own work before we are done. $999 flat for the room.",
 };
 
 const specs = [
@@ -62,6 +62,56 @@ export default function FastTrackPage() {
             Start with the intake <span className="k-arrow">&rarr;</span>
           </a>
         </div>
+      </section>
+
+      {/* The countdown - 3-2-1-0 */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-lg overflow-hidden border border-[rgba(170,187,204,0.2)] bg-[rgba(170,187,204,0.2)] max-w-4xl">
+          {[
+            {
+              n: "3",
+              t: "hours",
+              d: "one sitting, spent with us instead of alone.",
+            },
+            {
+              n: "2",
+              t: "new habits",
+              d: "record what you say, and give it one place to land. You leave with both running.",
+            },
+            {
+              n: "1",
+              t: "window",
+              d: "one AI that knows your work, set up on your machine, in your accounts.",
+            },
+            {
+              n: "0",
+              t: "to-do list",
+              d: "gone, replaced by a pane your AI keeps current for you.",
+            },
+          ].map((c) => (
+            <div key={c.n} className="bg-[#1A1B2E] p-6">
+              <p
+                className={`text-5xl lg:text-6xl font-bold tracking-tight ${
+                  c.n === "0" ? "text-[#E8896A]" : "text-white"
+                }`}
+              >
+                {c.n}
+              </p>
+              <p className="k-mono mt-2 text-[11px] tracking-[0.15em] uppercase text-[#AABBCC]">
+                {c.t}
+              </p>
+              <p className="mt-3 text-[#AABBCC]/80 text-sm leading-relaxed">{c.d}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-5 text-[#AABBCC]/70 text-sm">
+          The same countdown as the{" "}
+          <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
+            $99 do-it-yourself setup
+          </Link>
+          . The difference is who is beside you for the three hours
+          <span className="text-[#E8896A]">.</span>
+        </p>
       </section>
 
       {/* Evidence */}
