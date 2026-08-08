@@ -82,9 +82,15 @@ export default function OneWindowPage() {
           System requirements: a Mac, and a $20 per month Claude
           subscription. Windows is not supported yet.
         </p>
-        <div className="k-rise k-rise-4 mt-10">
+        <div className="k-rise k-rise-4 mt-10 flex flex-wrap gap-4">
           <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
-            Get the Setup <span className="k-arrow">&rarr;</span>
+            Get the Setup for $99 <span className="k-arrow">&rarr;</span>
+          </a>
+          <a
+            href={UPGRADE_PASS_URL}
+            className="k-focus inline-block rounded-lg border border-[#E8896A] px-6 py-3 text-[#E8896A] font-semibold hover:bg-[#E8896A] hover:text-[#1A1B2E] transition-colors duration-200"
+          >
+            Add the Upgrade Pass for $149 <span className="k-arrow">&rarr;</span>
           </a>
         </div>
       </section>
