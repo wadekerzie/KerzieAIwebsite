@@ -716,6 +716,19 @@ page itself carries a 60-second self-refresh (one line: setTimeout(function(){lo
 within a minute. If your pane ever shows a finished item as your next step, tell your Claude
 to adopt both mechanics as standing rules; they apply from every session after.
 
+## The scan rule (added Aug 2026 - how the all-times rule actually gets kept)
+
+Writing updates in is half the job. The other half is a SCAN: whenever a piece of work lands -
+a task finishes, a send goes out, or the user says they did something themselves - read the
+impacted tab's data the way the USER reads the rendered tab, and reconcile every row the work
+touched. It might be one row; it is often 2-3 across tabs. Clear what is done, update what
+changed, add what is new. Check every place a row can live: the section tables AND the
+your-moves list - they sit in different parts of the data file, and the moves list is the one
+the user acts from. The user's own hands count as work landing: "I sent it" clears rows in the
+same breath, never at wrap-up. The test of the pane is brutal and simple: if the user ever
+looks at it and sees something they already did, the scan missed - and a board that shows
+finished work as waiting teaches the user to distrust the whole board.
+
 ## The session-start rule (added Aug 2026 - core function, not polish)
 
 At the START of every session, before anything else, put the pane on screen in the side

@@ -28,7 +28,7 @@ const builds = [
   "Your accounts connected one at a time, walked through click by click, and verified. Gmail, Calendar, Drive, and your browser.",
   "One painful thing from your own week, done end to end, before the first sitting is over.",
   "Three routines proposed and ranked from what you said hurts, and the first one built.",
-  "The Single Pane: every project you run as a tab on one private page - current status, next step, what it's waiting on - refreshed every time you wrap a session.",
+  "The Single Pane: every project you run as a tab on one private page - current status, next step, what it's waiting on - reconciled the moment work lands, not at the end of the day.",
   "Cost-control and model-routing rules, learned the expensive way so you do not have to.",
 ];
 
