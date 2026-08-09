@@ -72,13 +72,17 @@ schema below uses placeholder names, they are placeholders, not content to copy.
 
 Before building, ask the user (a few questions at a time, not a form):
 
-1. Which projects or areas should be tabs? (Read their tracker/CLAUDE.md first and PROPOSE a
+1. Their first name, and what the pane should be called. (Check their CLAUDE.md first — if it
+   already names them, confirm instead of asking. These become the `OWNER` and `OS_NAME`
+   variables in Step 3, e.g. "Dana" → "DANA OS". The build must carry THEIR name everywhere;
+   no example name from this file may survive into their pane.)
+2. Which projects or areas should be tabs? (Read their tracker/CLAUDE.md first and PROPOSE a
    tab list; let them edit. 4-8 tabs is the sweet spot.)
-2. What is their ONE next step right now? (The Overview tab leads with a single highlighted
+3. What is their ONE next step right now? (The Overview tab leads with a single highlighted
    next action — one, not a list. If they keep a queue, the queue collapses under it.)
-3. Any dated deadlines or follow-up clocks to surface? (These become the Overview "Clocks"
+4. Any dated deadlines or follow-up clocks to surface? (These become the Overview "Clocks"
    table, sorted by date.)
-4. Anything that should NOT appear? (Sensitive projects can be excluded entirely.)
+5. Anything that should NOT appear? (Sensitive projects can be excluded entirely.)
 
 ## Step 2 — Data files
 
@@ -115,7 +119,7 @@ Create a `dashboard/data/` folder in their working directory. One JSON file per 
   "title": "Project Name - one-line description",
   "updated": "YYYY-MM-DD",
   "next": {
-    "wade": [["Action the USER must take", "One line of context (optional)"]],
+    "user": [["Action the USER must take", "One line of context (optional)"]],
     "claude": [["Action the AI takes next", "Context (optional)"]]
   },
   "sections": [
@@ -134,8 +138,8 @@ Create a `dashboard/data/` folder in their working directory. One JSON file per 
 
 **The triage layout (standing design, part of the product):** every tab reads top-down as
 (1) **moves first** - "YOUR MOVES" and "CLAUDE'S MOVES" cards side by side at the top, holding
-only the actions waiting on a human or queued for the AI (the `next` key; the `"wade"` key
-always means the user); (2) **working state in the middle** - the sections: things in motion
+only the actions waiting on a human or queued for the AI (the `next` key; the `"user"` key
+always means the human owner); (2) **working state in the middle** - the sections: things in motion
 or waiting on the outside world; (3) **done collapses to the bottom** - the `done` list renders
 as a collapsed "Done - last 7 days" line-per-item receipt; (4) **nothing completed lives on the
 pane forever** - at build time, done entries older than 7 days move automatically to
@@ -161,11 +165,11 @@ the one being discussed. Three parts, all required:
    user can command by it ("done W3", "park G12").
 
 **Status chips** — start any cell with one of these tokens and it renders as a colored chip:
-`{live}` (in motion), `{warm}` (a human responded, relationship warm), `{wade}` — **rename this
-one**: in the builder script below, edit the CHIPS table so the key and label match YOUR user's
-name (it means "waiting on the user"), `{them}` (waiting on someone else), `{gated}` (blocked
-on a prerequisite), `{parked}` (deliberately later), `{closed}` (dead/rejected), `{done}`,
-`{watch}`. Links: `[label](https://url)` inside any cell.
+`{live}` (in motion), `{warm}` (a human responded, relationship warm), `{user}` (waiting on
+the user — the chip renders with THEIR name, taken from the `OWNER` variable in the builder
+script), `{them}` (waiting on someone else), `{gated}` (blocked on a prerequisite), `{parked}`
+(deliberately later), `{closed}` (dead/rejected), `{done}`, `{watch}`.
+Links: `[label](https://url)` inside any cell.
 
 **Writing the rows is the craft.** Status in plain words a stranger could act on. Next step
 concrete enough to start. No item numbering systems, no jargon from old sessions, no history
@@ -178,25 +182,26 @@ Save this verbatim as `tools/build_dashboard.py` (adjust the two paths at the to
 layout differs — DATA is the folder from Step 2, OUT is where the HTML lands). It is
 deterministic and costs zero tokens to run. Python 3, stdlib only.
 
-Then edit the `CHIPS` entry `"wade"` to the user's own name/label as noted above, and the
-masthead title in the HTML (`WADE OS / SINGLE PANE` — change to the user's own operation name;
-it appears once in the `page = f"""` block).
+Then set the two variables at the top — `OWNER` (the user's first name) and `OS_NAME` (their
+operation's name), both from the Step 1 interview. **Those two assignments are the only
+per-user edit in the file:** the page title, masthead, the user's status chip, and the archive
+notes all render from them. Never hand-edit a name anywhere else in the script.
 
 ```python
 #!/usr/bin/env python3
-"""Wade OS dashboard generator.
+"""Single-pane dashboard generator.
 
-Reads 00_system/dashboard/data/*.json (curated current-state, updated at session
-wrap) and emits a single self-contained tabbed HTML file at
-00_system/dashboard/dashboard.html. Deterministic, zero tokens: run it any time.
+Reads dashboard/data/*.json (curated current-state, updated the moment state
+changes) and emits a single self-contained tabbed HTML file at
+dashboard/dashboard.html. Deterministic, zero tokens: run it any time.
 
-    python3 00_system/tools/build_dashboard.py
+    python3 tools/build_dashboard.py
 
 Publish: Artifact tool on the output file (stable URL, see dashboard/README.md).
 
 Cell syntax in data files:
   "{live}Clock running - sent 7/30"   -> status chip + text
-  chips: live, warm, wade, them, gated, parked, closed, done, watch
+  chips: live, warm, user, them, gated, parked, closed, done, watch
   [label](https://url) -> link
 """
 import json
@@ -206,16 +211,20 @@ import sys
 from datetime import datetime, date, timedelta
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent  # 00_system/
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "dashboard" / "data"
 OUT = ROOT / "dashboard" / "dashboard.html"
 ARCHIVE = ROOT / "dashboard" / "archive.md"
 DONE_WINDOW_DAYS = 7
 
+# The ONLY per-user edits in this file - set both from the Step 1 interview.
+OWNER = "User"     # the user's first name: their status chip + archive notes
+OS_NAME = "MY OS"  # masthead brand and page title, e.g. "DANA OS"
+
 CHIPS = {
     "live": ("Live", "c-live"),
     "warm": ("Warm", "c-warm"),
-    "wade": ("Wade", "c-user"),
+    "user": (OWNER, "c-user"),
     "them": ("Their move", "c-them"),
     "gated": ("Gated", "c-gated"),
     "parked": ("Parked", "c-parked"),
@@ -223,6 +232,7 @@ CHIPS = {
     "done": ("Done", "c-done"),
     "watch": ("Watch", "c-watch"),
 }
+CHIPS["wade"] = CHIPS["user"]  # legacy alias: builds before 2026-08-09 used {wade}
 
 CHIP_RE = re.compile(r"\{(%s)\}" % "|".join(CHIPS))
 LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
@@ -276,12 +286,15 @@ def render_table(section):
 
 
 def render_next(next_block):
-    """Top-of-tab moves: Wade's first, Claude's second. Items are [action] or
-    [action, context]."""
+    """Top-of-tab moves: the user's first, Claude's second. Items are [action]
+    or [action, context]."""
+    if "wade" in next_block:  # legacy key alias, same vintage as the chip alias
+        next_block.setdefault("user", next_block.pop("wade"))
+
     def card(owner, cls, empty_msg):
         items = next_block.get(owner, [])
         h = [f'<div class="movecard {cls}">'
-             f'<div class="movelabel">{"YOUR MOVES" if owner == "wade" else "CLAUDE&#x27;S MOVES"}</div>']
+             f'<div class="movelabel">{"YOUR MOVES" if owner == "user" else "CLAUDE&#x27;S MOVES"}</div>']
         if items:
             h.append('<ul class="movelist">')
             for it in items:
@@ -298,7 +311,7 @@ def render_next(next_block):
         return "".join(h)
 
     return ('<div class="nextwrap">'
-            + card("wade", "wade", "Nothing waiting on you.")
+            + card("user", "user", "Nothing waiting on you.")
             + card("claude", "claude", "Nothing queued.")
             + "</div>")
 
@@ -337,7 +350,7 @@ def roll_done_window(tabs, files):
         if not ARCHIVE.exists():
             ARCHIVE.write_text(
                 "# Single Pane archive\n\nCompleted items that rolled off the pane's "
-                f"{DONE_WINDOW_DAYS}-day done window. Shown to Wade only on request.\n" + block
+                f"{DONE_WINDOW_DAYS}-day done window. Shown to {OWNER} only on request.\n" + block
             )
         else:
             ARCHIVE.write_text(ARCHIVE.read_text() + block)
@@ -399,7 +412,7 @@ def main():
     roll_done_window(tabs, files)
     order = sorted(range(len(tabs)), key=lambda i: tabs[i].get("order", 99))
     tabs = [tabs[i] for i in order]
-    built = datetime.now().strftime("%a %b %-d, %Y %-I:%M %p")
+    built = datetime.now().astimezone().strftime("%a %b %-d, %Y %-I:%M %p %Z")
     latest = max(t.get("updated", "") for t in tabs)
 
     nav, panels = [], []
@@ -425,7 +438,7 @@ def main():
         )
         panels.append(f'<section class="panel" data-panel="{i}" role="tabpanel">{title}{body}</section>')
 
-    page = f"""<title>Wade OS - Single Pane</title>
+    page = f"""<title>{html.escape(OS_NAME)} - Single Pane</title>
 <style>
 :root {{
   --ground:#F5F6FA; --panel:#FFFFFF; --ink:#232538; --sub:#5F6478;
@@ -523,10 +536,10 @@ td.when, td.col0 {{ white-space:nowrap; font-weight:600;
 @media (max-width:760px) {{ .nextwrap {{ grid-template-columns:1fr; }} }}
 .movecard {{ background:var(--panel); border:1px solid var(--line); border-radius:8px;
   padding:12px 16px 14px; }}
-.movecard.wade {{ border-left:4px solid var(--accent); }}
+.movecard.user {{ border-left:4px solid var(--accent); }}
 .movecard.claude {{ border-left:4px solid var(--watchc); }}
 .movelabel {{ font-size:11px; font-weight:700; letter-spacing:.12em; }}
-.movecard.wade .movelabel {{ color:var(--accent); }}
+.movecard.user .movelabel {{ color:var(--accent); }}
 .movecard.claude .movelabel {{ color:var(--watchc); }}
 .movelist {{ margin:8px 0 0; padding-left:18px; font-size:13.5px; }}
 .movelist li {{ margin:6px 0; }}
@@ -540,8 +553,8 @@ td.when, td.col0 {{ white-space:nowrap; font-weight:600;
 @media (max-width:640px) {{ td {{ min-width:90px; }} main {{ padding:14px; }} }}
 </style>
 <div class="masthead">
-  <div class="brand"><h1>WADE OS<span class="dot">.</span> <span class="thin">SINGLE PANE</span></h1>
-  <span class="built">data as of {html.escape(latest)} &middot; built {html.escape(built)} CT</span></div>
+  <div class="brand"><h1>{html.escape(OS_NAME)}<span class="dot">.</span> <span class="thin">SINGLE PANE</span></h1>
+  <span class="built">data as of {html.escape(latest)} &middot; built {html.escape(built)}</span></div>
   <nav class="tabs" role="tablist">{"".join(nav)}</nav>
 </div>
 <main>{"".join(panels)}</main>
