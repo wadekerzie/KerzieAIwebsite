@@ -29,27 +29,40 @@ export async function POST(req: Request) {
   const locationId = process.env.GHL_LOCATION_ID;
   if (token && locationId) {
     try {
-      const res = await fetch(
+      const headers = {
+        Authorization: `Bearer ${token}`,
+        Version: "2021-07-28",
+        "Content-Type": "application/json",
+      };
+      // Upsert WITHOUT tags - GHL's upsert replaces the contact's whole tag
+      // set when tags are passed (verified live 2026-08-10, it wiped a tag).
+      // Tags go through the additive per-contact endpoint instead.
+      const up = await fetch(
         "https://services.leadconnectorhq.com/contacts/upsert",
         {
           method: "POST",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            Version: "2021-07-28",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            locationId,
-            email,
-            tags: [`os-download-${slug}`],
-          }),
+          headers,
+          body: JSON.stringify({ locationId, email }),
         }
       );
-      if (!res.ok) {
-        console.error("os-download GHL upsert failed", res.status, await res.text());
+      const contact = up.ok ? (await up.json())?.contact : null;
+      if (!contact?.id) {
+        console.error("os-download GHL upsert failed", up.status);
+      } else {
+        const tag = await fetch(
+          `https://services.leadconnectorhq.com/contacts/${contact.id}/tags`,
+          {
+            method: "POST",
+            headers,
+            body: JSON.stringify({ tags: [`os-download-${slug}`] }),
+          }
+        );
+        if (!tag.ok) {
+          console.error("os-download GHL tag failed", tag.status, await tag.text());
+        }
       }
     } catch (err) {
-      console.error("os-download GHL upsert error", err);
+      console.error("os-download GHL register error", err);
     }
   } else {
     console.error("os-download: GHL env vars missing; download delivered unregistered");
