@@ -1,0 +1,71 @@
+{
+  "updated": "2026-08-10",
+  "baseline": {
+    "slug": "foundation",
+    "name": "The Foundation",
+    "was": "v1.0",
+    "file": "one-window-setup.md",
+    "description": "The complete One-Window Setup: one document that interviews you and builds your personal operating system around your answers. The three-hour build. Everything else on this page installs on top of it."
+  },
+  "upgrades": [
+    {
+      "slug": "living-pane",
+      "name": "The Living Pane",
+      "was": "v1.1",
+      "file": "personal-os-v1.1-living-pane.md",
+      "description": "One dashboard tab your OS keeps current: your moves, its moves, everything in flight, with a call number on every item so you can say \"done W1\" and be understood. Installs include the scan rule.",
+      "note": "Needed before The Scan or the Call Numbers patch."
+    },
+    {
+      "slug": "clean-handoff",
+      "name": "The Clean Handoff",
+      "was": "v1.2",
+      "file": "personal-os-v1.2-clean-handoff.md",
+      "description": "A session wrap-up ritual: say \"let's wrap up\" and your OS reconciles your tracker against reality, verifying anything that claims to be done. Tomorrow starts warm instead of cold."
+    },
+    {
+      "slug": "weekly-tune-up",
+      "name": "The Weekly Tune-Up",
+      "was": "v1.3",
+      "file": "personal-os-v1.3-weekly-tune-up.md",
+      "description": "A weekly self-optimization pass: your OS measures what a brand-new session is forced to read before it can help you, then trims the bloat losslessly and reports what it found."
+    },
+    {
+      "slug": "nightly-dream",
+      "name": "The Nightly Dream",
+      "was": "v1.4",
+      "file": "personal-os-v1.4-nightly-dream.md",
+      "description": "While you sleep, your OS re-reads the day's conversations across every session, compares them against its own records, and files corrections and proposals for your morning."
+    },
+    {
+      "slug": "present-tense",
+      "name": "The Present Tense",
+      "was": "v1.5",
+      "file": "personal-os-v1.5-present-tense.md",
+      "description": "Two habits that keep your OS honest about time: a clock anchor at every session open, and a pane that updates the moment work lands instead of waiting for wrap-up."
+    },
+    {
+      "slug": "paper-trail",
+      "name": "The Paper Trail",
+      "was": "v1.6",
+      "file": "personal-os-v1.6-paper-trail.md",
+      "description": "Puts your scheduled routines and skills under version control inside your OS repo. A guardrail or recipe you rely on gets history and a recovery path instead of living as an unversioned file."
+    },
+    {
+      "slug": "the-scan",
+      "name": "The Scan",
+      "was": "v1.7",
+      "file": "personal-os-v1.7-the-scan.md",
+      "description": "The pane-reconciliation motion: when work lands, scan the tabs the way you actually read them and clear, update, or add every touched row - including work you did with your own hands.",
+      "note": "Needs a pane to scan - install The Living Pane first."
+    },
+    {
+      "slug": "call-numbers",
+      "name": "Call Numbers",
+      "was": "pane patch",
+      "file": "personal-os-pane-call-numbers.md",
+      "description": "A small patch for panes installed from The Living Pane before August 2026 - newer installs already include it. Adds your tracker's call numbers to every pane item.",
+      "note": "Skip it if your pane already shows call numbers."
+    }
+  ]
+}
