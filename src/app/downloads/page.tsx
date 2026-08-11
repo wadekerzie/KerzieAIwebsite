@@ -63,6 +63,7 @@ export default function DownloadsPage() {
             name={library.baseline.name}
             was={library.baseline.was}
             description={library.baseline.description}
+            file={library.baseline.file}
           />
         </div>
       </section>
@@ -77,6 +78,7 @@ export default function DownloadsPage() {
               name={u.name}
               was={u.was}
               description={u.description}
+              file={u.file}
               note={"note" in u ? (u as { note?: string }).note : undefined}
             />
           ))}

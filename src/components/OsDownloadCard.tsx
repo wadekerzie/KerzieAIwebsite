@@ -18,60 +18,96 @@ type Props = {
   name: string;
   was: string;
   description: string;
+  file: string;
   note?: string;
 };
 
 type Mode = "line" | "file";
 
-export default function OsDownloadCard({ slug, name, was, description, note }: Props) {
+// Why the clipboard write comes FIRST (fixed 2026-08-11, found live in front of
+// a customer): browsers only allow a clipboard write while the user's click is
+// still "active," and that permission expires across an awaited network call.
+// The old order was fetch -> writeText, so Safari and some Chrome contexts
+// refused every copy. Nobody could use this button from the day it shipped.
+// The line does not need the server - it is derivable from the file name - so
+// we copy inside the gesture and register the pull afterward.
+function copySync(text: string): boolean {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.position = "fixed";
+  ta.style.top = "0";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  let ok = false;
+  try {
+    ok = document.execCommand("copy");
+  } catch {
+    ok = false;
+  }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+export default function OsDownloadCard({ slug, name, was, description, file, note }: Props) {
   const [email, setEmail] = useState("");
   const [asking, setAsking] = useState<Mode | null>(null);
-  const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState("");
+  const [manualLine, setManualLine] = useState("");
 
   useEffect(() => {
     const saved = window.localStorage.getItem(EMAIL_KEY);
     if (saved) setEmail(saved);
   }, []);
 
-  async function run(mode: Mode, withEmail: string) {
-    setBusy(true);
+  const installLine =
+    `Read https://kerzie.ai/downloads/${file} and install this upgrade to my ` +
+    `Personal OS. Describe what it changes before you apply anything.`;
+
+  // Fire-and-forget: the pull still registers in GHL, but nothing the user sees
+  // waits on it. A registration failure must never cost them the line.
+  function register(withEmail: string) {
+    window.localStorage.setItem(EMAIL_KEY, withEmail);
+    void fetch("/api/os-download", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: withEmail, slug }),
+    }).catch(() => {});
+  }
+
+  function run(mode: Mode, withEmail: string) {
     setError("");
-    try {
-      const res = await fetch("/api/os-download", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: withEmail, slug }),
-      });
-      const data = await res.json().catch(() => null);
-      if (!res.ok || !data?.url) {
-        setError("That did not work - check the email and try again.");
-        return;
-      }
-      window.localStorage.setItem(EMAIL_KEY, withEmail);
-      setAsking(null);
+    setManualLine("");
+    setAsking(null);
 
-      if (mode === "file") {
-        window.open(data.url, "_blank", "noopener");
-        return;
-      }
-
-      const line =
-        `Read https://kerzie.ai${data.url} and install this upgrade to my ` +
-        `Personal OS. Describe what it changes before you apply anything.`;
-      try {
-        await navigator.clipboard.writeText(line);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 3000);
-      } catch {
-        setError("Your browser blocked the copy - use the file link instead.");
-      }
-    } catch {
-      setError("That did not work - try again in a moment.");
-    } finally {
-      setBusy(false);
+    if (mode === "file") {
+      window.open(`/downloads/${file}`, "_blank", "noopener");
+      register(withEmail);
+      return;
     }
+
+    // Copy inside the click, before anything async touches the event.
+    let ok = copySync(installLine);
+    if (!ok && navigator.clipboard) {
+      void navigator.clipboard.writeText(installLine).then(
+        () => {
+          setCopied(true);
+          setTimeout(() => setCopied(false), 4000);
+        },
+        () => setManualLine(installLine),
+      );
+      ok = true;
+    }
+    if (ok) {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 4000);
+    } else {
+      // Last resort: show it so it can always be selected by hand.
+      setManualLine(installLine);
+    }
+    register(withEmail);
   }
 
   function start(mode: Mode) {
@@ -115,30 +151,41 @@ export default function OsDownloadCard({ slug, name, was, description, note }: P
             />
             <button
               type="submit"
-              disabled={busy}
-              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90 disabled:opacity-50"
+              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
             >
-              {busy ? "Working..." : asking === "line" ? "Copy the line" : "Get the file"}
+              {asking === "line" ? "Copy the line" : "Get the file"}
             </button>
           </form>
         ) : (
           <div className="flex flex-col gap-2 items-start">
             <button
               onClick={() => start("line")}
-              disabled={busy}
-              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90 disabled:opacity-50"
+              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
             >
-              {copied ? "Copied - paste it into your Code tab" : busy ? "Working..." : "Copy the install line"}
+              {copied ? "Copied - paste it into your Code tab" : "Copy the install line"}
             </button>
             <button
               onClick={() => start("file")}
-              disabled={busy}
               className="k-focus text-[#AABBCC]/70 text-[13px] underline underline-offset-4 hover:text-white transition-colors"
             >
               or download the file
             </button>
           </div>
         )}
+        {manualLine ? (
+          <div className="mt-3">
+            <p className="text-[#AABBCC]/70 text-[12px] mb-2">
+              Your browser blocked the copy. Select this and copy it by hand:
+            </p>
+            <textarea
+              readOnly
+              rows={3}
+              value={manualLine}
+              onFocus={(e) => e.currentTarget.select()}
+              className="k-focus w-full rounded-md bg-[#1A1B2E] border border-[rgba(170,187,204,0.3)] px-3 py-2 text-white text-[12px] leading-relaxed k-mono"
+            />
+          </div>
+        ) : null}
         {error ? <p className="mt-2 text-[#E8896A] text-[13px]">{error}</p> : null}
       </div>
     </div>
