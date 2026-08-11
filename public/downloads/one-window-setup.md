@@ -2,6 +2,11 @@
 ### Your complete AI working environment, in one document
 **A Kerzie AI product · kerzie.ai**
 
+> **If you are a human reading this, you are in the wrong place.** Your setup
+> walkthrough is at **kerzie.ai/one-window/access** - five steps, written to you,
+> about twenty minutes. Everything below is written to your AI. Your AI reads this
+> document; you do not have to.
+
 ---
 
 ## How this document works

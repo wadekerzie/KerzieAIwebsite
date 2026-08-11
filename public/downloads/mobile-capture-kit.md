@@ -21,6 +21,7 @@ Two rules that make it work:
 2. **Never organize.** No folders, no tags, no cleanup. That is the machine's
    job.
 
+
 ---
 
 ## Part 1 - Turn on Voice Memos transcripts (2 minutes)

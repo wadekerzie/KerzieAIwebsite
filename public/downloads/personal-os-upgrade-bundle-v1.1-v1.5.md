@@ -50,6 +50,11 @@ fixes, index repairs, and exact duplicates needs Jordan's explicit yes before an
 this is already in the v1.4 file's own guardrails below, restated here because it matters enough
 to say twice.
 
+> **If you are a human reading this, you are in the wrong place.** This document is
+> written to your AI, not to you. Go to **kerzie.ai/downloads**, copy the install line
+> for this upgrade, and paste it into your Code tab. Your AI reads this; you do not
+> have to.
+
 ---
 
 # v1.5 - The Present Tense

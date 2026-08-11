@@ -2,8 +2,15 @@
 
 import { useEffect, useState } from "react";
 
-// One card per library entry. The email is asked once and remembered locally,
-// so an owner pulling five upgrades types it a single time.
+// One card per library entry.
+//
+// The PRIMARY action is a line the owner pastes into their AI, not a file they
+// open. Same reason the setup page was rewritten 2026-08-10: these documents
+// are written TO the AI, and a human who opens one reads thousands of words
+// addressed to somebody else. The file download stays as the fallback.
+//
+// Either action registers the pull in GHL, so "who runs what" survives the
+// change of format. The email is asked once and remembered locally.
 const EMAIL_KEY = "kerzie-os-owner-email";
 
 type Props = {
@@ -14,10 +21,13 @@ type Props = {
   note?: string;
 };
 
+type Mode = "line" | "file";
+
 export default function OsDownloadCard({ slug, name, was, description, note }: Props) {
   const [email, setEmail] = useState("");
-  const [asking, setAsking] = useState(false);
+  const [asking, setAsking] = useState<Mode | null>(null);
   const [busy, setBusy] = useState(false);
+  const [copied, setCopied] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -25,7 +35,7 @@ export default function OsDownloadCard({ slug, name, was, description, note }: P
     if (saved) setEmail(saved);
   }, []);
 
-  async function pull(withEmail: string) {
+  async function run(mode: Mode, withEmail: string) {
     setBusy(true);
     setError("");
     try {
@@ -40,8 +50,23 @@ export default function OsDownloadCard({ slug, name, was, description, note }: P
         return;
       }
       window.localStorage.setItem(EMAIL_KEY, withEmail);
-      setAsking(false);
-      window.open(data.url, "_blank", "noopener");
+      setAsking(null);
+
+      if (mode === "file") {
+        window.open(data.url, "_blank", "noopener");
+        return;
+      }
+
+      const line =
+        `Read https://kerzie.ai${data.url} and install this upgrade to my ` +
+        `Personal OS. Describe what it changes before you apply anything.`;
+      try {
+        await navigator.clipboard.writeText(line);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 3000);
+      } catch {
+        setError("Your browser blocked the copy - use the file link instead.");
+      }
     } catch {
       setError("That did not work - try again in a moment.");
     } finally {
@@ -49,11 +74,11 @@ export default function OsDownloadCard({ slug, name, was, description, note }: P
     }
   }
 
-  function onGet() {
+  function start(mode: Mode) {
     if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      void pull(email);
+      void run(mode, email);
     } else {
-      setAsking(true);
+      setAsking(mode);
     }
   }
 
@@ -69,13 +94,14 @@ export default function OsDownloadCard({ slug, name, was, description, note }: P
       {note ? (
         <p className="mt-3 text-[#E8896A]/85 text-[13px] leading-relaxed">{note}</p>
       ) : null}
+
       <div className="mt-5">
         {asking ? (
           <form
             className="flex flex-col sm:flex-row gap-2"
             onSubmit={(e) => {
               e.preventDefault();
-              void pull(email);
+              void run(asking, email);
             }}
           >
             <input
@@ -92,17 +118,26 @@ export default function OsDownloadCard({ slug, name, was, description, note }: P
               disabled={busy}
               className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90 disabled:opacity-50"
             >
-              {busy ? "Getting it..." : "Get the file"}
+              {busy ? "Working..." : asking === "line" ? "Copy the line" : "Get the file"}
             </button>
           </form>
         ) : (
-          <button
-            onClick={onGet}
-            disabled={busy}
-            className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90 disabled:opacity-50"
-          >
-            {busy ? "Getting it..." : "Get the file"}
-          </button>
+          <div className="flex flex-col gap-2 items-start">
+            <button
+              onClick={() => start("line")}
+              disabled={busy}
+              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90 disabled:opacity-50"
+            >
+              {copied ? "Copied - paste it into your Code tab" : busy ? "Working..." : "Copy the install line"}
+            </button>
+            <button
+              onClick={() => start("file")}
+              disabled={busy}
+              className="k-focus text-[#AABBCC]/70 text-[13px] underline underline-offset-4 hover:text-white transition-colors"
+            >
+              or download the file
+            </button>
+          </div>
         )}
         {error ? <p className="mt-2 text-[#E8896A] text-[13px]">{error}</p> : null}
       </div>

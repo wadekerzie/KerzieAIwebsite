@@ -42,6 +42,12 @@ export default function DownloadsPage() {
             says so.
           </p>
           <p>
+            <span className="text-white">You do not read these files.</span>{" "}
+            They are written to your AI, not to you. Copy the install line, paste
+            it into your Code tab, and your AI fetches the rest itself - it will
+            describe what the upgrade changes before it touches anything.
+          </p>
+          <p>
             Your email registers which upgrades you pulled, so I know who runs
             what without your OS ever phoning home. Use the email you bought
             with.
@@ -81,12 +87,12 @@ export default function DownloadsPage() {
         <p className="k-label mb-6">How An Upgrade Installs</p>
         <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
           <p>
-            Open a fresh session, hand your AI the file, and let it work.
+            Open a fresh session, paste the install line, and let it work.
             <span className="text-white"> Plan for an upgrade to take a full
             session of your AI&apos;s attention</span> - it reads your OS, describes
             what it is about to change, waits for your yes, then does the work.
             Think of it like restarting your Mac for a system update, not like
-            installing an app.
+            installing an app. Do one at a time.
           </p>
           <p>
             Every upgrade describes itself before it touches anything, and asks

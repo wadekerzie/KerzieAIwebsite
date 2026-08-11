@@ -2,6 +2,11 @@
 
 Released August 2026 · For any Personal OS built from the original one-window setup (v1.0, "The Foundation")
 
+> **If you are a human reading this, you are in the wrong place.** This document is
+> written to your AI, not to you. Go to **kerzie.ai/downloads**, copy the install line
+> for this upgrade, and paste it into your Code tab. Your AI reads this; you do not
+> have to.
+
 ---
 
 **TO THE CLAUDE READING THIS - DO NOT BUILD YET. Follow this order:**

@@ -2,6 +2,11 @@
 
 Released August 2026 · For any Personal OS running the Single Pane (v1.1 "The Living Pane" or later). If you do not have the pane yet, install v1.1 first - this upgrade is a change to how the pane is KEPT TRUE, and there is nothing to keep true without it. v1.2 through v1.6 are not required; upgrades are skippable by design.
 
+> **If you are a human reading this, you are in the wrong place.** This document is
+> written to your AI, not to you. Go to **kerzie.ai/downloads**, copy the install line
+> for this upgrade, and paste it into your Code tab. Your AI reads this; you do not
+> have to.
+
 ---
 
 **TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**

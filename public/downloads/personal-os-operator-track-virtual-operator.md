@@ -7,6 +7,11 @@ first), a written statement of your principles and boundaries, and weeks of work
 between you and your AI. If any of those are missing, stop here and build them first -
 this layer amplifies whatever discipline already exists, including the absence of it.
 
+> **If you are a human reading this, you are in the wrong place.** This document is
+> written to your AI, not to you. Go to **kerzie.ai/downloads**, copy the install line
+> for this upgrade, and paste it into your Code tab. Your AI reads this; you do not
+> have to.
+
 ---
 
 **TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
