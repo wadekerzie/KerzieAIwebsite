@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "baseline": {
     "slug": "foundation",
     "name": "The Foundation",
@@ -8,6 +8,14 @@
     "description": "The complete One-Window Setup: one document that interviews you and builds your personal operating system around your answers. The three-hour build. Everything else on this page installs on top of it."
   },
   "upgrades": [
+    {
+      "slug": "quick-start",
+      "name": "The Quick Start",
+      "was": "new",
+      "file": "personal-os-quick-start.md",
+      "description": "Your session says hello in one line and hands you the floor, instead of making you watch it read your files for two minutes. All the orientation still happens - just after you have given your first instruction. Includes the clock anchor, so it never guesses what day it is.",
+      "note": "Replaces the earlier 'Present Tense' release. If you have that one, this supersedes it."
+    },
     {
       "slug": "living-pane",
       "name": "The Living Pane",
@@ -36,13 +44,6 @@
       "was": "v1.4",
       "file": "personal-os-v1.4-nightly-dream.md",
       "description": "While you sleep, your OS re-reads the day's conversations across every session, compares them against its own records, and files corrections and proposals for your morning."
-    },
-    {
-      "slug": "present-tense",
-      "name": "The Present Tense",
-      "was": "v1.5",
-      "file": "personal-os-v1.5-present-tense.md",
-      "description": "Two habits that keep your OS honest about time: a clock anchor at every session open, and a pane that updates the moment work lands instead of waiting for wrap-up."
     },
     {
       "slug": "paper-trail",
