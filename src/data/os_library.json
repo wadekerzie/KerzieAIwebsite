@@ -17,6 +17,14 @@
       "note": "Replaces the earlier 'Present Tense' release. If you have that one, this supersedes it."
     },
     {
+      "slug": "green-light",
+      "name": "The Green Light",
+      "was": "new",
+      "file": "personal-os-green-light.md",
+      "description": "Your scheduled routines stop asking permission and just run. Your AI reads what your own routines actually need, grants exactly that, and finds the gate almost nobody finds on their own: anything outside your OS folder is blocked no matter what your permission setting says.",
+      "note": "Only matters once you have routines. Anything destructive stays blocked."
+    },
+    {
       "slug": "living-pane",
       "name": "The Living Pane",
       "was": "v1.1",
