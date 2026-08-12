@@ -41,7 +41,7 @@ export default function FirstRepsAccessPage() {
         <p className="mt-8 text-[#AABBCC] text-lg max-w-xl leading-relaxed">
           When you finish the five, the natural next step is the free{" "}
           <Link href="/free/mobile-capture-kit" className="k-link k-focus text-[#6B9FD4]">
-            Mobile Capture Kit
+            Voice Command Center
           </Link>
           , then the full working environment at{" "}
           <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">

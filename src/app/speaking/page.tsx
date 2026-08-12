@@ -96,7 +96,7 @@ export default function SpeakingPage() {
           ))}
         </ul>
         <p className="mt-8 text-[#AABBCC] text-lg max-w-2xl leading-relaxed">
-          The first non-technical person Wade handed his free Mobile Capture Kit texted
+          The first non-technical person Wade handed his free Voice Command Center texted
           him unprompted on day one:{" "}
           <span className="k-serif text-white">
             &quot;I absolutely love this new voice memos to Claude so far. Done 4

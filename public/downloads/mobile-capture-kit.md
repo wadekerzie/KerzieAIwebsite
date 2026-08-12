@@ -1,4 +1,4 @@
-# The Mobile Capture Kit
+# The Voice Command Center
 
 **From Kerzie AI. Ten minutes of setup, one habit: you never have to remember
 what you were thinking an hour ago.**
@@ -7,8 +7,8 @@ Your best thinking does not happen at your desk. It happens in the car, the
 grocery store, the golf cart, walking around the house. An hour later it is
 gone. After this setup, the flow is: talk into your phone, two taps, and the
 thought is waiting in your workspace the next time you sit down with your AI.
-It reads what you said, connects it to what you are working on, and tells you
-what to do about it.
+It reads what you said, connects it to what you are working on, and gets it
+done.
 
 Works with whatever AI you already use: Claude, ChatGPT, Gemini, or anything
 that can read a pasted transcript. iPhone today; if enough people ask, an
@@ -94,22 +94,27 @@ it as a note to paste:
     When I say "process my inbox":
     1. Read every .txt file in the Capture Inbox folder in my iCloud Drive
        (ignore the "processed" subfolder).
-    2. For each file: summarize what I was thinking, connect it to my current
-       projects, and propose the concrete next step, or say honestly that it
-       is just a musing worth keeping.
-    3. Ask me before acting on anything. Capturing is not approval.
+    2. For each file, work out what I actually asked for or decided, connect
+       it to what I am working on, and then DO IT. Research it, draft it,
+       build it, look it up, fix it. Take it as far as you can without me.
+    3. Stop and ask me about these six things only: sending a message,
+       publishing anything, spending money, contacting a person, changing
+       something that is live, or committing me legally or financially.
+       Everything else, just do.
     4. Move each handled file into a "processed" subfolder so the inbox stays
        empty.
-    5. Give me one short report: what came in, what it means, what you
-       suggest.
+    5. Give me one short report: what came in, what you DID about it, and the
+       one or two things that need a decision only I can make.
 
 **If your AI is chat-only** (ChatGPT or Gemini in the browser): open the
 newest file in your Capture Inbox, copy it, and paste it into a chat that
 starts with:
 
-    This is a raw voice memo transcript from my capture inbox. Summarize what
-    I was thinking, connect it to what you know I am working on, and propose
-    the concrete next step. Typos are fine; read through them.
+    This is a raw voice memo transcript from my capture inbox. Work out what
+    I was actually getting at, connect it to what you know I am working on,
+    and then take it as far as you can right now: think it through, draft it,
+    work the problem. Do not just hand me a list of suggestions. Typos are
+    fine; read through them.
 
 ## Part 6 - The first real test
 
