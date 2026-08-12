@@ -35,7 +35,7 @@ const whatWeDo = [
   },
   {
     lead: "We fix the plumbing while we are in there.",
-    body: "Structured data, a sitemap, a robots file, and an llms.txt. The standard is new and still moving. Doing it now is cheap; doing it later is a scramble.",
+    body: "Structured data that tells an AI what you sell, where you work and what it costs, plus whatever else your platform lets us reach. The standards here are new and still moving, so we take the cheap wins now rather than scrambling later.",
   },
   {
     lead: "We show you the difference in their words, not ours.",
