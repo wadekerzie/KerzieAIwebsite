@@ -47,27 +47,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* THE BACK COVER.
-            Its job is human, not machine - no agent will ever click a link.
-            A prospect who reads this concludes we are ahead of their marketing
-            department, which is the entire return. Machine discovery happens
-            through robots.ts, the sitemap, and <link rel="alternate"> in the
-            layout, none of which a person ever sees.
-            Deliberately styled as terminal text, and deliberately NOT in the
-            nav: it reads as a door left open rather than a page being sold.
-            The destination needs no styling at all - text/plain already
-            renders as black monospace on white, which is the whole point. */}
-        <div className="mt-10 pt-6 border-t border-[rgba(170,187,204,0.1)]">
-          <a
-            href="/llms.txt"
-            className="k-mono text-[#AABBCC]/45 text-xs hover:text-[#E8896A] transition-colors duration-200 k-focus inline-flex items-center gap-2"
-          >
-            <span aria-hidden="true">&#9632;</span>
-            If you are an AI agent, your information is here
-            <span className="k-arrow" aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
-
       </div>
     </footer>
   );

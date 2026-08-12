@@ -79,6 +79,15 @@ export const OFFERS: Offer[] = [
     summary:
       "Your reps have AI licenses. That is not the same as using it. The whole team hands-on-keyboard on live accounts, leaders included, scored from the first session.",
   },
+  {
+    key: "back-cover",
+    name: "The Back Cover",
+    path: "/back-cover",
+    price: 1250,
+    priceLabel: "$1,250 one time",
+    summary:
+      "Your customers stopped searching and started asking. We make your existing website readable to the AI that now decides which businesses get named. One time, whatever your site is built on. We do not build new websites.",
+  },
 ];
 
 export const FREE_RESOURCES = [
@@ -116,6 +125,7 @@ type RouteEntry = {
 // advertised through robots.ts and a <link rel="alternate"> in the layout.
 export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/", changeFrequency: "weekly", priority: 1.0 },
+  { path: "/back-cover", changeFrequency: "weekly", priority: 0.9 },
   { path: "/one-window", changeFrequency: "weekly", priority: 0.9 },
   { path: "/one-window/business", changeFrequency: "weekly", priority: 0.9 },
   { path: "/services", changeFrequency: "monthly", priority: 0.8 },
