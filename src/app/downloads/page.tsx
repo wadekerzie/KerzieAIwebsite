@@ -91,16 +91,19 @@ export default function DownloadsPage() {
           <p>
             Open a fresh session, paste the install line, and let it work.
             <span className="text-white"> Plan for an upgrade to take a full
-            session of your AI&apos;s attention</span> - it reads your OS, describes
-            what it is about to change, waits for your yes, then does the work.
-            Think of it like restarting your Mac for a system update, not like
+            session of your AI&apos;s attention</span> - it reads your OS, tells you
+            in plain words what it is about to add, then does the work. Think
+            of it like restarting your Mac for a system update, not like
             installing an app. Do one at a time.
           </p>
           <p>
-            Every upgrade describes itself before it touches anything, and asks
-            before it applies. If it covers something you already built, tell
-            it no and keep your version - that is the intended answer, not a
-            workaround.
+            Every upgrade looks at your OS before it says anything.
+            <span className="text-white"> Running things stock, the way most
+            people do? It installs - no quiz, nothing to decide.</span> If it
+            finds something you built your own way, it names it and asks one
+            question: keep yours, or take the new one. Keeping yours is always
+            a fine answer. And any upgrade comes back out as easily as it went
+            in - tell your AI to remove it, and it&apos;s gone.
           </p>
           <p className="text-[#AABBCC]/70 text-base">
             Bought the One-Window Setup and something here will not open? Email{" "}

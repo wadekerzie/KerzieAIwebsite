@@ -9,33 +9,37 @@ Released August 2026 · For any Personal OS built from the original one-window s
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. This is the one upgrade that always
+asks a question, because its whole job is deciding what never asks again. LOOK, then TELL,
+then ONE yes/no:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what this
-   upgrade does: their scheduled routines are stopping to ask for approval instead of running
-   on their own, so a task that should have finished at 6am is still sitting there waiting
-   when they sit down. This upgrade finds out exactly which permissions their own routines
-   need and grants those, so the routines run unattended. Tell them what it touches (two
-   settings files, one for their computer and one for their OS folder) and what it never
-   touches: their content, their data, their tracker, their routines' actual instructions.
-2. **SAY THE TRADE-OFF OUT LOUD.** This is not a cosmetic change and they deserve the honest
-   version: you are going to stop asking them for approval on the specific things their
-   routines do. That is the entire point, and it is also a real decision. Tell them you will
-   grant only what their existing routines actually need, that you will show them the list
-   before you write it, and that anything destructive stays blocked no matter what.
-3. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?" Wait for the
-   answer. Modifications are welcome - adapt the steps. If they decline, stop entirely.
-4. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade needs only the baseline
-   ("The Foundation"). If VERSION.md is missing, that is fine - infer the baseline and create
-   it in step 6. If VERSION.md already lists The Green Light, tell them and stop.
-5. **APPLY** on their yes, following the instructions below, preserving every existing setting
-   you find. Never replace a settings file wholesale. Read it, add to it, write it back.
-6. **RECORD + REPORT.** Append to `VERSION.md`: `The Green Light - applied <today's date>`.
-   Then report per "What to tell them at the end" below.
-
-**If they have no scheduled routines yet:** tell them this upgrade has nothing to do until they
-do, offer to apply it anyway so it is ready, and let them choose. Do not invent routines to
-justify the install.
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then find
+   their scheduled routines and run the inventory in Step 1 below: which tools each
+   routine needs, every path it touches, and which of those paths sit outside their OS
+   folder. Do the looking before the telling - the user gets findings, not process.
+2. **ALREADY INSTALLED, OR NOTHING TO DO?** If `VERSION.md` already lists The Green
+   Light, tell them in one line and stop. If they have no scheduled routines yet, tell
+   them this upgrade has nothing to do until they do, offer to apply it anyway so it is
+   ready for their first routine, and let them choose. Do not invent routines to
+   justify the install. (VERSION.md missing = the baseline Foundation. That is normal -
+   proceed, and create it in step 5.)
+3. **TELL THEM WHAT YOU FOUND, THEN ASK THE ONE QUESTION.** In plain language, not JSON:
+   their routines by name, exactly what you will allow (built from Step 1's inventory,
+   per Steps 2 through 5 below), and the honest trade-off - those specific things stop
+   asking for approval, that is the entire point, and anything destructive stays
+   blocked no matter what. Then ask one question: "Want me to green-light these?" A yes
+   means exactly that list, nothing more. If they say no, stop entirely. Do not offer a
+   menu of variations - if they want something different, they will say so, and
+   adapting to what they say is welcome.
+4. **APPLY** on their yes, following the steps below. Never replace a settings file
+   wholesale. Read it, add to it, write it back, and leave every existing setting
+   exactly as you found it.
+5. **RECORD + PROVE.** Append to `VERSION.md`: `The Green Light - applied <today's date>`
+   (create the file if missing, first line: `v1.0 - The Foundation - original setup`).
+   Then prove it per Step 7 below: run one of their routines right now and watch it
+   finish without prompting. Report per "What to tell them at the end." Removing this
+   later means deleting the entries it added from the two settings files and noting the
+   removal in VERSION.md.
 
 ---
 

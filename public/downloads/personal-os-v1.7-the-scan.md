@@ -9,27 +9,38 @@ Released August 2026 · For any Personal OS running the Single Pane (v1.1 "The L
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what this
-   upgrade does: their pane is supposed to be their to-do list in real time, and today it only
-   updates when a session remembers to write to it. This upgrade installs a standing motion
-   into your operating rules: every time a piece of work lands, you scan the pane the way THEY
-   read it and reconcile every row the work touched - clear it, update it, or add what is new.
-   Tell them what it touches (one section added to their operating manual, nothing else) and
-   what it never touches: their data, their pane layout, their content.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?" Wait for the
-   answer. Modifications are welcome - adapt the steps. If they decline, stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.1 or later (the
-   pane must exist). If VERSION.md is missing but a pane exists, infer v1.1 and proceed - you
-   will create VERSION.md in step 5. If there is no pane at all, stop and point the user at
-   v1.1 instead. If VERSION.md already lists v1.7 or later, tell the user and stop.
-4. **APPLY** on their yes: add the section below to their operating manual (CLAUDE.md or
-   equivalent), adapting file paths to their actual pane setup, preserving every
-   customization you find.
-5. **RECORD + REPORT.** Append to `VERSION.md`: `v1.7 - The Scan - applied <today's date>`.
-   Then prove it works: take the last piece of work you finished together, run the scan on it
-   live, and show the user which rows it cleared, changed, or created.
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, confirm a
+   pane exists, and read their operating manual (CLAUDE.md or equivalent). You are
+   answering three questions. Is this already installed? Is there a pane at all? And did
+   the user already write their own version - a standing rule about reconciling the pane
+   when work lands, which this upgrade did not put there? A stock OS has nothing like
+   that - expect to find nothing.
+2. **ALREADY INSTALLED, OR NO PANE?** If `VERSION.md` lists v1.7 or later, tell the user
+   in one line that they already have this, and stop. If there is no pane at all, stop
+   and point the user at v1.1 (The Living Pane) instead - this upgrade changes how a
+   pane is kept true, and there is nothing to keep true without one. (VERSION.md missing
+   but a pane exists = infer v1.1 and proceed; create VERSION.md in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: today their pane only updates
+   when a session remembers to write to it; after this, every time a piece of work
+   lands, their AI scans the pane the way THEY read it and reconciles every row the work
+   touched - clear it, update it, or add what is new. One section added to their
+   operating manual, nothing else. Then install it, in the same message, without asking
+   anything - pasting the install line was their yes. Close with one line: "If you ever
+   want this back out, say 'remove The Scan' and I'll take it out cleanly." Do not
+   mention conflicts, customizations, or options - when you found nothing in step 1,
+   there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own rule.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already have [their rule, described plainly]. Keep yours, or take this one?
+   Keeping yours is a fine answer." Do what they say. Never ask this when step 1 found
+   nothing.
+5. **RECORD + PROVE.** Append to `VERSION.md`: `v1.7 - The Scan - applied <today's date>`.
+   Then prove it works: take the last piece of work you finished together, run the scan
+   on it live, and show the user which rows it cleared, changed, or created. Removing
+   this later means deleting the section it added and noting the removal in VERSION.md.
 
 ---
 

@@ -9,38 +9,42 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. Th
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs two behaviors that keep the OS operating in the
-   present tense. First, a clock anchor - every session opens by checking the real
-   date and time in the user's own time zone, and every "today," "tomorrow," and
-   day-of-week calculation for the rest of the session derives from that check, never
-   from assumption. Second, a real-time pane - if the user runs a dashboard, its data
-   gets updated in the same breath as the work that changes it, never batched to the
-   end of a session, and the pane page reloads itself every 60 seconds so what is on
-   screen converges on what is true within a minute. Tell them what it touches (their
-   CLAUDE.md standing behaviors, and their dashboard build if they have one) and what
-   it never touches: their content, their data, their customizations, their dashboard's
-   look and layout.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or
-   later. If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to
-   proceed (you will create VERSION.md in step 5). If it already lists v1.5 or later,
-   tell the user they already have this and stop. No other upgrade is required first -
-   upgrades are skippable by design.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find. If the user built their own dashboard, the standing
-   instruction is: do not screw up their existing dashboard - take the enhancements
-   and the structure of this and implement them inside what they already have.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then read
+   their CLAUDE.md (or equivalent) and check whether they run a dashboard of any kind.
+   You are answering two questions. Is this already installed? And did the user already
+   build their own version of either half - an existing clock-anchor rule, or a
+   dashboard that already updates in real time? A stock OS straight from the Foundation
+   has neither, and most OSes are stock - expect to find nothing. No other upgrade is
+   required first; upgrades are skippable by design.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.5 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: every session opens by checking
+   the real date and time in their time zone so the OS never guesses what day it is,
+   and if they run a dashboard, its data updates in the same breath as the work and the
+   page reloads itself every 60 seconds - so the screen converges on the truth within a
+   minute. Then install it, in the same message, without asking anything - pasting the
+   install line was their yes. If they built their own dashboard, one standing rule
+   while you work: do not screw up their existing dashboard - implement the refresh
+   behaviors inside what they already have, and leave its look and layout alone. Close
+   with one line: "If you ever want this back out, say 'remove The Present Tense' and
+   I'll take it out cleanly." Do not mention conflicts, customizations, or options -
+   when you found nothing in step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own version.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already have [their thing, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer - I'll add only the half you are missing." Do
+   what they say. Never ask this when step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.5 - The Present Tense - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
    Then prove both behaviors to the user: state the anchored date and time out loud,
    and if they run a pane, make one small real change and let them watch the pane
-   catch up on its own within a minute.
+   catch up on its own within a minute. Removing this later means deleting what it
+   added and noting the removal in VERSION.md.
 
 ---
 

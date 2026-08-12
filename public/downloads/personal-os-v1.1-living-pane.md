@@ -9,29 +9,40 @@ Released August 2026 · For any Personal OS built from the original one-window s
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT BUILD YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the builder. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it adds a Single Pane - one live dashboard page with a tab per
-   project, current status and next steps only - served locally so it updates itself
-   within seconds whenever you update a status. Finished work collapses to a rolling
-   7-day list and auto-archives off the pane. Tell them what it touches (a new
-   `dashboard/` folder, a new `tools/` folder, nothing else) and what it will never
-   touch: their tracker, their files, their content. Their tracker stays canonical -
-   the pane is a view of it.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Look for `VERSION.md` in this OS's root folder. If it doesn't exist,
-   this is a v1.0 Foundation OS and you are clear to proceed (you'll create VERSION.md
-   in step 5). If VERSION.md already lists v1.1 or later, tell the user they already
-   have this and stop.
-4. **APPLY** on their yes, following the build instructions below and preserving every
-   customization you find along the way.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, and check
+   whether this user already runs a dashboard or pane of any kind - their own build, a
+   tasks app they render, anything that plays this role. You are answering two
+   questions. Is this already installed? And do they already have their own pane? A
+   stock OS straight from the Foundation has none, and most OSes are stock - expect to
+   find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.1 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - no pane of their own (this is almost everyone).** Tell the user in
+   two or three plain sentences what this builds: a Single Pane - one live dashboard
+   page with a tab per project, current status and next steps only - served locally so
+   it updates itself within seconds whenever a status changes. It adds a `dashboard/`
+   folder and a `tools/` folder, nothing else, and never touches their tracker, files,
+   or content - the tracker stays canonical and the pane is a view of it. Then start the
+   build, in the same message, without asking anything about whether to proceed -
+   pasting the install line was their yes. The build begins with the short interview in
+   Step 1 below; those questions are about THEIR projects and THEIR words, and they are
+   part of the build, not a permission gate. Close the build with one line: "If you ever
+   want this back out, say 'remove The Living Pane' and I'll take it out cleanly."
+4. **THE ONE QUESTION - only if step 1 actually found a pane they already run.** Name
+   it, in their own words, and ask exactly one question with the safe answer built in:
+   "You already run [their dashboard, described plainly]. Keep it, or replace it with
+   the Single Pane? Keeping yours is a fine answer - and if you keep it, the later pane
+   upgrades can still be fitted into it." Do what they say. Never ask this when step 1
+   found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.1 - The Living Pane - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then show the user their pane running live and how to open it tomorrow.
+   Then show the user their pane running live and how to open it tomorrow. Removing
+   this later means deleting the `dashboard/` and `tools/` folders it added and noting
+   the removal in VERSION.md - the tracker is untouched either way.
 
 ---
 

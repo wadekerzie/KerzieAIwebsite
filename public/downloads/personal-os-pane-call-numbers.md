@@ -11,18 +11,25 @@ ignore the file.
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Tell your user in plain language what this does: right now their pane shows
-   what needs doing, but not the short ID their tracker uses for each item. So when you say "the
-   Soaring Eagle recap is waiting on you," they have to hunt through the pane by phrase to find it.
-   After this patch, every item on the pane shows its ID in brackets, and the ID becomes a two-way
-   handle: you can say it, they can find it instantly, and they can command by it - "done W3."
-2. **ASK.** "Apply as-is, change something first, or skip it?" Wait for the answer.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This expects v1.1 or later, because it
-   patches the pane. If they have no pane, tell them this does nothing for them yet and stop.
-4. **APPLY** on their yes, preserving every customization in their pane build.
-5. **RECORD + REPORT.** Append to `VERSION.md`:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, confirm a
+   pane exists, and look at the pane itself: does it already show a short ID on its
+   items? Panes installed from v1.1 after August 2026 already have this.
+2. **ALREADY THERE, OR NO PANE?** If the pane already shows IDs, tell the user in one
+   line that they already have this, and stop. If they have no pane at all, tell them
+   this patch does nothing for them yet and point them at v1.1 (The Living Pane).
+3. **THE CLEAN PATH (everyone else).** Tell the user in two or three plain sentences
+   what this adds: right now their pane shows what needs doing but not the short ID
+   their tracker uses for each item, so when their AI says "the recap is waiting on
+   you," they have to hunt by phrase; after this patch every pane item shows its ID in
+   brackets, and the ID becomes a two-way handle - the AI can say it, they can find it
+   instantly, and they can command by it: "done W3." Then apply it, in the same
+   message, without asking anything - pasting the install line was their yes. Work
+   inside their pane build as it stands; change how items are labeled, nothing else.
+   Close with one line: "If you ever want this back out, say 'remove Call Numbers' and
+   I'll take it out cleanly."
+4. **RECORD + PROVE.** Append to `VERSION.md`:
    `v1.1 patch - Call Numbers - applied <today's date>`
    Then rebuild the pane and show them the IDs live.
 

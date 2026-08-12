@@ -9,28 +9,40 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. v1
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what this
-   upgrade does: right now, the rules their automated tasks run on are stored in a folder
-   outside their OS, with no version history. If one gets overwritten or deleted, there is no
-   way to get it back and no way to see when it changed. This upgrade copies those files into
-   their OS on a schedule so their own git history carries the record. Tell them what it
-   touches (it adds one script and one folder to their OS, and adds a step to their wrap and
-   weekly routines if they have them) and what it never touches: the live task files keep
-   running exactly as they are, and nothing about how their tasks behave changes at all.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?" Wait for the
-   answer. Modifications are welcome - adapt the steps. If they decline, stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later. If
-   VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed (you will
-   create VERSION.md in step 5). If it already lists v1.6 or later, tell the user they already
-   have this and stop.
-4. **APPLY** on their yes, following the instructions below and preserving every customization
-   you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then run the
+   two checks in STEP 1 below (is their OS a git repo, and what is sitting outside it).
+   You are answering three questions. Is this already installed? Is there a git repo for
+   the mirror to write history into? And did the user already build their own version -
+   an existing backup or mirror of their task files that this upgrade did not put there?
+   A stock OS straight from the Foundation has no mirror, and most OSes are stock -
+   expect to find nothing.
+2. **ALREADY INSTALLED, OR BLOCKED?** If `VERSION.md` lists v1.6 or later, tell the user
+   in one line that they already have this, and stop. (VERSION.md missing = a v1.0
+   Foundation OS. That is normal - proceed, and create it in step 5.) If their OS is not
+   a git repo, follow STEP 1's instruction: stop, explain plainly, and offer to set up
+   git first - that is the one genuine blocker.
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: the rules their automated tasks
+   run on live in a folder outside their OS with no version history, and if one is ever
+   overwritten or deleted there is no way back - this copies them into their OS so git
+   carries the record, while the live files keep running exactly as they are. Then
+   install it, in the same message, without asking anything - pasting the install line
+   was their yes. Close with one line: "If you ever want this back out, say 'remove The
+   Paper Trail' and I'll take it out cleanly." Do not mention conflicts, customizations,
+   or options - when you found nothing in step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own mirror.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already keep [their arrangement, described plainly]. Keep yours, or take
+   this one? Keeping yours is a fine answer." Do what they say. Never ask this when
+   step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.6 - The Paper Trail - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then run the sync once, live, so the user sees exactly what was sitting outside their OS.
+   Then run the sync once, live, so the user sees exactly what was sitting outside their
+   OS. Removing this later means deleting the script and mirror folder and noting the
+   removal in VERSION.md - the live task files are untouched either way.
 
 ---
 

@@ -9,36 +9,45 @@ Released August 2026 · For any Personal OS built from the original one-window s
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what this
-   upgrade does: right now, when they open a new session, you spend the first minute or two
-   reading their operating manual and getting oriented before you say anything useful - so
-   they sit there watching you work before they can even give you an instruction. This
-   upgrade flips that order. You check the real date and time, say hello in one line, ask
-   what they are working on, and do ALL of your orientation AFTER their answer, while you are
-   already working on the thing they asked for. Tell them what it touches (one section in
-   their operating manual, nothing else) and what it never touches: their data, their files,
-   their customizations.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?" Wait for the
-   answer. Modifications are welcome - adapt the steps. If they decline, stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade needs only the baseline
-   ("The Foundation") - if VERSION.md is missing entirely, that is fine, infer the baseline
-   and create VERSION.md in step 5. **If VERSION.md lists "The Present Tense" (v1.5):** they
-   already have the clock anchor from that release. Apply this upgrade anyway - it supersedes
-   it - but tell them plainly that the clock-anchor half is already in their manual, so you
-   are replacing that section rather than adding a duplicate, and the new part they are
-   getting is the opener. If VERSION.md already lists The Quick Start, tell them and stop.
-4. **ASK THEM ABOUT SESSION NAMES BEFORE YOU APPLY.** See "The one question to ask" below.
-   This upgrade is not complete without their answer, and the answer is theirs to make.
-5. **APPLY** on their yes: add the section below to their operating manual (CLAUDE.md or
-   equivalent), with their naming convention filled in, preserving every customization you
-   find. If a "clock anchor" section already exists from The Present Tense, replace it rather
-   than stacking a second one.
-6. **RECORD + REPORT.** Append to `VERSION.md`: `The Quick Start - applied <today's date>`.
-   Then tell them the honest thing: they will not see this work until their NEXT session,
-   because it changes how a session opens. Tell them what tomorrow will look like in one
-   sentence so they recognize it when it happens.
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then read
+   their operating manual (CLAUDE.md or equivalent). You are answering two questions.
+   Is this already installed? And did the user already write their own rule about how a
+   session opens? Two specific things to check: **if VERSION.md lists "The Present
+   Tense" (v1.5)**, they already have the clock anchor from that release - this upgrade
+   supersedes it, so you will replace that section rather than stack a duplicate, and
+   the new part they are getting is the opener. And any session-opening or greeting
+   rule they wrote themselves counts as their own version. A stock OS straight from the
+   Foundation has neither, and most OSes are stock - expect to find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists The Quick Start, tell the user in one
+   line that they already have this, and stop. (VERSION.md missing = the baseline
+   Foundation. That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this changes: right now a new session
+   spends its first minute or two reading their files before it says anything useful,
+   and they sit there waiting; after this, every session checks the real date, says
+   hello in one line, asks what they are working on, and does ALL of its orientation
+   after their answer, while it is already working. Then install it, in the same
+   message, without asking anything - pasting the install line was their yes. Fill in
+   the session-naming convention with the default (day of week plus full date - see
+   "The naming default" below) and mention it in one line: "Sessions will offer a date
+   name like 'Monday, August 10th' so old conversations are easy to find - if you would
+   rather name them by project, or skip naming, just say so and I'll change it." That
+   is an offer, not a question to wait on. Close with one line: "If you ever want this
+   back out, say 'remove The Quick Start' and I'll take it out cleanly."
+4. **THE ONE QUESTION - only if step 1 actually found their own opening rule.** Name
+   what you found, in their own words, and ask exactly one question with the safe
+   answer built in: "You already have [their rule, described plainly]. Keep yours, or
+   take this one? Keeping yours is a fine answer." Do what they say. Never ask this
+   when step 1 found nothing. (The Present Tense clock anchor is NOT their own rule -
+   it is ours; replace it silently per step 1 and tell them what you did.)
+5. **RECORD + REPORT.** Append to `VERSION.md`: `The Quick Start - applied <today's
+   date>`. Then tell them the honest thing: they will not see this work until their
+   NEXT session, because it changes how a session opens. Tell them what tomorrow will
+   look like in one sentence so they recognize it when it happens. Removing this later
+   means deleting the section it added (and restoring a plain clock anchor if they had
+   The Present Tense) and noting the removal in VERSION.md.
 
 ---
 
@@ -105,20 +114,18 @@ Their reply will be one of three things, and all three work:
 - **A pointer to yesterday** ("check where we left off"). Now run the full setup and report.
 - **Something you need context for.** Read exactly what that one thing needs, not everything.
 
-## The one question to ask before applying
+## The naming default (install it, do not quiz them)
 
 **Sessions in the sidebar get auto-named by the app, usually after whatever was said first,
 and those names are useless a week later when your user is trying to find a conversation.**
 A date-based name fixes that: "Monday, August 10th" is findable; "Helping with a CSV" is not.
 
-But that is a preference, not a law, so ask:
-
-> "How do you want your sessions named in the sidebar? Some people use the date - 'Monday,
-> August 10th' - so past conversations are easy to find. Others prefer the project or client
-> they were working on. Or we can skip this entirely. What fits how you look for things?"
-
-Record their answer in the block below. If they want no convention at all, say so in the
-block and drop the naming clause from the greeting.
+So the convention installs with a default: **day of week plus full date**. Do not ask the
+user to choose a naming scheme during the install - a person new to this has no basis to
+pick, and the date default serves almost everyone. Instead, tell them in one line what they
+are getting and that it is theirs to change: by project, by client, or no naming at all -
+one sentence to you, any time, and you update the block. If they volunteer a preference on
+the spot, use it.
 
 **Your AI cannot rename the thread itself.** The sidebar title is set by the app, not by the
 assistant inside the conversation, and it will refuse if it tries. So the greeting simply
@@ -142,8 +149,9 @@ THEN, immediately, send exactly one short message and stop:
   "This session: [SESSION NAME BY MY CONVENTION]. Rename the thread in the sidebar if you
    want it to stick."
 
-("Good afternoon" / "Good evening" by the clock. My naming convention is: [FILL IN - e.g.
-day of week + full date; or the project name; or NONE, drop this line entirely].)
+("Good afternoon" / "Good evening" by the clock. My naming convention is: [day of week +
+full date, e.g. "Monday, August 10th" - the default; replace this if I pick a different
+scheme, or drop the naming line entirely if I say to skip naming].)
 
 Nothing else goes in that first message. No status report, no summary of yesterday, no
 narration of what you are about to read.

@@ -26,14 +26,18 @@ instead of assumed. Install it out of numeric order, first, before any of the ot
 
 ## How to run this
 
-Install ONE upgrade at a time. Each release below carries its own "DO NOT APPLY YET" preamble
-with the same five steps: describe first, ask, check state, apply on yes, record and report.
-Follow that preamble exactly, for each release, in the order listed above.
+Install ONE upgrade at a time. Each release below carries its own installer preamble with
+the same flow: LOOK first (read VERSION.md and the parts of the OS the upgrade touches),
+TELL (two or three plain sentences on what it adds), then GO - install without asking
+anything when the look found nothing of Jordan's own in the way, which on a stock OS is
+every time. The only question an upgrade may ask is the one written in its preamble, and
+only when the look actually found something Jordan built himself. Follow each preamble
+exactly, in the order listed above.
 
-After each install finishes, before moving to the next one, explain to Jordan in one paragraph
-(plain language, no jargon) what just changed in his OS. Then confirm with him directly: is he
-ready to keep going to the next upgrade, or does he want to stop here for now. Wait for his
-answer.
+After each install finishes, before moving to the next one, explain to Jordan in one
+paragraph (plain language, no jargon) what just changed in his OS. Then one simple check:
+keep going to the next upgrade, or stop here for now? Stopping is a fine answer - see the
+next paragraph.
 
 Jordan can stop and resume this bundle at any point, in any session, in any order beyond the
 v1.5-first rule above. Nothing here forces a single sitting. If he stops after two upgrades
@@ -63,38 +67,42 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. Th
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs two behaviors that keep the OS operating in the
-   present tense. First, a clock anchor - every session opens by checking the real
-   date and time in the user's own time zone, and every "today," "tomorrow," and
-   day-of-week calculation for the rest of the session derives from that check, never
-   from assumption. Second, a real-time pane - if the user runs a dashboard, its data
-   gets updated in the same breath as the work that changes it, never batched to the
-   end of a session, and the pane page reloads itself every 60 seconds so what is on
-   screen converges on what is true within a minute. Tell them what it touches (their
-   CLAUDE.md standing behaviors, and their dashboard build if they have one) and what
-   it never touches: their content, their data, their customizations, their dashboard's
-   look and layout.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or
-   later. If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to
-   proceed (you will create VERSION.md in step 5). If it already lists v1.5 or later,
-   tell the user they already have this and stop. No other upgrade is required first -
-   upgrades are skippable by design.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find. If the user built their own dashboard, the standing
-   instruction is: do not screw up their existing dashboard - take the enhancements
-   and the structure of this and implement them inside what they already have.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then read
+   their CLAUDE.md (or equivalent) and check whether they run a dashboard of any kind.
+   You are answering two questions. Is this already installed? And did the user already
+   build their own version of either half - an existing clock-anchor rule, or a
+   dashboard that already updates in real time? A stock OS straight from the Foundation
+   has neither, and most OSes are stock - expect to find nothing. No other upgrade is
+   required first; upgrades are skippable by design.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.5 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: every session opens by checking
+   the real date and time in their time zone so the OS never guesses what day it is,
+   and if they run a dashboard, its data updates in the same breath as the work and the
+   page reloads itself every 60 seconds - so the screen converges on the truth within a
+   minute. Then install it, in the same message, without asking anything - the install
+   line (or this bundle) was their yes. If they built their own dashboard, one standing
+   rule while you work: do not screw up their existing dashboard - implement the
+   refresh behaviors inside what they already have, and leave its look and layout
+   alone. Close with one line: "If you ever want this back out, say 'remove The Present
+   Tense' and I'll take it out cleanly." Do not mention conflicts, customizations, or
+   options - when you found nothing in step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own version.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already have [their thing, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer - I'll add only the half you are missing." Do
+   what they say. Never ask this when step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.5 - The Present Tense - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
    Then prove both behaviors to the user: state the anchored date and time out loud,
    and if they run a pane, make one small real change and let them watch the pane
-   catch up on its own within a minute.
+   catch up on its own within a minute. Removing this later means deleting what it
+   added and noting the removal in VERSION.md.
 
 ---
 
@@ -182,29 +190,41 @@ Released August 2026 · For any Personal OS built from the original one-window s
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT BUILD YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the builder. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it adds a Single Pane - one live dashboard page with a tab per
-   project, current status and next steps only - served locally so it updates itself
-   within seconds whenever you update a status. Finished work collapses to a rolling
-   7-day list and auto-archives off the pane. Tell them what it touches (a new
-   `dashboard/` folder, a new `tools/` folder, nothing else) and what it will never
-   touch: their tracker, their files, their content. Their tracker stays canonical -
-   the pane is a view of it.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Look for `VERSION.md` in this OS's root folder. If it doesn't exist,
-   this is a v1.0 Foundation OS and you are clear to proceed (you'll create VERSION.md
-   in step 5). If VERSION.md already lists v1.1 or later, tell the user they already
-   have this and stop.
-4. **APPLY** on their yes, following the build instructions below and preserving every
-   customization you find along the way.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, and check
+   whether this user already runs a dashboard or pane of any kind - their own build, a
+   tasks app they render, anything that plays this role. You are answering two
+   questions. Is this already installed? And do they already have their own pane? A
+   stock OS straight from the Foundation has none, and most OSes are stock - expect to
+   find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.1 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - no pane of their own (this is almost everyone).** Tell the user in
+   two or three plain sentences what this builds: a Single Pane - one live dashboard
+   page with a tab per project, current status and next steps only - served locally so
+   it updates itself within seconds whenever a status changes. It adds a `dashboard/`
+   folder and a `tools/` folder, nothing else, and never touches their tracker, files,
+   or content - the tracker stays canonical and the pane is a view of it. Then start the
+   build, in the same message, without asking anything about whether to proceed - the
+   install line (or this bundle) was their yes. The build begins with the short
+   interview in Step 1 below; those questions are about THEIR projects and THEIR words,
+   and they are part of the build, not a permission gate. Close the build with one
+   line: "If you ever want this back out, say 'remove The Living Pane' and I'll take it
+   out cleanly."
+4. **THE ONE QUESTION - only if step 1 actually found a pane they already run.** Name
+   it, in their own words, and ask exactly one question with the safe answer built in:
+   "You already run [their dashboard, described plainly]. Keep it, or replace it with
+   the Single Pane? Keeping yours is a fine answer - and if you keep it, the later pane
+   upgrades can still be fitted into it." Do what they say. Never ask this when step 1
+   found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.1 - The Living Pane - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then show the user their pane running live and how to open it tomorrow.
+   Then show the user their pane running live and how to open it tomorrow. Removing
+   this later means deleting the `dashboard/` and `tools/` folders it added and noting
+   the removal in VERSION.md - the tracker is untouched either way.
 
 ---
 
@@ -920,30 +940,37 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. Wo
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs a session wrap-up ritual. When they say "let's wrap up,"
-   you will reconcile their tracker against reality, verify anything that claims to be
-   live actually is, refresh their dashboard if they have one, and write a small distilled
-   handoff so their NEXT session starts exactly where this one left off - without dragging
-   the whole conversation's history along. Tell them what it touches (their CLAUDE.md
-   standing behaviors, plus a short handoff block in their tracker or memory file) and
-   what it never touches: their content, their data, their customizations.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later.
-   If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed
-   (you will create VERSION.md in step 5). If it already lists v1.2 or later, tell the
-   user they already have this and stop. v1.1 is NOT required - upgrades are skippable
-   by design.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then read
+   their CLAUDE.md (or equivalent standing-instructions file). You are answering two
+   questions. Is this already installed? And did the user already build their own
+   wrap-up - an end-of-session or wrap-up section in their manual that this upgrade did
+   not put there? A stock OS straight from the Foundation has nothing like that, and
+   most OSes are stock - expect to find nothing. v1.1 is NOT required; upgrades are
+   skippable by design.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.2 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: a wrap-up ritual, so "let's wrap
+   up" reconciles their tracker against reality, verifies anything that claims to be
+   live, refreshes their dashboard if they have one, and leaves a short handoff so
+   tomorrow starts warm. Then install it, in the same message, without asking anything -
+   the install line (or this bundle) was their yes. Close with one line: "If you ever
+   want this back out, say 'remove The Clean Handoff' and I'll take it out cleanly."
+   Do not mention conflicts, customizations, or options - when you found nothing in
+   step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own wrap-up.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already have [their wrap-up, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer - I'll fit anything missing around it." Do what
+   they say. Never ask this when step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.2 - The Clean Handoff - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then walk the user through one real wrap-up so they see it work.
+   Then walk the user through one real wrap-up so they see it work. Removing this later
+   means deleting the section it added and noting the removal in VERSION.md.
 
 ---
 
@@ -1039,30 +1066,37 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. v1
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs a weekly self-optimization routine. Once a week, their
-   OS measures what a brand-new session is forced to read before it can help, finds the
-   bloat (stale facts, finished work still listed as open, whole documents riding along
-   in startup memory), compacts it losslessly, and reports only the judgment calls. The
-   OS gets faster and cheaper every week instead of slower and more expensive. Tell them
-   what it touches (their startup files: memory, tracker, CLAUDE.md standing-behavior
-   text - always archiving, never deleting) and what it never touches: their content,
-   their project files, their data, their customizations.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later.
-   If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed
-   (you will create VERSION.md in step 5). If it already lists v1.3 or later, tell the
-   user they already have this and stop.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then look at
+   how this OS schedules recurring work (scheduled tasks, standing commands in the
+   manual). You are answering two questions. Is this already installed? And did the user
+   already build their own version - an existing weekly maintenance, cleanup, or
+   tune-up routine this upgrade did not put there? A stock OS straight from the
+   Foundation has nothing like that, and most OSes are stock - expect to find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.3 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: once a week their OS measures
+   what a brand-new session is forced to read before it can help, trims the bloat
+   losslessly (always archiving, never deleting), and reports only the judgment calls -
+   so the OS gets faster and cheaper every week instead of slower. Then install it, in
+   the same message, without asking anything - the install line (or this bundle) was
+   their yes. Close with one line: "If you ever want this back out, say 'remove The
+   Weekly Tune-Up' and I'll take it out cleanly." Do not mention conflicts,
+   customizations, or options - when you found nothing in step 1, there is nothing for
+   them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own routine.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already run [their routine, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer - I'll fold in anything it is missing." Do what
+   they say. Never ask this when step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.3 - The Weekly Tune-Up - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then run the first tune-up together, live, so the user sees what it catches.
+   Then run the first tune-up together, live, so the user sees what it catches. Removing
+   this later means deleting the routine it added and noting the removal in VERSION.md.
 
 ---
 
@@ -1150,31 +1184,42 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. v1
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs a nightly routine where their OS "dreams" - while they
-   sleep, it re-reads the day's conversations across every session, compares what was
-   actually said and decided against what the OS has written down, and wakes them up with
-   a short list of proposed corrections, each with the evidence quoted. It fixes only
-   trivial things on its own (typos, broken index lines, exact duplicates). Everything
-   that matters waits for the user's yes. Tell them what it reads (their own session
-   transcripts, stored locally on their machine - conversation text only, never raw tool
-   output) and what it never touches: their standing rules, their tracker items, their
-   content, anything private.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later.
-   If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed
-   (you will create VERSION.md in step 5). If it already lists v1.4 or later, tell the
-   user they already have this and stop.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then look at
+   how this OS schedules recurring work. You are answering two questions. Is this
+   already installed? And did the user already build their own version - an existing
+   nightly or reflection routine that re-reads the day, which this upgrade did not put
+   there? A stock OS straight from the Foundation has nothing like that, and most OSes
+   are stock - expect to find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.4 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: while they sleep, their OS
+   re-reads the day's conversations across every session, compares what was said and
+   decided against what the OS has written down, and files a short morning report of
+   proposed corrections with the evidence quoted. It fixes only trivial things on its
+   own (typos, broken index lines, exact duplicates); everything that matters waits for
+   their yes. It reads their own local session transcripts - conversation text only,
+   never raw tool output - and never touches their standing rules, tracker items,
+   content, or anything private. Then install it, in the same message, without asking
+   anything - the install line (or this bundle) was their yes. Close with one line: "If
+   you ever want this back out, say 'remove The Nightly Dream' and I'll take it out
+   cleanly." Do not mention conflicts, customizations, or options - when you found
+   nothing in step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own routine.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already run [their routine, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer." Do what they say. Never ask this when step 1
+   found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.4 - The Nightly Dream - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then run one dream pass together, live, so the user sees what it catches on day one.
+   Then run one dream pass together, live, so the user sees what it catches on day one -
+   the live run also settles the permission approvals the schedule will need (see the
+   gotchas below). Removing this later means deleting the routine and noting the
+   removal in VERSION.md.
 
 ---
 

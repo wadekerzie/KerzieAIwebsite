@@ -9,31 +9,42 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. v1
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs a nightly routine where their OS "dreams" - while they
-   sleep, it re-reads the day's conversations across every session, compares what was
-   actually said and decided against what the OS has written down, and wakes them up with
-   a short list of proposed corrections, each with the evidence quoted. It fixes only
-   trivial things on its own (typos, broken index lines, exact duplicates). Everything
-   that matters waits for the user's yes. Tell them what it reads (their own session
-   transcripts, stored locally on their machine - conversation text only, never raw tool
-   output) and what it never touches: their standing rules, their tracker items, their
-   content, anything private.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later.
-   If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed
-   (you will create VERSION.md in step 5). If it already lists v1.4 or later, tell the
-   user they already have this and stop.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then look at
+   how this OS schedules recurring work. You are answering two questions. Is this
+   already installed? And did the user already build their own version - an existing
+   nightly or reflection routine that re-reads the day, which this upgrade did not put
+   there? A stock OS straight from the Foundation has nothing like that, and most OSes
+   are stock - expect to find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.4 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: while they sleep, their OS
+   re-reads the day's conversations across every session, compares what was said and
+   decided against what the OS has written down, and files a short morning report of
+   proposed corrections with the evidence quoted. It fixes only trivial things on its
+   own (typos, broken index lines, exact duplicates); everything that matters waits for
+   their yes. It reads their own local session transcripts - conversation text only,
+   never raw tool output - and never touches their standing rules, tracker items,
+   content, or anything private. Then install it, in the same message, without asking
+   anything - pasting the install line was their yes. Close with one line: "If you ever
+   want this back out, say 'remove The Nightly Dream' and I'll take it out cleanly."
+   Do not mention conflicts, customizations, or options - when you found nothing in
+   step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own routine.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already run [their routine, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer." Do what they say. Never ask this when step 1
+   found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.4 - The Nightly Dream - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then run one dream pass together, live, so the user sees what it catches on day one.
+   Then run one dream pass together, live, so the user sees what it catches on day one -
+   the live run also settles the permission approvals the schedule will need (see the
+   gotchas below). Removing this later means deleting the routine and noting the
+   removal in VERSION.md.
 
 ---
 

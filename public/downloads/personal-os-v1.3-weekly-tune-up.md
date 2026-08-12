@@ -9,30 +9,36 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. v1
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs a weekly self-optimization routine. Once a week, their
-   OS measures what a brand-new session is forced to read before it can help, finds the
-   bloat (stale facts, finished work still listed as open, whole documents riding along
-   in startup memory), compacts it losslessly, and reports only the judgment calls. The
-   OS gets faster and cheaper every week instead of slower and more expensive. Tell them
-   what it touches (their startup files: memory, tracker, CLAUDE.md standing-behavior
-   text - always archiving, never deleting) and what it never touches: their content,
-   their project files, their data, their customizations.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later.
-   If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed
-   (you will create VERSION.md in step 5). If it already lists v1.3 or later, tell the
-   user they already have this and stop.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then look at
+   how this OS schedules recurring work (scheduled tasks, standing commands in the
+   manual). You are answering two questions. Is this already installed? And did the user
+   already build their own version - an existing weekly maintenance, cleanup, or
+   tune-up routine this upgrade did not put there? A stock OS straight from the
+   Foundation has nothing like that, and most OSes are stock - expect to find nothing.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.3 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: once a week their OS measures
+   what a brand-new session is forced to read before it can help, trims the bloat
+   losslessly (always archiving, never deleting), and reports only the judgment calls -
+   so the OS gets faster and cheaper every week instead of slower. Then install it, in
+   the same message, without asking anything - pasting the install line was their yes.
+   Close with one line: "If you ever want this back out, say 'remove The Weekly Tune-Up'
+   and I'll take it out cleanly." Do not mention conflicts, customizations, or options -
+   when you found nothing in step 1, there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own routine.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already run [their routine, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer - I'll fold in anything it is missing." Do what
+   they say. Never ask this when step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.3 - The Weekly Tune-Up - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then run the first tune-up together, live, so the user sees what it catches.
+   Then run the first tune-up together, live, so the user sees what it catches. Removing
+   this later means deleting the routine it added and noting the removal in VERSION.md.
 
 ---
 
@@ -64,10 +70,11 @@ prune, verify nothing was lost, report, and run again next week with what it lea
 
 ## Install: create the weekly routine
 
-Set this up however the user schedules recurring work (a scheduled task if their setup
-supports one, or a standing "run my tune-up" command they say once a week - ask which
-they prefer). Sunday evening is a good default: the week's residue is fresh and nothing
-is on fire. This is mechanical work - if the user's setup supports choosing a cheaper or
+Set this up however the user schedules recurring work: a scheduled task if their setup
+supports one, otherwise a standing "run my tune-up" command they say once a week. Pick
+whichever their setup supports, tell them which one they got, and mention it is one
+sentence to switch later. Sunday evening is a good default: the week's residue is fresh
+and nothing is on fire. This is mechanical work - if the user's setup supports choosing a cheaper or
 faster model for routine jobs, this one qualifies.
 
 The routine, in order:

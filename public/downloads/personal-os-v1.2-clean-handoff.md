@@ -9,30 +9,38 @@ Released August 2026 · For any Personal OS v1.0 ("The Foundation") or later. Wo
 
 ---
 
-**TO THE CLAUDE READING THIS - DO NOT APPLY YET. Follow this order:**
+**TO THE CLAUDE READING THIS - you are the installer. LOOK, then TELL, then GO:**
 
-1. **DESCRIBE FIRST.** Before touching anything, tell your user in plain language what
-   this upgrade does: it installs a session wrap-up ritual. When they say "let's wrap up,"
-   you will reconcile their tracker against reality, verify anything that claims to be
-   live actually is, refresh their dashboard if they have one, and write a small distilled
-   handoff so their NEXT session starts exactly where this one left off - without dragging
-   the whole conversation's history along. Tell them what it touches (their CLAUDE.md
-   standing behaviors, plus a short handoff block in their tracker or memory file) and
-   what it never touches: their content, their data, their customizations.
-2. **ASK.** Then ask directly: "Apply as-is, change something first, or skip it?"
-   Wait for the answer. Modifications are welcome - adapt the steps. If they decline,
-   stop entirely.
-3. **CHECK STATE.** Read `VERSION.md` at the OS root. This upgrade expects v1.0 or later.
-   If VERSION.md is missing, this is a v1.0 Foundation OS and you are clear to proceed
-   (you will create VERSION.md in step 5). If it already lists v1.2 or later, tell the
-   user they already have this and stop. v1.1 is NOT required - upgrades are skippable
-   by design.
-4. **APPLY** on their yes, following the instructions below and preserving every
-   customization you find.
-5. **RECORD + REPORT.** Create or append to `VERSION.md` at the OS root:
+1. **LOOK FIRST, before saying anything.** Read `VERSION.md` at the OS root, then read
+   their CLAUDE.md (or equivalent standing-instructions file). You are answering two
+   questions. Is this already installed? And did the user already build their own
+   wrap-up - an end-of-session or wrap-up section in their manual that this upgrade did
+   not put there? A stock OS straight from the Foundation has nothing like that, and
+   most OSes are stock - expect to find nothing. v1.1 is NOT required; upgrades are
+   skippable by design.
+2. **ALREADY INSTALLED?** If `VERSION.md` lists v1.2 or later, tell the user in one line
+   that they already have this, and stop. (VERSION.md missing = a v1.0 Foundation OS.
+   That is normal - proceed, and create it in step 5.)
+3. **THE CLEAN PATH - nothing of theirs in the way (this is almost everyone).** Tell the
+   user in two or three plain sentences what this adds: a wrap-up ritual, so "let's wrap
+   up" reconciles their tracker against reality, verifies anything that claims to be
+   live, refreshes their dashboard if they have one, and leaves a short handoff so
+   tomorrow starts warm. Then install it, in the same message, without asking anything -
+   pasting the install line was their yes. Close with one line: "If you ever want this
+   back out, say 'remove The Clean Handoff' and I'll take it out cleanly." Do not
+   mention conflicts, customizations, or options - when you found nothing in step 1,
+   there is nothing for them to decide.
+4. **THE ONE QUESTION - only if step 1 actually found their own wrap-up.** Name what you
+   found, in their own words, and ask exactly one question with the safe answer built
+   in: "You already have [their wrap-up, described plainly]. Keep yours, or take this
+   one? Keeping yours is a fine answer - I'll fit anything missing around it." Do what
+   they say. Never ask this when step 1 found nothing.
+5. **RECORD + PROVE.** Create or append to `VERSION.md` at the OS root:
    `v1.2 - The Clean Handoff - applied <today's date>`
    (If the file is new, first line: `v1.0 - The Foundation - original setup`.)
-   Then walk the user through one real wrap-up so they see it work.
+   Then walk the user through one real wrap-up so they see it work. Removing this later
+   means deleting the section it added and noting the removal in VERSION.md - say so if
+   they ever ask whether it is safe to undo.
 
 ---
 
