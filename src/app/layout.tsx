@@ -9,7 +9,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { organizationJsonLd } from "@/content/jsonLd";
-import BackCoverButton from "@/components/BackCoverButton";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -110,10 +109,7 @@ export default function RootLayout({
         className={`${inter.variable} ${instrumentSerif.variable} ${geistMono.variable} ${sourceSerif.variable} antialiased`}
       >
         <Header />
-        {/* `relative` so The Back Cover can pin to the top-right of the
-            BODY, under the header, without shifting any page layout. */}
-        <main className="pt-14 lg:pt-16 relative">
-          <BackCoverButton />
+        <main className="pt-14 lg:pt-16">
           {children}
         </main>
         <Footer />

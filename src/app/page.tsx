@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import ProblemForm from "@/components/ProblemForm";
+import BackCoverButton from "@/components/BackCoverButton";
 
 export const metadata = {
   title: "Kerzie AI",
@@ -49,7 +50,14 @@ const products = [
 
 export default function Home() {
   return (
-    <div className="bg-[#1A1B2E]">
+    // `relative` anchors The Back Cover to the top-right of the page body.
+    // HOMEPAGE ONLY (Wade, 2026-08-12): site-wide it landed on the essay
+    // pages, where a bright marketing button on top of the paper design
+    // cheapens a deliberate artifact - and it was redundant on /back-cover
+    // itself. Outbound traffic goes straight to /back-cover anyway, so this
+    // button is the discovery tell, not the main door.
+    <div className="bg-[#1A1B2E] relative">
+      <BackCoverButton />
 
       {/* ============ ACT ONE: THE BELIEF ============ */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 min-h-[min(calc(100svh-4rem),50rem)] flex flex-col justify-center pt-16 pb-12">
