@@ -212,10 +212,15 @@ export default function BackCoverPage() {
             One fee, once. Not a retainer, not a rebuild, not a subscription to
             a dashboard you will never open.
           </p>
+          <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
+            The diagnostic is free and takes us about an hour. We ask the
+            assistants about your business and send you exactly what they say,
+            word for word.
+          </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-10 leading-relaxed">
-            The diagnostic is free and takes us about an hour: we ask the
-            assistants about your business and send you exactly what they say.
-            If that does not bother you, do not hire us.
+            Sometimes the answers come back fine, and we tell you so. Either
+            way you will know where you stand, and finding out costs you
+            nothing.
           </p>
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Get the free diagnostic <span className="k-arrow">&rarr;</span>
