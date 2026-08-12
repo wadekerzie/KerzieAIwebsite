@@ -5,13 +5,13 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "For Sales Teams | Kerzie AI",
   description:
-    "Your reps have AI licenses. That is not the same as using AI. Thirty years leading enterprise sales, now turning AI from a forgotten login into the way your team runs its accounts. A 30-day pilot, scored from day one.",
+    "Your reps have AI licenses. That is not the same as using AI. Thirty years leading enterprise sales, now turning AI from a forgotten login into the way your team runs its accounts. Your whole team, hands on the keyboard, scored from day one.",
 };
 
 const whatIDo = [
   {
-    lead: "Pilot pod.",
-    body: "One sales leader and three reps who share accounts, so the manager's view is part of the proof, not an afterthought.",
+    lead: "Your whole team, leaders included.",
+    body: "A manager who does not run it cannot coach it. The people who own the number are in the room doing the work, not reading a summary afterward.",
   },
   {
     lead: "Hands on the keyboard from day one.",
@@ -34,7 +34,7 @@ const steps = [
   },
   {
     label: "Run",
-    body: "The pod's wins become the standard the rest of the team gets fast-laned into. Whoever reaches the next level first sets the bar everyone else has to meet.",
+    body: "The first sellers to break through set the standard, and the rest of the team gets fast-laned into it. Whoever reaches the next level first sets the bar everyone else has to meet.",
   },
 ];
 
@@ -103,8 +103,8 @@ export default function SalesTeamsPage() {
         <Reveal>
           <p className="k-label mb-6">02 &mdash; What I Do</p>
           <p className="text-white text-lg font-medium max-w-2xl mb-8 leading-relaxed">
-            I get a small group hands-on-keyboard and prove the value in
-            miniature before you scale it.
+            I get your sellers hands-on-keyboard, on live accounts, scored from
+            the first session.
           </p>
           <ul className="max-w-2xl space-y-5">
             {whatIDo.map((item) => (
@@ -166,17 +166,17 @@ export default function SalesTeamsPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
           <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
-            Let&apos;s prove it with a few of your people
+            Every rep, not just the one who figured it out
             <span className="text-[#E8896A]">.</span>
           </h2>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
-            The pilot holds the same promise we make everywhere: simpler, not
+            This holds the same promise we make everywhere: simpler, not
             additional. If AI adds a step to a rep&apos;s day, it is dead on
             arrival - so we build it into the way they already sell.
           </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-10 leading-relaxed">
-            A 30-day pilot, scored from day one. If it works, you will see it. If
-            it does not, you will know that too.
+            Scored from day one. If it is working, you will see it in how your
+            team runs its accounts. If it is not, you will know that too.
           </p>
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Book a call <span className="k-arrow">&rarr;</span>
