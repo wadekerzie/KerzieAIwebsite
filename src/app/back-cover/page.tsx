@@ -98,6 +98,18 @@ export default function BackCoverPage() {
               people. Cloudflare said so this year. Some industries have already
               lost up to 40% of their human visitors in under a year.
             </p>
+            {/* This paragraph exists because TWO independent reviewers read the
+                earlier copy and heard "half your customers are AI." That is a
+                conflation a sophisticated buyer catches, and catching it costs
+                us the honesty the rest of the page earns. Never remove it to
+                make the pitch punchier. */}
+            <p>
+              Straight about what that does not mean: half your customers are
+              not robots. Today only a small slice of most sites&apos; visits
+              come from an assistant. What changed is who does the{" "}
+              <span className="text-white font-medium">choosing</span> - and the
+              people who arrive that way already know what they want.
+            </p>
             <p>
               Here is what that means on the ground. When someone asks an AI
               &ldquo;who fixes furnaces in McKinney,&rdquo; an{" "}
