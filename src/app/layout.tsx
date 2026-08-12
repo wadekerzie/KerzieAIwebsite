@@ -8,6 +8,7 @@ import {
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { organizationJsonLd } from "@/content/jsonLd";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -84,6 +85,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Machine-advertise The Back Cover. The sitemap makes /llms.txt
+            findable; this makes it discoverable by a client that already has
+            the page in hand. Deliberately not in the human nav. */}
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href="/llms.txt"
+          title="Kerzie AI for language models"
+        />
+        {/* Structured data, generated from siteFacts so it cannot disagree
+            with what the pages render. Added 2026-08-12 - before that, this
+            site shipped 36 routes with zero schema.org markup, which is the
+            layer search engines and the assistants built on them actually
+            parse with certainty. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${instrumentSerif.variable} ${geistMono.variable} ${sourceSerif.variable} antialiased`}
       >

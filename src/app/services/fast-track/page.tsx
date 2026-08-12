@@ -2,6 +2,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import FastTrackIntakeForm from "@/components/FastTrackIntakeForm";
+import { offer } from "@/content/siteFacts";
+import { serviceJsonLd } from "@/content/jsonLd";
+
+// Price comes from siteFacts so this page, /services, the JSON-LD and
+// /llms.txt can never quote different numbers. Was hardcoded in 6 places.
+const FAST_TRACK = offer("fast-track");
 
 export const metadata: Metadata = {
   title: "AI Fast-Track Session | Kerzie AI",
@@ -28,6 +34,13 @@ const takeaways = [
 export default function FastTrackPage() {
   return (
     <div className="bg-[#1A1B2E] min-h-screen">
+      {/* Service + Offer structured data, priced from siteFacts. This is what
+          lets an assistant answer "what does a Kerzie AI session cost" with a
+          number it can stand behind. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd(FAST_TRACK)) }}
+      />
       {/* Back link */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
@@ -52,7 +65,7 @@ export default function FastTrackPage() {
           before we are done.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-white text-2xl font-semibold">
-          $999 flat for the room<span className="text-[#E8896A]">.</span>
+          {FAST_TRACK.priceLabel}<span className="text-[#E8896A]">.</span>
         </p>
         <p className="k-rise k-rise-3 mt-2 text-[#AABBCC] text-base">
           One person or three. Same price.
@@ -293,7 +306,7 @@ export default function FastTrackPage() {
           <p className="k-label mb-6">07 &mdash; The Price</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p className="text-white text-xl font-semibold">
-              $999, flat. That is the room, not the seat.
+              ${FAST_TRACK.price}, flat. That is the room, not the seat.
             </p>
             <p>
               It covers the intake review, the 3-hour working session, the
@@ -344,7 +357,7 @@ export default function FastTrackPage() {
           </p>
           <p className="text-[#AABBCC] text-lg max-w-2xl mb-10">
             Five minutes. This tells us both whether the session is worth your
-            $999 and my three hours. Tell me how many of you are coming.
+            ${FAST_TRACK.price} and my three hours. Tell me how many of you are coming.
           </p>
           <div className="max-w-2xl">
             <FastTrackIntakeForm />
