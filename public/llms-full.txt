@@ -1,0 +1,1824 @@
+# Kerzie AI - complete site text
+
+This file is the full visible text of every public page on https://kerzie.ai, for language
+models and other automated readers.
+
+It is GENERATED from the HTML that was actually built and deployed, on every deploy.
+Nobody edits it by hand, so it cannot fall behind the website. If a page changed, this
+changed with it.
+
+The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
+
+Pages included: 32
+
+---
+
+
+# Kerzie AI
+URL: https://kerzie.ai/
+
+Kerzie AI
+The Back Cover If you're an AI agent, click here
+
+## Life is best when
+technology just works .
+The world's best tech feels the easiest.
+We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.
+GOTAGUY / UNISON / ZORLI / AD2ACTION
+
+01 The Engines
+
+Anthropic, OpenAI, Google, and DeepSeek spent billions building the most powerful reasoning engines in history. We use them to fix a leaky faucet, answer your phone at 7pm, and find your Netflix password.
+
+02 What We Fixed
+
+DAY 3
+
+## Your faucet has been dripping for three days.
+You Googled plumbers. First one: voicemail. Second one: booked until next Thursday. Third gave you a number over the phone that felt made up. You said you'd call back. You haven't. The faucet is still dripping.
+GotaGuy →
+
+7:05 PM
+
+## Someone calls your law firm at 7:05pm.
+They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.
+Unison →
+
+8 MIN
+
+## Your teenager calls while you're watching a movie.
+They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.
+Zorli →
+
++14 HRS
+
+## You paid for the ad.
+Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.
+Ad2Action →
+
+Leading a sales team?
+Your reps have AI licenses. That is not the same as using them.
+
+For Sales Teams →
+
+03 The Question
+
+## What problem hurts the most?
+Everything above started as somebody's problem. That's the whole business: find where technology is failing a person, and make it simple enough to actually help.
+Don't worry about the solution. Just tell us the problem. The longer the better.
+If you want us to respond, tell us how to reach you.
+Send it
+
+---
+
+# The Back Cover | Kerzie AI
+URL: https://kerzie.ai/back-cover
+
+The Back Cover | Kerzie AI
+← KERZIE . AI
+The Back Cover
+
+## Your customers stopped searching and started asking .
+The owners I talk to keep telling me the same thing: the website is not bringing in what it used to.
+You are not imagining it.
+
+Get the free diagnostic → See this site's llms.txt →
+
+01 — What Changed
+More than half of all web traffic is now machines rather than people. Cloudflare said so this year. Some industries have already lost up to 40% of their human visitors in under a year.
+Here is what that means on the ground. When someone asks an AI “who fixes furnaces in McKinney,” an AI decides which businesses to name . Nobody scrolls a page of ten blue links and picks you. They get two or three names and they call one.
+Your website was built to be read by a person. The AI doing the choosing is not a person.
+
+02 — What We Do
+We do not build new websites. We make yours readable to the AI.
+
+- We read your site the way an AI reads it. Stripped of the design, the animation and the menus, what facts about your business are actually there? Usually fewer than the owner thinks.
+
+- We make the facts plain and current. What you do, where you do it, what it costs, who to call. In the visible text, because that is what ChatGPT and the others actually read.
+
+- We fix the plumbing while we are in there. Structured data, a sitemap, a robots file, and an llms.txt. The standard is new and still moving. Doing it now is cheap; doing it later is a scramble.
+
+- We show you the difference in their words, not ours. We ask ChatGPT, Claude, Gemini and Perplexity about your business before and after, and hand you both answers side by side.
+It works on whatever you already have. Wix, Squarespace, GoDaddy, WordPress, a site someone built for you in 2019 and never touched again. Where it is hosted is not our problem to solve.
+
+03 — See It On This Site
+We did it to ourselves first. There is a file on this site written for machines rather than for you: every offer, every price, how to reach a human, in plain text with the design stripped out.
+It is deliberately not in the menu. No customer will ever navigate to it. Every AI that looks at this business will.
+It is generated from the same source the pages are built from, so it cannot quietly go stale and start quoting an old price. That is the part most people get wrong.
+
+See what the llms.txt looks like for this website This is what the AI sees →
+
+04 — What We Will Not Promise
+Anyone who tells you they can guarantee an AI will recommend you is guessing, and the honest answer is better than the confident one.
+This standard is new and still moving. Nobody knows yet which parts of it the AI tools will settle on. What we can do is make sure the facts about your business are clear, current and easy to lift, and that nothing on your site contradicts itself.
+We show you what the AI says about you before, and what it says after. You decide what that was worth.
+
+05 — The Price
+
+## $1,250 one time .
+One fee, once. Not a retainer, not a rebuild, not a subscription to a dashboard you will never open.
+The diagnostic is free and takes us about an hour. We ask the AI tools your customers are already using - ChatGPT, Claude, Gemini, Perplexity - what they say about your business, and we send you their answers word for word.
+Sometimes the answers come back fine, and we tell you so. Either way you will know where you stand, and finding out costs you nothing.
+Get the free diagnostic →
+
+---
+
+# The Blast Door | Kerzie AI
+URL: https://kerzie.ai/blast-door
+
+The Blast Door | Kerzie AI
+← KERZIE . AI
+Abstract
+Right now a person with judgment and an AI can spot a problem, build the solution, and get paid for it. That combination has a shelf life, because the labs are building toward systems that spot the problems too, and when that arrives a solution costs roughly the electricity it took to think of it. The opportunity is not a window sliding shut on one schedule. It is a blast door closing from every direction at once, and the last part goes fast. This essay is about the time before it closes: what to build, what to ignore, and why the urgency will only look obvious in the rearview.
+
+In Star Wars, the doors don’t close the way our doors close. On the Millennium Falcon, on the Death Star, on every ship in that universe, a blast door doesn’t slide down like a window, where you can watch the gap shrink and judge your time by it. A blast door closes from every direction at once. The opening is a circle, the circle gets smaller, and the thing about a shrinking circle is that the last part goes fast. One second there’s a hole you could step through. Half a second later there’s nothing, and it’s sealed like it was never open at all.
+That’s the shape of the opportunity I want to tell you about. Not a window. A door, closing from all sides.
+
+## The chainsaw and the hacksaw
+I jumped in early in 2023, back when all of this was chatbots and none of it could act on its own yet, and I made a bet that turned out to be half right. I saw immediately that this was an upskill everyone was going to need. So I built AI training and braced for the rush, because surely people would look at what was coming and say: I’d better learn this. I’d better be first. I’d better get really good at it.
+The chainsaw was free. The hacksaw won anyway.
+The complete opposite happened. People rebelled. They’d heard AI makes mistakes. They’d heard AI was evil, that the robots were going to take over the world. I felt like I was handing people a chainsaw and watching them nod politely, walk back to the limb pile, and pick up their hacksaw. Why people don’t gravitate toward the power of a technology, regardless of the application, confused me then. It still does.
+
+## The argument, stated plainly
+The claim
+Right now, a person with judgment and an AI can spot a problem, build the solution, and get paid for it. That combination has a shelf life, and I believe the shelf life is short.
+
+Held loosely: the number. Held firmly: the direction.
+Maybe less than three years. That number is my belief, not a measurement, and I’ll hold it loosely. The direction is what I’m sure of.
+Walk it backward from where this is going. Today, AI is a tool that solves problems a human brings to it. The human supplies the problem, the context, the taste, the decision to act. That’s the partnership, and it’s the whole basis of my consulting practice and every business I run. But the labs aren’t building toward better tools. They’re building toward systems that spot the problems too. When that arrives, whatever we end up calling it, the economics are brutal and simple: a problem gets identified, solved, and deployed for roughly the cost of the electricity it took to think about it.
+Not out-competed. Out-existed. Nobody has to beat you.
+Now put yourself on the wrong side of that. Say you had an idea. A garage project, a side hustle, a small business built on solving one real problem for real customers. The day AI can originate and solve that problem for the cost of energy, your business doesn’t get out-competed. It gets out-existed. Nobody beat you. The problem you were paid to solve simply stopped being worth money.
+That could eventually happen to almost any business, and what happens after that day is a different essay, one I’m not writing today. This essay is about the time before it. Because between now and then, there is a stretch of time when the partnership still wins. When intelligence is nearly free but direction is still scarce. When a human who knows where it hurts, plus a machine that can build, can create things that neither could alone.
+That stretch is the opening in the blast door, and it is closing from every direction at once.
+
+## Bets placed inside the opening
+I’m not writing this from the sidelines. I run four businesses by myself from a home office in McKinney, Texas, and every one of them is a bet placed inside that opening. A home-repair-by-text service, because homes won’t stop breaking and people will always want the easiest trusted way to get them fixed. An AI hiring engine, because companies will always need to know who they’re actually hiring. A lead-response system for small businesses, because a missed call will always be a missed customer. And the consulting practice, which exists to pull other operators through the same door I went through.
+Homes break. Calls get missed. Hires go wrong. Build there.
+Notice the pattern in those bets: each one sits on something about human behavior that does not change. That’s deliberate, and it’s the filter I’d hand any builder: build on what people will still need and still do, no matter what the machines learn. It’s also the honest hedge, because a business built on durable human behavior has the best odds of mattering on both sides of the door.
+Two, maybe three years of fevered pace. Thirty years of watching it pay.
+Here’s what I’m actually racing for. My family needs me as a provider, and they’re going to need providing for whether I’m here or not. If I build something that outlasts me and gives them stability, that’s the race. Money matters, but Ray Dalio draws a distinction I think about a lot: wealth is one thing, money is another. You cannot spend wealth. You have to sell it to get money, because you can only spend money. Recurring income is the engine that makes money keep arriving. That’s what I’m building, and I’ve taken on real personal risk to build it, because the math of the closing door changes the shape of the work. This doesn’t need my fevered pace for the next ten years. It needs it for the next two, maybe three. Then the benefits play out over the next ten, fifteen, twenty, and I plan to be around for thirty more to watch. Work the burst, then automate myself out of my own businesses. And the beauty of the model is that you don’t set it and forget it. You set it and monitor it. It’s a maintenance program. The hard work is up front.
+
+## Get your board in the water
+So what should a person actually do with this? I keep coming back to something Eric Weinstein told Steven Bartlett on Diary of a CEO in the summer of 2025. Asked what he’d say to the average person about what’s coming, he said: “Get your board in the water and prepare to paddle. Like all get out. The tsunami of a lifetime is coming.” And on what to become, his advice kept landing on the same two words: “Get flexible, get good. Get good on a bunch of different stuff.”
+That’s not a throwaway line. It’s the correct strategy for a closing door, and here’s why. You cannot know in advance exactly where the opening will be narrowest or longest. What you can control is whether you’re in the water when the set comes. Getting good, at AI, at your own domain, at the unglamorous mechanics of shipping something real, is the paddling. Waiting to see how it all shakes out is standing on the beach.
+And if you already have a job, I’ve written about your version of this. The consequence clock says you work at the speed you are checked, not the speed you are capable of. If you’ve crossed the competency line with AI and your company still measures you monthly, you are a second-hand person in an hour-hand building, and your finished work is sitting scheduled for delivery while you do what, exactly? That freed time is the most valuable asset you will ever hold, and the blast door is the deadline on it. Use it to build something you own. Not a hobby. An income source with your name on the deed, however small it starts.
+
+## The part that will cost me some friends in the feed
+There’s a story going around, and I’ve heard it told on television by people I otherwise respect, that the money side of this is easy now. That the AI labs and the funds around them are so hungry for ideas that a person can more or less walk in the door with a plan and walk out with a check. I’ve heard it put almost exactly that way on the podcast circuit, what I’ve started calling the tour of talkers: the same guests rotating through the same shows, agreeing with each other that opportunity has never been more available to the little guy.
+I call bullshit, and I’m allowed to, because I tested it.
+Receipt: real plans, real submissions, real silence.
+I have real businesses with real receipts. Working products, live customers, revenue that arrived this week, business plans built to be read by exactly these people. I’ve started submitting to the doors that actually have addresses, the angel networks and the funds, and I’ll keep submitting. You know what earning the investment community’s attention has gotten me so far? Silence. Not rejection. Rejection would at least mean somebody read it.
+I’m not above asking. That’s why I keep walking into those rooms, and my own operating system is what finds the doors worth knocking on. But let me be precise about what a check would even mean, because this is where the circuit gets it backwards. If a fund wrote one tomorrow for my home-repair business, I wouldn’t call that success. I’d call it a rounding error against what that business is actually building toward. Here’s my real benchmark, and I’ll put it in print: if you live in one of our markets, within two years it will be inconceivable to handle a home repair any other way. A local contractor, on your schedule, arranged entirely by text, paid from your phone. The friction is gone. It is simply too easy. That is the valuation. A check is just fuel.
+I’m not bitter about the silence. I’m reporting it, because somebody has to say the quiet part to the people at home: if your plan requires a stranger’s check to start, your plan is behind the door already. The money finds you after you no longer need it. That was true in every era, and no amount of AI hype has repealed it.
+
+## Two tells, from a guy who has seen this movie
+First tell: the suffix. In 1998 a company was worth whatever its profits said it was worth. In 1999 the same company added dot-com to its name and was suddenly worth fifty times that, with no new profit, no new margin, no new anything. We know how that ended. The same suffix magic is happening right now with dot-AI, and yes, I’m poking myself, because my own shingle hangs at kerzie dot AI. The difference I’d offer is that I’m not asking you to value the name. I’m showing receipts. That’s the line that separates a business from a costume: revenue you can point at versus a suffix you rented.
+A month can be manufactured. A year has to be earned.
+Second tell: monthly income. When someone tells you they make $500,000 a month, ask yourself why they didn’t say $6 million a year. A year is more impressive. A year is also harder to fake, because a year means you survived twelve months of reality. I learned this pattern in the early 1990s in Amway, and I’m not ragging on Amway, I learned real things there about distribution and hustle. But the income was always quoted monthly, because a good month can be manufactured and a good year has to be earned. Thirty years later the manufactured month is back, wearing an AI t-shirt, screenshotted in your feed between the four-prompts-to-riches posts. Same play. Same tell.
+None of that circus changes the real argument. It just means you should run your race without waiting for their permission or their check.
+
+## Two hours and forty minutes
+Let me tell you about the Titanic, because I can’t stop thinking about the timeline.
+The ship told them what was happening two hours before the water did.
+From the moment it struck the iceberg to the moment it went under was roughly two hours and forty minutes. For most of the first two hours, the ship was calm. The band played. Drinks were poured. The first lifeboats were lowered half empty, seats rowing away unfilled, because standing on a warm, lit deck, the urgency wasn’t believable yet. The mathematics of the situation had already been decided, the ship was already sinking, but the experience of the situation said otherwise. Then came the last thirty minutes, when the deck tilted enough that everyone believed at once, and suddenly there were not enough boats, not enough seats, not enough time. The people who perished didn’t lack information. The ship told them what was happening two hours before the water did. What they lacked was the willingness to act while acting was still cheap.
+The door doesn’t announce the last half second. It just closes.
+
+## While the deck still feels level
+That’s the whole essay, really. Not that the world ends. It doesn’t. Something comes after, and thinking clearly about that is work I’ll do in another piece. This one exists to say the simpler, harder thing: the era when an ordinary person plus a nearly-free intelligence can build their own lifeboat is running right now, it is the best innovation opportunity any of us will ever see, and it is closing from every direction at once, at a speed that will look obvious only in the rearview.
+Get across the competency line. Get good, at more than one thing. Get your board in the water. Build something you own, however small, on top of something people will always need. Do it while your work is scheduled for Friday and your evenings are quiet and the deck still feels level.
+Lifeboats get built on warm, level decks or not at all.
+And here’s where I plan to be standing when the door closes. The measure of success I actually want is not a number. It’s a community. People who read these essays, took me up on the setup or the session or the full build, and got through the door while it was open. People who someday say thank you. Thank you for pointing it out. Thank you for making it simple. Thank you for taking the scary out of it. Thank you that the old projects got dusted off, the business grew, and the family is better for it.
+I want a community of winners. That’s what I want. The door is still open. Get your board in the water.
+
+This essay completes a set. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. This one is about the time limit on both.
+Email address Send it to me
+
+---
+
+# The Consequence Clock | Kerzie AI
+URL: https://kerzie.ai/consequence-clock
+
+The Consequence Clock | Kerzie AI
+← KERZIE . AI
+Abstract
+Every business runs on a consequence clock: how long it can be wrong before being wrong costs it money. But people do not run on their own clock. They run on their employer’s, because accountability is a sampling rate, and nothing measures the speed between check-ins. AI is now accelerating individuals far past any organization’s cadence, the rational response inside slow companies is to throttle or hide the speed, and the spread resolves one of three ways: the fast people leave, the company re-clocks, or the parked surplus quietly funds the company’s future competitors.
+
+Here is what everyone believes happens when you get good at AI at work.
+You produce a week of work in a day. It looks like a magic trick, because functionally it is one. People get curious. They gather at your desk and ask how you did it. Your boss notices. Your boss’s boss notices. The credit arrives, then the promotion, because you have just demonstrated the exact thing every company on earth says it wants.
+I believed a version of that. I had spent thirty years leading enterprise sales teams, I had spent the last several rebuilding my working life around AI, and I walked into a corporate role carrying the skill everyone claimed to be starving for.
+Here is what actually happened.
+
+## The message that never got a reply
+At my last corporate job, part of my role was bringing AI know-how into the building. I ran training for a couple of different groups on using AI to do better work faster. It fell flat. Not hostile, not argued with. Flat, the way a stone lands in mud.
+One moment stands out, and the longer I sit with it the more I think it explains the entire state of AI adoption inside large companies.
+My boss’s boss had a weekly flow. He took everything the salespeople entered into our CRM, exported it into a second system, and refined it into the exact format his management was used to seeing. Senior-leader hours, every single week, spent reformatting information that already existed so that it would look the way the people above him expected it to look.
+I figured out his flow. Then I built the alternative and showed him: AI could take the salespeople’s raw input and populate both systems in parallel, with better and more current information than what he was assembling by hand. Not a pitch, not a deck. A working answer to the most repetitive hours of his week. I sent him the whole solution in a Teams message.
+The whole essay is in this message. Everything after it is me learning to read the silence.
+He never replied. Not a no, not a “let’s discuss.” Silence.
+At first I was just surprised. Then, as the days went by, surprise turned into the slower realization that he was not going to respond at all. I remember sitting there thinking: I just handed this man the keys to the kingdom. Why isn’t he excited about this?
+He is not the villain of this story. He is the clock, doing what clocks do.
+It took me a while to understand what I had actually done. That solution did not read to him as a gift. It put a spotlight on his weekly activity, and on the question of why his role was necessary at all. And here is the detail that still gets me: this was the very person who had blessed my entry into the company. My hiring manager needed his approval, and he was the one who said yes to bringing me in to carry a sales territory and do double duty as the AI guy, the person introducing AI into the building. He hired the thing that ended up pointed at his own week.
+I believe that moment is where things turned. I am not saying he hung a target on my back. I am saying that from that point forward, I no longer felt like we were on the same team, and I think the chain of events that eventually removed me from the company started there. The man who approved the AI guy stopped seeing an ally the day the AI guy showed him what AI could do. From that moment I was not a resource. I was counter to his self-preservation.
+Which means the silence was never confusion, and it was never rudeness. It was a system responding exactly as the system is built to respond. It took me a long time to see that, and seeing it is what this essay is about.
+
+## How long can you be wrong?
+The definition
+Every business runs on what I call the consequence clock: how long you can be wrong before being wrong costs you money.
+
+The cleanest way I know to show it is to put two workplaces side by side. In corporate America, if you find something wrong in your business and you bring it to everyone’s attention, at your next quarterly business review two months from now, you might get promoted. In the restaurant business, if you spot something wrong and you do not bring it to someone’s attention this week, you will probably be fired.
+Same species of problem. Opposite consequences. The difference is not the people and it is not the seriousness of the mistake. The difference is how fast being wrong turns into cost, and how visible that cost is when it arrives.
+The hands are not three speeds. They are three visibilities.
+Think about the three hands on a clock face. You can watch the second hand move. The minute hand you only catch by glancing back. The hour hand never looks like it is moving at all, even though it is driven by the same movement as the other two. It moves exactly as relentlessly. It just moves too slowly to see.
+Companies run the same way. A restaurant is a second-hand business: perishable inventory, perishable capacity, no cushion, and you can watch the consequences move. Wrong on Tuesday costs you by Friday. The mid-market runs on the minute hand: a bad call shows up in weeks, and it stings, but the business absorbs it. The enterprise runs on the hour hand: a bad call can sit for a full quarter, sometimes three, before a review surfaces it, and the person who made it may be promoted for spotting it.
+All three hands sit on the same face, driven by the same movement. The hour hand is not standing still. It cannot perceive its own motion, and right now, with the ground moving as fast as it is, that is the most dangerous place to run a business.
+That is the consequence clock at the level of markets and companies, and on its own it is a useful diagnostic. It tells you which industries will feel AI first and why urgency lives where it lives. But it took my own silence story to show me the layer underneath it, and the layer underneath is where the real disruption is happening.
+
+## People do not run on their own clock
+Here is the piece nobody talks about. People do not run on their own consequence clock. They run on their employer’s.
+A company does not experience your work continuously. It samples it. The weekly stand-up. The monthly pipeline review. The quarterly business review. Whatever happens between samples does not exist on the company’s instruments, and I mean that literally: there is no gauge inside an hour-hand company that registers speed between check-ins. It is not that nobody cares. It is that nothing measures.
+The mechanism
+You work at the speed you are checked, not the speed you are capable of.
+
+A capable person inside a minute-hand company drifts to minute-hand pace. Not from laziness. From physics. The sampling rate of their accountability literally cannot register anything faster. And the same blindness the hour hand has about its own motion, it has about its people’s motion. Same clock face, same movement, and the organization only ever reads its own hand.
+I lived both sides of this. Thirty years inside enterprise companies, watching capable people pace themselves to review cycles, myself included. Then an org chart of one, where the only clock left is the customer’s, and the customer samples continuously.
+Receipt. I sat in this room, on the vendor side, for months of meetings.
+Let me tell you what hour-hand time actually looks like from inside a conference room, because I sat in this specific one. At one point in my enterprise years I was handed an initiative to displace a legacy network element out of a customer’s telecom network. This thing was long-standing and tied into every other system they ran, old equipment braided into modern equipment, and it was, practically speaking, not movable. Somehow I was in charge of figuring out how our product and services would displace it anyway.
+I sat in rooms with more than 25 people across both sides, my side and the customer’s, meeting after meeting, meals and flights and hotels. And there was one engineer on the customer side, a guy named Mike, who kept asking the same question in every session. He was never confrontational about it. He just kept asking: what are we going to do about the OSS and BSS side of this? And at some point I understood what he was actually saying. He was saying the initiative was dead, and that 25 people were burning days and travel budgets on something that could not happen.
+So I called him. One on one, no audience. I fed back to him what I understood as a non-technical salesperson and asked, is this what you are saying? He said yes. And I said: then the project is dead. You and I both know it, and we will just play this out politically until everyone else recognizes it. That is exactly what we did. I think he and I respected each other more after that call than before it. And the initiative played all the way out anyway, room after room, because on hour-hand time, a dead project does not stop when it dies. It stops when the review cycle finally notices the body. Two people in that building knew the truth on a Tuesday, and the clock made everyone wait months to say it out loud.
+
+## Why slowing down is the rational move
+The standard story says workers who refuse to adopt AI get left behind. My contention is sharper and, I think, better supported: the worker who does adopt it, inside the wrong company, gets nothing for it, and often gets worse than nothing.
+Run the payoffs honestly.
+First, there is no upside. Finish in two hours what the cadence expects in two weeks, and your surplus is invisible until the next sample. There is no mid-cycle promotion. The traditional reward for finishing early is more work at the same pay, which is not a return on speed. It is a tax on it.
+Same code, two labels, two verdicts. The label did the judging.
+Second, there is real downside. Visible speed re-prices everyone else’s normal. The fast worker is not read as an asset. They are read as an accusation. A study published by Harvard Business Review in 2025 found that engineers who disclosed they had used AI were rated meaningfully less competent by reviewers, for identical work. Let that one sit: the same code, judged worse, because the reviewer knew a machine helped. The disclosure itself was the penalty.
+Third, none of this is new. AI just raised the stakes. Industrial sociologists documented the same dynamic a century ago: work groups enforcing informal production quotas and punishing the members who exceeded them. The factory floor had a name for the person who worked too fast, and it was not a compliment. AI did not create the machinery that sanctions speed. It handed one worker a 10x lever inside a system that was already built to sanction 1.2x.
+So the capable person inside the hour-hand company faces a rational choice, and the rational choice is to throttle. Researchers keep finding exactly that, at scale. Ethan Mollick has been documenting what he calls secret cyborgs since 2023: a majority of AI users at work concealing it, at least some of the time. An Ivanti survey in 2025 found 30% of the workers hiding their AI use were doing it out of fear for their own jobs. A 2025 MIT analysis of what it called the shadow AI economy found personal AI accounts in use for work at over 90% of the companies studied, almost all of it invisible to corporate measurement. And a Danish study of AI adoption found the productivity gains largely did not reach the workers’ pay, which tells you who the surplus was for and why hiding it is not irrational.
+The tragedy of enterprise AI is not that the tools do not work. It is that the clock never asked for the speed, so the speed gets parked.
+That explains flat enterprise AI returns better than any critique of the models does. One line from a ServiceNow executive, quoted in MIT Sloan Management Review Middle East this summer, compresses the whole situation: “The people holding the measuring stick are relaxed. The people being measured are anxious.”
+
+## The antibodies
+There is a name for the hostile part of this, and I want to credit it properly before I extend it.
+Salim Ismail has spent years describing what he calls the corporate immune system: point any disruptive initiative at the core of a large organization, and the antibodies mobilize to kill it. He is describing what happens to projects, and he is right about projects. I watched it from the inside for thirty years.
+What I am describing is what those same antibodies do to a person.
+The fast worker makes the sampling gap visible. Every early deliverable is a small public statement that the expected pace was never the possible pace, and everyone whose normal was priced at the expected pace has an interest in that statement being wrong. So the colleagues do to the second-hand worker what Salim’s antibodies do to the disruptive project. Not a memo, nothing official. A cooling. An exclusion. A reputation for being difficult that nobody can quite source.
+And the immune response runs in the other direction too, which is the part I find genuinely strange to live through: a 2026 survey of knowledge workers found 44% of Gen Z admitting they actively sabotage their company’s AI strategy so the tools cannot replace them. The organization attacks the fast worker. The worker attacks the fast tool. Same antibodies, two directions, and both are the system defending its clock.
+And none of this needed AI to exist. A friend of mine, an attorney older than I am, tells a story from his early working life, somewhere back in the 1960s, when he worked the floor of a recruiting firm. He was a New York guy on that floor, and his New York pace meant he simply worked faster and produced more than the people around him. His fellow employees raised a stink about him. They went to management and complained, and the complaint, at the end of the day, was this: he is making us all look bad. Sixty years ago, no AI in sight, and the antibodies already knew their job. The only thing that has changed since is the size of the gap a fast worker can open, which means the only thing that has changed is how much there is to punish.
+
+## Done Tuesday, delivered Friday
+Now play out what the capable person actually does, because they do not usually quit on the spot and they do not usually pick a fight. They adapt, and the adaptation is almost elegant.
+Say they finish Friday’s deliverable on Tuesday morning. They are not handing it in three days early. Early does not get rewarded, early gets you more work at the same pay, and early makes the people around you look slow, which gets you noticed in exactly the way you do not want.
+9:04 AM, not 9:00. Precision is part of the camouflage.
+So they do the rational thing. They schedule it. The finished work sits in a queue with a send time of Friday, 9:04 AM. The company receives its deliverable precisely on time and is delighted with the punctuality. Wednesday and Thursday now belong to the worker.
+I want to be clear that I am not coaching anyone to do this. I am telling you it is already happening, quietly and at scale, because every incentive in the building points at it. And I am telling you what it means, because the meaning is bigger than the trick:
+The clock is satisfied by the timestamp, not the work. The company is no longer managing a worker. It is managing the worker’s scheduler.
+Its instruments cannot tell the difference, and an instrument that cannot tell a live employee from a queued email was never measuring work in the first place. The cadence was always theater. The scheduler just agreed to perform in it.
+
+## Something has to give
+Capability is now accelerating on the person’s side of the equation while cadence stands still on the organization’s side. That spread does not hold. It resolves, and I can only see three ways it resolves, all of which are already visible if you know what to look for.
+One: the fast people leave the clock. Second-hand people migrate to second-hand environments: solo operations, small teams, companies too young to have a cadence. The most capable AI adopters do not fight the immune system, they walk, and the hour-hand company experiences the AI era first as an attrition pattern it cannot explain. Exit interviews will say compensation or growth. The truth will be that the building’s clock could not price what they had become.
+Two: the company re-clocks. Shorten the loop between finished work and someone who can act on it. Shipped-work ledgers instead of status meetings. Weekly demos instead of quarterly reviews. Receipts instead of narratives. I believe this works, and I believe almost nobody will do it, because the sampling cadence is not a policy inside these companies. It is a payroll. It is the middle layer whose function is to collect, reformat, and relay, and asking an hour-hand company to sample weekly is asking a whole job family to explain itself. My Teams message went to a man whose weekly flow was the sampling apparatus, the same man who had approved bringing an AI guy into the building in the first place. Of course the answer was silence. I was not offering him a tool. I was offering to unemploy the clock, and the clock has employees.
+Three: the surplus gets parked. This is the default, and it is what the shadow AI numbers are actually measuring. The worker keeps the gains private and spends them on themselves: a side project, an early Friday, a second income assembled quietly in the gap between done and delivered. The company continues paying for AI licenses whose output it never receives. The surplus does not disappear. It stops being the company’s.
+The slack between done and delivered is the seed round nobody reports.
+And here is why the third resolution does not hold either. A person quietly running their own operation inside the slack of a paycheck is not an employee with a hobby. They are a founder in incubation. The three days that scheduler bought them is exactly the runway their first customer gets built on.
+The slow company is not merely failing to collect the speed it paid for. It is funding the formation of its own competitors.
+
+## The two readings
+If you run a company, the question this essay leaves you with is not whether to buy more AI. It is this: what is the shortest interval at which anyone on your team must show finished work to someone who can act on it? Not the strategy deck’s answer. The real one. That interval is your clock, your people are already set to it, and no tool purchase changes it. If you want second-hand output, you do not buy second-hand software. You re-clock the accountability, and you give air cover to the fast ones, because your culture will attack them long before your dashboard notices them.
+If you work for a company and AI has quietly made you faster than the building, then you are holding an asset your employer’s clock cannot price, and you have three doors. Hide it, which is rational and corrosive and temporary. Spend it on your own thing inside the slack, which is the incubation path, and be honest with yourself that it is one. Or move to where the clock matches your hands.
+
+## What I believe happens next
+I believe this plays out in an uncomfortable way, and I believe the discomfort arrives through the job titles.
+The computer did this to job titles once already. Nobody remembers voting on it.
+Take the most optimistic case on jobs. Say the total number of jobs in this country three years from now is exactly what it is today, not one fewer. You still have a reckoning coming, because the titles are going to change underneath the headcount. Office administrator goes away. Something like AI orchestrator for the accounting department takes its place, and I do not mean that as a metaphor. I think that is close to the actual title. The new titles, nearly all of them, will carry the second-hand skill as a requirement, the way titles once quietly absorbed the computer and then the spreadsheet and then the inbox.
+And that, I believe, is the pressure that finally moves the clocks. Not enlightened management, not a consulting engagement, not the software budget. Grassroots pressure from inside, as the roles themselves turn over and the people filling the new titles are, by definition, the fast ones. An hour-hand company staffed with second-hand titles cannot keep sampling quarterly forever. The clock will be re-set from below, one job description at a time, and the companies that fight it will experience the fight as the attrition pattern I described above.
+The person who eventually gets the reply to my unanswered Teams message will not be me, and it will not be a consultant. It will be whoever holds the title that replaces that weekly flow. The question every company gets to answer is only whether that person is on their payroll or on a competitor’s cap table.
+Whatever you choose, the principle underneath is the one I took thirty years to learn and one unanswered Teams message to finally see:
+Never let a building set your clock.
+I write about this because the fix is finally available to a regular person. The technology to run on your own clock is here, it is cheap, and my whole job is making it simple enough to use.
+
+This essay is the companion to The Kerzie Effect , which makes the same argument at the level of firms: what happens to sellers of judgment when the buyer can run the playbook. This one is about what happens inside the building.
+Email address Send it to me
+
+---
+
+# The First Reps Guide (Free) | Kerzie AI
+URL: https://kerzie.ai/free/first-reps
+
+The First Reps Guide (Free) | Kerzie AI
+← KERZIE . AI
+The First Reps Guide · Free
+
+## The model was never the bottleneck . Reps are.
+One page, five real tasks to run this week with the AI subscription you already have. No waitlist, no new model, no theory. Each rep is something from your actual work, with the exact prompt to start it.
+Send me the guide You get the guide instantly plus the Kerzie AI newsletter, one real operator note a week. Unsubscribe any time.
+
+---
+
+# The Voice Command Center (Free) | Kerzie AI
+URL: https://kerzie.ai/free/mobile-capture-kit
+
+The Voice Command Center (Free) | Kerzie AI
+← KERZIE . AI
+The Voice Command Center · Free
+
+## You never have to remember what you were thinking an hour ago .
+A 10-minute phone setup: talk your thoughts into your phone, two taps, and the transcript is waiting for your AI the next time you sit down. Claude, ChatGPT, or Gemini. No new device, no new app, no subscription.
+The first person I gave this to texted me on day one, unprompted: "I absolutely love this new voice memos to Claude so far. Done 4 items and a couple of them while doing other task."
+Send me the Voice Command Center You get it instantly plus the Kerzie AI newsletter, one real operator note a week. Unsubscribe any time.
+
+---
+
+# The Kerzie Effect | Kerzie AI
+URL: https://kerzie.ai/kerzie-effect
+
+The Kerzie Effect | Kerzie AI
+← KERZIE . AI
+Abstract
+Once a buyer has the seller’s scope of work and the buyer’s own context, an AI can synthesize, and now execute, what used to require paying for the seller’s time. Named here, walked through its two phases, demonstrated across three industries at real prices, and bounded by the places it does not reach. The mechanism cuts both ways. It strands anyone whose product is synthesis, and it elevates whoever inside a company picks it up first.
+
+Here’s what nobody in professional services is saying out loud yet.
+For as long as there have been experts, there have been buyers who couldn’t do what the expert did. That gap, between what you know and what I know, is the entire business model of professional services, training, and a good chunk of software. You pay for the gap to be closed. Someone packages their know-how, hands you the result, and the transaction is over.
+I think that gap is closing for free, and almost nobody selling into it has noticed yet.
+
+## Where I saw it
+I was writing a proposal for a client engagement. Standard shape: assess where their people are, build a plan to get them where they need to be, deliver it in steps. I’ve written a hundred proposals like it, and so has everyone in professional services.
+Then it hit me. The proposal itself is a scope of work. A scope of work is a measurable, step by step outline of exactly what I’m going to do. And once someone has that outline, plus everything they already know about their own business that I don’t, they don’t need me to execute it. They need an AI that can read the outline and their own context, and go.
+Receipt. I ran the buyer side of this on myself: I needed two of the six sessions, and never paid for the course.
+I’m not describing a hypothetical. I’ve done the buyer side of this myself. I’ve sat through free webinars where someone selling a paid course laid out the six sessions they’d walk me through. I took that same outline, the one they were using to sell me, and asked Claude to build me the self-run version. I only needed two of the six sessions. I never paid for the course.
+That’s the whole mechanism, and it needs a name.
+The definition
+The Kerzie effect: once a buyer has the seller’s scope of work and the buyer’s own context, an AI can synthesize, and now execute, what used to require paying for the seller’s time.
+
+## Why now
+I want to be precise about what actually changed, because it isn’t what most people assume.
+The capability behind this didn’t arrive in the last few weeks. Reasoning across files, calling tools, executing multi-step work, that’s been building for a while now. What changed recently is narrower, and more consequential: the interface got simple enough that someone who isn’t technical can drive that capability alone, from one place, without bouncing between a terminal and three different tools and a stack of open tabs.
+I’ve watched this happen with my own hands. Even something as ordinary as a browser extension, no API key, no setup beyond installing it, now does a genuinely massive amount of real work from one window. Diagnose the problem, build the fix, run it, watch it work. A year ago, doing that same thing required someone technical enough to stitch several disconnected tools together themselves. That’s a different population of people who can do it now, and it isn’t because they got smarter. It’s because the tool did the work of getting simpler.
+That’s an old pattern wearing a new coat. Mainframes existed for decades before a computer simple enough to sit on a desk put that same computation in reach of someone with no engineering background. Mobile computing existed for years before an interface, not a new capability, triggered the shift to everyone carrying a computer in their pocket. Capability tends to arrive quietly. Adoption tracks the interface.
+That’s why I’m writing this now instead of a year from now, and why I don’t think I’m a year late either. The line a business owner has to cross to trigger the Kerzie effect didn’t move because people got more capable. It moved because the interface got out of the way.
+Worth noting who that puts in play. It isn’t only owners. Anyone inside a company who understands their own operation well enough to describe it can now cross the same line, without a technical background and without asking anyone’s permission. Hold onto that, because it changes who this essay is actually about, and I come back to it at the end.
+
+## The two phases
+Before the flow, one thing worth naming, because it explains why this lands as hard as it does. Think about every proposal that got read and never signed. Not the ones where the buyer thought the seller was wrong, and not the ones where they were too busy. The ordinary ones, that sat.
+The price was never what stopped them. The unanswered question was.
+They didn’t sign because of the question mark still hanging there when they got to the last page: is this going to return more than it costs me? Nobody could answer that. Not even the person who wrote it, and it was that person’s job to make it sound like the answer was yes. Run it the other way and you can see it plainly. If that same proposal came with a guarantee attached, sign here and this returns double what it costs, it would have been signed before the meeting ended. The price was never the obstacle. Not knowing was. And what a buyer can do now, for free, in about a minute, is answer that question for themselves before they spend anything.
+It helps to walk through the rest as a flow, because it doesn’t stop where most people would assume it stops.
+Phase one: the buyer harvests the free proposal.
+A small business owner needs help getting found on Google. She calls three marketing agencies and asks each one for a proposal, which is completely normal. Asking a vendor to write up a plan before you pay for anything is how sales in professional services has always worked.
+All three agencies do real work to win her business. Someone audits her listings, checks her review profile, looks at what her competitors are ranking for, and writes up a plan: fix these things, in this order, over sixty days, for this many dollars a month.
+She reads all three. Then she does something that used to be rare and is becoming routine. She takes the best one, the plan that laid out her problem most clearly, and hands it to an AI along with everything she already knows about her own business that no agency could have: her actual customer list, her actual review history, her competitors’ real hours and menus. She asks the AI to execute the plan the agency already wrote for her, for free, as part of trying to win her business.
+She never calls any of the three agencies back. She didn’t need to. The most expensive part of what they were selling, the diagnosis, the plan, the part that used to require paying someone to synthesize, was handed to her for free the moment she asked for a quote.
+Phase one does not announce itself. It arrives as a trimmed retainer, not a canceled contract.
+If she sounds hypothetical, the agency world’s own numbers say she isn’t. Focus Digital’s 2026 agency churn report found 60 percent of marketing leaders already spending less on agencies because of AI, and the dominant pattern isn’t canceled contracts. It’s trimmed retainers, twenty-five thousand a month quietly becoming fifteen. Phase one doesn’t announce itself. It shows up as clients needing less of you.
+Phase two: the buyer stops asking for the proposal at all.
+This is the part that’s easy to miss, and it’s the more important one. Phase one still needed a real professional services business somewhere, even if only to get harvested for a free plan. Phase two doesn’t need one to exist at all.
+Once a buyer has done what she just did, she’s learned something more valuable than the plan itself: she’s learned that a plan like that can be generated, not just executed. Next time she needs something like this, she doesn’t call three agencies. She sits down with an AI, describes her business the way she would to a salesperson, and asks it to build her the plan directly. There’s no agency anywhere in this version, not even for a free consultation. The AI is the vendor, the discovery call, and the execution, all in one sitting.
+Phase two is the harder claim: the buyer stops needing anyone to tell them what the work is.
+That’s the actual end state of the Kerzie effect, and it’s a different claim than “AI does the work cheaper.” It’s that the buyer stops needing a third party to tell them what needs doing in the first place, which was always the harder, more valuable half of what professional services actually sold. Writing a good scope of work was never the easy part. Once a buyer can generate one for themselves, the entire “come talk to us and we’ll tell you what you need” front door of the business closes, whether or not anyone ever executes anything for them.
+
+## This isn’t new. It’s just fast now
+Every version of this has happened before, and every time, it followed the same shape.
+Travel agents sold the synthesis of airline schedules, fares, and your preferences. Search engines did that synthesis for free, and travel agents mostly disappeared.
+Full-service stockbrokers sold the synthesis of market knowledge and your goals. Discount brokerages, then robo-advisors, did that synthesis cheaper, and the full-service model shrank to the clients who wanted something else, a relationship, a hand to hold in a crash.
+Simple tax preparation sold the synthesis of tax code and your numbers. Software did that synthesis for forty dollars, and an entire tier of tax preparers went with it.
+Encyclopedia salesmen sold codified knowledge itself. It became free, and so did they.
+Every one of those took years, because someone had to build a dedicated product aimed at one industry. Expedia took years to build. E-Trade took years to build. Nobody has to build anything this time. The tool that does the synthesizing already exists, it’s general purpose, and it’s sitting in a browser tab. It doesn’t need funding, a founding team, or five years of runway to come for your industry. It’s already here, waiting for a buyer to point it at you.
+
+## What this actually looks like
+I went looking for a real company’s private proposal to use as the proof here, and I want to tell you honestly what I found instead, because it’s its own piece of evidence.
+I read the public “our process” pages of several real coaching and consulting firms in the trades and in dental practice management. Every one of them names phases and says nothing underneath them. Assessment, planning, implementation, accountability. Systematic, efficient, proven. That is not an accident and it is not bad marketing. It’s sellers already protecting the part of the business that’s actually worth money, whether or not anyone there has ever thought about it in those terms. The real, detailed, executable version of that document doesn’t get published. It gets sent, privately, to one qualified prospect who already picked up the phone.
+I can’t get a copy of that private document without breaking the same rule this piece is built on: no invented receipts. So here are three composites instead, built honestly from how these engagements actually run and what they actually cost, not copied from any single real company. Three disparate industries, on purpose, so this doesn’t read as one lucky example. And I priced each one against real published benchmarks for that kind of work, because a scope of work without a dollar figure next to it is just a description. The dollar figure is what makes it a proposal.
+Notice something else these three have in common before you read them: none of them is “strategy.” All three are the unglamorous, specific, recurring fix that most professional services businesses actually sell. That’s deliberate. The Kerzie effect doesn’t need to touch the expensive, prestigious work to matter. It just needs to touch the invoicing process, the front desk script, the weekly schedule template, the stuff that’s actually most of the revenue. And it literally is most of the revenue: by Source Global Research’s 2024 count, strategy work is about $57 billion of the $263 billion global consulting market. The other 80 percent is this.
+Case I · HVAC and plumbing
+
+## The accounts receivable and invoicing fix
+
+Trades businesses routinely carry tens of thousands of dollars in aging receivables because invoicing is manual, payment terms are inconsistent, and nobody follows up in a structured way. Outsourced AR management for a small business runs roughly twelve to thirty thousand dollars a year. A bounded, one-time process fix, not an ongoing service, prices below that: call it $9,500, one time, over a 90 day engagement . The private version of that proposal looks like this:
+Scope of work
+
+- Week 1: pull the 90 day AR aging report. Diagnose: no standard invoice terms, no card on file, no follow-up cadence past a single mailed statement.
+
+- Week 2: set new terms, net 15 residential with a 2 percent discount for paying within 5 days, net 30 commercial. Build a three-stage automated follow-up cadence, days 5, 20, and 35 past due.
+
+- Weeks 3 to 4: add a card-on-file request at time of estimate signing, and train front office staff on the script that asks for it without it feeling like a credit check.
+
+I gave an AI that outline and one sentence of context: an 8 technician plumbing company carrying $180,000 in receivables over 60 days past due, no online payment option today. It didn’t jump straight to deliverables. It came back the way a real operator would, with a plan first:
+AI output, verbatim
+Here’s what I’d set up based on this scope of work and your numbers:
+• New terms: net 15 residential with a 2 percent discount for paying within 5 days, net 30 commercial.
+• A three-stage follow-up cadence at 5, 20, and 35 days past due.
+• A card-on-file request added at the point of estimate signing, worded so it doesn’t feel like a credit check.
+Want me to write the actual invoice language, the follow-up messages, and the request script?
+
+I said yes. In about a minute:
+AI output, verbatim
+• Invoice line: “Due within 15 days. Pay in one click: [link]. Pay within 5 days and take 2 percent off.”
+• Day 20 follow-up: “Hi [name], just a reminder that invoice #[number] for $[amount] was due on [date]. Pay instantly here: [link]. Let us know if anything’s holding this up.”
+• Day 35 follow-up, phone script for office staff: “Hi [name], I’m calling about invoice #[number], now over a month past due. We want to keep the work moving for you. Can we get this resolved today, in full or with a payment plan?”
+• Card-on-file request at signing: “Before we get started, we ask everyone to keep a card on file, it’s just for anything you approve, and it’s how we keep our prices as low as they are. Would you like to use the card ending in [xxxx], or a different one?”
+
+Everything above is a real transcript from that session. Now connect the same AI to the business’s systems, which is exactly what the one-window setups do, and the response ends with one more line:
+AI output, verbatim
+“I have API and browser access to your ServiceTitan account and your QuickBooks Payments setup. Want me to load these terms and the follow-up cadence in now, or schedule it to go live at the start of next month?”
+
+The claim, first of three. Not a recommendation. An offer to go execute, inside the buyer’s own systems.
+A printed proposal could never do that last part. This is the magic moment. This is the Kerzie effect. Not the scripts. Not even the plan. The moment an AI stops recommending what a professional services firm would have recommended and asks permission to go do it, inside the business’s own systems, right now.
+Case II · Dental
+
+## The front office and hygiene upskilling playbook
+
+Comprehensive dental practice consulting is typically custom quoted, with entry level retainers starting around $395 a month for basic support and full engagements running well beyond that once real training is involved. A bounded, one-time upskilling project, not an open-ended coaching retainer: call it $6,800, one time, over 4 weeks, including one on-site training day . The private version looks like this:
+Scope of work
+
+- Week 1: shadow the front desk and hygiene team for two days. Find where recall calls and treatment case presentations actually break down.
+
+- Week 2: build a recall script with objection handling, a chair hour production target against the practice’s own fee schedule, and a hand-off script between the dentist and the treatment coordinator.
+
+- Week 3: run a half day, in person training session, role playing the new scripts with the team.
+
+- Week 4: a 30 day follow-up call comparing recall and case acceptance numbers to baseline.
+
+Same test. I described a single doctor practice, weak recall follow-through, about $180 an hour in hygiene production, no hand-off process today. Same shape of answer, a plan before a deliverable:
+AI output, verbatim
+Here’s what I’d build from this scope of work:
+• A recall script with responses to the three objections you’ll hear most: cost, time, and “I’ll call back.”
+• A chair hour target calculated against your actual fee schedule.
+• A hand-off sequence so the dentist delivers the finding and the coordinator handles cost and scheduling, so neither of them has to sell.
+Want the scripts written out?
+
+I said yes:
+AI output, verbatim
+• Recall call: “Hi [patient], this is [name] calling from Dr. [name]’s office. You’re due for your six month cleaning, and we have an opening [day] at [time]. Does that work for you?”
+• If cost comes up: “Cleanings are covered at 100 percent under most plans, and skipping this is usually what leads to the bigger, more expensive problem down the road. Would [alternate time] work better?”
+• If they say they’ll call back: “Of course. Let me hold [day/time] so it doesn’t get taken. You can always call to move it if something comes up.”
+• Hand-off script: Dentist says, “[Patient], I found [finding]. I’m going to have [coordinator name] walk you through the details and the options so this works with your schedule.” Coordinator then presents cost and timeline without restating or re-selling the clinical case.
+
+Real output again. Connect it to the practice’s systems and it ends the same way:
+AI output, verbatim
+“I have API and browser access to your Dentrix system, including the recall list and the scheduling calendar. Want me to load this into the recall workflow now, or schedule the rollout for your next team meeting?”
+
+Second industry. Same moment, in a practice management system instead of an invoicing platform.
+A printed proposal could never do that last part either. This is the magic moment again. Same shift, different industry: not a recommendation about what the practice should do, but a live offer to go do it, inside the system the practice already runs on, today or on a schedule the owner picks.
+Case III · Restaurants
+
+## The prime cost and scheduling fix
+
+Restaurant consulting typically runs $150 to $350 an hour, and operators commonly recover the fee within months through cost savings alone. A focused, 4 week prime cost engagement: call it $11,000 flat , roughly the middle of that hourly range across the actual hours the work takes. The private version looks like this:
+Scope of work
+
+- Week 1: pull 90 days of POS and payroll data. Calculate current prime cost, food cost plus labor cost as a share of revenue, against the healthy target of 55 to 60 percent.
+
+- Week 2: rebuild the weekly schedule against forecasted sales by daypart instead of fixed shifts, cutting overstaffed slow periods.
+
+- Week 3: re-cost the two or three highest food cost menu items without changing the menu price.
+
+- Week 4: build a weekly prime cost dashboard managers fill in every Monday, red, yellow, green against target.
+
+I described a 120 seat casual restaurant doing $2.1 million a year, prime cost currently running 68 percent, targeting 58. Same pattern, the plan first:
+AI output, verbatim
+Here’s what I’d do with your numbers:
+• Rebuild the weekly schedule around your actual ticket volume by daypart instead of fixed shifts.
+• Re-cost your two or three highest food cost items without touching the menu price.
+• Set up a weekly dashboard so you can see prime cost drift before it becomes a real problem.
+Want me to build the actual schedule, the recipe costing, and the dashboard?
+
+I said yes:
+AI output, verbatim
+• Schedule fix: “Rebuild Tuesday through Thursday dinner from 4 line cooks and 2 servers per hour of service to 3 line cooks, with a 4th who clocks in only once ticket volume crosses 15 covers an hour, based on your last 90 days of POS timestamps. Saves approximately 9 labor hours a week across your three slowest dinner shifts.”
+• Menu re-cost: “Your chicken parm currently plates at $4.80 against a $16 price, a 30 percent food cost. Cutting the chicken portion from 8 ounces to 6 and switching the side from hand-cut fries to a par-baked wedge cut drops plate cost to $3.65 with no menu price change, moving that single item to 23 percent food cost.”
+• Weekly dashboard: a simple table, Week, Food Cost Percent, Labor Cost Percent, Prime Cost Percent, Target, Variance, color coded against target.
+
+And with the restaurant’s systems connected:
+AI output, verbatim
+“I have API and browser access to your Toast POS and your 7shifts account. Want me to update the recipe costing and rebuild next week’s schedule now, or schedule it to start Monday?”
+
+Third industry. The mechanism is not industry-specific, which is the whole point of running it three times.
+Same as the other two, a printed proposal stops right before that last line. Third industry, same magic moment. Trades, healthcare, hospitality, it doesn’t matter. Once someone has crossed the competency line and is working from one window, this is what happens next every time: not a recommendation, an offer to execute.
+None of those took a week to produce, and none of them needed anyone with a badge, a car, or a billable hour. They needed the outline, a few sentences of real context, one word of approval, and about a minute. And notice what the context actually was in each case: the receivables number, the hygiene production rate, the prime cost percentage. That’s not consultant knowledge. That’s knowledge somebody inside the business already has in their head.
+I want to be direct about what this does and doesn’t prove. It doesn’t prove any specific company is exposed, because I didn’t use any specific company’s real document or real price list. What it proves is that the mechanism isn’t theoretical: give an AI a realistically detailed, realistically priced scope of work and a business’s own numbers, and it produces something a business owner could act on immediately, not a watered down approximation.
+And you don’t have to take my word on the quality. When Harvard Business School and BCG ran a field experiment with 758 of BCG’s own consultants, the ones using AI on tasks within its reach finished about 25 percent faster with roughly 40 percent higher quality. The same study found the opposite on tasks beyond its reach: those consultants did worse, by 19 percentage points. The competency line I keep talking about is not a metaphor. It’s measurable, and it cuts in both directions.
+Most people put the line far to the right of where it actually sits. It is closer to you than you think, and it keeps moving your way.
+I’ve been saying “the line” for several thousand words now without telling you where it is, so let me fix that, because I think almost everyone puts it in the wrong place. Picture AI competency as a continuum. On the far left is the person who says “I’m using AI,” and what they mean is they type a question into a chatbot and read the answer. On the far right is a fully AI-operated company, autonomous systems running the business end to end. The line you have to cross to do everything I just demonstrated sits much further left than most people assume. It is past the chatbot, and it is nowhere near the far end. And it keeps moving toward you, because the tools keep getting simpler.
+That matters for how you read the rest of this. If you had the line pictured way out at the right edge, you probably concluded this doesn’t apply to you for a few more years. It does. You are closer to it than you think, and so is the buyer sitting across from you.
+Nobody has to become technical. The line sits well short of that, and it is drifting closer every time an interface gets simpler.
+So say the whole thing as plainly as I can. You start with a quantified business problem. You either send it out and get a proposal back on how to fix it, or you skip that step and diagnose it yourself. Either way, you bring the structure in-house, measure it against your exact environment, your numbers, your systems, your fee schedule, your POS data, and then you execute the work, from the same one window, without ever picking up the phone to hire someone. Recommending what a firm would have recommended is the part everyone already assumes AI can do. Executing it, inside the buyer’s actual invoicing platform or POS or practice management system, is the part that used to require hiring someone. That is the Kerzie effect, and the only thing standing between a buyer and it is having the detailed version of the scope of work in hand, which is exactly the document this industry hands out for free every time someone asks for a quote.
+The seller’s recommendation is shaped by what the seller happens to sell. The AI has no service line to protect.
+There’s a fair objection to all of this that I should answer before going further: why would a buyer trust what the AI hands back? They can’t verify it either. That’s true, and here’s why it still comes out ahead. Every recommendation a seller makes is shaped by what that seller happens to offer. Not dishonestly, usually not even consciously, but a firm that sells training programs finds training problems, and a firm that sells software finds software problems. I have done this myself, for thirty years, and I’d be lying if I said otherwise. The AI has no service line to protect. It has no quota, no utilization target, and nothing to upsell you in the spring. That doesn’t make it right. It makes it disinterested, which is a different and rarer thing, and it means the options it lays out are the options, not the options that happen to be for sale.
+So don’t pay for a playbook. And don’t pay for somebody else’s judgment either. Get the playbook, which they will hand you for free, run it against your own numbers, and then apply the one thing that was always yours: your judgment about your own business.
+
+## It doesn’t stay inside professional services
+Once you see the mechanism, you stop seeing it as a consulting problem.
+It does not stop at consulting. Most software is a license on somebody else’s workflow, and you use 20 percent of it.
+Most software is a license to use somebody else’s codified workflow, and most people use a small slice of what they pay for. Everybody who has ever opened Excel or QuickBooks knows they’re using maybe 20 percent of the product. That slice, the part you actually use, is exactly the size of thing an AI can now build you directly, tuned to your business, without a license.
+I’m not the first to notice the pressure on software licensing. Wall Street has already given it a nickname this year, the “SaaSpocalypse.” But that story is about companies needing fewer seats because agents do the work. Mine is more uncomfortable: a business owner who has crossed the AI literacy line doesn’t need the license at all, the same way I didn’t need the course once I had the outline.
+
+## The physical layer is a floor, not a moat
+Everyone who reads this far finds the same escape hatch, and I want to close it, because I think it’s the most misread part of this whole thing.
+The hatch goes: fine, but somebody still has to show up. Somebody still has to own the warehouse, drive the truck, climb the ladder, and put their hands on the equipment. No model in a browser tab is doing that. All true. And it protects far less than the people relying on it think.
+Picture a large services organization that handles inventory, delivery, and installation for a national carrier. Real warehouses. Real trucks. Certified technicians in real buildings. Nothing about the Kerzie effect touches any of that directly, and I don’t expect it to any time soon.
+But look at what the invoice is actually for. Physical work almost never gets sold by itself. It arrives wrapped in the knowledge work around it: the design, the configuration, the staging plan, the sequencing, the project management, the integration, the documentation, the engineers who decide what goes where and in what order and why. All of it priced together as one number, and most of the margin living in the wrapper, not the truck.
+That last part isn’t a hunch. The public companies in this business report it every quarter. Insight Enterprises did about $8.7 billion in net sales in 2024, and product was 81 percent of it against 19 percent for services. That 19 percent produced 57 percent of the company’s gross profit. The small number is where the money is. ePlus shows the same shape more plainly, because they break the two out: product gross margin around 23 percent, professional services at 39.5 percent.
+And there’s a sharper test sitting inside ePlus’s own numbers. In August 2024 they bought a company that does precisely the physical layer I’ve been describing, logistics, configuration, cabling, and installation across large store and branch footprints. Their professional services revenue jumped 48 percent, which they attribute mainly to that acquisition. In the same year, their professional services gross margin fell from 44.1 percent to 39.5 percent. I’m not going to claim one number caused the other, because they didn’t say that. I’ll just point out that the year a services business absorbed a large hands-on deployment operation is the year its services margin dropped by more than four points, and ask you to sit with why that would be.
+The physical layer is not eliminated. It is stranded: the margin separates from the labor.
+So the Kerzie effect doesn’t come for the physical work. It comes for the wrapper. When the buyer’s own AI can do the design and the sequencing and the configuration, using the buyer’s own network data, which the vendor never had in the first place, the buyer doesn’t fire the vendor. Firing the vendor was never the move. The buyer unbundles. The call sounds like this: just house it, deliver it, and install it. We’ll take it from there.
+Say it plainly, because this is the part that gets missed: the Kerzie effect doesn’t eliminate physical work. It strands it. It separates the high-margin knowledge layer from the low-margin physical layer, and the buyer keeps only the layer they can’t do themselves.
+What’s left is still a real business. It’s just a different business at a different margin, and here’s the part that should worry anyone in it: it’s a business with a completely different competitive set. The day your scope of work is house it, deliver it, install it, you are being priced against every other outfit that owns a warehouse and a truck. The thing that made you hard to replace, knowing what should go where and in what order, isn’t yours anymore. It’s the buyer’s, and they didn’t buy it from anyone. Your relationship, your history, your bench of engineers, none of it shows up on an invoice that only has logistics on it.
+That’s worse than a rate cut, and it’s worse in a specific way. The knowledge layer was what made the relationship sticky in the first place. It’s the reason the buyer called you instead of running a bid. Strip it out and you haven’t just lost the margin on that layer, you’ve lost the reason anyone had to not run a bid.
+The defense is already in this essay, in the limits section below. Physical presence by itself isn’t a moat, but two things sitting next to it are. Risk transfer is real: if the installation carries a service level agreement with actual penalties attached, that’s a product no buyer generates for themselves, because what they’re buying is somewhere for the failure to live. And a genuine physical network is real: certified crews, parts on a shelf within four hours in forty markets, coverage nobody can stand up quickly. Neither of those is synthesis. Neither can be handed over in a proposal.
+So the same test I’d apply anywhere else applies here, it just has to be asked more precisely. Not “can an AI do what we do.” Ask: if my client’s own AI wrote the design and handed it to us finished, what is still on our invoice, and what is it worth? If the honest answer is most of it, you’re in good shape and you should price that part out loud, separately, where the buyer can see it. If the honest answer is the truck, then the truck is your number, and you want to know that now rather than at renewal.
+
+## The honest limits
+Where it stops. A thesis that pretends it has no edges is not a thesis, it is a slogan.
+I want to be direct about where this doesn’t apply, because a thesis that pretends it has no edges isn’t a thesis, it’s a slogan.
+Some third parties exist because the law requires them, not because a buyer chose them. Financial audits, certain certifications, parts of government contracting, need an independent outside party by regulation. The Kerzie effect doesn’t touch that. It was never going to.
+Risk transfer is a real product, separate from labor. If a business builds its own tool and something goes wrong, nobody is holding an insurance policy or an indemnification clause on that outcome. Buying a vendor sometimes means buying somewhere for the risk to live. That’s worth paying for, and AI doesn’t replace it.
+Somebody still has to maintain what gets built. A business that generates its own bespoke replacement for a piece of software has taken on the job of keeping it working when their needs change in a year. That’s not free. It’s just a different kind of cost, paid in attention instead of a subscription.
+And knowledge being free doesn’t create the hours in someone’s day to act on it. A business owner still has to have the time and the internal priority to actually build and run the thing. AI removes the knowledge barrier. It does not touch the calendar.
+And a seller running a real learning loop still owns something. The sharpest version of this objection came from over at OpenExO: the moat is the rate of improvement, not the state of the data on any given day. That is a fair hit and I will concede the mechanism. A scope of work is a snapshot. What a firm actually owns is not the document, it is the rate at which the document gets better, and a buyer holding one proposal cannot capture that.
+Here is why I think the argument still holds. Both things are true at once. The static playbook is finished, which is the effect I named. And a firm that genuinely improves its playbook every quarter has something to sell that no buyer can harvest in an afternoon. The problem is that most professional services firms do not run that loop. Ask yours what their methodology learned in the last ninety days, which engagement taught it, and what changed in the deliverable as a result. A real answer is specific and a little embarrassing, because learning usually starts with something that did not work. A version number on a template is not an answer.
+The improvement rate is a real moat. It is just not a moat most of them have built.
+
+## What’s actually left
+Remove everything the Kerzie effect can’t touch, work that requires a licensed third party by law, work that transfers real financial or legal risk off your books, work that requires physical presence, and judgment on a genuinely new situation that hasn’t happened before, the kind no outline can anticipate because the answer doesn’t exist yet. Take all of that off the table, and the list that’s left is still long.
+One caution on that third one, since I just spent a section on it. Physical presence survives as work. It does not automatically survive as margin, because the money in physical services usually sits in the knowledge wrapped around the work rather than in the work itself. Put physical presence on the safe list if you want, but put it there for the labor, not for the invoice.
+That list is most of what gets sold as expertise: packaged synthesis, a generic training deck, a standard audit, a boilerplate strategy framework, a piece of software that’s mostly workflow templates. All of it is running on the same clock now, whatever industry label it happens to wear.
+That gives you one test, and it works on any business, including mine: is what you’re selling a synthesis of general knowledge and generally available information, or is it something that genuinely can’t be substituted. If it’s the first one, the Kerzie effect is coming for it, on a timeline set by how fast the buyer in front of you gets AI literate, not by how good your relationship with them has been. If it’s the second one, you’re fine, and you should say so plainly, because that’s the part worth charging for.
+
+## The other side of the ledger
+Everything up to here is written from the seller’s chair, because that’s the chair I sit in. But there’s a person in every one of these examples that I’ve been calling “the buyer,” and I want to stop being vague about who that actually is.
+Companies don’t cross competency lines. A specific person inside one does, and that person is already on payroll.
+It isn’t a company. Companies don’t cross competency lines. In each of those three cases, somebody specific sat down with the scope of work and their own numbers and did the thing. In the plumbing company it’s the office manager who already knew where the receivables were buried. In the dental practice it’s the treatment coordinator. Nobody hired anyone. Nobody ran a search. Someone already on payroll picked up a tool that finally got simple enough to use, and work that used to cost $9,500 to buy got done from one window.
+Let me be clear that this next part is my expectation and not something I can source. I don’t think the number of jobs three years from now is the interesting question. The count could hold roughly flat and this would still be one of the larger changes to work I’ve seen, because what shifts isn’t how many jobs there are. It’s what the job is. The titles mostly stay. The skill underneath them turns over.
+The Kerzie effect doesn’t only strand the people who sell expertise. It relocates that expertise, and it relocates it to whoever picks it up first.
+It also isn’t predictable by job title, which took me a while to accept. In a two person business I know well, the person who crossed the line was the owner, because in a shop that small there isn’t anybody else. In a company with a real payroll and a full org chart, it was the controller, who saw it before anyone above him did. Neither one is technical.
+The qualification isn’t a title or a skill. It’s a sentence: I know we should be using AI here, and I don’t know how.
+What they had in common was a sentence I hear constantly now: I know we should be using AI in this business, and I don’t know how. That sentence is the whole qualification. It is somebody who has correctly worked out that their own knowledge is the only thing standing in the way, and who believes, in their gut, that if that one thing changed the business would get better. That belief is doing more work than any credential. If you have ever said that sentence to yourself, you are already most of the way to the line I described earlier, which is a lot closer than you were picturing it.
+And almost nobody will. I want to say that plainly, because it’s the whole reason there’s an opening here at all. Every time an interface gets simple, the capability becomes available to everyone and gets used by a small fraction, and that fraction is disproportionately valuable for a while. I don’t expect a whole company to cross this line. I expect one or two people per department to cross it, and I expect them to end up running things they weren’t running before, because they’re the only ones who can.
+The seat changes: from performing one slice of the work to orchestrating all of it. That seat is harder to cut.
+If you’re the person in your company who can take a scope of work, your own systems, and your own numbers, and produce the thing that used to get purchased, you haven’t automated yourself out of a job. You’ve moved from performing one slice of the work to orchestrating the whole of it, which is a different seat and a much harder one to cut. The competency line isn’t only the thing that decides which vendors survive. Inside a company, it decides which people become load-bearing.
+It’s the same mechanism, read from the other chair. It strands you if what you sell is synthesis. It elevates you if you’re the one who learns to run it. Most of the worry I hear about this comes from people who know they’re in one of those two positions and haven’t worked out which.
+
+## Seller beware, buyer’s advantage
+I used to think the danger in this business was someone building a better version of what I do. The actual danger is simpler. It’s a buyer who was never trying to compete with me at all, who just got tired of paying for something they realized they could build themselves the moment they understood the mechanism.
+The mood on the buying side is already waiting for this. In 2025, HFS Research asked a thousand senior executives across sixteen industries about their consulting relationships, and 65 percent said traditional consulting models no longer deliver value. Those buyers haven’t all found the mechanism yet. They’ve just stopped believing the old model is worth the invoice, and that is exactly the audience the Kerzie effect walks into.
+That’s not a reason to stop writing proposals. You can’t win a client without telling them what you’re going to do for their money. But phase one only works on you because your free proposal is a complete, standalone product now, not a loss leader that costs you an afternoon and wins you a client. If the plan you hand over for free is detailed enough to execute, you’ve already given away the thing you meant to get paid for, whether or not anyone signs.
+So here’s the practical shift. Stop handing over a fully executable scope of work as your sales process. What you give away for free from now on should set the direction, not hand over the finished plan: here’s the shape of your problem, here’s roughly what it will take, here’s what you get if you want the specific plan built around your business. The discovery itself, the actual expensive part, has to become something you charge for directly, even a small amount, before anyone gets a step by step build plan with their name on it.
+That doesn’t stop phase two. Nothing stops phase two, for the buyer who’s already educated enough to skip you entirely. What it protects is phase one: the buyer who would have called you, harvested your free thinking, and walked. Make them pay for the diagnosis before they ever see the plan, and you find out fast which kind of buyer you’re actually talking to.
+I’ve spent the last few weeks watching that line move in real time, in my own business and in the ones I talk to. I’m going to keep writing about where it moves next.
+One closing thought, and it’s the one I’d want if I were reading this instead of writing it. Whether this lands on you as a threat or as an opening comes down to a single question, and it isn’t about your industry or your title. It’s whether you’re on the side of the competency line that gets synthesized, or the side that does the synthesizing. That line is not hard to cross anymore. That’s the entire point of this essay, and it’s the part that cuts both ways.
+Helping people cross it is the business. Making the technology simple enough that you can - that’s the whole job.
+
+If you finished this on the wrong side of the line, I wrote a separate page on what to do about it .
+Follow where the line moves
+I write up what I’m actually seeing, twice a week, Tuesday and Thursday. What I built, what broke, what it cost. If I haven’t done it myself, it doesn’t go in.
+Email address Send it to me
+
+---
+
+# The One-Window Setup | Kerzie AI
+URL: https://kerzie.ai/one-window
+
+The One-Window Setup | Kerzie AI
+← KERZIE . AI
+The One-Window Setup — Your Personal OS
+
+## I talk. The work gets done .
+One window. One AI that actually knows your work - the job, the projects, the side ventures, the commitments. You say what needs to happen. It drafts, tracks, and stages. You approve. Built by one document you paste into Claude; it interviews you and builds your operating system around your answers.
+RUNNING A BUSINESS?
+There is a door built for owners: follow-ups, quotes, the tracker, your marketing. Same product, same price.
+The Small Business Setup →
+
+$99, one time .
+System requirements: a Mac, and a $20 per month Claude subscription. Windows is not supported yet.
+Get the Setup for $99 → Add the Upgrade Pass for $149 →
+
+3
+hours
+from pasting one document to running your business in one window.
+
+2
+new habits
+record what you say, and give it one place to land.
+
+1
+window
+one AI that knows your work and turns talk into finished work.
+
+0
+to-do list
+gone, replaced by a pane your AI keeps current for you.
+
+A countdown does not stop at one. It lands on zero .
+
+80 Seconds, And The Video Is The Demo
+That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
+
+01 — Your 16,000 Words
+Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
+That is a 60 page document, every day, spoken into the air and gone by dinner. The idea you had in the car is in there. The commitment you made in the hallway is in there. The email you meant to send is in there. All of it said out loud, captured by nobody.
+The One-Window Setup exists to catch those words and turn them into finished work. Simpler, not additional.
+
+02 — This Existed In 1965
+In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
+Talk went in. Action came out. That was the whole system. We deleted that layer because it cost a salary, and everybody below the corner office never had it at all.
+That layer is back. This time it costs $99, and everybody gets one.
+
+03 — The Two Habits
+Here is what almost everyone gets wrong about AI: they picture a curriculum. Months of studying, keeping up with model releases, learning which tool does what. That imagined climb is why most people never start.
+The whole learning curve is two habits: record what you say, and give it one place to land.
+Talk to the window at your desk. Talk to your phone between meetings. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your work once, then it knows your projects, your people, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
+And you do not need to wait for a better AI. I run my operation on today's models, and I honestly could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
+
+04 — Why The Product Is A Document
+Most people run AI as a chat window: ask a question, get an answer, lose everything when the thread ends.
+The operators getting real leverage run it as an operating system: one window where the AI reads the state of the work, carries the execution, and remembers.
+Getting from the first mode to the second is a setup problem. Most people never figure the full setup out on their own, or they get 75 percent of the way there and stall.
+This document is the missing piece: a briefing written to your AI, not to you. Your AI reads it and becomes the builder. You answer its questions.
+Four things are on you: install the Claude desktop app, run one command your Mac needs, make a folder, and paste. The document walks you through all four in plain language, including what to do when the one confusing part goes wrong. Everything after that, Claude drives.
+
+05 — What Your AI Builds With You
+In this order, and the order is the point. Nothing gets built before it knows what you actually do.
+
+- An interview about your work first, before a single file gets created. Nothing in your setup is generic.
+
+- The one-folder workspace: everything your AI needs to know, on disk, not lost in a chat thread.
+
+- Your operating manual, written in your words, loaded every session, with the five standing rules that prevent AI disasters.
+
+- A working tracker seeded with what you already told it is falling through the cracks, so it is useful the moment it exists.
+
+- Your accounts connected one at a time, walked through click by click, and verified. Gmail, Calendar, Drive, and your browser.
+
+- One painful thing from your own week, done end to end, before the first sitting is over.
+
+- Three routines proposed and ranked from what you said hurts, and the first one built.
+
+- The Single Pane: every project you run as a tab on one private page - current status, next step, what it's waiting on - reconciled the moment work lands, not at the end of the day.
+
+- Cost-control and model-routing rules, learned the expensive way so you do not have to.
+
+06 — Your To-Do List Goes Away
+However you track your own workload today - paper, a tasks app, a list inside Microsoft or Google, the back of your head - the setup replaces it with something better.
+The Single Pane: one private page where every project you run is a tab. Inside each tab, a table of what is true right now, what happens next, and what it is waiting on. On top, your one next step, and every deadline sorted by date.
+It opens in the panel right next to your working window, in any browser, and on your phone. And it does not go stale like every dashboard you have tried, because your AI refreshes it as part of closing every session. You never update it. You just look at it.
+I am looking at mine right now, in the same window I am writing this from. Three ventures, two outreach campaigns, a job pipeline, a content calendar, a YouTube channel. One glance.
+This is the zero the countdown lands on. Three hours, two habits, one window, zero to-do list.
+
+07 — No New Hardware
+There is a wave of AI gadgets right now that record your voice and hand you summaries: pins, pendants, pocket recorders. Another device, another app, another subscription.
+The capability is already in your hand. And it is better, because it feeds YOUR AI, with your context, not a vendor's summary app.
+This setup uses the Mac you already own and the AI subscription you already pay for. Nothing new to buy, charge, or wear.
+
+08 — The Offer
+This is the simplest true version of everything I write about: one window, technology carrying the load instead of adding to it. The $99 is just the door.
+The One-Window Setup: $99, one time. Instant access after checkout.
+The Upgrade Pass: $149 for six months. Then it ends, on purpose.
+Every upgrade I build for my own OS, packaged and pushed to you: at least one upgrade a month for the full six months. The first four are already built - the Living Pane, the Clean Handoff, the Weekly Tune-Up, and the Nightly Dream - and the stream keeps coming as I keep building.
+This pass is designed to end. If you take the upgrades, by month six you will not need to buy improvements, because you will be making your own. That is not a marketing line; it is the product working. I am not building a payment you forget to cancel. I am walking you across the line where you do not need me.
+The guarantee: the first sitting ends with one real thing from your week done end to end. If it does not, I refund the $99 and you keep the document.
+Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people, and this document is included for every one of them. Take this $99 off the top and the session runs $900. Split across three people and three hours, that is $100 an hour each to have it installed instead of read.
+
+Get the Setup for $99 → Add the Upgrade Pass for $149 →
+
+09 — Straight Answers
+Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt. You will type one command into your Mac, once, copied straight off the page.
+Is this a course? No. It is a working document. About an hour gets the foundation running; the first-week plan inside paces the rest.
+Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Earlier versions of this were written to work with any assistant. That made it worse. Committing to one setup is what lets the document walk you through the real install, the real click paths, and the real place it breaks.
+Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
+Is this real? It is the literal framework my operating system runs on: the same tracker, rules, routines, and capture pipeline that run my ventures every day. Nothing in it is theoretical.
+
+10 — Not Ready? Take The Habit For Free
+Take the Voice Command Center free. Ten minutes of setup, one habit: talk into your phone, and the thought is waiting in your AI the next time you sit down. Works with whatever AI you already use. Fair warning: iPhone only, and the Shortcut setup is fiddly.
+If the habit sticks, you will know exactly what the full window is worth before you spend a dollar.
+
+Get the Voice Command Center free →
+
+---
+
+# The One-Window Setup for Small Business | Kerzie AI
+URL: https://kerzie.ai/one-window/business
+
+The One-Window Setup for Small Business | Kerzie AI
+← KERZIE . AI
+The One-Window Setup — For Small Business
+
+## I talk. The work gets done .
+One window. One AI that actually knows your business - your customers, your jobs, your voice. You say what needs to happen. It drafts, chases, tracks, and stages. You approve.
+$99, one time .
+System requirements: a Mac, and a $20 per month Claude subscription. Windows is not supported yet.
+SETTING IT UP FOR YOURSELF?
+There is a door for running your own work: the job, the projects, the commitments. Same product, same price.
+The Personal Setup →
+
+Get the Setup for $99 → Add the Upgrade Pass for $149 →
+
+3
+hours
+from pasting one document to running your business in one window.
+
+2
+new habits
+record what you say, and give it one place to land.
+
+1
+window
+one AI that knows your customers, your jobs, and your voice.
+
+0
+to-do list
+gone, replaced by a pane your AI keeps current for you.
+
+Put in the three hours yourself for $99, or have them done with you for $999 . Either way the countdown lands on zero .
+
+80 Seconds, And The Video Is The Demo
+That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
+
+01 — Your 16,000 Words
+Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
+That is a 60 page document, every day, spoken into the air and gone by dinner. Your quotes are in there. The follow-up you meant to send is in there. The promise you made a customer in the driveway is in there. All of it said out loud, captured by nobody.
+The One-Window Setup exists to catch those words and turn them into finished work.
+
+02 — This Existed In 1965
+In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
+Talk went in. Action came out. That was the whole system. We deleted that layer because it cost a salary, and everybody below the corner office never had it at all.
+That layer is back. This time it costs $99, and everybody gets one.
+
+03 — The Job After The Job
+You do the work all day. Then you do the second job at night: the quote you meant to send, the lead you meant to answer, the invoice you meant to chase, the post you meant to write.
+The standard answer is more software. Another app, another login, another monthly fee, and none of it talks to each other - so you become the integration, retyping the same customer into three systems.
+This is the opposite move: one window, one AI that knows the whole business, doing the office work with you. Simpler, not additional.
+
+04 — The Two Habits
+Here is what almost everyone gets wrong about AI: they picture a curriculum. Months of studying, keeping up with model releases, learning which tool does what. That imagined climb is why most people never start.
+The whole learning curve is two habits: record what you say, and give it one place to land.
+Talk to the window at your desk. Talk to your phone from the truck. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your business once, then it knows your customers, your prices, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
+And you do not need to wait for a better AI. I run my companies on today's models, and I honestly could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
+
+05 — What The $99 Buys
+Built in the first sittings, from an interview about your actual business. Nothing generic, and nothing goes out to a customer without your yes.
+
+- The Setup Document. One document you paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.
+
+- The Follow-Up Engine. Yesterday's quote chased, last week's lead answered, in your words, staged for one-click send. Nothing reaches a customer without your yes.
+
+- The Tracker. Every open job, lead, and promise, seeded in the first sitting with the things already falling through your cracks.
+
+- The Single Pane. Your whole operation as tabs on one private page: what is true now, what happens next. The AI keeps it current. You just look.
+
+- The Voice Command Center. The pocket half of the habit: talk into your phone from the truck or the airport line, and the thought is waiting in the window, processed, when you sit down.
+
+- The First Sitting. Your accounts connected click by click, and one painful thing from your own week done end to end before it is over.
+If I priced this at what it replaced for me, it would be thousands: this summer I deleted Outlook, Excel, and Notion off my machine because the window had taken over the parts I used. It is $99 because I want the number beneath deciding - less than one lost lead, one no-show, one night of the second job.
+
+06 — This Is How I Run Mine
+I am not selling a theory. This framework runs my own companies every day: a home repair business in two markets, an AI consultancy, a golf training brand, and the content that promotes all of them.
+The morning I drafted this page, I talked while setting up a camera, and by the time I stood up: a product release had shipped and gone live, an email was staged, a live ad campaign got its spending cap set, and the plan for this page was written into the record. I typed almost none of it.
+That is not a demo day. That is Tuesday.
+
+07 — The Offer
+The One-Window Setup: $99, one time. Instant access after checkout.
+The Upgrade Pass: $149 for six months. Then it ends, on purpose.
+Every upgrade I build for my own OS, packaged and pushed to you: at least one upgrade a month for the full six months. The first four are already built - the Living Pane, the Clean Handoff, the Weekly Tune-Up, and the Nightly Dream - and the stream keeps coming as I keep building.
+This pass is designed to end. If you take the upgrades, by month six you will not need to buy improvements, because you will be making your own. That is not a marketing line; it is the product working. I am not building a payment you forget to cancel. I am walking you across the line where you do not need me.
+The guarantee: the first sitting ends with one real thing from your week done end to end. If it does not, I refund the $99 and you keep the document.
+Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people, and this document is included for every one of them.
+
+Get the Setup for $99 → Add the Upgrade Pass for $149 →
+
+08 — Keep What Already Works
+Already run QuickBooks, a scheduling tool, a point of sale? Keep them. This is not another system to migrate into.
+The window sits in front of what you have. It drafts, chases, tracks, and remembers - and you stay the one who approves anything that touches a customer or a dollar.
+No new hardware either. It runs on the Mac you own and the AI subscription that costs less than one lost lead a month.
+
+09 — Straight Answers
+Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt. You will type one command into your Mac, once, copied straight off the page.
+Is this a course? No. It is a working document. About an hour gets the foundation running; the first-week plan inside paces the rest.
+Will it send things to my customers? Not without you. Everything customer-facing is drafted for your review and sent by you. That rule is built into the setup itself.
+Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the document walk you through the real install, the real click paths, and the real place it breaks.
+Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
+
+10 — Not Ready? Take The Habit For Free
+Take the Voice Command Center free. Ten minutes of setup, one habit: talk into your phone, and the thought is waiting in your AI the next time you sit down. Works with whatever AI you already use.
+If the habit sticks, you will know exactly what the full window is worth before you spend a dollar.
+
+Get the Voice Command Center free →
+
+---
+
+# Kerzie AI
+URL: https://kerzie.ai/privacy-policy
+
+Kerzie AI
+
+## Privacy Policy
+Last Updated: January 2, 2026
+
+## Introduction
+Kerzie Consulting LLC, doing business as Kerzie AI ("we," "us," or "our"), respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+By using our services, you consent to the data practices described in this policy.
+
+## Information We Collect
+We may collect the following types of information:
+
+- Personal Information: Name, email address, phone number, and business information you provide when contacting us or scheduling a consultation.
+
+- Communication Data: Records of communications with us, including emails, phone calls, and text messages.
+
+- Usage Data: Information about how you interact with our website, including IP address, browser type, and pages visited.
+
+## SMS/Text Messaging Terms
+By providing your phone number and opting in to receive SMS messages from Kerzie AI, you agree to the following:
+
+- Consent: You consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI) regarding work status updates, appointment reminders, and service-related communications.
+
+- Message Frequency: You may receive up to 5 messages per month. Message frequency may vary based on your interaction with our services.
+
+- Message and Data Rates: Message and data rates may apply. Please contact your mobile carrier for details about your text and data plan.
+
+- Opt-Out: You can opt out of receiving SMS messages at any time by replying STOP to any message. After opting out, you will receive a confirmation message and no further messages will be sent unless you opt in again.
+
+- Help: For assistance, reply HELP to any message or contact us using the information provided below.
+
+- No Sharing of SMS Data: We will not share your phone number or SMS opt-in data with any third parties for marketing purposes. Your information may only be shared with our SMS service providers solely for the purpose of delivering messages to you.
+Summary: By opting in, you agree to receive up to 5 SMS messages per month. Message and data rates may apply. Reply STOP to unsubscribe. Reply HELP for help.
+
+## How We Use Your Information
+We use the information we collect to:
+
+- Provide, operate, and maintain our services
+
+- Communicate with you about our services, including sending work status updates via SMS
+
+- Respond to your inquiries and provide customer support
+
+- Send you appointment reminders and service-related notifications
+
+- Improve our website and services
+
+- Comply with legal obligations
+
+## Information Sharing and Disclosure
+We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
+
+- Service Providers: We may share information with trusted third-party service providers who assist us in operating our business, including SMS delivery providers. These providers are bound by confidentiality agreements.
+
+- Legal Requirements: We may disclose information if required by law, court order, or governmental authority.
+
+- Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.
+
+## Data Security
+We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+
+## Your Rights
+You have the right to:
+
+- Access and receive a copy of your personal information
+
+- Request correction of inaccurate personal information
+
+- Request deletion of your personal information
+
+- Opt out of SMS communications at any time by replying STOP
+
+- Withdraw consent for data processing
+
+## Contact Us
+If you have any questions about this Privacy Policy or our data practices, please contact us:
+Kerzie Consulting LLC
+DBA: Kerzie AI
+6005 Autumn Way
+McKinney, Texas 75072
+Phone: +1 (214) 668-7986
+Email: wade@kerzieconsulting.com
+
+## Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. Your continued use of our services after any changes constitutes acceptance of the updated policy.
+
+Return to Home
+
+---
+
+# Kerzie AI
+URL: https://kerzie.ai/schedule
+
+Kerzie AI
+← KERZIE . AI
+Schedule
+
+## Let's put it on the calendar .
+A business problem, a podcast, a stage, or a question about AI. Whatever brought you here, this is the direct line to my calendar. Pick a time that works and let's talk.
+
+By providing your phone number, you consent to receive SMS messages from Kerzie Consulting LLC (DBA Kerzie AI) regarding your scheduled appointment and work status updates. Message frequency: up to 5 messages/month. Message and data rates may apply.
+Reply STOP to unsubscribe. Reply HELP for help. View our Privacy Policy and Terms of Service .
+
+---
+
+# Work With Us | Kerzie AI
+URL: https://kerzie.ai/services
+
+Work With Us | Kerzie AI
+← KERZIE . AI
+Work With Us
+
+## Two ways in .
+Start small and leave with something working, or bring us a workflow worth rebuilding end-to-end. Either way: shipping, not slide decks.
+
+01
+$999 flat for the room
+
+## AI Fast-Track Session
+Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with the One-Window Setup. One person or three, same price.
+Read how it works →
+
+02
+Scoped per project
+
+## AI Implementation
+We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept. And if you are already running an AI agent you are not sure you can trust, that is an implementation problem too. Bring it to us.
+What we build →
+
+Not sure which one fits? Tell us what hurts and we will point you at the smallest thing that fixes it.
+Pick a time →
+
+---
+
+# AI Fast-Track Session | Kerzie AI
+URL: https://kerzie.ai/services/fast-track
+
+AI Fast-Track Session | Kerzie AI
+← KERZIE . AI
+AI Fast-Track Session
+
+## You leave with it working .
+Three hours. One room. Up to three people, each at your own machine, in your own accounts, on your own $20 AI subscription. We set it up together and every person ships one real piece of their own work before we are done.
+$999 flat for the room .
+One person or three. Same price.
+Start with the intake →
+
+3
+hours
+one sitting, spent with us instead of alone.
+
+2
+new habits
+record what you say, and give it one place to land. You leave with both running.
+
+1
+window
+one AI that knows your work, set up on your machine, in your accounts.
+
+0
+to-do list
+gone, replaced by a pane your AI keeps current for you.
+
+The same countdown as the $99 do-it-yourself setup . The difference is who is beside you for the three hours .
+
+01 — The Problem With AI Demos
+You can watch a free AI demo any week of the year. Google runs them. Intuit runs them. Your chamber of commerce runs them.
+You leave impressed. And nothing at your business changes.
+That is because a demo happens on someone else's screen, with someone else's business, solving someone else's problem.
+
+02 — What This Is
+Not a class. Not a demo. Not a report you file away.
+A working session. We sit down at your computers, in your accounts, and set up AI to do real work in your business. Then we do some of that work, together, before the session ends.
+By the end you are not "trained on AI." You have AI working, and you know how to keep it working tomorrow without me.
+
+03 — The Specifics
+
+- Three hours, one sitting.
+
+- One to three people, in one room, in person.
+
+- Each person on their own machine, with their own logins open.
+
+- Each person on their own $20 per month Claude subscription, set up live.
+
+- The $99 One-Window Setup included for every person in the room.
+Bring the people who will actually use it.
+Three people set up beats one person set up, and the price is the same either way. The most common way a session like this gets wasted is one person learning it and then becoming the bottleneck for everyone else.
+
+04 — What You Leave With
+
+- A working Claude setup on your own machine, under your own $20 per month subscription.
+
+- Connected to the real accounts your business runs on.
+
+- One painful workflow moved from manual to working, per person. Your call which one; the intake helps us pick.
+
+- A simple action system you can run every day.
+
+- A check-in from me 30 days later to see what stuck.
+
+05 — The First One
+Kurt and Tana Nelson run Innovative Images , a McKinney professional photography studio. Husband and wife, 25 plus years in business. He shoots, she does the marketing. Neither had ever touched AI.
+One session: their own AI subscription set up, live changes shipped to their website, a marketing workflow started, and an action tracker built.
+Three hours after I left, he sat back down at the same window and kept working. Alone. That is the bar: not impressed, self-sufficient.
+When I sent him the next piece, a voice-capture setup for his phone, he texted me this on day one, unprompted: "I absolutely love this new voice memos to Claude so far. Done 4 items and a couple of them while doing other task." Typo his. Receipt real.
+
+06 — Before We Book
+Not everyone is a fit, and I would rather tell you that before you pay me.
+You fill out a short intake first. Two things are non-negotiable:
+
+- You can name a workflow that actually hurts. "I want to see what AI can do" is what the free demos are for.
+
+- Everyone coming shows up with an active $20 per month Claude subscription, their own machine, and their logins ready. If that feels like too much before we start, this session is not for you yet.
+If the intake tells me the session will not pay for itself, I will say so and point you somewhere free.
+
+07 — The Price
+$ 999 , flat. That is the room, not the seat.
+It covers the intake review, the 3-hour working session, the 30-day check-in, and a $99 One-Window Setup for every person who sits down.
+Run the comparison you are already running. You were going to buy the $99 One-Window Setup anyway, so take it off the top. That puts the session itself at $900. Bring three people and that is $100 an hour, per person , to have it built with you instead of by you. And all three of you still walk out with the Setup.
+The Setup is the same document either way. The difference is whether it gets read or whether it gets installed, in your accounts, on the workflow that is actually costing you money, before anyone leaves the room.
+Come alone and it is three hours of my time on the one workflow hurting you most. Same price either way, so the only real question is how many people you want working on the other side of it.
+If what we find during the session is bigger than three hours can hold, that is a different conversation, and we will have it straight.
+
+08 — The Intake
+The test of the session is the test of everything we do: did technology just get simpler for you, and did something real ship before you left the room.
+Five minutes. This tells us both whether the session is worth your $ 999 and my three hours. Tell me how many of you are coming.
+Name
+Email
+
+What is your business?
+What is your role in it? Are you the person who can make this decision?
+What is the one workflow that hurts the most right now? Describe the pain, not the technology.
+What tools and accounts does the business run on today? Website host, email, social accounts, scheduling, invoicing or accounting.
+What computer will we work on, and is it yours? Mac or PC.
+Have you tried AI at all yet? What happened?
+Before the session you will need an active $20 per month Claude subscription and your account logins ready. Are you good with that? Yes No
+
+How did you hear about this?
+Send the intake →
+
+---
+
+# AI Implementation | Kerzie AI
+URL: https://kerzie.ai/services/implementation
+
+AI Implementation | Kerzie AI
+← WORK WITH US
+AI Implementation
+
+## We build it inside your business .
+Workflow analysis, system design, build, and live production deployment. End-to-end. No slide decks. No proofs of concept. The deliverable is the thing, running.
+
+We only build things that make the technology disappear into the work. If it needs a training course afterward, we built the wrong thing.
+Bring us the workflow that hurts. We will come back with what we would build, how long it takes, and what it costs.
+Pick a time →
+
+---
+
+# NemoClaw / OpenClaw | Kerzie AI
+URL: https://kerzie.ai/services/nemoclaw
+
+NemoClaw / OpenClaw | Kerzie AI
+← WORK WITH US
+AI Command Center
+
+## NemoClaw and OpenClaw .
+AI command center installation and enterprise strategy. For companies ready to move now, not explore for 18 months.
+
+01 — Install
+$22,500 flat
+
+## NemoClaw Install
+A full AI agent infrastructure deployed inside your business in one week. On-site installation in DFW. Fixed scope. Flat fee. Runs on your infrastructure.
+
+- One week: strategy, install, and hands-on enablement.
+
+- $22,500 flat fee, fixed scope.
+
+- Runs on your infrastructure.
+
+- On-site installation in DFW.
+Full NemoClaw details → For construction → For logistics →
+
+02 — Strategy
+Scoped per engagement
+
+## OpenClaw Strategy
+OpenClaw is the enterprise-grade AI command center strategy behind NemoClaw. For companies outside DFW or with enterprise requirements: architecture, roadmap, and multi-department agent strategy. Available nationally.
+Book a strategy call →
+
+One conversation is all it takes to know if you are a fit .
+Pick a time →
+
+---
+
+# For Sales Teams | Kerzie AI
+URL: https://kerzie.ai/services/sales-teams
+
+For Sales Teams | Kerzie AI
+← KERZIE . AI
+For Sales Teams
+
+## Your reps have AI licenses. That is not the same as using it .
+I spent 30 years leading enterprise sales teams. Now I help those teams turn AI from a login they forget into the way they run their accounts.
+Book a call →
+
+01 — The Gap
+Most companies roll AI out to the sales floor the same way: buy the licenses, send a video, move on. About one in ten sellers figures it out on their own. The other nine watched the video and went back to what they knew.
+Budget without know-how is a gift the team cannot open.
+A license upgrade is not an enablement plan. And if your team is still calling AI a tool, they are not using it. There is a difference between a tool you pick up and an engine you run the business on . That difference is where the pipeline is.
+
+02 — What I Do
+I get your sellers hands-on-keyboard, on live accounts, scored from the first session.
+
+- Your whole team, leaders included. A manager who does not run it cannot coach it. The people who own the number are in the room doing the work, not reading a summary afterward.
+
+- Hands on the keyboard from day one. Watching a demo is not the same as doing the work.
+
+- A scorecard from the first session. So “this helped” is something you read, not something we argue about.
+
+03 — How It Works: Crawl, Walk, Run
+Crawl
+
+Every seller builds a context brain — who they are, what they sell, how they work — so the AI answers like a teammate, not a search box.
+
+Walk
+
+We put it to work on live accounts. Prep, research, follow-up, the account plan. Real deals, not exercises.
+
+Run
+
+The first sellers to break through set the standard, and the rest of the team gets fast-laned into it. Whoever reaches the next level first sets the bar everyone else has to meet.
+
+04 — Why Me
+Thirty years carrying a number and leading the people who carry theirs. I am not a technologist who read about sales. I ran sales.
+Now I bring the AI layer on top of decades of knowing what a seller's day actually looks like: the meetings, the waiting, the prep that never ends. Your reps will feel understood before they feel taught.
+
+## Every rep, not just the one who figured it out .
+This holds the same promise we make everywhere: simpler, not additional. If AI adds a step to a rep's day, it is dead on arrival - so we build it into the way they already sell.
+Scored from day one. If it is working, you will see it in how your team runs its accounts. If it is not, you will know that too.
+Book a call →
+
+---
+
+# Speaking | Wade Kerzie | Kerzie AI
+URL: https://kerzie.ai/speaking
+
+Speaking | Wade Kerzie | Kerzie AI
+← KERZIE . AI
+Wade Kerzie · Speaker & Podcast Guest
+
+## One person doing the work of a company with multiple departments . And showing exactly how.
+Wade Kerzie spent 30 years leading enterprise sales teams before rebuilding his entire working life around AI. Today he runs an AI consulting practice, a home-repair-by-text service in two states, an AI hiring engine, and a weekly newsletter and YouTube show, alone, from McKinney, Texas. No staff, no agency, no code. He talks about what AI actually does in a real business, with receipts.
+Book Wade →
+
+Topics
+0 1
+
+## The model was never the bottleneck. You are.
+Why waiting for the next model release is costing operators the only advantage window they will get, and the five reps that close the gap this week.
+
+0 2
+
+## One person, whole company.
+What it actually looks like to run marketing, sales ops, product, and finance through one AI working session a day. Live walkthrough available.
+
+0 3
+
+## My own method died in six weeks.
+Wade built a two-AI workflow, taught it, then watched the tools make it obsolete. What that pace does to best practices, training budgets, and anyone selling AI advice.
+
+0 4
+
+## Main Street AI.
+Home repair by text with no app and no AI talk to the customer. What adoption looks like when the technology hides completely.
+
+Receipts
+
+- • 30 years of enterprise sales leadership, VP and Director roles.
+
+- • Runs Kerzie AI (consulting), GotaGuy (home repair by text, Texas and Colorado), TrueSeat (AI-interview hiring engine, XPrize entry in progress), and PuttingIsSimple. Solo.
+
+- • Took a paid digital product from idea to live checkout in about a day, payment stack included.
+
+- • Active enterprise AI enablement engagement in flight with a major technology partner.
+
+- • Weekly newsletter and the AI in the Wild YouTube show.
+The first non-technical person Wade handed his free Voice Command Center texted him unprompted on day one: "I absolutely love this new voice memos to Claude so far. Done 4 items and a couple of them while doing other task." Kurt Nelson, Innovative Images. Typo his. Receipt real.
+
+Logistics
+Based in McKinney, Texas. In person across DFW; remote anywhere.
+Own recording setup, comfortable long-form or tight segments. Everything claimed on air can be shown on screen.
+Booking: wade@kerzie.ai
+
+---
+
+# The Kerzie AI Newsletter | Kerzie AI
+URL: https://kerzie.ai/subscribe
+
+The Kerzie AI Newsletter | Kerzie AI
+← KERZIE . AI
+The Kerzie AI Newsletter
+
+## What actually worked this week .
+I run my businesses on AI. Twice a week I write down what I built, what broke, what it cost, and what I would do differently. If I have not done it myself, it does not go in.
+No predictions. No tool roundups. No breathless take on whatever shipped that morning. Just the working notes of someone building in public, sent Tuesday and Thursday at 1:00 PM Central.
+Email address Send it to me
+Free. Unsubscribe any time. I do not sell the list.
+
+Recent issues
+
+- The Xbox Problem
+
+- Bye-Bye, Digital Marketing Agencies
+
+- The intelligence is moving inside the building
+
+- The work is moving into one window
+
+Who writes it
+Wade Kerzie. Thirty years selling and leading enterprise sales teams, now building AI systems for my own companies and for clients. I am not reporting on this from the outside. I am the one with the receipts.
+Why I publish them: to prove, twice a week, that this technology is finally simple enough to actually help a regular person. The receipts just keep me honest.
+
+---
+
+# The People | Kerzie AI
+URL: https://kerzie.ai/team
+
+The People | Kerzie AI
+← KERZIE . AI
+The People
+
+## The people behind the work.
+What we share: the belief that life is best when technology just works, and the stubbornness to make it that way for other people.
+
+Wade Kerzie
+Founder. Building AI-native products that fix real problems.
+
+See more →
+
+Aaron Jones
+Technical Specialist. Colorado market. Making sure the work actually gets done.
+
+See more →
+
+---
+
+# Kerzie AI
+URL: https://kerzie.ai/terms-of-service
+
+Kerzie AI
+
+## Terms of Service
+Last Updated: January 2, 2026
+
+## Agreement to Terms
+These Terms of Service ("Terms") govern your access to and use of the services provided by Kerzie Consulting LLC, doing business as Kerzie AI ("Company," "we," "us," or "our").
+By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services.
+
+## Description of Services
+Kerzie AI provides AI-powered customer communication solutions, including but not limited to:
+
+- AI-powered voice and chat assistants
+
+- Multi-channel communication management (phone, email, SMS, chat, social media)
+
+- Knowledge base development and management
+
+- Website development and hosting
+
+- Workflow automation and integration services
+
+## SMS Communications Terms
+By providing your mobile phone number and opting in to receive SMS messages, you agree to the following terms:
+
+## Consent to Receive SMS
+You expressly consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI) at the mobile phone number you provide. These messages may include work status updates, appointment reminders, and service-related communications.
+
+## Message Frequency
+You may receive up to 5 SMS messages per month. Message frequency may vary based on your use of our services and your communication preferences.
+
+## Message and Data Rates
+Standard message and data rates may apply to SMS messages sent and received. Please consult your mobile carrier for pricing details.
+
+## Opt-Out Instructions
+To stop receiving SMS messages:
+Reply STOP to any message you receive from us. You will receive a one-time confirmation that you have been unsubscribed. After this, you will no longer receive SMS messages from us unless you opt in again.
+
+## Help and Support
+For help with SMS messages:
+Reply HELP to any message, or contact us at:
+Phone: +1 (214) 668-7986
+Email: wade@kerzieconsulting.com
+
+## SMS Data Privacy
+Your phone number and SMS consent information will not be shared with third parties for marketing purposes. For complete details on how we handle your data, please review our Privacy Policy .
+
+## User Responsibilities
+When using our services, you agree to:
+
+- Provide accurate and complete information
+
+- Maintain the confidentiality of your account credentials
+
+- Use our services only for lawful purposes
+
+- Not interfere with or disrupt our services or servers
+
+- Comply with all applicable laws and regulations
+
+## Payment Terms
+Service fees are as follows:
+
+- Setup Fee: $500 one-time payment
+
+- Monthly Service Fee: $500 per month
+All fees are due as specified in your service agreement. We reserve the right to modify pricing with 30 days' notice.
+
+## Intellectual Property
+All content, features, and functionality of our website and services, including but not limited to text, graphics, logos, and software, are the exclusive property of Kerzie Consulting LLC and are protected by copyright, trademark, and other intellectual property laws.
+
+## Limitation of Liability
+To the fullest extent permitted by law, Kerzie Consulting LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of our services. Our total liability shall not exceed the amount you paid for our services in the twelve months preceding the claim.
+
+## Termination
+Either party may terminate services with 30 days' written notice. We reserve the right to suspend or terminate your access to our services immediately if you violate these Terms or engage in any conduct that we determine, in our sole discretion, to be harmful to our business or other users.
+
+## Governing Law
+These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be resolved in the courts of Collin County, Texas.
+
+## Changes to These Terms
+We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on our website and updating the "Last Updated" date. Your continued use of our services after any changes constitutes acceptance of the modified Terms.
+
+## Contact Information
+For questions about these Terms of Service, please contact us:
+Kerzie Consulting LLC
+DBA: Kerzie AI
+6005 Autumn Way
+McKinney, Texas 75072
+Phone: +1 (214) 668-7986
+Email: wade@kerzieconsulting.com
+
+Return to Home
+
+---
+
+# The Wrong Side Of The Line | Kerzie AI
+URL: https://kerzie.ai/the-line
+
+The Wrong Side Of The Line | Kerzie AI
+← THE KERZIE EFFECT
+
+## The two preconditions
+The whole essay comes down to one sentence: once someone has crossed the competency line and is working from one window, the AI stops recommending and starts executing.
+That is two separate conditions, and neither one is about being technical.
+Two different problems. They do not have the same fix, and they do not cost the same to solve.
+The competency line is knowing what to hand an AI and knowing when what comes back is wrong. It is measurable. In the Harvard Business School and BCG field experiment, consultants working inside that line finished about 25 percent faster with roughly 40 percent higher quality. The same study found consultants working outside it did worse, by 19 percentage points. It cuts both ways.
+One window is your AI being able to see the business: your files, your numbers, your accounts, your systems. Not a chat tab you paste things into and lose at the end of the thread.
+
+## Which one are you missing
+Diagnostic
+
+- You can already describe what you want the AI to do, and the problem is that it can’t see anything. You’re missing the window.
+
+- Your AI can see plenty, and the problem is that you don’t know what to hand it or how to tell when the answer is wrong. You’re missing the crossing.
+
+- Both. Start with the window. It is the cheaper half, and the session below includes it anyway.
+
+## If you’re missing the window
+The one-window setup is a document you load into the AI you already pay for. It asks you the questions and builds the working environment with you: the workspace, the operating manual, the tracker, the memory rules, the routines.
+It is the same framework my own businesses run on every day, which also means it is a synthesis of general knowledge, and I have priced it that way.
+$99, one time.
+The One-Window Setup →
+
+## If you’re missing the crossing
+Three hours at your desk, on your machine, with your accounts and your own AI subscription. Bring up to two more people and they do the same thing beside you, each on their own machine. We set it up together and every person ships one real piece of their own work before the session ends. Not a class, not a demo on someone else’s screen.
+The bar is not impressed. The bar is self-sufficient.
+Kurt Nelson runs a McKinney photography studio and had never touched AI. Three hours after I left, he sat back down at the same window and kept working, alone. That is the bar: not impressed, self-sufficient.
+$999 flat for up to three people, and the one-window document is included for each of them.
+The AI Fast-Track Session →
+
+## If you read it from the selling side
+Different problem. Your exposure isn’t that you can’t use AI. It’s that the document you hand out for free is a standalone product now.
+The move is not to stop writing proposals. It’s to stop giving away the executable version, charge for the diagnosis before anyone sees a plan with their name on it, and be able to execute inside a client’s actual systems rather than recommend from outside them.
+That last part is a build, not a purchase, and it’s a longer conversation than a page.
+Have that conversation →
+
+## The honest part
+The essay’s own test applies to me, so here it is run on my own offers.
+Same test, turned on myself. Synthesis is priced like synthesis.
+The $99 document is a synthesis of general knowledge. Someone patient enough could assemble most of it themselves, and the price reflects exactly that. The three hours at your desk, with your accounts, on the workflow that actually hurts, is the part that can’t be substituted. That’s the $999.
+Neither one makes you immune to any of this. They put you on the side of the line where it works for you instead of on you.
+
+This page only makes sense alongside the argument it comes from: The Kerzie Effect .
+
+---
+
+# The First Thousand | Kerzie AI
+URL: https://kerzie.ai/thousand
+
+The First Thousand | Kerzie AI
+← KERZIE . AI
+The First Thousand
+
+## 6 of 1,000
+
+994 to go · count updated 2026-08-09 · an operator is counted only when their window is actually running, not when they buy
+
+The mission: get 1,000 people through the blast door before it closes. Running their work, their business, or their job from one window, with an AI that actually knows their world.
+
+Why A Door, And Why A Clock
+I have written three essays that explain what I believe is happening to work. The Kerzie Effect is why the door exists: once your buyer or your boss holds your scope of work plus an AI, they can execute it without you. The Consequence Clock is why now: the gap between what companies say they want and what they absorb has a clock running on it. The Blast Door is the honest part: the window to get good at this while it still counts as an advantage does not stay open.
+I can write essays until the door closes, or I can count the people who got through it. This page counts.
+
+What Counts As Through The Door
+Not a course completed. Not a subscription bought. An operator counts when their one-window operating system is actually running: their accounts connected, their tracker live, their work happening by talking. A solopreneur, an employee, a retiree running a household. The role does not matter. The window does.
+Every operator gets a number, in order of going live. The first five are real people I can name, starting with me. When this page says 1,000, it will mean one thousand actual running systems, because this count follows the same rule as everything I publish: it has to be literally true.
+
+Why I Am Doing This
+I spent thirty years watching technology shifts sort people into two groups, and I watched who ended up in each one. This shift is faster and it sorts harder. I am not neutral about it. I want the people who read my letters, the operators who run their businesses from their trucks, the employees nobody is training, on the right side of that door when it moves.
+A thousand is not a business plan. It is the number where a group of people becomes proof that nobody else needs permission.
+
+Walk Through
+The door is the One-Window Setup : $99, one document, about three hours to a running system. Not ready to spend anything? Take the free Voice Command Center and start the habit.
+
+Get the Setup →
+
+---
+
+# Try Unison Now | Kerzie AI
+URL: https://kerzie.ai/try-unison
+
+Try Unison Now | Kerzie AI
+
+## Try Unison Right Now
+Want proof Unison actually works? Test it yourself. Right now.
+Pick ANY channel below and ask us a question about Kerzie AI. You'll get the same fast, helpful response every time—because it's all powered by Unison's unified knowledge base.
+
+## Try asking us:
+
+- • "Can you tell me about Unison?"
+
+- • "What does Unison cost?"
+
+- • "Can I schedule a call to talk about Unison in my business?"
+
+- • "What channels does Unison support?"
+
+Go ahead. We're waiting.
+
+## Call or Text Us
+Talk to us directly
+
+469-933-0930
+
+## Website Chat & Voice
+Click the chat widget to the right to use either text or call us with your voice directly using the chat widget.
+
+## Instagram DM
+Message us on Instagram
+
+Message on Instagram
+
+## Facebook Message
+Reach us via Facebook
+
+Message on Facebook
+
+Every single one of these channels connects to the same Unison system.
+Same knowledge base. Same instant response. Same value.
+That's what Unison does for your business .
+
+---
+
+# Our Work | Kerzie AI
+URL: https://kerzie.ai/ventures
+
+Our Work | Kerzie AI
+← KERZIE . AI
+The Work
+
+## What we have built so far.
+Every product starts with a problem worth fixing.
+
+0 1 DAY 3
+
+## GotaGuy
+Finding a contractor is a part-time job. It should take a text message.
+
+Read the story →
+
+0 2 7:05 PM
+
+## Unison
+Someone calls your business after hours. They get voicemail. You never knew they called.
+
+Read the story →
+
+0 3 8 MIN
+
+## Zorli
+The information is there. Finding it costs more time than the answer is worth.
+
+Read the story →
+
+0 4 +14 HRS
+
+## Ad2Action
+You paid for the ad. You responded too late. They forgot they clicked.
+
+Read the story →
+
+0 5 7 SEC
+
+## TrueSeat
+A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.
+
+Read the story →
+
+0 6 40 YRS
+
+## Executive Legacy
+Forty years of judgment retires at the end of the year. The phone keeps ringing anyway.
+
+Read the story →
+
+0 7 2 AM
+
+## TrueNorth
+Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.
+
+Read the story →
+
+---
+
+# Ad2Action | Kerzie AI
+URL: https://kerzie.ai/ventures/ad2action
+
+Ad2Action | Kerzie AI
+← KERZIE . AI
++14 HRS
+
+## You paid for the ad.
+Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired a confirmation email. You followed up Friday morning. They did not remember why they clicked. You bought their attention at peak interest and responded at zero interest.
+
+01 Why It Stays Broken
+
+## Ad platforms optimize for the click. Nobody optimizes for what happens after.
+That window is where leads die. Not because your product is wrong. Because your response was late. Eight minutes after someone clicks is worth more than eight hours of follow up the next day.
+
+02 What Got Built
+
+## So we built Ad2Action.
+Instant lead response the moment someone converts on your ad. Not an autoresponder. A real conversation that starts while they still remember clicking.
+
+03 How It Works
+
+- 0 1 Lead converts on your ad.
+
+- 0 2 Ad2Action fires immediately.
+
+- 0 3 Qualifies the lead in real time.
+
+- 0 4 Books the appointment or routes to your team.
+
+- 0 5 By the time your competitor follows up manually, you already have the meeting.
+
+## Stop losing leads you already paid for.
+Ad2Action deploys in days. Not months.
+Talk to Us About Ad2Action
+
+---
+
+# AI Operating System | Kerzie AI Ventures
+URL: https://kerzie.ai/ventures/ai-os
+
+AI Operating System | Kerzie AI Ventures
+← KERZIE . AI
+Coming Soon
+
+## AI Operating System .
+A small business AI operating system built AI-native from day one .
+Connecting your tools, your team, and your data into a single AI-native layer. Designed around how AI works, not how legacy software works.
+Get early access →
+
+While this one is still in the shop, see what we already have live today .
+See all ventures →
+
+---
+
+# Executive Legacy | Kerzie AI
+URL: https://kerzie.ai/ventures/executive-legacy
+
+Executive Legacy | Kerzie AI
+← KERZIE . AI
+40 YRS
+
+## Forty years of judgment retires at the end of the year. The phone keeps ringing anyway.
+Every retiring owner knows the scene: the successor is capable, the handoff binder exists, and six weeks in the calls still come — what do we do about this customer, would you take this deal, who do we trust for this job. The knowledge that built the business was never written down because it never had to be. It lives in one person's judgment, and that person is trying to leave.
+
+01 Why It Stays Broken
+
+## Succession plans transfer ownership. Nobody transfers judgment.
+The consultants who do knowledge transfer bill Fortune 500 rates and leave behind binders and interviews on a shelf. The AI clone apps improvise plausible-sounding answers with nobody checking. Neither gives a successor what they actually need at a decision point: what the founder would really say, grounded in what the founder really said.
+
+02 What Got Built
+
+## So we're building Executive Legacy.
+A white-glove engagement: structured interview sessions capture the operating judgment, the people philosophy, the customer relationships, and the crisis playbooks — then we build a private, permission-gated AI version of the executive their successor can ask. Every answer traces to something the executive actually said, cited to the session. When the captured judgment doesn't cover a question, it says so honestly and points to who to call. The executive reviews what their virtual self is asked and can correct any answer, for as long as they want the job.
+
+03 How It Works
+
+- 0 1 Multi-session capture across the domains that matter: operations, people, customers, crises.
+
+- 0 2 Every answer cites the session it came from. Nothing improvised, ever.
+
+- 0 3 Sealed topics stay sealed — the executive controls who can ask what.
+
+- 0 4 The successor asks at the decision point, not at the retirement dinner.
+
+## The business keeps its judgment. The founder keeps their retirement.
+Founding engagements by invitation, Fall 2026.
+Request an invitation
+
+---
+
+# GotaGuy | Kerzie AI
+URL: https://kerzie.ai/ventures/gotaguy
+
+GotaGuy | Kerzie AI
+← KERZIE . AI
+DAY 3
+
+## Finding a contractor is a part-time job.
+You post on Nextdoor. You call three numbers. One voicemail. One quote that feels made up. One guy who never shows. The repair takes an hour. Finding someone takes a week.
+
+01 Why It Stays Broken
+
+## The existing platforms make money whether your job gets done or not.
+Angi, Thumbtack, HomeAdvisor charge contractors for leads. Whether the job gets done or not. They built a bidding war because bidding wars generate revenue. The homeowner experience being slow and frustrating is not a bug. It is the business model.
+
+02 What Got Built
+
+## So we built GotaGuy.
+You text. We scope it. A contractor shows up. You pay when it is done. No app. No account. No forms. No bidding. The whole thing happens in your text messages.
+
+Watch It Happen
+GOTAGUY
+Text Message
+
+THE WHOLE PRODUCT. NO APP. NO ACCOUNT.
+
+03 How It Works
+
+- 0 1 Quote in 90 seconds.
+
+- 0 2 Confirm.
+
+- 0 3 Schedule on your timeframe.
+
+- 0 4 Contractor shows up when you said.
+
+- 0 5 Work gets done. Pay on your phone.
+
+## See GotaGuy in action.
+Live in McKinney/Dallas TX and Aurora/Denver CO. More markets coming.
+Visit GotaGuy
+
+---
+
+# TrueNorth | Kerzie AI
+URL: https://kerzie.ai/ventures/truenorth
+
+TrueNorth | Kerzie AI
+← KERZIE . AI
+2 AM
+
+## At 2 AM with a real decision on the table, everyone asks the same AI and gets the same answer.
+Ask a chatbot whether to take the job, have the hard conversation, or make the move, and you get advice averaged from everyone and belonging to no one. It doesn't know what you believe about faith, family, money, or duty — so it can't tell you what the wisest version of you would do. Generic guidance for a specific life is no guidance at all.
+
+01 Why It Stays Broken
+
+## AI knows everything except what you stand for.
+The guidance apps ship one fixed personality for every user. The faith apps pick your tradition for you. Nobody starts where real counsel starts: with who you are and what you hold true. And every one of them wants to own the relationship — another subscription, another app, another place your inner life lives on someone else's server.
+
+02 What Got Built
+
+## So we're building TrueNorth.
+A twenty-minute interview about what you actually believe — then TrueNorth assembles your personal board of advisors from history's wisest voices, each seat matched to your principles and explained in your own words. You approve every seat, including the one or two you choose to challenge you. What you buy is yours to keep: your Principles Charter and your board, packaged to run in whatever AI you already use — ChatGPT, Claude, Grok, whatever comes next. One purchase. No app. No subscription.
+
+03 How It Works
+
+- 0 1 The interview finds your principles and reads them back until you say that's me.
+
+- 0 2 Your board is proposed with reasons that quote your own words.
+
+- 0 3 Historical voices only, grounded in what they actually wrote and said.
+
+- 0 4 Your charter and board install in the AI you already use. It's yours.
+
+## Counsel aligned to your compass, not the crowd's.
+In development. First cohort forming.
+Join the waitlist
+
+---
+
+# TrueSeat | Kerzie AI
+URL: https://kerzie.ai/ventures/trueseat
+
+TrueSeat | Kerzie AI
+← KERZIE . AI
+7 SEC
+
+## A recruiter reads your resume for about seven seconds.
+Thirty years of work, compressed to two pages, skimmed in the time it takes to sip coffee. Then software scores it by keyword and a stranger decides if you exist. The people who are great at the work are rarely the people who are great at describing the work — and the resume format punishes exactly that gap. Every week, the wrong person gets the seat because they had the better document.
+
+01 Why It Stays Broken
+
+## Resumes are claims. Hiring runs on them anyway.
+Nobody verifies. The interviewer asks about weaknesses, the candidate performs modesty, and both sides pretend the exercise produced information. Recruiters charge a quarter of a salary to pattern-match keywords with a phone call on top. What never gets captured: how someone actually operates, what they can prove they did, and what they truly need — the things that decide whether a hire works.
+
+02 What Got Built
+
+## So we're building TrueSeat.
+An AI interviewer that talks with you the way a great colleague would after six months of working together — then builds a sealed, evidence-backed dossier: what you can actually do, how you actually operate, what you actually need. Every claim carries a verification tier. You own every word, and nothing ships without your review.
+
+03 How It Works
+
+- 0 1 Talk, don't type. The interview is a conversation.
+
+- 0 2 Every number gets read back and confirmed — or marked unverified.
+
+- 0 3 Your operating profile, written for your next manager.
+
+- 0 4 Constraints stay sealed until you say otherwise.
+
+## The right person in the right seat, proven instead of pitched.
+Launching August 2026. Built in public.
+See TrueSeat
+
+---
+
+# Unison | Kerzie AI
+URL: https://kerzie.ai/ventures/unison
+
+Unison | Kerzie AI
+← KERZIE . AI
+7:05 PM
+
+## Someone calls your business after hours.
+They get voicemail. They needed an answer tonight. They will call someone else in the morning. You never knew they called.
+
+01 Why It Stays Broken
+
+## Most businesses respond when it is convenient for them.
+The lead does not wait. The window between someone reaching out and someone else answering them is measured in minutes not hours. Every hour you wait cuts your odds of closing that lead in half.
+
+02 What Got Built
+
+## So we built Unison.
+Omnichannel lead response that answers immediately across every channel. Phone, text, web form, email. The lead gets a real response in seconds. You get the conversation in your inbox.
+
+03 How It Works
+
+- 0 1 Lead comes in on any channel.
+
+- 0 2 Unison responds immediately.
+
+- 0 3 Qualifies and routes to you.
+
+- 0 4 You pick up a warm conversation. Not a cold inquiry.
+
+## Ready to stop losing leads?
+Unison deploys in days. Not months.
+Talk to Us About Unison
+
+---
+
+# Zorli | Kerzie AI
+URL: https://kerzie.ai/ventures/zorli
+
+Zorli | Kerzie AI
+← KERZIE . AI
+8 MIN
+
+## Your teenager calls while you are watching a movie.
+They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.
+
+01 Why It Stays Broken
+
+## Information does not disappear. It scatters.
+Across apps, notes, texts, emails, browser bookmarks. The problem is not memory. It is retrieval. You have the answer. Finding it costs you more time than the answer is worth.
+
+02 What Got Built
+
+## So we built Zorli.
+One place for the information you actually need to find again. Not another note app. A retrieval system. You put it in once. You get it back instantly.
+
+03 How It Works
+
+- 0 1 Save it once.
+
+- 0 2 Search in plain language.
+
+- 0 3 Get it back in seconds.
+
+- 0 4 No folders. No tags. No organizing system to maintain.
+
+## Stop hunting for things you already know.
+Zorli is on the App Store. Free to try.
+Download Zorli
+
+---

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 // 3. No promise of traffic or leads. The deliverable is legibility, which we
 //    can show; ranking is not ours to promise.
 // 4. llms.txt is included as cheap optionality, never as the mechanism that
-//    is claimed to work. Controlled studies show assistants read visible HTML,
+//    is claimed to work. Controlled studies show AI tools read visible HTML,
 //    not markup, so the visible-content work is what carries the value.
 const whatWeDo = [
   {
@@ -31,7 +31,7 @@ const whatWeDo = [
   },
   {
     lead: "We make the facts plain and current.",
-    body: "What you do, where you do it, what it costs, who to call. In the visible text, because that is what the assistants actually read.",
+    body: "What you do, where you do it, what it costs, who to call. In the visible text, because that is what ChatGPT and the others actually read.",
   },
   {
     lead: "We fix the plumbing while we are in there.",
@@ -39,7 +39,7 @@ const whatWeDo = [
   },
   {
     lead: "We show you the difference in their words, not ours.",
-    body: "We ask the assistants about your business before and after, and hand you both answers side by side.",
+    body: "We ask ChatGPT, Claude, Gemini and Perplexity about your business before and after, and hand you both answers side by side.",
   },
 ];
 
@@ -188,7 +188,7 @@ export default function BackCoverPage() {
             </p>
             <p>
               This standard is new and still moving. Nobody knows yet which parts
-              of it the assistants will settle on. What we can do is make sure
+              of it the AI tools will settle on. What we can do is make sure
               the facts about your business are clear, current and easy to lift,
               and that nothing on your site contradicts itself.
             </p>
@@ -213,9 +213,10 @@ export default function BackCoverPage() {
             a dashboard you will never open.
           </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
-            The diagnostic is free and takes us about an hour. We ask the
-            assistants about your business and send you exactly what they say,
-            word for word.
+            The diagnostic is free and takes us about an hour. We ask the AI
+            tools your customers are already using - ChatGPT, Claude, Gemini,
+            Perplexity - what they say about your business, and we send you
+            their answers word for word.
           </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-10 leading-relaxed">
             Sometimes the answers come back fine, and we tell you so. Either
