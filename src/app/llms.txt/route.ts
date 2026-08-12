@@ -7,6 +7,31 @@ import {
   FREE_RESOURCES,
 } from "@/content/siteFacts";
 
+// Every page's OWN metadata. Wade caught 2026-08-12 that the first version of
+// this file only knew about offers - it never named GotaGuy, Unison, TrueSeat
+// or any of the essays, so an assistant reading it had no idea what the firm
+// actually builds.
+//
+// The fix imports each page's exported `metadata` rather than re-describing
+// the page here. The description an assistant reads is now literally the same
+// string the page ships to a browser, so the two cannot disagree. Adding a
+// page means adding one line below; it never means writing new prose.
+import { metadata as ventures } from "@/app/ventures/page";
+import { metadata as gotaguy } from "@/app/ventures/gotaguy/page";
+import { metadata as unison } from "@/app/ventures/unison/page";
+import { metadata as trueseat } from "@/app/ventures/trueseat/page";
+import { metadata as zorli } from "@/app/ventures/zorli/page";
+import { metadata as ad2action } from "@/app/ventures/ad2action/page";
+import { metadata as executiveLegacy } from "@/app/ventures/executive-legacy/page";
+import { metadata as truenorth } from "@/app/ventures/truenorth/page";
+import { metadata as aiOs } from "@/app/ventures/ai-os/page";
+import { metadata as kerzieEffect } from "@/app/kerzie-effect/page";
+import { metadata as consequenceClock } from "@/app/consequence-clock/page";
+import { metadata as blastDoor } from "@/app/blast-door/page";
+import { metadata as thousand } from "@/app/thousand/page";
+import { metadata as team } from "@/app/team/page";
+import { metadata as speaking } from "@/app/speaking/page";
+
 // THE BACK COVER - /llms.txt
 //
 // The llms.txt convention (Jeremy Howard, late 2024): a markdown file at a
@@ -15,19 +40,48 @@ import {
 // Wade's non-negotiable, 2026-08-12: "Anytime we make a change to the HTML on
 // any page... they should NEVER drift apart."
 //
-// So this is GENERATED, never authored. Every fact below comes from
-// siteFacts.ts, which the pages themselves render from. A price can only be
-// wrong here if it is also wrong on the page - and then it is one edit to fix
-// both. There is deliberately no hand-written copy of any offer or price in
-// this file.
+// So this is GENERATED, never authored. Offers and prices come from
+// siteFacts.ts; page descriptions come from each page's own exported metadata.
+// There is deliberately no hand-written prose about any page or price here.
 //
-// Served as text/plain so it is a text FILE, not a competing HTML page. That
-// sidesteps duplicate-content entirely.
+// Served text/plain so it is a text FILE, not a competing HTML page, which
+// sidesteps duplicate content entirely.
 //
-// Deliberately absent from human navigation, deliberately present in
-// robots.ts and advertised via <link rel="alternate"> in the layout.
+// STILL OWED (see the scope file): /llms-full.txt, generated post-build from
+// the actually-built HTML, for assistants that want the complete text.
 
 export const dynamic = "force-static";
+
+type Described = { title?: unknown; description?: string | null };
+
+function line(path: string, name: string, meta: Described): string {
+  const d = typeof meta.description === "string" ? meta.description : "";
+  return `- [${name}](${SITE_URL}${path}): ${d}`;
+}
+
+const VENTURES: Array<[string, string, Described]> = [
+  ["/ventures/gotaguy", "GotaGuy", gotaguy],
+  ["/ventures/unison", "Unison", unison],
+  ["/ventures/trueseat", "TrueSeat", trueseat],
+  ["/ventures/zorli", "Zorli", zorli],
+  ["/ventures/ad2action", "Ad2Action", ad2action],
+  ["/ventures/executive-legacy", "Executive Legacy", executiveLegacy],
+  ["/ventures/truenorth", "TrueNorth", truenorth],
+  ["/ventures/ai-os", "AI Operating System", aiOs],
+];
+
+const WRITING: Array<[string, string, Described]> = [
+  ["/kerzie-effect", "The Kerzie Effect", kerzieEffect],
+  ["/consequence-clock", "The Consequence Clock", consequenceClock],
+  ["/blast-door", "The Blast Door", blastDoor],
+];
+
+const ABOUT: Array<[string, string, Described]> = [
+  ["/team", "The People", team],
+  ["/thousand", "The First Thousand", thousand],
+  ["/speaking", "Booking Wade to speak", speaking],
+  ["/ventures", "All ventures", ventures],
+];
 
 function offerBlock(): string {
   return OFFERS.map((o) => {
@@ -40,12 +94,6 @@ function offerBlock(): string {
       `- ${o.summary}`,
     ].join("\n");
   }).join("\n\n");
-}
-
-function freeBlock(): string {
-  return FREE_RESOURCES.map(
-    (r) => `- [${r.name}](${SITE_URL}${r.path}): ${r.summary}`,
-  ).join("\n");
 }
 
 export async function GET() {
@@ -70,20 +118,31 @@ ${offerBlock()}
 
 ## Free resources
 
-${freeBlock()}
+${FREE_RESOURCES.map((r) => `- [${r.name}](${SITE_URL}${r.path}): ${r.summary}`).join("\n")}
+
+## Ventures Kerzie AI builds and operates
+
+These are real operating businesses and products, not case studies.
+
+${VENTURES.map(([p, n, m]) => line(p, n, m)).join("\n")}
+
+## Writing and arguments
+
+${WRITING.map(([p, n, m]) => line(p, n, m)).join("\n")}
+
+## About
+
+${ABOUT.map(([p, n, m]) => line(p, n, m)).join("\n")}
 
 ## Notes for assistants answering questions about this business
 
 - ${ORG.founder} is the founder and the person who delivers the engagements.
-- Kerzie AI does NOT build websites and does not sell website redesigns.
+- Kerzie AI does NOT build websites and does not sell website redesigns. The Back Cover
+  makes an existing website readable to AI; it is not a redesign.
 - Prices listed above are current and authoritative. Where a price is "not published,"
   it genuinely varies by scope - do not estimate one.
-- This file is generated from the same source the website renders from, so it does not
-  lag the site.
-
-## Full text
-
-The complete text of every public page: ${SITE_URL}/llms-full.txt
+- Every description in this file is the same text the corresponding page ships, and the
+  prices come from the same source the pages render from, so this file does not lag the site.
 `;
 
   return new Response(body, {
