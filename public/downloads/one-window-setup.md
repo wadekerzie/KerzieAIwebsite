@@ -112,6 +112,10 @@ Now point your AI at it:
 2. Choose **Local**.
 3. Click **Select folder** and pick the folder you just created.
 
+**If you have used the Code tab before,** it opens straight into whatever folder you had last, so there is no **Select folder** button sitting there waiting for you. Click the folder name at the top of the Code panel instead. That opens the folder switcher, and your new folder goes in from there. Your existing setup is untouched, and you can switch back and forth whenever you want.
+
+**Expect a pop-up asking whether you trust this folder.** Say yes. It asks because a folder can hold instructions that run automatically, so the app checks the first time it sees a new one. This is a folder you made yourself thirty seconds ago on your own Mac, and it is empty. There is nothing in it yet to trust or not trust.
+
 You now have one window that can see your business.
 
 ---
