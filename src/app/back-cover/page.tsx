@@ -15,7 +15,7 @@ const THE_WATCH = offer("the-watch");
 // dashboards (Scrunch $250/mo, AthenaHQ ~$295/mo, Profound Lite $499/mo),
 // all of which are software the customer has to operate themselves.
 const watchIncludes = [
-  "We ask the major assistants the questions your customers actually ask, every month.",
+  "We ask the major AI assistants the questions your customers actually ask, every month.",
   "We check their answers against what is true, and correct whatever has drifted at the source.",
   "We keep your machine-readable files current as the standards move.",
   "One page a month, in plain language, that you can read in five minutes.",
@@ -290,7 +290,7 @@ export default function BackCoverPage() {
               guessing, and the honest answer is better than the confident one.
             </p>
             <p>
-              Nobody outside those companies knows exactly how the assistants
+              Nobody outside those companies knows exactly how the AI tools
               decide who to name, or how long they take to notice a site has
               changed. We are not going to pretend otherwise, and we are not
               going to tell you an answer will change by Friday.
