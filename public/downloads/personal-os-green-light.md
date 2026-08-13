@@ -118,11 +118,33 @@ you find in there.
 
 In their OS folder's settings at `<their OS folder>/.claude/settings.json`, add an allow list
 built **from step 1, not from a template.** Name the specific tools their routines actually
-use. If both briefs fetch web pages, web fetching goes on the list. If none of their routines
-run shell commands, do not add shell commands.
+use. If none of their routines run shell commands, do not add shell commands.
 
-Scope command permissions narrowly. Allowing a specific command pattern is right. Allowing all
-shell commands is not, and you should tell them why if they ask for it.
+### ALLOW WEB FETCHING AS A TOOL. NEVER DOMAIN BY DOMAIN.
+
+**This is the single most common way this upgrade fails, and it fails silently.** If a routine
+reads the web, put the **fetch tool itself** on the allow list. Do not enumerate the sites it
+visited yesterday.
+
+**The receipt, from a real user five days in (2026-08-12).** He ran this upgrade, kept the send
+gate on exactly as designed, and his morning brief still stopped every single day asking to pull a
+web page. His allow list had grown to **28 individual news domains** and it was never going to be
+enough - a news brief reads whatever is in the news, so tomorrow always brings a domain nobody
+approved. In his words: *"I click allow, it adds to the allow list, but inevitably there are new
+webpages to pull from each day."*
+
+**Per-domain permission cannot work for any routine whose sources change**, which is most briefs,
+monitors, research jobs and watchers. Enumerating domains produces a list that is always one day
+stale, and a scheduled run has nobody sitting there to click Allow, so it just pauses until the
+user next opens the app.
+
+**So: allow the fetch tool.** If the user is uneasy about that, the honest framing is that reading
+a public web page is not the risky action - sending, posting, spending and deleting are, and those
+are handled in Step 6 by a rule the software enforces rather than by a prompt nobody is awake to
+answer.
+
+Scope **command** permissions narrowly - a specific command pattern is right, all shell commands is
+not. **Reading tools are the opposite case: scope them by tool, not by target.**
 
 ## Step 5 - Open gate three, the folders outside their OS
 
@@ -149,6 +171,31 @@ Some things do not go on an allow list, and you refuse them even if asked:
 If a routine genuinely needs one of these to work, do not grant it. Tell your user which
 routine it is and what it wants, and let them decide with their eyes open. A routine that
 sends email should stop and ask every single time, and that is not a bug.
+
+### DENY THE DANGEROUS THINGS EXPLICITLY. DO NOT RELY ON A NARROW ALLOW LIST TO DO IT.
+
+**This is the architecture, and getting it right is what lets Step 4 be generous.**
+
+There are two ways to keep a user safe. The weak way is to allow almost nothing, so anything risky
+happens to fall outside the list - which is what produces routines that stop every morning on
+harmless things while the user learns to click Allow without reading. The strong way is:
+
+> **Open the reading and working tools wide, and put an explicit, enforced DENY on the small number
+> of actions that can actually hurt them.**
+
+So alongside the allow list, write a **deny** rule covering external sends, public posts, spending,
+and destructive file operations. A deny rule outranks any allow rule, so it holds even if a later
+allow entry is written carelessly - and it holds without a human awake to enforce it.
+
+**This came from a customer, not from us (2026-08-12).** Working through why his routines kept
+pausing, his own assistant proposed exactly this and put it better than we had: a *"system-enforced
+hard gate on external sends and posts... backed by the software instead of just my word,"* giving
+*"routines run hands-free, and no email or post can go to the outside world without your explicit
+yes, enforced, not promised."*
+
+**Say that distinction out loud to your user, because it is the whole point of this upgrade.** A
+promise depends on an assistant remembering. A deny rule is enforced by the software whether
+anything remembers or not. **That is what makes it safe to stop asking about the harmless things.**
 
 ## Step 7 - Prove it works
 
