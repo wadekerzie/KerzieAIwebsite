@@ -21,25 +21,37 @@ export const metadata: Metadata = {
 //    in less than one year." They never measured small businesses.
 // 3. No promise of traffic or leads. The deliverable is legibility, which we
 //    can show; ranking is not ours to promise.
-// 4. llms.txt is included as cheap optionality, never as the mechanism that
-//    is claimed to work. Controlled studies show AI tools read visible HTML,
-//    not markup, so the visible-content work is what carries the value.
-const whatWeDo = [
+// 4. THE TWO HALVES ARE THE PRODUCT (Wade, 2026-08-13). Half one is what
+//    machines can read TODAY. Half two is llms.txt, which is preparation for
+//    what they will read NEXT. Selling only half one is website optimization,
+//    which is crowded and unmeasurable. Selling only half two is a file almost
+//    nothing fetches yet. Together, as one decision at one price, it is
+//    neither. Do not collapse them back into a single list.
+// 5. The llms.txt claim is PREPAREDNESS, never efficacy. "You will be ready"
+//    is honest. "This will get you found" is not, and is banned.
+const halfOne = [
   {
-    lead: "We read your site the way an AI reads it.",
+    lead: "We read your site the way a machine reads it.",
     body: "Stripped of the design, the animation and the menus, what facts about your business are actually there? Usually fewer than the owner thinks.",
   },
   {
     lead: "We make the facts plain and current.",
-    body: "What you do, where you do it, what it costs, who to call. In the visible text, because that is what ChatGPT and the others actually read.",
+    body: "What you do, where you do it, what it costs, who to call. In the visible text, because that is what the AI tools read today.",
   },
   {
     lead: "We fix the plumbing while we are in there.",
-    body: "Structured data that tells an AI what you sell, where you work and what it costs, plus whatever else your platform lets us reach. The standards here are new and still moving, so we take the cheap wins now rather than scrambling later.",
+    body: "Structured data that spells out what you sell, where you work and what it costs, plus whatever else your platform lets us reach.",
+  },
+];
+
+const halfTwo = [
+  {
+    lead: "We publish your llms.txt.",
+    body: "It is the emerging standard for handing an AI a clean map of your business. Your own brand may already publish one. Most small businesses do not, and almost none of your competitors will for a while.",
   },
   {
-    lead: "We show you the difference in their words, not ours.",
-    body: "We ask ChatGPT, Claude, Gemini and Perplexity about your business before and after, and hand you both answers side by side.",
+    lead: "The adapter goes in before the socket is live.",
+    body: "Nobody knows exactly when this switches on or which version wins. That is the point: it costs almost nothing to have in place now, and there is no scramble later when it matters.",
   },
 ];
 
@@ -93,36 +105,24 @@ export default function BackCoverPage() {
         <Reveal>
           <p className="k-label mb-6">01 &mdash; What Changed</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            {/* The anti-conflation guard used to be its own defensive paragraph
+                ("half your customers are not robots"), added because two
+                reviewers heard "half your customers are AI." It is NOT deleted
+                - it is folded into the sentence below as "Not customers.
+                Traffic." Same protection, one line instead of five, and the
+                reader is never told what to think about their own customer mix.
+                Do not re-expand it into a paragraph; Wade cut that for being
+                an over-explanation that undercut the point (2026-08-13). */}
             <p>
-              More than half of all web traffic is now machines rather than
-              people. Cloudflare said so this year. Some industries have already
-              lost up to 40% of their human visitors in under a year.
-            </p>
-            {/* This paragraph exists because TWO independent reviewers read the
-                earlier copy and heard "half your customers are AI." That is a
-                conflation a sophisticated buyer catches, and catching it costs
-                us the honesty the rest of the page earns. Never remove it to
-                make the pitch punchier. */}
-            <p>
-              Straight about what that does not mean: half your customers are
-              not robots. Today only a small slice of most sites&apos; visits
-              come from an assistant. What changed is who does the{" "}
-              <span className="text-white font-medium">choosing</span> - and the
-              people who arrive that way already know what they want.
-            </p>
-            <p>
-              Here is what that means on the ground. When someone asks an AI
-              &ldquo;who fixes furnaces in McKinney,&rdquo; an{" "}
-              <span className="text-white font-medium">
-                AI decides which businesses to name
-              </span>
-              . Nobody scrolls a page of ten blue links and picks you. They get
-              two or three names and they call one.
+              Cloudflare reported this year that more than half of all traffic
+              on the internet is now machines rather than people. Not customers.{" "}
+              <span className="text-white font-medium">Traffic.</span>{" "}
+              Assistants, agents and crawlers now outnumber human eyeballs.
             </p>
             <p className="text-white font-medium">
-              Your website was built to be read by a person. The AI doing the
-              choosing is not a person.
+              Your website was built to be read by a person.
             </p>
+            <p>That is what this gets you ready for.</p>
           </div>
         </Reveal>
       </section>
@@ -131,11 +131,19 @@ export default function BackCoverPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
           <p className="k-label mb-6">02 &mdash; What We Do</p>
-          <p className="text-white text-lg font-medium max-w-2xl mb-8 leading-relaxed">
-            We do not build new websites. We make yours readable to the AI.
+          <p className="text-white text-lg font-medium max-w-2xl mb-3 leading-relaxed">
+            We do not build new websites. We get yours ready to be read by
+            machines.
+          </p>
+          <p className="max-w-2xl mb-10 text-[#AABBCC] text-lg leading-relaxed">
+            Two halves. One job, one price.
+          </p>
+
+          <p className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mb-4">
+            HALF ONE &mdash; WHAT THEY CAN READ TODAY
           </p>
           <ul className="max-w-2xl space-y-5">
-            {whatWeDo.map((item) => (
+            {halfOne.map((item) => (
               <li
                 key={item.lead}
                 className="border-l border-[#E8896A] pl-5 text-[#AABBCC] text-lg leading-relaxed"
@@ -145,6 +153,29 @@ export default function BackCoverPage() {
               </li>
             ))}
           </ul>
+
+          <p className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-12 mb-4">
+            HALF TWO &mdash; WHAT THEY WILL READ NEXT
+          </p>
+          <ul className="max-w-2xl space-y-5">
+            {halfTwo.map((item) => (
+              <li
+                key={item.lead}
+                className="border-l border-[#6B9FD4] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+              >
+                <span className="text-white font-medium">{item.lead}</span>{" "}
+                {item.body}
+              </li>
+            ))}
+          </ul>
+
+          <p className="max-w-2xl mt-12 text-[#AABBCC] text-lg leading-relaxed">
+            <span className="text-white font-medium">
+              Then we show you the difference in their words, not ours.
+            </span>{" "}
+            We ask ChatGPT, Claude, Gemini and Perplexity about your business
+            before and after, and hand you both answers side by side.
+          </p>
           <p className="max-w-2xl mt-8 text-[#AABBCC]/80 text-base leading-relaxed">
             It works on whatever you already have. Wix, Squarespace, GoDaddy,
             WordPress, a site someone built for you in 2019 and never touched
@@ -199,10 +230,10 @@ export default function BackCoverPage() {
               guessing, and the honest answer is better than the confident one.
             </p>
             <p>
-              This standard is new and still moving. Nobody knows yet which parts
-              of it the AI tools will settle on. What we can do is make sure
-              the facts about your business are clear, current and easy to lift,
-              and that nothing on your site contradicts itself.
+              What we can do is make sure the facts about your business are
+              clear, current and easy to lift, that nothing on your site
+              contradicts itself, and that you are already set up for the
+              standard when it lands rather than starting from zero.
             </p>
             <p className="text-white">
               We show you what the AI says about you before, and what it says
@@ -220,9 +251,15 @@ export default function BackCoverPage() {
             {BACK_COVER.priceLabel}
             <span className="text-[#E8896A]">.</span>
           </h2>
+          {/* "Not a subscription to a dashboard you will never open" was
+              removed 2026-08-13. Wade's model now has an ongoing service AFTER
+              the setup (keeping the site current as the standards move), so
+              that absolute was about to become false the first time one sold.
+              Pricing for the ongoing half is still undecided, so nothing is
+              claimed here yet - this line only says what the setup fee is. */}
           <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
-            One fee, once. Not a retainer, not a rebuild, not a subscription to
-            a dashboard you will never open.
+            One fee for the setup. Not a rebuild, and nothing you cannot walk
+            away from.
           </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
             The diagnostic is free and takes us about an hour. We ask the AI
