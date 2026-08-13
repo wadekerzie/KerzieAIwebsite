@@ -264,6 +264,19 @@ export default function BackCoverPage() {
               </span>
             </a>
           </div>
+          {/* THE RECEIPT IS THE ARTIFACT, SHOWN. Wade, 2026-08-13: the demo
+              button IS the receipt in the sales conversation, and the delivery
+              receipt is the client's own file at their own address, walked
+              through with them. Not a before/after, not a metric. Do not
+              reintroduce an outcome promise here. */}
+          <p className="max-w-2xl mt-8 text-[#AABBCC] text-lg leading-relaxed">
+            <span className="text-white font-medium">
+              When we finish, yours lives at your own address.
+            </span>{" "}
+            We open it with you and read it together, so you can see exactly
+            what an AI now gets told about your business. That is the whole
+            deliverable, and you are looking at a working copy of it right now.
+          </p>
         </Reveal>
       </section>
 
@@ -290,9 +303,10 @@ export default function BackCoverPage() {
               machines take instructions from.
             </p>
             <p className="text-white">
-              And we show you all of it. What was missing, what is there now,
-              the address of the file, and the markup with the validator saying
-              it is correct. That is a receipt you can check yourself the day we
+              And we show you all of it. Your own file, at your own address, the
+              same way you just looked at ours. Plus what was missing, what is
+              there now, and the markup with a validator confirming it is
+              correct. That is a receipt you can open yourself the day we
               finish, instead of a result you have to take on faith.
             </p>
           </div>
