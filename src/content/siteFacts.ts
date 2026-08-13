@@ -83,10 +83,19 @@ export const OFFERS: Offer[] = [
     key: "back-cover",
     name: "The Back Cover",
     path: "/back-cover",
-    price: 1250,
-    priceLabel: "$1,250 one time",
+    price: 1500,
+    priceLabel: "$1,500 one time",
     summary:
-      "Your customers stopped searching and started asking. We make your existing website readable to the AI that now decides which businesses get named. One time, whatever your site is built on. We do not build new websites.",
+      "More than half of all internet traffic is now machines rather than people. We get your existing website ready to be read by them, in two halves: everything the AI tools can read today, and llms.txt for the standard that is coming. One time, whatever your site is built on. We do not build new websites.",
+  },
+  {
+    key: "the-watch",
+    name: "The Watch",
+    path: "/back-cover",
+    price: 299,
+    priceLabel: "$299 a month",
+    summary:
+      "The ongoing half of The Back Cover. Every month we ask the major AI assistants the questions your customers ask, check their answers against what is actually true, correct whatever has drifted, and keep your machine-readable files current as the standards move. One page a month, in plain language. Requires The Back Cover setup first.",
   },
 ];
 

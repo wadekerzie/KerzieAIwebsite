@@ -5,6 +5,21 @@ import { offer } from "@/content/siteFacts";
 import { serviceJsonLd } from "@/content/jsonLd";
 
 const BACK_COVER = offer("back-cover");
+const THE_WATCH = offer("the-watch");
+
+// THE WATCH is priced as a RISK LINE, not a growth line (Aaron's framing,
+// adopted 2026-08-13). That is why it sits at $299 rather than at the
+// $1,500+/mo GEO-retainer floor: at this number a small-business owner says
+// yes without building a business case, and we never invite a comparison to
+// an ROI we cannot prove. It is deliberately pitched against the AI-visibility
+// dashboards (Scrunch $250/mo, AthenaHQ ~$295/mo, Profound Lite $499/mo),
+// all of which are software the customer has to operate themselves.
+const watchIncludes = [
+  "We ask the major assistants the questions your customers actually ask, every month.",
+  "We check their answers against what is true, and correct whatever has drifted at the source.",
+  "We keep your machine-readable files current as the standards move.",
+  "One page a month, in plain language, that you can read in five minutes.",
+];
 
 export const metadata: Metadata = {
   title: "The Back Cover | Kerzie AI",
@@ -275,6 +290,52 @@ export default function BackCoverPage() {
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Get the free diagnostic <span className="k-arrow">&rarr;</span>
           </Link>
+        </Reveal>
+      </section>
+
+      {/* The Watch - the ongoing half */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">06 &mdash; Staying Ready</p>
+          <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
+            The Watch<span className="text-[#E8896A]">.</span>{" "}
+            <span className="text-[#6B9FD4] font-normal">
+              {THE_WATCH.priceLabel}
+            </span>
+          </h2>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+            <p>
+              The Back Cover gets you set up. The Watch keeps you there.
+            </p>
+            <p>
+              What an AI says about your business drifts. Your hours change, a
+              price moves, a program ends, a competitor&apos;s detail gets
+              attached to your name. Nobody sends you a report when that
+              happens. The first sign is usually a customer showing up annoyed,
+              or not showing up at all.
+            </p>
+          </div>
+          <ul className="max-w-2xl mt-8 space-y-4">
+            {watchIncludes.map((line) => (
+              <li
+                key={line}
+                className="border-l border-[#6B9FD4] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+              >
+                {line}
+              </li>
+            ))}
+          </ul>
+          <p className="max-w-2xl mt-8 text-[#AABBCC] text-lg leading-relaxed">
+            Month to month. Cancel whenever it stops being worth it. Or pay for
+            the year at{" "}
+            <span className="text-white font-medium">$2,990</span> and get two
+            months back.
+          </p>
+          <p className="max-w-2xl mt-6 text-[#AABBCC]/80 text-base leading-relaxed">
+            The tools that only watch this for you start around $250 a month,
+            and you run them yourself. This is the same money with the work
+            included.
+          </p>
         </Reveal>
       </section>
     </div>
