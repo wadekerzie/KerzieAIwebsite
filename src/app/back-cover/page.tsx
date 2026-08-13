@@ -186,16 +186,48 @@ export default function BackCoverPage() {
 
           <p className="max-w-2xl mt-12 text-[#AABBCC] text-lg leading-relaxed">
             <span className="text-white font-medium">
-              Then we show you the difference in their words, not ours.
+              Then we hand you the list.
             </span>{" "}
-            We ask ChatGPT, Claude, Gemini and Perplexity about your business
-            before and after, and hand you both answers side by side.
+            Every fact that was missing, every one that is there now, and the
+            address of the file the AI tools look for. You can check every line
+            of it yourself, the day we finish.
           </p>
           <p className="max-w-2xl mt-8 text-[#AABBCC]/80 text-base leading-relaxed">
             It works on whatever you already have. Wix, Squarespace, GoDaddy,
             WordPress, a site someone built for you in 2019 and never touched
             again. Where it is hosted is not our problem to solve.
           </p>
+
+          {/* THE NEVER-BREAK-ANYTHING PROMISE - Wade's bar, 2026-08-13:
+              "if we can't confidently say 'we enhance your website with Back
+              Cover, but we never break anything', we shouldn't offer this,
+              period." Every claim in this block is load-bearing and each one
+              is true because of a delivery rule in
+              opportunity_intelligence/agent_readable_web_scope_2026-08-12.md.
+              The DNS line in particular is why the Cloudflare Worker was ruled
+              out of standard delivery - do not reintroduce it. */}
+          <div className="max-w-2xl mt-12 border-l-2 border-[#E8896A] pl-6 py-1">
+            <p className="text-white text-lg font-medium leading-relaxed mb-4">
+              We only add. We never break anything.
+            </p>
+            <div className="space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+              <p>
+                We add facts to your pages, a file for the AI tools, and markup
+                that describes your business. We do not redesign anything, we do
+                not delete anything, and we never touch your domain, your
+                hosting or your email.
+              </p>
+              <p>
+                Every change is additive and reversible to exactly what was
+                there before. We work under our own login, so you can see what
+                we did and when.
+              </p>
+              <p className="text-white">
+                When we are finished your website will look exactly the same to
+                a human being. That is the point.
+              </p>
+            </div>
+          </div>
         </Reveal>
       </section>
 
@@ -245,14 +277,23 @@ export default function BackCoverPage() {
               guessing, and the honest answer is better than the confident one.
             </p>
             <p>
-              What we can do is make sure the facts about your business are
-              clear, current and easy to lift, that nothing on your site
-              contradicts itself, and that you are already set up for the
-              standard when it lands rather than starting from zero.
+              Nobody outside those companies knows exactly how the assistants
+              decide who to name, or how long they take to notice a site has
+              changed. We are not going to pretend otherwise, and we are not
+              going to tell you an answer will change by Friday.
+            </p>
+            <p>
+              What we do is the best-known practice available today, in the
+              places the AI tools actually read, plus the file for the standard
+              that is coming. Facts clear and current, nothing on your site
+              contradicting itself, and your business described in the form
+              machines take instructions from.
             </p>
             <p className="text-white">
-              We show you what the AI says about you before, and what it says
-              after. You decide what that was worth.
+              And we show you all of it. What was missing, what is there now,
+              the address of the file, and the markup with the validator saying
+              it is correct. That is a receipt you can check yourself the day we
+              finish, instead of a result you have to take on faith.
             </p>
           </div>
         </Reveal>
