@@ -91,14 +91,20 @@ const halfOne = [
   },
 ];
 
+// HALF TWO REFRAMED 8/14 (Wade's call): the old "adapter before the socket is
+// live" hedge undersold a channel that is demonstrably on - his own ChatGPT
+// test returned a robust answer, 8 of 37 local trades in our own sweep already
+// publish the file, Squarespace ships it native. The line that survives claim
+// discipline: READY and VISIBLE (legibility, which we deliver) - never ranked
+// or found (efficacy, which nobody can promise). Rule 5 below still governs.
 const halfTwo = [
   {
     lead: "We publish your llms.txt.",
-    body: "It is the emerging standard for handing an AI a clean map of your business. Your own brand may already publish one. Most small businesses do not, and almost none of your competitors will for a while.",
+    body: "It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 37 Texas and Colorado trades this week, eight already publish one. Your competitors have started. Most have not - that is the window.",
   },
   {
-    lead: "The adapter goes in before the socket is live.",
-    body: "Nobody knows exactly when this switches on or which version wins. That is the point: it costs almost nothing to have in place now, and there is no scramble later when it matters.",
+    lead: "This stage of AI search is already on.",
+    body: "Ask an AI about our business: you get a real, current answer, because there is something real to read. How each AI weighs what it finds is not ours to promise - nobody outside those companies knows. What we deliver is simpler: you are ready for this stage of AI search, and your business is visible to the machines that answer.",
   },
 ];
 
