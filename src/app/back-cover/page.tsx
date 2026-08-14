@@ -138,7 +138,7 @@ export default function BackCoverPage() {
             </div>
             <div className="k-rise k-rise-4 mt-10 flex flex-wrap items-center gap-4">
               <Link href="/schedule" className="k-btn-solid k-focus inline-block">
-                Get the free diagnostic <span className="k-arrow">&rarr;</span>
+                Schedule your deployment <span className="k-arrow">&rarr;</span>
               </Link>
               <a
                 href="/llms.txt"
@@ -163,10 +163,69 @@ export default function BackCoverPage() {
         </div>
       </section>
 
+      {/* The self-run challenge - THE FUNNEL CHANGED HERE (Wade, 8/14): no
+          free assessment, no discovery call. The visitor proves the problem
+          on their own phone in a minute, and the calendar is for the PAID
+          deployment. Claim discipline: "99% of the time" is spoken Wade, not
+          page copy - the page says "almost every business we have checked,"
+          which our diagnostic runs support. And AI answers vary run to run
+          (the same non-determinism that killed the before/after receipt), so
+          the copy compares whether the AI has anything real to read, never
+          exact outputs. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">01 &mdash; Prove It To Yourself</p>
+          <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
+            You do not need a sales call. You need sixty seconds and your own
+            phone<span className="text-[#E8896A]">.</span>
+          </h2>
+          <ol className="max-w-2xl mt-8 space-y-7">
+            {[
+              {
+                n: "1",
+                lead: "Open ChatGPT. The free one is fine.",
+                body: "Ask: “Who should I call for [your trade] in [your town]?” See if your business gets named. Almost every small business we have checked is not there - one owner we sat with watched eleven competitors get named while he did not appear once.",
+              },
+              {
+                n: "2",
+                lead: "Now ask it about you, by name.",
+                body: "“Tell me about [your business name].” Read what comes back. Thin, generic, maybe wrong. That is what the AI carries into every conversation where your name comes up.",
+              },
+              {
+                n: "3",
+                lead: "Last one: ask it about us.",
+                body: "“Tell me about Kerzie AI Solutions.” The difference you just watched is not because we are bigger than you. We are not. It is because we published our back cover, and you have not - the AI finally had something real to read.",
+              },
+            ].map((s) => (
+              <li key={s.n} className="flex gap-5">
+                <span className="k-mono text-[#E8896A] text-sm font-semibold pt-1 flex-shrink-0">
+                  {s.n}
+                </span>
+                <p className="text-[#AABBCC] text-lg leading-relaxed">
+                  <span className="text-white font-medium">{s.lead}</span>{" "}
+                  {s.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+          <p className="max-w-2xl mt-8 text-[#AABBCC]/80 text-base leading-relaxed">
+            AI answers move around - no two runs come back identical. What you
+            are comparing is not the wording. It is whether the AI had anything
+            real to read.
+          </p>
+          <div className="mt-8">
+            <Link href="/schedule" className="k-btn-solid k-focus inline-block">
+              Saw the difference? Schedule your deployment{" "}
+              <span className="k-arrow">&rarr;</span>
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+
       {/* What changed */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; What Changed</p>
+          <p className="k-label mb-6">02 &mdash; What Changed</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             {/* The anti-conflation guard used to be its own defensive paragraph
                 ("half your customers are not robots"), added because two
@@ -199,7 +258,7 @@ export default function BackCoverPage() {
           verified by direct fetch 2026-08-14. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; Don&apos;t Take Our Word For It</p>
+          <p className="k-label mb-6">03 &mdash; Don&apos;t Take Our Word For It</p>
           <p className="max-w-2xl mb-10 text-[#AABBCC] text-lg leading-relaxed">
             None of these numbers are ours. Every one links to the people who
             published it.
@@ -275,7 +334,7 @@ export default function BackCoverPage() {
       {/* What we do */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; What We Do</p>
+          <p className="k-label mb-6">04 &mdash; What We Do</p>
           <p className="text-white text-lg font-medium max-w-2xl mb-3 leading-relaxed">
             We do not build new websites. We get yours ready to be read by
             machines.
@@ -364,7 +423,7 @@ export default function BackCoverPage() {
       {/* The proof */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; See It On This Site</p>
+          <p className="k-label mb-6">05 &mdash; See It On This Site</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               We did it to ourselves first. There is a file on this site written
@@ -413,7 +472,7 @@ export default function BackCoverPage() {
       {/* Honest section - this is the trust builder, do not cut it */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; What We Will Not Promise</p>
+          <p className="k-label mb-6">06 &mdash; What We Will Not Promise</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Anyone who tells you they can guarantee an AI will recommend you is
@@ -446,7 +505,7 @@ export default function BackCoverPage() {
       {/* Price + CTA */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; The Price</p>
+          <p className="k-label mb-6">07 &mdash; The Price</p>
           <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             {BACK_COVER.priceLabel}
             <span className="text-[#E8896A]">.</span>
@@ -461,19 +520,20 @@ export default function BackCoverPage() {
             One fee for the setup. Not a rebuild, and nothing you cannot walk
             away from.
           </p>
+          {/* The free diagnostic was retired 8/14 (Wade): the self-run test in
+              section 01 IS the assessment, run by the buyer for nothing. The
+              calendar is for the paid deployment meeting. */}
           <p className="text-[#AABBCC] text-lg max-w-xl mb-4 leading-relaxed">
-            The diagnostic is free and takes us about an hour. We ask the AI
-            tools your customers are already using - ChatGPT, Claude, Gemini,
-            Perplexity - what they say about your business, and we send you
-            their answers word for word.
+            No assessment call, no discovery dance. You already ran the test at
+            the top of this page, on your own phone, for nothing.
           </p>
           <p className="text-[#AABBCC] text-lg max-w-xl mb-10 leading-relaxed">
-            Sometimes the answers come back fine, and we tell you so. Either
-            way you will know where you stand, and finding out costs you
-            nothing.
+            The calendar is for your deployment: face to face or on a video
+            call, your choice. That meeting is where we take payment and start
+            the work, and delivery runs one to three days from it.
           </p>
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
-            Get the free diagnostic <span className="k-arrow">&rarr;</span>
+            Schedule your deployment <span className="k-arrow">&rarr;</span>
           </Link>
         </Reveal>
       </section>
@@ -485,35 +545,30 @@ export default function BackCoverPage() {
           we send the exact clicks.) */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; When You Say Yes</p>
+          <p className="k-label mb-6">08 &mdash; When You Say Yes</p>
           <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-8">
-            Five steps, and only one needs your hands
+            Four steps from calendar to walkthrough
             <span className="text-[#E8896A]">.</span>
           </h2>
           <ol className="max-w-2xl space-y-7">
             {[
               {
                 n: "1",
-                lead: "The diagnostic. Free, and first.",
-                body: "We ask ChatGPT, Claude, Gemini and Perplexity what they tell customers about your business, and send you their answers word for word. Nothing to install, no access to anything.",
+                lead: "Book the deployment.",
+                body: "Face to face or a video call, your choice. You already proved the problem to yourself at the top of this page - the meeting is where we take payment, answer whatever you want answered, and start the clock. Delivery runs one to three days.",
               },
               {
                 n: "2",
-                lead: "You say go.",
-                body: "One payment for the setup, and we book your walkthrough call in the same conversation, one to three days out. That call is where you get the finished work.",
+                lead: "Two minutes on your website: you add us as a user.",
+                body: "Every website platform has a place to add another login. You add one for us, and your own password never leaves your hands. We send you the exact clicks for your platform, and we are on the phone with you while you do it if you want. This is the only step that needs your hands.",
               },
               {
                 n: "3",
-                lead: "Two minutes on your website: you add us as a user.",
-                body: "Every website platform has a place to add another login. You add one for us, and your own password never leaves your hands. We send you the exact clicks for your platform, and we are on the phone with you while you do it if you want. This is the only step that needs you.",
-              },
-              {
-                n: "4",
                 lead: "We do the work under our own login.",
                 body: "One to three days. We only add, so your website looks exactly the same to every human who visits, the whole time and after.",
               },
               {
-                n: "5",
+                n: "4",
                 lead: "The walkthrough.",
                 body: "We open your new file, at your own web address, together, and read what the AI now gets told about your business. You also get the list: every fact that was missing, every one that is there now, and where each lives.",
               },
@@ -539,7 +594,7 @@ export default function BackCoverPage() {
       {/* The Watch - the ongoing half */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">08 &mdash; Staying Ready</p>
+          <p className="k-label mb-6">09 &mdash; Staying Ready</p>
           <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             The Watch<span className="text-[#E8896A]">.</span>{" "}
             <span className="text-[#6B9FD4] font-normal">
