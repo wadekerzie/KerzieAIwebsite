@@ -115,12 +115,14 @@ export default function BackCoverPage() {
         </Link>
       </div>
 
-      {/* Hero. The book image (generated 8/14, Wade: "it's gold") is the
-          page's icon: a hardcover seen from its BACK, metadata mid-scan -
-          the offer in one picture. Same asset drives the og share card. */}
+      {/* Hero. The book image (generated 8/14, Wade: "it's gold") sits SMALL
+          beside the header - portrait crop, fixed width, never a scroll
+          interruption (Wade's correction, same day: the full-bleed 16:9
+          version broke the hero). The 16:9 original still drives the og
+          share card. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <div className="lg:grid lg:grid-cols-[1fr,minmax(0,26rem)] lg:gap-12 lg:items-center">
-          <div>
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-14">
+          <div className="lg:flex-1">
             <p className="k-rise k-rise-1 k-label mb-8">The Back Cover</p>
             <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)] max-w-4xl">
               Your customers stopped searching and started{" "}
@@ -146,16 +148,16 @@ export default function BackCoverPage() {
               </a>
             </div>
           </div>
-          <div className="k-rise k-rise-4 mt-12 lg:mt-0">
+          <div className="k-rise k-rise-2 mt-10 lg:mt-0 flex items-center gap-5 lg:block lg:w-52 lg:flex-shrink-0 lg:pt-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/back-cover-book.jpg"
+              src="/back-cover-book-tall.jpg"
               alt="A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam"
-              className="w-full rounded-lg border border-[rgba(170,187,204,0.13)] shadow-2xl shadow-black/40"
+              className="w-32 sm:w-40 lg:w-full rounded-lg border border-[rgba(170,187,204,0.13)] shadow-2xl shadow-black/40 flex-shrink-0"
             />
-            <p className="mt-3 k-mono text-[#AABBCC]/50 text-[11px] leading-relaxed">
-              Every business has a back cover. The AI reads it whether you wrote
-              it or not.
+            <p className="lg:mt-3 k-mono text-[#AABBCC]/50 text-[11px] leading-relaxed max-w-[14rem]">
+              Every business has a back cover. The AI reads it whether you
+              wrote it or not.
             </p>
           </div>
         </div>
