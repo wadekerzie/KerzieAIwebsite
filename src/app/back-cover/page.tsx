@@ -167,6 +167,37 @@ export default function BackCoverPage() {
         </div>
       </section>
 
+      {/* The explainer video - rendered 8/14 (HeyGen, Wade's avatar, the
+          blazer look), SERVED FROM THIS REPO like the one-window video -
+          never embedded from HeyGen or YouTube on the sales page (Wade's
+          rule, 8/14: our file, our domain; YouTube is distribution, not
+          infrastructure). The llms.txt button sits directly beneath per
+          Wade's spec - the video points at it. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">The Two-Minute Version</p>
+          <video
+            controls
+            preload="metadata"
+            poster="/videos/back-cover-poster.jpg"
+            className="w-full max-w-3xl rounded-lg border border-[rgba(170,187,204,0.13)] shadow-2xl shadow-black/40"
+          >
+            <source src="/videos/back-cover-explainer.mp4" type="video/mp4" />
+          </video>
+          <div className="mt-5 flex flex-wrap items-center gap-4">
+            <a
+              href="/llms.txt"
+              className="k-focus rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-4 py-2.5 k-mono text-[#1A1B2E] text-[13px] font-semibold"
+            >
+              The file mentioned in the video: our llms.txt &rarr;
+            </a>
+            <Link href="/schedule" className="k-btn-solid k-focus inline-block">
+              Schedule your deployment <span className="k-arrow">&rarr;</span>
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+
       {/* The self-run challenge - THE FUNNEL CHANGED HERE (Wade, 8/14): no
           free assessment, no discovery call. The visitor proves the problem
           on their own phone in a minute, and the calendar is for the PAID
@@ -248,7 +279,10 @@ export default function BackCoverPage() {
             <p className="text-white font-medium">
               Your website was built to be read by a person.
             </p>
-            <p>That is what this gets you ready for.</p>
+            <p className="text-white font-medium">
+              We get it ready for the AI to read
+              <span className="text-[#E8896A]">.</span>
+            </p>
           </div>
         </Reveal>
       </section>
