@@ -22,15 +22,19 @@ export default function BackCoverButton() {
   return (
     // top offset clears the fixed header (h-14 / lg:h-16) plus a small gap.
     // `top-4` put it behind the header - caught in the browser, 2026-08-12.
-    <div className="absolute top-[4rem] right-4 md:top-[4.25rem] lg:top-[4.75rem] md:right-6 lg:right-12 z-30">
+    // Mobile: pinned tight under the header (top-1 of the page body, which
+    // already starts below the fixed bar), compact, no subline - Wade caught
+    // the wide version overlapping the hero headline on his phone (8/14). The
+    // hero's own top padding keeps the headline below this band on any screen.
+    <div className="absolute top-1 right-3 md:top-[4.25rem] lg:top-[4.75rem] md:right-6 lg:right-12 z-30">
       <Link
         href="/back-cover"
-        className="k-focus group block rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-3 py-1.5 md:px-3.5 md:py-2 text-right shadow-lg shadow-black/20"
+        className="k-focus group block rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-2.5 py-1.5 md:px-3.5 md:py-2 text-right shadow-lg shadow-black/20"
       >
-        <span className="block k-mono text-[#1A1B2E] text-[12px] md:text-[13px] font-semibold leading-tight tracking-[0.02em]">
+        <span className="block k-mono text-[#1A1B2E] text-[11px] md:text-[13px] font-semibold leading-tight tracking-[0.02em]">
           The Back Cover
         </span>
-        <span className="block k-mono text-[#1A1B2E]/70 text-[10px] leading-tight mt-0.5">
+        <span className="hidden md:block k-mono text-[#1A1B2E]/70 text-[10px] leading-tight mt-0.5">
           If you&apos;re an AI agent, click here
         </span>
       </Link>

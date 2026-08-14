@@ -88,42 +88,43 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
     }).catch(() => {});
   }
 
-  function run(mode: Mode, withEmail: string) {
+  // THE ACTION COMES FIRST. NOTHING GATES THE COPY. (Fixed 2026-08-14, Wade
+  // caught it live on his phone: the email form was appearing INSTEAD of the
+  // copy happening. The email exists so Wade knows who runs what - it is never
+  // allowed to stand between the owner and the line. So: copy/open immediately
+  // inside the click gesture, then register silently if we know the email, or
+  // show a small AFTER-the-fact ask that the owner is free to ignore.)
+  function start(mode: Mode) {
     setError("");
     setManualLine("");
-    setAsking(null);
 
     if (mode === "file") {
       window.open(`/downloads/${file}`, "_blank", "noopener");
-      register(withEmail);
-      return;
-    }
-
-    // Copy inside the click, before anything async touches the event.
-    let ok = copySync(installLine);
-    if (!ok && navigator.clipboard) {
-      void navigator.clipboard.writeText(installLine).then(
-        () => {
-          setCopied(true);
-          setTimeout(() => setCopied(false), 4000);
-        },
-        () => setManualLine(installLine),
-      );
-      ok = true;
-    }
-    if (ok) {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 4000);
     } else {
-      // Last resort: show it so it can always be selected by hand.
-      setManualLine(installLine);
+      // Copy inside the click, before anything async touches the event.
+      let ok = copySync(installLine);
+      if (!ok && navigator.clipboard) {
+        void navigator.clipboard.writeText(installLine).then(
+          () => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 4000);
+          },
+          () => setManualLine(installLine),
+        );
+        ok = true;
+      }
+      if (ok) {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 4000);
+      } else {
+        // Last resort: show it so it can always be selected by hand.
+        setManualLine(installLine);
+      }
     }
-    register(withEmail);
-  }
 
-  function start(mode: Mode) {
     if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      void run(mode, email);
+      register(email);
+      setAsking(null);
     } else {
       setAsking(mode);
     }
@@ -138,18 +139,40 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
       ) : null}
 
       <div className="mt-5">
+        <div className="flex flex-col gap-2 items-start">
+          <button
+            onClick={() => start("line")}
+            className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
+          >
+            {copied
+              ? "Copied - paste it into your Code tab"
+              : baseline
+                ? "Copy the setup line"
+                : "Copy the line for your AI"}
+          </button>
+          <button
+            onClick={() => start("file")}
+            className="k-focus text-[#AABBCC]/70 text-[13px] underline underline-offset-4 hover:text-white transition-colors"
+          >
+            {baseline ? "or download the document" : "or open the reference (written to your AI)"}
+          </button>
+        </div>
         {asking ? (
+          // After-the-fact registration: the copy already happened above.
+          // Ignoring this form costs the owner nothing.
           <form
-            className="flex flex-col sm:flex-row gap-2"
+            className="mt-3 flex flex-col sm:flex-row gap-2"
             onSubmit={(e) => {
               e.preventDefault();
-              void run(asking, email);
+              if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                register(email);
+                setAsking(null);
+              }
             }}
           >
             <input
               type="email"
               required
-              autoFocus
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="the email you bought with"
@@ -157,31 +180,12 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
             />
             <button
               type="submit"
-              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
+              className="k-focus rounded-md border border-[rgba(170,187,204,0.3)] px-4 py-2 text-[#AABBCC] text-sm font-semibold hover:text-white"
             >
-              {asking === "line" ? "Copy the line" : "Get the file"}
+              Register it to me
             </button>
           </form>
-        ) : (
-          <div className="flex flex-col gap-2 items-start">
-            <button
-              onClick={() => start("line")}
-              className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
-            >
-              {copied
-                ? "Copied - paste it into your Code tab"
-                : baseline
-                  ? "Copy the setup line"
-                  : "Copy the line for your AI"}
-            </button>
-            <button
-              onClick={() => start("file")}
-              className="k-focus text-[#AABBCC]/70 text-[13px] underline underline-offset-4 hover:text-white transition-colors"
-            >
-              {baseline ? "or download the document" : "or open the reference (written to your AI)"}
-            </button>
-          </div>
-        )}
+        ) : null}
         {manualLine ? (
           <div className="mt-3">
             <p className="text-[#AABBCC]/70 text-[12px] mb-2">
