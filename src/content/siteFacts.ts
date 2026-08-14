@@ -92,8 +92,8 @@ export const OFFERS: Offer[] = [
     key: "the-watch",
     name: "The Watch",
     path: "/back-cover",
-    price: 299,
-    priceLabel: "$299 a month",
+    price: 99,
+    priceLabel: "$99 a month",
     summary:
       "The ongoing half of The Back Cover. Every month we ask the major AI assistants the questions your customers ask, check their answers against what is actually true, correct whatever has drifted, and keep your machine-readable files current as the standards move. One page a month, in plain language. Requires The Back Cover setup first.",
   },

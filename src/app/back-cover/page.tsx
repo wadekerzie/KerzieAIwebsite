@@ -7,13 +7,17 @@ import { serviceJsonLd } from "@/content/jsonLd";
 const BACK_COVER = offer("back-cover");
 const THE_WATCH = offer("the-watch");
 
-// THE WATCH is priced as a RISK LINE, not a growth line (Aaron's framing,
-// adopted 2026-08-13). That is why it sits at $299 rather than at the
-// $1,500+/mo GEO-retainer floor: at this number a small-business owner says
-// yes without building a business case, and we never invite a comparison to
-// an ROI we cannot prove. It is deliberately pitched against the AI-visibility
-// dashboards (Scrunch $250/mo, AthenaHQ ~$295/mo, Profound Lite $499/mo),
-// all of which are software the customer has to operate themselves.
+// THE WATCH REPRICED $299 -> $99/mo ($990/yr) 2026-08-14, Wade's call after
+// market research. The buyer benchmarks this against what they already pay
+// monthly for "the website" (hosting $15-45, agency care plans $89-100 entry),
+// NOT against AI-visibility dashboards - and $299 was Birdeye's exact
+// single-location entry price, a contract-locked platform costume this does
+// not need. $99 sits on the number an owner already recognizes as a website
+// care plan, under the no-deliberation line, and above the sub-$50 churn
+// zone where cheap prices select uncommitted buyers. Aaron's 8/13 risk-line
+// framing ($299 vs Scrunch/AthenaHQ/Profound) is superseded; the dashboards
+// comparison survives below as a price WEAPON ("a third of the money, work
+// included") rather than an anchor.
 const watchIncludes = [
   "We ask the major AI assistants the questions your customers actually ask, every month.",
   "We check their answers against what is true, and correct whatever has drifted at the source.",
@@ -626,12 +630,23 @@ export default function BackCoverPage() {
           <p className="max-w-2xl mt-8 text-[#AABBCC] text-lg leading-relaxed">
             Month to month. Cancel whenever it stops being worth it. Or pay for
             the year at{" "}
-            <span className="text-white font-medium">$2,990</span> and get two
+            <span className="text-white font-medium">$990</span> and get two
             months back.
           </p>
+          {/* The two-sides framing (Wade's positioning, 8/14): the familiar
+              monthly website column next to the thing none of it covers. */}
+          <p className="max-w-2xl mt-6 text-[#AABBCC] text-lg leading-relaxed">
+            <span className="text-white font-medium">
+              Think about what you already pay every month
+            </span>{" "}
+            - the hosting, maybe a care plan, maybe the SEO work. All of it
+            keeps your website ready for people. None of it touches what the
+            AI tells your customers about you. The Watch is that missing
+            column, priced like the rest of the column.
+          </p>
           <p className="max-w-2xl mt-6 text-[#AABBCC]/80 text-base leading-relaxed">
-            The tools that only watch this for you start around $250 a month,
-            and you run them yourself. This is the same money with the work
+            The dashboards that only watch this start around $250 a month, and
+            you run them yourself. This is a third of that with the work
             included.
           </p>
         </Reveal>
