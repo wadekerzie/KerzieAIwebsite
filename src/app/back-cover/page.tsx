@@ -115,31 +115,49 @@ export default function BackCoverPage() {
         </Link>
       </div>
 
-      {/* Hero */}
+      {/* Hero. The book image (generated 8/14, Wade: "it's gold") is the
+          page's icon: a hardcover seen from its BACK, metadata mid-scan -
+          the offer in one picture. Same asset drives the og share card. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">The Back Cover</p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)] max-w-4xl">
-          Your customers stopped searching and started{" "}
-          <span className="k-serif font-normal">asking</span>
-          <span className="text-[#E8896A]">.</span>
-        </h1>
-        <div className="k-rise k-rise-3 mt-6 max-w-xl space-y-4 text-[#AABBCC] text-lg lg:text-xl leading-relaxed">
-          <p>
-            The owners I talk to keep telling me the same thing: the website is
-            not bringing in what it used to.
-          </p>
-          <p className="text-white">You are not imagining it.</p>
-        </div>
-        <div className="k-rise k-rise-4 mt-10 flex flex-wrap items-center gap-4">
-          <Link href="/schedule" className="k-btn-solid k-focus inline-block">
-            Get the free diagnostic <span className="k-arrow">&rarr;</span>
-          </Link>
-          <a
-            href="/llms.txt"
-            className="k-focus rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-4 py-2.5 k-mono text-[#1A1B2E] text-[13px] font-semibold"
-          >
-            See this site&apos;s llms.txt &rarr;
-          </a>
+        <div className="lg:grid lg:grid-cols-[1fr,minmax(0,26rem)] lg:gap-12 lg:items-center">
+          <div>
+            <p className="k-rise k-rise-1 k-label mb-8">The Back Cover</p>
+            <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)] max-w-4xl">
+              Your customers stopped searching and started{" "}
+              <span className="k-serif font-normal">asking</span>
+              <span className="text-[#E8896A]">.</span>
+            </h1>
+            <div className="k-rise k-rise-3 mt-6 max-w-xl space-y-4 text-[#AABBCC] text-lg lg:text-xl leading-relaxed">
+              <p>
+                The owners I talk to keep telling me the same thing: the website
+                is not bringing in what it used to.
+              </p>
+              <p className="text-white">You are not imagining it.</p>
+            </div>
+            <div className="k-rise k-rise-4 mt-10 flex flex-wrap items-center gap-4">
+              <Link href="/schedule" className="k-btn-solid k-focus inline-block">
+                Get the free diagnostic <span className="k-arrow">&rarr;</span>
+              </Link>
+              <a
+                href="/llms.txt"
+                className="k-focus rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-4 py-2.5 k-mono text-[#1A1B2E] text-[13px] font-semibold"
+              >
+                See this site&apos;s llms.txt &rarr;
+              </a>
+            </div>
+          </div>
+          <div className="k-rise k-rise-4 mt-12 lg:mt-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/back-cover-book.jpg"
+              alt="A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam"
+              className="w-full rounded-lg border border-[rgba(170,187,204,0.13)] shadow-2xl shadow-black/40"
+            />
+            <p className="mt-3 k-mono text-[#AABBCC]/50 text-[11px] leading-relaxed">
+              Every business has a back cover. The AI reads it whether you wrote
+              it or not.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -170,10 +188,92 @@ export default function BackCoverPage() {
         </Reveal>
       </section>
 
+      {/* The receipts - every number sourced and linked (Wade, 8/14: "we need
+          credibility for our claims - citing news articles, cloudflare's
+          announcement, and others"). CLAIM DISCIPLINE: each stat carries its
+          own qualifier and links to the primary source. The Cloudflare 40%
+          NEVER loses "most heavily crawled categories" - that qualifier is
+          load-bearing, Cloudflare never measured small businesses. All five
+          verified by direct fetch 2026-08-14. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">02 &mdash; Don&apos;t Take Our Word For It</p>
+          <p className="max-w-2xl mb-10 text-[#AABBCC] text-lg leading-relaxed">
+            None of these numbers are ours. Every one links to the people who
+            published it.
+          </p>
+          <div className="grid md:grid-cols-2 gap-5 max-w-4xl">
+            {[
+              {
+                src: "CLOUDFLARE",
+                date: "JULY 2026",
+                stat: "Human traffic to some of the internet's most heavily crawled categories fell as much as 40% in under a year.",
+                gloss:
+                  "And more than half of all traffic on the internet is now machines, not people.",
+                href: "https://blog.cloudflare.com/agentic-internet-bot-report/",
+              },
+              {
+                src: "BRIGHTLOCAL",
+                date: "FEBRUARY 2026",
+                stat: "45% of consumers now ask ChatGPT and other AI tools for local business recommendations. A year earlier it was 6%.",
+                gloss:
+                  "That makes AI the third most popular way people find a local business - ahead of Yelp and TripAdvisor.",
+                href: "https://www.brightlocal.com/research/local-consumer-review-survey/",
+              },
+              {
+                src: "PEW RESEARCH CENTER",
+                date: "JULY 2025",
+                stat: "When Google answers with an AI summary, clicks to actual websites drop from 15% to 8%.",
+                gloss:
+                  "Measured across 68,879 real searches. When the AI answers first, half the visits never happen.",
+                href: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+              },
+              {
+                src: "OPENAI",
+                date: "FEBRUARY 2026",
+                stat: "ChatGPT now has 900 million weekly users.",
+                gloss:
+                  "Nearly a billion people a week asking an AI the questions they used to type into a search box.",
+                href: "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users",
+              },
+              {
+                src: "SQUARESPACE",
+                date: "JULY 2026",
+                stat: "Squarespace now ships a built-in llms.txt - a page written for AI to read - on every site it hosts.",
+                gloss:
+                  "Mainstream website platforms are already building for machine readers. It ships turned off, which is exactly where most businesses are standing today.",
+                href: "https://support.squarespace.com/hc/en-us/articles/47434125611277-Create-an-llms-txt-file",
+              },
+            ].map((c) => (
+              <a
+                key={c.src}
+                href={c.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="k-focus block rounded-lg border border-[rgba(170,187,204,0.15)] bg-[rgba(170,187,204,0.04)] p-6 hover:border-[rgba(170,187,204,0.35)] transition-colors duration-200"
+              >
+                <p className="k-mono text-[#6B9FD4] text-[11px] tracking-[0.14em] mb-3">
+                  {c.src} <span className="text-[#AABBCC]/40">&middot; {c.date}</span>
+                </p>
+                <p className="text-white text-lg font-medium leading-snug mb-3">
+                  {c.stat}
+                </p>
+                <p className="text-[#AABBCC] text-[15px] leading-relaxed mb-3">
+                  {c.gloss}
+                </p>
+                <p className="k-mono text-[#E8896A] text-[11px] tracking-[0.1em]">
+                  READ THE SOURCE &rarr;
+                </p>
+              </a>
+            ))}
+          </div>
+        </Reveal>
+      </section>
+
       {/* What we do */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; What We Do</p>
+          <p className="k-label mb-6">03 &mdash; What We Do</p>
           <p className="text-white text-lg font-medium max-w-2xl mb-3 leading-relaxed">
             We do not build new websites. We get yours ready to be read by
             machines.
@@ -262,7 +362,7 @@ export default function BackCoverPage() {
       {/* The proof */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; See It On This Site</p>
+          <p className="k-label mb-6">04 &mdash; See It On This Site</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               We did it to ourselves first. There is a file on this site written
@@ -311,7 +411,7 @@ export default function BackCoverPage() {
       {/* Honest section - this is the trust builder, do not cut it */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; What We Will Not Promise</p>
+          <p className="k-label mb-6">05 &mdash; What We Will Not Promise</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
               Anyone who tells you they can guarantee an AI will recommend you is
@@ -344,7 +444,7 @@ export default function BackCoverPage() {
       {/* Price + CTA */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; The Price</p>
+          <p className="k-label mb-6">06 &mdash; The Price</p>
           <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             {BACK_COVER.priceLabel}
             <span className="text-[#E8896A]">.</span>
@@ -376,10 +476,68 @@ export default function BackCoverPage() {
         </Reveal>
       </section>
 
+      {/* When you say yes - the frictionless path (Wade, 8/14: "a simple
+          step-by-step explanation to the buyer for what happens." The access
+          ask is the friction point, so step 3 does the de-fanging: their own
+          platform's add-a-user door, their password never leaves their hands,
+          we send the exact clicks.) */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">07 &mdash; When You Say Yes</p>
+          <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-8">
+            Five steps, and only one needs your hands
+            <span className="text-[#E8896A]">.</span>
+          </h2>
+          <ol className="max-w-2xl space-y-7">
+            {[
+              {
+                n: "1",
+                lead: "The diagnostic. Free, and first.",
+                body: "We ask ChatGPT, Claude, Gemini and Perplexity what they tell customers about your business, and send you their answers word for word. Nothing to install, no access to anything.",
+              },
+              {
+                n: "2",
+                lead: "You say go.",
+                body: "One payment for the setup, and we book your walkthrough call in the same conversation, one to three days out. That call is where you get the finished work.",
+              },
+              {
+                n: "3",
+                lead: "Two minutes on your website: you add us as a user.",
+                body: "Every website platform has a place to add another login. You add one for us, and your own password never leaves your hands. We send you the exact clicks for your platform, and we are on the phone with you while you do it if you want. This is the only step that needs you.",
+              },
+              {
+                n: "4",
+                lead: "We do the work under our own login.",
+                body: "One to three days. We only add, so your website looks exactly the same to every human who visits, the whole time and after.",
+              },
+              {
+                n: "5",
+                lead: "The walkthrough.",
+                body: "We open your new file, at your own web address, together, and read what the AI now gets told about your business. You also get the list: every fact that was missing, every one that is there now, and where each lives.",
+              },
+            ].map((s) => (
+              <li key={s.n} className="flex gap-5">
+                <span className="k-mono text-[#E8896A] text-sm font-semibold pt-1 flex-shrink-0">
+                  {s.n}
+                </span>
+                <p className="text-[#AABBCC] text-lg leading-relaxed">
+                  <span className="text-white font-medium">{s.lead}</span>{" "}
+                  {s.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+          <p className="max-w-2xl mt-10 text-[#AABBCC]/80 text-base leading-relaxed">
+            When you are done with us, remove our login. It takes one click,
+            and everything we added stays yours.
+          </p>
+        </Reveal>
+      </section>
+
       {/* The Watch - the ongoing half */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; Staying Ready</p>
+          <p className="k-label mb-6">08 &mdash; Staying Ready</p>
           <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             The Watch<span className="text-[#E8896A]">.</span>{" "}
             <span className="text-[#6B9FD4] font-normal">
