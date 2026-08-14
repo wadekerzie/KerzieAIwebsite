@@ -100,7 +100,7 @@ const halfOne = [
 const halfTwo = [
   {
     lead: "We publish your llms.txt.",
-    body: "It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 37 Texas and Colorado trades this week, eight already publish one. Your competitors have started. Most have not - that is the window.",
+    body: "It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 57 Texas and Colorado trades this week, eighteen already publish one - in roofing it is already half. Your competitors have started. The window is closing, not closed.",
   },
   {
     lead: "This stage of AI search is already on.",
