@@ -21,10 +21,38 @@ const watchIncludes = [
   "One page a month, in plain language, that you can read in five minutes.",
 ];
 
+// Share-card imagery added 2026-08-14 (Wade's call after an iMessage share
+// rendered a generic stock photo): the og:image is a generated hardcover seen
+// from its BACK, metadata mid-scan, coral bookmark - the offer in one picture.
+// Source + the typographic alternate live in Wade OS under
+// brand/kerzie_ai/assets/og/.
 export const metadata: Metadata = {
   title: "The Back Cover | Kerzie AI",
   description:
     "Your customers stopped searching and started asking. We make your existing website readable to the AI that now decides which businesses get named. We do not build new websites.",
+  openGraph: {
+    title: "The Back Cover",
+    description:
+      "What does the AI say about your business? We make your existing website readable to the AI your customers now ask. We only add. We never break anything.",
+    url: "https://kerzie.ai/back-cover",
+    siteName: "Kerzie AI",
+    type: "website",
+    images: [
+      {
+        url: "https://kerzie.ai/back-cover-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Back Cover",
+    description:
+      "What does the AI say about your business? We make your existing website readable to the AI your customers now ask.",
+    images: ["https://kerzie.ai/back-cover-og.jpg"],
+  },
 };
 
 // CLAIM DISCIPLINE ON THIS PAGE - do not loosen it in a later edit.
