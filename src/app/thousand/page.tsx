@@ -56,6 +56,78 @@ export default function ThousandPage() {
         </p>
       </section>
 
+      {/* The Founding Hundred - decided 2026-08-10 (Wade's option B), FIRST
+          SHIPPED TO THE PAGE 2026-08-14. Terms come verbatim from
+          kerzie_ai_content/founding_hundred_program.md in Wade OS. The price
+          never drops - the founding benefit is the free upgrade path. The
+          wall names founders ONLY after each one consents to being named;
+          seats 1-7 are the existing operators, grandfathered. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">The Founding Hundred</p>
+          <h2 className="text-white text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
+            The first hundred get everything we ever ship
+            <span className="text-[#E8896A]">.</span>
+          </h2>
+          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed mb-8">
+            <p>
+              The price does not drop for anybody - a discount you have to
+              notice is a discount you learn to ignore. What the first hundred
+              operators get instead is worth more, and it never expires.
+            </p>
+          </div>
+          <p className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mb-4">
+            WHAT FOUNDERS GET
+          </p>
+          <ul className="max-w-2xl space-y-4">
+            {[
+              "Every OS upgrade free, for life. The people whose feedback creates the upgrades never pay for them.",
+              "A founding number - Operator #12 of 100 - stamped in your setup document.",
+              "Your name, your business, and your link on this page, if you want them here.",
+              "Fingerprints on the product: release notes name who asked for what. The last customer request shipped inside a week.",
+              "The monthly founding call, capped at the hundred.",
+            ].map((line) => (
+              <li
+                key={line}
+                className="border-l border-[#E8896A] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+              >
+                {line}
+              </li>
+            ))}
+          </ul>
+          <p className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+            WHAT FOUNDERS GIVE
+          </p>
+          <ul className="max-w-2xl space-y-4">
+            {[
+              "One short note a month: what hurt, what saved time, what you want next.",
+              "Permission to use your first name, business type, and real numbers as receipts.",
+              "After thirty days of real use, a testimonial - only if we genuinely earned it.",
+            ].map((line) => (
+              <li
+                key={line}
+                className="border-l border-[#6B9FD4] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+              >
+                {line}
+              </li>
+            ))}
+          </ul>
+          <p className="max-w-2xl mt-10 text-[#AABBCC] text-lg leading-relaxed">
+            <span className="text-white font-medium">
+              Seats 1 through {operators.count} are taken.
+            </span>{" "}
+            The founding wall goes up here as each founder says yes to being
+            named.
+          </p>
+          <div className="mt-8">
+            <Link href="/one-window" className="k-btn-solid k-focus inline-block">
+              Claim a founding seat - the One-Window Setup{" "}
+              <span className="k-arrow">&rarr;</span>
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Why the door */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
         <Reveal>

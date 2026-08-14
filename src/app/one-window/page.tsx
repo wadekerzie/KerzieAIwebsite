@@ -393,6 +393,22 @@ export default function OneWindowPage() {
               working. I am not building a payment you forget to cancel. I am
               walking you across the line where you do not need me.
             </p>
+            {/* Founding Hundred terms - decided 8/10, shipped to the page
+                8/14. Full terms live on /thousand; the benefit here is the
+                one that touches this purchase: the pass, free, forever. */}
+            <p>
+              <span className="text-white font-medium">
+                The Founding Hundred:
+              </span>{" "}
+              if you are among the first hundred operators, you do not buy the
+              Upgrade Pass at all. Every upgrade is free, for life - the people
+              whose feedback creates the upgrades never pay for them. Seats are
+              counted on{" "}
+              <Link href="/thousand" className="k-link k-focus text-[#6B9FD4]">
+                the First Thousand page
+              </Link>
+              , along with what founders get and what they give.
+            </p>
             <p>
               <span className="text-white font-medium">The guarantee:</span>{" "}
               the first sitting ends with one real thing from your week done
