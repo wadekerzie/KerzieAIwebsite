@@ -21,7 +21,7 @@ const THE_WATCH = offer("the-watch");
 const watchIncludes = [
   "We ask the major AI assistants the questions your customers actually ask, every month.",
   "We check their answers against what is true, and correct whatever has drifted at the source.",
-  "We keep your machine-readable files current as the standards move.",
+  "We keep your machine-readable pages current as the standards move.",
   "One page a month, in plain language, that you can read in five minutes.",
 ];
 
@@ -195,7 +195,7 @@ export default function BackCoverPage() {
               href="/llms.txt"
               className="k-focus rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-4 py-2.5 k-mono text-[#1A1B2E] text-[13px] font-semibold"
             >
-              The file mentioned in the video: our llms.txt &rarr;
+              The page mentioned in the video: our llms.txt &rarr;
             </a>
             <Link href="/schedule" className="k-btn-solid k-focus inline-block">
               Schedule your deployment <span className="k-arrow">&rarr;</span>
@@ -422,7 +422,7 @@ export default function BackCoverPage() {
               Then we hand you the list.
             </span>{" "}
             Every fact that was missing, every one that is there now, and the
-            address of the file the AI tools look for. You can check every line
+            address of the page the AI tools look for. You can check every line
             of it yourself, the day we finish.
           </p>
           <p className="max-w-2xl mt-8 text-[#AABBCC]/80 text-base leading-relaxed">
@@ -445,7 +445,7 @@ export default function BackCoverPage() {
             </p>
             <div className="space-y-4 text-[#AABBCC] text-lg leading-relaxed">
               <p>
-                We add facts to your pages, a file for the AI tools, and markup
+                We add facts to your pages, a page for the AI tools, and markup
                 that describes your business. We do not redesign anything, we do
                 not delete anything, and we never touch your domain, your
                 hosting or your email.
@@ -470,7 +470,7 @@ export default function BackCoverPage() {
           <p className="k-label mb-6">05 &mdash; See It On This Site</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p>
-              We did it to ourselves first. There is a file on this site written
+              We did it to ourselves first. There is a page on this site written
               for machines rather than for you: every offer, every price, how to
               reach a human, in plain text with the design stripped out.
             </p>
@@ -530,13 +530,13 @@ export default function BackCoverPage() {
             </p>
             <p>
               What we do is the best-known practice available today, in the
-              places the AI tools actually read, plus the file for the standard
+              places the AI tools actually read, plus the page for the standard
               that is coming. Facts clear and current, nothing on your site
               contradicting itself, and your business described in the form
               machines take instructions from.
             </p>
             <p className="text-white">
-              And we show you all of it. Your own file, at your own address, the
+              And we show you all of it. Your own page, at your own address, the
               same way you just looked at ours. Plus what was missing, what is
               there now, and the markup with a validator confirming it is
               correct. That is a receipt you can open yourself the day we
@@ -614,7 +614,7 @@ export default function BackCoverPage() {
               {
                 n: "4",
                 lead: "The walkthrough.",
-                body: "We open your new file, at your own web address, together, and read what the AI now gets told about your business. You also get the list: every fact that was missing, every one that is there now, and where each lives.",
+                body: "We open your new back cover page, at your own web address, together, and read what the AI now gets told about your business. You also get the list: every fact that was missing, every one that is there now, and where each lives.",
               },
             ].map((s) => (
               <li key={s.n} className="flex gap-5">
@@ -678,7 +678,7 @@ export default function BackCoverPage() {
               for most businesses; $299 = daily refresh for inventory-velocity
               businesses (dealers, menus). Two tiers, one product. */}
           <p className="max-w-2xl mt-6 text-[#AABBCC] text-lg leading-relaxed">
-            The $99 rate keeps your files refreshed twice a month, which is
+            The $99 rate keeps your page refreshed twice a month, which is
             right for most businesses. If your information moves every day -
             vehicle inventory, menus, listings - the daily-refresh tier is{" "}
             <span className="text-white font-medium">$299 a month</span>.
