@@ -265,7 +265,7 @@ export default function BackCoverPage() {
           <p className="k-label mb-6">03 &mdash; Don&apos;t Take Our Word For It</p>
           <p className="max-w-2xl mb-10 text-[#AABBCC] text-lg leading-relaxed">
             None of these numbers are ours. Every one links to the people who
-            published it.
+            published&nbsp;it.
           </p>
           <div className="grid md:grid-cols-2 gap-5 max-w-4xl">
             {[
