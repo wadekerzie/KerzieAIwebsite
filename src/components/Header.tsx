@@ -225,6 +225,22 @@ export default function Header() {
                 )}
               </div>
             ))}
+            {/* The Back Cover - mobile home. The floating BackCoverButton is
+                hidden below md, and until 2026-08-14 nothing replaced it: the
+                page was unreachable on a phone (Wade caught it). Same light
+                blue as the desktop button so it still visually pops. */}
+            <Link
+              href="/back-cover"
+              onClick={() => setMobileOpen(false)}
+              className="k-focus self-start rounded-md bg-[#6B9FD4] px-3.5 py-2 shadow-lg shadow-black/20"
+            >
+              <span className="block k-mono text-[#1A1B2E] text-[13px] font-semibold leading-tight tracking-[0.02em]">
+                The Back Cover
+              </span>
+              <span className="block k-mono text-[#1A1B2E]/70 text-[10px] leading-tight mt-0.5">
+                If you&apos;re an AI agent, click here
+              </span>
+            </Link>
             <Link
               href="/#whats-broken"
               onClick={() => setMobileOpen(false)}

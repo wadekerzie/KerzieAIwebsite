@@ -4,11 +4,13 @@ import OsDownloadCard from "@/components/OsDownloadCard";
 import library from "@/data/os_library.json";
 
 // The OS Library. Deliberately not in the site menu - this page is for people
-// who already own the One-Window Setup. Upgrades are named, not numbered, and
-// install a la carte: nothing here assumes you took anything else.
+// who already own the One-Window Setup. Rewritten August 2026 to the
+// capability-note model (Wade's call, 8/14, after the Kurt exchange): a card
+// is a described idea the owner hands to their OS, not a file-install. The
+// full documents stay behind every card as references written to the AI.
 export const metadata: Metadata = {
   title: "The OS Library | Kerzie AI",
-  description: "Every Personal OS upgrade, by name, in one place. For One-Window owners.",
+  description: "Ideas from a working OS, described in plain words. Take what fits yours.",
   robots: { index: false, follow: false },
 };
 
@@ -27,7 +29,7 @@ export default function DownloadsPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-10">
         <p className="k-label mb-6">The OS Library</p>
         <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.2rem,6vw,4rem)] max-w-3xl">
-          Every upgrade, by name, in one place.
+          Your OS is not software. Nothing here is an update.
         </h1>
         <div className="mt-6 max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
           <p>
@@ -35,22 +37,32 @@ export default function DownloadsPage() {
             <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
               One-Window Setup
             </Link>
-            . Upgrades have names, not version numbers, because they install a
-            la carte: read the description, decide if you want that behavior in
-            your OS, and skip anything you have already built your own way.
-            Nothing here assumes you took anything else, except where a card
-            says so.
+            , and it works differently than every download page you have ever
+            used. <span className="text-white">There are no versions to fall
+            behind on, no updates you are forced to take, and nothing here will
+            ever make your OS harder to run.</span> Your OS exists to run your
+            business the way you want it run. That is the entire point of it.
           </p>
           <p>
-            <span className="text-white">You do not read these files.</span>{" "}
-            They are written to your AI, not to you. Copy the install line, paste
-            it into your Code tab, and your AI fetches the rest itself - it will
-            describe what the upgrade changes before it touches anything.
+            Every card below is something I run in my own OS. When a behavior
+            earns its keep, I describe it here in plain words. You read the
+            card and ask one question:{" "}
+            <span className="text-white">&ldquo;Do I want that?&rdquo;</span>{" "}
+            If no, skip it - what helps me might not fit how you work. If yes,
+            you hand the idea to your OS and it builds the capability its own
+            way, fitted to what you already have, breaking nothing you have
+            built.
           </p>
           <p>
-            Your email registers which upgrades you pulled, so I know who runs
-            what without your OS ever phoning home. Use the email you bought
-            with.
+            That is also how this library gets made. I describe what I want,
+            and my OS builds it. Every card on this page is that method
+            working, and handing a card to your own OS is you using the same
+            method.
+          </p>
+          <p>
+            Your email registers which capabilities you pulled, so I know who
+            runs what without your OS ever phoning home. Use the email you
+            bought with.
           </p>
         </div>
       </section>
@@ -64,12 +76,13 @@ export default function DownloadsPage() {
             was={library.baseline.was}
             description={library.baseline.description}
             file={library.baseline.file}
+            baseline
           />
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-14 border-t border-[rgba(170,187,204,0.13)] pt-14">
-        <p className="k-label mb-6">The Upgrades</p>
+        <p className="k-label mb-6">The Capabilities</p>
         <div className="grid md:grid-cols-2 gap-5">
           {library.upgrades.map((u) => (
             <OsDownloadCard
@@ -86,31 +99,35 @@ export default function DownloadsPage() {
       </section>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20 border-t border-[rgba(170,187,204,0.13)] pt-14">
-        <p className="k-label mb-6">How An Upgrade Installs</p>
+        <p className="k-label mb-6">How A Capability Lands</p>
         <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
           <p>
-            Open a fresh session, paste the install line, and let it work.
-            <span className="text-white"> Plan for an upgrade to take a full
-            session of your AI&apos;s attention</span> - it reads your OS, tells you
-            in plain words what it is about to add, then does the work. Think
-            of it like restarting your Mac for a system update, not like
-            installing an app. Do one at a time.
+            Read the card. Want it? The button copies one line - paste it into
+            your Code tab and let your AI work.
+            <span className="text-white"> Your AI builds the capability to fit
+            your OS</span>, and it tells you in plain words what it is about to
+            add before it touches anything. Behind every card sits a full
+            reference document written to your AI, not to you - it reads that
+            for the detail so you never have to.
           </p>
           <p>
-            Every upgrade looks at your OS before it says anything.
-            <span className="text-white"> Running things stock, the way most
-            people do? It installs - no quiz, nothing to decide.</span> If it
-            finds something you built your own way, it names it and asks one
-            question: keep yours, or take the new one. Keeping yours is always
-            a fine answer. And any upgrade comes back out as easily as it went
-            in - tell your AI to remove it, and it&apos;s gone.
+            Two promises hold for everything on this page.
+            <span className="text-white"> Nothing you built gets replaced
+            without your yes</span> - if your AI finds something you made your
+            own way, it names it and asks one question: keep yours, or take
+            this. Keeping yours is always a fine answer. And when the build is
+            done, ask your AI:{" "}
+            <span className="text-white">&ldquo;Show me in plain words what you
+            built and how I use it.&rdquo;</span> That is your receipt. Any
+            capability comes back out as easily as it went in - tell your AI to
+            remove it, and it&apos;s gone.
           </p>
           <p className="text-[#AABBCC]/70 text-base">
-            Bought the One-Window Setup and something here will not open? Email{" "}
+            Bought the One-Window Setup and something here will not work? Email{" "}
             <a href="mailto:wade@kerzie.ai" className="k-link k-focus text-[#6B9FD4]">
               wade@kerzie.ai
             </a>{" "}
-            and I will get you the file directly.
+            and I will get you squared away directly.
           </p>
         </div>
       </section>

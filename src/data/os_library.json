@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-14",
   "baseline": {
     "slug": "foundation",
     "name": "The Foundation",
     "was": "v1.0",
     "file": "one-window-setup.md",
-    "description": "The complete One-Window Setup: one document that interviews you and builds your personal operating system around your answers. The three-hour build. Everything else on this page installs on top of it."
+    "description": "The complete One-Window Setup: one document that interviews you - your business, your goal for the OS, how you want to be spoken to - and builds your personal operating system around the answers. Since August 2026 the operating disciplines ship inside it from day one: the quick start, the green light, the clean handoff, the scan, and skills that run on the cheapest model that does the job. The three-hour build."
   },
   "upgrades": [
     {
@@ -14,7 +14,7 @@
       "was": "new",
       "file": "personal-os-quick-start.md",
       "description": "Your session says hello in one line and hands you the floor, instead of making you watch it read your files for two minutes. All the orientation still happens - just after you have given your first instruction. Includes the clock anchor, so it never guesses what day it is.",
-      "note": "Replaces the earlier 'Present Tense' release. If you have that one, this supersedes it."
+      "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier. Replaces the 'Present Tense' release."
     },
     {
       "slug": "green-light",
@@ -22,7 +22,7 @@
       "was": "new",
       "file": "personal-os-green-light.md",
       "description": "Your scheduled routines stop asking permission and just run. Your AI reads what your own routines actually need, grants exactly that, and finds the gate almost nobody finds on their own: anything outside your OS folder is blocked no matter what your permission setting says.",
-      "note": "Only matters once you have routines. Anything destructive stays blocked."
+      "note": "Built into The Foundation since August 2026 - new OSes apply it when their first routine gets built. Hand this to your OS only if yours was built earlier. Anything destructive stays blocked."
     },
     {
       "slug": "living-pane",
@@ -37,7 +37,8 @@
       "name": "The Clean Handoff",
       "was": "v1.2",
       "file": "personal-os-v1.2-clean-handoff.md",
-      "description": "A session wrap-up ritual: say \"let's wrap up\" and your OS reconciles your tracker against reality, verifying anything that claims to be done. Tomorrow starts warm instead of cold."
+      "description": "A session wrap-up ritual: say \"let's wrap up\" and your OS reconciles your tracker against reality, verifying anything that claims to be done. Tomorrow starts warm instead of cold.",
+      "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier."
     },
     {
       "slug": "weekly-tune-up",
@@ -66,7 +67,7 @@
       "was": "v1.7",
       "file": "personal-os-v1.7-the-scan.md",
       "description": "The pane-reconciliation motion: when work lands, scan the tabs the way you actually read them and clear, update, or add every touched row - including work you did with your own hands.",
-      "note": "Needs a pane to scan - install The Living Pane first."
+      "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier, and only if you run a pane."
     },
     {
       "slug": "call-numbers",

@@ -5,21 +5,27 @@ import { useEffect, useState } from "react";
 // One card per library entry.
 //
 // The PRIMARY action is a line the owner pastes into their AI, not a file they
-// open. Same reason the setup page was rewritten 2026-08-10: these documents
-// are written TO the AI, and a human who opens one reads thousands of words
-// addressed to somebody else. The file download stays as the fallback.
+// open. Rewritten 2026-08-14 to the capability-note model: the line hands the
+// AI the IDEA and lets it build the capability to fit that owner's OS, instead
+// of instructing it to install our document verbatim. The document stays
+// linked as a reference the AI may consult - the owner never reads it. The
+// baseline (One-Window Setup) keeps the read-and-run line, because it IS the
+// build document for a new OS.
 //
 // Either action registers the pull in GHL, so "who runs what" survives the
 // change of format. The email is asked once and remembered locally.
 const EMAIL_KEY = "kerzie-os-owner-email";
 
+// "was" (the old version label) is accepted but no longer rendered - the
+// no-versions mindset on the page makes version residue a contradiction.
 type Props = {
   slug: string;
   name: string;
-  was: string;
+  was?: string;
   description: string;
   file: string;
   note?: string;
+  baseline?: boolean;
 };
 
 type Mode = "line" | "file";
@@ -50,7 +56,7 @@ function copySync(text: string): boolean {
   return ok;
 }
 
-export default function OsDownloadCard({ slug, name, was, description, file, note }: Props) {
+export default function OsDownloadCard({ slug, name, description, file, note, baseline }: Props) {
   const [email, setEmail] = useState("");
   const [asking, setAsking] = useState<Mode | null>(null);
   const [copied, setCopied] = useState(false);
@@ -62,9 +68,14 @@ export default function OsDownloadCard({ slug, name, was, description, file, not
     if (saved) setEmail(saved);
   }, []);
 
-  const installLine =
-    `Read https://kerzie.ai/downloads/${file} and install this upgrade to my ` +
-    `Personal OS. Describe what it changes before you apply anything.`;
+  const installLine = baseline
+    ? `Read https://kerzie.ai/downloads/${file} and build my Personal OS from it. ` +
+      `Describe each phase in plain words before you do it.`
+    : `I want to add a capability to my OS: "${name}". Build it your own way, ` +
+      `fitted to what I already have - break nothing I've built. For implementation ` +
+      `detail you can read https://kerzie.ai/downloads/${file} (it's written to you, ` +
+      `not me). Before you change anything, tell me in plain words what you'll add. ` +
+      `When you're done, show me what you built and how I use it.`;
 
   // Fire-and-forget: the pull still registers in GHL, but nothing the user sees
   // waits on it. A registration failure must never cost them the line.
@@ -120,12 +131,7 @@ export default function OsDownloadCard({ slug, name, was, description, file, not
 
   return (
     <div className="rounded-lg border border-[rgba(170,187,204,0.15)] bg-[rgba(170,187,204,0.04)] p-6 flex flex-col">
-      <div className="flex items-baseline justify-between gap-3">
-        <h3 className="text-white font-semibold text-lg">{name}</h3>
-        <span className="k-mono text-[#AABBCC]/45 text-[11px] tracking-[0.12em] whitespace-nowrap">
-          was {was}
-        </span>
-      </div>
+      <h3 className="text-white font-semibold text-lg">{name}</h3>
       <p className="mt-3 text-[#AABBCC] text-[15px] leading-relaxed flex-1">{description}</p>
       {note ? (
         <p className="mt-3 text-[#E8896A]/85 text-[13px] leading-relaxed">{note}</p>
@@ -162,13 +168,17 @@ export default function OsDownloadCard({ slug, name, was, description, file, not
               onClick={() => start("line")}
               className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
             >
-              {copied ? "Copied - paste it into your Code tab" : "Copy the install line"}
+              {copied
+                ? "Copied - paste it into your Code tab"
+                : baseline
+                  ? "Copy the setup line"
+                  : "Copy the line for your AI"}
             </button>
             <button
               onClick={() => start("file")}
               className="k-focus text-[#AABBCC]/70 text-[13px] underline underline-offset-4 hover:text-white transition-colors"
             >
-              or download the file
+              {baseline ? "or download the document" : "or open the reference (written to your AI)"}
             </button>
           </div>
         )}

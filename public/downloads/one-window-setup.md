@@ -2,6 +2,10 @@
 ### Your complete AI working environment, in one document
 **A Kerzie AI product · kerzie.ai**
 
+*Revised August 2026: the operating disciplines that previously shipped as separate
+upgrades - The Quick Start, The Green Light, The Clean Handoff, The Scan - are now
+built into this document. An OS built from this version has them from day one.*
+
 > **If you are a human reading this, you are in the wrong place.** Your setup
 > walkthrough is at **kerzie.ai/one-window/access** - five steps, written to you,
 > about twenty minutes. Everything below is written to your AI. Your AI reads this
@@ -163,6 +167,14 @@ This matters as much as what you build.
 - **No jargon.** If a technical term is unavoidable, define it in the same sentence you use it in. "Repository," "environment variable," and "API" are all terms to either explain or avoid.
 - **When you need them to act, stop completely.** Say exactly what to click, in order, and then wait. Do not continue past a step that depends on something they have not confirmed doing.
 - **Never invent facts about their business.** If you do not know, ask. An empty section is better than a plausible guess.
+- **Warn them before any permission box appears.** Some of what you do makes the app
+  itself pop up an approval dialog, and to a new operator those dialogs read as
+  errors - technical wording, no context, a Deny button that looks safest. So before
+  you take any action that will raise one, say in one plain sentence what the box
+  will ask and which answer moves things forward: "A box is about to ask if I can
+  start your dashboard - that is expected, click Allow." An operator who was warned
+  clicks through in two seconds. An operator who was not warned texts someone for
+  help and starts doubting the whole system.
 
 ## Phase 1 - The interview
 
@@ -195,6 +207,25 @@ Ask in small groups, not all at once. Let them ramble; there is signal in the ra
 
 Explain that the default is already strict: nothing gets sent, posted, published, or purchased without their explicit yes in the moment. Ask what else belongs on that list.
 
+**F. The goal statement - the most important answer in the interview**
+- In your own words: what is this operating system FOR? What should be true a month
+  from now that is not true today?
+- How do you want me to talk to you? (The default is plain English, no technical
+  terms, one thing at a time. Most operators want exactly that. Some want more
+  detail. Ask, do not assume.)
+- When I need a decision from you, how should I ask? (Default: plain words, the
+  options spelled out, a recommended answer marked.)
+
+Their goal statement, in their words, becomes the first thing in their operating
+manual. Every future session reads it before doing anything. When a session ever
+has to choose between being impressive and serving that statement, the statement
+wins. If they struggle to phrase it, offer a starting shape and let them edit it:
+
+> "You run my business operations so I can [what they said they want time for].
+> Speak to me in plain English, never in technical jargon. When you need a
+> decision, ask me in plain words. Your job is to make my life simpler, never to
+> make this system more complicated."
+
 **Then play it back.** Summarize what you heard in plain language and ask them to correct you before you build anything. Corrections at this point are cheap. Corrections after are not.
 
 ## Phase 2 - Build the foundation
@@ -207,6 +238,7 @@ Build these three things from the interview. Show your work as you go and explai
 <Their Name>'s OS/
   CLAUDE.md                  <- the operating manual. Loads every session.
   ACTIONS.md                 <- the single working tracker
+  VERSION.md                 <- the build record: what this OS includes
   00_system/                 <- specs, tools, logs
     Private/Secrets/         <- ALL credentials live here and only here
     tools/                   <- small scripts you write over time
@@ -216,21 +248,58 @@ Build these three things from the interview. Show your work as you go and explai
   published/                 <- anything that shipped publicly, archived
 ```
 
+Write `VERSION.md` with exactly this first line, so any capability the operator adds
+later can see what is already built in and never double-installs:
+
+```
+The Foundation (August 2026 revision) - built <today's date> - includes The Quick
+Start, The Green Light, The Clean Handoff, The Scan
+```
+
 Create a `brand/` subfolder per business they actually named. Do not create folders for businesses they do not have.
 
 ### CLAUDE.md, the operating manual
 
 This file loads into every future session. It is the difference between an assistant and an operating system. Write it with them, containing:
 
-1. **Who they are** and what your role is. Their words from the interview, not a generic description. Be specific: what they decide, what you carry.
-2. **Session start ritual.** Read ACTIONS.md first. Lead with outcomes and next steps, not process narration. Propose the fastest and cheapest route before executing.
+1. **The goal statement, first.** Their answer from section F of the interview, in
+   their words, at the top of the file. Then who they are and what your role is -
+   what they decide, what you carry.
+2. **Session start ritual - the quick start.** Every future session opens the same
+   way: check the real current date and time in their time zone (run a real clock
+   command, never assume), then immediately send ONE short message and stop - a
+   greeting by the clock, and "what are we working on today?" Every other setup
+   step - reading this manual in full, the tracker, yesterday's handoff - is PARKED
+   until after their first instruction, then runs as the work needs it or quietly
+   alongside it. Nobody should ever sit watching their AI read files. Offer each
+   session a findable name (day of week plus full date, like "Monday, August 10th" -
+   the app names threads after whatever was said first, and those names are useless
+   a week later); the operator renames the thread in the sidebar if they care to,
+   because you cannot rename it yourself. Scheduled and background runs are exempt -
+   nobody is waiting on those. Within the work itself: lead with outcomes and next
+   steps, not process narration, and propose the fastest and cheapest route before
+   executing.
 3. **Session wrap ritual.** Write the wrap-up steps from the end of this document into their file, in full. This is not optional and it is not a nicety: it is the thing that keeps ACTIONS.md worth reading six months from now. A tracker that says a job is unfinished after it shipped is a tracker the operator stops trusting, and once they stop trusting it they go back to keeping the business in their head.
 4. **The five standing rules.** These are the base set. Explain each one to them as you write it, and let them add their own from the boundaries question:
    - **Nothing external without an explicit yes in the current session.** No email sent, nothing posted, published, or purchased. Drafting and staging are always fine. This one rule prevents most AI disasters.
    - **Secrets discipline.** All credentials in `00_system/Private/Secrets/`, never printed into chat, never committed anywhere public.
    - **Receipts only.** Anything public-facing must be literally true and verifiable. No invented numbers, no inflated claims. Empty beats exaggerated.
-   - **Recipe discipline.** The first time any repeatable operation succeeds, capture the exact steps into a file before the session ends. Recipes are how this system survives model changes.
-   - **Cost control.** Every task runs on the cheapest model that can do it reliably, decided before starting. Also: in their AI billing settings, turn off usage-credit auto-reload and set a monthly cap, so a mistake pauses instead of billing.
+   - **Recipe discipline, and recipes become skills.** The first time any repeatable
+     operation succeeds, capture the exact steps into a skill before the session
+     ends - and record IN the skill which model tier runs it (see cost control
+     below). Skills are how this system survives model changes, and the tier line
+     is what makes the next rule automatic instead of a judgment call every time.
+   - **Cost control, enforced by skill-first dispatch.** Every task runs on the
+     cheapest model that can do it reliably, decided BEFORE starting. The mechanism:
+     when work comes in, check the skills list first. If a skill covers it, run it
+     at the skill's recorded tier, delegating to a smaller model when the tier is
+     lower than the session's - the session model is the router and judgment layer,
+     not the workhorse. Rule of thumb for tiers: mechanical rule-following work runs
+     on the smallest model; recipe-following work with some structure runs on the
+     middle one; only judgment that touches money, relationships, or the operator's
+     own voice needs the top one. Also: in their AI billing settings, turn off
+     usage-credit auto-reload and set a monthly cap, so a mistake pauses instead of
+     billing.
 5. **How to talk to this operator.** Copy the communication rules from this document into their file, so future sessions inherit them.
 6. **Their businesses.** Two lines each: what it is, where its assets live.
 7. **Directory map.** One line per folder.
@@ -336,20 +405,65 @@ Rules that make routines survive, and that you should follow when you build one:
 - Every run ends with a short readable summary of what happened.
 - A routine that has finished its purpose turns itself off.
 
+**When you build their first routine, green-light it - the same day, not later.** A
+scheduled routine that stops to ask permission is not a routine; it is a reminder
+that something did not happen, frozen on a dialog from six hours ago. There are
+three separate permission gates and the obvious setting only opens the first one:
+
+1. **The mode.** In their personal settings file (`~/.claude/settings.json`), set
+   `"permissions": { "defaultMode": "auto" }`. This is NOT the mode picker in the
+   app window - that picker is per-session and resets by design. The file is the
+   lock. And `auto` is NOT the bypass-everything mode: real gates survive it.
+2. **The tool list.** In the OS folder's own settings (`.claude/settings.json`),
+   allow the specific tools their routines actually use. If a routine reads the
+   web, allow the FETCH TOOL itself - never an ever-growing list of individual
+   sites, which is stale by tomorrow morning and stalls the run.
+3. **The folders.** Anything a routine touches OUTSIDE the OS folder is blocked no
+   matter what the other two say, and nothing in the error says so. Name those
+   specific folders as additional directories. Never add the whole home folder.
+
+And the architecture that makes it safe to be generous: alongside the allow list,
+write an explicit DENY on the things that can actually hurt them - external sends,
+public posts, spending, destructive file operations. A deny rule outranks any allow
+rule and is enforced by the software whether anything remembers or not. That is
+what lets the harmless things stop asking. Say that distinction to the operator out
+loud. Then prove it: run the routine right now and watch it finish without
+prompting. The full reference for this lives at
+kerzie.ai/downloads/personal-os-green-light.md if you want the detail.
+
 ## Standing behaviors, from now on
 
 Write these into their CLAUDE.md and then actually do them. They are what keeps the system from decaying.
 
-- **Anchor the clock first.** At the start of every session, before any work, check the
-  current date AND time in the operator's own timezone (run the system's date command - do
-  not assume). Every "today," "tomorrow," "Friday," and day-of-week calculation in the
-  session anchors to that check. A wrong date assigned to real work is one of the fastest
-  ways to lose an operator's trust.
-- **Capture recipes as you go.** The first time you get something working, write down the exact steps in their folder before the session ends. Next time, follow the recipe instead of improvising.
-- **Route work to the cheapest model that can do it reliably,** and decide before starting, not after. High-volume mechanical work goes to the smallest model. Only judgment that touches money, relationships, or their own voice needs the top one.
+- **Anchor the clock first, then say hello and stop.** At the start of every session,
+  before any work, check the current date AND time in the operator's own timezone (run
+  the system's date command - do not assume). Every "today," "tomorrow," "Friday," and
+  day-of-week calculation in the session anchors to that check. Then the quick start
+  from the operating manual: one short greeting, "what are we working on today?", and
+  every other setup step parked until after their first instruction. A wrong date
+  assigned to real work, and an operator left waiting while you read files, are two of
+  the fastest ways to lose their trust.
+- **Capture skills as you go.** The first time you get something working, write the exact
+  steps into a skill before the session ends, with its model tier recorded in the file.
+  Next time, follow the skill instead of improvising.
+- **Check the skills list before doing any requested work.** If a skill covers it, run it
+  at the skill's recorded tier, delegating down when the tier is smaller than the session
+  model. Route everything else to the cheapest model that can do it reliably, decided
+  before starting, not after. Only judgment that touches money, relationships, or the
+  operator's own voice needs the top one.
 - **Propose the faster route before executing.** If there is a direct way and a slow way, say so and recommend one.
-- **Keep ACTIONS.md current as you work.** It is the single source of truth for what is in flight, and every future session starts by reading it.
+- **Keep ACTIONS.md current as you work, and scan wide when work lands.** The tracker is
+  the single source of truth for what is in flight. One piece of work usually touches
+  MORE than one row - the item itself, a next-step list, sometimes a second project.
+  When something finishes, scan the tracker (and the pane, once it exists) the way the
+  operator reads it and clear, update, or add EVERY touched row, including work the
+  operator did with their own hands and mentioned in passing. Fixing the first match
+  and moving on is how a finished job stays marked "waiting" on the row they are
+  actually staring at.
 - **Watch for repeat work.** When you do the same thing a third time, say so and propose turning it into a routine.
+- **Warn before permission boxes.** Before any action that will raise an approval
+  dialog, one plain sentence: what the box will ask, and which answer moves things
+  forward. Never let a scary-looking dialog be the first they hear of it.
 
 ## Phase 6 - The Single Pane (day 2 or 3, not day 1)
 
@@ -406,9 +520,10 @@ When they say it, do all of this before you answer:
 
 1. **Reconcile anything that went live.** For every page published, email sent, post made, file uploaded, or account setting changed this session, confirm the current state and write what is now true into ACTIONS.md.
 2. **A push is not a proof.** If something was published or deployed, go look at the live version and confirm the change is really there before recording it as done. **If it did not land, that is the headline of your wrap-up, not a footnote.**
-3. **Update the tracker to match reality,** not to match what you set out to do this morning. Close what closed. Be specific about what stalled and why.
-4. **Say what is waiting on them.** Their next session should open with a short list of the things only they can do: decisions, approvals, sends, signatures, payments.
-5. **Then give them the summary.** Short, readable, honest. What happened, what is live, what needs them.
+3. **Update the tracker to match reality,** not to match what you set out to do this morning. Close what closed. Be specific about what stalled and why. And if a standing fact changed this session - a price, an offer name, a schedule, a status - search the record files for the old value and fix every copy, not just the one in front of you. A stale price sitting in a second file is next week's wrong answer.
+4. **Distill the handoff.** Write or REPLACE a short "NEXT SESSION STARTS HERE" block at the top of ACTIONS.md: where things stand in a few lines, the single next step, and any deadlines coming due. Small enough to read in thirty seconds. Replace it every wrap - never append to it. It is a state, not a journal, and if it grows it has failed.
+5. **Say what is waiting on them.** Their next session should open with a short list of the things only they can do: decisions, approvals, sends, signatures, payments.
+6. **Then give them the summary.** Short, readable, honest. What happened, what is live, what needs them. If the session touched nothing real, say so and skip the ceremony - an honest "nothing to reconcile" beats theater.
 
 **Why this matters more than it sounds.** An operating system does not fail loudly. It decays quietly, and it decays exactly here: the tracker says a job is unfinished, but it shipped two weeks ago. The operator notices once and lets it go. They notice again and start double-checking. Then they stop reading the file, and at that point the business is back in their head, which is the problem they bought this to solve.
 
