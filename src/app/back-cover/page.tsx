@@ -673,6 +673,16 @@ export default function BackCoverPage() {
             <span className="text-white font-medium">$990</span> and get two
             months back.
           </p>
+          {/* Refresh tiers decided on the Wade/Aaron call 8/14 (after the
+              Shortline pitch): $99 = twice-monthly refresh, the right cadence
+              for most businesses; $299 = daily refresh for inventory-velocity
+              businesses (dealers, menus). Two tiers, one product. */}
+          <p className="max-w-2xl mt-6 text-[#AABBCC] text-lg leading-relaxed">
+            The $99 rate keeps your files refreshed twice a month, which is
+            right for most businesses. If your information moves every day -
+            vehicle inventory, menus, listings - the daily-refresh tier is{" "}
+            <span className="text-white font-medium">$299 a month</span>.
+          </p>
           {/* The two-sides framing (Wade's positioning, 8/14): the familiar
               monthly website column next to the thing none of it covers. */}
           <p className="max-w-2xl mt-6 text-[#AABBCC] text-lg leading-relaxed">
