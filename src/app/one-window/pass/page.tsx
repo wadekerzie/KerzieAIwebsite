@@ -57,7 +57,7 @@ export default function UpgradePassWelcomePage() {
         </div>
         <div className="mt-10">
           <Link href="/one-window" className="k-btn-solid k-focus inline-block">
-            Back to the One-Window Setup <span className="k-arrow">&rarr;</span>
+            Back to One-Window <span className="k-arrow">&rarr;</span>
           </Link>
         </div>
       </section>

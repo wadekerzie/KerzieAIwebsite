@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 // AI the IDEA and lets it build the capability to fit that owner's OS, instead
 // of instructing it to install our document verbatim. The document stays
 // linked as a reference the AI may consult - the owner never reads it. The
-// baseline (One-Window Setup) keeps the read-and-run line, because it IS the
+// baseline (One-Window) keeps the read-and-run line, because it IS the
 // build document for a new OS.
 //
 // Either action registers the pull in GHL, so "who runs what" survives the
@@ -69,7 +69,7 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
   }, []);
 
   const installLine = baseline
-    ? `Read https://kerzie.ai/downloads/${file} and build my Personal OS from it. ` +
+    ? `Read https://kerzie.ai/downloads/${file} and build One-Window - my own personal OS - from it. ` +
       `Describe each phase in plain words before you do it.`
     : `I want to add a capability to my OS: "${name}". Build it your own way, ` +
       `fitted to what I already have - break nothing I've built. For implementation ` +

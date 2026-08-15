@@ -4,7 +4,7 @@ import OsDownloadCard from "@/components/OsDownloadCard";
 import library from "@/data/os_library.json";
 
 // The OS Library. Deliberately not in the site menu - this page is for people
-// who already own the One-Window Setup. Rewritten August 2026 to the
+// who already own One-Window. Rewritten August 2026 to the
 // capability-note model (Wade's call, 8/14, after the Kurt exchange): a card
 // is a described idea the owner hands to their OS, not a file-install. The
 // full documents stay behind every card as references written to the AI.
@@ -35,7 +35,7 @@ export default function DownloadsPage() {
           <p>
             This page is for people who own the{" "}
             <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
-              One-Window Setup
+              One-Window
             </Link>
             , and it works differently than every download page you have ever
             used. <span className="text-white">There are no versions to fall
@@ -123,7 +123,7 @@ export default function DownloadsPage() {
             remove it, and it&apos;s gone.
           </p>
           <p className="text-[#AABBCC]/70 text-base">
-            Bought the One-Window Setup and something here will not work? Email{" "}
+            Bought One-Window and something here will not work? Email{" "}
             <a href="mailto:wade@kerzie.ai" className="k-link k-focus text-[#6B9FD4]">
               wade@kerzie.ai
             </a>{" "}

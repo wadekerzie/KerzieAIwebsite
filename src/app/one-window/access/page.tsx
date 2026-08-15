@@ -10,12 +10,12 @@ import { CopyButton, CopyBuilderButton } from "@/components/CopyButton";
 // AI rather than to him. The buyer should never open that file. Part 1 lives
 // here as steps; the file is plumbing his AI fetches for itself.
 export const metadata: Metadata = {
-  title: "Your One-Window Setup | Kerzie AI",
+  title: "Your One-Window | Kerzie AI",
   robots: { index: false, follow: false },
 };
 
 const HANDOFF_LINE =
-  "Read https://kerzie.ai/downloads/one-window-setup.md and follow it in order to set up my Personal OS. Interview me first, before you build anything.";
+  "Read https://kerzie.ai/downloads/one-window-setup.md and follow it in order to set up One-Window - my own personal OS. Interview me first, before you build anything.";
 
 function Step({
   n,

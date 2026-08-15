@@ -20,7 +20,7 @@ const specs = [
   "One to three people, in one room, in person.",
   "Each person on their own machine, with their own logins open.",
   "Each person on their own $20 per month Claude subscription, set up live.",
-  "The $99 One-Window Setup included for every person in the room.",
+  "The $99 One-Window included for every person in the room.",
 ];
 
 const takeaways = [
@@ -310,12 +310,12 @@ export default function FastTrackPage() {
             </p>
             <p>
               It covers the intake review, the 3-hour working session, the
-              30-day check-in, and a $99 One-Window Setup for every person who
+              30-day check-in, and a $99 One-Window for every person who
               sits down.
             </p>
             <p>
               Run the comparison you are already running. You were going to buy
-              the $99 One-Window Setup anyway, so take it off the top. That puts
+              the $99 One-Window anyway, so take it off the top. That puts
               the session itself at $900. Bring three people and that is{" "}
               <span className="text-white font-medium">
                 $100 an hour, per person

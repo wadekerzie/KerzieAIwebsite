@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "The One-Window Setup for Small Business | Kerzie AI",
+  title: "One-Window for Small Business | Kerzie AI",
   description:
     "3 hours. 2 new habits. 1 window. 0 to-do list. One AI that knows your business drafts, chases, tracks, and stages it for your yes. Mac. $99, one time.",
   openGraph: {
     type: "article",
-    title: "The One-Window Setup for Small Business",
+    title: "One-Window for Small Business",
     description:
       "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One AI window that knows your business and carries the office work. $99, one time.",
     url: "https://kerzie.ai/one-window/business",
@@ -61,7 +61,7 @@ export default function OneWindowBusinessPage() {
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">The One-Window Setup &mdash; For Small Business</p>
+        <p className="k-rise k-rise-1 k-label mb-8">One-Window &mdash; For Small Business</p>
         <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           I talk. <span className="k-serif font-normal">The work gets done</span>
           <span className="text-[#E8896A]">.</span>
@@ -196,7 +196,7 @@ export default function OneWindowBusinessPage() {
               nobody.
             </p>
             <p className="text-white font-medium">
-              The One-Window Setup exists to catch those words and turn them
+              One-Window exists to catch those words and turn them
               into finished work.
             </p>
           </div>
@@ -350,7 +350,7 @@ export default function OneWindowBusinessPage() {
           <p className="k-label mb-6">07 &mdash; The Offer</p>
           <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
             <p className="text-white text-xl font-semibold">
-              The One-Window Setup: $99, one time. Instant access after
+              One-Window: $99, one time. Instant access after
               checkout.
             </p>
             <p className="text-white text-xl font-semibold">

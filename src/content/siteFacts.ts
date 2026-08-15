@@ -45,7 +45,7 @@ export type Offer = {
 export const OFFERS: Offer[] = [
   {
     key: "one-window",
-    name: "The One-Window Setup",
+    name: "One-Window",
     path: "/one-window",
     price: 99,
     priceLabel: "$99",

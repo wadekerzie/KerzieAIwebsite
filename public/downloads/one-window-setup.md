@@ -1,4 +1,4 @@
-# The One-Window Setup
+# One-Window - your own personal OS, all in one window
 ### Your complete AI working environment, in one document
 **A Kerzie AI product · kerzie.ai**
 

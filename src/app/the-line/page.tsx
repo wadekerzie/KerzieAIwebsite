@@ -113,7 +113,7 @@ export default function TheLinePage() {
       <p className="p-price">$99, one time.</p>
       <p className="mt-6">
         <Link href="/one-window" className="p-btn k-focus">
-          The One-Window Setup <span className="k-arrow">&rarr;</span>
+          One-Window <span className="k-arrow">&rarr;</span>
         </Link>
       </p>
 

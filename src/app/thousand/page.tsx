@@ -121,7 +121,7 @@ export default function ThousandPage() {
           </p>
           <div className="mt-8">
             <Link href="/one-window" className="k-btn-solid k-focus inline-block">
-              Claim a founding seat - the One-Window Setup{" "}
+              Claim a founding seat - One-Window{" "}
               <span className="k-arrow">&rarr;</span>
             </Link>
           </div>
@@ -214,7 +214,7 @@ export default function ThousandPage() {
             <p>
               The door is the{" "}
               <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
-                One-Window Setup
+                One-Window
               </Link>
               : $99, one document, about three hours to a running system. Not
               ready to spend anything? Take the free{" "}
