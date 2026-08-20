@@ -1,0 +1,16 @@
+{
+  "_readme": "Shortline Buick GMC daily Back Cover refresh log. One entry per day, newest first. The daily refresh job appends an entry and pushes; Vercel redeploys. status: ok | missed. On a missed day, WRITE THE ROW ANYWAY with status missed and a plain reason - a silent gap is the one thing this page exists to prevent.",
+  "dealer": "Shortline Buick GMC",
+  "entries": [
+    {
+      "date": "2026-08-20",
+      "status": "ok",
+      "kind": "baseline",
+      "added": null,
+      "removed": null,
+      "total": 50,
+      "ran_at": "6:00 PM MT",
+      "note": "Baseline build. First index of the lot, so there is nothing to compare against yet. Daily additions and removals start with the next refresh."
+    }
+  ]
+}
