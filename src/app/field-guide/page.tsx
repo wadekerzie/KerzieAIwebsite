@@ -22,8 +22,8 @@ const pitch = [
     body: "Their phone, their ChatGPT: “Tell me about [their business name].” Thin, generic, maybe wrong. Then: “Tell me about Kerzie AI Solutions.” Rich and current. “That difference is the product.”",
   },
   {
-    lead: "The metaphor.",
-    body: "In a bookstore you flip the book over and read the back cover to know what is inside. AI does the same with a website - except most businesses never wrote one. Pretty websites are for humans; the AI reads plain facts, and most sites barely have any.",
+    lead: "The metaphor - the one that lands. Say it close to word for word.",
+    body: "In a bookstore you flip the book over. The back cover tells you what the book is about, and the index tells you what is on page 263. AI does the same thing with a website - except most businesses never had either one written. Pretty websites are built for people. AI reads plain facts, and most sites barely have any.",
   },
   {
     lead: "Peer pressure.",
@@ -36,6 +36,25 @@ const pitch = [
   {
     lead: "The close.",
     body: "“$1,500, done in one to three days, and $99 a month keeps it current. Want it on the calendar?” Book the deployment meeting - payment happens there, and Wade takes it from that point.",
+  },
+];
+
+// The twenty-second answer to "what do you actually build?" - Wade's framing,
+// 2026-08-20. Deliberately three beats, not four: the fourth beat (clean
+// per-page copies for AI to read) is NOT in the offer yet and must not be sold
+// until Wade rules on it. Do not add it here without his go.
+const build = [
+  {
+    lead: "We write the back cover.",
+    body: "What the business is, in their words. This is the part a free tool leaves blank.",
+  },
+  {
+    lead: "We build the index.",
+    body: "Plumbing on 12, water heaters on 31, service area on 44. AI reads the index and knows where to go instead of guessing.",
+  },
+  {
+    lead: "We keep it accurate.",
+    body: "That is The Watch, and that is the $99. A business changes. A page written once and never touched goes wrong quietly, and nobody notices until an AI says something untrue about them.",
   },
 ];
 
@@ -134,6 +153,77 @@ export default function FieldGuidePage() {
             </li>
           ))}
         </ol>
+
+        <h2 className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mt-10 mb-4">
+          SAY IT IN TWENTY SECONDS
+        </h2>
+        <p className="text-[#AABBCC] text-lg leading-relaxed">
+          When they ask what you actually build, this is the whole answer. Three
+          parts, in this order.{" "}
+          <span className="text-white font-medium">
+            You never have to use a technical word, and you never have to teach
+            them anything.
+          </span>{" "}
+          They do not need to learn what any of this is called. They need to
+          understand that AI cannot see them, and that we build it so it can.
+        </p>
+        <ol className="mt-5 space-y-4">
+          {build.map((s, i) => (
+            <li key={s.lead} className="flex gap-4">
+              <span className="k-mono text-[#5DBB87] text-sm font-semibold pt-1 flex-shrink-0">
+                {i + 1}
+              </span>
+              <p className="text-[#AABBCC] text-lg leading-relaxed">
+                <span className="text-white font-medium">{s.lead}</span>{" "}
+                {s.body}
+              </p>
+            </li>
+          ))}
+        </ol>
+
+        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+          WHEN THEY SAY THEY ALREADY HAVE ONE
+        </h2>
+        <p className="text-[#AABBCC] text-lg leading-relaxed">
+          Do not argue. Read theirs together on their screen.{" "}
+          <span className="text-white font-medium">
+            &ldquo;A free tool photocopies your table of contents, blank pages
+            and all, leaves the back cover empty, and never touches it
+            again.&rdquo;
+          </span>{" "}
+          On a real one we checked, the page still credited the tool that made
+          it, was built in March and never updated while the site kept changing,
+          and one of its 59 links went to a page that no longer exists. Scroll to
+          the bottom and read the tool&rsquo;s credit line out loud. Then:{" "}
+          <span className="text-white font-medium">
+            &ldquo;The tool gave you a snapshot. The value was never the page -
+            it is the page staying true.&rdquo;
+          </span>
+        </p>
+
+        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+          FOR THE SKEPTIC - AND THE LINE YOU NEVER CROSS
+        </h2>
+        <p className="text-[#AABBCC] text-lg leading-relaxed">
+          <span className="text-white font-medium">
+            &ldquo;I am not promising you a ranking. I am telling you AI has to
+            read your business the hard way today and it gets things wrong - you
+            just saw it. We make it easy to read. That part we control.&rdquo;
+          </span>{" "}
+          And when they ask what happens as this keeps changing:{" "}
+          <span className="text-white font-medium">
+            &ldquo;This is new and it is still moving. We build to what works
+            today, and when it changes, we change with it. That is what the
+            monthly is for.&rdquo;
+          </span>
+        </p>
+        <p className="mt-4 text-[#AABBCC] text-lg leading-relaxed">
+          <span className="text-[#E07B70] font-medium">One guardrail.</span>{" "}
+          Never say AI &ldquo;looks up the answer&rdquo; in the index. It points,
+          it does not answer. If someone pushes, the honest line is: it tells AI
+          where to look, and makes sure what is there can be read. Never promise
+          a ranking, a citation, or what any AI will say back.
+        </p>
 
         <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
           THE SOFT CLOSE FOR THE KINDA-INTERESTED
