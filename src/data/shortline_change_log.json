@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-08-21",
+      "status": "ok",
+      "kind": "placed",
+      "added": null,
+      "removed": null,
+      "total": 50,
+      "ran_at": "5:35 PM MT",
+      "note": "File placed and live on shortlinebuickgmc.com. Same 50 vehicles as the baseline, so nothing to compare yet. Daily add and remove counts start once the DealersLink feed is connected."
+    },
+    {
       "date": "2026-08-20",
       "status": "ok",
       "kind": "baseline",
