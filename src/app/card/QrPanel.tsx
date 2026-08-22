@@ -1,23 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 
-// Client detection without a setState-in-effect (which cascades a render and
-// the lint rule rejects). The server snapshot is false, the client snapshot is
-// true, and nothing ever changes after that, so the subscribe callback is a
-// no-op.
-const noopSubscribe = () => () => {};
-const useIsClient = () =>
-  useSyncExternalStore(
-    noopSubscribe,
-    () => true,
-    () => false
-  );
-
-// The white, full-bleed QR panel. Shared by /card (tap "Show my QR code") and
-// /card/show (Wade's home-screen icon, always open).
+// The dismissible QR overlay on /card, for when Wade is already on the page
+// or on a laptop. His fast path is /card/show, which server renders the same
+// code as a whole page - see the note at the top of that file.
 //
 // WHY THIS PORTALS TO document.body, and do not "simplify" it back:
 // every page is wrapped by app/template.tsx in .k-page-enter, which runs a
@@ -32,19 +20,23 @@ const useIsClient = () =>
 // White on purpose: phone cameras lock onto a high-contrast code noticeably
 // faster than a dark one.
 
-type Props = {
-  // Supplied by /card, where the panel is a dismissible overlay. Omitted by
-  // /card/show, where the panel IS the page and there is nothing to go back to.
-  onClose?: () => void;
-};
+// Client detection without a setState-in-effect (which cascades a render and
+// the lint rule rejects). The server snapshot is false, the client snapshot is
+// true, and nothing ever changes after that, so subscribe is a no-op.
+const noopSubscribe = () => () => {};
+const useIsClient = () =>
+  useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  );
 
-export default function QrPanel({ onClose }: Props) {
+export default function QrPanel({ onClose }: { onClose: () => void }) {
   const isClient = useIsClient();
-  const [copied, setCopied] = useState(false);
+  const [locked, setLocked] = useState(false);
 
   // Escape closes on desktop; on a phone the tap handler does the work.
   useEffect(() => {
-    if (!onClose) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
@@ -52,10 +44,9 @@ export default function QrPanel({ onClose }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
 
-  // Hold the screen awake. A QR is useless if iOS dims the display while
-  // someone lines up their camera. Best-effort: every failure is swallowed,
-  // because a page that throws is worse than a screen that dims. The lock is
-  // dropped whenever the tab is backgrounded, so it is re-taken on return.
+  // Hold the screen awake while the code is up, so iOS does not dim mid-scan.
+  // Best-effort - every failure is swallowed, because a page that throws is
+  // worse than a screen that dims.
   useEffect(() => {
     type WakeLockSentinel = { release: () => Promise<void> };
     let lock: WakeLockSentinel | null = null;
@@ -75,6 +66,7 @@ export default function QrPanel({ onClose }: Props) {
           return;
         }
         lock = got;
+        setLocked(true);
       } catch {
         // Denied, unsupported, or hidden tab. The code is on screen anyway.
       }
@@ -98,15 +90,12 @@ export default function QrPanel({ onClose }: Props) {
 
   return createPortal(
     <div
-      role={onClose ? "dialog" : undefined}
-      aria-modal={onClose ? true : undefined}
+      role="dialog"
+      aria-modal="true"
       aria-label="Wade Kerzie contact QR code"
       onClick={onClose}
-      // z-[100] clears the site header's z-50. Safe-area padding keeps the
-      // code clear of the notch when this launches standalone.
-      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white px-6 ${
-        onClose ? "cursor-pointer" : ""
-      }`}
+      // z-[100] clears the site header's z-50.
+      className="fixed inset-0 z-[100] flex cursor-pointer flex-col items-center justify-center bg-white px-6"
       style={{
         paddingTop: "max(2rem, env(safe-area-inset-top))",
         paddingBottom: "max(2rem, env(safe-area-inset-bottom))",
@@ -129,37 +118,8 @@ export default function QrPanel({ onClose }: Props) {
         Kerzie AI Solutions
       </p>
       <p className="mt-4 text-center text-xs text-[#8b857f]">
-        {onClose ? "Tap anywhere to close" : "Point a camera at the code"}
+        {locked ? "Screen stays awake. Tap anywhere to close." : "Tap anywhere to close"}
       </p>
-
-      {!onClose && (
-        // Wade's own escape hatches, deliberately quiet so they never compete
-        // with the code. stopPropagation is not needed here - the panel has no
-        // click handler when it is the page rather than an overlay.
-        <div className="mt-10 flex items-center gap-5 text-xs text-[#a39d97]">
-          <Link
-            href="/card"
-            className="underline underline-offset-4 transition-colors hover:text-[#6b6560]"
-          >
-            Open my card
-          </Link>
-          <button
-            type="button"
-            onClick={() => {
-              void navigator.clipboard
-                ?.writeText("https://kerzie.ai/card")
-                .then(() => {
-                  setCopied(true);
-                  setTimeout(() => setCopied(false), 1800);
-                })
-                .catch(() => {});
-            }}
-            className="underline underline-offset-4 transition-colors hover:text-[#6b6560]"
-          >
-            {copied ? "Link copied" : "Copy my link"}
-          </button>
-        </div>
-      )}
     </div>,
     document.body
   );

@@ -16,6 +16,13 @@ import ShowClient from "./ShowClient";
 // icon Wade taps; /card is where the code points. No detection, nothing to
 // misfire, and a scanner can never land on the QR view by accident.
 //
+// EVERYTHING VISIBLE HERE IS SERVER RENDERED, deliberately. The first cut put
+// the code in a client-side portal and the HTML came back with no QR in it at
+// all - fine for an overlay you tap open, wrong for the one surface whose
+// whole job is to be on screen before Wade has finished turning the phone
+// around. The site header and footer are hidden by a :has(#qr-standalone)
+// rule in globals.css instead of being out-stacked. See the note there.
+//
 // appleWebApp.capable launches it standalone from the home screen - no Safari
 // chrome stealing vertical space from the code - and appleWebApp.title is what
 // iOS prints under the icon.
@@ -38,5 +45,41 @@ export const metadata: Metadata = {
 };
 
 export default function ShowQrPage() {
-  return <ShowClient />;
+  return (
+    // The id is the hook the globals.css rule keys off. Renaming it silently
+    // brings the site header back over the code.
+    <div
+      id="qr-standalone"
+      className="flex w-full flex-col items-center justify-center bg-white px-6"
+      style={{
+        // svh, not vh: on iOS Safari vh counts the space behind the toolbars
+        // and pushes the code below the fold.
+        minHeight: "100svh",
+        paddingTop: "max(2rem, env(safe-area-inset-top))",
+        paddingBottom: "max(2rem, env(safe-area-inset-bottom))",
+      }}
+    >
+      {/* Plain img, not next/image: a 1-bit QR must render at its own pixels
+          with no optimizer resampling, or the modules soften and the scan
+          takes longer. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/card-qr.svg"
+        alt="QR code linking to Wade Kerzie's contact card"
+        className="h-auto w-full max-w-[20rem]"
+      />
+
+      <p className="mt-6 text-center text-base font-semibold text-[#1A1B2E]">
+        Wade Kerzie
+      </p>
+      <p className="mt-0.5 text-center text-sm text-[#6b6560]">
+        Kerzie AI Solutions
+      </p>
+      <p className="mt-4 text-center text-xs text-[#8b857f]">
+        Point a camera at the code
+      </p>
+
+      <ShowClient />
+    </div>
+  );
 }

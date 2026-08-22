@@ -1291,3 +1291,35 @@ a:focus-visible .k-arrow {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-1px);
 }
+
+/* ============================================================================
+   /card/show - Wade's QR, full bleed
+   ============================================================================
+   This is the page behind the "My QR" icon on Wade's home screen. It has to
+   paint the code instantly and edge to edge, so the page markup is SERVER
+   rendered (no portal, no waiting on hydration) and the site chrome is hidden
+   around it instead.
+
+   Why hiding beats a z-index fight: app/template.tsx wraps every page in
+   .k-page-enter, which animates transform and opacity. That makes it the
+   containing block for `position: fixed` children AND opens a stacking
+   context, so nothing inside it can out-stack the header's own z-50. With the
+   header and footer gone there is nothing to out-stack, and the panel can be
+   ordinary in-flow layout that server renders correctly.
+
+   Scoped by :has() on the panel's id, so it can never leak to another route.
+   ========================================================================= */
+body:has(#qr-standalone) header,
+body:has(#qr-standalone) footer {
+  display: none;
+}
+
+body:has(#qr-standalone) main {
+  padding-top: 0;
+}
+
+/* The enter animation shifts the code 8px on open. Harmless anywhere else,
+   but this page exists to put a scannable target on screen without motion. */
+body:has(#qr-standalone) .k-page-enter {
+  animation: none;
+}
