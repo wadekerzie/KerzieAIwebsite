@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import QrPanel from "./QrPanel";
 
 // The two jobs this page does, and they belong to two different people:
 //
@@ -11,8 +12,9 @@ import { useEffect, useState } from "react";
 //      "Show my QR" opens a full-bleed white overlay - white because phone
 //      cameras lock onto a high-contrast code far quicker than a dark one.
 //
-// Both live on one page on purpose. Wade taps his home-screen icon, taps
-// Show my QR, and turns the phone around. That is the whole motion.
+// Wade's fast path is NOT this page - it is /card/show, which is the icon on
+// his home screen and opens straight to the code. The button below is the
+// fallback for when he is already here, or on a laptop.
 
 const ACTIONS = [
   {
@@ -43,17 +45,6 @@ const ACTIONS = [
 
 export default function CardClient() {
   const [qrOpen, setQrOpen] = useState(false);
-
-  // Escape closes the overlay on desktop. On a phone the tap-anywhere
-  // handler on the overlay itself does the work.
-  useEffect(() => {
-    if (!qrOpen) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setQrOpen(false);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [qrOpen]);
 
   return (
     <>
@@ -116,31 +107,7 @@ export default function CardClient() {
         </p>
       </div>
 
-      {qrOpen && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label="Wade Kerzie contact QR code"
-          onClick={() => setQrOpen(false)}
-          className="fixed inset-0 z-50 flex cursor-pointer flex-col items-center justify-center bg-white p-8"
-        >
-          {/* Plain img, not next/image: this is a 1-bit PNG that must render
-              at exactly its own pixels with no optimizer resampling, or the
-              modules soften and slow the scan down. */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/card-qr.svg"
-            alt="QR code linking to kerzie.ai/card"
-            className="h-auto w-full max-w-xs"
-          />
-          <p className="mt-6 text-center text-sm font-medium text-[#1A1B2E]">
-            Wade Kerzie &middot; Kerzie AI Solutions
-          </p>
-          <p className="mt-1 text-center text-xs text-[#6b6560]">
-            Tap anywhere to close
-          </p>
-        </div>
-      )}
+      {qrOpen && <QrPanel onClose={() => setQrOpen(false)} />}
     </>
   );
 }
