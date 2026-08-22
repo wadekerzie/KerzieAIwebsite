@@ -5,7 +5,7 @@
 // (the "web and avatars only" frame, per the headshot rotation rule).
 //
 // PRE-FOLDED to vCard 3.0's 75-octet line limit per RFC 2426. Two rules this
-// string already satisfies, both of which broke a build on 2026-08-21:
+// string already satisfies, both of which broke a build on 2026-08-22:
 //   1. Folds are CRLF + ONE leading space. iOS tolerates a bare \n; Android's
 //      importer does not, and silently drops every property after the photo.
 //   2. The FIRST chunk is 48 chars, not 74, because it shares line one with
