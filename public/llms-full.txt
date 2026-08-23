@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 32
+Pages included: 34
 
 ---
 
@@ -82,44 +82,129 @@ The Back Cover
 The owners I talk to keep telling me the same thing: the website is not bringing in what it used to.
 You are not imagining it.
 
-Get the free diagnostic → See this site's llms.txt →
+Schedule your deployment → See this site's llms.txt →
 
-01 — What Changed
-More than half of all web traffic is now machines rather than people. Cloudflare said so this year. Some industries have already lost up to 40% of their human visitors in under a year.
-Here is what that means on the ground. When someone asks an AI “who fixes furnaces in McKinney,” an AI decides which businesses to name . Nobody scrolls a page of ten blue links and picks you. They get two or three names and they call one.
-Your website was built to be read by a person. The AI doing the choosing is not a person.
+Every business has a back cover. The AI reads it whether you wrote it or not.
 
-02 — What We Do
-We do not build new websites. We make yours readable to the AI.
+The Two-Minute Version
+The page mentioned in the video: our llms.txt → Schedule your deployment →
 
-- We read your site the way an AI reads it. Stripped of the design, the animation and the menus, what facts about your business are actually there? Usually fewer than the owner thinks.
+01 — Prove It To Yourself
 
-- We make the facts plain and current. What you do, where you do it, what it costs, who to call. In the visible text, because that is what ChatGPT and the others actually read.
+## You do not need a sales call. You need sixty seconds and your own phone .
 
-- We fix the plumbing while we are in there. Structured data, a sitemap, a robots file, and an llms.txt. The standard is new and still moving. Doing it now is cheap; doing it later is a scramble.
+- 1 Open ChatGPT. The free one is fine. Ask: “Who should I call for [your trade] in [your town]?” See if your business gets named. Almost every small business we have checked is not there - one owner we sat with watched eleven competitors get named while he did not appear once.
 
-- We show you the difference in their words, not ours. We ask ChatGPT, Claude, Gemini and Perplexity about your business before and after, and hand you both answers side by side.
+- 2 Now ask it about you, by name. “Tell me about [your business name].” Read what comes back. Thin, generic, maybe wrong. That is what the AI carries into every conversation where your name comes up.
+
+- 3 Last one: ask it about us. “Tell me about Kerzie AI Solutions.” The difference you just watched is not because we are bigger than you. We are not. It is because we published our back cover, and you have not - the AI finally had something real to read.
+
+AI answers move around - no two runs come back identical. What you are comparing is not the wording. It is whether the AI had anything real to read.
+Saw the difference? Schedule your deployment →
+
+02 — What Changed
+Cloudflare reported this year that more than half of all traffic on the internet is now machines rather than people. Not customers. Traffic. Assistants, agents and crawlers now outnumber human eyeballs.
+Your website was built to be read by a person.
+We get it ready for the AI to read .
+
+03 — Don't Take Our Word For It
+None of these numbers are ours. Every one links to the people who published it.
+CLOUDFLARE · JULY 2026
+Human traffic to some of the internet's most heavily crawled categories fell as much as 40% in under a year.
+And more than half of all traffic on the internet is now machines, not people.
+READ THE SOURCE →
+BRIGHTLOCAL · FEBRUARY 2026
+45% of consumers now ask ChatGPT and other AI tools for local business recommendations. A year earlier it was 6%.
+That makes AI the third most popular way people find a local business - ahead of Yelp and TripAdvisor.
+READ THE SOURCE →
+PEW RESEARCH CENTER · JULY 2025
+When Google answers with an AI summary, clicks to actual websites drop from 15% to 8%.
+Measured across 68,879 real searches. When the AI answers first, half the visits never happen.
+READ THE SOURCE →
+OPENAI · FEBRUARY 2026
+ChatGPT now has 900 million weekly users.
+Nearly a billion people a week asking an AI the questions they used to type into a search box.
+READ THE SOURCE →
+SQUARESPACE · JULY 2026
+Squarespace now ships a built-in llms.txt - a page written for AI to read - on every site it hosts.
+Mainstream website platforms are already building for machine readers. It ships turned off, which is exactly where most businesses are standing today.
+READ THE SOURCE →
+
+04 — What We Do
+We do not build new websites. We get yours ready to be read by machines.
+Two halves. One job, one price.
+HALF ONE — WHAT THEY CAN READ TODAY
+
+- We read your site the way a machine reads it. Stripped of the design, the animation and the menus, what facts about your business are actually there? Usually fewer than the owner thinks.
+
+- We make the facts plain and current. What you do, where you do it, what it costs, who to call. In the visible text, because that is what the AI tools read today.
+
+- We fix the plumbing while we are in there. Structured data that spells out what you sell, where you work and what it costs, plus whatever else your platform lets us reach.
+HALF TWO — WHAT THEY WILL READ NEXT
+
+- We publish your llms.txt. It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 57 Texas and Colorado trades this week, eighteen already publish one - in roofing it is already half. Your competitors have started. The window is closing, not closed.
+
+- This stage of AI search is already on. Ask an AI about our business: you get a real, current answer, because there is something real to read. How each AI weighs what it finds is not ours to promise - nobody outside those companies knows. What we deliver is simpler: you are ready for this stage of AI search, and your business is visible to the machines that answer.
+Then we hand you the list. Every fact that was missing, every one that is there now, and the address of the page the AI tools look for. You can check every line of it yourself, the day we finish.
 It works on whatever you already have. Wix, Squarespace, GoDaddy, WordPress, a site someone built for you in 2019 and never touched again. Where it is hosted is not our problem to solve.
+We only add. We never break anything.
+We add facts to your pages, a page for the AI tools, and markup that describes your business. We do not redesign anything, we do not delete anything, and we never touch your domain, your hosting or your email.
+Every change is additive and reversible to exactly what was there before. We work under our own login, so you can see what we did and when.
+When we are finished your website will look exactly the same to a human being. That is the point.
 
-03 — See It On This Site
-We did it to ourselves first. There is a file on this site written for machines rather than for you: every offer, every price, how to reach a human, in plain text with the design stripped out.
+05 — See It On This Site
+We did it to ourselves first. There is a page on this site written for machines rather than for you: every offer, every price, how to reach a human, in plain text with the design stripped out.
 It is deliberately not in the menu. No customer will ever navigate to it. Every AI that looks at this business will.
 It is generated from the same source the pages are built from, so it cannot quietly go stale and start quoting an old price. That is the part most people get wrong.
 
 See what the llms.txt looks like for this website This is what the AI sees →
+When we finish, yours lives at your own address. We open it with you and read it together, so you can see exactly what an AI now gets told about your business. That is the whole deliverable, and you are looking at a working copy of it right now.
 
-04 — What We Will Not Promise
+06 — What We Will Not Promise
 Anyone who tells you they can guarantee an AI will recommend you is guessing, and the honest answer is better than the confident one.
-This standard is new and still moving. Nobody knows yet which parts of it the AI tools will settle on. What we can do is make sure the facts about your business are clear, current and easy to lift, and that nothing on your site contradicts itself.
-We show you what the AI says about you before, and what it says after. You decide what that was worth.
+Nobody outside those companies knows exactly how the AI tools decide who to name, or how long they take to notice a site has changed. We are not going to pretend otherwise, and we are not going to tell you an answer will change by Friday.
+What we do is the best-known practice available today, in the places the AI tools actually read, plus the page for the standard that is coming. Facts clear and current, nothing on your site contradicting itself, and your business described in the form machines take instructions from.
+And we show you all of it. Your own page, at your own address, the same way you just looked at ours. Plus what was missing, what is there now, and the markup with a validator confirming it is correct. That is a receipt you can open yourself the day we finish, instead of a result you have to take on faith.
 
-05 — The Price
+07 — The Price
 
-## $1,250 one time .
-One fee, once. Not a retainer, not a rebuild, not a subscription to a dashboard you will never open.
-The diagnostic is free and takes us about an hour. We ask the AI tools your customers are already using - ChatGPT, Claude, Gemini, Perplexity - what they say about your business, and we send you their answers word for word.
-Sometimes the answers come back fine, and we tell you so. Either way you will know where you stand, and finding out costs you nothing.
-Get the free diagnostic →
+## $1,500 one time .
+One fee for the setup. Not a rebuild, and nothing you cannot walk away from.
+No assessment call, no discovery dance. You already ran the test at the top of this page, on your own phone, for nothing.
+The calendar is for your deployment: face to face or on a video call, your choice. That meeting is where we take payment and start the work, and delivery runs one to three days from it.
+Schedule your deployment →
+
+08 — When You Say Yes
+
+## Four steps from calendar to walkthrough .
+
+- 1 Book the deployment. Face to face or a video call, your choice. You already proved the problem to yourself at the top of this page - the meeting is where we take payment, answer whatever you want answered, and start the clock. Delivery runs one to three days.
+
+- 2 Two minutes on your website: you add us as a user. Every website platform has a place to add another login. You add one for us, and your own password never leaves your hands. We send you the exact clicks for your platform, and we are on the phone with you while you do it if you want. This is the only step that needs your hands.
+
+- 3 We do the work under our own login. One to three days. We only add, so your website looks exactly the same to every human who visits, the whole time and after.
+
+- 4 The walkthrough. We open your new back cover page, at your own web address, together, and read what the AI now gets told about your business. You also get the list: every fact that was missing, every one that is there now, and where each lives.
+
+When you are done with us, remove our login. It takes one click, and everything we added stays yours.
+
+09 — Staying Ready
+
+## The Watch . $99 a month
+The Back Cover gets you set up. The Watch keeps you there.
+What an AI says about your business drifts. Your hours change, a price moves, a program ends, a competitor's detail gets attached to your name. Nobody sends you a report when that happens. The first sign is usually a customer showing up annoyed, or not showing up at all.
+
+- We ask the major AI assistants the questions your customers actually ask, every month.
+
+- We check their answers against what is true, and correct whatever has drifted at the source.
+
+- We keep your machine-readable pages current as the standards move.
+
+- One page a month, in plain language, that you can read in five minutes.
+Month to month. Cancel whenever it stops being worth it. Or pay for the year at $990 and get two months back.
+The $99 rate keeps your page refreshed twice a month, which is right for most businesses. If your information moves every day - vehicle inventory, menus, listings - the daily-refresh tier is $299 a month .
+Think about what you already pay every month - the hosting, maybe a care plan, maybe the SEO work. All of it keeps your website ready for people. None of it touches what the AI tells your customers about you. The Watch is that missing column, priced like the rest of the column.
+The dashboards that only watch this start around $250 a month, and you run them yourself. This is a third of that with the work included.
 
 ---
 
@@ -192,6 +277,32 @@ I want a community of winners. That’s what I want. The door is still open. Get
 
 This essay completes a set. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. This one is about the time limit on both.
 Email address Send it to me
+
+---
+
+# Wade Kerzie | Kerzie AI Solutions
+URL: https://kerzie.ai/card
+
+Wade Kerzie | Kerzie AI Solutions
+
+## Wade Kerzie
+Founder, Kerzie AI Solutions
+McKinney, Texas
+Save my contact Adds Wade to your phone Book a call Straight onto the calendar Call 214-668-7986 wade@kerzie.ai
+Show my QR code Point any phone camera at the code. No app on either end.
+
+---
+
+# Aaron Jones | Kerzie AI Solutions
+URL: https://kerzie.ai/card/aaron
+
+Aaron Jones | Kerzie AI Solutions
+
+## Aaron Jones
+Technical Specialist, Kerzie AI Solutions
+Aurora, Colorado
+Save my contact Adds Aaron to your phone Visit aaronpjones.com Projects and background Call 720-749-9474 aaron@kerzie.ai
+Show my QR code Point any phone camera at the code. No app on either end.
 
 ---
 
@@ -575,12 +686,12 @@ Email address Send it to me
 
 ---
 
-# The One-Window Setup | Kerzie AI
+# One-Window | Kerzie AI
 URL: https://kerzie.ai/one-window
 
-The One-Window Setup | Kerzie AI
+One-Window | Kerzie AI
 ← KERZIE . AI
-The One-Window Setup — Your Personal OS
+One-Window — your own personal OS, all in one window
 
 ## I talk. The work gets done .
 One window. One AI that actually knows your work - the job, the projects, the side ventures, the commitments. You say what needs to happen. It drafts, tracks, and stages. You approve. Built by one document you paste into Claude; it interviews you and builds your operating system around your answers.
@@ -616,7 +727,7 @@ That is my AI avatar, built and scripted from my own spoken words by my operatin
 01 — Your 16,000 Words
 Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
 That is a 60 page document, every day, spoken into the air and gone by dinner. The idea you had in the car is in there. The commitment you made in the hallway is in there. The email you meant to send is in there. All of it said out loud, captured by nobody.
-The One-Window Setup exists to catch those words and turn them into finished work. Simpler, not additional.
+One-Window exists to catch those words and turn them into finished work. Simpler, not additional.
 
 02 — This Existed In 1965
 In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
@@ -671,10 +782,11 @@ This setup uses the Mac you already own and the AI subscription you already pay 
 
 08 — The Offer
 This is the simplest true version of everything I write about: one window, technology carrying the load instead of adding to it. The $99 is just the door.
-The One-Window Setup: $99, one time. Instant access after checkout.
+One-Window: $99, one time. Instant access after checkout.
 The Upgrade Pass: $149 for six months. Then it ends, on purpose.
 Every upgrade I build for my own OS, packaged and pushed to you: at least one upgrade a month for the full six months. The first four are already built - the Living Pane, the Clean Handoff, the Weekly Tune-Up, and the Nightly Dream - and the stream keeps coming as I keep building.
 This pass is designed to end. If you take the upgrades, by month six you will not need to buy improvements, because you will be making your own. That is not a marketing line; it is the product working. I am not building a payment you forget to cancel. I am walking you across the line where you do not need me.
+The Founding Hundred: if you are among the first hundred operators, you do not buy the Upgrade Pass at all. Every upgrade is free, for life - the people whose feedback creates the upgrades never pay for them. Seats are counted on the First Thousand page , along with what founders get and what they give.
 The guarantee: the first sitting ends with one real thing from your week done end to end. If it does not, I refund the $99 and you keep the document.
 Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people, and this document is included for every one of them. Take this $99 off the top and the session runs $900. Split across three people and three hours, that is $100 an hour each to have it installed instead of read.
 
@@ -695,12 +807,12 @@ Get the Voice Command Center free →
 
 ---
 
-# The One-Window Setup for Small Business | Kerzie AI
+# One-Window for Small Business | Kerzie AI
 URL: https://kerzie.ai/one-window/business
 
-The One-Window Setup for Small Business | Kerzie AI
+One-Window for Small Business | Kerzie AI
 ← KERZIE . AI
-The One-Window Setup — For Small Business
+One-Window — For Small Business
 
 ## I talk. The work gets done .
 One window. One AI that actually knows your business - your customers, your jobs, your voice. You say what needs to happen. It drafts, chases, tracks, and stages. You approve.
@@ -736,7 +848,7 @@ That is my AI avatar, built and scripted from my own spoken words by my operatin
 01 — Your 16,000 Words
 Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
 That is a 60 page document, every day, spoken into the air and gone by dinner. Your quotes are in there. The follow-up you meant to send is in there. The promise you made a customer in the driveway is in there. All of it said out loud, captured by nobody.
-The One-Window Setup exists to catch those words and turn them into finished work.
+One-Window exists to catch those words and turn them into finished work.
 
 02 — This Existed In 1965
 In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
@@ -776,7 +888,7 @@ The morning I drafted this page, I talked while setting up a camera, and by the 
 That is not a demo day. That is Tuesday.
 
 07 — The Offer
-The One-Window Setup: $99, one time. Instant access after checkout.
+One-Window: $99, one time. Instant access after checkout.
 The Upgrade Pass: $149 for six months. Then it ends, on purpose.
 Every upgrade I build for my own OS, packaged and pushed to you: at least one upgrade a month for the full six months. The first four are already built - the Living Pane, the Clean Handoff, the Weekly Tune-Up, and the Nightly Dream - and the stream keeps coming as I keep building.
 This pass is designed to end. If you take the upgrades, by month six you will not need to buy improvements, because you will be making your own. That is not a marketing line; it is the product working. I am not building a payment you forget to cancel. I am walking you across the line where you do not need me.
@@ -927,7 +1039,7 @@ Start small and leave with something working, or bring us a workflow worth rebui
 $999 flat for the room
 
 ## AI Fast-Track Session
-Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with the One-Window Setup. One person or three, same price.
+Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with One-Window. One person or three, same price.
 Read how it works →
 
 02
@@ -993,7 +1105,7 @@ By the end you are not "trained on AI." You have AI working, and you know how to
 
 - Each person on their own $20 per month Claude subscription, set up live.
 
-- The $99 One-Window Setup included for every person in the room.
+- The $99 One-Window included for every person in the room.
 Bring the people who will actually use it.
 Three people set up beats one person set up, and the price is the same either way. The most common way a session like this gets wasted is one person learning it and then becoming the bottleneck for everyone else.
 
@@ -1026,8 +1138,8 @@ If the intake tells me the session will not pay for itself, I will say so and po
 
 07 — The Price
 $ 999 , flat. That is the room, not the seat.
-It covers the intake review, the 3-hour working session, the 30-day check-in, and a $99 One-Window Setup for every person who sits down.
-Run the comparison you are already running. You were going to buy the $99 One-Window Setup anyway, so take it off the top. That puts the session itself at $900. Bring three people and that is $100 an hour, per person , to have it built with you instead of by you. And all three of you still walk out with the Setup.
+It covers the intake review, the 3-hour working session, the 30-day check-in, and a $99 One-Window for every person who sits down.
+Run the comparison you are already running. You were going to buy the $99 One-Window anyway, so take it off the top. That puts the session itself at $900. Bring three people and that is $100 an hour, per person , to have it built with you instead of by you. And all three of you still walk out with the Setup.
 The Setup is the same document either way. The difference is whether it gets read or whether it gets installed, in your accounts, on the workflow that is actually costing you money, before anyone leaves the room.
 Come alone and it is three hours of my time on the one workflow hurting you most. Same price either way, so the only real question is how many people you want working on the other side of it.
 If what we find during the session is bigger than three hours can hold, that is a different conversation, and we will have it straight.
@@ -1381,7 +1493,7 @@ Diagnostic
 The one-window setup is a document you load into the AI you already pay for. It asks you the questions and builds the working environment with you: the workspace, the operating manual, the tracker, the memory rules, the routines.
 It is the same framework my own businesses run on every day, which also means it is a synthesis of general knowledge, and I have priced it that way.
 $99, one time.
-The One-Window Setup →
+One-Window →
 
 ## If you’re missing the crossing
 Three hours at your desk, on your machine, with your accounts and your own AI subscription. Bring up to two more people and they do the same thing beside you, each on their own machine. We set it up together and every person ships one real piece of their own work before the session ends. Not a class, not a demo on someone else’s screen.
@@ -1413,11 +1525,37 @@ The First Thousand | Kerzie AI
 ← KERZIE . AI
 The First Thousand
 
-## 6 of 1,000
+## 7 of 1,000
 
-994 to go · count updated 2026-08-09 · an operator is counted only when their window is actually running, not when they buy
+993 to go · count updated 2026-08-14 · an operator is counted only when their window is actually running, not when they buy
 
 The mission: get 1,000 people through the blast door before it closes. Running their work, their business, or their job from one window, with an AI that actually knows their world.
+
+The Founding Hundred
+
+## The first hundred get everything we ever ship .
+The price does not drop for anybody - a discount you have to notice is a discount you learn to ignore. What the first hundred operators get instead is worth more, and it never expires.
+
+WHAT FOUNDERS GET
+
+- Every OS upgrade free, for life. The people whose feedback creates the upgrades never pay for them.
+
+- A founding number - Operator #12 of 100 - stamped in your setup document.
+
+- Your name, your business, and your link on this page, if you want them here.
+
+- Fingerprints on the product: release notes name who asked for what. The last customer request shipped inside a week.
+
+- The monthly founding call, capped at the hundred.
+WHAT FOUNDERS GIVE
+
+- One short note a month: what hurt, what saved time, what you want next.
+
+- Permission to use your first name, business type, and real numbers as receipts.
+
+- After thirty days of real use, a testimonial - only if we genuinely earned it.
+Seats 1 through 7 are taken. The founding wall goes up here as each founder says yes to being named.
+Claim a founding seat - One-Window →
 
 Why A Door, And Why A Clock
 I have written three essays that explain what I believe is happening to work. The Kerzie Effect is why the door exists: once your buyer or your boss holds your scope of work plus an AI, they can execute it without you. The Consequence Clock is why now: the gap between what companies say they want and what they absorb has a clock running on it. The Blast Door is the honest part: the window to get good at this while it still counts as an advantage does not stay open.
@@ -1432,7 +1570,7 @@ I spent thirty years watching technology shifts sort people into two groups, and
 A thousand is not a business plan. It is the number where a group of people becomes proof that nobody else needs permission.
 
 Walk Through
-The door is the One-Window Setup : $99, one document, about three hours to a running system. Not ready to spend anything? Take the free Voice Command Center and start the habit.
+The door is the One-Window : $99, one document, about three hours to a running system. Not ready to spend anything? Take the free Voice Command Center and start the habit.
 
 Get the Setup →
 

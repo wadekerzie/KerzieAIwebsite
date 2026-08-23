@@ -147,6 +147,11 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/schedule", changeFrequency: "monthly", priority: 0.8 },
   { path: "/speaking", changeFrequency: "monthly", priority: 0.6 },
   { path: "/team", changeFrequency: "monthly", priority: 0.5 },
+  // The contact cards are indexed on purpose (see their page.tsx comments);
+  // /card was omitted here at its 8/22 creation - caught 8/23 when Aaron's
+  // card was added. The /show variants are noindex utility surfaces.
+  { path: "/card", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/card/aaron", changeFrequency: "monthly", priority: 0.5 },
   { path: "/ventures", changeFrequency: "monthly", priority: 0.6 },
   { path: "/ventures/ad2action", changeFrequency: "monthly", priority: 0.4 },
   { path: "/ventures/ai-os", changeFrequency: "monthly", priority: 0.4 },
