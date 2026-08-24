@@ -3,6 +3,26 @@
  "dealer": "Shortline Buick GMC",
  "entries": [
   {
+   "date": "2026-08-24",
+   "status": "ok",
+   "kind": "refresh",
+   "added": 4,
+   "removed": 4,
+   "total": 50,
+   "ran_at": "4:35 PM MT",
+   "note": "Daily refresh resumed and moved to an automated schedule. 4 vehicles added, 4 rotated out, 2 price changes across the 50 shown."
+  },
+  {
+   "date": "2026-08-23",
+   "status": "missed",
+   "kind": "refresh",
+   "added": null,
+   "removed": null,
+   "total": 50,
+   "ran_at": null,
+   "note": "This cycle did not run. The refresh had been run by hand and no automated daily schedule existed yet. Fixed the next day: the refresh now runs on an automated daily schedule."
+  },
+  {
    "date": "2026-08-22",
    "status": "ok",
    "kind": "refresh",
