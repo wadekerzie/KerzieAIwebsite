@@ -1,56 +1,76 @@
 {
- "_readme": "Shortline Buick GMC daily Back Cover refresh log. One entry per day, newest first. The daily refresh job appends an entry and pushes; Vercel redeploys. status: ok | missed. On a missed day, WRITE THE ROW ANYWAY with status missed and a plain reason - a silent gap is the one thing this page exists to prevent.",
- "dealer": "Shortline Buick GMC",
- "entries": [
-  {
-   "date": "2026-08-24",
-   "status": "ok",
-   "kind": "refresh",
-   "added": 4,
-   "removed": 4,
-   "total": 50,
-   "ran_at": "4:35 PM MT",
-   "note": "Daily refresh resumed and moved to an automated schedule. 4 vehicles added, 4 rotated out, 2 price changes across the 50 shown."
-  },
-  {
-   "date": "2026-08-23",
-   "status": "missed",
-   "kind": "refresh",
-   "added": null,
-   "removed": null,
-   "total": 50,
-   "ran_at": null,
-   "note": "This cycle did not run. The refresh had been run by hand and no automated daily schedule existed yet. Fixed the next day: the refresh now runs on an automated daily schedule."
-  },
-  {
-   "date": "2026-08-22",
-   "status": "ok",
-   "kind": "refresh",
-   "added": 21,
-   "removed": 21,
-   "total": 50,
-   "ran_at": "2:10 PM MT",
-   "note": "First full Watch refresh, run from the public feeds. 21 vehicles rotated out and 21 in since placement, plus 5 price changes caught (4 drops, 1 increase). The file now carries a dated rebuild stamp. Still capped at 50 vehicles until the DealersLink feed lands."
-  },
-  {
-   "date": "2026-08-21",
-   "status": "ok",
-   "kind": "placed",
-   "added": null,
-   "removed": null,
-   "total": 50,
-   "ran_at": "5:35 PM MT",
-   "note": "File placed and live on shortlinebuickgmc.com. Same 50 vehicles as the baseline, so nothing to compare yet. Daily add and remove counts start once the DealersLink feed is connected."
-  },
-  {
-   "date": "2026-08-20",
-   "status": "ok",
-   "kind": "baseline",
-   "added": null,
-   "removed": null,
-   "total": 50,
-   "ran_at": "6:00 PM MT",
-   "note": "Baseline build. First index of the lot, so there is nothing to compare against yet. Daily additions and removals start with the next refresh."
-  }
- ]
+  "_readme": "Shortline Buick GMC daily Back Cover refresh log. One entry per day, newest first. The daily refresh job appends an entry and pushes; Vercel redeploys. status: ok | missed. On a missed day, WRITE THE ROW ANYWAY with status missed and a plain reason - a silent gap is the one thing this page exists to prevent.",
+  "dealer": "Shortline Buick GMC",
+  "entries": [
+    {
+      "date": "2026-08-26",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 11,
+      "removed": 12,
+      "total": 49,
+      "ran_at": "8:10 AM MT",
+      "note": "11 vehicles in, 12 out, 0 price changes across the 49 shown (24 new / 25 used). One first-time arrival was skipped when its detail page dropped the connection mid-fetch; it returns on tomorrow's build. This placement also cleared the 8/25 gap."
+    },
+    {
+      "date": "2026-08-25",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "total": 50,
+      "ran_at": null,
+      "note": "The file was built on schedule but was never placed on the live site, so the 8/24 version stayed up. Caught and corrected the morning of 8/26."
+    },
+    {
+      "date": "2026-08-24",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 4,
+      "removed": 4,
+      "total": 50,
+      "ran_at": "4:35 PM MT",
+      "note": "Daily refresh resumed and moved to an automated schedule. 4 vehicles added, 4 rotated out, 2 price changes across the 50 shown."
+    },
+    {
+      "date": "2026-08-23",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "total": 50,
+      "ran_at": null,
+      "note": "This cycle did not run. The refresh had been run by hand and no automated daily schedule existed yet. Fixed the next day: the refresh now runs on an automated daily schedule."
+    },
+    {
+      "date": "2026-08-22",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 21,
+      "removed": 21,
+      "total": 50,
+      "ran_at": "2:10 PM MT",
+      "note": "First full Watch refresh, run from the public feeds. 21 vehicles rotated out and 21 in since placement, plus 5 price changes caught (4 drops, 1 increase). The file now carries a dated rebuild stamp. Still capped at 50 vehicles until the DealersLink feed lands."
+    },
+    {
+      "date": "2026-08-21",
+      "status": "ok",
+      "kind": "placed",
+      "added": null,
+      "removed": null,
+      "total": 50,
+      "ran_at": "5:35 PM MT",
+      "note": "File placed and live on shortlinebuickgmc.com. Same 50 vehicles as the baseline, so nothing to compare yet. Daily add and remove counts start once the DealersLink feed is connected."
+    },
+    {
+      "date": "2026-08-20",
+      "status": "ok",
+      "kind": "baseline",
+      "added": null,
+      "removed": null,
+      "total": 50,
+      "ran_at": "6:00 PM MT",
+      "note": "Baseline build. First index of the lot, so there is nothing to compare against yet. Daily additions and removals start with the next refresh."
+    }
+  ]
 }
