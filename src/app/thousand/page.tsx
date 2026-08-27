@@ -82,6 +82,7 @@ export default function ThousandPage() {
           <ul className="max-w-2xl space-y-4">
             {[
               "Every OS upgrade free, for life. The people whose feedback creates the upgrades never pay for them.",
+              "The downloads page, free. Every setup guide we sell, included from day one.",
               "A founding number - Operator #12 of 100 - stamped in your setup document.",
               "Your name, your business, and your link on this page, if you want them here.",
               "Fingerprints on the product: release notes name who asked for what. The last customer request shipped inside a week.",
