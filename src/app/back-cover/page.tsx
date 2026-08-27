@@ -678,9 +678,9 @@ export default function BackCoverPage() {
               rooftop on the 8/27 Shortline call with Danny - agreed on the
               call, published within the hour per Wade's commitment. */}
           <p className="max-w-2xl mt-6 text-[#AABBCC] text-lg leading-relaxed">
-            The $99 rate keeps your page refreshed twice a month, which is
-            right for most businesses. If your information moves every day -
-            vehicle inventory, menus, listings - the daily-refresh tier is{" "}
+            The $99 rate keeps your page refreshed every month, which is right
+            for most businesses. If your information moves every day - vehicle
+            inventory, menus, listings - the daily-refresh tier is{" "}
             <span className="text-white font-medium">
               $999 a month per location
             </span>
