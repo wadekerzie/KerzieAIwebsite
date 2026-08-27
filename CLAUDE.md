@@ -131,3 +131,21 @@ Structure for every product page:
 - Create new pages without being explicitly asked
 - Change vercel.json deployment configuration
 - Touch package.json or next.config.ts without being explicitly asked
+## Daughter pages (client proposals, partner views, share pages) - THE CHECKLIST (Wade's rule, 2026-08-27)
+
+Raw-HTML pages served from `public/` via a `src/app/<slug>/route.ts` (the attaccountproposal
+pattern) bypass Next's head handling, so EVERY new one bakes in, before first push:
+
+1. **Favicons - always** (Wade: "any daughter pages we publish should have this baked in"):
+   ```html
+   <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+   ```
+   Without these the tab shows a grainy upscaled favicon.ico (caught by Wade on /tagproposal, 8/27).
+2. `<meta name="robots" content="noindex, nofollow">` - daughter pages are shared by URL, never indexed.
+3. `<meta charset="utf-8">` + viewport meta + a real `<title>... | Kerzie AI</title>`.
+4. Existing examples to copy: `public/tag-phased-plan.html`, `public/att-execution-plan.html`.
+
+Next-rendered daughter pages (e.g. /partners/danny) inherit icons from the app - this checklist
+is for the raw-HTML route.ts pattern only.
