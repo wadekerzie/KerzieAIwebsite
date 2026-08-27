@@ -149,3 +149,10 @@ pattern) bypass Next's head handling, so EVERY new one bakes in, before first pu
 
 Next-rendered daughter pages (e.g. /partners/danny) inherit icons from the app - this checklist
 is for the raw-HTML route.ts pattern only.
+
+### Sharing metadata (added to the checklist 8/27, Wade's rule)
+5. **og tags - always**: og:title (the page's real name), og:description, and
+   `og:image` pointing at `https://kerzie.ai/og/brand-card.jpg` (ABSOLUTE url - raw pages
+   have no base). The one-window creative is one-window's ALONE - the brand card is the
+   default face of every other link Wade texts or forwards. A per-client custom og card is
+   allowed when it earns its keep; the brand card is the floor.
