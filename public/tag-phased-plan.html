@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>A Phased Plan for TAG | Kerzie AI</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#FAFAF7; --ink:#1C2733; --muted:#5B6B77; --accent:#17607A;
+    --accent-soft:#E4EEF2; --rule:#DCE3E3; --card:#FFFFFF;
+    --price-ink:#123E4F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#141A20; --ink:#E8ECEF; --muted:#93A3AE; --accent:#5FB0CC;
+      --accent-soft:#1C2E38; --rule:#2A3640; --card:#1A222A;
+      --price-ink:#9FCFE0;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#141A20; --ink:#E8ECEF; --muted:#93A3AE; --accent:#5FB0CC;
+    --accent-soft:#1C2E38; --rule:#2A3640; --card:#1A222A;
+    --price-ink:#9FCFE0;
+  }
+  body{background:var(--paper); color:var(--ink); font-family:'Source Serif 4', Georgia, serif;
+       line-height:1.6; margin:0; font-size:17px;}
+  .wrap{max-width:46rem; margin:0 auto; padding:3rem 1.25rem 5rem;}
+  .eyebrow{font-family:'Libre Franklin', Arial, sans-serif; font-weight:700; font-size:.72rem;
+           letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 .6rem;}
+  h1{font-family:'Libre Franklin', Arial, sans-serif; font-weight:800; font-size:2.1rem;
+     line-height:1.15; margin:0 0 .4rem; text-wrap:balance;}
+  .sub{color:var(--muted); margin:0 0 .4rem; font-size:1.02rem;}
+  h2{font-family:'Libre Franklin', Arial, sans-serif; font-weight:700; font-size:1.28rem;
+     margin:2.6rem 0 .8rem; text-wrap:balance;}
+  h3{font-family:'Libre Franklin', Arial, sans-serif; font-weight:700; font-size:1rem; margin:1.4rem 0 .4rem;}
+  p{margin:.65rem 0;}
+  .lede{font-size:1.08rem;}
+  .phase{background:var(--card); border:1px solid var(--rule); border-radius:6px;
+         padding:1.5rem 1.6rem 1.3rem; margin:1.4rem 0; position:relative;}
+  .phase-tag{font-family:'Libre Franklin', Arial, sans-serif; font-weight:800; font-size:.72rem;
+             letter-spacing:.16em; text-transform:uppercase; color:var(--accent);
+             background:var(--accent-soft); display:inline-block; padding:.25rem .6rem;
+             border-radius:3px; margin-bottom:.5rem;}
+  .phase h2{margin:.2rem 0 .6rem; font-size:1.35rem;}
+  .price-line{display:flex; flex-wrap:wrap; gap:.5rem 1.6rem; align-items:baseline;
+              border-top:1px solid var(--rule); margin-top:1.1rem; padding-top:.9rem;}
+  .price{font-family:'Libre Franklin', Arial, sans-serif; font-weight:800; font-size:1.35rem;
+         color:var(--price-ink); font-variant-numeric:tabular-nums;}
+  .price small{font-weight:500; font-size:.85rem; color:var(--muted);}
+  ul{margin:.5rem 0 .8rem; padding-left:1.2rem;}
+  li{margin:.35rem 0;}
+  li::marker{color:var(--accent);}
+  .receipt{font-family:'IBM Plex Mono', monospace; font-size:.8rem; background:var(--accent-soft);
+           color:var(--ink); padding:.55rem .8rem; border-radius:4px; overflow-x:auto; white-space:nowrap;}
+  .script{border:1px dashed var(--rule); border-radius:6px; padding:1.2rem 1.4rem; margin:1rem 0;
+          font-style:italic;}
+  .script p{margin:.7rem 0;}
+  .script .cue{font-style:normal; font-family:'Libre Franklin', Arial, sans-serif; font-size:.72rem;
+          font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted);}
+  .demo{margin:1rem 0 .4rem;}
+  .demo video{display:block; width:100%; max-width:100%; border-radius:6px;
+              border:1px solid var(--rule); background:#000;}
+  .demo-cap{font-family:'Libre Franklin', Arial, sans-serif; font-size:.8rem; color:var(--muted);
+            margin:.5rem 0 0;}
+  .foot{border-top:1px solid var(--rule); margin-top:3rem; padding-top:1.2rem; color:var(--muted);
+        font-size:.9rem;}
+  strong{font-weight:600;}
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Kerzie AI Solutions &middot; Proposal</p>
+  <h1>A phased plan for TAG</h1>
+  <p class="sub">Prepared for Cory Louthan, The Agent's Group &middot; August 27, 2026</p>
+
+  <p class="lede">Cory - thanks for the time yesterday. You asked for a formalized starting point: where we would begin, what it costs, and what comes next, from one partner instead of a pile of vendors. Here it is, in three phases. Each one stands alone, each one is a small commitment, and you can stop after any of them.</p>
+
+  <h2>Phase 1 &middot; Crawl &mdash; The Back Cover</h2>
+  <div class="phase">
+    <span class="phase-tag">Start here &middot; live within days</span>
+    <p>Forty-five percent of people looking for a local business now ask an AI assistant instead of Google, up from six percent a year ago. When someone asks ChatGPT or Gemini about TAG today, there is nothing on your site for it to read - we checked again before writing this:</p>
+    <p class="receipt">tagins.net/llms.txt &rarr; HTTP 404 (page not found) &mdash; verified Aug 26, 2026</p>
+    <p>On the call we looked at HUB International doing this right. This phase puts TAG in that company.</p>
+    <h3>What you get</h3>
+    <ul>
+      <li>The llms.txt page - the "back cover" AI actually reads - written, placed, and verified live on <strong>tagins.net</strong> and <strong>choosetaginsurance.com</strong>: who TAG is, what makes the model work for experienced agents, and the URLs an assistant can hand a prospect.</li>
+      <li><strong>A monthly refresh</strong> so the page never goes stale, with a public change log you can check any time - the same receipt we give every client.</li>
+      <li><strong>Included at no charge:</strong> a one-time cleanup of the "front cover" - the fixable issues on the site itself (metadata and the like). We document every finding in a cheat sheet for your web guy, and since we are in the admin anyway, we make the fixes ourselves. He reviews; nothing changes that you two have not seen.</li>
+    </ul>
+    <p>All we need is user access to your website, and we place everything. No disruption to anything the site does today - this only adds.</p>
+    <div class="price-line">
+      <span class="price">$1,500 <small>one-time setup, both sites</small></span>
+      <span class="price">$99<small>/mo &mdash; the monthly refresh</small></span>
+    </div>
+  </div>
+
+  <h2>Phase 2 &middot; Walk &mdash; The LinkedIn engine</h2>
+  <div class="phase">
+    <span class="phase-tag">Your one real channel to captive agents</span>
+    <p>Email to captive agents is off the table legally, and Facebook and Instagram cannot target by profession. LinkedIn is the channel, and the algorithm rewards exactly one thing: consistent, daily, worth-reading posts. TAG posts about once a week today.</p>
+    <h3>What you get</h3>
+    <ul>
+      <li><strong>A post from TAG every business day, Monday through Friday</strong> - scheduled, published, and managed so a second post never squashes the first and the account stays on the algorithm's good side.</li>
+      <li>The content comes from you, not from a content mill: <strong>every two weeks we take about forty-five minutes of your voice</strong> - a call, or voice memos recorded when you have a minute - and turn it into the next ten posts. You approve each one with one click. We will not manufacture generic industry filler under TAG's name; that is a promise, because it would hurt you.</li>
+      <li>The repost playbook: the note to your agents that turns every TAG post into their networks' feeds - the cell-tower effect we talked about. That is where captive agents who follow nobody at TAG start seeing TAG.</li>
+      <li>A monthly readout of the numbers that matter - profile actions and inbound conversations, not vanity impressions.</li>
+    </ul>
+    <p>The rhythm we build here is jab, jab, cross: insight, insight, then the call to action for the experienced agent who is ready to own what they build.</p>
+    <div class="price-line">
+      <span class="price">$750<small>/mo &mdash; month to month, cancel any time</small></span>
+    </div>
+  </div>
+
+  <h2>Phase 3 &middot; Run &mdash; The 90-second pitch</h2>
+  <div class="phase">
+    <span class="phase-tag">Front-load the 45-minute conversation</span>
+    <p>Your best pitch takes forty-five minutes across a desk. Nobody watches a forty-five minute video - but a ninety-second one, on brand and on message, earns you that meeting while you sleep. Share it in a message, or trigger it on the site when a prospect reaches the right page.</p>
+    <h3>What you get</h3>
+    <ul>
+      <li>A <strong>~90-second presenter video</strong> - professional, on-brand, and deliberately not you on camera - built from your one-pagers and choosetaginsurance.com, saying what you would say in the first two minutes across the desk.</li>
+      <li>Script approval before anything renders, and two revision rounds after - your words, your claims, nothing promised your team has to walk back.</li>
+      <li>Delivered ready to embed, share, or send.</li>
+    </ul>
+    <div class="price-line">
+      <span class="price">$1,500 <small>first video, script through delivery</small></span>
+      <span class="price">$750 <small>each additional</small></span>
+    </div>
+  </div>
+
+  <h2>Shown, not described</h2>
+  <p>We made this for you this morning - an off-the-shelf presenter and our production process, end to end, in a few hours. Your video would use a presenter and a script you approve before anything renders.</p>
+  <div class="demo">
+    <video controls playsinline preload="metadata" src="/tag-demo-cory.mp4"></video>
+    <p class="demo-cap">11-second sample, produced August 27, 2026. No camera, no studio, no scheduling.</p>
+  </div>
+
+  <h2>The sample script</h2>
+  <p>You asked what ninety seconds would sound like. Here is a first pass built from our conversation and your marketing page - we will rebuild it from your one-pagers when they arrive, in your language, with your numbers.</p>
+  <div class="script">
+    <p><span class="cue">0:00</span> &mdash; You have spent years building a book of business. The question nobody at a captive asks out loud: who actually owns it?</p>
+    <p><span class="cue">0:12</span> &mdash; At TAG, the answer is simple. You do. Your book, your equity, your exit - an asset you can grow, sell, or pass on.</p>
+    <p><span class="cue">0:25</span> &mdash; TAG is an independent agency group built by agents, for experienced agents. Multiple carriers instead of one. Your markets instead of assigned ones. A contract written so you can read where you stand.</p>
+    <p><span class="cue">0:45</span> &mdash; Moving is a real decision - there is a dip, and anyone who tells you otherwise is selling something. Our job is to make that dip short: onboarding, contracting, carrier appointments, and a team that answers the phone, so you get back to where you were and past it, faster.</p>
+    <p><span class="cue">1:10</span> &mdash; If you are an experienced insurance professional thinking about what the next ten years should look like, that conversation takes forty-five minutes. This was the first ninety seconds.</p>
+    <p><span class="cue">1:20</span> &mdash; TAG. Independence, without going it alone. Start at choosetaginsurance.com.</p>
+  </div>
+
+  <h2>How we work</h2>
+  <ul>
+    <li><strong>One partner.</strong> All three phases, one relationship, one throat to choke - your words, and we agree.</li>
+    <li><strong>Fast.</strong> Phase 1 is live within days of access, not weeks.</li>
+    <li><strong>Receipts.</strong> Every refresh logged publicly. Every claim in our work checkable. No guarantees about what an AI will answer - anyone who promises that is guessing - but total control over what it reads.</li>
+    <li><strong>Small commitments.</strong> Start with Phase 1 alone. Monthly items cancel any time. Stop whenever it stops earning its keep.</li>
+  </ul>
+
+  <p class="foot">Wade Kerzie &middot; Kerzie AI Solutions &middot; kerzie.ai &middot; 214-668-7986<br>
+  Prepared August 27, 2026. Pricing valid 30 days.</p>
+</div>
+
+</body>
+</html>
