@@ -307,8 +307,8 @@ export default function FieldGuidePage() {
           Wade before quoting - some platforms gate the page placement.
           Multi-location businesses: $2,500 setup + $99 a month per location -
           confirm before quoting. Businesses whose information moves daily can
-          take the $299 a month daily-refresh tier - that is Wade&apos;s
-          conversation.
+          take the $999 a month per location daily-refresh tier - that is
+          Wade&apos;s conversation.
         </p>
 
         <div className="mt-12 border-t border-[rgba(170,187,204,0.13)] pt-6 text-[#AABBCC]/80 text-base leading-relaxed">
