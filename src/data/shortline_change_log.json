@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-08-27",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 14,
+      "removed": 13,
+      "total": 50,
+      "ran_at": "6:58 AM MT",
+      "note": "14 vehicles in, 13 out, 0 price changes across the 50 shown (25 new / 25 used). Clean build - every vehicle detail page answered on the first pass. The one arrival skipped on 8/26 did not come back; it had left inventory by this morning."
+    },
+    {
       "date": "2026-08-26",
       "status": "ok",
       "kind": "refresh",
