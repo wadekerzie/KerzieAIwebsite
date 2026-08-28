@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-08-28",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 244,
+      "removed": 0,
+      "total": 294,
+      "ran_at": "8:05 AM MT",
+      "note": "The biggest change since this page went up: the file now lists the whole lot. Until today it carried 50 vehicles, the most the public feeds would expose. The dealership's own inventory system now feeds it directly, so all 294 in-stock vehicles are listed - 171 new and 123 pre-owned. Nothing was removed; the 244 additions are cars that were always on the lot but were not visible to an AI assistant before. To fit the platform's file-size limit at that count, each listing is now the vehicle, the price, the VIN and the link, rather than the longer spec line - the trade was full coverage over per-car detail, and the linked page still carries every spec and photo."
+    },
+    {
       "date": "2026-08-27",
       "status": "ok",
       "kind": "refresh",
