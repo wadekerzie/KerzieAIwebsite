@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-08-29",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 9,
+      "removed": 2,
+      "total": 301,
+      "ran_at": "6:56 AM MT",
+      "note": "9 vehicles in, 2 out, and one price change across the 301 now listed (176 new / 125 pre-owned). The lot grew by seven overnight, the first full day running on the dealership's own inventory feed. The price change: a 2017 Ford Escape SE moved from $15,840 to $13,840, and the file carried the new price the same morning - that is the whole point of a daily refresh, because an AI assistant quoting yesterday's price quotes a number the store will not honor."
+    },
+    {
       "date": "2026-08-28",
       "status": "ok",
       "kind": "refresh",
