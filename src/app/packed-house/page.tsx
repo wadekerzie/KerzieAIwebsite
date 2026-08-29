@@ -84,17 +84,19 @@ export default function PackedHousePage() {
           </div>
         </section>
 
-        {/* Video slot - HeyGen explainer lands here after script approval */}
+        {/* HeyGen explainer - generated 8/29, Wade's avatar, 77s */}
         <section className="mb-16">
-          <div className="border border-[#2A2C44] p-6">
-            <p className="text-sm uppercase tracking-wide text-[#6B9FD4]">
-              Two minutes, plain language
-            </p>
-            <p className="mt-2 leading-relaxed">
-              Video: how a Packed House night runs, start to finish.
-            </p>
-            {/* TODO(launch): embed the explainer video here */}
-          </div>
+          <p className="mb-4 text-sm uppercase tracking-wide text-[#6B9FD4]">
+            Ninety seconds, plain language
+          </p>
+          <video
+            controls
+            preload="metadata"
+            playsInline
+            className="w-full rounded-lg border border-[rgba(170,187,204,0.2)]"
+          >
+            <source src="/videos/packed-house-explainer.mp4" type="video/mp4" />
+          </video>
         </section>
 
         {/* The money - plain, all-in, no asterisks */}
