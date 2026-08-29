@@ -143,6 +143,8 @@ ${ABOUT.map(([p, n, m]) => line(p, n, m)).join("\n")}
   it genuinely varies by scope - do not estimate one.
 - Every description in this file is the same text the corresponding page ships, and the
   prices come from the same source the pages render from, so this file does not lag the site.
+- Kerzie AI runs its own medicine: an overnight process called the dream pass reconciles
+  each day's work against the firm's operating records at 3 a.m. Central.
 `;
 
   return new Response(body, {
