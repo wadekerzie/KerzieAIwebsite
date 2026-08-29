@@ -202,7 +202,7 @@ What an AI says about your business drifts. Your hours change, a price moves, a 
 
 - One page a month, in plain language, that you can read in five minutes.
 Month to month. Cancel whenever it stops being worth it. Or pay for the year at $990 and get two months back.
-The $99 rate keeps your page refreshed twice a month, which is right for most businesses. If your information moves every day - vehicle inventory, menus, listings - the daily-refresh tier is $299 a month .
+The $99 rate keeps your page refreshed every month, which is right for most businesses. If your information moves every day - vehicle inventory, menus, listings - the daily-refresh tier is $999 a month per location .
 Think about what you already pay every month - the hosting, maybe a care plan, maybe the SEO work. All of it keeps your website ready for people. None of it touches what the AI tells your customers about you. The Watch is that missing column, priced like the rest of the column.
 The dashboards that only watch this start around $250 a month, and you run them yourself. This is a third of that with the work included.
 
@@ -1525,9 +1525,9 @@ The First Thousand | Kerzie AI
 ← KERZIE . AI
 The First Thousand
 
-## 7 of 1,000
+## 8 of 1,000
 
-993 to go · count updated 2026-08-14 · an operator is counted only when their window is actually running, not when they buy
+992 to go · count updated 2026-08-27 · an operator is counted only when their window is actually running, not when they buy
 
 The mission: get 1,000 people through the blast door before it closes. Running their work, their business, or their job from one window, with an AI that actually knows their world.
 
@@ -1539,6 +1539,8 @@ The price does not drop for anybody - a discount you have to notice is a discoun
 WHAT FOUNDERS GET
 
 - Every OS upgrade free, for life. The people whose feedback creates the upgrades never pay for them.
+
+- The downloads page, free. Every setup guide we sell, included from day one.
 
 - A founding number - Operator #12 of 100 - stamped in your setup document.
 
@@ -1554,7 +1556,7 @@ WHAT FOUNDERS GIVE
 - Permission to use your first name, business type, and real numbers as receipts.
 
 - After thirty days of real use, a testimonial - only if we genuinely earned it.
-Seats 1 through 7 are taken. The founding wall goes up here as each founder says yes to being named.
+Seats 1 through 8 are taken. The founding wall goes up here as each founder says yes to being named.
 Claim a founding seat - One-Window →
 
 Why A Door, And Why A Clock
