@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-08-30",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "total": 301,
+      "ran_at": null,
+      "note": "Today's file was built on schedule - 320 vehicles, 32 in and 13 out - but it was not placed on the site. The dealership platform caps this particular file at about 50 KB, and at 320 vehicles even the shortest usable version comes to 53.7 KB. Cutting vehicles back out to fit would have made the page less complete than it was yesterday, so the live file was left alone: it still lists the 301 vehicles from 8/29. The platform provides a second file slot with no such limit, and moving the inventory list into it is the fix being put in place."
+    },
+    {
       "date": "2026-08-29",
       "status": "ok",
       "kind": "refresh",
