@@ -52,10 +52,10 @@ export const metadata: Metadata = {
 // the navy, and it does not print.
 const afterMatter = (
   <>
-    <p className="text-[#AABBCC]/80 leading-relaxed max-w-xl">
+    <p className="text-[#262B3D]/80 leading-relaxed max-w-xl">
       If you finished this on the wrong side of the line, I wrote a separate
       page on{" "}
-      <Link href="/the-line" className="k-link k-focus text-[#6B9FD4]">
+      <Link href="/the-line" className="k-link k-focus text-[#2B5D96]">
         what to do about it
       </Link>
       .
@@ -63,7 +63,7 @@ const afterMatter = (
 
     <div className="mt-10">
       <p className="k-label mb-5">Follow where the line moves</p>
-      <p className="text-[#AABBCC] leading-relaxed max-w-xl">
+      <p className="text-[#262B3D] leading-relaxed max-w-xl">
         I write up what I&rsquo;m actually seeing, twice a week, Tuesday and
         Thursday. What I built, what broke, what it cost. If I haven&rsquo;t
         done it myself, it doesn&rsquo;t go in.

@@ -17,8 +17,8 @@
 
   /* Dark section */
   --background-dark: #1a1a2e;
-  --background-dark-card: #252542;
-  --foreground-dark: #f0ece8;
+  --background-dark-card: #F2EEE6;
+  --foreground-dark: #262B3D;
   --foreground-dark-muted: #a8a4a0;
   --border-dark: #3a3a52;
 
@@ -43,8 +43,8 @@
 
 /* Base Styles */
 body {
-  background: #1A1B2E;
-  color: #AABBCC;
+  background: #FAF8F4;
+  color: #262B3D;
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
@@ -55,8 +55,8 @@ html {
 
 /* Selection Color */
 ::selection {
-  background: #6B9FD4;
-  color: #1A1B2E;
+  background: #2B5D96;
+  color: #FAF8F4;
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -392,16 +392,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1A1B2E;
+  background: #FAF8F4;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2D3154;
+  background: #E4DED2;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B9FD4;
+  background: #2B5D96;
 }
 
 /* ===== RESPONSIVE UTILITIES ===== */
@@ -488,18 +488,18 @@ html {
 
 /* ============================================================
    KERZIE REDESIGN SYSTEM
-   Canvas #1A1B2E / Surface #1E2035 / Accent #6B9FD4
-   Body #AABBCC / Coral #E8896A (punctuation only)
+   Canvas #FAF8F4 / Surface #FFFFFF / Accent #2B5D96
+   Body #262B3D / Coral #B04E2B (punctuation only)
    ============================================================ */
 
 :root {
-  --k-canvas: #1A1B2E;
-  --k-surface: #1E2035;
-  --k-ink: #FFFFFF;
-  --k-body: #AABBCC;
-  --k-accent: #6B9FD4;
-  --k-coral: #E8896A;
-  --k-hairline: rgba(170, 187, 204, 0.13);
+  --k-canvas: #FAF8F4;
+  --k-surface: #FFFFFF;
+  --k-ink: #1A1B2E;
+  --k-body: #262B3D;
+  --k-accent: #2B5D96;
+  --k-coral: #B04E2B;
+  --k-hairline: rgba(26, 27, 46, 0.13);
 }
 
 /* --- Two voices: builder (Inter) and human (serif italic) --- */
@@ -655,7 +655,7 @@ a:focus-visible .k-arrow {
 
 .k-btn-solid:hover:not(:disabled),
 .k-btn-solid:focus-visible {
-  background: #ffffff;
+  background: #1F4977;
 }
 
 .k-btn-solid:disabled {
@@ -677,7 +677,7 @@ a:focus-visible .k-arrow {
 }
 
 .k-field::placeholder {
-  color: rgba(170, 187, 204, 0.3);
+  color: rgba(26, 27, 46, 0.3);
 }
 
 .k-field:focus {
@@ -692,7 +692,7 @@ a:focus-visible .k-arrow {
   object-fit: cover;
   border: 1px solid var(--k-hairline);
   background: var(--k-surface);
-  filter: saturate(0.85);
+  filter: none;
 }
 
 /* --- Focus visibility --- */
@@ -1271,8 +1271,9 @@ a:focus-visible .k-arrow {
    clicking it lands somewhere the eye already expects. */
 
 .k-paper-chip {
-  background: #FBF9F4;
+  background: #FFFFFF;
   color: #1A1B2E;
+  border: 1px solid rgba(26, 27, 46, 0.12);
   font-weight: 600;
   padding: 0.4rem 0.8rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);

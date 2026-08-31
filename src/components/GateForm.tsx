@@ -47,7 +47,7 @@ export default function GateForm({
         name="email"
         required
         placeholder="you@company.com"
-        className="flex-1 bg-[#1E2035] border border-[rgba(170,187,204,0.25)] px-4 py-3 text-white placeholder-[#6d7585] focus:outline-none focus:border-[#6B9FD4]"
+        className="flex-1 bg-[#FFFFFF] border border-[rgba(26,27,46,0.25)] px-4 py-3 text-[#1A1B2E] placeholder-[#5B6B77] focus:outline-none focus:border-[#2B5D96]"
       />
       <button
         type="submit"
@@ -56,7 +56,7 @@ export default function GateForm({
       >
         {sending ? "One second..." : buttonLabel}
       </button>
-      {error && <p className="text-[#E8896A] text-sm sm:col-span-2">{error}</p>}
+      {error && <p className="text-[#B04E2B] text-sm sm:col-span-2">{error}</p>}
     </form>
   );
 }

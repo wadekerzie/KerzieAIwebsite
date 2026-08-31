@@ -60,23 +60,23 @@ const build = [
 
 export default function FieldGuidePage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       <div className="max-w-3xl mx-auto px-6 pt-10 pb-20">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
 
         <p className="k-label mt-12 mb-4">Seller Field Guide</p>
-        <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,5vw,3rem)]">
-          The Back Cover<span className="text-[#E8896A]">.</span>
+        <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,5vw,3rem)]">
+          The Back Cover<span className="text-[#B04E2B]">.</span>
         </h1>
-        <p className="mt-4 text-[#AABBCC] text-lg leading-relaxed">
+        <p className="mt-4 text-[#262B3D] text-lg leading-relaxed">
           One page, everything you need. Sold to a Colorado car dealer on the
           first call in about twenty minutes with exactly this.{" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             You make $500 per closed deal, plus a recurring cut when the
             customer takes the monthly.
           </span>
@@ -90,23 +90,23 @@ export default function FieldGuidePage() {
           ].map(([n, l]) => (
             <div
               key={l}
-              className="rounded-lg border border-[rgba(170,187,204,0.2)] bg-[rgba(170,187,204,0.06)] px-4 py-2.5"
+              className="rounded-lg border border-[rgba(26,27,46,0.2)] bg-[rgba(26,27,46,0.06)] px-4 py-2.5"
             >
-              <span className="block text-white font-bold text-lg">{n}</span>
-              <span className="block k-mono text-[#AABBCC]/70 text-[10px] tracking-[0.1em] uppercase">
+              <span className="block text-[#1A1B2E] font-bold text-lg">{n}</span>
+              <span className="block k-mono text-[#262B3D]/70 text-[10px] tracking-[0.1em] uppercase">
                 {l}
               </span>
             </div>
           ))}
         </div>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-12 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-12 mb-4">
           STEP ZERO - KNOW THE PAGE BY HEART
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
-          <span className="text-white font-medium">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
+          <span className="text-[#1A1B2E] font-medium">
             Read{" "}
-            <Link href="/back-cover" className="k-link k-focus text-[#6B9FD4]">
+            <Link href="/back-cover" className="k-link k-focus text-[#2B5D96]">
               kerzie.ai/back-cover
             </Link>{" "}
             until you can say it without notes.
@@ -118,18 +118,18 @@ export default function FieldGuidePage() {
           just walking them to the demo.
         </p>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
           BEFORE YOU CALL ANYONE
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
-          <span className="text-white font-medium">Check their page first:</span>{" "}
+        <p className="text-[#262B3D] text-lg leading-relaxed">
+          <span className="text-[#1A1B2E] font-medium">Check their page first:</span>{" "}
           type theirwebsite.com/llms.txt into a browser. An error page means
           they do not have it - that is your opening receipt. (Ours is at{" "}
-          <a href="/llms.txt" className="k-link k-focus text-[#6B9FD4]">
+          <a href="/llms.txt" className="k-link k-focus text-[#2B5D96]">
             kerzie.ai/llms.txt
           </a>
           , so you can show what a real one looks like.){" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             And start with your own book
           </span>{" "}
           - people who already know you and take your calls. Work the
@@ -137,30 +137,30 @@ export default function FieldGuidePage() {
           realistic.
         </p>
 
-        <h2 className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mt-10 mb-5">
+        <h2 className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-10 mb-5">
           THE SIX-STEP PITCH (THE ONE THAT WORKS)
         </h2>
         <ol className="space-y-5">
           {pitch.map((s, i) => (
             <li key={s.lead} className="flex gap-4">
-              <span className="k-mono text-[#E8896A] text-sm font-semibold pt-1 flex-shrink-0">
+              <span className="k-mono text-[#B04E2B] text-sm font-semibold pt-1 flex-shrink-0">
                 {i + 1}
               </span>
-              <p className="text-[#AABBCC] text-lg leading-relaxed">
-                <span className="text-white font-medium">{s.lead}</span>{" "}
+              <p className="text-[#262B3D] text-lg leading-relaxed">
+                <span className="text-[#1A1B2E] font-medium">{s.lead}</span>{" "}
                 {s.body}
               </p>
             </li>
           ))}
         </ol>
 
-        <h2 className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-10 mb-4">
           SAY IT IN TWENTY SECONDS
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
           When they ask what you actually build, this is the whole answer. Three
           parts, in this order.{" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             You never have to use a technical word, and you never have to teach
             them anything.
           </span>{" "}
@@ -170,23 +170,23 @@ export default function FieldGuidePage() {
         <ol className="mt-5 space-y-4">
           {build.map((s, i) => (
             <li key={s.lead} className="flex gap-4">
-              <span className="k-mono text-[#5DBB87] text-sm font-semibold pt-1 flex-shrink-0">
+              <span className="k-mono text-[#23784E] text-sm font-semibold pt-1 flex-shrink-0">
                 {i + 1}
               </span>
-              <p className="text-[#AABBCC] text-lg leading-relaxed">
-                <span className="text-white font-medium">{s.lead}</span>{" "}
+              <p className="text-[#262B3D] text-lg leading-relaxed">
+                <span className="text-[#1A1B2E] font-medium">{s.lead}</span>{" "}
                 {s.body}
               </p>
             </li>
           ))}
         </ol>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
           WHEN THEY SAY THEY ALREADY HAVE ONE
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
           Do not argue. Read theirs together on their screen.{" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             &ldquo;A free tool photocopies your table of contents, blank pages
             and all, leaves the back cover empty, and never touches it
             again.&rdquo;
@@ -195,56 +195,56 @@ export default function FieldGuidePage() {
           it, was built in March and never updated while the site kept changing,
           and one of its 59 links went to a page that no longer exists. Scroll to
           the bottom and read the tool&rsquo;s credit line out loud. Then:{" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             &ldquo;The tool gave you a snapshot. The value was never the page -
             it is the page staying true.&rdquo;
           </span>
         </p>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
           FOR THE SKEPTIC - AND THE LINE YOU NEVER CROSS
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
-          <span className="text-white font-medium">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
+          <span className="text-[#1A1B2E] font-medium">
             &ldquo;I am not promising you a ranking. I am telling you AI has to
             read your business the hard way today and it gets things wrong - you
             just saw it. We make it easy to read. That part we control.&rdquo;
           </span>{" "}
           And when they ask what happens as this keeps changing:{" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             &ldquo;This is new and it is still moving. We build to what works
             today, and when it changes, we change with it. That is what the
             monthly is for.&rdquo;
           </span>
         </p>
-        <p className="mt-4 text-[#AABBCC] text-lg leading-relaxed">
-          <span className="text-[#E07B70] font-medium">One guardrail.</span>{" "}
+        <p className="mt-4 text-[#262B3D] text-lg leading-relaxed">
+          <span className="text-[#A8443C] font-medium">One guardrail.</span>{" "}
           Never say AI &ldquo;looks up the answer&rdquo; in the index. It points,
           it does not answer. If someone pushes, the honest line is: it tells AI
           where to look, and makes sure what is there can be read. Never promise
           a ranking, a citation, or what any AI will say back.
         </p>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
           THE SOFT CLOSE FOR THE KINDA-INTERESTED
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
           &ldquo;Do you have three minutes to improve your business?&rdquo; Then
           send them{" "}
-          <Link href="/back-cover" className="k-link k-focus text-[#6B9FD4]">
+          <Link href="/back-cover" className="k-link k-focus text-[#2B5D96]">
             kerzie.ai/back-cover
           </Link>{" "}
           - the video does the explaining in Wade&apos;s own voice.
         </p>
 
         <div className="grid md:grid-cols-2 gap-5 mt-10">
-          <div className="rounded-lg border border-[rgba(170,187,204,0.15)] border-t-2 border-t-[#5DBB87] bg-[rgba(170,187,204,0.04)] p-5">
-            <h3 className="k-mono text-[#5DBB87] text-xs tracking-[0.12em] mb-3">
+          <div className="rounded-lg border border-[rgba(26,27,46,0.15)] border-t-2 border-t-[#23784E] bg-[rgba(26,27,46,0.04)] p-5">
+            <h3 className="k-mono text-[#23784E] text-xs tracking-[0.12em] mb-3">
               SAY THIS
             </h3>
-            <ul className="space-y-2.5 text-[#AABBCC] text-[15px] leading-relaxed list-disc pl-5">
+            <ul className="space-y-2.5 text-[#262B3D] text-[15px] leading-relaxed list-disc pl-5">
               <li>
-                <span className="text-white font-medium">PAGE</span> - &ldquo;the
+                <span className="text-[#1A1B2E] font-medium">PAGE</span> - &ldquo;the
                 back cover page,&rdquo; &ldquo;the llms.txt page&rdquo;
               </li>
               <li>
@@ -262,11 +262,11 @@ export default function FieldGuidePage() {
               </li>
             </ul>
           </div>
-          <div className="rounded-lg border border-[rgba(170,187,204,0.15)] border-t-2 border-t-[#E07B70] bg-[rgba(170,187,204,0.04)] p-5">
-            <h3 className="k-mono text-[#E07B70] text-xs tracking-[0.12em] mb-3">
+          <div className="rounded-lg border border-[rgba(26,27,46,0.15)] border-t-2 border-t-[#A8443C] bg-[rgba(26,27,46,0.04)] p-5">
+            <h3 className="k-mono text-[#A8443C] text-xs tracking-[0.12em] mb-3">
               NEVER THIS
             </h3>
-            <ul className="space-y-2.5 text-[#AABBCC] text-[15px] leading-relaxed list-disc pl-5">
+            <ul className="space-y-2.5 text-[#262B3D] text-[15px] leading-relaxed list-disc pl-5">
               <li>&ldquo;File.&rdquo; No one pays $1,500 for a file.</li>
               <li>&ldquo;Simple&rdquo; anything.</li>
               <li>
@@ -286,12 +286,12 @@ export default function FieldGuidePage() {
           </div>
         </div>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
           WHO TO PITCH
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
           Product businesses first:{" "}
-          <span className="text-white font-medium">
+          <span className="text-[#1A1B2E] font-medium">
             car dealers, pizza and restaurants, pool companies, roofers, med
             spas, home services.
           </span>{" "}
@@ -299,10 +299,10 @@ export default function FieldGuidePage() {
           whole demo lives on the phone in their pocket.
         </p>
 
-        <h2 className="k-mono text-[#6B9FD4] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
           GUARDRAILS
         </h2>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
           Platform-hosted dealer sites (DealerOn and similar) need a check with
           Wade before quoting - some platforms gate the page placement.
           Multi-location businesses: $2,500 setup + $99 a month per location -
@@ -311,15 +311,15 @@ export default function FieldGuidePage() {
           Wade&apos;s conversation.
         </p>
 
-        <div className="mt-12 border-t border-[rgba(170,187,204,0.13)] pt-6 text-[#AABBCC]/80 text-base leading-relaxed">
+        <div className="mt-12 border-t border-[rgba(26,27,46,0.13)] pt-6 text-[#262B3D]/80 text-base leading-relaxed">
           <p>
-            <span className="text-white font-medium">After the yes:</span> book
+            <span className="text-[#1A1B2E] font-medium">After the yes:</span> book
             the deployment meeting (in person or video) and hand it to Wade -
             payment at the meeting, delivery in one to three days, then the
             walkthrough where the owner reads their new page with us.
             Commission terms with Wade directly.
           </p>
-          <p className="mt-4 k-mono text-[13px] text-[#AABBCC]/60">
+          <p className="mt-4 k-mono text-[13px] text-[#262B3D]/60">
             Wade Kerzie &middot; Kerzie AI Solutions &middot; McKinney, Texas
             &middot; 214-668-7986
           </p>

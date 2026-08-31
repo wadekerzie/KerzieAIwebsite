@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function ImplementationPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/services"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; WORK WITH US
         </Link>
@@ -22,11 +22,11 @@ export default function ImplementationPage() {
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-14">
         <p className="k-rise k-rise-1 k-label mb-8">AI Implementation</p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
           We build it <span className="k-serif font-normal">inside</span> your
-          business<span className="text-[#E8896A]">.</span>
+          business<span className="text-[#B04E2B]">.</span>
         </h1>
-        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl leading-relaxed">
+        <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl leading-relaxed">
           Workflow analysis, system design, build, and live production
           deployment. End-to-end. No slide decks. No proofs of concept. The
           deliverable is the thing, running.
@@ -44,14 +44,14 @@ export default function ImplementationPage() {
         </Reveal>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(170,187,204,0.13)] pt-14">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(26,27,46,0.13)] pt-14">
         <Reveal>
-          <p className="text-[#AABBCC] text-lg mb-4 max-w-xl">
+          <p className="text-[#262B3D] text-lg mb-4 max-w-xl">
             We only build things that make the technology disappear into the
             work. If it needs a training course afterward, we built the wrong
             thing.
           </p>
-          <p className="text-white text-xl font-medium mb-6 max-w-xl">
+          <p className="text-[#1A1B2E] text-xl font-medium mb-6 max-w-xl">
             Bring us the workflow that hurts. We will come back with what we
             would build, how long it takes, and what it costs.
           </p>

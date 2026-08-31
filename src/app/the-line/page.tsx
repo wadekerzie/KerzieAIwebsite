@@ -28,9 +28,9 @@ export const metadata: Metadata = {
 // The appendix carries offers, so it keeps its own footer link back to the
 // argument it hangs off. Website, not document: it sits on the navy.
 const afterMatter = (
-  <p className="text-[#AABBCC]/80 leading-relaxed max-w-xl">
+  <p className="text-[#262B3D]/80 leading-relaxed max-w-xl">
     This page only makes sense alongside the argument it comes from:{" "}
-    <Link href="/kerzie-effect" className="k-link k-focus text-[#6B9FD4]">
+    <Link href="/kerzie-effect" className="k-link k-focus text-[#2B5D96]">
       The Kerzie Effect
     </Link>
     .

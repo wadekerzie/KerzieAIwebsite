@@ -27,16 +27,16 @@ export function EssaySheet({
   backLabel?: string;
 }) {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen pb-24">
+    <div className="bg-[#FAF8F4] min-h-screen pb-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 pb-6 p-noprint">
         <Link
           href={backHref}
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr;{" "}
           {backLabel ?? (
             <>
-              KERZIE<span className="text-[#E8896A]">.</span>AI
+              KERZIE<span className="text-[#B04E2B]">.</span>AI
             </>
           )}
         </Link>

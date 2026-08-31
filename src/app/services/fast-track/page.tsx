@@ -33,7 +33,7 @@ const takeaways = [
 
 export default function FastTrackPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       {/* Service + Offer structured data, priced from siteFacts. This is what
           lets an assistant answer "what does a Kerzie AI session cost" with a
           number it can stand behind. */}
@@ -45,29 +45,29 @@ export default function FastTrackPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
         <p className="k-rise k-rise-1 k-label mb-8">AI Fast-Track Session</p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           You leave with it <span className="k-serif font-normal">working</span>
-          <span className="text-[#E8896A]">.</span>
+          <span className="text-[#B04E2B]">.</span>
         </h1>
-        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-xl leading-relaxed">
+        <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg lg:text-xl max-w-xl leading-relaxed">
           Three hours. One room. Up to three people, each at your own machine,
           in your own accounts, on your own $20 AI subscription. We set it up
           together and every person ships one real piece of their own work
           before we are done.
         </p>
-        <p className="k-rise k-rise-3 mt-6 text-white text-2xl font-semibold">
-          {FAST_TRACK.priceLabel}<span className="text-[#E8896A]">.</span>
+        <p className="k-rise k-rise-3 mt-6 text-[#1A1B2E] text-2xl font-semibold">
+          {FAST_TRACK.priceLabel}<span className="text-[#B04E2B]">.</span>
         </p>
-        <p className="k-rise k-rise-3 mt-2 text-[#AABBCC] text-base">
+        <p className="k-rise k-rise-3 mt-2 text-[#262B3D] text-base">
           One person or three. Same price.
         </p>
         <div className="k-rise k-rise-4 mt-10">
@@ -79,7 +79,7 @@ export default function FastTrackPage() {
 
       {/* The countdown - 3-2-1-0 */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-lg overflow-hidden border border-[rgba(170,187,204,0.2)] bg-[rgba(170,187,204,0.2)] max-w-4xl">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-lg overflow-hidden border border-[rgba(26,27,46,0.2)] bg-[rgba(26,27,46,0.2)] max-w-4xl">
           {[
             {
               n: "3",
@@ -102,28 +102,28 @@ export default function FastTrackPage() {
               d: "gone, replaced by a pane your AI keeps current for you.",
             },
           ].map((c) => (
-            <div key={c.n} className="bg-[#1A1B2E] p-6">
+            <div key={c.n} className="bg-[#FAF8F4] p-6">
               <p
                 className={`text-5xl lg:text-6xl font-bold tracking-tight ${
-                  c.n === "0" ? "text-[#E8896A]" : "text-white"
+                  c.n === "0" ? "text-[#B04E2B]" : "text-[#1A1B2E]"
                 }`}
               >
                 {c.n}
               </p>
-              <p className="k-mono mt-2 text-[11px] tracking-[0.15em] uppercase text-[#AABBCC]">
+              <p className="k-mono mt-2 text-[11px] tracking-[0.15em] uppercase text-[#262B3D]">
                 {c.t}
               </p>
-              <p className="mt-3 text-[#AABBCC]/80 text-sm leading-relaxed">{c.d}</p>
+              <p className="mt-3 text-[#262B3D]/80 text-sm leading-relaxed">{c.d}</p>
             </div>
           ))}
         </div>
-        <p className="mt-5 text-[#AABBCC]/70 text-sm">
+        <p className="mt-5 text-[#262B3D]/70 text-sm">
           The same countdown as the{" "}
-          <Link href="/one-window" className="k-link k-focus text-[#6B9FD4]">
+          <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
             $99 do-it-yourself setup
           </Link>
           . The difference is who is beside you for the three hours
-          <span className="text-[#E8896A]">.</span>
+          <span className="text-[#B04E2B]">.</span>
         </p>
       </section>
 
@@ -140,15 +140,15 @@ export default function FastTrackPage() {
       </section>
 
       {/* The problem with AI demos */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">01 &mdash; The Problem With AI Demos</p>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               You can watch a free AI demo any week of the year. Google runs
               them. Intuit runs them. Your chamber of commerce runs them.
             </p>
-            <p className="text-white font-medium">
+            <p className="text-[#1A1B2E] font-medium">
               You leave impressed. And nothing at your business changes.
             </p>
             <p>
@@ -160,17 +160,17 @@ export default function FastTrackPage() {
       </section>
 
       {/* What this is */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">02 &mdash; What This Is</p>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>Not a class. Not a demo. Not a report you file away.</p>
             <p>
               A working session. We sit down at your computers, in your
               accounts, and set up AI to do real work in your business. Then we
               do some of that work, together, before the session ends.
             </p>
-            <p className="text-white font-medium">
+            <p className="text-[#1A1B2E] font-medium">
               By the end you are not &quot;trained on AI.&quot; You have AI
               working, and you know how to keep it working tomorrow without me.
             </p>
@@ -179,21 +179,21 @@ export default function FastTrackPage() {
       </section>
 
       {/* The specifics */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">03 &mdash; The Specifics</p>
           <ul className="max-w-2xl space-y-4 mb-6">
             {specs.map((s) => (
               <li
                 key={s}
-                className="border-l border-[#E8896A] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+                className="border-l border-[#B04E2B] pl-5 text-[#262B3D] text-lg leading-relaxed"
               >
                 {s}
               </li>
             ))}
           </ul>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
-            <p className="text-white font-medium">
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
+            <p className="text-[#1A1B2E] font-medium">
               Bring the people who will actually use it.
             </p>
             <p>
@@ -207,14 +207,14 @@ export default function FastTrackPage() {
       </section>
 
       {/* What you leave with */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">04 &mdash; What You Leave With</p>
           <ul className="max-w-2xl space-y-4">
             {takeaways.map((t) => (
               <li
                 key={t}
-                className="border-l border-[#E8896A] pl-5 text-[#AABBCC] text-lg leading-relaxed"
+                className="border-l border-[#B04E2B] pl-5 text-[#262B3D] text-lg leading-relaxed"
               >
                 {t}
               </li>
@@ -224,17 +224,17 @@ export default function FastTrackPage() {
       </section>
 
       {/* The first one */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">05 &mdash; The First One</p>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Kurt and Tana Nelson run{" "}
               <a
                 href="https://www.innovativeimagesphotos.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="k-link k-focus text-[#6B9FD4]"
+                className="k-link k-focus text-[#2B5D96]"
               >
                 Innovative Images
               </a>
@@ -247,7 +247,7 @@ export default function FastTrackPage() {
               shipped to their website, a marketing workflow started, and an
               action tracker built.
             </p>
-            <p className="text-white font-medium">
+            <p className="text-[#1A1B2E] font-medium">
               Three hours after I left, he sat back down at the same window and
               kept working. Alone.{" "}
               <span className="k-serif font-normal">
@@ -257,7 +257,7 @@ export default function FastTrackPage() {
             <p>
               When I sent him the next piece, a voice-capture setup for his
               phone, he texted me this on day one, unprompted:{" "}
-              <span className="k-serif text-white">
+              <span className="k-serif text-[#1A1B2E]">
                 &quot;I absolutely love this new voice memos to Claude so far.
                 Done 4 items and a couple of them while doing other task.&quot;
               </span>{" "}
@@ -268,10 +268,10 @@ export default function FastTrackPage() {
       </section>
 
       {/* Before we book */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">06 &mdash; Before We Book</p>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Not everyone is a fit, and I would rather tell you that before you
               pay me.
@@ -280,7 +280,7 @@ export default function FastTrackPage() {
             <ol className="list-decimal list-outside ml-5 space-y-3">
               <li>
                 You can name a workflow that actually hurts.{" "}
-                <span className="k-serif text-white">
+                <span className="k-serif text-[#1A1B2E]">
                   &quot;I want to see what AI can do&quot;
                 </span>{" "}
                 is what the free demos are for.
@@ -301,11 +301,11 @@ export default function FastTrackPage() {
       </section>
 
       {/* The price */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
           <p className="k-label mb-6">07 &mdash; The Price</p>
-          <div className="max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
-            <p className="text-white text-xl font-semibold">
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
+            <p className="text-[#1A1B2E] text-xl font-semibold">
               ${FAST_TRACK.price}, flat. That is the room, not the seat.
             </p>
             <p>
@@ -317,7 +317,7 @@ export default function FastTrackPage() {
               Run the comparison you are already running. You were going to buy
               the $99 One-Window anyway, so take it off the top. That puts
               the session itself at $900. Bring three people and that is{" "}
-              <span className="text-white font-medium">
+              <span className="text-[#1A1B2E] font-medium">
                 $100 an hour, per person
               </span>
               , to have it built with you instead of by you. And all three of
@@ -346,16 +346,16 @@ export default function FastTrackPage() {
       {/* Intake */}
       <section
         id="intake"
-        className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(170,187,204,0.13)]"
+        className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]"
       >
         <Reveal>
           <p className="k-label mb-6">08 &mdash; The Intake</p>
-          <p className="text-white font-medium text-lg max-w-2xl mb-4">
+          <p className="text-[#1A1B2E] font-medium text-lg max-w-2xl mb-4">
             The test of the session is the test of everything we do: did
             technology just get simpler for you, and did something real ship
             before you left the room.
           </p>
-          <p className="text-[#AABBCC] text-lg max-w-2xl mb-10">
+          <p className="text-[#262B3D] text-lg max-w-2xl mb-10">
             Five minutes. This tells us both whether the session is worth your
             ${FAST_TRACK.price} and my three hours. Tell me how many of you are coming.
           </p>

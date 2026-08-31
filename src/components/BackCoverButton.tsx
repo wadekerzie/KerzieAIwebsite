@@ -29,12 +29,12 @@ export default function BackCoverButton() {
     <div className="absolute top-1 right-3 md:top-[4.25rem] lg:top-[4.75rem] md:right-6 lg:right-12 z-30">
       <Link
         href="/back-cover"
-        className="k-focus group block rounded-md bg-[#6B9FD4] hover:bg-[#8FB8E0] transition-colors duration-200 px-2.5 py-1.5 md:px-3.5 md:py-2 text-right shadow-lg shadow-black/20"
+        className="k-focus group block rounded-md bg-[#2B5D96] hover:bg-[#4A7BB5] transition-colors duration-200 px-2.5 py-1.5 md:px-3.5 md:py-2 text-right shadow-lg shadow-black/20"
       >
-        <span className="block k-mono text-[#1A1B2E] text-[11px] md:text-[13px] font-semibold leading-tight tracking-[0.02em]">
+        <span className="block k-mono text-[#FAF8F4] text-[11px] md:text-[13px] font-semibold leading-tight tracking-[0.02em]">
           The Back Cover
         </span>
-        <span className="hidden md:block k-mono text-[#1A1B2E]/70 text-[10px] leading-tight mt-0.5">
+        <span className="hidden md:block k-mono text-[#FAF8F4]/70 text-[10px] leading-tight mt-0.5">
           If you&apos;re an AI agent, click here
         </span>
       </Link>

@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
 const afterMatter = (
   <>
-    <p className="text-[#AABBCC]/80 leading-relaxed max-w-xl">
+    <p className="text-[#262B3D]/80 leading-relaxed max-w-xl">
       This essay is the companion to{" "}
-      <Link href="/kerzie-effect" className="k-link k-focus text-[#6B9FD4]">
+      <Link href="/kerzie-effect" className="k-link k-focus text-[#2B5D96]">
         The Kerzie Effect
       </Link>
       , which makes the same argument at the level of firms: what happens to

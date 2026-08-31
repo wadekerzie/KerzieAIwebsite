@@ -95,13 +95,13 @@ export default function GotaGuyThread() {
 
   return (
     <div ref={ref} className="max-w-[380px] mx-auto">
-      <div className="border border-[rgba(170,187,204,0.13)] bg-[#16172A] px-4 pt-5 pb-6 min-h-[560px]">
+      <div className="border border-[rgba(26,27,46,0.13)] bg-[#F5F1EA] px-4 pt-5 pb-6 min-h-[560px]">
         {/* Thread header */}
-        <div className="text-center border-b border-[rgba(170,187,204,0.13)] pb-4 mb-5">
-          <p className="k-mono text-[#AABBCC] text-xs tracking-[0.2em]">
+        <div className="text-center border-b border-[rgba(26,27,46,0.13)] pb-4 mb-5">
+          <p className="k-mono text-[#262B3D] text-xs tracking-[0.2em]">
             GOTAGUY
           </p>
-          <p className="text-[#AABBCC]/50 text-[11px] mt-1">Text Message</p>
+          <p className="text-[#262B3D]/50 text-[11px] mt-1">Text Message</p>
         </div>
 
         <div className="space-y-3">
@@ -110,7 +110,7 @@ export default function GotaGuyThread() {
               return (
                 <p
                   key={i}
-                  className="k-mono text-center text-[10px] tracking-[0.2em] text-[#AABBCC]/40 pt-2"
+                  className="k-mono text-center text-[10px] tracking-[0.2em] text-[#262B3D]/40 pt-2"
                 >
                   {b.text}
                 </p>
@@ -131,14 +131,14 @@ export default function GotaGuyThread() {
                   <div
                     className={`inline-block px-4 py-2.5 text-[15px] leading-snug rounded-2xl ${
                       mine
-                        ? "bg-[#6B9FD4] text-[#16172A] rounded-br-sm"
-                        : "bg-[#252542] text-[#F0ECE8] rounded-bl-sm"
+                        ? "bg-[#2B5D96] text-[#F5F1EA] rounded-br-sm"
+                        : "bg-[#F2EEE6] text-[#F0ECE8] rounded-bl-sm"
                     }`}
                   >
                     {b.text}
                   </div>
                   {b.chip && (
-                    <div className="mt-1.5 inline-block border border-[#6B9FD4] text-[#6B9FD4] text-xs px-3 py-1.5 rounded-full">
+                    <div className="mt-1.5 inline-block border border-[#2B5D96] text-[#2B5D96] text-xs px-3 py-1.5 rounded-full">
                       {b.chip} &rarr;
                     </div>
                   )}
@@ -149,11 +149,11 @@ export default function GotaGuyThread() {
 
           {typing && (
             <div className="flex justify-start">
-              <div className="bg-[#252542] rounded-2xl rounded-bl-sm px-4 py-3 inline-flex gap-1.5">
+              <div className="bg-[#F2EEE6] rounded-2xl rounded-bl-sm px-4 py-3 inline-flex gap-1.5">
                 {[0, 1, 2].map((d) => (
                   <span
                     key={d}
-                    className="w-1.5 h-1.5 rounded-full bg-[#AABBCC]/60 animate-bounce"
+                    className="w-1.5 h-1.5 rounded-full bg-[#262B3D]/60 animate-bounce"
                     style={{ animationDelay: `${d * 150}ms` }}
                   />
                 ))}
@@ -162,7 +162,7 @@ export default function GotaGuyThread() {
           )}
         </div>
       </div>
-      <p className="k-mono text-center text-[10px] tracking-[0.2em] text-[#AABBCC]/40 mt-4">
+      <p className="k-mono text-center text-[10px] tracking-[0.2em] text-[#262B3D]/40 mt-4">
         THE WHOLE PRODUCT. NO APP. NO ACCOUNT.
       </p>
     </div>

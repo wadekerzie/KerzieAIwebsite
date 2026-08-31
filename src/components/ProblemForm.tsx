@@ -28,7 +28,7 @@ export default function ProblemForm() {
 
   if (submitted) {
     return (
-      <p className="text-[#6B9FD4] text-lg">
+      <p className="text-[#2B5D96] text-lg">
         Got it. We&apos;ll be in touch.
       </p>
     );
@@ -42,7 +42,7 @@ export default function ProblemForm() {
         placeholder="Describe the problem..."
         className="k-field"
       />
-      <p className="mt-3 text-[#AABBCC]/60 text-sm k-serif">
+      <p className="mt-3 text-[#262B3D]/60 text-sm k-serif">
         If you want us to respond, tell us how to reach you.
       </p>
       <button type="submit" disabled={sending} className="k-btn-solid mt-6">

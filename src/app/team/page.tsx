@@ -27,25 +27,25 @@ const people = [
 
 export default function TeamPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
 
       {/* Back link */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Header */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
         <p className="k-rise k-rise-1 k-label mb-8">The People</p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           The people behind the work.
         </h1>
-        <p className="k-rise k-rise-3 text-[#AABBCC] text-lg max-w-2xl mt-6">
+        <p className="k-rise k-rise-3 text-[#262B3D] text-lg max-w-2xl mt-6">
           What we share: the belief that life is best when technology just
           works, and the stubbornness to make it that way for other people.
         </p>
@@ -56,7 +56,7 @@ export default function TeamPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
           {people.map((person, i) => (
             <Reveal key={person.name} delay={i * 100}>
-              <div className="bg-[#1E2035] p-8 lg:p-10 flex flex-col gap-6 h-full">
+              <div className="bg-[#FFFFFF] p-8 lg:p-10 flex flex-col gap-6 h-full">
                 {person.photo ? (
                   /* eslint-disable-next-line @next/next/no-img-element */
                   <img
@@ -65,17 +65,17 @@ export default function TeamPage() {
                     className="w-[104px] h-[104px] rounded-full object-cover"
                   />
                 ) : (
-                  <div className="w-[104px] h-[104px] rounded-full bg-[#1A1B2E] flex items-center justify-center">
-                    <span className="k-mono text-[#6B9FD4] text-xl">
+                  <div className="w-[104px] h-[104px] rounded-full bg-[#FAF8F4] flex items-center justify-center">
+                    <span className="k-mono text-[#2B5D96] text-xl">
                       {person.initials}
                     </span>
                   </div>
                 )}
                 <div className="flex-1">
-                  <p className="text-white text-xl font-medium mb-2">
+                  <p className="text-[#1A1B2E] text-xl font-medium mb-2">
                     {person.name}
                   </p>
-                  <p className="text-[#AABBCC] text-[15px] leading-relaxed">
+                  <p className="text-[#262B3D] text-[15px] leading-relaxed">
                     {person.role}
                   </p>
                 </div>
@@ -84,14 +84,14 @@ export default function TeamPage() {
                     href={person.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="k-link self-start text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-200"
+                    className="k-link self-start text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                   >
                     See more <span className="k-arrow">&rarr;</span>
                   </a>
                 ) : (
                   <Link
                     href={person.href}
-                    className="k-link self-start text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-200"
+                    className="k-link self-start text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                   >
                     See more <span className="k-arrow">&rarr;</span>
                   </Link>

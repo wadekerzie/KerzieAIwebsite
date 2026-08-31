@@ -40,7 +40,7 @@ export function CopyButton({
         {state === "done" ? "Copied" : label}
       </button>
       {state === "failed" ? (
-        <span className="text-[#E8896A] text-sm">
+        <span className="text-[#B04E2B] text-sm">
           Your browser blocked the copy - select the text above and copy it by hand.
         </span>
       ) : null}
@@ -66,7 +66,7 @@ export function CopyBuilderButton({
     <span className="inline-flex items-center gap-3 flex-wrap">
       <button
         type="button"
-        className="k-focus underline underline-offset-4 text-[#6B9FD4] text-[15px] hover:text-white transition-colors"
+        className="k-focus underline underline-offset-4 text-[#2B5D96] text-[15px] hover:text-[#1A1B2E] transition-colors"
         onClick={async () => {
           setState("working");
           try {
@@ -85,7 +85,7 @@ export function CopyBuilderButton({
         {state === "working" ? "Getting it..." : state === "done" ? "Copied - now paste it into the Code tab" : label}
       </button>
       {state === "failed" ? (
-        <span className="text-[#E8896A] text-sm">
+        <span className="text-[#B04E2B] text-sm">
           That did not work.{" "}
           <a href={url} download className="underline">
             Download the file

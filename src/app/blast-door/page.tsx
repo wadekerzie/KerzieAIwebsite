@@ -36,14 +36,14 @@ export const metadata: Metadata = {
 
 const afterMatter = (
   <>
-    <p className="text-[#AABBCC]/80 leading-relaxed max-w-xl">
+    <p className="text-[#262B3D]/80 leading-relaxed max-w-xl">
       This essay completes a set.{" "}
-      <Link href="/kerzie-effect" className="k-link k-focus text-[#6B9FD4]">
+      <Link href="/kerzie-effect" className="k-link k-focus text-[#2B5D96]">
         The Kerzie Effect
       </Link>{" "}
       is the firm-level argument: what happens to sellers of judgment when the
       buyer can run the playbook.{" "}
-      <Link href="/consequence-clock" className="k-link k-focus text-[#6B9FD4]">
+      <Link href="/consequence-clock" className="k-link k-focus text-[#2B5D96]">
         The Consequence Clock
       </Link>{" "}
       is the person-level one: you work at the speed you are checked. This one

@@ -36,24 +36,24 @@ const RECEIPTS = [
 
 export default function SpeakingPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
         <p className="k-label mb-8">Wade Kerzie &middot; Speaker &amp; Podcast Guest</p>
-        <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.5rem)]">
+        <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.5rem)]">
           One person doing the work of a company with multiple departments
-          <span className="text-[#E8896A]">.</span>{" "}
+          <span className="text-[#B04E2B]">.</span>{" "}
           <span className="k-serif font-normal">And showing exactly how.</span>
         </h1>
-        <p className="mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-2xl leading-relaxed">
+        <p className="mt-6 text-[#262B3D] text-lg lg:text-xl max-w-2xl leading-relaxed">
           Wade Kerzie spent 30 years leading enterprise sales teams before
           rebuilding his entire working life around AI. Today he runs an AI
           consulting practice, a home-repair-by-text service in two states, an
@@ -68,49 +68,49 @@ export default function SpeakingPage() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-12 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-12 border-t border-[rgba(26,27,46,0.13)]">
         <p className="k-label mb-8">Topics</p>
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-10 max-w-4xl">
           {TOPICS.map((t, i) => (
             <div key={i}>
-              <p className="k-mono text-[#E8896A] text-xs tracking-[0.15em] mb-2">
+              <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mb-2">
                 0{i + 1}
               </p>
-              <h2 className="text-white text-xl font-bold tracking-[-0.01em]">
+              <h2 className="text-[#1A1B2E] text-xl font-bold tracking-[-0.01em]">
                 {t.title}
               </h2>
-              <p className="mt-3 text-[#AABBCC] leading-relaxed">{t.body}</p>
+              <p className="mt-3 text-[#262B3D] leading-relaxed">{t.body}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-12 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-12 border-t border-[rgba(26,27,46,0.13)]">
         <p className="k-label mb-8">Receipts</p>
         <ul className="max-w-2xl space-y-4">
           {RECEIPTS.map((r, i) => (
-            <li key={i} className="text-[#AABBCC] text-lg leading-relaxed flex gap-4">
-              <span className="text-[#E8896A] shrink-0">&#8226;</span>
+            <li key={i} className="text-[#262B3D] text-lg leading-relaxed flex gap-4">
+              <span className="text-[#B04E2B] shrink-0">&#8226;</span>
               <span>{r}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-8 text-[#AABBCC] text-lg max-w-2xl leading-relaxed">
+        <p className="mt-8 text-[#262B3D] text-lg max-w-2xl leading-relaxed">
           The first non-technical person Wade handed his free Voice Command Center texted
           him unprompted on day one:{" "}
-          <span className="k-serif text-white">
+          <span className="k-serif text-[#1A1B2E]">
             &quot;I absolutely love this new voice memos to Claude so far. Done 4
             items and a couple of them while doing other task.&quot;
           </span>{" "}
-          <span className="text-sm text-[#6d7585]">
+          <span className="text-sm text-[#5B6B77]">
             Kurt Nelson, Innovative Images. Typo his. Receipt real.
           </span>
         </p>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-12 border-t border-[rgba(170,187,204,0.13)] pb-24">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-12 border-t border-[rgba(26,27,46,0.13)] pb-24">
         <p className="k-label mb-8">Logistics</p>
-        <div className="max-w-2xl space-y-3 text-[#AABBCC] text-lg leading-relaxed">
+        <div className="max-w-2xl space-y-3 text-[#262B3D] text-lg leading-relaxed">
           <p>Based in McKinney, Texas. In person across DFW; remote anywhere.</p>
           <p>
             Own recording setup, comfortable long-form or tight segments.
@@ -118,7 +118,7 @@ export default function SpeakingPage() {
           </p>
           <p>
             Booking:{" "}
-            <a href="mailto:wade@kerzie.ai" className="k-link k-focus text-[#6B9FD4]">
+            <a href="mailto:wade@kerzie.ai" className="k-link k-focus text-[#2B5D96]">
               wade@kerzie.ai
             </a>
           </p>

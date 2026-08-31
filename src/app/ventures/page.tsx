@@ -54,25 +54,25 @@ const products = [
 
 export default function VenturesPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
 
       {/* Back link */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Header */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
         <p className="k-rise k-rise-1 k-label mb-8">The Work</p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           What we have built so far.
         </h1>
-        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl">
+        <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
           Every product starts with a problem worth fixing.
         </p>
       </section>
@@ -84,27 +84,27 @@ export default function VenturesPage() {
           <Reveal key={product.name} delay={i * 80}>
             <Link
               href={product.href}
-              className="group block py-10 lg:py-12 border-b border-[rgba(170,187,204,0.13)] k-focus"
+              className="group block py-10 lg:py-12 border-b border-[rgba(26,27,46,0.13)] k-focus"
             >
               <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-baseline">
                 <div className="lg:col-span-3 mb-3 lg:mb-0 flex items-baseline gap-5">
-                  <span className="k-mono text-[#E8896A] text-xs">
+                  <span className="k-mono text-[#B04E2B] text-xs">
                     0{i + 1}
                   </span>
-                  <span className="k-mono text-[#AABBCC]/40 text-sm tracking-tight">
+                  <span className="k-mono text-[#262B3D]/40 text-sm tracking-tight">
                     {product.clock}
                   </span>
                 </div>
                 <div className="lg:col-span-6 mb-3 lg:mb-0">
-                  <h2 className="text-white text-2xl lg:text-3xl font-semibold tracking-[-0.02em] group-hover:text-[#6B9FD4] transition-colors duration-200 mb-2">
+                  <h2 className="text-[#1A1B2E] text-2xl lg:text-3xl font-semibold tracking-[-0.02em] group-hover:text-[#2B5D96] transition-colors duration-200 mb-2">
                     {product.name}
                   </h2>
-                  <p className="text-[#AABBCC] text-base leading-relaxed max-w-lg">
+                  <p className="text-[#262B3D] text-base leading-relaxed max-w-lg">
                     {product.problem}
                   </p>
                 </div>
                 <div className="lg:col-span-3 lg:text-right">
-                  <span className="text-[#6B9FD4] text-sm font-semibold">
+                  <span className="text-[#2B5D96] text-sm font-semibold">
                     Read the story <span className="k-arrow">&rarr;</span>
                   </span>
                 </div>

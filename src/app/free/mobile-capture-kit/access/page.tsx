@@ -16,7 +16,7 @@ function renderKit(md: string) {
   const flushList = () => {
     if (!list) return;
     const items = list.items.map((t, i) => (
-      <li key={i} className="text-[#AABBCC] text-lg leading-relaxed">
+      <li key={i} className="text-[#262B3D] text-lg leading-relaxed">
         {renderInline(t)}
       </li>
     ));
@@ -39,14 +39,14 @@ function renderKit(md: string) {
     return text.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).map((part, i) => {
       if (part.startsWith("**") && part.endsWith("**")) {
         return (
-          <strong key={i} className="text-white">
+          <strong key={i} className="text-[#1A1B2E]">
             {part.slice(2, -2)}
           </strong>
         );
       }
       if (part.startsWith("`") && part.endsWith("`")) {
         return (
-          <code key={i} className="k-mono text-sm bg-[#1E2035] px-1.5 py-0.5 text-[#6B9FD4]">
+          <code key={i} className="k-mono text-sm bg-[#FFFFFF] px-1.5 py-0.5 text-[#2B5D96]">
             {part.slice(1, -1)}
           </code>
         );
@@ -62,7 +62,7 @@ function renderKit(md: string) {
   const flushPara = () => {
     if (!para.length) return;
     blocks.push(
-      <p key={key++} className="text-[#AABBCC] text-lg leading-relaxed my-4">
+      <p key={key++} className="text-[#262B3D] text-lg leading-relaxed my-4">
         {renderInline(para.join(" "))}
       </p>
     );
@@ -79,7 +79,7 @@ function renderKit(md: string) {
       blocks.push(
         <pre
           key={key++}
-          className="k-mono text-sm bg-[#1E2035] border border-[rgba(170,187,204,0.13)] p-5 my-4 whitespace-pre-wrap text-[#AABBCC] overflow-x-auto"
+          className="k-mono text-sm bg-[#FFFFFF] border border-[rgba(26,27,46,0.13)] p-5 my-4 whitespace-pre-wrap text-[#262B3D] overflow-x-auto"
         >
           {codeBlock.join("\n").trimEnd()}
         </pre>
@@ -139,34 +139,34 @@ function renderKit(md: string) {
 
 export default function CaptureKitAccessPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 pb-8">
         <p className="k-label mb-6">Here Is Your Voice Command Center</p>
-        <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3rem)]">
+        <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3rem)]">
           Ten minutes of setup, one habit
-          <span className="text-[#E8896A]">.</span>
+          <span className="text-[#B04E2B]">.</span>
         </h1>
         <div className="mt-8 flex flex-wrap gap-4 items-center">
           <a href="/downloads/mobile-capture-kit.md" download className="k-btn-solid k-focus inline-block">
             Download the kit <span className="k-arrow">&rarr;</span>
           </a>
-          <p className="text-sm text-[#6d7585]">
+          <p className="text-sm text-[#5B6B77]">
             Or just follow it right here. Bookmark this page; it is yours.
           </p>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20">
-        <div className="max-w-2xl border-t border-[rgba(170,187,204,0.13)] pt-4">
+        <div className="max-w-2xl border-t border-[rgba(26,27,46,0.13)] pt-4">
           {renderKit(CAPTURE_KIT_MD)}
         </div>
       </section>

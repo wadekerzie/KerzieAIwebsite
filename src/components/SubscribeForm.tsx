@@ -32,12 +32,12 @@ export default function SubscribeForm({ source }: { source?: string }) {
   if (state === "done") {
     return (
       <div
-        className="border-l-2 border-[#E8896A] pl-5 py-1 max-w-lg"
+        className="border-l-2 border-[#B04E2B] pl-5 py-1 max-w-lg"
         role="status"
         aria-live="polite"
       >
-        <p className="text-white text-lg">You are on the list.</p>
-        <p className="mt-2 text-[#AABBCC] leading-relaxed">
+        <p className="text-[#1A1B2E] text-lg">You are on the list.</p>
+        <p className="mt-2 text-[#262B3D] leading-relaxed">
           The next one goes out Tuesday at 1:00 PM Central. Check your inbox
           for a confirmation, and move it out of Promotions if it landed there.
         </p>
@@ -58,7 +58,7 @@ export default function SubscribeForm({ source }: { source?: string }) {
           required
           autoComplete="email"
           placeholder="you@company.com"
-          className="flex-1 bg-[#1E2035] border border-[rgba(170,187,204,0.25)] px-4 py-3 text-white placeholder-[#6d7585] focus:outline-none focus:border-[#6B9FD4]"
+          className="flex-1 bg-[#FFFFFF] border border-[rgba(26,27,46,0.25)] px-4 py-3 text-[#1A1B2E] placeholder-[#5B6B77] focus:outline-none focus:border-[#2B5D96]"
         />
         <button
           type="submit"
@@ -68,7 +68,7 @@ export default function SubscribeForm({ source }: { source?: string }) {
           {state === "sending" ? "One second..." : "Send it to me"}
         </button>
       </div>
-      {error && <p className="mt-3 text-[#E8896A] text-sm">{error}</p>}
+      {error && <p className="mt-3 text-[#B04E2B] text-sm">{error}</p>}
     </form>
   );
 }

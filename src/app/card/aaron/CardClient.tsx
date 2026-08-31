@@ -54,11 +54,11 @@ export default function CardClient() {
           className="h-28 w-28 rounded-full object-cover ring-1 ring-white/15"
         />
 
-        <h1 className="mt-5 text-3xl font-semibold tracking-tight text-[#f0ece8]">
+        <h1 className="mt-5 text-3xl font-semibold tracking-tight text-[#262B3D]">
           Aaron Jones
         </h1>
-        <p className="mt-1 text-[#AABBCC]">Technical Specialist, Kerzie AI Solutions</p>
-        <p className="mt-1 text-sm text-[#7d8ba0]">Aurora, Colorado</p>
+        <p className="mt-1 text-[#262B3D]">Technical Specialist, Kerzie AI Solutions</p>
+        <p className="mt-1 text-sm text-[#5B6B77]">Aurora, Colorado</p>
 
         <nav className="mt-9 flex w-full flex-col gap-3">
           {ACTIONS.map((a) => (
@@ -67,8 +67,8 @@ export default function CardClient() {
               href={a.href}
               className={
                 a.primary
-                  ? "rounded-xl bg-[#7B9FE8] px-5 py-4 text-center font-semibold text-[#1A1B2E] transition-colors hover:bg-[#5A7FD6]"
-                  : "rounded-xl border border-white/12 bg-white/[0.04] px-5 py-4 text-center font-medium text-[#f0ece8] transition-colors hover:bg-white/[0.08]"
+                  ? "rounded-xl bg-[#2B5D96] px-5 py-4 text-center font-semibold text-[#FAF8F4] transition-colors hover:bg-[#4A7BB5]"
+                  : "rounded-xl border border-[#1A1B2E]/12 bg-white/[0.04] px-5 py-4 text-center font-medium text-[#262B3D] transition-colors hover:bg-white/[0.08]"
               }
             >
               {a.label}
@@ -76,8 +76,8 @@ export default function CardClient() {
                 <span
                   className={
                     a.primary
-                      ? "mt-0.5 block text-xs font-normal text-[#1A1B2E]/70"
-                      : "mt-0.5 block text-xs font-normal text-[#7d8ba0]"
+                      ? "mt-0.5 block text-xs font-normal text-[#FAF8F4]/70"
+                      : "mt-0.5 block text-xs font-normal text-[#5B6B77]"
                   }
                 >
                   {a.sub}
@@ -90,7 +90,7 @@ export default function CardClient() {
         <button
           type="button"
           onClick={() => setQrOpen(true)}
-          className="mt-8 rounded-lg px-4 py-2 text-sm text-[#7d8ba0] underline underline-offset-4 transition-colors hover:text-[#AABBCC]"
+          className="mt-8 rounded-lg px-4 py-2 text-sm text-[#5B6B77] underline underline-offset-4 transition-colors hover:text-[#262B3D]"
         >
           Show my QR code
         </button>
