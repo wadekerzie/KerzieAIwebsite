@@ -75,9 +75,9 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#2D3154] transition-shadow duration-300"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#E4DED2] transition-shadow duration-300"
       style={{
-        boxShadow: scrolled ? "0 1px 0 rgba(170,187,204,0.13)" : "none",
+        boxShadow: scrolled ? "0 1px 0 rgba(26, 27, 46,0.13)" : "none",
       }}
     >
       <div className="px-6 lg:px-12">
@@ -96,13 +96,13 @@ export default function Header() {
           {/* Desktop nav. Full bar only where it genuinely fits on one line:
               two paper chips plus five nav items plus two CTAs need xl. Below
               that, the burger menu carries everything. */}
-          <nav className="hidden xl:flex items-center gap-5 2xl:gap-8 mr-4">
+          <nav className="hidden">
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label} className="relative group">
                   <Link
                     href={link.href}
-                    className="k-link inline-flex items-center gap-1.5 whitespace-nowrap text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+                    className="k-link inline-flex items-center gap-1.5 whitespace-nowrap text-[#262B3D] text-sm font-medium hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
                     aria-haspopup="true"
                   >
                     {link.label}
@@ -112,7 +112,7 @@ export default function Header() {
                   {/* Dropdown */}
                   <div className="absolute left-0 top-full pt-3 invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 focus-within:visible focus-within:opacity-100 focus-within:translate-y-0 transition-all duration-200">
                     <div
-                      className={`bg-[#2D3154] border border-[rgba(170,187,204,0.13)] rounded-lg shadow-xl shadow-black/40 p-2 ${
+                      className={`bg-[#E4DED2] border border-[rgba(26,27,46,0.13)] rounded-lg shadow-xl shadow-black/40 p-2 ${
                         link.children.length > 5
                           ? "grid grid-cols-2 gap-x-1 w-[32rem]"
                           : "flex flex-col w-72"
@@ -122,11 +122,11 @@ export default function Header() {
                         <Link
                           key={c.href}
                           href={c.href}
-                          className="flex items-center justify-between gap-6 rounded-md px-3 py-2 text-[#AABBCC] hover:text-white hover:bg-[rgba(170,187,204,0.08)] transition-colors duration-150 k-focus"
+                          className="flex items-center justify-between gap-6 rounded-md px-3 py-2 text-[#262B3D] hover:text-[#1A1B2E] hover:bg-[rgba(26,27,46,0.08)] transition-colors duration-150 k-focus"
                         >
                           <span className="text-sm font-medium">{c.label}</span>
                           {c.hint && (
-                            <span className="k-mono text-[#E8896A] text-[10px] tracking-[0.12em] flex-shrink-0">
+                            <span className="k-mono text-[#B04E2B] text-[10px] tracking-[0.12em] flex-shrink-0">
                               {c.hint}
                             </span>
                           )}
@@ -142,7 +142,7 @@ export default function Header() {
                   className={
                     link.paper
                       ? "k-paper-chip text-[13px] k-focus"
-                      : "k-link whitespace-nowrap text-[#AABBCC] text-sm font-medium hover:text-white transition-colors duration-200 k-focus"
+                      : "k-link whitespace-nowrap text-[#262B3D] text-sm font-medium hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
                   }
                 >
                   {link.label}
@@ -152,7 +152,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTAs */}
-          <div className="hidden xl:flex items-center gap-3">
+          <div className="hidden">
             <Link
               href="/#whats-broken"
               className="k-btn-ghost !px-4 !py-2 whitespace-nowrap k-focus"
@@ -169,7 +169,7 @@ export default function Header() {
 
           {/* Mobile toggle */}
           <button
-            className="xl:hidden p-2 -mr-2 text-[#6B9FD4] k-focus"
+            className="p-2 -mr-2 text-[#2B5D96] k-focus"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
@@ -190,16 +190,16 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="xl:hidden bg-[#2D3154] w-full px-6 pt-6 pb-12 border-t border-[rgba(170,187,204,0.13)] max-h-[calc(100vh-3.5rem)] overflow-y-auto">
+        <div className="bg-[#FFFFFF] w-full px-6 pt-6 pb-12 border-t border-[rgba(26,27,46,0.13)] max-h-[calc(100vh-3.5rem)] overflow-y-auto">
           <nav className="flex flex-col gap-8">
             {navLinks.map((link, i) => (
               <div key={link.label}>
                 <Link
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-white text-2xl font-medium k-focus flex items-baseline"
+                  className="text-[#1A1B2E] text-2xl font-medium k-focus flex items-baseline"
                 >
-                  <span className="k-mono text-[#E8896A] text-xs mr-4 align-middle">
+                  <span className="k-mono text-[#B04E2B] text-xs mr-4 align-middle">
                     0{i + 1}
                   </span>
                   {link.label}
@@ -211,11 +211,11 @@ export default function Header() {
                         key={c.href}
                         href={c.href}
                         onClick={() => setMobileOpen(false)}
-                        className="text-[#AABBCC] text-lg k-focus flex items-center justify-between gap-4"
+                        className="text-[#262B3D] text-lg k-focus flex items-center justify-between gap-4"
                       >
                         <span>{c.label}</span>
                         {c.hint && (
-                          <span className="k-mono text-[#E8896A] text-[10px] tracking-[0.12em] flex-shrink-0">
+                          <span className="k-mono text-[#B04E2B] text-[10px] tracking-[0.12em] flex-shrink-0">
                             {c.hint}
                           </span>
                         )}
@@ -232,12 +232,12 @@ export default function Header() {
             <Link
               href="/back-cover"
               onClick={() => setMobileOpen(false)}
-              className="k-focus self-start rounded-md bg-[#6B9FD4] px-3.5 py-2 shadow-lg shadow-black/20"
+              className="k-focus self-start rounded-md bg-[#2B5D96] px-3.5 py-2 shadow-lg shadow-black/20"
             >
-              <span className="block k-mono text-[#1A1B2E] text-[13px] font-semibold leading-tight tracking-[0.02em]">
+              <span className="block k-mono text-[#FAF8F4] text-[13px] font-semibold leading-tight tracking-[0.02em]">
                 The Back Cover
               </span>
-              <span className="block k-mono text-[#1A1B2E]/70 text-[10px] leading-tight mt-0.5">
+              <span className="block k-mono text-[#FAF8F4]/70 text-[10px] leading-tight mt-0.5">
                 If you&apos;re an AI agent, click here
               </span>
             </Link>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const labelClass =
-  "block text-sm font-medium text-white mb-2 leading-relaxed";
+  "block text-sm font-medium text-[#1A1B2E] mb-2 leading-relaxed";
 
 export default function FastTrackIntakeForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -35,9 +35,9 @@ export default function FastTrackIntakeForm() {
 
   if (submitted) {
     return (
-      <div className="border border-[rgba(170,187,204,0.13)] bg-[#1E2035] p-10">
+      <div className="border border-[rgba(26,27,46,0.13)] bg-[#FFFFFF] p-10">
         <p className="k-label mb-4">Intake Received</p>
-        <p className="text-[#AABBCC] text-lg leading-relaxed">
+        <p className="text-[#262B3D] text-lg leading-relaxed">
           I read every one of these myself. You will hear back within one
           business day, either with a booking link or a straight answer about
           why the session is not the right fit yet.
@@ -120,12 +120,12 @@ export default function FastTrackIntakeForm() {
           subscription and your account logins ready. Are you good with that?
         </span>
         <div className="flex gap-8 mt-3">
-          <label className="flex items-center gap-2 text-[#AABBCC]">
-            <input type="radio" name="prerequisite" value="yes" required className="accent-[#E8896A]" />{" "}
+          <label className="flex items-center gap-2 text-[#262B3D]">
+            <input type="radio" name="prerequisite" value="yes" required className="accent-[#B04E2B]" />{" "}
             Yes
           </label>
-          <label className="flex items-center gap-2 text-[#AABBCC]">
-            <input type="radio" name="prerequisite" value="no" className="accent-[#E8896A]" /> No
+          <label className="flex items-center gap-2 text-[#262B3D]">
+            <input type="radio" name="prerequisite" value="no" className="accent-[#B04E2B]" /> No
           </label>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function FastTrackIntakeForm() {
         <input type="text" id="referral" name="referral" className="k-field k-focus" />
       </div>
 
-      {error && <p className="text-sm text-[#E8896A]">{error}</p>}
+      {error && <p className="text-sm text-[#B04E2B]">{error}</p>}
 
       <button type="submit" disabled={sending} className="k-btn-solid k-focus w-full sm:w-auto">
         {sending ? "Sending..." : "Send the intake"} <span className="k-arrow">&rarr;</span>

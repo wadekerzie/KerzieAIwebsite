@@ -10,32 +10,32 @@ export const metadata: Metadata = {
 
 export default function AiOsPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       {/* Back link */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-20">
         <p className="k-rise k-rise-1 mb-8">
-          <span className="inline-block k-mono text-[#E8896A] text-[11px] tracking-[0.18em] uppercase border border-[rgba(232,137,106,0.35)] rounded-full px-3 py-1">
+          <span className="inline-block k-mono text-[#B04E2B] text-[11px] tracking-[0.18em] uppercase border border-[rgba(176,78,43,0.35)] rounded-full px-3 py-1">
             Coming Soon
           </span>
         </p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          AI Operating System<span className="text-[#E8896A]">.</span>
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
+          AI Operating System<span className="text-[#B04E2B]">.</span>
         </h1>
-        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg lg:text-xl max-w-2xl leading-relaxed">
+        <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg lg:text-xl max-w-2xl leading-relaxed">
           A small business AI operating system built{" "}
           <span className="k-serif font-normal">AI-native from day one</span>.
         </p>
-        <p className="k-rise k-rise-3 mt-4 text-[#AABBCC] text-lg max-w-2xl leading-relaxed">
+        <p className="k-rise k-rise-3 mt-4 text-[#262B3D] text-lg max-w-2xl leading-relaxed">
           Connecting your tools, your team, and your data into a single AI-native
           layer. Designed around how AI works, not how legacy software works.
         </p>
@@ -52,9 +52,9 @@ export default function AiOsPage() {
       </section>
 
       {/* Explore live ventures */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(170,187,204,0.13)]">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="text-white text-xl font-medium mb-6 max-w-xl">
+          <p className="text-[#1A1B2E] text-xl font-medium mb-6 max-w-xl">
             While this one is still in the shop,{" "}
             <span className="k-serif font-normal">
               see what we already have live today

@@ -20,27 +20,27 @@ export default function SchedulePage() {
   }, []);
 
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
 
       {/* Back link */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Header */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
         <p className="k-rise k-rise-1 k-label mb-8">Schedule</p>
-        <h1 className="k-rise k-rise-2 text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
           Let&apos;s put it{" "}
           <span className="k-serif font-normal">on the calendar</span>
-          <span className="text-[#E8896A]">.</span>
+          <span className="text-[#B04E2B]">.</span>
         </h1>
-        <p className="k-rise k-rise-3 mt-6 text-[#AABBCC] text-lg max-w-xl">
+        <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
           A business problem, a podcast, a stage, or a question about AI.
           Whatever brought you here, this is the direct line to my calendar.
           Pick a time that works and let&apos;s talk.
@@ -62,7 +62,7 @@ export default function SchedulePage() {
           title="Schedule time with Wade"
         />
         {/* SMS Consent Disclosure */}
-        <div className="mt-8 text-sm text-[#AABBCC]/50 leading-relaxed max-w-2xl">
+        <div className="mt-8 text-sm text-[#262B3D]/50 leading-relaxed max-w-2xl">
           <p className="mb-2">
             By providing your phone number, you consent to receive SMS messages
             from Kerzie Consulting LLC (DBA Kerzie AI) regarding your scheduled
@@ -73,14 +73,14 @@ export default function SchedulePage() {
             Reply STOP to unsubscribe. Reply HELP for help. View our{" "}
             <Link
               href="/privacy-policy"
-              className="hover:text-[#AABBCC] transition-colors duration-150"
+              className="hover:text-[#262B3D] transition-colors duration-150"
             >
               Privacy Policy
             </Link>{" "}
             and{" "}
             <Link
               href="/terms-of-service"
-              className="hover:text-[#AABBCC] transition-colors duration-150"
+              className="hover:text-[#262B3D] transition-colors duration-150"
             >
               Terms of Service
             </Link>

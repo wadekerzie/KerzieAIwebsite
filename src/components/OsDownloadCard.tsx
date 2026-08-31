@@ -131,18 +131,18 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
   }
 
   return (
-    <div className="rounded-lg border border-[rgba(170,187,204,0.15)] bg-[rgba(170,187,204,0.04)] p-6 flex flex-col">
-      <h3 className="text-white font-semibold text-lg">{name}</h3>
-      <p className="mt-3 text-[#AABBCC] text-[15px] leading-relaxed flex-1">{description}</p>
+    <div className="rounded-lg border border-[rgba(26,27,46,0.15)] bg-[rgba(26,27,46,0.04)] p-6 flex flex-col">
+      <h3 className="text-[#1A1B2E] font-semibold text-lg">{name}</h3>
+      <p className="mt-3 text-[#262B3D] text-[15px] leading-relaxed flex-1">{description}</p>
       {note ? (
-        <p className="mt-3 text-[#E8896A]/85 text-[13px] leading-relaxed">{note}</p>
+        <p className="mt-3 text-[#B04E2B]/85 text-[13px] leading-relaxed">{note}</p>
       ) : null}
 
       <div className="mt-5">
         <div className="flex flex-col gap-2 items-start">
           <button
             onClick={() => start("line")}
-            className="k-focus rounded-md bg-[#E8896A] px-4 py-2 text-[#1A1B2E] text-sm font-semibold hover:opacity-90"
+            className="k-focus rounded-md bg-[#B04E2B] px-4 py-2 text-[#FAF8F4] text-sm font-semibold hover:opacity-90"
           >
             {copied
               ? "Copied - paste it into your Code tab"
@@ -152,7 +152,7 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
           </button>
           <button
             onClick={() => start("file")}
-            className="k-focus text-[#AABBCC]/70 text-[13px] underline underline-offset-4 hover:text-white transition-colors"
+            className="k-focus text-[#262B3D]/70 text-[13px] underline underline-offset-4 hover:text-[#1A1B2E] transition-colors"
           >
             {baseline ? "or download the document" : "or open the reference (written to your AI)"}
           </button>
@@ -176,11 +176,11 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="the email you bought with"
-              className="k-focus flex-1 rounded-md bg-[#1A1B2E] border border-[rgba(170,187,204,0.3)] px-3 py-2 text-white text-sm placeholder:text-[#AABBCC]/40"
+              className="k-focus flex-1 rounded-md bg-[#FAF8F4] border border-[rgba(26,27,46,0.3)] px-3 py-2 text-[#1A1B2E] text-sm placeholder:text-[#262B3D]/40"
             />
             <button
               type="submit"
-              className="k-focus rounded-md border border-[rgba(170,187,204,0.3)] px-4 py-2 text-[#AABBCC] text-sm font-semibold hover:text-white"
+              className="k-focus rounded-md border border-[rgba(26,27,46,0.3)] px-4 py-2 text-[#262B3D] text-sm font-semibold hover:text-[#1A1B2E]"
             >
               Register it to me
             </button>
@@ -188,7 +188,7 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
         ) : null}
         {manualLine ? (
           <div className="mt-3">
-            <p className="text-[#AABBCC]/70 text-[12px] mb-2">
+            <p className="text-[#262B3D]/70 text-[12px] mb-2">
               Your browser blocked the copy. Select this and copy it by hand:
             </p>
             <textarea
@@ -196,11 +196,11 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
               rows={3}
               value={manualLine}
               onFocus={(e) => e.currentTarget.select()}
-              className="k-focus w-full rounded-md bg-[#1A1B2E] border border-[rgba(170,187,204,0.3)] px-3 py-2 text-white text-[12px] leading-relaxed k-mono"
+              className="k-focus w-full rounded-md bg-[#FAF8F4] border border-[rgba(26,27,46,0.3)] px-3 py-2 text-[#1A1B2E] text-[12px] leading-relaxed k-mono"
             />
           </div>
         ) : null}
-        {error ? <p className="mt-2 text-[#E8896A] text-[13px]">{error}</p> : null}
+        {error ? <p className="mt-2 text-[#B04E2B] text-[13px]">{error}</p> : null}
       </div>
     </div>
   );

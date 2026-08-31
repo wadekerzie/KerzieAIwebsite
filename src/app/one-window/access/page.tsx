@@ -30,15 +30,15 @@ function Step({
     <div className="flex gap-5 sm:gap-7">
       <div
         aria-hidden
-        className="k-mono shrink-0 w-9 h-9 rounded-full border border-[rgba(232,137,106,0.45)] text-[#E8896A] flex items-center justify-center text-sm font-bold"
+        className="k-mono shrink-0 w-9 h-9 rounded-full border border-[rgba(176,78,43,0.45)] text-[#B04E2B] flex items-center justify-center text-sm font-bold"
       >
         {n}
       </div>
       <div className="flex-1 min-w-0 pb-12">
-        <h2 className="text-white font-semibold text-xl sm:text-2xl tracking-[-0.01em]">
+        <h2 className="text-[#1A1B2E] font-semibold text-xl sm:text-2xl tracking-[-0.01em]">
           {title}
         </h2>
-        <div className="mt-4 space-y-4 text-[#AABBCC] text-[17px] leading-relaxed max-w-2xl">
+        <div className="mt-4 space-y-4 text-[#262B3D] text-[17px] leading-relaxed max-w-2xl">
           {children}
         </div>
       </div>
@@ -48,49 +48,49 @@ function Step({
 
 export default function OneWindowAccessPage() {
   return (
-    <div className="bg-[#1A1B2E] min-h-screen">
+    <div className="bg-[#FAF8F4] min-h-screen">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#AABBCC]/70 text-xs tracking-[0.15em] hover:text-white transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
-          &larr; KERZIE<span className="text-[#E8896A]">.</span>AI
+          &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
         <p className="k-label mb-8">Purchase Complete</p>
-        <h1 className="text-white font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
-          Let&apos;s get you set up<span className="text-[#E8896A]">.</span>
+        <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
+          Let&apos;s get you set up<span className="text-[#B04E2B]">.</span>
         </h1>
-        <div className="mt-8 max-w-2xl space-y-4 text-[#AABBCC] text-lg leading-relaxed">
+        <div className="mt-8 max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
           <p>
             Five steps on this page. The first four get your Mac ready and take
             about twenty minutes, most of it waiting on a download. The fifth
             hands the work to your AI, and that is where the hour goes.
           </p>
           <p>
-            <span className="text-white">You do not need to read anything technical.</span>{" "}
+            <span className="text-[#1A1B2E]">You do not need to read anything technical.</span>{" "}
             Everything you have to do is on this page, in order. Do them in
             order and do not skip ahead.
           </p>
         </div>
 
-        <div className="mt-10 max-w-2xl rounded-lg border border-[rgba(170,187,204,0.15)] bg-[rgba(170,187,204,0.04)] p-6">
+        <div className="mt-10 max-w-2xl rounded-lg border border-[rgba(26,27,46,0.15)] bg-[rgba(26,27,46,0.04)] p-6">
           <p className="k-label mb-4">Before You Start</p>
-          <ul className="space-y-2 text-[#AABBCC] text-[16px] leading-relaxed">
+          <ul className="space-y-2 text-[#262B3D] text-[16px] leading-relaxed">
             <li>
-              <span className="text-white">A Mac.</span> This version is Mac
+              <span className="text-[#1A1B2E]">A Mac.</span> This version is Mac
               only. Windows is a different install path and is not in this
               version.
             </li>
             <li>
-              <span className="text-white">A paid Claude plan.</span> Claude Pro
+              <span className="text-[#1A1B2E]">A paid Claude plan.</span> Claude Pro
               at $20 a month is the minimum. The free plan does not include the
               part you are about to use.
             </li>
             <li>
-              <span className="text-white">About an hour, once.</span> You do
+              <span className="text-[#1A1B2E]">About an hour, once.</span> You do
               not need to be technical. You do not need to have ever opened
               Terminal.
             </li>
@@ -98,23 +98,23 @@ export default function OneWindowAccessPage() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-8 border-t border-[rgba(170,187,204,0.13)] pt-14">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-8 border-t border-[rgba(26,27,46,0.13)] pt-14">
         <Step n="1" title="The two Claudes, and why one of them can't help you">
           <p>
             Most people who have used Claude have used it in a browser tab. You
             ask, it answers, you close the tab. That is Claude{" "}
-            <span className="text-white">chat</span>, and it is good at talking
+            <span className="text-[#1A1B2E]">chat</span>, and it is good at talking
             about your business. It cannot touch anything in it. No access to
             your files, your numbers, your calendar, or your accounts. Every
             conversation starts from nothing and ends the same way.
           </p>
           <p>
             The desktop app is different. It has three tabs across the top:{" "}
-            <span className="text-white">Chat</span> (what you have been using),{" "}
-            <span className="text-white">Cowork</span> (ignore it for now), and{" "}
-            <span className="text-white">Code</span>.
+            <span className="text-[#1A1B2E]">Chat</span> (what you have been using),{" "}
+            <span className="text-[#1A1B2E]">Cowork</span> (ignore it for now), and{" "}
+            <span className="text-[#1A1B2E]">Code</span>.
           </p>
-          <p className="text-white">
+          <p className="text-[#1A1B2E]">
             Code is where the work gets done. It is the only tab that can
             actually change anything in your business.
           </p>
@@ -140,7 +140,7 @@ export default function OneWindowAccessPage() {
                 href="https://claude.ai/download"
                 target="_blank"
                 rel="noopener"
-                className="k-link k-focus text-[#6B9FD4]"
+                className="k-link k-focus text-[#2B5D96]"
               >
                 claude.ai/download
               </a>
@@ -151,7 +151,7 @@ export default function OneWindowAccessPage() {
               subscription is on.
             </li>
             <li>
-              Click the <span className="text-white">Code</span> tab at the top.
+              Click the <span className="text-[#1A1B2E]">Code</span> tab at the top.
             </li>
           </ol>
           <p>
@@ -167,13 +167,13 @@ export default function OneWindowAccessPage() {
             why.
           </p>
           <p>
-            <span className="text-white">Terminal</span> is a plain text window
+            <span className="text-[#1A1B2E]">Terminal</span> is a plain text window
             that came with your Mac. No buttons. You type an instruction, press
             return, your Mac does it. You are going to use it once today and you
             may never open it again.
           </p>
           <p>
-            <span className="text-white">Why you have to.</span> Your Mac ships
+            <span className="text-[#1A1B2E]">Why you have to.</span> Your Mac ships
             with part of the developer toolkit missing, including a tool the
             Code tab needs. The confusing part is that your Mac looks like it
             already has it. It does not. Skip this and the Code tab will appear
@@ -182,26 +182,26 @@ export default function OneWindowAccessPage() {
           </p>
           <ol className="list-decimal list-outside ml-5 space-y-2">
             <li>
-              Press <span className="text-white">Command + Space</span>, type{" "}
-              <span className="k-mono text-white">Terminal</span>, press return.
+              Press <span className="text-[#1A1B2E]">Command + Space</span>, type{" "}
+              <span className="k-mono text-[#1A1B2E]">Terminal</span>, press return.
               A plain window opens.
             </li>
             <li>Copy this line, paste it into that window, press return:</li>
           </ol>
-          <div className="rounded-md bg-[#12131F] border border-[rgba(170,187,204,0.2)] px-4 py-3 k-mono text-white text-[15px] overflow-x-auto">
+          <div className="rounded-md bg-[#F2EEE6] border border-[rgba(26,27,46,0.2)] px-4 py-3 k-mono text-[#1A1B2E] text-[15px] overflow-x-auto">
             xcode-select --install
           </div>
           <div>
             <CopyButton
               text="xcode-select --install"
               label="Copy the command"
-              className="k-focus rounded-md border border-[rgba(232,137,106,0.5)] text-[#E8896A] px-4 py-2 text-sm font-semibold hover:bg-[rgba(232,137,106,0.1)] transition-colors"
+              className="k-focus rounded-md border border-[rgba(176,78,43,0.5)] text-[#B04E2B] px-4 py-2 text-sm font-semibold hover:bg-[rgba(176,78,43,0.1)] transition-colors"
             />
           </div>
           <ol className="list-decimal list-outside ml-5 space-y-2" start={3}>
             <li>
               A normal Mac installer window appears. Click{" "}
-              <span className="text-white">Install</span>, accept the agreement,
+              <span className="text-[#1A1B2E]">Install</span>, accept the agreement,
               let it run. A few minutes.
             </li>
             <li>When it finishes, close Terminal. You are done with it.</li>
@@ -210,8 +210,8 @@ export default function OneWindowAccessPage() {
             If you instead get a message saying the tools are already installed,
             that is fine. Your Mac already has them. Move on.
           </p>
-          <details className="rounded-md border border-[rgba(170,187,204,0.15)] p-4">
-            <summary className="k-focus cursor-pointer text-white text-[16px]">
+          <details className="rounded-md border border-[rgba(26,27,46,0.15)] p-4">
+            <summary className="k-focus cursor-pointer text-[#1A1B2E] text-[16px]">
               If the Code tab still reports a problem with Git
             </summary>
             <div className="mt-4 space-y-3 text-[16px]">
@@ -226,7 +226,7 @@ export default function OneWindowAccessPage() {
                     href="https://brew.sh"
                     target="_blank"
                     rel="noopener"
-                    className="k-link k-focus text-[#6B9FD4]"
+                    className="k-link k-focus text-[#2B5D96]"
                   >
                     brew.sh
                   </a>{" "}
@@ -236,7 +236,7 @@ export default function OneWindowAccessPage() {
                 </li>
                 <li>
                   When it finishes it prints a short block titled{" "}
-                  <span className="text-white">Next steps</span> with two or
+                  <span className="text-[#1A1B2E]">Next steps</span> with two or
                   three commands. Copy each one, paste it into the same window,
                   press return, one at a time. Nothing visible happens. That is
                   expected.
@@ -250,7 +250,7 @@ export default function OneWindowAccessPage() {
         <Step n="4" title="Your folder, and why it is the whole foundation">
           <p>The most important step so far, and it takes 30 seconds.</p>
           <p>
-            <span className="text-white">
+            <span className="text-[#1A1B2E]">
               Create one folder on your Mac and name it after yourself:
             </span>{" "}
             <span className="k-mono">Maria&apos;s OS</span>,{" "}
@@ -270,29 +270,29 @@ export default function OneWindowAccessPage() {
           <ol className="list-decimal list-outside ml-5 space-y-2">
             <li>
               In the Claude app, click the{" "}
-              <span className="text-white">Code</span> tab.
+              <span className="text-[#1A1B2E]">Code</span> tab.
             </li>
             <li>
-              Choose <span className="text-white">Local</span>.
+              Choose <span className="text-[#1A1B2E]">Local</span>.
             </li>
             <li>
-              Click <span className="text-white">Select folder</span> and pick
+              Click <span className="text-[#1A1B2E]">Select folder</span> and pick
               the folder you just created.
             </li>
           </ol>
           <p>
-            <span className="text-white">
+            <span className="text-[#1A1B2E]">
               If you have used the Code tab before,
             </span>{" "}
             it opens straight into whatever folder you had last, so there is no{" "}
-            <span className="text-white">Select folder</span> button sitting
+            <span className="text-[#1A1B2E]">Select folder</span> button sitting
             there waiting for you. Click the folder name at the top of the Code
             panel instead. That opens the folder switcher, and your new folder
             goes in from there. Your existing setup is untouched, and you can
             switch back and forth whenever you want.
           </p>
           <p>
-            <span className="text-white">
+            <span className="text-[#1A1B2E]">
               Expect a pop-up asking whether you trust this folder.
             </span>{" "}
             Say yes. It asks because a folder can hold instructions that run
@@ -301,7 +301,7 @@ export default function OneWindowAccessPage() {
             Mac, and it is empty. There is nothing in it yet to trust or not
             trust.
           </p>
-          <p className="text-white">
+          <p className="text-[#1A1B2E]">
             You now have one window that can see your business.
           </p>
         </Step>
@@ -312,12 +312,12 @@ export default function OneWindowAccessPage() {
             and press return. Your AI goes and gets its own instructions from
             there.
           </p>
-          <div className="rounded-md bg-[#12131F] border border-[rgba(232,137,106,0.35)] px-4 py-4 text-white text-[15px] leading-relaxed">
+          <div className="rounded-md bg-[#F2EEE6] border border-[rgba(176,78,43,0.35)] px-4 py-4 text-[#1A1B2E] text-[15px] leading-relaxed">
             {HANDOFF_LINE}
           </div>
           <div className="flex flex-col gap-3">
             <CopyButton text={HANDOFF_LINE} label="Copy this line" />
-            <span className="text-[#AABBCC]/70 text-[15px]">
+            <span className="text-[#262B3D]/70 text-[15px]">
               If your AI says it cannot reach the web:{" "}
               <CopyBuilderButton />
             </span>
@@ -325,9 +325,9 @@ export default function OneWindowAccessPage() {
         </Step>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20 border-t border-[rgba(170,187,204,0.13)] pt-14">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20 border-t border-[rgba(26,27,46,0.13)] pt-14">
         <p className="k-label mb-6">What Happens In That Hour</p>
-        <div className="max-w-2xl space-y-4 text-[#AABBCC] text-[17px] leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-[#262B3D] text-[17px] leading-relaxed">
           <p>
             Your AI starts by asking about your business. Answer in plain
             language. There are no wrong answers and it is not a test. It is
@@ -336,18 +336,18 @@ export default function OneWindowAccessPage() {
           <p>
             It will stop at several points and tell you to go click something or
             connect an account.{" "}
-            <span className="text-white">Those stops are on purpose.</span> Do
+            <span className="text-[#1A1B2E]">Those stops are on purpose.</span> Do
             the thing, tell it you are done, and it picks back up.
           </p>
           <p>
             Budget about an hour for the first sitting. It tells you what to do
             next when the hour is up.
           </p>
-          <p className="text-[#AABBCC]/70 text-base pt-4">
+          <p className="text-[#262B3D]/70 text-base pt-4">
             Bookmark this page - your setup lives here. Stall points or wins:{" "}
             <a
               href="mailto:wade@kerzie.ai"
-              className="k-link k-focus text-[#6B9FD4]"
+              className="k-link k-focus text-[#2B5D96]"
             >
               wade@kerzie.ai
             </a>
@@ -355,7 +355,7 @@ export default function OneWindowAccessPage() {
             <a
               href="/downloads/one-window-setup.md"
               download
-              className="k-link k-focus text-[#6B9FD4]"
+              className="k-link k-focus text-[#2B5D96]"
             >
               Download it here
             </a>{" "}

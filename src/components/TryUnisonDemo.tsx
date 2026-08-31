@@ -120,7 +120,7 @@ export default function TryUnisonDemo() {
               <div className="flex flex-col items-center justify-between h-full">
                 <div className="mb-6">
                   <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 flex items-center justify-center shadow-lg">
-                    <Instagram className="w-10 h-10 text-white" />
+                    <Instagram className="w-10 h-10 text-[#1A1B2E]" />
                   </div>
                   <h3 className="heading-md mb-2">Instagram DM</h3>
                   <p className="text-[var(--foreground-muted)]">
@@ -144,7 +144,7 @@ export default function TryUnisonDemo() {
               <div className="flex flex-col items-center justify-between h-full">
                 <div className="mb-6">
                   <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-[#0084FF] flex items-center justify-center shadow-lg">
-                    <MessageCircle className="w-10 h-10 text-white" />
+                    <MessageCircle className="w-10 h-10 text-[#1A1B2E]" />
                   </div>
                   <h3 className="heading-md mb-2">Facebook Message</h3>
                   <p className="text-[var(--foreground-muted)]">

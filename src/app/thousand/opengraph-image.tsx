@@ -18,9 +18,9 @@ export default function Image() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "72px 84px",
-          backgroundColor: "#1A1B2E",
+          backgroundColor: "#FAF8F4",
           backgroundImage:
-            "radial-gradient(900px 450px at 85% -10%, rgba(232,137,106,0.22), rgba(26,27,46,0))",
+            "radial-gradient(900px 450px at 85% -10%, rgba(176, 78, 43,0.22), rgba(26,27,46,0))",
           fontFamily: "sans-serif",
         }}
       >
@@ -29,7 +29,7 @@ export default function Image() {
             display: "flex",
             fontSize: 26,
             letterSpacing: "0.3em",
-            color: "#E8896A",
+            color: "#B04E2B",
             fontWeight: 700,
           }}
         >
@@ -59,7 +59,7 @@ export default function Image() {
               display: "flex",
               fontSize: 96,
               fontWeight: 400,
-              color: "rgba(170,187,204,0.55)",
+              color: "rgba(26, 27, 46,0.55)",
               marginLeft: 28,
               letterSpacing: "-0.02em",
             }}
@@ -73,7 +73,7 @@ export default function Image() {
             width: "100%",
             height: 18,
             borderRadius: 99,
-            backgroundColor: "rgba(170,187,204,0.16)",
+            backgroundColor: "rgba(26, 27, 46,0.16)",
             marginTop: 44,
             overflow: "hidden",
           }}
@@ -84,7 +84,7 @@ export default function Image() {
               width: `${pct}%`,
               height: "100%",
               borderRadius: 99,
-              backgroundColor: "#E8896A",
+              backgroundColor: "#B04E2B",
             }}
           />
         </div>
@@ -95,13 +95,13 @@ export default function Image() {
             width: "100%",
             marginTop: 28,
             fontSize: 30,
-            color: "#AABBCC",
+            color: "#262B3D",
           }}
         >
           <div style={{ display: "flex" }}>
             Through the blast door before it closes.
           </div>
-          <div style={{ display: "flex", color: "#E8896A", fontWeight: 700 }}>
+          <div style={{ display: "flex", color: "#B04E2B", fontWeight: 700 }}>
             kerzie.ai/thousand
           </div>
         </div>

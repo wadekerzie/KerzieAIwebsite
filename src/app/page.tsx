@@ -56,41 +56,41 @@ export default function Home() {
     // cheapens a deliberate artifact - and it was redundant on /back-cover
     // itself. Outbound traffic goes straight to /back-cover anyway, so this
     // button is the discovery tell, not the main door.
-    <div className="bg-[#1A1B2E] relative">
+    <div className="bg-[#FAF8F4] relative">
       <BackCoverButton />
 
       {/* ============ ACT ONE: THE BELIEF ============ */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 min-h-[min(calc(100svh-4rem),50rem)] flex flex-col justify-center pt-16 pb-12">
-        <h1 className="k-rise k-rise-1 text-white font-bold tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.5vw,5.5rem)]">
+        <h1 className="k-rise k-rise-1 text-[#1A1B2E] font-bold tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.5vw,5.5rem)]">
           Life is best when
           <br />
           technology{" "}
           <span className="k-serif font-normal">just works</span>
-          <span className="text-[#E8896A]">.</span>
+          <span className="text-[#B04E2B]">.</span>
         </h1>
 
-        <p className="k-rise k-rise-2 mt-7 text-[#6B9FD4] text-[clamp(1.25rem,2.2vw,1.625rem)] font-medium">
+        <p className="k-rise k-rise-2 mt-7 text-[#2B5D96] text-[clamp(1.25rem,2.2vw,1.625rem)] font-medium">
           The world&apos;s best tech feels the easiest.
         </p>
 
-        <p className="k-rise k-rise-3 mt-8 text-[#AABBCC] text-lg leading-relaxed max-w-xl">
+        <p className="k-rise k-rise-3 mt-8 text-[#262B3D] text-lg leading-relaxed max-w-xl">
           We build products that fix things people stopped expecting to get
           fixed. No courses. No explanations. No consulting decks. We ship and
           it works.
         </p>
 
         {/* The index: what's on the bench */}
-        <div className="k-rise k-rise-4 mt-20 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs tracking-[0.15em] text-[#AABBCC]/50">
+        <div className="k-rise k-rise-4 mt-20 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs tracking-[0.15em] text-[#262B3D]/50">
           {products.map((p, i) => (
             <span key={p.name} className="flex items-baseline gap-x-3">
               <Link
                 href={p.href}
-                className="hover:text-white transition-colors duration-200 k-focus"
+                className="hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
               >
                 {p.name.toUpperCase()}
               </Link>
               {i < products.length - 1 && (
-                <span className="text-[#E8896A]/60">/</span>
+                <span className="text-[#B04E2B]/60">/</span>
               )}
             </span>
           ))}
@@ -107,7 +107,7 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:col-span-9">
-              <p className="text-white text-[clamp(1.375rem,2.6vw,1.875rem)] font-medium leading-snug max-w-3xl">
+              <p className="text-[#1A1B2E] text-[clamp(1.375rem,2.6vw,1.875rem)] font-medium leading-snug max-w-3xl">
                 Anthropic, OpenAI, Google, and DeepSeek spent billions building
                 the most powerful reasoning engines in history. We use them to{" "}
                 <span className="k-serif font-normal">
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* ============ ACT TWO: THE PROBLEMS ============ */}
-      <section id="what-we-built" className="bg-[#1E2035]">
+      <section id="what-we-built" className="bg-[#FFFFFF]">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
           <Reveal>
             <p className="k-label mb-16 lg:mb-20">
@@ -135,7 +135,7 @@ export default function Home() {
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                   {/* Time is the villain; the scene is the evidence */}
                   <div className="lg:col-span-3 mb-4 lg:mb-0 lg:text-right">
-                    <p className="k-mono text-[clamp(1.5rem,2.8vw,2.25rem)] text-[#AABBCC]/40 leading-none tracking-tight">
+                    <p className="k-mono text-[clamp(1.5rem,2.8vw,2.25rem)] text-[#262B3D]/40 leading-none tracking-tight">
                       {product.clock}
                     </p>
                     <figure className="hidden lg:block mt-8">
@@ -148,16 +148,16 @@ export default function Home() {
                       />
                     </figure>
                   </div>
-                  <div className="lg:col-span-9 border-l-2 border-[#E8896A] pl-6 lg:pl-8">
-                    <h3 className="text-white text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-4">
+                  <div className="lg:col-span-9 border-l-2 border-[#B04E2B] pl-6 lg:pl-8">
+                    <h3 className="text-[#1A1B2E] text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-4">
                       {product.hook}
                     </h3>
-                    <p className="text-[#AABBCC] text-base leading-relaxed max-w-2xl mb-6">
+                    <p className="text-[#262B3D] text-base leading-relaxed max-w-2xl mb-6">
                       {product.body}
                     </p>
                     <Link
                       href={product.href}
-                      className="k-link text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-200"
+                      className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                     >
                       {product.name} <span className="k-arrow">&rarr;</span>
                     </Link>
@@ -170,13 +170,13 @@ export default function Home() {
       </section>
 
       {/* ============ AUDIENCE DOOR: SALES TEAMS ============ */}
-      <section className="border-t border-[rgba(170,187,204,0.13)] bg-[#1E2035]">
+      <section className="border-t border-[rgba(26,27,46,0.13)] bg-[#FFFFFF]">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
           <Reveal>
             <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
               <div className="lg:col-span-8">
                 <p className="k-label mb-4">Leading a sales team?</p>
-                <p className="text-white text-[clamp(1.375rem,2.6vw,1.875rem)] font-medium leading-snug max-w-2xl">
+                <p className="text-[#1A1B2E] text-[clamp(1.375rem,2.6vw,1.875rem)] font-medium leading-snug max-w-2xl">
                   Your reps have AI licenses. That is not the same as{" "}
                   <span className="k-serif font-normal">using</span> them.
                 </p>
@@ -184,7 +184,7 @@ export default function Home() {
               <div className="lg:col-span-4 mt-6 lg:mt-0 lg:text-right">
                 <Link
                   href="/services/sales-teams"
-                  className="k-link text-[#6B9FD4] text-sm font-semibold hover:text-white transition-colors duration-200"
+                  className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                 >
                   For Sales Teams <span className="k-arrow">&rarr;</span>
                 </Link>
@@ -204,15 +204,15 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:col-span-9">
-              <h2 className="text-white text-[clamp(2rem,4.5vw,3.25rem)] font-bold tracking-[-0.02em] leading-[1.05] mb-5">
+              <h2 className="text-[#1A1B2E] text-[clamp(2rem,4.5vw,3.25rem)] font-bold tracking-[-0.02em] leading-[1.05] mb-5">
                 What problem hurts the most?
               </h2>
-              <p className="text-[#AABBCC] text-base mb-4 max-w-xl">
+              <p className="text-[#262B3D] text-base mb-4 max-w-xl">
                 Everything above started as somebody&apos;s problem. That&apos;s
                 the whole business: find where technology is failing a person,
                 and make it simple enough to actually help.
               </p>
-              <p className="text-[#AABBCC] text-base mb-10 max-w-xl">
+              <p className="text-[#262B3D] text-base mb-10 max-w-xl">
                 Don&apos;t worry about the solution. Just tell us the problem.
                 The longer the better.
               </p>
