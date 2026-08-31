@@ -4,6 +4,16 @@
   "entries": [
     {
       "date": "2026-08-31",
+      "status": "ok",
+      "kind": "architecture",
+      "added": 32,
+      "removed": 13,
+      "total": 320,
+      "ran_at": "12:15 PM MT",
+      "note": "The size limit is gone for good. The page moved to the two-file layout the best AI-ready sites use: a small stable page at /llms.txt that describes the dealership and teaches AI assistants how the site's links work, and the full inventory - all 320 vehicles with prices, VINs, and direct links - at /llms-full.txt, rebuilt daily with its own date stamp. Both files were placed and verified live this morning, serving identical content to browsers and AI crawlers. The morning's held-back build shipped inside this move: 32 vehicles in, 13 out versus the prior page."
+    },
+    {
+      "date": "2026-08-31",
       "status": "missed",
       "kind": "refresh",
       "added": null,
