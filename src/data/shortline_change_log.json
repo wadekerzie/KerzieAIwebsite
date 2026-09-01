@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-01",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 1,
+      "total": 319,
+      "ran_at": "6:54 AM MT",
+      "note": "Quiet day on the lot: one vehicle came off the list and nothing new was published, so the page now lists 319 vehicles. Two GMC Acadias moved from pre-owned to new, which is why the new count went up while the total went down. Prices were unchanged across the board. Nine vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them."
+    },
+    {
       "date": "2026-08-31",
       "status": "ok",
       "kind": "architecture",
