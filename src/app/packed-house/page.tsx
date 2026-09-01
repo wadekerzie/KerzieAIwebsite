@@ -2,15 +2,18 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 // PACKED HOUSE - live events lane, named by Wade 2026-08-29.
-// Venue-facing pitch page. noindex until the name collision check clears
-// and the first pilot venue signs - flip robots + add OG imagery at launch.
+// Venue-facing pitch page. GATES CLEARED + INDEXED 2026-09-01 on Wade's go:
+// name check upgraded (8/29 informal read low-to-moderate; 9/1 search found no
+// live registered "Packed House" mark in entertainment/event services - plain
+// -language read, not a legal opinion) and outreach went live the same day
+// (both DFW pilots pitched: Tulips FTW emailed, Three Links form submitted).
 // Money model locked 8/29: $99/mo + $1.50 per attributed ticket, first
 // 30 days free. Spec: Wade OS opportunity_intelligence/live_events_phase1_spec_2026-08-29.md
 export const metadata: Metadata = {
   title: "Packed House | Kerzie AI",
   description:
     "Your show is booked. Your room is a quarter full. Packed House fills the seats you were going to eat - and you only pay for tickets we demonstrably sold.",
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 };
 
 const steps = [

@@ -24,6 +24,7 @@ const ventures = [
   { label: "Ad2Action", href: "/ventures/ad2action" },
   { label: "Executive Legacy", href: "/ventures/executive-legacy" },
   { label: "TrueNorth", href: "/ventures/truenorth" },
+  { label: "Packed House", href: "/packed-house" },
   { label: "AI Operating System", href: "/ventures/ai-os" },
 ];
 

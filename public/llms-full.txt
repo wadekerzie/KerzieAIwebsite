@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 34
+Pages included: 35
 
 ---
 
@@ -917,6 +917,40 @@ Get the Voice Command Center free →
 
 ---
 
+# Packed House | Kerzie AI
+URL: https://kerzie.ai/packed-house
+
+Packed House | Kerzie AI
+The band is booked. The night is paid for.
+Forty people came. The room holds two hundred.
+64% of independent venues lost money last year. Not because the shows were bad. Because the seats were empty. Every empty seat on a booked night is pure margin, sitting there, going home with nobody.
+
+## Nobody's job is the empty seat
+Your ticketing company sells tickets to people who already decided to come. Your promotion is a post and an email blast, sent to the same list, the week of the show. Your booker fills the calendar, not the room. Everyone in the building has a job, and filling the Tuesday is nobody's.
+So the Tuesday stays soft, the bar stays quiet, and the math that decides whether your room survives gets made on the weekends alone.
+
+## Packed House makes the empty seat somebody's job. Ours.
+
+## We watch your calendar.
+Our Dark-Night Desk reads your schedule every week the way you do on a slow Tuesday: which nights are at risk. For each one it builds the plan to fill it - before the night arrives, not after it hurt.
+
+## We find the people.
+Nobody goes to a show alone. The reason a fan stays home is that getting four friends to commit is work. We do that work: one text thread, seats held, everyone pays their own share, done. Plus a standing list of locals who asked us to tell them when something they would love plays your room.
+
+## You count the tickets.
+Every ticket we sell comes through a link you can see. No claimed credit. No marketing report you have to take on faith. A number, on your screen, next to the money.
+
+Ninety seconds, plain language
+
+## What it costs
+$99 a month, plus $1.50 for each ticket we demonstrably sold. That is the whole price. If we fill nothing, you pay $99 and fire us. Your first 30 days are free, so the first receipt costs you nothing but a soft night we both already knew was coming.
+You keep your ticketing. You keep your booker. You keep your door. We only add.
+
+One conversation. Bring your calendar, we will bring the plan for your next soft night.
+Talk to Wade
+
+---
+
 # Kerzie AI
 URL: https://kerzie.ai/privacy-policy
 
@@ -1525,9 +1559,9 @@ The First Thousand | Kerzie AI
 ← KERZIE . AI
 The First Thousand
 
-## 8 of 1,000
+## 9 of 1,000
 
-992 to go · count updated 2026-08-27 · an operator is counted only when their window is actually running, not when they buy
+991 to go · count updated 2026-08-31 · an operator is counted only when their window is actually running, not when they buy
 
 The mission: get 1,000 people through the blast door before it closes. Running their work, their business, or their job from one window, with an AI that actually knows their world.
 
@@ -1556,7 +1590,7 @@ WHAT FOUNDERS GIVE
 - Permission to use your first name, business type, and real numbers as receipts.
 
 - After thirty days of real use, a testimonial - only if we genuinely earned it.
-Seats 1 through 8 are taken. The founding wall goes up here as each founder says yes to being named.
+Seats 1 through 9 are taken. The founding wall goes up here as each founder says yes to being named.
 Claim a founding seat - One-Window →
 
 Why A Door, And Why A Clock
@@ -1679,6 +1713,13 @@ Read the story →
 
 ## TrueNorth
 Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.
+
+Read the story →
+
+0 8 40/200
+
+## Packed House
+The show is booked, the night is paid for, and forty people came to a room that holds two hundred. Filling the Tuesday is nobody's job.
 
 Read the story →
 

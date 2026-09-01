@@ -50,6 +50,12 @@ const products = [
     problem: "Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.",
     href: "/ventures/truenorth",
   },
+  {
+    name: "Packed House",
+    clock: "40/200",
+    problem: "The show is booked, the night is paid for, and forty people came to a room that holds two hundred. Filling the Tuesday is nobody's job.",
+    href: "/packed-house",
+  },
 ];
 
 export default function VenturesPage() {

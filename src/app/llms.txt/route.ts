@@ -27,6 +27,7 @@ import { metadata as truenorth } from "@/app/ventures/truenorth/page";
 import { metadata as aiOs } from "@/app/ventures/ai-os/page";
 import { metadata as kerzieEffect } from "@/app/kerzie-effect/page";
 import { metadata as consequenceClock } from "@/app/consequence-clock/page";
+import { metadata as packedHouse } from "@/app/packed-house/page";
 import { metadata as blastDoor } from "@/app/blast-door/page";
 import { metadata as thousand } from "@/app/thousand/page";
 import { metadata as team } from "@/app/team/page";
@@ -67,6 +68,7 @@ const VENTURES: Array<[string, string, Described]> = [
   ["/ventures/ad2action", "Ad2Action", ad2action],
   ["/ventures/executive-legacy", "Executive Legacy", executiveLegacy],
   ["/ventures/truenorth", "TrueNorth", truenorth],
+  ["/packed-house", "Packed House", packedHouse],
   ["/ventures/ai-os", "AI Operating System", aiOs],
 ];
 
