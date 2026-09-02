@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-02",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 2,
+      "total": 319,
+      "ran_at": "6:58 AM MT",
+      "note": "A busy pricing day. Two vehicles came onto the list and two came off, leaving the total at 319. The bigger change was price: 47 vehicles were repriced, 34 of them up and 13 down. Most of the increases were on new GMC trucks, and most of the reductions were on pre-owned vehicles. Every one of those new prices is on the page now, so an AI assistant answering a shopper's question today quotes today's number. Thirteen vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them."
+    },
+    {
       "date": "2026-09-01",
       "status": "ok",
       "kind": "refresh",
