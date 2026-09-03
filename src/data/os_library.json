@@ -1,89 +1,105 @@
 {
- "updated": "2026-09-02",
- "baseline": {
-  "slug": "foundation",
-  "name": "The Foundation",
-  "was": "v1.0",
-  "file": "one-window-setup.md",
-  "description": "The complete One-Window: one document that interviews you - your business, your goal for the OS, how you want to be spoken to - and builds your personal operating system around the answers. Since August 2026 the operating disciplines ship inside it from day one: the quick start, the green light, the clean handoff, the scan, and skills that run on the cheapest model that does the job. The three-hour build."
- },
- "upgrades": [
-  {
-   "slug": "quick-start",
-   "name": "The Quick Start",
-   "was": "new",
-   "file": "personal-os-quick-start.md",
-   "description": "Your session says hello in one line and hands you the floor, instead of making you watch it read your files for two minutes. All the orientation still happens - just after you have given your first instruction. Includes the clock anchor, so it never guesses what day it is.",
-   "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier. Replaces the 'Present Tense' release."
+  "updated": "2026-09-03",
+  "baseline": {
+    "slug": "foundation",
+    "name": "The Foundation",
+    "was": "v1.0",
+    "file": "one-window-setup.md",
+    "description": "The complete One-Window: one document that interviews you - your business, your goal for the OS, how you want to be spoken to - and builds your personal operating system around the answers. Since August 2026 the operating disciplines ship inside it from day one: the quick start, the green light, the clean handoff, the scan, and skills that run on the cheapest model that does the job. The three-hour build."
   },
-  {
-   "slug": "green-light",
-   "name": "The Green Light",
-   "was": "new",
-   "file": "personal-os-green-light.md",
-   "description": "Your scheduled routines stop asking permission and just run. Your AI reads what your own routines actually need, grants exactly that, and finds the gate almost nobody finds on their own: anything outside your OS folder is blocked no matter what your permission setting says.",
-   "note": "Built into The Foundation since August 2026 - new OSes apply it when their first routine gets built. Hand this to your OS only if yours was built earlier. Anything destructive stays blocked."
-  },
-  {
-   "slug": "living-pane",
-   "name": "The Living Pane",
-   "was": "v1.1",
-   "file": "personal-os-v1.1-living-pane.md",
-   "description": "One dashboard tab your OS keeps current: your moves, its moves, everything in flight, with a call number on every item so you can say \"done W1\" and be understood. Installs include the scan rule.",
-   "note": "Needed before The Scan or the Call Numbers patch."
-  },
-  {
-   "slug": "clean-handoff",
-   "name": "The Clean Handoff",
-   "was": "v1.2",
-   "file": "personal-os-v1.2-clean-handoff.md",
-   "description": "A session wrap-up ritual: say \"let's wrap up\" and your OS reconciles your tracker against reality, verifying anything that claims to be done. Tomorrow starts warm instead of cold.",
-   "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier."
-  },
-  {
-   "slug": "weekly-tune-up",
-   "name": "The Weekly Tune-Up",
-   "was": "v1.3",
-   "file": "personal-os-v1.3-weekly-tune-up.md",
-   "description": "A weekly self-optimization pass: your OS measures what a brand-new session is forced to read before it can help you, then trims the bloat losslessly and reports what it found."
-  },
-  {
-   "slug": "nightly-dream",
-   "name": "The Nightly Dream",
-   "was": "v1.4",
-   "file": "personal-os-v1.4-nightly-dream.md",
-   "description": "While you sleep, your OS re-reads the day's conversations across every session, compares them against its own records, and files corrections and proposals for your morning."
-  },
-  {
-   "slug": "paper-trail",
-   "name": "The Paper Trail",
-   "was": "v1.6",
-   "file": "personal-os-v1.6-paper-trail.md",
-   "description": "Puts your scheduled routines and skills under version control inside your OS repo. A guardrail or recipe you rely on gets history and a recovery path instead of living as an unversioned file."
-  },
-  {
-   "slug": "the-scan",
-   "name": "The Scan",
-   "was": "v1.7",
-   "file": "personal-os-v1.7-the-scan.md",
-   "description": "The pane-reconciliation motion: when work lands, scan the tabs the way you actually read them and clear, update, or add every touched row - including work you did with your own hands.",
-   "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier, and only if you run a pane."
-  },
-  {
-   "slug": "call-numbers",
-   "name": "Call Numbers",
-   "was": "pane patch",
-   "file": "personal-os-pane-call-numbers.md",
-   "description": "A small patch for panes installed from The Living Pane before August 2026 - newer installs already include it. Adds your tracker's call numbers to every pane item.",
-   "note": "Skip it if your pane already shows call numbers."
-  },
-  {
-   "slug": "top-shelf",
-   "name": "Top Shelf",
-   "was": "delegation enhancement",
-   "file": "personal-os-top-shelf-delegation.md",
-   "description": "Your best model should not be doing everyone's job. This hard-codes delegation: every request routes to the cheapest model that does it reliably, and your top model stays in the loop as router, judge, and final reviewer only. One operator went from 45-minute lockouts to three hours of work on about a quarter of a session.",
-   "note": "Not for the $20-a-month plan - that plan runs one main model, so this efficiency is already how it behaves."
-  }
- ]
+  "upgrades": [
+    {
+      "slug": "quick-start",
+      "name": "The Quick Start",
+      "was": "new",
+      "file": "personal-os-quick-start.md",
+      "description": "Your session says hello in one line and hands you the floor, instead of making you watch it read your files for two minutes. All the orientation still happens - just after you have given your first instruction. Includes the clock anchor, so it never guesses what day it is.",
+      "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier. Replaces the 'Present Tense' release."
+    },
+    {
+      "slug": "green-light",
+      "name": "The Green Light",
+      "was": "new",
+      "file": "personal-os-green-light.md",
+      "description": "Your scheduled routines stop asking permission and just run. Your AI reads what your own routines actually need, grants exactly that, and finds the gate almost nobody finds on their own: anything outside your OS folder is blocked no matter what your permission setting says.",
+      "note": "Built into The Foundation since August 2026 - new OSes apply it when their first routine gets built. Hand this to your OS only if yours was built earlier. Anything destructive stays blocked."
+    },
+    {
+      "slug": "living-pane",
+      "name": "The Living Pane",
+      "was": "v1.1",
+      "file": "personal-os-v1.1-living-pane.md",
+      "description": "One dashboard tab your OS keeps current: your moves, its moves, everything in flight, with a call number on every item so you can say \"done W1\" and be understood. Installs include the scan rule.",
+      "note": "Needed before The Scan or the Call Numbers patch."
+    },
+    {
+      "slug": "clean-handoff",
+      "name": "The Clean Handoff",
+      "was": "v1.2",
+      "file": "personal-os-v1.2-clean-handoff.md",
+      "description": "A session wrap-up ritual: say \"let's wrap up\" and your OS reconciles your tracker against reality, verifying anything that claims to be done. Tomorrow starts warm instead of cold.",
+      "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier."
+    },
+    {
+      "slug": "weekly-tune-up",
+      "name": "The Weekly Tune-Up",
+      "was": "v1.3",
+      "file": "personal-os-v1.3-weekly-tune-up.md",
+      "description": "A weekly self-optimization pass: your OS measures what a brand-new session is forced to read before it can help you, then trims the bloat losslessly and reports what it found."
+    },
+    {
+      "slug": "nightly-dream",
+      "name": "The Nightly Dream",
+      "was": "v1.4",
+      "file": "personal-os-v1.4-nightly-dream.md",
+      "description": "While you sleep, your OS re-reads the day's conversations across every session, compares them against its own records, and files corrections and proposals for your morning."
+    },
+    {
+      "slug": "paper-trail",
+      "name": "The Paper Trail",
+      "was": "v1.6",
+      "file": "personal-os-v1.6-paper-trail.md",
+      "description": "Puts your scheduled routines and skills under version control inside your OS repo. A guardrail or recipe you rely on gets history and a recovery path instead of living as an unversioned file."
+    },
+    {
+      "slug": "the-scan",
+      "name": "The Scan",
+      "was": "v1.7",
+      "file": "personal-os-v1.7-the-scan.md",
+      "description": "The pane-reconciliation motion: when work lands, scan the tabs the way you actually read them and clear, update, or add every touched row - including work you did with your own hands.",
+      "note": "Built into The Foundation since August 2026. Hand this to your OS only if yours was built earlier, and only if you run a pane."
+    },
+    {
+      "slug": "call-numbers",
+      "name": "Call Numbers",
+      "was": "pane patch",
+      "file": "personal-os-pane-call-numbers.md",
+      "description": "A small patch for panes installed from The Living Pane before August 2026 - newer installs already include it. Adds your tracker's call numbers to every pane item.",
+      "note": "Skip it if your pane already shows call numbers."
+    },
+    {
+      "slug": "top-shelf",
+      "name": "Top Shelf",
+      "was": "delegation enhancement",
+      "file": "personal-os-top-shelf-delegation.md",
+      "description": "Your best model should not be doing everyone's job. This hard-codes delegation: every request routes to the cheapest model that does it reliably, and your top model stays in the loop as router, judge, and final reviewer only. One operator went from 45-minute lockouts to three hours of work on about a quarter of a session.",
+      "note": "Not for the $20-a-month plan - that plan runs one main model, so this efficiency is already how it behaves."
+    },
+    {
+      "slug": "api-first",
+      "name": "API First",
+      "was": "efficiency enhancement",
+      "file": "personal-os-api-first.md",
+      "description": "The browser is the most expensive way your AI works - it navigates by screenshots. This hard-codes a three-step ladder: use the direct machine-to-machine rail you already have; if the right one is missing, explain it in plain words, name any cost, and offer to set it up, driving every click except the one only you can make; the browser only when nothing else works.",
+      "note": "Works on every plan - the browser burns budget on all of them."
+    },
+    {
+      "slug": "watch-this-video",
+      "name": "Watch This Video",
+      "was": "capability note",
+      "file": "personal-os-watch-this-video.md",
+      "description": "Hand your AI a YouTube link and ask what is in it. It pulls the transcript and tells you whether the video deserves your time, with the parts that matter pulled out. A 40-minute talk becomes a two-minute read. Not an install - a capability your setup already has that nobody told your AI to offer.",
+      "note": "Works on every plan."
+    }
+  ]
 }
