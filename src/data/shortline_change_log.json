@@ -3,6 +3,16 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-03",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 1,
+      "total": 320,
+      "ran_at": "6:49 AM MT",
+      "note": "Yesterday's price increases came back off. Fifteen vehicles were repriced today and every one of them went down, all on new GMC trucks, most by about $3,500 - the same trucks that went up yesterday. Two vehicles joined the list, a 2021 Ford Expedition Limited and a 2026 GMC Sierra 1500 Pro, and one Buick Encore GX came off, bringing the total to 320. Those corrected prices are on the page now, so an AI assistant answering a shopper today quotes today's number rather than yesterday's higher one. Thirteen vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them."
+    },
+    {
       "date": "2026-09-02",
       "status": "ok",
       "kind": "refresh",
