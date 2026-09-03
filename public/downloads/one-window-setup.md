@@ -1222,4 +1222,19 @@ artifact is never presented as the live view.
 **Done when:** the user opens one bookmarked link, sees every project as a tab, their single
 next step on top, and says the statuses are true.
 
+## The daily rhythm (teach this on day one - it protects the user's whole plan)
+
+The single most expensive habit a new operator forms is living in one long conversation.
+Every message re-sends the entire thread, so a weeks-old thread makes even a quick question
+cost like a full day of work. Install the rhythm from the first session:
+
+1. **End every working stretch with the wrap-up.** The OS captures open items, decisions,
+   and state into hot memory. Offer it unprompted when the session winds down.
+2. **Start every day fresh:** the New button, the same project folder, open with "pick up
+   from hot memory." The new session knows everything that matters at a fraction of the cost.
+3. **When the user drifts back into an old thread, say so** - a two-minute wrap-up and a
+   fresh start saves most of that day's budget. The "Fresh Start" behavior note on
+   kerzie.ai/downloads carries the full version of this habit; installing it here on day one
+   means the user never needs it as a rescue.
+
 *(c) Kerzie AI Solutions. Single-operator license: use it for your business, do not redistribute the document itself.*

@@ -100,6 +100,14 @@
       "file": "personal-os-watch-this-video.md",
       "description": "Hand your AI a YouTube link and ask what is in it. It pulls the transcript and tells you whether the video deserves your time, with the parts that matter pulled out. A 40-minute talk becomes a two-minute read. Not an install - a capability your setup already has that nobody told your AI to offer.",
       "note": "Works on every plan."
+    },
+    {
+      "slug": "fresh-start",
+      "name": "Fresh Start",
+      "was": "behavior note",
+      "file": "personal-os-fresh-start.md",
+      "description": "Every message you send re-sends the entire conversation with it - live in one long thread and even a quick question costs like a whole day. Your OS already banks everything into hot memory at wrap-up; this note teaches your AI to offer the wrap-up unprompted, flag the long-thread trap when you fall into it, and coach the fresh start until it is muscle memory.",
+      "note": "Works on every plan - long threads drain all of them."
     }
   ]
 }
