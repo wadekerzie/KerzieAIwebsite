@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 
 type Lead = {
   rooftop: string;
+  contact?: string;
+  referred?: string;
   stage: string;
   note?: string;
   since?: string;
@@ -83,8 +85,10 @@ export default function DannyPartnerPage() {
               <thead className="k-mono text-xs tracking-[0.1em] text-[#2B5D96]">
                 <tr>
                   <th className="py-2 pr-6">ROOFTOP</th>
+                  <th className="py-2 pr-6">CONTACT</th>
+                  <th className="py-2 pr-6">REFERRED</th>
                   <th className="py-2 pr-6">STAGE</th>
-                  <th className="py-2">NOTE</th>
+                  <th className="py-2">STATUS</th>
                 </tr>
               </thead>
               <tbody>
@@ -94,7 +98,11 @@ export default function DannyPartnerPage() {
                     className="border-t border-[rgba(26,27,46,0.13)]"
                   >
                     <td className="py-3 pr-6 text-[#1A1B2E]">{l.rooftop}</td>
-                    <td className="py-3 pr-6">{l.stage}</td>
+                    <td className="py-3 pr-6">{l.contact ?? ""}</td>
+                    <td className="py-3 pr-6 whitespace-nowrap">
+                      {l.referred ?? ""}
+                    </td>
+                    <td className="py-3 pr-6 whitespace-nowrap">{l.stage}</td>
                     <td className="py-3">{l.note ?? ""}</td>
                   </tr>
                 ))}

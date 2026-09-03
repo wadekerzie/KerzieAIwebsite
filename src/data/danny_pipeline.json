@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27",
+  "updated": "2026-09-03",
   "partner": "Danny Madigan",
   "terms": {
     "recurring": "$300/month per closed rooftop, for the life of the contract",
@@ -8,6 +8,23 @@
     "exclusions": "Shortline's own Denver GMC stores"
   },
   "stages": ["Intro made", "Meeting held", "Closed", "Live", "Paying"],
-  "leads": [],
+  "leads": [
+    {
+      "rooftop": "Johnson Auto Plaza",
+      "contact": "Ryan",
+      "referred": "Sep 2",
+      "stage": "Intro made",
+      "note": "Wade replied by email the same hour - webcall offered, waiting on day/times",
+      "since": "2026-09-02"
+    },
+    {
+      "rooftop": "Empire Lakewood Nissan",
+      "contact": "Chris",
+      "referred": "Sep 2",
+      "stage": "Intro made",
+      "note": "Wade replied by email the same hour - webcall offered, waiting on day/times",
+      "since": "2026-09-02"
+    }
+  ],
   "payments": []
 }
