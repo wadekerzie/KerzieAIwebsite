@@ -1,9 +1,11 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "partner": "Danny Madigan",
   "terms": {
-    "recurring": "$300/month per closed rooftop, for the life of the contract",
+    "recurring": "$300/month per closed rooftop, for the life of the contract ($600/month on a Johnson close - four rooftops, one feed)",
     "payout_timing": "paid same day or next day after each customer payment lands",
+    "monthly_credit": "confirmed in writing 9/4: each month the first $300 earned credits Shortline's own account, covering the store's monthly; anything above pays out",
+    "payout_rail": "Stripe, ACH, or Venmo - Danny's pick, open",
     "setup_fee_share": "none - by agreement, 8/27/2026",
     "exclusions": "Shortline's own Denver GMC stores"
   },
@@ -17,10 +19,10 @@
   "leads": [
     {
       "rooftop": "Johnson Auto Plaza",
-      "contact": "Ryan",
+      "contact": "Ryan / Phil McTaggart",
       "referred": "Sep 2",
       "stage": "Meeting held",
-      "note": "Webcall HELD Sep 3 - Wade + Aaron with Phil McTaggart. Proposal covers all FOUR Johnson rooftops; Phil took it straight into his ownership meeting the same hour.",
+      "note": "Webcall HELD Sep 3 - Wade + Aaron with Phil. Four-rooftop proposal off their one feed went straight into Phil's ownership meeting with Matt and Ryan the same hour. Wade calling Phil Sep 4 for the verdict.",
       "since": "2026-09-02"
     },
     {
@@ -30,6 +32,22 @@
       "stage": "Intro made",
       "note": "Wade replied by email the same hour - webcall offered, waiting on day/times",
       "since": "2026-09-02"
+    },
+    {
+      "rooftop": "Rocky Mountain Eurosport (Parker)",
+      "contact": "Josh Frakes",
+      "referred": "Sep 3",
+      "stage": "Intro made",
+      "note": "Wade replied Sep 4 morning with findings on Josh's own llms.txt build (nine blocked links, missing dealership info) plus a bonus catch: the Mazin Automotive Group site is showing a suspended page in Google, offered to fix it free. Proposal page live. Asked for 15 minutes same day.",
+      "since": "2026-09-03"
+    },
+    {
+      "rooftop": "Maroone USA (Mike Maroone Auto)",
+      "contact": "Gabe Montano",
+      "referred": "Sep 3",
+      "stage": "Intro made",
+      "note": "Wade replied Sep 4 morning - proposal page live, one qualifying question out: how many rooftops and how many separate inventory feeds. Build scales by feed, not by store.",
+      "since": "2026-09-03"
     }
   ],
   "payments": []
