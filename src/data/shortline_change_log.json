@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-04",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 5,
+      "removed": 5,
+      "price_changed": 1,
+      "total": 320,
+      "ran_at": "9:22 AM MT (MacBook backstop)",
+      "note": "Today's build ran clean on the mini at 7:40 AM - 320 vehicles, five added, five removed, one price change - but the mini's Chrome extension bridge was down, so the file never reached the site on the morning schedule. Wade signed into DealerOn on his own Chrome mid-morning and the refresh placed from there instead: same numbers, just later than usual. Verified live afterward - rebuilt on 2026-09-04, identical bytes on a plain browser check and an AI crawler check."
+    },
+    {
       "date": "2026-09-03",
       "status": "ok",
       "kind": "refresh",
