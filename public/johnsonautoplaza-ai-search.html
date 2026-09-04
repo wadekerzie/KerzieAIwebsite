@@ -73,6 +73,8 @@
     .price-card li { margin-bottom: 6px; }
     .footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
     .footer strong { color: var(--ink); }
+    .shot { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; margin-top: 10px; }
+    .shot-cap { font-size: 13px; color: var(--muted); margin-top: 6px; }
   </style>
 </head>
 <body>
@@ -89,21 +91,43 @@
       <a class="linkcard" href="https://www.johnsonautoplaza.com/llms.txt" target="_blank" rel="noopener">
         <span class="url">johnsonautoplaza.com/llms.txt</span><span class="badge thin">exists - a link list</span>
         <div class="note">Your current llms.txt page - read in full today, all 509 lines. It is a genuine head start: it exists, and it lists your vehicles by year, make, model, and VIN. But every vehicle carries the same one sentence - no price, no mileage, no trim, no color - and the page has no answers about the store itself: no hours, no service, no financing, no reason to choose Brighton. When a shopper asks ChatGPT for "a used Ram 2500 under $40,000 near Denver," this page cannot answer the question. It is a phone book where the AI needs a salesperson.</div>
+        <img class="shot" src="/back-cover-proposals/johnson-llms-thin.png" alt="Screenshot of johnsonautoplaza.com/llms.txt showing the current link-list format with no prices">
+        <div class="shot-cap">What loads right now - no click needed. Screenshot captured live, September 4, 2026.</div>
       </a>
       <a class="linkcard" href="https://www.johnsonautoplaza.com/llms-full.txt" target="_blank" rel="noopener">
         <span class="url">johnsonautoplaza.com/llms-full.txt</span><span class="badge miss">not found</span>
         <div class="note">The live-inventory page AI search looks for next. Click it - the error you get is the point. There is nothing there for the AI to read, so your inventory is invisible to the tools shoppers are asking.</div>
+        <img class="shot" src="/back-cover-proposals/johnson-llms-full-404.png" alt="Screenshot of johnsonautoplaza.com/llms-full.txt returning HTTP 404 Not Found">
+        <div class="shot-cap">The actual error page, screenshotted so you don't have to click it. Captured live, September 4, 2026.</div>
       </a>
 
       <h2>What ready looks like - a rooftop 30 minutes away</h2>
+      <p>Two pages work together, and Shortline Buick GMC runs both. Think of them as tandem pages: <strong>llms.txt is the identity page</strong> - name, address, phone, brands, the rules an AI needs to not get your dealership wrong - and it rarely changes. <strong>llms-full.txt is the inventory page</strong> - the whole lot, priced, rebuilt from the feed every morning. The identity page points to the inventory page; the inventory page is what actually answers a shopper's question.</p>
+      <a class="linkcard" href="https://www.shortlinebuickgmc.com/llms.txt" target="_blank" rel="noopener">
+        <span class="url">shortlinebuickgmc.com/llms.txt</span><span class="badge live">live - the identity page</span>
+        <div class="note">Name, address, phone, brands sold, and the rules an AI needs - written once, revised only when a business fact changes.</div>
+        <img class="shot" src="/back-cover-proposals/shortline-llms.png" alt="Screenshot of the top of shortlinebuickgmc.com/llms.txt showing dealership identity and AI guidance">
+        <div class="shot-cap">Top of the page. Screenshot captured live, September 4, 2026.</div>
+      </a>
       <a class="linkcard" href="https://www.shortlinebuickgmc.com/llms-full.txt" target="_blank" rel="noopener">
         <span class="url">shortlinebuickgmc.com/llms-full.txt</span><span class="badge live">live - rebuilt this morning</span>
-        <div class="note">Shortline Buick GMC in Aurora. It opens with a structured dealership block written for AI - who they are, where, what they sell - then their full live inventory: 320 vehicles today, every one with its price. Rebuilt from their inventory feed and placed fresh every morning, then verified against both regular browsers and the AI crawlers ChatGPT uses. The date stamp inside the page is today's. That is the difference between a phone book and a salesperson.</div>
+        <div class="note">Shortline Buick GMC in Aurora. Full live inventory: 320 vehicles today, every one with its price. Rebuilt from their inventory feed and placed fresh every morning, then verified against both regular browsers and the AI crawlers ChatGPT uses. The date stamp inside the page is today's. That is the difference between a phone book and a salesperson.</div>
+        <img class="shot" src="/back-cover-proposals/shortline-llms-full.png" alt="Screenshot of the top of shortlinebuickgmc.com/llms-full.txt showing priced inventory with VINs">
+        <div class="shot-cap">Top of the page. Screenshot captured live, September 4, 2026.</div>
       </a>
       <blockquote>
         "Every franchise dealer in the country has been looking for ways to combat the big box pre-owned disruptors and their online presence. Kerzie.ai has put us on the map for AI searches."
         <cite>Danny Madigan, Shortline Buick GMC</cite>
       </blockquote>
+
+      <h2>What you get every day - not just the raw file, the receipt</h2>
+      <p>The two pages above are what the AI reads. This is what <strong>you</strong> read: a plain-English dashboard that shows the refresh happened, every day, without logging into anything. Cars that came on the lot, cars that came off, and the time it ran. Danny bookmarks this page and glances at it; he never checks the raw file.</p>
+      <a class="linkcard" href="https://kerzie.ai/shortline-log" target="_blank" rel="noopener">
+        <span class="url">kerzie.ai/shortline-log</span><span class="badge live">Shortline's own daily dashboard</span>
+        <div class="note">This is the actual page Shortline uses today, branded for their dealership. Each of Johnson's four rooftops would get its own version of this, showing that rooftop's refresh - added, removed, total in the file, and when it ran.</div>
+        <img class="shot" src="/back-cover-proposals/shortline-log-branded-dashboard.png" alt="Screenshot of Shortline Buick GMC's branded daily AI file refresh dashboard">
+        <div class="shot-cap">Shortline's branded dashboard. Screenshot captured live, September 4, 2026.</div>
+      </a>
 
       <h2>The proposal - all four rooftops</h2>
       <div class="pricing">
