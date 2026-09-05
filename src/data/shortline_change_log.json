@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-05",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 8,
+      "removed": 2,
+      "price_changed": 0,
+      "total": 326,
+      "ran_at": "8:24 AM MT (MacBook backstop)",
+      "note": "Eight vehicles joined the list and two came off, bringing the total to 326. The additions lean new GMC: three 2026 Yukon XLs and a 2026 Sierra 2500 HD, alongside four pre-owned trucks and SUVs including a 2021 Toyota RAV4. A 2026 Sierra 1500 AT4 and a 2026 Terrain Denali sold off the list. No prices changed today. Eight vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them. The build ran clean on schedule this morning, but the file did not reach the site on the first pass, so the mid-morning backstop placed it instead - same numbers, about an hour and a half later than usual. Verified live afterward: rebuilt on 2026-09-05, identical bytes on a plain browser check and an AI crawler check."
+    },
+    {
       "date": "2026-09-04",
       "status": "ok",
       "kind": "refresh",
