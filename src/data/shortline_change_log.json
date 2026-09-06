@@ -1,5 +1,5 @@
 {
-  "_readme": "Shortline Buick GMC daily Back Cover refresh log. One entry per day, newest first. The daily refresh job appends an entry and pushes; Vercel redeploys. status: ok | missed. On a missed day, WRITE THE ROW ANYWAY with status missed and a plain reason - a silent gap is the one thing this page exists to prevent.",
+  "_readme": "Shortline Buick GMC daily Back Cover refresh log. One entry per day, newest first. status: ok | missed - on a missed day WRITE THE ROW ANYWAY with a plain reason. STYLE RULE (Wade, 2026-09-06): this page is CUSTOMER-FACING. Notes are one or two plain sentences: cars in, cars out, prices, anything the client asked for. NEVER internal machinery - no machine names, no browsers or extensions, no backstops, no sessions, no build-lane narrative. ran_at is a bare timestamp. A late placement is at most 'placed later than the usual window.'",
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
@@ -10,8 +10,8 @@
       "removed": 4,
       "price_changed": 15,
       "total": 323,
-      "ran_at": "9:15 AM MT (MacBook, Wade present)",
-      "note": "One vehicle joined the list and four came off, bringing the total to 323, and fifteen vehicles were repriced. The build ran clean on the mini at 7:52 AM but the morning placement lane was down for the third straight day, so the file was placed mid-morning from Wade's own session instead, same numbers. The bigger news is on the stable root page: a new Service Area section went live today. It names the Denver metro communities around the dealership and states plainly that Shortline sells and delivers vehicles throughout Colorado, from Colorado Springs to Fort Collins to Grand Junction. That section exists so an AI assistant answering a shopper anywhere in Colorado, not just Aurora, has Shortline's service area in plain words. First revision to the root page since the two-page architecture went live 8/31. Verified live afterward: both pages serve identical bytes to a plain browser check and an AI crawler check, root revised 2026-09-06, inventory rebuilt 2026-09-06."
+      "ran_at": "9:15 AM MT",
+      "note": "One vehicle in, four out, and fifteen repriced; 323 listed. New on the stable page today: a Service Area section naming the Denver metro communities and stating plainly that Shortline sells and delivers throughout Colorado, so an AI assistant answering a shopper anywhere in the state has it in plain words. Placed later than the usual window; verified live, identical to browsers and AI crawlers."
     },
     {
       "date": "2026-09-05",
@@ -21,8 +21,8 @@
       "removed": 2,
       "price_changed": 0,
       "total": 326,
-      "ran_at": "8:24 AM MT (MacBook backstop)",
-      "note": "Eight vehicles joined the list and two came off, bringing the total to 326. The additions lean new GMC: three 2026 Yukon XLs and a 2026 Sierra 2500 HD, alongside four pre-owned trucks and SUVs including a 2021 Toyota RAV4. A 2026 Sierra 1500 AT4 and a 2026 Terrain Denali sold off the list. No prices changed today. Eight vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them. The build ran clean on schedule this morning, but the file did not reach the site on the first pass, so the mid-morning backstop placed it instead - same numbers, about an hour and a half later than usual. Verified live afterward: rebuilt on 2026-09-05, identical bytes on a plain browser check and an AI crawler check."
+      "ran_at": "8:24 AM MT",
+      "note": "Eight in, two out; 326 listed. The additions lean new GMC, including three 2026 Yukon XLs. Eight feed vehicles are held back until their pages publish on the site. Placed later than the usual window; verified live."
     },
     {
       "date": "2026-09-04",
@@ -32,8 +32,8 @@
       "removed": 5,
       "price_changed": 1,
       "total": 320,
-      "ran_at": "9:22 AM MT (MacBook backstop)",
-      "note": "Today's build ran clean on the mini at 7:40 AM - 320 vehicles, five added, five removed, one price change - but the mini's Chrome extension bridge was down, so the file never reached the site on the morning schedule. Wade signed into DealerOn on his own Chrome mid-morning and the refresh placed from there instead: same numbers, just later than usual. Verified live afterward - rebuilt on 2026-09-04, identical bytes on a plain browser check and an AI crawler check."
+      "ran_at": "9:22 AM MT",
+      "note": "Five in, five out, one price change; 320 listed. Placed later than the usual window; verified live."
     },
     {
       "date": "2026-09-03",
@@ -43,7 +43,7 @@
       "removed": 1,
       "total": 320,
       "ran_at": "6:49 AM MT",
-      "note": "Yesterday's price increases came back off. Fifteen vehicles were repriced today and every one of them went down, all on new GMC trucks, most by about $3,500 - the same trucks that went up yesterday. Two vehicles joined the list, a 2021 Ford Expedition Limited and a 2026 GMC Sierra 1500 Pro, and one Buick Encore GX came off, bringing the total to 320. Those corrected prices are on the page now, so an AI assistant answering a shopper today quotes today's number rather than yesterday's higher one. Thirteen vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them."
+      "note": "Fifteen vehicles repriced, every one downward, mostly new GMC trucks - yesterday's increases came back off, and today's page quotes today's numbers. Two in, one out; 320 listed. Thirteen feed vehicles held back until their site pages publish."
     },
     {
       "date": "2026-09-02",
@@ -53,7 +53,7 @@
       "removed": 2,
       "total": 319,
       "ran_at": "6:58 AM MT",
-      "note": "A busy pricing day. Two vehicles came onto the list and two came off, leaving the total at 319. The bigger change was price: 47 vehicles were repriced, 34 of them up and 13 down. Most of the increases were on new GMC trucks, and most of the reductions were on pre-owned vehicles. Every one of those new prices is on the page now, so an AI assistant answering a shopper's question today quotes today's number. Thirteen vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them."
+      "note": "Two in, two out; 319 listed. The bigger change was price: 47 vehicles repriced, 34 up and 13 down, and every new number is on the page today."
     },
     {
       "date": "2026-09-01",
@@ -63,7 +63,7 @@
       "removed": 1,
       "total": 319,
       "ran_at": "6:54 AM MT",
-      "note": "Quiet day on the lot: one vehicle came off the list and nothing new was published, so the page now lists 319 vehicles. Two GMC Acadias moved from pre-owned to new, which is why the new count went up while the total went down. Prices were unchanged across the board. Nine vehicles in the dealership's feed were held back because they do not have a page on the website yet - they will appear automatically once the site publishes them."
+      "note": "Quiet day: one vehicle off the list, 319 listed. Two GMC Acadias moved from pre-owned to new. No price changes."
     },
     {
       "date": "2026-08-31",
@@ -73,7 +73,7 @@
       "removed": 13,
       "total": 320,
       "ran_at": "12:15 PM MT",
-      "note": "The size limit is gone for good. The page moved to the two-file layout the best AI-ready sites use: a small stable page at /llms.txt that describes the dealership and teaches AI assistants how the site's links work, and the full inventory - all 320 vehicles with prices, VINs, and direct links - at /llms-full.txt, rebuilt daily with its own date stamp. Both files were placed and verified live this morning, serving identical content to browsers and AI crawlers. The morning's held-back build shipped inside this move: 32 vehicles in, 13 out versus the prior page."
+      "note": "The page moved to the two-file layout the best AI-ready sites use: a small stable page describing the dealership at /llms.txt, and the full inventory - all 320 vehicles with prices, VINs, and direct links - at /llms-full.txt, rebuilt daily. The file-size limit is gone for good. 32 in, 13 out with the move; verified live to browsers and AI crawlers."
     },
     {
       "date": "2026-08-31",
@@ -83,7 +83,7 @@
       "removed": null,
       "total": 301,
       "ran_at": null,
-      "note": "Second day held back by the same file-size limit. The build ran clean - 320 vehicles, 32 in and 13 out against the version now live - but the dealership platform caps this file at about 50 KB and the shortest usable version comes to 53.1 KB. The live page was left alone rather than dropped back to fewer vehicles, so it still lists the 301 from 8/29. Today's build did find a way to fit the whole lot inside the limit with room for months of growth, and that change is being reviewed before it goes on the site."
+      "note": "Second day held by the platform's file-size limit; the live page stayed on the 8/29 version rather than list fewer vehicles. The permanent fix shipped later the same day - see the entry above."
     },
     {
       "date": "2026-08-30",
@@ -93,7 +93,7 @@
       "removed": null,
       "total": 301,
       "ran_at": null,
-      "note": "Today's file was built on schedule - 320 vehicles, 32 in and 13 out - but it was not placed on the site. The dealership platform caps this particular file at about 50 KB, and at 320 vehicles even the shortest usable version comes to 53.7 KB. Cutting vehicles back out to fit would have made the page less complete than it was yesterday, so the live file was left alone: it still lists the 301 vehicles from 8/29. The platform provides a second file slot with no such limit, and moving the inventory list into it is the fix being put in place."
+      "note": "Built on schedule - 320 vehicles - but held: the platform caps this file's size, and trimming vehicles to fit would have made the page less complete than yesterday. The live page stayed on the 8/29 version while the permanent fix was prepared."
     },
     {
       "date": "2026-08-29",
@@ -103,7 +103,7 @@
       "removed": 2,
       "total": 301,
       "ran_at": "6:56 AM MT",
-      "note": "9 vehicles in, 2 out, and one price change across the 301 now listed (176 new / 125 pre-owned). The lot grew by seven overnight, the first full day running on the dealership's own inventory feed. The price change: a 2017 Ford Escape SE moved from $15,840 to $13,840, and the file carried the new price the same morning - that is the whole point of a daily refresh, because an AI assistant quoting yesterday's price quotes a number the store will not honor."
+      "note": "Nine in, two out; 301 listed - the first full day on the dealership's own inventory feed. One price drop caught the same morning: a 2017 Escape SE moved from $15,840 to $13,840, and the page carried the new number same-day."
     },
     {
       "date": "2026-08-28",
@@ -113,7 +113,7 @@
       "removed": 0,
       "total": 294,
       "ran_at": "8:05 AM MT",
-      "note": "The biggest change since this page went up: the file now lists the whole lot. Until today it carried 50 vehicles, the most the public feeds would expose. The dealership's own inventory system now feeds it directly, so all 294 in-stock vehicles are listed - 171 new and 123 pre-owned. Nothing was removed; the 244 additions are cars that were always on the lot but were not visible to an AI assistant before. To fit the platform's file-size limit at that count, each listing is now the vehicle, the price, the VIN and the link, rather than the longer spec line - the trade was full coverage over per-car detail, and the linked page still carries every spec and photo."
+      "note": "The file now lists the whole lot: all 294 in-stock vehicles, up from the 50 the public feeds exposed. Each listing carries the vehicle, price, VIN, and direct link, with full specs one click away."
     },
     {
       "date": "2026-08-27",
@@ -123,7 +123,7 @@
       "removed": 13,
       "total": 50,
       "ran_at": "6:58 AM MT",
-      "note": "14 vehicles in, 13 out, 0 price changes across the 50 shown (25 new / 25 used). Clean build - every vehicle detail page answered on the first pass. The one arrival skipped on 8/26 did not come back; it had left inventory by this morning."
+      "note": "14 in, 13 out; 50 shown. Clean run."
     },
     {
       "date": "2026-08-26",
@@ -133,7 +133,7 @@
       "removed": 12,
       "total": 49,
       "ran_at": "8:10 AM MT",
-      "note": "11 vehicles in, 12 out, 0 price changes across the 49 shown (24 new / 25 used). One first-time arrival was skipped when its detail page dropped the connection mid-fetch; it returns on tomorrow's build. This placement also cleared the 8/25 gap."
+      "note": "11 in, 12 out; 49 shown. Also cleared the 8/25 gap."
     },
     {
       "date": "2026-08-25",
@@ -143,7 +143,7 @@
       "removed": null,
       "total": 50,
       "ran_at": null,
-      "note": "The file was built on schedule but was never placed on the live site, so the 8/24 version stayed up. Caught and corrected the morning of 8/26."
+      "note": "The file was built on schedule but not placed, so the 8/24 version stayed up. Caught and corrected the morning of 8/26."
     },
     {
       "date": "2026-08-24",
@@ -153,7 +153,7 @@
       "removed": 4,
       "total": 50,
       "ran_at": "4:35 PM MT",
-      "note": "Daily refresh resumed and moved to an automated schedule. 4 vehicles added, 4 rotated out, 2 price changes across the 50 shown."
+      "note": "Daily refresh resumed and moved to an automated schedule. 4 added, 4 rotated out, 2 price changes across the 50 shown."
     },
     {
       "date": "2026-08-23",
@@ -163,7 +163,7 @@
       "removed": null,
       "total": 50,
       "ran_at": null,
-      "note": "This cycle did not run. The refresh had been run by hand and no automated daily schedule existed yet. Fixed the next day: the refresh now runs on an automated daily schedule."
+      "note": "This cycle did not run - no automated daily schedule existed yet. Fixed the next day; the refresh has run on an automated schedule since."
     },
     {
       "date": "2026-08-22",
@@ -173,7 +173,7 @@
       "removed": 21,
       "total": 50,
       "ran_at": "2:10 PM MT",
-      "note": "First full Watch refresh, run from the public feeds. 21 vehicles rotated out and 21 in since placement, plus 5 price changes caught (4 drops, 1 increase). The file now carries a dated rebuild stamp. Still capped at 50 vehicles until the DealersLink feed lands."
+      "note": "First full Watch refresh: 21 vehicles rotated out and 21 in since placement, plus 5 price changes caught (4 drops, 1 increase). The file now carries a dated rebuild stamp."
     },
     {
       "date": "2026-08-21",
@@ -183,7 +183,7 @@
       "removed": null,
       "total": 50,
       "ran_at": "5:35 PM MT",
-      "note": "File placed and live on shortlinebuickgmc.com. Same 50 vehicles as the baseline, so nothing to compare yet. Daily add and remove counts start once the DealersLink feed is connected."
+      "note": "File placed and live on shortlinebuickgmc.com. Same 50 vehicles as the baseline, so nothing to compare yet."
     },
     {
       "date": "2026-08-20",
@@ -193,7 +193,7 @@
       "removed": null,
       "total": 50,
       "ran_at": "6:00 PM MT",
-      "note": "Baseline build. First index of the lot, so there is nothing to compare against yet. Daily additions and removals start with the next refresh."
+      "note": "Baseline build. First index of the lot; daily additions and removals start with the next refresh."
     }
   ]
 }
