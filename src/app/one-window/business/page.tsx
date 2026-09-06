@@ -97,7 +97,7 @@ export default function OneWindowBusinessPage() {
           </Link>
         </div>
         <div className="k-rise k-rise-4 mt-10 flex flex-wrap gap-4">
-          <Link href="/downloads" className="k-btn-solid k-focus inline-block">
+          <Link href="/one-window#get" className="k-btn-solid k-focus inline-block">
             Get One-Window free <span className="k-arrow">&rarr;</span>
           </Link>
         </div>
@@ -374,7 +374,7 @@ export default function OneWindowBusinessPage() {
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/downloads" className="k-btn-solid k-focus inline-block">
+            <Link href="/one-window#get" className="k-btn-solid k-focus inline-block">
               Get One-Window free <span className="k-arrow">&rarr;</span>
             </Link>
           </div>
