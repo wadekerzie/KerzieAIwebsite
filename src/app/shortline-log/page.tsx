@@ -34,7 +34,14 @@ type Entry = {
   note?: string;
 };
 
-const entries = log.entries as Entry[];
+const allEntries = log.entries as Entry[];
+// Rolling window (Wade's rule 2026-09-06): the page shows the last 7 days only - a running
+// heartbeat, not an archive. Anchored on the newest entry so the board never renders empty.
+// Full history stays in shortline_change_log.json as the permanent record.
+const anchor = allEntries.length ? new Date(allEntries[0].date + "T00:00:00") : new Date();
+const cutoff = new Date(anchor);
+cutoff.setDate(cutoff.getDate() - 6);
+const entries = allEntries.filter((e) => new Date(e.date + "T00:00:00") >= cutoff);
 const latest = entries[0];
 
 function pretty(d: string) {
