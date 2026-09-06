@@ -146,15 +146,13 @@ export default function OsDownloadCard({ slug, name, description, file, note, ba
           >
             {copied
               ? "Copied - paste it into your Code tab"
-              : baseline
-                ? "Copy the setup line"
-                : "Copy the line for your AI"}
+              : "Copy the instructions"}
           </button>
           <button
             onClick={() => start("file")}
             className="k-focus text-[#262B3D]/70 text-[13px] underline underline-offset-4 hover:text-[#1A1B2E] transition-colors"
           >
-            {baseline ? "or download the document" : "or open the reference (written to your AI)"}
+            {baseline ? "or download the Foundation" : "or open the reference (written to your AI)"}
           </button>
         </div>
         {asking ? (
