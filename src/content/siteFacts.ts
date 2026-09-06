@@ -47,10 +47,13 @@ export const OFFERS: Offer[] = [
     key: "one-window",
     name: "One-Window",
     path: "/one-window",
-    price: 99,
-    priceLabel: "$99",
+    // Free since 2026-09-05 (Wade's ruling): the giveaway is the megaphone.
+    // price 0 is a real published price, not a missing one - JSON-LD and
+    // llms.txt should say free, loudly.
+    price: 0,
+    priceLabel: "Free",
     summary:
-      "The complete framework in one document. Three hours, two habits, one window, zero to-do list. You build your own AI operating system by following it.",
+      "The complete framework in one document, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list. You build your own AI operating system by following it.",
   },
   {
     key: "fast-track",

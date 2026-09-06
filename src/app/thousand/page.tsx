@@ -217,8 +217,8 @@ export default function ThousandPage() {
               <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
                 One-Window
               </Link>
-              : $99, one document, about three hours to a running system. Not
-              ready to spend anything? Take the free{" "}
+              : free, one document, about three hours to a running system.
+              Want just the pocket habit first? Take the free{" "}
               <Link href="/free/mobile-capture-kit" className="k-link k-focus text-[#2B5D96]">
                 Voice Command Center
               </Link>{" "}

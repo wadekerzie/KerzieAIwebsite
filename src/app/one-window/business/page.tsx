@@ -5,20 +5,20 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "One-Window for Small Business | Kerzie AI",
   description:
-    "3 hours. 2 new habits. 1 window. 0 to-do list. One AI that knows your business drafts, chases, tracks, and stages it for your yes. Mac. $99, one time.",
+    "3 hours. 2 new habits. 1 window. 0 to-do list. One AI that knows your business drafts, chases, tracks, and stages it for your yes. Mac. Free.",
   openGraph: {
     type: "article",
     title: "One-Window for Small Business",
     description:
-      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One AI window that knows your business and carries the office work. $99, one time.",
+      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One AI window that knows your business and carries the office work. Free.",
     url: "https://kerzie.ai/one-window/business",
     images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
   twitter: { card: "summary_large_image", images: ["/og/one-window-talk.jpg"] },
 };
 
-const CHECKOUT_URL = "https://buy.stripe.com/fZu4gAgDda7TarOfNc3cc00";
-const UPGRADE_PASS_URL = "https://buy.stripe.com/bJeaEY2Mn7ZLgQc8kK3cc01";
+// Payment rails retired 2026-09-05 on Wade's ruling: One-Window and its
+// upgrades are free. The old Stripe checkout links are gone on purpose.
 
 const stack = [
   {
@@ -72,7 +72,8 @@ export default function OneWindowBusinessPage() {
           chases, tracks, and stages. You approve.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-[#1A1B2E] text-2xl font-semibold">
-          $99, one time<span className="text-[#B04E2B]">.</span>
+          Free<span className="text-[#B04E2B]">.</span> The document, and every
+          upgrade.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
           System requirements: a Mac, and a $20 per month Claude
@@ -88,7 +89,7 @@ export default function OneWindowBusinessPage() {
             </p>
             <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
               There is a door for running your own work: the job, the projects,
-              the commitments. Same product, same price.
+              the commitments. Same product, also free.
             </p>
             <p className="mt-3 text-[#C4633F] font-semibold">
               The Personal Setup <span className="k-arrow">&rarr;</span>
@@ -96,15 +97,9 @@ export default function OneWindowBusinessPage() {
           </Link>
         </div>
         <div className="k-rise k-rise-4 mt-10 flex flex-wrap gap-4">
-          <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
-            Get the Setup for $99 <span className="k-arrow">&rarr;</span>
-          </a>
-          <a
-            href={UPGRADE_PASS_URL}
-            className="k-focus inline-block rounded-lg border border-[#B04E2B] px-6 py-3 text-[#B04E2B] font-semibold hover:bg-[#B04E2B] hover:text-[#FAF8F4] transition-colors duration-200"
-          >
-            Add the Upgrade Pass for $149 <span className="k-arrow">&rarr;</span>
-          </a>
+          <Link href="/downloads" className="k-btn-solid k-focus inline-block">
+            Get One-Window free <span className="k-arrow">&rarr;</span>
+          </Link>
         </div>
       </section>
 
@@ -150,7 +145,7 @@ export default function OneWindowBusinessPage() {
           ))}
         </div>
         <p className="mt-5 text-[#262B3D]/70 text-sm">
-          Put in the three hours yourself for $99, or have them{" "}
+          Put in the three hours yourself, free, or have them{" "}
           <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
             done with you for $999
           </Link>
@@ -221,7 +216,7 @@ export default function OneWindowBusinessPage() {
               the corner office never had it at all.
             </p>
             <p className="text-[#1A1B2E] font-medium">
-              That layer is back. This time it costs $99, and everybody gets
+              That layer is back. This time it is free, and everybody gets
               one.
             </p>
           </div>
@@ -290,7 +285,7 @@ export default function OneWindowBusinessPage() {
       {/* The stack */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; What The $99 Buys</p>
+          <p className="k-label mb-6">05 &mdash; What You Get</p>
           <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed mb-8">
             Built in the first sittings, from an interview about your actual
             business. Nothing generic, and nothing goes out to a customer
@@ -311,9 +306,9 @@ export default function OneWindowBusinessPage() {
             <p>
               If I priced this at what it replaced for me, it would be
               thousands: this summer I deleted Outlook, Excel, and Notion off
-              my machine because the window had taken over the parts I used. It
-              is $99 because I want the number beneath deciding - less than one
-              lost lead, one no-show, one night of the second job.
+              my machine because the window had taken over the parts I used.
+              It is free because I want nothing beneath deciding - not even
+              the price of one lost lead.
             </p>
           </div>
         </Reveal>
@@ -350,31 +345,23 @@ export default function OneWindowBusinessPage() {
           <p className="k-label mb-6">07 &mdash; The Offer</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p className="text-[#1A1B2E] text-xl font-semibold">
-              One-Window: $99, one time. Instant access after
-              checkout.
+              One-Window: free. The whole document, the full setup.
             </p>
             <p className="text-[#1A1B2E] text-xl font-semibold">
-              The Upgrade Pass: $149 for six months. Then it ends, on purpose.
+              The upgrades: free too. All of them.
             </p>
             <p>
               Every upgrade I build for my own OS, packaged and pushed to you:
-              at least one upgrade a month for the full six months. The first
-              four are already built - the Living Pane, the Clean Handoff, the
-              Weekly Tune-Up, and the Nightly Dream - and the stream keeps
-              coming as I keep building.
+              the Living Pane, the Clean Handoff, the Weekly Tune-Up, the
+              Nightly Dream, and the stream keeps coming as I keep building.
+              If I&apos;m giving this away, I&apos;m giving away the updates
+              too.
             </p>
             <p className="text-[#1A1B2E] font-medium">
-              This pass is designed to end. If you take the upgrades, by month
-              six you will not need to buy improvements, because you will be
-              making your own. That is not a marketing line; it is the product
-              working. I am not building a payment you forget to cancel. I am
-              walking you across the line where you do not need me.
-            </p>
-            <p>
-              <span className="text-[#1A1B2E] font-medium">The guarantee:</span>{" "}
-              the first sitting ends with one real thing from your week done
-              end to end. If it does not, I refund the $99 and you keep the
-              document.
+              Why free? Because I want a thousand operators more than I want
+              anybody&apos;s $99. Kerzie AI&apos;s business is deploying AI for
+              companies. One-Window running your business is the proof, and
+              the proof is the megaphone.
             </p>
             <p>
               Rather have it built WITH you: your machine, your accounts, one
@@ -382,20 +369,14 @@ export default function OneWindowBusinessPage() {
               <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
                 AI Fast-Track Session
               </Link>{" "}
-              at $999 for up to three people, and this document is included for
-              every one of them.
+              at $999 for up to three people. The document is free either way -
+              the session is for having it installed instead of read.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
-            <a href={CHECKOUT_URL} className="k-btn-solid k-focus inline-block">
-              Get the Setup for $99 <span className="k-arrow">&rarr;</span>
-            </a>
-            <a
-              href={UPGRADE_PASS_URL}
-              className="k-focus inline-block rounded-lg border border-[#B04E2B] px-6 py-3 text-[#B04E2B] font-semibold hover:bg-[#B04E2B] hover:text-[#FAF8F4] transition-colors duration-200"
-            >
-              Add the Upgrade Pass for $149 <span className="k-arrow">&rarr;</span>
-            </a>
+            <Link href="/downloads" className="k-btn-solid k-focus inline-block">
+              Get One-Window free <span className="k-arrow">&rarr;</span>
+            </Link>
           </div>
         </Reveal>
       </section>
