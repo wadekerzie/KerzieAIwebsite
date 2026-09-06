@@ -1,35 +1,61 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
+import OneWindowGate from "@/components/OneWindowGate";
+
+// The free door - rebuilt 2026-09-05 on Wade's ruling: no payment rails,
+// capture first/last/email before the download, the collapse thesis leads.
+// The gate posts to /api/gate (magnet "one-window") which subscribes the
+// operator to the newsletter and lands them on /one-window/welcome.
 
 export const metadata: Metadata = {
   title: "One-Window | Kerzie AI",
   description:
-    "3 hours. 2 new habits. 1 window. 0 to-do list. One AI window that knows your work drafts, tracks, and stages it for your yes. Mac. Free.",
+    "If you can create an account and follow instructions, you can run your work on AI. One document, free, every upgrade included. Mac.",
   openGraph: {
     type: "article",
     title: "One-Window",
     description:
-      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One document you paste into Claude. Mac. Free.",
+      "I talk. The work gets done. One document you paste into Claude builds your own AI operating system. Free, upgrades included. Mac.",
     url: "https://kerzie.ai/one-window",
     images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
   twitter: { card: "summary_large_image", images: ["/og/one-window-talk.jpg"] },
 };
 
-// Payment rails retired 2026-09-05 on Wade's ruling: One-Window and its
-// upgrades are free. The old Stripe checkout links are gone on purpose.
-
-const builds = [
-  "An interview about your work first, before a single file gets created. Nothing in your setup is generic.",
-  "The one-folder workspace: everything your AI needs to know, on disk, not lost in a chat thread.",
-  "Your operating manual, written in your words, loaded every session, with the five standing rules that prevent AI disasters.",
-  "A working tracker seeded with what you already told it is falling through the cracks, so it is useful the moment it exists.",
-  "Your accounts connected one at a time, walked through click by click, and verified. Gmail, Calendar, Drive, and your browser.",
-  "One painful thing from your own week, done end to end, before the first sitting is over.",
-  "Three routines proposed and ranked from what you said hurts, and the first one built.",
-  "The Single Pane: every project you run as a tab on one private page - current status, next step, what it's waiting on - reconciled the moment work lands, not at the end of the day.",
-  "Cost-control and model-routing rules, learned the expensive way so you do not have to.",
+const gets = [
+  {
+    name: "It remembers you.",
+    body: "Your work, your people, your decisions - session to session. You never re-explain your business to your own AI.",
+  },
+  {
+    name: "You talk, the work gets done.",
+    body: "Drafts, follow-ups, trackers, plans - staged for your yes. Nothing goes out without you.",
+  },
+  {
+    name: "One place to look.",
+    body: "The Single Pane: every project you run as a tab on one private page, kept current by your AI, not by you.",
+  },
+  {
+    name: "Say “done W1” and it is done.",
+    body: "Every open item has a short ID. You speak in two words; the tracker stays true.",
+  },
+  {
+    name: "It works while you sleep.",
+    body: "Scheduled tasks run overnight and in the morning the results are waiting: the inbox swept, the day set up.",
+  },
+  {
+    name: "It spends your AI budget wisely.",
+    body: "The expensive model thinks; cheaper ones do the legwork. Your $20 subscription lasts the month.",
+  },
+  {
+    name: "It closes every day clean.",
+    body: "A wrap-up ritual reconciles everything, so tomorrow starts from the truth instead of from memory.",
+  },
+  {
+    name: "It cannot go rogue.",
+    body: "Standing rules and approval gates are built into the foundation. Sending, spending, and publishing always wait for your yes.",
+  },
 ];
 
 export default function OneWindowPage() {
@@ -46,50 +72,36 @@ export default function OneWindowPage() {
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">One-Window &mdash; your own personal OS, all in one window</p>
-        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          I talk. <span className="k-serif font-normal">The work gets done</span>
+        <p className="k-rise k-rise-1 k-label mb-8">
+          One-Window &mdash; your own personal OS. Free.
+        </p>
+        <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.5vw,3.4rem)]">
+          If you can create an account{" "}
+          <span className="k-serif font-normal">and follow instructions,</span>
+          <br />
+          you can run your work on AI
           <span className="text-[#B04E2B]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg lg:text-xl max-w-xl leading-relaxed">
-          One window. One AI that actually knows your work - the job, the
-          projects, the side ventures, the commitments. You say what needs to
-          happen. It drafts, tracks, and stages. You approve. Built by one
-          document you paste into Claude; it interviews you and builds your
-          operating system around your answers.
+          That is the whole requirement. One document you paste into Claude
+          interviews you and builds your operating system around your answers:
+          one window, one AI that knows your work, turning what you say into
+          finished work you approve.
         </p>
-        <div className="k-rise k-rise-4 mt-8 max-w-xl">
-          <Link
-            href="/one-window/business"
-            className="k-focus block rounded-lg bg-white p-5 sm:p-6 hover:bg-[#F3F4F8] transition-colors duration-200"
-          >
-            <p className="k-mono text-[11px] tracking-[0.15em] text-[#C4633F] font-bold mb-2">
-              RUNNING A BUSINESS?
-            </p>
-            <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
-              There is a door built for owners: follow-ups, quotes, the tracker,
-              your marketing. Same product, also free.
-            </p>
-            <p className="mt-3 text-[#C4633F] font-semibold">
-              The Small Business Setup <span className="k-arrow">&rarr;</span>
-            </p>
-          </Link>
-        </div>
         <p className="k-rise k-rise-3 mt-6 text-[#1A1B2E] text-2xl font-semibold">
           Free<span className="text-[#B04E2B]">.</span> The document, and every
           upgrade.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
-          System requirements: a Mac, and a $20 per month Claude
-          subscription. Windows is not supported yet.
+          System requirements: a Mac, and a $20 per month Claude subscription.
+          Windows is not supported yet.
         </p>
-        <div className="k-rise k-rise-4 mt-10 flex flex-wrap gap-4">
-          <Link href="/downloads" className="k-btn-solid k-focus inline-block">
+        <div className="k-rise k-rise-4 mt-10">
+          <a href="#get" className="k-btn-solid k-focus inline-block">
             Get One-Window free <span className="k-arrow">&rarr;</span>
-          </Link>
+          </a>
         </div>
       </section>
-
 
       {/* The countdown - 3-2-1-0 */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
@@ -98,7 +110,7 @@ export default function OneWindowPage() {
             {
               n: "3",
               t: "hours",
-              d: "from pasting one document to running your business in one window.",
+              d: "from pasting one document to running your work in one window.",
             },
             {
               n: "2",
@@ -157,10 +169,42 @@ export default function OneWindowPage() {
         </div>
       </section>
 
+      {/* The collapse */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">01 &mdash; The Learning Curve Is Gone</p>
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
+            <p>
+              For two years, using AI well meant studying it: which model for
+              what, which tools, prompt this, chain that. People built careers
+              on explaining it. That curve is gone.
+            </p>
+            <p className="text-[#1A1B2E] font-medium">
+              Two skills are left, and you have had both for twenty-five years:
+              create an account with a username and password, and follow
+              instructions.
+            </p>
+            <p>
+              The window gives the instructions now, not you. Connect your
+              email: it walks you through it. Connect your calendar: it walks
+              you through it. The hardest thing you will ever do is follow
+              steps to create an account, and you have been doing that since
+              the internet arrived.
+            </p>
+            <p>
+              Prompt engineering did not get easier. It got done. It is inside
+              this document, written once, and you get it free. What is left
+              for you is the only part that was ever really yours: knowing
+              what needs to get done.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* The 16,000 words */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; Your 16,000 Words</p>
+          <p className="k-label mb-6">02 &mdash; Your 16,000 Words</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Researchers once wired people with recorders to settle how much
@@ -174,245 +218,129 @@ export default function OneWindowPage() {
               nobody.
             </p>
             <p className="text-[#1A1B2E] font-medium">
-              One-Window exists to catch those words and turn them
-              into finished work. Simpler, not additional.
+              One-Window exists to catch those words and turn them into
+              finished work. Simpler, not additional.
             </p>
           </div>
         </Reveal>
       </section>
 
-      {/* 1965 */}
+      {/* What you get */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; This Existed In 1965</p>
-          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
-            <p>
-              In 1965 an executive walked out of a meeting talking, and
-              somebody wrote down every word. She checked it against what he
-              had said before, threw out the repeats, and routed the rest: this
-              goes to accounting, this becomes a letter, draft it for his
-              signature.
-            </p>
-            <p>
-              Talk went in. Action came out. That was the whole system. We
-              deleted that layer because it cost a salary, and everybody below
-              the corner office never had it at all.
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              That layer is back. This time it is free, and everybody gets
-              one.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* The one habit */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
-        <Reveal>
-          <p className="k-label mb-6">03 &mdash; The Two Habits</p>
-          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
-            <p>
-              Here is what almost everyone gets wrong about AI: they picture a
-              curriculum. Months of studying, keeping up with model releases,
-              learning which tool does what. That imagined climb is why most
-              people never start.
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              The whole learning curve is two habits: record what you say, and
-              give it one place to land.
-            </p>
-            <p>
-              Talk to the window at your desk. Talk to your phone between
-              meetings. That is the first habit, and you already produce the
-              raw material, 16,000 words at a time. The second habit is two
-              clicks: your words land in a folder your window watches. The
-              setup does the rest: it interviews you about your work once, then
-              it knows your projects, your people, and your voice, and it turns
-              your talk into drafts, trackers, and follow-ups, staged for your
-              yes.
-            </p>
-            <p>
-              And you do not need to wait for a better AI. I run my operation
-              on today&apos;s models, and I honestly could not tell you what a
-              smarter one would add to this. The gap was never the model. The
-              gap was that nobody built the window.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* Why a document */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
-        <Reveal>
-          <p className="k-label mb-6">04 &mdash; Why The Product Is A Document</p>
-          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
-            <p>
-              Most people run AI as a chat window: ask a question, get an answer,
-              lose everything when the thread ends.
-            </p>
-            <p>
-              The operators getting real leverage run it as an operating system:
-              one window where the AI reads the state of the work, carries the
-              execution, and remembers.
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              Getting from the first mode to the second is a setup problem. Most
-              people never figure the full setup out on their own, or they get 75
-              percent of the way there and stall.
-            </p>
-            <p>
-              This document is the missing piece: a briefing written to your AI,
-              not to you. Your AI reads it and becomes the builder. You answer
-              its questions.
-            </p>
-            <p>
-              Four things are on you: install the Claude desktop app, run one
-              command your Mac needs, make a folder, and paste. The document
-              walks you through all four in plain language, including what to do
-              when the one confusing part goes wrong. Everything after that,
-              Claude drives.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* What your AI builds */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
-        <Reveal>
-          <p className="k-label mb-6">05 &mdash; What Your AI Builds With You</p>
+          <p className="k-label mb-6">03 &mdash; What You Get</p>
           <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed mb-8">
-            In this order, and the order is the point. Nothing gets built before
-            it knows what you actually do.
+            Built with you in the first sittings, from an interview about your
+            actual work. Nothing generic.
           </p>
           <ul className="max-w-2xl space-y-4">
-            {builds.map((t) => (
+            {gets.map((item) => (
               <li
-                key={t}
+                key={item.name}
                 className="border-l border-[#B04E2B] pl-5 text-[#262B3D] text-lg leading-relaxed"
               >
-                {t}
+                <span className="text-[#1A1B2E] font-medium">{item.name}</span>{" "}
+                {item.body}
               </li>
             ))}
           </ul>
         </Reveal>
       </section>
 
-      {/* The to-do list goes away */}
+      {/* The three steps */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; Your To-Do List Goes Away</p>
-          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
-            <p>
-              However you track your own workload today - paper, a tasks app, a
-              list inside Microsoft or Google, the back of your head - the setup
-              replaces it with something better.
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              The Single Pane: one private page where every project you run is a
-              tab. Inside each tab, a table of what is true right now, what
-              happens next, and what it is waiting on. On top, your one next
-              step, and every deadline sorted by date.
-            </p>
-            <p>
-              It opens in the panel right next to your working window, in any
-              browser, and on your phone. And it does not go stale like every
-              dashboard you have tried, because your AI refreshes it as part of
-              closing every session. You never update it. You just look at it.
-            </p>
-            <p>
-              I am looking at mine right now, in the same window I am writing
-              this from. Three ventures, two outreach campaigns, a job pipeline,
-              a content calendar, a YouTube channel. One glance.
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              This is the zero the countdown lands on. Three hours, two habits,
-              one window, zero to-do list.
-            </p>
+          <p className="k-label mb-6">04 &mdash; The Whole Door Is Three Steps</p>
+          <div className="max-w-2xl space-y-6">
+            {[
+              {
+                n: "1",
+                t: "Get a Claude account and the desktop app.",
+                d: "The $20 per month plan. If you have ever created an account online, you can do this.",
+              },
+              {
+                n: "2",
+                t: "Run one command on your Mac.",
+                d: "Copied straight off the page, pasted once. The document tells you exactly what to do if the one confusing part goes wrong.",
+              },
+              {
+                n: "3",
+                t: "Paste the Foundation.",
+                d: "Your AI reads it and becomes the builder. It interviews you, then it builds. You answer questions and approve.",
+              },
+            ].map((s) => (
+              <div key={s.n} className="flex gap-5">
+                <p className="text-3xl font-bold text-[#B04E2B] leading-none pt-1">{s.n}</p>
+                <div>
+                  <p className="text-[#1A1B2E] text-lg font-medium leading-snug">{s.t}</p>
+                  <p className="mt-1 text-[#262B3D]/85 text-lg leading-relaxed">{s.d}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </Reveal>
       </section>
 
-      {/* No new hardware */}
+      {/* Why free */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; No New Hardware</p>
+          <p className="k-label mb-6">05 &mdash; Why Free</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
-              There is a wave of AI gadgets right now that record your voice and
-              hand you summaries: pins, pendants, pocket recorders. Another
-              device, another app, another subscription.
+              This used to cost $99, with a $149 pass for the upgrade stream.
+              I retired both.
             </p>
             <p className="text-[#1A1B2E] font-medium">
-              The capability is already in your hand.{" "}
-              <span className="k-serif font-normal">
-                And it is better, because it feeds YOUR AI, with your context,
-                not a vendor&apos;s summary app.
-              </span>
-            </p>
-            <p>
-              This setup uses the Mac you already own and the AI subscription
-              you already pay for. Nothing new to buy, charge, or wear.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* The offer */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
-        <Reveal>
-          <p className="k-label mb-6">08 &mdash; The Offer</p>
-          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
-            <p>
-              This is the simplest true version of everything I write about:
-              one window, technology carrying the load instead of adding to
-              it. And the door is now open.
-            </p>
-            <p className="text-[#1A1B2E] text-xl font-semibold">
-              One-Window: free. The whole document, the full setup.
-            </p>
-            <p className="text-[#1A1B2E] text-xl font-semibold">
-              The upgrades: free too. All of them.
-            </p>
-            <p>
-              Every upgrade I build for my own OS, packaged and pushed to you:
-              the Living Pane, the Clean Handoff, the Weekly Tune-Up, the
-              Nightly Dream, and the stream keeps coming as I keep building.
-              If I&apos;m giving this away, I&apos;m giving away the updates
-              too.
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              Why free? Because I want a thousand operators more than I want
+              Because I want a thousand operators more than I want
               anybody&apos;s $99. Kerzie AI&apos;s business is deploying AI for
               companies. One-Window running your work is the proof, and the
               proof is the megaphone.
             </p>
-            {/* Founding Hundred terms - decided 8/10; pricing retired 9/5 on
-                Wade's ruling. Seats still counted on /thousand. */}
             <p>
-              <span className="text-[#1A1B2E] font-medium">
-                The Founding Hundred:
-              </span>{" "}
-              the first hundred operators are counted on{" "}
+              The upgrades come with it: the Living Pane, the Clean Handoff,
+              the Weekly Tune-Up, the Nightly Dream, and the stream keeps
+              coming as I keep building my own system. If I&apos;m giving this
+              away, I&apos;m giving away the updates too.
+            </p>
+            <p>
+              The first hundred operators are counted on{" "}
               <Link href="/thousand" className="k-link k-focus text-[#2B5D96]">
                 the First Thousand page
               </Link>
-              . Founders&apos; upgrades were always free for life; now
-              everyone&apos;s are. The seat still means what it meant: you were
-              here before the door was obvious.
-            </p>
-            <p>
-              Rather have it built WITH you: your machine, your accounts, one
-              real workflow shipped before I leave the room? That is the{" "}
-              <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
-                AI Fast-Track Session
-              </Link>{" "}
-              at $999 for up to three people. The document is free either way -
-              the session is for having it installed instead of read.
+              . The seat means what it always meant: you were here before the
+              door was obvious.
             </p>
           </div>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/downloads" className="k-btn-solid k-focus inline-block">
-              Get One-Window free <span className="k-arrow">&rarr;</span>
+        </Reveal>
+      </section>
+
+      {/* The gate */}
+      <section id="get" className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">06 &mdash; Tell Me Where To Send It</p>
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed mb-8">
+            <p>
+              Your name and email are the whole price. You get the download
+              page now and the link by email, so it is there whenever you sit
+              down to do the three hours.
+            </p>
+          </div>
+          <OneWindowGate />
+          <div className="max-w-2xl mt-10">
+            <Link
+              href="/one-window/business"
+              className="k-focus block rounded-lg bg-white p-5 sm:p-6 hover:bg-[#F3F4F8] transition-colors duration-200"
+            >
+              <p className="k-mono text-[11px] tracking-[0.15em] text-[#C4633F] font-bold mb-2">
+                RUNNING A BUSINESS?
+              </p>
+              <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
+                There is a door built for owners: follow-ups, quotes, the
+                tracker, your marketing. Same document, same price: free.
+              </p>
+              <p className="mt-3 text-[#C4633F] font-semibold">
+                The Small Business Setup <span className="k-arrow">&rarr;</span>
+              </p>
             </Link>
           </div>
         </Reveal>
@@ -421,13 +349,18 @@ export default function OneWindowPage() {
       {/* Straight answers */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">09 &mdash; Straight Answers</p>
+          <p className="k-label mb-6">07 &mdash; Straight Answers</p>
           <div className="max-w-2xl space-y-5 text-[#262B3D] text-lg leading-relaxed">
             <p>
               <span className="text-[#1A1B2E] font-medium">Do I need to know AI?</span>{" "}
               If you can talk, you qualify. The setup interviews you; you never
-              write a prompt. You will type one command into your Mac, once,
-              copied straight off the page.
+              write a prompt.
+            </p>
+            <p>
+              <span className="text-[#1A1B2E] font-medium">What is the catch?</span>{" "}
+              There is not one. You join my newsletter list when you take the
+              document, and you can leave it the same day and keep everything.
+              I am building a thousand operators, and this is how I count.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Is this a course?</span>{" "}
@@ -437,10 +370,9 @@ export default function OneWindowPage() {
             <p>
               <span className="text-[#1A1B2E] font-medium">Which AI?</span> Claude,
               specifically the Code tab in the Claude desktop app, on a Claude
-              Pro plan at $20 per month. Earlier versions of this were written to
-              work with any assistant. That made it worse. Committing to one
-              setup is what lets the document walk you through the real install,
-              the real click paths, and the real place it breaks.
+              Pro plan at $20 per month. Committing to one setup is what lets
+              the document walk you through the real install, the real click
+              paths, and the real place it breaks.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Mac or Windows?</span> Mac
@@ -450,37 +382,21 @@ export default function OneWindowPage() {
             <p>
               <span className="text-[#1A1B2E] font-medium">Is this real?</span> It is
               the literal framework my operating system runs on: the same
-              tracker, rules, routines, and capture pipeline that run my ventures
-              every day. Nothing in it is theoretical.
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* Free rung */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
-        <Reveal>
-          <p className="k-label mb-6">10 &mdash; Not Ready? Take The Habit For Free</p>
-          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
-            <p>
-              Take the <span className="text-[#1A1B2E] font-medium">Voice Command Center</span>{" "}
-              free. Ten minutes of setup, one habit: talk into your phone, and
-              the thought is waiting in your AI the next time you sit down.
-              Works with whatever AI you already use. Fair warning: iPhone
-              only, and the Shortcut setup is fiddly.
+              tracker, rules, routines, and capture pipeline that run my
+              ventures every day. Nothing in it is theoretical.
             </p>
             <p>
-              If the habit sticks, you will know exactly what the full window
-              is worth before you give it the afternoon.
+              <span className="text-[#1A1B2E] font-medium">
+                Rather have it built WITH you?
+              </span>{" "}
+              Your machine, your accounts, one real workflow shipped before I
+              leave the room: the{" "}
+              <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
+                AI Fast-Track Session
+              </Link>{" "}
+              at $999 for up to three people. The document is free either way -
+              the session is for having it installed instead of read.
             </p>
-          </div>
-          <div className="mt-8">
-            <Link
-              href="/free/mobile-capture-kit"
-              className="k-focus inline-block rounded-lg border border-[rgba(26,27,46,0.4)] px-6 py-3 text-[#262B3D] font-semibold hover:border-[#1A1B2E]/20 hover:text-[#1A1B2E] transition-colors duration-200"
-            >
-              Get the Voice Command Center free <span className="k-arrow">&rarr;</span>
-            </Link>
           </div>
         </Reveal>
       </section>

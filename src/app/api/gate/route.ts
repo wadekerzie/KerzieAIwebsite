@@ -11,12 +11,19 @@ import { NextResponse } from "next/server";
 const MAGNETS: Record<string, string> = {
   "capture-kit": "/free/mobile-capture-kit/access",
   "first-reps": "/free/first-reps/access",
+  // One-Window went free 2026-09-05. This gate is the front door: capture
+  // first/last/email, land on the welcome page, count toward the thousand.
+  "one-window": "/one-window/welcome",
 };
 
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
   const email = typeof body?.email === "string" ? body.email.trim() : "";
   const magnet = typeof body?.magnet === "string" ? body.magnet : "";
+  const firstName =
+    typeof body?.firstName === "string" ? body.firstName.trim().slice(0, 100) : "";
+  const lastName =
+    typeof body?.lastName === "string" ? body.lastName.trim().slice(0, 100) : "";
 
   const redirect = MAGNETS[magnet];
   if (!redirect) {
@@ -44,6 +51,16 @@ export async function POST(req: Request) {
             utm_medium: "gate",
             reactivate_existing: true,
             send_welcome_email: true,
+            // Name fields ride as Beehiiv custom fields when the gate collects
+            // them (the one-window door does; the older gates send none).
+            ...(firstName || lastName
+              ? {
+                  custom_fields: [
+                    ...(firstName ? [{ name: "First Name", value: firstName }] : []),
+                    ...(lastName ? [{ name: "Last Name", value: lastName }] : []),
+                  ],
+                }
+              : {}),
           }),
         }
       );
