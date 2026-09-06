@@ -157,7 +157,7 @@ export default function OneWindowBusinessPage() {
       {/* The explainer - the video is the demo */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-4">
         <div className="max-w-2xl">
-          <p className="k-label mb-4">80 Seconds, And The Video Is The Demo</p>
+          <p className="k-label mb-4">60 Seconds, And The Video Is The Demo</p>
           <video
             controls
             preload="metadata"
