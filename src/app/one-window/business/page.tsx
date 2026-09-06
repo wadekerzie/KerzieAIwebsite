@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 
 const stack = [
   {
-    name: "The Setup Document.",
-    body: "One document you paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.",
+    name: "The Foundation.",
+    body: "The OS installer: one paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.",
   },
   {
     name: "The Follow-Up Engine.",
@@ -72,8 +72,8 @@ export default function OneWindowBusinessPage() {
           chases, tracks, and stages. You approve.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-[#1A1B2E] text-2xl font-semibold">
-          Free<span className="text-[#B04E2B]">.</span> The document, and every
-          upgrade.
+          Free<span className="text-[#B04E2B]">.</span> The whole operating
+          system, and every upgrade.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
           System requirements: a Mac, and a $20 per month Claude
@@ -111,7 +111,7 @@ export default function OneWindowBusinessPage() {
             {
               n: "3",
               t: "hours",
-              d: "from pasting one document to running your business in one window.",
+              d: "from one paste of the Foundation to running your business in one window.",
             },
             {
               n: "2",
@@ -345,7 +345,7 @@ export default function OneWindowBusinessPage() {
           <p className="k-label mb-6">07 &mdash; The Offer</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p className="text-[#1A1B2E] text-xl font-semibold">
-              One-Window: free. The whole document, the full setup.
+              One-Window: free. The whole operating system, every capability.
             </p>
             <p className="text-[#1A1B2E] text-xl font-semibold">
               The upgrades: free too. All of them.
@@ -369,8 +369,8 @@ export default function OneWindowBusinessPage() {
               <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
                 AI Fast-Track Session
               </Link>{" "}
-              at $999 for up to three people. The document is free either way -
-              the session is for having it installed instead of read.
+              at $999 for up to three people. The OS is free either way - the
+              session is for having it installed beside you instead of alone.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -416,8 +416,9 @@ export default function OneWindowBusinessPage() {
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Is this a course?</span>{" "}
-              No. It is a working document. About an hour gets the foundation
-              running; the first-week plan inside paces the rest.
+              No. It is a working operating system your own AI installs. About an
+              hour gets the foundation running; the first-week plan inside
+              paces the rest.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Will it send things to my customers?</span>{" "}
@@ -428,7 +429,7 @@ export default function OneWindowBusinessPage() {
               <span className="text-[#1A1B2E] font-medium">Which AI?</span> Claude,
               specifically the Code tab in the Claude desktop app, on a Claude
               Pro plan at $20 per month. Committing to one setup is what lets
-              the document walk you through the real install, the real click
+              the Foundation walk you through the real install, the real click
               paths, and the real place it breaks.
             </p>
             <p>
