@@ -53,7 +53,7 @@ export const OFFERS: Offer[] = [
     price: 0,
     priceLabel: "Free",
     summary:
-      "The complete framework in one document, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list. You build your own AI operating system by following it.",
+      "Your own AI operating system, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list. Your own Claude installs it from one paste of the Foundation.",
   },
   {
     key: "fast-track",

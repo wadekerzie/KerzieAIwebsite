@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "One-Window",
     description:
-      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One document you paste into Claude. Mac. Free.",
+      "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. Your own AI operating system, installed by one paste into Claude. Mac. Free.",
     url: "https://kerzie.ai/one-window",
     images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
@@ -54,9 +54,9 @@ export default function OneWindowPage() {
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg lg:text-xl max-w-xl leading-relaxed">
           One window. One AI that actually knows your work - the job, the
           projects, the side ventures, the commitments. You say what needs to
-          happen. It drafts, tracks, and stages. You approve. Built by one
-          document you paste into Claude; it interviews you and builds your
-          operating system around your answers.
+          happen. It drafts, tracks, and stages. You approve. Your own Claude
+          installs it from one paste of the Foundation: it interviews you and
+          builds your operating system around your answers.
         </p>
         <div className="k-rise k-rise-4 mt-8 max-w-xl">
           <Link
@@ -76,8 +76,8 @@ export default function OneWindowPage() {
           </Link>
         </div>
         <p className="k-rise k-rise-3 mt-6 text-[#1A1B2E] text-2xl font-semibold">
-          Free<span className="text-[#B04E2B]">.</span> The document, and every
-          upgrade.
+          Free<span className="text-[#B04E2B]">.</span> The whole operating
+          system, and every upgrade.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
           System requirements: a Mac, and a $20 per month Claude
@@ -98,7 +98,7 @@ export default function OneWindowPage() {
             {
               n: "3",
               t: "hours",
-              d: "from pasting one document to running your business in one window.",
+              d: "from one paste of the Foundation to running your work in one window.",
             },
             {
               n: "2",
@@ -244,7 +244,7 @@ export default function OneWindowPage() {
       {/* Why a document */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; Why The Product Is A Document</p>
+          <p className="k-label mb-6">04 &mdash; How An OS Installs From One Paste</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Most people run AI as a chat window: ask a question, get an answer,
@@ -261,13 +261,15 @@ export default function OneWindowPage() {
               percent of the way there and stall.
             </p>
             <p>
-              This document is the missing piece: a briefing written to your AI,
-              not to you. Your AI reads it and becomes the builder. You answer
-              its questions.
+              The Foundation is the missing piece: the OS installer, written to
+              your AI, not to you. Your AI reads it and becomes the builder.
+              You answer its questions, and what comes out the other side is an
+              operating system running in your own Claude - memory, tracker,
+              rules, routines, the pane.
             </p>
             <p>
               Four things are on you: install the Claude desktop app, run one
-              command your Mac needs, make a folder, and paste. The document
+              command your Mac needs, make a folder, and paste. The Foundation
               walks you through all four in plain language, including what to do
               when the one confusing part goes wrong. Everything after that,
               Claude drives.
@@ -368,7 +370,7 @@ export default function OneWindowPage() {
               it. And the door is now open.
             </p>
             <p className="text-[#1A1B2E] text-xl font-semibold">
-              One-Window: free. The whole document, the full setup.
+              One-Window: free. The whole operating system, every capability.
             </p>
             <p className="text-[#1A1B2E] text-xl font-semibold">
               The upgrades: free too. All of them.
@@ -406,8 +408,8 @@ export default function OneWindowPage() {
               <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
                 AI Fast-Track Session
               </Link>{" "}
-              at $999 for up to three people. The document is free either way -
-              the session is for having it installed instead of read.
+              at $999 for up to three people. The OS is free either way - the
+              session is for having it installed beside you instead of alone.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -431,15 +433,16 @@ export default function OneWindowPage() {
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Is this a course?</span>{" "}
-              No. It is a working document. About an hour gets the foundation
-              running; the first-week plan inside paces the rest.
+              No. It is a working operating system your own AI installs. About an
+              hour gets the foundation running; the first-week plan inside
+              paces the rest.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Which AI?</span> Claude,
               specifically the Code tab in the Claude desktop app, on a Claude
               Pro plan at $20 per month. Earlier versions of this were written to
               work with any assistant. That made it worse. Committing to one
-              setup is what lets the document walk you through the real install,
+              setup is what lets the Foundation walk you through the real install,
               the real click paths, and the real place it breaks.
             </p>
             <p>

@@ -83,7 +83,7 @@ export default function ThousandPage() {
             {[
               "Every OS upgrade free, for life. The people whose feedback creates the upgrades never pay for them.",
               "The downloads page, free. Every setup guide we sell, included from day one.",
-              "A founding number - Operator #12 of 100 - stamped in your setup document.",
+              "A founding number - Operator #12 of 100 - stamped in your Foundation.",
               "Your name, your business, and your link on this page, if you want them here.",
               "Fingerprints on the product: release notes name who asked for what. The last customer request shipped inside a week.",
               "The monthly founding call, capped at the hundred.",
@@ -217,7 +217,7 @@ export default function ThousandPage() {
               <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
                 One-Window
               </Link>
-              : free, one document, about three hours to a running system.
+              : free, one paste of the Foundation, about three hours to a running system.
               Want just the pocket habit first? Take the free{" "}
               <Link href="/free/mobile-capture-kit" className="k-link k-focus text-[#2B5D96]">
                 Voice Command Center
