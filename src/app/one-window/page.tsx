@@ -11,12 +11,12 @@ import OneWindowGate from "@/components/OneWindowGate";
 export const metadata: Metadata = {
   title: "One-Window | Kerzie AI",
   description:
-    "If you can create an account and follow instructions, you can run your work on AI. One document, free, every upgrade included. Mac.",
+    "If you can create an account and follow instructions, you can run your work on AI. Your own AI operating system, free, every upgrade included. Mac.",
   openGraph: {
     type: "article",
     title: "One-Window",
     description:
-      "I talk. The work gets done. One document you paste into Claude builds your own AI operating system. Free, upgrades included. Mac.",
+      "I talk. The work gets done. One paste of the Foundation into Claude installs your own AI operating system. Free, upgrades included. Mac.",
     url: "https://kerzie.ai/one-window",
     images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
   },
@@ -83,14 +83,14 @@ export default function OneWindowPage() {
           <span className="text-[#B04E2B]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg lg:text-xl max-w-xl leading-relaxed">
-          That is the whole requirement. One document you paste into Claude
-          interviews you and builds your operating system around your answers:
-          one window, one AI that knows your work, turning what you say into
-          finished work you approve.
+          That is the whole requirement. Paste the Foundation into Claude
+          and it interviews you, then builds your operating system around your
+          answers: one window, one AI that knows your work, turning what you
+          say into finished work you approve.
         </p>
         <p className="k-rise k-rise-3 mt-6 text-[#1A1B2E] text-2xl font-semibold">
-          Free<span className="text-[#B04E2B]">.</span> The document, and every
-          upgrade.
+          Free<span className="text-[#B04E2B]">.</span> The whole operating
+          system, and every upgrade.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
           System requirements: a Mac, and a $20 per month Claude subscription.
@@ -110,7 +110,7 @@ export default function OneWindowPage() {
             {
               n: "3",
               t: "hours",
-              d: "from pasting one document to running your work in one window.",
+              d: "from one paste of the Foundation to running your work in one window.",
             },
             {
               n: "2",
@@ -193,7 +193,7 @@ export default function OneWindowPage() {
             </p>
             <p>
               Prompt engineering did not get easier. It got done. It is inside
-              this document, written once, and you get it free. What is left
+              the Foundation, written once, and you get it free. What is left
               for you is the only part that was ever really yours: knowing
               what needs to get done.
             </p>
@@ -261,7 +261,7 @@ export default function OneWindowPage() {
               {
                 n: "2",
                 t: "Run one command on your Mac.",
-                d: "Copied straight off the page, pasted once. The document tells you exactly what to do if the one confusing part goes wrong.",
+                d: "Copied straight off the page, pasted once. The Foundation tells you exactly what to do if the one confusing part goes wrong.",
               },
               {
                 n: "3",
@@ -336,7 +336,7 @@ export default function OneWindowPage() {
               </p>
               <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
                 There is a door built for owners: follow-ups, quotes, the
-                tracker, your marketing. Same document, same price: free.
+                tracker, your marketing. Same OS, same price: free.
               </p>
               <p className="mt-3 text-[#C4633F] font-semibold">
                 The Small Business Setup <span className="k-arrow">&rarr;</span>
@@ -359,19 +359,20 @@ export default function OneWindowPage() {
             <p>
               <span className="text-[#1A1B2E] font-medium">What is the catch?</span>{" "}
               There is not one. You join my newsletter list when you take the
-              document, and you can leave it the same day and keep everything.
+              OS, and you can leave it the same day and keep everything.
               I am building a thousand operators, and this is how I count.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Is this a course?</span>{" "}
-              No. It is a working document. About an hour gets the foundation
-              running; the first-week plan inside paces the rest.
+              No. It is a working operating system your own AI installs.
+              About an hour gets the foundation running; the first-week plan
+              inside paces the rest.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Which AI?</span> Claude,
               specifically the Code tab in the Claude desktop app, on a Claude
               Pro plan at $20 per month. Committing to one setup is what lets
-              the document walk you through the real install, the real click
+              the Foundation walk you through the real install, the real click
               paths, and the real place it breaks.
             </p>
             <p>
@@ -394,8 +395,8 @@ export default function OneWindowPage() {
               <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
                 AI Fast-Track Session
               </Link>{" "}
-              at $999 for up to three people. The document is free either way -
-              the session is for having it installed instead of read.
+              at $999 for up to three people. The OS is free either way - the
+              session is for having it installed beside you instead of alone.
             </p>
           </div>
         </Reveal>
