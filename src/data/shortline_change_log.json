@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-06",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 4,
+      "price_changed": 15,
+      "total": 323,
+      "ran_at": "9:15 AM MT (MacBook, Wade present)",
+      "note": "One vehicle joined the list and four came off, bringing the total to 323, and fifteen vehicles were repriced. The build ran clean on the mini at 7:52 AM but the morning placement lane was down for the third straight day, so the file was placed mid-morning from Wade's own session instead, same numbers. The bigger news is on the stable root page: a new Service Area section went live today. It names the Denver metro communities around the dealership and states plainly that Shortline sells and delivers vehicles throughout Colorado, from Colorado Springs to Fort Collins to Grand Junction. That section exists so an AI assistant answering a shopper anywhere in Colorado, not just Aurora, has Shortline's service area in plain words. First revision to the root page since the two-page architecture went live 8/31. Verified live afterward: both pages serve identical bytes to a plain browser check and an AI crawler check, root revised 2026-09-06, inventory rebuilt 2026-09-06."
+    },
+    {
       "date": "2026-09-05",
       "status": "ok",
       "kind": "refresh",
