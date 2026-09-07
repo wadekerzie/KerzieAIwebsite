@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-07",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 2,
+      "price_changed": 0,
+      "total": 323,
+      "ran_at": "9:00 AM MT",
+      "note": "Two vehicles joined the list and two came off, holding the total at 323, with no price changes today. The file was built on schedule at 7:40 but could not be placed right away: the dealership CMS had signed itself out overnight and the mini's browser connection was down, so placement waited until both were restored mid-morning. Once they were, the update went up automatically and was confirmed live - the inventory file now reads rebuilt 2026-09-07 to both a normal browser and an AI crawler. Nothing about the listings changed during the wait; the delay affected only when the file went up, not what it says."
+    },
+    {
       "date": "2026-09-06",
       "status": "ok",
       "kind": "refresh",
