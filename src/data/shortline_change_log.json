@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-08",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 2,
+      "price_changed": 5,
+      "total": 321,
+      "ran_at": "7:00 AM MT",
+      "note": "No new vehicles joined the list today, two came off, and the total is now 321. Five vehicles were repriced, all of them reductions: a 2024 Nissan Rogue S down to $21,840, a 2023 Nissan Rogue SV to $21,974, a 2025 Nissan Pathfinder SL to $34,147, a 2018 Tesla Model 3 Long Range to $23,840, and a 2019 Ford Mustang EcoBoost Premium to $20,840. Eight more vehicles are in the feed but not yet on the list because the website has not published their detail pages yet; they will appear once it does. The file went up on schedule and was confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-07",
       "status": "ok",
       "kind": "refresh",
