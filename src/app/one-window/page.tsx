@@ -76,9 +76,8 @@ export default function OneWindowPage() {
           One-Window &mdash; your own personal OS. Free.
         </p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.5vw,3.4rem)]">
-          If you can create an account{" "}
-          <span className="k-serif font-normal">and follow instructions,</span>
-          <br />
+          If you can create an account
+          <span className="k-serif font-normal block">and follow instructions,</span>
           you can run your work on AI
           <span className="text-[#B04E2B]">.</span>
         </h1>
