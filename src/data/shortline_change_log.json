@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-09",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 4,
+      "removed": 8,
+      "price_changed": 0,
+      "total": 317,
+      "ran_at": "8:16 AM MT",
+      "note": "Four vehicles joined the list and eight came off, bringing the total to 317. New arrivals include a 2026 GMC Sierra 2500 Pro, a 2026 GMC Canyon 4WD Elevation, a 2019 Volkswagen Atlas, and a 2023 Chrysler 300 Touring L. No price changes today. Nine more vehicles are in the feed but not yet on the list because the website has not published their detail pages yet; they will appear once it does. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-08",
       "status": "ok",
       "kind": "refresh",
