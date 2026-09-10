@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-10",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 3,
+      "price_changed": 1,
+      "total": 314,
+      "ran_at": "7:13 AM MT",
+      "note": "No new vehicles joined the list today; three came off, including a 2023 Chevrolet Camaro LT1, a 2026 GMC Sierra 1500 Denali Ultimate, and a 2024 Toyota RAV4 XLE Premium, bringing the total to 314. One price change: a 2026 Buick Enclave Avenir came down to $62,406. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-09",
       "status": "ok",
       "kind": "refresh",
