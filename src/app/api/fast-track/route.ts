@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
+import { botGuard, clientIp } from "@/lib/botGuard";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -25,6 +26,14 @@ export async function POST(req: NextRequest) {
 
   if (!name || !email || !workflow) {
     return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
+  }
+
+  // Bot guard: honeypot, fill time, random-token fields, dotted Gmail, per-IP
+  // throttle. Rejects answer with the normal success shape on purpose.
+  const guard = botGuard({ body, ip: clientIp(req), nameLikeFields: ["name", "business", "role"] });
+  if (guard.reject) {
+    console.warn("fast-track: bot signature rejected", guard.reasons);
+    return NextResponse.json({ ok: true });
   }
 
   const text = FIELDS.map(([key, label]) => {

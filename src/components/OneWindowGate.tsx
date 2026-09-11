@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 export default function OneWindowGate() {
   const router = useRouter();
   const [error, setError] = useState("");
+  const [mountedAt] = useState(() => Date.now());
   const [sending, setSending] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -26,6 +27,8 @@ export default function OneWindowGate() {
           firstName: String(data.get("firstName") ?? "").trim(),
           lastName: String(data.get("lastName") ?? "").trim(),
           email: String(data.get("email") ?? "").trim(),
+          hp: String(data.get("company_website") ?? ""),
+          elapsed: Date.now() - mountedAt,
         }),
       });
       const json = await res.json();
@@ -41,6 +44,8 @@ export default function OneWindowGate() {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-lg space-y-3">
+      {/* Bot trap: hidden from people, filled by scripts. Never remove. */}
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] w-px h-px opacity-0" />
       <div className="flex flex-col sm:flex-row gap-3">
         <input
           type="text"

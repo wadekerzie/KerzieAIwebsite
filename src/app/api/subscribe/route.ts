@@ -2,6 +2,7 @@
 // tagged so we can tell the subscribe page apart from the magnets in Beehiiv.
 
 import { NextResponse } from "next/server";
+import { botGuard, clientIp } from "@/lib/botGuard";
 
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
@@ -10,6 +11,12 @@ export async function POST(req: Request) {
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 320) {
     return NextResponse.json({ error: "invalid email" }, { status: 400 });
+  }
+
+  const guard = botGuard({ body, ip: clientIp(req) });
+  if (guard.reject) {
+    console.warn("subscribe: bot signature rejected", guard.reasons);
+    return NextResponse.json({ ok: true });
   }
 
   const key = process.env.BEEHIIV_API_KEY;

@@ -7,6 +7,7 @@ const labelClass =
 
 export default function FastTrackIntakeForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [mountedAt] = useState(() => Date.now());
   const [error, setError] = useState("");
   const [sending, setSending] = useState(false);
 
@@ -22,7 +23,7 @@ export default function FastTrackIntakeForm() {
       const res = await fetch("/api/fast-track", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, hp: String(data.company_website ?? ""), elapsed: Date.now() - mountedAt }),
       });
       if (!res.ok) throw new Error("send failed");
       setSubmitted(true);
@@ -48,6 +49,8 @@ export default function FastTrackIntakeForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-7">
+      {/* Bot trap: hidden from people, filled by scripts. Never remove. */}
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] w-px h-px opacity-0" />
       <div className="grid sm:grid-cols-2 gap-7">
         <div>
           <label htmlFor="name" className={labelClass}>

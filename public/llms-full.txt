@@ -691,21 +691,17 @@ URL: https://kerzie.ai/one-window
 
 One-Window | Kerzie AI
 ← KERZIE . AI
-One-Window — your own personal OS, all in one window
+One-Window — your own personal OS. Free.
 
-## I talk. The work gets done .
-One window. One AI that actually knows your work - the job, the projects, the side ventures, the commitments. You say what needs to happen. It drafts, tracks, and stages. You approve. Built by one document you paste into Claude; it interviews you and builds your operating system around your answers.
-RUNNING A BUSINESS?
-There is a door built for owners: follow-ups, quotes, the tracker, your marketing. Same product, same price.
-The Small Business Setup →
-
-$99, one time .
+## If you can create an account and follow instructions, you can run your work on AI .
+That is the whole requirement. Paste the Foundation into Claude and it interviews you, then builds your operating system around your answers: one window, one AI that knows your work, turning what you say into finished work you approve.
+Free . The whole operating system, and every upgrade.
 System requirements: a Mac, and a $20 per month Claude subscription. Windows is not supported yet.
-Get the Setup for $99 → Add the Upgrade Pass for $149 →
+Get One-Window free →
 
 3
 hours
-from pasting one document to running your business in one window.
+from one paste of the Foundation to running your work in one window.
 
 2
 new habits
@@ -721,89 +717,74 @@ gone, replaced by a pane your AI keeps current for you.
 
 A countdown does not stop at one. It lands on zero .
 
-80 Seconds, And The Video Is The Demo
+60 Seconds, And The Video Is The Demo
 That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
 
-01 — Your 16,000 Words
+01 — The Learning Curve Is Gone
+For two years, using AI well meant studying it: which model for what, which tools, prompt this, chain that. People built careers on explaining it. That curve is gone.
+Two skills are left, and you have had both for twenty-five years: create an account with a username and password, and follow instructions.
+The window gives the instructions now, not you. Connect your email: it walks you through it. Connect your calendar: it walks you through it. The hardest thing you will ever do is follow steps to create an account, and you have been doing that since the internet arrived.
+Prompt engineering did not get easier. It got done. It is inside the Foundation, written once, and you get it free. What is left for you is the only part that was ever really yours: knowing what needs to get done.
+
+02 — Your 16,000 Words
 Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
 That is a 60 page document, every day, spoken into the air and gone by dinner. The idea you had in the car is in there. The commitment you made in the hallway is in there. The email you meant to send is in there. All of it said out loud, captured by nobody.
 One-Window exists to catch those words and turn them into finished work. Simpler, not additional.
 
-02 — This Existed In 1965
-In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
-Talk went in. Action came out. That was the whole system. We deleted that layer because it cost a salary, and everybody below the corner office never had it at all.
-That layer is back. This time it costs $99, and everybody gets one.
+03 — What You Get
+Built with you in the first sittings, from an interview about your actual work. Nothing generic.
 
-03 — The Two Habits
-Here is what almost everyone gets wrong about AI: they picture a curriculum. Months of studying, keeping up with model releases, learning which tool does what. That imagined climb is why most people never start.
-The whole learning curve is two habits: record what you say, and give it one place to land.
-Talk to the window at your desk. Talk to your phone between meetings. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your work once, then it knows your projects, your people, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
-And you do not need to wait for a better AI. I run my operation on today's models, and I honestly could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
+- It remembers you. Your work, your people, your decisions - session to session. You never re-explain your business to your own AI.
 
-04 — Why The Product Is A Document
-Most people run AI as a chat window: ask a question, get an answer, lose everything when the thread ends.
-The operators getting real leverage run it as an operating system: one window where the AI reads the state of the work, carries the execution, and remembers.
-Getting from the first mode to the second is a setup problem. Most people never figure the full setup out on their own, or they get 75 percent of the way there and stall.
-This document is the missing piece: a briefing written to your AI, not to you. Your AI reads it and becomes the builder. You answer its questions.
-Four things are on you: install the Claude desktop app, run one command your Mac needs, make a folder, and paste. The document walks you through all four in plain language, including what to do when the one confusing part goes wrong. Everything after that, Claude drives.
+- You talk, the work gets done. Drafts, follow-ups, trackers, plans - staged for your yes. Nothing goes out without you.
 
-05 — What Your AI Builds With You
-In this order, and the order is the point. Nothing gets built before it knows what you actually do.
+- One place to look. The Single Pane: every project you run as a tab on one private page, kept current by your AI, not by you.
 
-- An interview about your work first, before a single file gets created. Nothing in your setup is generic.
+- Say “done W1” and it is done. Every open item has a short ID. You speak in two words; the tracker stays true.
 
-- The one-folder workspace: everything your AI needs to know, on disk, not lost in a chat thread.
+- It works while you sleep. Scheduled tasks run overnight and in the morning the results are waiting: the inbox swept, the day set up.
 
-- Your operating manual, written in your words, loaded every session, with the five standing rules that prevent AI disasters.
+- It spends your AI budget wisely. The expensive model thinks; cheaper ones do the legwork. Your $20 subscription lasts the month.
 
-- A working tracker seeded with what you already told it is falling through the cracks, so it is useful the moment it exists.
+- It closes every day clean. A wrap-up ritual reconciles everything, so tomorrow starts from the truth instead of from memory.
 
-- Your accounts connected one at a time, walked through click by click, and verified. Gmail, Calendar, Drive, and your browser.
+- It cannot go rogue. Standing rules and approval gates are built into the foundation. Sending, spending, and publishing always wait for your yes.
 
-- One painful thing from your own week, done end to end, before the first sitting is over.
+04 — The Whole Door Is Three Steps
+1
+Get a Claude account and the desktop app.
+The $20 per month plan. If you have ever created an account online, you can do this.
 
-- Three routines proposed and ranked from what you said hurts, and the first one built.
+2
+Run one command on your Mac.
+Copied straight off the page, pasted once. The Foundation tells you exactly what to do if the one confusing part goes wrong.
 
-- The Single Pane: every project you run as a tab on one private page - current status, next step, what it's waiting on - reconciled the moment work lands, not at the end of the day.
+3
+Paste the Foundation.
+Your AI reads it and becomes the builder. It interviews you, then it builds. You answer questions and approve.
 
-- Cost-control and model-routing rules, learned the expensive way so you do not have to.
+05 — Why Free
+This used to cost $99, with a $149 pass for the upgrade stream. I retired both.
+Because I want a thousand operators more than I want anybody's $99. Kerzie AI's business is deploying AI for companies. One-Window running your work is the proof, and the proof is the megaphone.
+The upgrades come with it: the Living Pane, the Clean Handoff, the Weekly Tune-Up, the Nightly Dream, and the stream keeps coming as I keep building my own system. If I'm giving this away, I'm giving away the updates too.
+The first hundred operators are counted on the First Thousand page . The seat means what it always meant: you were here before the door was obvious.
 
-06 — Your To-Do List Goes Away
-However you track your own workload today - paper, a tasks app, a list inside Microsoft or Google, the back of your head - the setup replaces it with something better.
-The Single Pane: one private page where every project you run is a tab. Inside each tab, a table of what is true right now, what happens next, and what it is waiting on. On top, your one next step, and every deadline sorted by date.
-It opens in the panel right next to your working window, in any browser, and on your phone. And it does not go stale like every dashboard you have tried, because your AI refreshes it as part of closing every session. You never update it. You just look at it.
-I am looking at mine right now, in the same window I am writing this from. Three ventures, two outreach campaigns, a job pipeline, a content calendar, a YouTube channel. One glance.
-This is the zero the countdown lands on. Three hours, two habits, one window, zero to-do list.
+06 — Tell Me Where To Send It
+Your name and email are the whole price. You get the download page now and the link by email, so it is there whenever you sit down to do the three hours.
 
-07 — No New Hardware
-There is a wave of AI gadgets right now that record your voice and hand you summaries: pins, pendants, pocket recorders. Another device, another app, another subscription.
-The capability is already in your hand. And it is better, because it feeds YOUR AI, with your context, not a vendor's summary app.
-This setup uses the Mac you already own and the AI subscription you already pay for. Nothing new to buy, charge, or wear.
+Send me One-Window You also land on the Kerzie AI newsletter: one operator to another, twice a week. Unsubscribe any time and keep everything.
+RUNNING A BUSINESS?
+There is a door built for owners: follow-ups, quotes, the tracker, your marketing. Same OS, same price: free.
+The Small Business Setup →
 
-08 — The Offer
-This is the simplest true version of everything I write about: one window, technology carrying the load instead of adding to it. The $99 is just the door.
-One-Window: $99, one time. Instant access after checkout.
-The Upgrade Pass: $149 for six months. Then it ends, on purpose.
-Every upgrade I build for my own OS, packaged and pushed to you: at least one upgrade a month for the full six months. The first four are already built - the Living Pane, the Clean Handoff, the Weekly Tune-Up, and the Nightly Dream - and the stream keeps coming as I keep building.
-This pass is designed to end. If you take the upgrades, by month six you will not need to buy improvements, because you will be making your own. That is not a marketing line; it is the product working. I am not building a payment you forget to cancel. I am walking you across the line where you do not need me.
-The Founding Hundred: if you are among the first hundred operators, you do not buy the Upgrade Pass at all. Every upgrade is free, for life - the people whose feedback creates the upgrades never pay for them. Seats are counted on the First Thousand page , along with what founders get and what they give.
-The guarantee: the first sitting ends with one real thing from your week done end to end. If it does not, I refund the $99 and you keep the document.
-Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people, and this document is included for every one of them. Take this $99 off the top and the session runs $900. Split across three people and three hours, that is $100 an hour each to have it installed instead of read.
-
-Get the Setup for $99 → Add the Upgrade Pass for $149 →
-
-09 — Straight Answers
-Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt. You will type one command into your Mac, once, copied straight off the page.
-Is this a course? No. It is a working document. About an hour gets the foundation running; the first-week plan inside paces the rest.
-Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Earlier versions of this were written to work with any assistant. That made it worse. Committing to one setup is what lets the document walk you through the real install, the real click paths, and the real place it breaks.
+07 — Straight Answers
+Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt.
+What is the catch? There is not one. You join my newsletter list when you take the OS, and you can leave it the same day and keep everything. I am building a thousand operators, and this is how I count.
+Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; the first-week plan inside paces the rest.
+Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the Foundation walk you through the real install, the real click paths, and the real place it breaks.
 Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
 Is this real? It is the literal framework my operating system runs on: the same tracker, rules, routines, and capture pipeline that run my ventures every day. Nothing in it is theoretical.
-
-10 — Not Ready? Take The Habit For Free
-Take the Voice Command Center free. Ten minutes of setup, one habit: talk into your phone, and the thought is waiting in your AI the next time you sit down. Works with whatever AI you already use. Fair warning: iPhone only, and the Shortcut setup is fiddly.
-If the habit sticks, you will know exactly what the full window is worth before you spend a dollar.
-
-Get the Voice Command Center free →
+Rather have it built WITH you? Your machine, your accounts, one real workflow shipped before I leave the room: the AI Fast-Track Session at $999 for up to three people. The OS is free either way - the session is for having it installed beside you instead of alone.
 
 ---
 
@@ -816,17 +797,17 @@ One-Window — For Small Business
 
 ## I talk. The work gets done .
 One window. One AI that actually knows your business - your customers, your jobs, your voice. You say what needs to happen. It drafts, chases, tracks, and stages. You approve.
-$99, one time .
+Free . The whole operating system, and every upgrade.
 System requirements: a Mac, and a $20 per month Claude subscription. Windows is not supported yet.
 SETTING IT UP FOR YOURSELF?
-There is a door for running your own work: the job, the projects, the commitments. Same product, same price.
+There is a door for running your own work: the job, the projects, the commitments. Same product, also free.
 The Personal Setup →
 
-Get the Setup for $99 → Add the Upgrade Pass for $149 →
+Get One-Window free →
 
 3
 hours
-from pasting one document to running your business in one window.
+from one paste of the Foundation to running your business in one window.
 
 2
 new habits
@@ -840,9 +821,9 @@ one AI that knows your customers, your jobs, and your voice.
 to-do list
 gone, replaced by a pane your AI keeps current for you.
 
-Put in the three hours yourself for $99, or have them done with you for $999 . Either way the countdown lands on zero .
+Put in the three hours yourself, free, or have them done with you for $999 . Either way the countdown lands on zero .
 
-80 Seconds, And The Video Is The Demo
+60 Seconds, And The Video Is The Demo
 That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
 
 01 — Your 16,000 Words
@@ -853,7 +834,7 @@ One-Window exists to catch those words and turn them into finished work.
 02 — This Existed In 1965
 In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
 Talk went in. Action came out. That was the whole system. We deleted that layer because it cost a salary, and everybody below the corner office never had it at all.
-That layer is back. This time it costs $99, and everybody gets one.
+That layer is back. This time it is free, and everybody gets one.
 
 03 — The Job After The Job
 You do the work all day. Then you do the second job at night: the quote you meant to send, the lead you meant to answer, the invoice you meant to chase, the post you meant to write.
@@ -866,10 +847,10 @@ The whole learning curve is two habits: record what you say, and give it one pla
 Talk to the window at your desk. Talk to your phone from the truck. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your business once, then it knows your customers, your prices, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
 And you do not need to wait for a better AI. I run my companies on today's models, and I honestly could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
 
-05 — What The $99 Buys
+05 — What You Get
 Built in the first sittings, from an interview about your actual business. Nothing generic, and nothing goes out to a customer without your yes.
 
-- The Setup Document. One document you paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.
+- The Foundation. The OS installer: one paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.
 
 - The Follow-Up Engine. Yesterday's quote chased, last week's lead answered, in your words, staged for one-click send. Nothing reaches a customer without your yes.
 
@@ -880,7 +861,7 @@ Built in the first sittings, from an interview about your actual business. Nothi
 - The Voice Command Center. The pocket half of the habit: talk into your phone from the truck or the airport line, and the thought is waiting in the window, processed, when you sit down.
 
 - The First Sitting. Your accounts connected click by click, and one painful thing from your own week done end to end before it is over.
-If I priced this at what it replaced for me, it would be thousands: this summer I deleted Outlook, Excel, and Notion off my machine because the window had taken over the parts I used. It is $99 because I want the number beneath deciding - less than one lost lead, one no-show, one night of the second job.
+If I priced this at what it replaced for me, it would be thousands: this summer I deleted Outlook, Excel, and Notion off my machine because the window had taken over the parts I used. It is free because I want nothing beneath deciding - not even the price of one lost lead.
 
 06 — This Is How I Run Mine
 I am not selling a theory. This framework runs my own companies every day: a home repair business in two markets, an AI consultancy, a golf training brand, and the content that promotes all of them.
@@ -888,14 +869,13 @@ The morning I drafted this page, I talked while setting up a camera, and by the 
 That is not a demo day. That is Tuesday.
 
 07 — The Offer
-One-Window: $99, one time. Instant access after checkout.
-The Upgrade Pass: $149 for six months. Then it ends, on purpose.
-Every upgrade I build for my own OS, packaged and pushed to you: at least one upgrade a month for the full six months. The first four are already built - the Living Pane, the Clean Handoff, the Weekly Tune-Up, and the Nightly Dream - and the stream keeps coming as I keep building.
-This pass is designed to end. If you take the upgrades, by month six you will not need to buy improvements, because you will be making your own. That is not a marketing line; it is the product working. I am not building a payment you forget to cancel. I am walking you across the line where you do not need me.
-The guarantee: the first sitting ends with one real thing from your week done end to end. If it does not, I refund the $99 and you keep the document.
-Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people, and this document is included for every one of them.
+One-Window: free. The whole operating system, every capability.
+The upgrades: free too. All of them.
+Every upgrade I build for my own OS, packaged and pushed to you: the Living Pane, the Clean Handoff, the Weekly Tune-Up, the Nightly Dream, and the stream keeps coming as I keep building. If I'm giving this away, I'm giving away the updates too.
+Why free? Because I want a thousand operators more than I want anybody's $99. Kerzie AI's business is deploying AI for companies. One-Window running your business is the proof, and the proof is the megaphone.
+Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people. The OS is free either way - the session is for having it installed beside you instead of alone.
 
-Get the Setup for $99 → Add the Upgrade Pass for $149 →
+Get One-Window free →
 
 08 — Keep What Already Works
 Already run QuickBooks, a scheduling tool, a point of sale? Keep them. This is not another system to migrate into.
@@ -904,9 +884,9 @@ No new hardware either. It runs on the Mac you own and the AI subscription that 
 
 09 — Straight Answers
 Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt. You will type one command into your Mac, once, copied straight off the page.
-Is this a course? No. It is a working document. About an hour gets the foundation running; the first-week plan inside paces the rest.
+Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; the first-week plan inside paces the rest.
 Will it send things to my customers? Not without you. Everything customer-facing is drafted for your review and sent by you. That rule is built into the setup itself.
-Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the document walk you through the real install, the real click paths, and the real place it breaks.
+Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the Foundation walk you through the real install, the real click paths, and the real place it breaks.
 Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
 
 10 — Not Ready? Take The Habit For Free
@@ -1576,7 +1556,7 @@ WHAT FOUNDERS GET
 
 - The downloads page, free. Every setup guide we sell, included from day one.
 
-- A founding number - Operator #12 of 100 - stamped in your setup document.
+- A founding number - Operator #12 of 100 - stamped in your Foundation.
 
 - Your name, your business, and your link on this page, if you want them here.
 
@@ -1606,7 +1586,7 @@ I spent thirty years watching technology shifts sort people into two groups, and
 A thousand is not a business plan. It is the number where a group of people becomes proof that nobody else needs permission.
 
 Walk Through
-The door is the One-Window : $99, one document, about three hours to a running system. Not ready to spend anything? Take the free Voice Command Center and start the habit.
+The door is the One-Window : free, one paste of the Foundation, about three hours to a running system. Want just the pocket habit first? Take the free Voice Command Center and start the habit.
 
 Get the Setup →
 

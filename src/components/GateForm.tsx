@@ -15,6 +15,7 @@ export default function GateForm({
 }) {
   const router = useRouter();
   const [error, setError] = useState("");
+  const [mountedAt] = useState(() => Date.now());
   const [sending, setSending] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -27,7 +28,7 @@ export default function GateForm({
       const res = await fetch("/api/gate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, magnet }),
+        body: JSON.stringify({ email, magnet, hp: String(new FormData(form).get("company_website") ?? ""), elapsed: Date.now() - mountedAt }),
       });
       const data = await res.json();
       if (!res.ok || !data.redirect) throw new Error("gate failed");
@@ -42,6 +43,8 @@ export default function GateForm({
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg">
+      {/* Bot trap: hidden from people, filled by scripts. Never remove. */}
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] w-px h-px opacity-0" />
       <input
         type="email"
         name="email"

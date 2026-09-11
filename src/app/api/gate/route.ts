@@ -3,6 +3,7 @@
 // page. One list, many doors.
 
 import { NextResponse } from "next/server";
+import { botGuard, clientIp } from "@/lib/botGuard";
 
 // The magnet slug doubles as the Beehiiv utm_source, so it stays "capture-kit"
 // even though the product is now the Mobile Capture Kit. Renaming it would
@@ -31,6 +32,12 @@ export async function POST(req: Request) {
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 320) {
     return NextResponse.json({ error: "invalid email" }, { status: 400 });
+  }
+
+  const guard = botGuard({ body, ip: clientIp(req), nameLikeFields: ["firstName", "lastName"] });
+  if (guard.reject) {
+    console.warn("gate: bot signature rejected", guard.reasons);
+    return NextResponse.json({ ok: true, redirect });
   }
 
   const key = process.env.BEEHIIV_API_KEY;

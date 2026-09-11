@@ -7,17 +7,19 @@ import { useState } from "react";
 export default function SubscribeForm({ source }: { source?: string }) {
   const [state, setState] = useState<"idle" | "sending" | "done">("idle");
   const [error, setError] = useState("");
+  const [mountedAt] = useState(() => Date.now());
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setState("sending");
     setError("");
-    const email = String(new FormData(e.currentTarget).get("email") ?? "").trim();
+    const fd = new FormData(e.currentTarget);
+    const email = String(fd.get("email") ?? "").trim();
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source }),
+        body: JSON.stringify({ email, source, hp: String(fd.get("company_website") ?? ""), elapsed: Date.now() - mountedAt }),
       });
       if (!res.ok) throw new Error("subscribe failed");
       setState("done");
@@ -47,6 +49,8 @@ export default function SubscribeForm({ source }: { source?: string }) {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-lg">
+      {/* Bot trap: hidden from people, filled by scripts. Never remove. */}
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] w-px h-px opacity-0" />
       <div className="flex flex-col sm:flex-row gap-3">
         <label htmlFor="subscribe-email" className="sr-only">
           Email address
