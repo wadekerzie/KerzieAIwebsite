@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-11",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 2,
+      "price_changed": 4,
+      "total": 313,
+      "ran_at": "6:53 AM MT",
+      "note": "One vehicle joined the list today, a 2026 GMC Yukon XL 1500 Elevation at $86,349; two came off, a 2020 Chevrolet Silverado 1500 LT and a 2023 Buick Envision Avenir, bringing the total to 313. Four 2026 GMC Acadias were repriced, all reductions, ranging from about $1,400 to $2,800 off. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-10",
       "status": "ok",
       "kind": "refresh",
