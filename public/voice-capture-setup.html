@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Voice Capture Setup</title>
+  <meta property="og:title" content="Voice Capture Setup">
+  <meta property="og:description" content="Phone to Claude in two taps, plus Google Meet calls. The walkthrough and the instruction set.">
+  <meta property="og:image" content="https://kerzie.ai/og/brand-card.jpg">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :root { --ground:#faf8f5; --card:#ffffff; --ink:#1a1a2e; --muted:#6b6560; --accent:#7B9FE8; --accent-deep:#5A7FD6; --line:#e8e2da; --warn:#b3541e; --warnbg:#fff3ea; color-scheme: light; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--ground); color:var(--ink); font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif; font-size:16px; line-height:1.55; padding:40px 20px 64px; }
+    .wrap { max-width:760px; margin:0 auto; }
+    .eyebrow { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:12px; }
+    h1 { font-family:'Instrument Serif',Georgia,serif; font-weight:400; font-size:clamp(36px,6vw,52px); line-height:1.05; margin-bottom:12px; }
+    .lede { font-size:18px; color:var(--muted); max-width:58ch; margin-bottom:26px; }
+    nav { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:30px; }
+    nav a { font-size:13px; font-weight:600; color:var(--accent-deep); background:#fff; border:1px solid var(--line); border-radius:999px; padding:6px 12px; text-decoration:none; }
+    h2 { font-family:'Instrument Serif',Georgia,serif; font-weight:400; font-size:30px; margin:44px 0 6px; }
+    h3 { font-size:17px; font-weight:700; margin:22px 0 8px; }
+    p { margin:0 0 12px; max-width:66ch; }
+    ol, ul { margin:0 0 14px 22px; max-width:66ch; }
+    li { margin:0 0 8px; }
+    .time { font-size:13px; color:var(--muted); font-weight:600; margin-bottom:10px; }
+    .trap { background:var(--warnbg); border-left:3px solid var(--warn); padding:10px 14px; border-radius:0 8px 8px 0; margin:10px 0 14px; max-width:66ch; font-size:15px; }
+    .trap b { color:var(--warn); }
+    .check { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:10px 0 16px; }
+    .check label { display:flex; gap:10px; align-items:flex-start; padding:7px 0; border-top:1px solid var(--line); cursor:pointer; }
+    .check label:first-of-type { border-top:0; }
+    .check input { margin-top:5px; }
+    .block { position:relative; background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 16px 14px; margin:10px 0 16px; }
+    .block pre { white-space:pre-wrap; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13px; line-height:1.5; color:var(--ink); }
+    .copy { position:absolute; top:10px; right:10px; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:7px 11px; font:600 12.5px 'Inter',sans-serif; cursor:pointer; }
+    .copy:hover { background:var(--accent-deep); }
+    .label { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 6px; }
+    code { font-family:ui-monospace,Menlo,monospace; font-size:13.5px; background:#fff; border:1px solid var(--line); border-radius:5px; padding:1px 5px; }
+    footer { margin-top:44px; padding-top:16px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); }
+    a { color:var(--accent-deep); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Kerzie AI · working notes · not indexed</div>
+  <h1>Voice Capture Setup</h1>
+  <p class="lede">Phone to Claude in two taps, and Google Meet calls without taking notes. Part A is the phone. Part B is the Mac. Part C is the instruction set that goes into his Claude. Part D is the calls. Part E is the walkthrough checklist for the meeting.</p>
+  <nav>
+    <a href="#a">A · iPhone</a><a href="#b">B · Mac</a><a href="#c">C · His Claude</a><a href="#d">D · Google Meet via Wispr</a><a href="#e">E · Walkthrough</a>
+  </nav>
+
+  <h2 id="a">A · The phone, four parts</h2>
+  <p class="time">About 10 minutes, once. Assumes iPhone and iCloud Drive turned on with the same Apple ID as the Mac.</p>
+
+  <h3>A1 · Voice Memos transcripts on</h3>
+  <ol>
+    <li>Open <strong>Voice Memos</strong>, record a 10-second test.</li>
+    <li>Tap the recording, then the <strong>transcript icon</strong> (quotation marks) or the three dots. Words as text means done.</li>
+    <li>No transcript: Settings, Voice Memos, transcription on. Very old iPhones need an iOS update.</li>
+  </ol>
+
+  <h3>A2 · The Capture Inbox folder</h3>
+  <ol>
+    <li>Open <strong>Files</strong>, go to <strong>iCloud Drive</strong>, the top level, not inside any app's folder.</li>
+    <li>Three dots, <strong>New Folder</strong>, name it exactly <strong>Capture Inbox</strong>.</li>
+  </ol>
+  <p>That folder now exists on his Mac too, under iCloud Drive.</p>
+
+  <h3>A3 · The two-tap Shortcut</h3>
+  <p>One shortcut, several actions stacked. Tap the plus sign once, then stay on that screen.</p>
+  <ol>
+    <li>Open <strong>Shortcuts</strong>, tap <strong>+</strong>. The only time you tap plus.</li>
+    <li><strong>Add Action</strong>, search <strong>Get Clipboard</strong>, add it.</li>
+    <li><strong>Add Action</strong>, search <strong>Format Date</strong>, add it.</li>
+  </ol>
+  <div class="trap"><b>Trap 1.</b> Because it sits under Get Clipboard, this action auto-fills as "Format <b>Clipboard</b>" with a blue Clipboard token. Left alone it tries to turn spoken words into a date and fails with "couldn't convert from Text to Date." Tap the blue token, choose <b>Current Date</b>, so it reads "Format Current Date." Then Format: <b>Custom</b>, and type exactly <code>yyyy-MM-dd_HHmm</code></div>
+  <ol start="4">
+    <li><strong>Add Action</strong>, search <strong>Save File</strong>, add it.</li>
+  </ol>
+  <div class="trap"><b>Trap 2, what gets saved.</b> The card auto-fills as "Save <b>Formatted Date</b>," which saves the timestamp instead of the words. Tap that blue token and switch it to <b>Clipboard</b>.</div>
+  <div class="trap"><b>Trap 3, where it saves.</b> It defaults to the Shortcuts folder. Expand the action: Service <b>iCloud Drive</b>, Ask Where to Save <b>OFF</b>, Destination Path: type <code>/Capture Inbox/</code>, then tap the blue <b>Formatted Date</b> variable bubble (do not type brackets), then type <code>.txt</code> after it.</div>
+  <ol start="5">
+    <li>Name the shortcut <strong>Capture</strong>, pick an icon.</li>
+    <li>Three dots, <strong>Add to Home Screen</strong>.</li>
+  </ol>
+
+  <h3>A4 · The daily flow</h3>
+  <ol>
+    <li>Thought arrives. Open Voice Memos, record, talk until done.</li>
+    <li>Stop. Tap the transcript, three dots, <strong>Copy Transcript</strong>.</li>
+    <li>Tap the <strong>Capture</strong> icon.</li>
+  </ol>
+  <p>The thought is a dated text file in Capture Inbox, on the Mac before he gets home.</p>
+  <div class="check">
+    <div class="label">Fix-it list</div>
+    <label><input type="checkbox"> "Conversion Error, couldn't convert from Text to Date": Trap 1.</label>
+    <label><input type="checkbox"> File contains only a date, no words: Trap 2.</label>
+    <label><input type="checkbox"> Files land in the Shortcuts folder: Trap 3.</label>
+    <label><input type="checkbox"> Nothing shows on the Mac: wait a minute; same Apple ID on both; iCloud Drive on for the Mac in System Settings, Apple Account, iCloud.</label>
+    <label><input type="checkbox"> Typos in the transcript: fine. Claude reads through them.</label>
+  </div>
+
+  <h2 id="b">B · The Mac, two parts</h2>
+  <p class="time">About 5 minutes.</p>
+  <h3>B1 · Find the folder</h3>
+  <p>In Finder, iCloud Drive, <strong>Capture Inbox</strong>. Its real path, which his Claude needs:</p>
+  <div class="block"><button class="copy" onclick="cp(this,'p1')">Copy</button><pre id="p1">~/Library/Mobile Documents/com~apple~CloudDocs/Capture Inbox</pre></div>
+  <p>Test it: record a memo on the phone, copy transcript, tap Capture, then open that folder on the Mac. A <code>.txt</code> named like <code>2026-09-11_1342.txt</code> should be there within a minute.</p>
+  <h3>B2 · Let Claude see it</h3>
+  <ul>
+    <li><strong>Claude Code (terminal or the Code tab in the desktop app):</strong> add the folder as an additional working directory in the project's settings, or open Claude from a folder that can reach it. Easiest: in his OS project's <code>.claude/settings.json</code>, add the path above under <code>additionalDirectories</code>.</li>
+    <li><strong>Claude desktop chat with file access:</strong> point it at the same folder when it asks for a directory.</li>
+  </ul>
+
+  <h2 id="c">C · The instruction set for his Claude</h2>
+  <p class="time">Paste two things. About 3 minutes.</p>
+  <h3>C1 · Into his CLAUDE.md (or project instructions)</h3>
+  <div class="block"><button class="copy" onclick="cp(this,'p2')">Copy</button><pre id="p2">## Voice capture inbox
+
+My phone drops voice memo transcripts as .txt files into:
+~/Library/Mobile Documents/com~apple~CloudDocs/Capture Inbox
+(ignore the "processed" subfolder inside it)
+
+When I say "process my inbox" (or "check transcripts", "sweep the memos", "did my memo come through"):
+
+1. Read every .txt in the inbox root. Newest last. Never skip one; a file silently skipped is a thought I think I saved and did not.
+2. Dedupe: keep a ledger at captures/inbox_ledger.json (sha256 of the file, filename, date handled, what happened). If the hash is already there, move the file to processed/ and stop; I re-run the shortcut while testing.
+3. For each file, work out what I actually asked for or decided, connect it to what I am working on, and DO IT. Research it, draft it, build it, look it up, fix it. Take it as far as you can without me. "Capturing is not approval" only applies to the six gated actions below; everything else runs.
+4. Stop and ask me about exactly six things: sending a message, publishing anything, spending money, contacting a person, changing something that is live, committing me legally or financially. When you stop, stop loudly: name the one thing you need from me and what is already done behind it.
+5. Write a capture file for anything worth keeping: captures/processed/cap_YYYYMMDD_short-slug.md with a summary, what changed where, and a final section headed "## Requests I made in this transcript" listing EVERY instruction I gave, one line each, marked DONE / BLOCKED ON ME (with the exact question) / PARKED (with the reason). A request that is not written down vanished.
+6. Move each handled file into the processed/ subfolder, after its capture exists, so the inbox is empty when you finish.
+7. Report in short bullets: what came in, what you DID about it, the one or two decisions only I can make. Filing details last.
+
+Rules: a memo that is only a test or an accident is discarded (ledger entry, no capture). When unsure whether something is noise, process it. Repetition is a signal, not noise: if I say something I have said before, it is becoming load-bearing.</pre></div>
+
+  <h3>C2 · Save as a skill file, so the recipe survives</h3>
+  <p>File: <code>.claude/skills/process-capture-inbox/SKILL.md</code> in his OS project.</p>
+  <div class="block"><button class="copy" onclick="cp(this,'p3')">Copy</button><pre id="p3">---
+name: process-capture-inbox
+description: Sweep the iCloud Capture Inbox and process every new voice memo transcript - dedupe, act on every request, write a capture, archive. Use whenever I say to process my inbox, check transcripts, sweep the memos, or ask what happened to a memo.
+---
+
+# Process capture inbox
+
+Inbox: ~/Library/Mobile Documents/com~apple~CloudDocs/Capture Inbox (root only; processed/ is the archive)
+Ledger: captures/inbox_ledger.json (JSON array: sha256, original_filename, handled_at, disposition, capture_id, note)
+Dispositions: processed | duplicate | discarded
+
+For each .txt in the inbox root:
+1. Hash and dedupe against the ledger. Duplicate: move to processed/, ledger entry, stop.
+2. Judge substance. Test or accident: ledger "discarded", move to processed/, no capture. Unsure: process it.
+3. Read it twice. First pass: what should exist because I said this (a draft, a decision, a task, a change to a file)? Second pass, literal: sweep for imperatives - "go look at", "I want you to", "check", "find out", "pull", "review", "draft", "build" - and list every one.
+4. EXECUTE everything on that list that is not one of the six gated actions (send, publish, spend, contact a person, change something live, legal or financial commitment). Research, drafts, files, lookups, fixes all run to completion.
+5. Write captures/processed/cap_YYYYMMDD_slug.md (date from the file's timestamp, not today): summary, what changed where, and "## Requests I made in this transcript" with DONE / BLOCKED ON ME + exact question / PARKED + reason on every line.
+6. Move the file to processed/ only after the capture exists.
+7. Report: recommendations first (what my words should turn into), then decisions I owe as concrete questions, then filing details in one line. If the inbox was empty, say so in one line.
+
+Never reconstruct a filename by typing it; iterate the directory. Never store the raw transcript anywhere but this folder unless I say so.</pre></div>
+
+  <h2 id="d">D · Google Meet calls, through Wispr Flow</h2>
+  <p class="time">About 15 minutes the first time. This is the piece that makes call notes disappear as a chore.</p>
+  <h3>D1 · Install and turn on</h3>
+  <ol>
+    <li>Install <strong>Wispr Flow</strong> on the Mac (wisprflow.ai). Sign in.</li>
+    <li>In Wispr Flow, open the <strong>Notetaker</strong> tab. Turn Notetaker on. Give it microphone and screen-audio permission when macOS asks.</li>
+    <li>Turn on <strong>Cloud Sync</strong> in Wispr's settings. The Claude connector needs it. Without it the connector sees nothing.</li>
+    <li>Connect the calendar Wispr offers, so meetings get titles and attendee lists automatically.</li>
+  </ol>
+  <div class="trap"><b>The boundary.</b> Wispr only hears the Mac. A Google Meet joined on the Mac is captured; a call taken on the iPhone is not. For phone calls, the voice memo motion in Part A is the capture: record a memo right after the call.</div>
+  <h3>D2 · Connect it to his Claude</h3>
+  <ol>
+    <li>Claude desktop app: Settings, <strong>Connectors</strong>, add <strong>Wispr Flow</strong>, approve the sign-in. It is read-only: meetings, notes, summaries, transcripts.</li>
+    <li>Test: join any Meet for two minutes with Notetaker on. Then in Claude: "what meetings does Wispr have from today?"</li>
+  </ol>
+  <h3>D3 · Into his CLAUDE.md</h3>
+  <div class="block"><button class="copy" onclick="cp(this,'p4')">Copy</button><pre id="p4">## Calls (Wispr Flow Notetaker)
+
+Wispr Flow records and transcribes every call on my Mac (Google Meet, Zoom, Teams, FaceTime). The Wispr Flow connector in Claude can read them. Nothing files itself: I ask, then you route.
+
+When I say "process the [name] call" or "what did I commit to on that call":
+1. search_meetings (no query = newest first; use a topic or a day when I name one). Check has_transcript.
+2. get_meeting with view_transcript. ALWAYS read the transcript, not just the summary. The summary drops details; numbers, commitments and exact wording come from the transcript. Follow the continuation offset until you have all of it.
+3. Timestamps come back in UTC. Convert to my local time before you write or show anything.
+4. Wispr labels only me by name. Everyone else is "Speaker 1/2/3." Use the meeting's attendee list and the content to identify speakers, and state your confidence per speaker. Never guess at a name you cannot support.
+5. Sweep my first-person lines twice: "I'll", "I will", "I'm going to", "let me", "I can send". Mark each as a real promise to a person, or me thinking out loud. Most are the latter.
+6. Route like a voice memo: what is new, what becomes a task, what is a decision I owe, what is noise. Do not create tasks from Wispr's own "next steps" list; it guesses at owners.
+7. Write captures/processed/cap_YYYYMMDD_slug.md with the Wispr meeting id in it. Report in bullets: what was new, what got filed where, what I owe someone.
+
+Never store a call transcript anywhere outside Wispr and the capture file. Calls with people's private business stay local.</pre></div>
+
+  <h2 id="e">E · The walkthrough, in order, at the meeting</h2>
+  <p class="time">About 35 minutes. Wade drives the phone, Hunter's hands on the Mac.</p>
+  <div class="check">
+    <label><input type="checkbox"> 1. On his iPhone: Settings, Apple Account, iCloud, iCloud Drive is ON. Same Apple ID as the Mac.</label>
+    <label><input type="checkbox"> 2. Voice Memos test recording, transcript shows (A1).</label>
+    <label><input type="checkbox"> 3. Files, iCloud Drive, New Folder "Capture Inbox" (A2).</label>
+    <label><input type="checkbox"> 4. Shortcuts: Get Clipboard, Format Date (Trap 1: Current Date, Custom, yyyy-MM-dd_HHmm), Save File (Trap 2: save Clipboard; Trap 3: iCloud Drive, Ask Where OFF, /Capture Inbox/ + Formatted Date + .txt). Name it Capture. Add to Home Screen (A3).</label>
+    <label><input type="checkbox"> 5. Real test: record a memo about his actual work, Copy Transcript, tap Capture (A4).</label>
+    <label><input type="checkbox"> 6. On the Mac: Finder, iCloud Drive, Capture Inbox, the file is there (B1).</label>
+    <label><input type="checkbox"> 7. Paste C1 into his CLAUDE.md. Create the skill file from C2. Add the folder to his Claude's working directories (B2).</label>
+    <label><input type="checkbox"> 8. In his Claude: "process my inbox." Watch it read the memo back, connected to his work, with the requests list at the bottom.</label>
+    <label><input type="checkbox"> 9. Wispr Flow: install, Notetaker on, Cloud Sync on, calendar connected (D1). Connector added in Claude (D2). Paste D3 into CLAUDE.md.</label>
+    <label><input type="checkbox"> 10. Two-minute test Meet with Notetaker on. In his Claude: "what meetings does Wispr have from today?" Then "process that call."</label>
+  </div>
+  <p>Leave him with the habit, not the setup: talk into the phone, two taps, and say "process my inbox" when he sits down. Calls take care of themselves.</p>
+
+  <footer>Source of record: the Voice Command Center kit (kerzie.ai/free/mobile-capture-kit) and Wade's own transcript-capture-processor and wispr-call-routing skills, generalized. Wade's own inbox path differs because his shortcut predates the kit; Hunter's uses the kit's path. Not indexed. Wade Kerzie, Kerzie AI Solutions.</footer>
+</div>
+<script>
+function cp(btn,id){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy',1500)})}
+</script>
+</body>
+</html>
