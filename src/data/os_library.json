@@ -13,8 +13,8 @@
    "name": "The Ultimate Optimizer",
    "was": "release",
    "file": "personal-os-ultimate-optimizer.md",
-   "description": "The one that carries the rest. A hard ceiling on the briefing file your AI reads at every session start (20 KB, 3,000 words), a memory index that is pointers only, retired sections demoted WHOLE to a grep-able cold shelf where nothing is ever deleted, long reads handed to a cheap helper model instead of running in front of you at full price, and a weekly pass that measures BOTH halves of what a new session reads: your own files, and the tool names your connected apps carry. Your connectors stay connected - reconnecting them is the real cost, and the names are not the lever. The receipt: the OS this came from took its briefing file from 37.6 KB to 20.0 KB and the repo half of session start from about 21,700 to about 14,400 tokens in one day, and lost nothing.",
-   "note": "Works on every plan. Highly recommended. If you installed The Weekly Tune-Up, Fresh Start, or Cold Storage earlier, this one carries all three; your AI folds them on its own."
+   "description": "The one that makes your OS run lean without you touching any of the machinery. Every session starts with your AI reading a stack of files before you type a word, and that stack only grows. It's why sessions fill up early and the weekly meter runs down faster than the work should cost. This puts a ceiling on that stack, moves anything retired to a shelf where it's never deleted, and keeps big reads out of your session. Your AI keeps everything it's ever known. It just stops carrying all of it to work every morning. Longer sessions, more room in your week, nothing lost. Receipt: on my own OS, the file my AI reads at every start dropped to nearly half its size in one day, and not one sentence was lost.",
+   "note": "Works on every plan. Highly recommended. If you installed The Weekly Tune-Up, Fresh Start, or Cold Storage before, this one includes all three. Your AI handles that."
   },
   {
    "slug": "quick-start",
