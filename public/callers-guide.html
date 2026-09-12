@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Warm Callback Talking Points</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kerzie AI">
+  <meta property="og:title" content="Warm Callback Talking Points">
+  <meta property="og:description" content="For Jane and Juvi. The warm callback sprint: what to get across, what they might say, the rules, the result codes.">
+  <meta property="og:image" content="https://kerzie.ai/og/brand-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style>
+:root{ color-scheme: light;
+  --bg:#F8F7F3; --surface:#FFFFFF; --ink:#1C1F1D; --muted:#5C6360;
+  --rule:#DDDED8; --accent:#6B4FB8; --accent-ink:#523B93; --accent-soft:#EFEAF9;
+  --good:#1F5E3D; --good-soft:#E6F1EA; --warn:#7A5310; --warn-soft:#F8F0DC;
+  --top-rule:#C9BCE9; --th-bg:#F2F1EC;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16181A; --surface:#1F2225; --ink:#ECEBE6; --muted:#A3A8A4;
+    --rule:#33373B; --accent:#A48BEA; --accent-ink:#C3B2F3; --accent-soft:#2A2540;
+    --good:#7FC9A0; --good-soft:#1E2E26; --warn:#E0B36A; --warn-soft:#332A18;
+    --top-rule:#4A4070; --th-bg:#25282C;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16181A; --surface:#1F2225; --ink:#ECEBE6; --muted:#A3A8A4;
+  --rule:#33373B; --accent:#A48BEA; --accent-ink:#C3B2F3; --accent-soft:#2A2540;
+  --good:#7FC9A0; --good-soft:#1E2E26; --warn:#E0B36A; --warn-soft:#332A18;
+  --top-rule:#4A4070; --th-bg:#25282C;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7}
+.page{max-width:800px;margin:0 auto;padding:44px 26px 80px}
+header{border-bottom:4px solid var(--accent);padding-bottom:18px;margin-bottom:26px}
+.eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);
+  margin:0 0 8px;font-weight:700}
+h1{font-size:38px;line-height:1.12;margin:0 0 10px;letter-spacing:-.01em}
+.lede{font-size:19px;margin:0 0 10px;color:var(--ink)}
+.meta{font-size:13.5px;color:var(--muted);margin:0}
+h2{font-size:22px;margin:36px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+h3{font-size:16.5px;margin:22px 0 4px;color:var(--accent-ink)}
+p{margin:0 0 12px;max-width:68ch}
+ul,ol{margin:0 0 14px;padding-left:22px;max-width:68ch}
+li{margin:0 0 8px}
+li::marker{color:var(--accent)}
+.box{background:var(--surface);border:1px solid var(--rule);border-radius:10px;
+  padding:14px 18px;margin:14px 0;max-width:70ch}
+.box.top{background:var(--accent-soft);border-color:var(--top-rule)}
+.ex{border-left:3px solid var(--accent);background:var(--surface);
+  padding:10px 16px;margin:8px 0 14px;max-width:70ch;border-radius:0 8px 8px 0}
+.ex .lbl{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);
+  font-weight:700;display:block;margin-bottom:4px}
+.ex p{margin:0 0 6px;font-size:16.5px}
+.ex p:last-child{margin-bottom:0}
+.idea{font-weight:600}
+table{width:100%;border-collapse:collapse;background:var(--surface);
+  border:1px solid var(--rule);border-radius:10px;overflow:hidden;font-size:15.5px;margin:10px 0 16px}
+th,td{text-align:left;padding:10px 14px;border-top:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  font-weight:700;border-top:0;background:var(--th-bg)}
+td.code{font-family:"SF Mono",Menlo,Consolas,monospace;font-weight:700;
+  color:var(--accent-ink);white-space:nowrap}
+.two{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0 16px}
+.two>div{flex:1 1 300px;border:1px solid var(--rule);border-radius:10px;padding:12px 18px;background:var(--surface)}
+.two h3{margin-top:0}
+.use{border-left:4px solid var(--good)}
+.avoid{border-left:4px solid var(--warn)}
+.use h3{color:var(--good)}
+.avoid h3{color:var(--warn)}
+footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:14px;
+  font-size:13px;color:var(--muted)}
+@media print{
+  body{background:#fff;font-size:12.5pt;line-height:1.5}
+  .page{padding:0;max-width:100%}
+  h2{page-break-after:avoid}
+  .ex,.box,table,.two>div{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <p class="eyebrow">The Back Cover &middot; Jane and Juvi</p>
+  <h1>Warm Callback Sprint: Talking Points</h1>
+  <p class="lede">Talking points, not a script. You know the message. You say it in your own words.</p>
+  <p class="meta">Tuesday September 15 and Wednesday September 16. Jane calls Texas, Juvi calls Colorado. Working sheet: the Callback 9-15 tab.</p>
+</header>
+
+<div class="box top">
+  <p><strong>The sprint in three lines.</strong></p>
+  <ul>
+    <li>102 businesses are open to call. Jane has 39 in Texas, Juvi 63 in Colorado.</li>
+    <li>$5 an hour, plus $50 for every meeting that actually happens.</li>
+    <li>Three attempts per business across the two days. One voicemail only, on attempt two.</li>
+  </ul>
+</div>
+
+<h2>Why we are calling</h2>
+<ul>
+  <li><strong>Every business on your list already got Wade's email.</strong> It showed how that business shows up when a person asks ChatGPT, Claude, or Perplexity for a business like theirs in their city.</li>
+  <li><strong>This is a friendly follow-up, not a cold call.</strong> The door is open. You are continuing something, not starting it.</li>
+  <li><strong>The goal is 15 minutes on the calendar.</strong> Wade's calendar for Texas, Aaron's for Colorado. That is the win.</li>
+  <li><strong>In person first, screen share second.</strong> Offer the visit. If a visit is hard, offer the screen. Both are good.</li>
+  <li><strong>You earn $50 when that meeting happens.</strong> Whoever made the booking call, and whether or not Wade sells anything.</li>
+</ul>
+
+<h2>What to know before you dial</h2>
+<p>Open the Callback 9-15 tab and read two columns before every call.</p>
+<ul>
+  <li><strong>SPOKE TO</strong> is the person a caller already talked to there. Say this name out loud. It is the reason nobody asks "who are you."</li>
+  <li><strong>DECISION MAKER</strong> is the person Wade emailed. That is who you ask for.</li>
+  <li>If SPOKE TO is blank, there is no prior call on record. Go straight to the email.</li>
+  <li><strong>Never say a date.</strong> Say "recently sent you some information." It is true for every row, and you never have to look anything up.</li>
+</ul>
+
+<h2>The five things to get across</h2>
+<p>Say these in your own words, in this order. Cover all five and the call was done well, whatever words you used.</p>
+<ol>
+  <li><strong>You called before, and you spoke to a real person there.</strong> Give that name. It turns a strange call into a familiar one.</li>
+  <li><strong>Wade sent the decision maker information about how the business shows up in AI search.</strong> Be specific: how they show up when someone asks ChatGPT for a dentist in Aurora, or a restaurant in McKinney. Use their category and their city.</li>
+  <li><strong>Wade is local, and he would like 15 minutes to show it on his screen.</strong> He shows. They decide.</li>
+  <li><strong>Offer two open times.</strong> Wade posts four Texas slots each morning, Aaron four Colorado slots. Offer two. Two choices is easy. Four is a delay.</li>
+  <li><strong>Confirm the email and the phone, and say Wade confirms today.</strong> Read both back out loud. A booking with a wrong email is not a booking.</li>
+</ol>
+<p><strong>Colorado only:</strong> Aaron is right here in the Denver metro and can come by in person. Say that. It is your strongest line, because it is true and local. Wade takes the Colorado screen share meetings if Aaron cannot.</p>
+
+<h2>What they might say, and the idea behind your answer</h2>
+
+<h3>1. "What is this regarding?"</h3>
+<p class="idea">Idea: answer plainly, then ask in the same breath. Do not explain the technology.</p>
+<div class="ex"><span class="lbl">Example, not a line to read</span>
+<p>Wade sent the owner information about how the business shows up in AI search. I have his calendar here. I am calling to set 15 minutes for him to come by and show it. Is [decision maker] in today?</p></div>
+
+<h3>2. "Just send it again."</h3>
+<p class="idea">Idea: a yes to a resend, not a no. Take the address, then still ask for the 15 minutes.</p>
+<div class="ex"><span class="lbl">Examples</span>
+<p>Wade already sent it. I can have him resend it today. What is the best address?</p>
+<p>Can I also hold 15 minutes for him next week? If the email answers everything, you can cancel.</p></div>
+
+<h3>3. "Not interested," from the front desk</h3>
+<p class="idea">Idea: the front desk is not the decision maker. Be gracious, end the call, try once more at a different time of day.</p>
+<div class="ex"><span class="lbl">Example</span>
+<p>Understood. Thank you. I will make a note.</p></div>
+
+<h3>4. "Not interested," from the decision maker</h3>
+<p class="idea">Idea: final. No second try, no persuading. Thank them and log it.</p>
+<div class="ex"><span class="lbl">Example</span>
+<p>Understood. Thank you for your time.</p></div>
+
+<h3>5. "Call me later."</h3>
+<p class="idea">Idea: a good outcome. Get a real day and a real time, and write it down.</p>
+<div class="ex"><span class="lbl">Example</span>
+<p>Of course. What day and what time is good for you? I will call you then.</p></div>
+
+<h3>6. "We already have a company that does this."</h3>
+<p class="idea">Idea: do not argue and do not compare. AI search is new, and most owners have never seen their own business in it. Wade shows them.</p>
+<div class="ex"><span class="lbl">Examples</span>
+<p>That is good to hear. This is about AI search specifically, which is very new.</p>
+<p>Wade can show you in 15 minutes what your business looks like when somebody asks ChatGPT.</p></div>
+
+<h3>7. "How much does it cost?"</h3>
+<p class="idea">Idea: no price on this call, ever. Wade shows first and covers cost inside the 15 minutes. That is the honest answer, and it keeps the call short.</p>
+<div class="ex"><span class="lbl">Examples</span>
+<p>Wade goes over that with you in the meeting, after he shows you where you stand.</p>
+<p>He wants you to see it first. That part takes 15 minutes.</p></div>
+
+<h3>8. "A visit is hard right now."</h3>
+<p class="idea">Idea: never lose a meeting over the format. Move to the screen share, same two times.</p>
+<div class="ex"><span class="lbl">Example</span>
+<p>Wade can do the same 15 minutes on a screen share. He shows you, and you decide. Would [slot A] or [slot B] work on a screen?</p></div>
+
+<h2>Words to use, words to avoid</h2>
+<div class="two">
+  <div class="use">
+    <h3>Use these</h3>
+    <ul>
+      <li>AI search</li>
+      <li>shows up, does not show up</li>
+      <li>discoverable</li>
+      <li>15 minutes</li>
+      <li>show you on his screen</li>
+      <li>ChatGPT, Claude, Perplexity by name</li>
+      <li>Kerzie AI, when asked who you are with</li>
+    </ul>
+  </div>
+  <div class="avoid">
+    <h3>Avoid these</h3>
+    <ul>
+      <li>SEO</li>
+      <li>built for</li>
+      <li>AI assistant</li>
+      <li>any price or any number</li>
+      <li>any promise about results or rankings</li>
+      <li>the date the email went out</li>
+      <li>"they cannot find you" (say "does not come up")</li>
+    </ul>
+  </div>
+</div>
+
+<h2>The rules in one place</h2>
+<ul>
+  <li><strong>Work the tab top to bottom.</strong> The rows are in order for a reason.</li>
+  <li><strong>Skip any row Jordan already called.</strong> His callback column is filled in.</li>
+  <li><strong>Three attempts, then stop.</strong> Day one morning. Day one afternoon or day two morning, at a different time of day. Day two afternoon is the last try. Never a fourth.</li>
+  <li><strong>One voicemail only, on attempt two.</strong> Fifteen seconds: your name, Kerzie AI, Wade recently sent information about AI search for their business, you can set 15 minutes, your Quo number. Never a second voicemail.</li>
+  <li><strong>A decision maker's no ends it.</strong> Log DM-NO. Nobody calls again.</li>
+  <li><strong>A front-desk no allows one more try</strong> at a different time of day. Log GK-NO.</li>
+  <li><strong>Log every attempt with a result code,</strong> including the ones nobody answered. An unlogged call never happened.</li>
+  <li><strong>Honor an opt-out immediately,</strong> with no second ask.</li>
+</ul>
+
+<h2>Result codes</h2>
+<table>
+  <thead><tr><th>Code</th><th>What it means</th></tr></thead>
+  <tbody>
+    <tr><td class="code">NA</td><td>no answer, no voicemail left</td></tr>
+    <tr><td class="code">VM</td><td>voicemail left (attempt 2 only)</td></tr>
+    <tr><td class="code">GK-BLOCK</td><td>front desk would not connect, no answer given</td></tr>
+    <tr><td class="code">GK-NO</td><td>front desk said not interested</td></tr>
+    <tr><td class="code">DM-LATER</td><td>decision maker asked for a later call, time logged</td></tr>
+    <tr><td class="code">DM-NO</td><td>decision maker said no. Done.</td></tr>
+    <tr><td class="code">RESEND</td><td>asked for the email again, new address logged</td></tr>
+    <tr><td class="code">BOOKED-IN</td><td>in-person 15 minutes set</td></tr>
+    <tr><td class="code">BOOKED-WEB</td><td>screen-share 15 minutes set</td></tr>
+    <tr><td class="code">BAD#</td><td>number wrong or disconnected</td></tr>
+  </tbody>
+</table>
+
+<h2>Booking checklist</h2>
+<p>A booked row is not complete until all of this is in the sheet.</p>
+<ul>
+  <li>Result code: BOOKED-IN or BOOKED-WEB.</li>
+  <li>Business name.</li>
+  <li>Contact name, the person in the meeting.</li>
+  <li>Phone number, read back out loud.</li>
+  <li>Email address, read back out loud.</li>
+  <li>The day and time of the slot you booked.</li>
+  <li>The slot crossed off the morning list.</li>
+</ul>
+<p>Tell them Wade confirms today. Wade or Aaron sends the invite the same day.</p>
+
+<footer>
+  Replaces the script section of va_followup_plan_2026-09-11.html. Counts, rules and result codes unchanged.
+</footer>
+
+</div>
+</body>
+</html>
