@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-12",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 3,
+      "price_changed": 0,
+      "total": 310,
+      "ran_at": "8:26 AM MT",
+      "note": "No new vehicles joined the list today; three came off, including a 2026 Ford Escape Active, a 2026 GMC Acadia AWD Denali, and a 2025 Mitsubishi Outlander SEL, bringing the total to 310. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-11",
       "status": "ok",
       "kind": "refresh",
