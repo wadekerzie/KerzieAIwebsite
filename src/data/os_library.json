@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04",
+ "updated": "2026-09-12",
  "baseline": {
   "slug": "foundation",
   "name": "The Foundation",
@@ -45,7 +45,8 @@
    "name": "The Weekly Tune-Up",
    "was": "v1.3",
    "file": "personal-os-v1.3-weekly-tune-up.md",
-   "description": "A weekly self-optimization pass: your OS measures what a brand-new session is forced to read before it can help you, then trims the bloat losslessly and reports what it found."
+   "description": "A weekly self-optimization pass: your OS measures what a brand-new session is forced to read before it can help you, then trims the bloat losslessly and reports what it found.",
+   "note": "Folded into The Ultimate Optimizer since September 2026 - the Optimizer carries this whole release. Hand this one to your OS only if you want this piece by itself."
   },
   {
    "slug": "nightly-dream",
@@ -107,7 +108,7 @@
    "was": "behavior note",
    "file": "personal-os-fresh-start.md",
    "description": "Every message you send re-sends the entire conversation with it - live in one long thread and even a quick question costs like a whole day. Your OS already banks everything into hot memory at wrap-up; this note teaches your AI to offer the wrap-up unprompted, flag the long-thread trap when you fall into it, and coach the fresh start until it is muscle memory.",
-   "note": "Works on every plan - long threads drain all of them."
+   "note": "Folded into The Ultimate Optimizer since September 2026 - the Optimizer carries this whole release. Hand this one to your OS only if you want this piece by itself."
   },
   {
    "slug": "cold-storage",
@@ -115,7 +116,15 @@
    "was": "behavior note",
    "file": "personal-os-cold-storage.md",
    "description": "Your AI's briefing file loads at every session start and only ever grows - and trimming it is how you lose the one sentence that mattered. Cold Storage teaches your AI the three-shelf habit: the front page carries rules and current state, working files hold the detail, and everything retired moves WHOLE to a grep-able cold shelf - dated, searchable, never deleted, and only ever on your one-word approval. The receipt: the OS this came from cut a third of its session overhead the first day and lost nothing.",
-   "note": "Highly recommended on every plan - keeps your OS fast without ever losing a word."
+   "note": "Folded into The Ultimate Optimizer since September 2026 - the Optimizer carries this whole release. Hand this one to your OS only if you want this piece by itself."
+  },
+  {
+   "slug": "ultimate-optimizer",
+   "name": "The Ultimate Optimizer",
+   "was": "release",
+   "file": "personal-os-ultimate-optimizer.md",
+   "description": "The one that carries the rest. A hard ceiling on the briefing file your AI reads at every session start (20 KB, 3,000 words), a memory index that is pointers only, retired sections demoted WHOLE to a grep-able cold shelf where nothing is ever deleted, long reads handed to a cheap helper model instead of running in front of you at full price, and a weekly pass that measures BOTH halves of what a new session reads: your own files, and the tool names your connected apps carry. Your connectors stay connected - reconnecting them is the real cost, and the names are not the lever. The receipt: the OS this came from took its briefing file from 37.6 KB to 20.0 KB and the repo half of session start from about 21,700 to about 14,400 tokens in one day, and lost nothing.",
+   "note": "Replaces The Weekly Tune-Up, Fresh Start, and Cold Storage - it carries all three. Works on every plan. Highly recommended."
   }
  ]
 }
