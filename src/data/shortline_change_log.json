@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-13",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 5,
+      "removed": 3,
+      "price_changed": 0,
+      "total": 312,
+      "ran_at": "4:14 PM MT",
+      "note": "Five vehicles joined the list and three came off, bringing the total to 312. New arrivals include a 2019 Ford F-150 XL, a 2026 GMC Yukon XL 1500 Denali, and a 2024 Mitsubishi Eclipse Cross. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-12",
       "status": "ok",
       "kind": "refresh",
