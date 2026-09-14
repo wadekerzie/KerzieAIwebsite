@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-14",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 2,
+      "price_changed": 0,
+      "total": 313,
+      "ran_at": "8:27 AM MT",
+      "note": "Three vehicles joined the list and two came off, bringing the total to 313. New arrivals include a 2027 GMC Acadia AWD Denali, a 2026 GMC Yukon XL 1500 Denali, and a 2021 Nissan Sentra SV. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-13",
       "status": "ok",
       "kind": "refresh",
