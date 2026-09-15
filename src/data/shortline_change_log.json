@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-15",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 7,
+      "removed": 4,
+      "price_changed": 0,
+      "total": 316,
+      "ran_at": "6:53 AM MT",
+      "note": "Seven vehicles joined the list and four came off, bringing the total to 316. New arrivals include two 2027 GMC Acadia AWD Denali Ultimates, a 2027 GMC Acadia AWD AT4, and a 2026 GMC Sierra 1500 AT4. No price changes today. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-14",
       "status": "ok",
       "kind": "refresh",
