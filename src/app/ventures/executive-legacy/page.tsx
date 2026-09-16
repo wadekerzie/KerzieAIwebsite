@@ -23,6 +23,17 @@ export default function ExecutiveLegacyPage() {
         "Sealed topics stay sealed — the executive controls who can ask what.",
         "The successor asks at the decision point, not at the retirement dinner.",
       ]}
+      extra={{
+        label: "Who Gets What",
+        hook: "The executive owns it. The company licenses it.",
+        paragraphs: [
+          "Every person who inherits the judgment gets their own key, set by the executive at signing.",
+          "The successor asks it where the work happens: text, phone, or web, at the decision point. Every answer comes back with the date and the conversation it came from. When the record is silent, it says so and names who to call.",
+          "Leadership and the board get the topics the executive opens to them, and nothing else. Comp history, the people file, and the succession sessions stay sealed until a date or a trigger the executive sets, or forever.",
+          "The family gets the Dossier: a bound volume of the rules, the stories, and the people map.",
+          "The executive sees every question asked and every answer given, and can correct any of them, for as long as they want the job.",
+        ],
+      }}
       ctaHook="The business keeps its judgment. The founder keeps their retirement."
       ctaSub="Founding engagements by invitation, Fall 2026."
       ctaLabel="Request an invitation"

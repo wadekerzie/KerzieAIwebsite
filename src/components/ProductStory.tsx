@@ -23,6 +23,9 @@ export type ProductStoryProps = {
   demo?: ReactNode;
   demoLabel?: string;
   steps: string[];
+  // Optional fourth block after How It Works: who the deliverable reaches and
+  // on what terms (first used on Executive Legacy, 2026-09-16).
+  extra?: { label: string; hook: string; paragraphs: string[] };
   ctaHook: string;
   ctaSub: string;
   ctaLabel: string;
@@ -162,6 +165,33 @@ export default function ProductStory(props: ProductStoryProps) {
           </Reveal>
         </div>
       </section>
+
+      {/* Who gets what (optional) */}
+      {props.extra && (
+        <section className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+          <Reveal>
+            <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+              <div className="lg:col-span-3 mb-8 lg:mb-0">
+                <p className="k-label">
+                  <span className="idx">04</span>{props.extra.label}
+                </p>
+              </div>
+              <div className="lg:col-span-9 border-l-2 border-[#B04E2B] pl-6 lg:pl-8">
+                <h2 className="text-[#1A1B2E] text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-6">
+                  {props.extra.hook}
+                </h2>
+                <div className="space-y-4">
+                  {props.extra.paragraphs.map((para) => (
+                    <p key={para} className="text-[#262B3D] text-base leading-relaxed max-w-2xl">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      )}
 
       {/* The invitation */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32 text-center">
