@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-16",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 5,
+      "price_changed": 3,
+      "total": 311,
+      "ran_at": "9:23 AM MT",
+      "note": "No new vehicles joined the list today; five came off, including a 2026 GMC Sierra 1500 Elevation and a 2026 GMC Sierra 1500 Denali, bringing the total to 311. Three price changes, all reductions: a 2024 Jeep Compass Limited down to $21,906, a 2025 Chevrolet Equinox AWD LT to $28,340, and a 2017 Ford Mustang GT Premium to $25,840. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-15",
       "status": "ok",
       "kind": "refresh",
