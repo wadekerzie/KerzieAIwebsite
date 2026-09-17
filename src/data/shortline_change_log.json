@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-17",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 0,
+      "price_changed": 5,
+      "total": 312,
+      "ran_at": "6:52 AM MT",
+      "note": "One vehicle joined the list today, a 2026 GMC Sierra EV Extended Range Elevation, bringing the total to 312. Five 2026 GMC Yukons were repriced, all reductions, ranging from about $2,200 to $3,500 off. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-16",
       "status": "ok",
       "kind": "refresh",
