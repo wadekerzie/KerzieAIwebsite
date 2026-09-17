@@ -3,6 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async rewrites() {
     return [
+      // askwade.kerzie.ai is the Executive Legacy demo served as its own site.
+      {
+        source: "/",
+        has: [{ type: "host", value: "askwade.kerzie.ai" }],
+        destination: "/legacy/wade",
+      },
       {
         source: "/nemoclaw",
         destination: "/nemoclaw/index.html",

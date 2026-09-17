@@ -10,11 +10,13 @@
     "llms-full": "node scripts/gen-llms-full.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.126.0",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "resend": "^6.12.4"
+    "resend": "^6.12.4",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

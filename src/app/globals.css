@@ -1311,11 +1311,14 @@ a:focus-visible .k-arrow {
    Scoped by :has() on the panel's id, so it can never leak to another route.
    ========================================================================= */
 body:has(#qr-standalone) header,
-body:has(#qr-standalone) footer {
+body:has(#qr-standalone) footer,
+body:has(#legacy-standalone) > header,
+body:has(#legacy-standalone) > footer {
   display: none;
 }
 
-body:has(#qr-standalone) main {
+body:has(#qr-standalone) main,
+body:has(#legacy-standalone) main {
   padding-top: 0;
 }
 
