@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { VIEWERS, type Viewer } from "@/lib/askwade";
+import { VIEWERS, type Viewer } from "@/lib/askwade-keys";
 
 // The executive's page, as the people with a key see it. Four jobs on one
 // screen: the person (so it reads like a tribute), the ask (the tool), the
