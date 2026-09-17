@@ -26,6 +26,14 @@ export type ProductStoryProps = {
   // Optional fourth block after How It Works: who the deliverable reaches and
   // on what terms (first used on Executive Legacy, 2026-09-16).
   extra?: { label: string; hook: string; paragraphs: string[] };
+  // Optional fifth block before the invitation: the engagement and what it
+  // costs, as rows (first used on Executive Legacy, 2026-09-17).
+  pricing?: {
+    label: string;
+    hook: string;
+    rows: { price: string; body: string }[];
+    fineprint?: string;
+  };
   ctaHook: string;
   ctaSub: string;
   ctaLabel: string;
@@ -190,6 +198,45 @@ export default function ProductStory(props: ProductStoryProps) {
               </div>
             </div>
           </Reveal>
+        </section>
+      )}
+
+      {/* The engagement and the price (optional) */}
+      {props.pricing && (
+        <section className="bg-[#FFFFFF]">
+          <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+            <Reveal>
+              <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div className="lg:col-span-3 mb-8 lg:mb-0">
+                  <p className="k-label">
+                    <span className="idx">05</span>{props.pricing.label}
+                  </p>
+                </div>
+                <div className="lg:col-span-9">
+                  <h2 className="text-[#1A1B2E] text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-8">
+                    {props.pricing.hook}
+                  </h2>
+                  <dl className="divide-y divide-[#1A1B2E]/10 border-y border-[#1A1B2E]/10 max-w-3xl">
+                    {props.pricing.rows.map((row) => (
+                      <div key={row.price + row.body} className="grid grid-cols-[8.5rem_1fr] gap-6 py-5">
+                        <dt className="k-mono text-[#1A1B2E] font-semibold text-base whitespace-nowrap">
+                          {row.price}
+                        </dt>
+                        <dd className="text-[#262B3D] text-base leading-relaxed">
+                          {row.body}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                  {props.pricing.fineprint && (
+                    <p className="mt-6 text-[#262B3D]/70 text-sm leading-relaxed max-w-3xl">
+                      {props.pricing.fineprint}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </section>
       )}
 
