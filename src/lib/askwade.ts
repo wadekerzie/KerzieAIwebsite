@@ -63,7 +63,7 @@ export async function retrieve(question: string, k = 6): Promise<Chunk[]> {
       const f = tf.get(t) ?? 0;
       if (!f) continue;
       const idf = Math.log(1 + N / (1 + (df?.get(t) ?? 0)));
-      s += (f / (f + 1.2)) * idf * (titleToks.has(t) ? 1.6 : 1);
+      s += (f / (f + 1.2)) * idf * (titleToks.has(t) ? 2.5 : 1);
     }
     return { c, s };
   });
