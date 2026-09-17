@@ -44,7 +44,7 @@ export const VIEWERS: Record<Viewer, { label: string; opens: string[]; sealed: {
 };
 
 const SEALED_PATTERNS: { topic: string; re: RegExp }[] = [
-  { topic: "Compensation history", re: /\b(compensation|comp history|salary|salaries|bonus|equity|stock options|how much (do|did) .* (make|earn)|paycheck)\b/i },
+  { topic: "Compensation history", re: /\b(compensation|comp history|salary|salaries|bonus|equity|stock options|paycheck|pay (yourself|himself|herself)|paid (yourself|himself|herself)|your pay|take[- ]home|how much (do|did|does) (you|he|she|wade) (make|earn|pay|take))\b/i },
   { topic: "The people file", re: /\b(fire|fired|firing|let go|performance review|underperform|hr file|personnel|who (is|was) the weakest)\b/i },
   { topic: "Succession sessions", re: /\b(successor|succession|who should (run|replace|take over)|next ceo|heir)\b/i },
 ];

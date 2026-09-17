@@ -1,5 +1,4 @@
-import { promises as fs } from "fs";
-import path from "path";
+import corpusJson from "../../data/askwade/corpus.json";
 
 // "Wade Kerzie, on the record" - the Executive Legacy customer-zero demo.
 // The ask box answers ONLY from Wade's published record (data/askwade/corpus.json,
@@ -22,12 +21,8 @@ let df: Map<string, number> | null = null;
 
 export async function loadCorpus(): Promise<Chunk[]> {
   if (cache) return cache;
-  try {
-    const raw = await fs.readFile(path.join(process.cwd(), "data", "askwade", "corpus.json"), "utf-8");
-    cache = JSON.parse(raw) as Chunk[];
-  } catch {
-    cache = [];
-  }
+  // Imported, not read from disk: Vercel only ships files the bundler can see.
+  cache = corpusJson as Chunk[];
   df = new Map();
   for (const c of cache) {
     for (const t of new Set(tokenize(c.title + " " + c.text))) df.set(t, (df.get(t) ?? 0) + 1);
@@ -37,13 +32,20 @@ export async function loadCorpus(): Promise<Chunk[]> {
 
 const STOP = new Set("a an and are as at be by for from has have how i in is it its of on or that the this to was were what when where which who why will with you your do does did about into over than then there these those they them he she his her we our us not no yes can could would should if but so".split(" "));
 
+// Light stemming so "receipt" finds "receipts" and "publish" finds "published".
+function stem(t: string): string {
+  if (t.length <= 4) return t;
+  return t.replace(/(ing|ies|ers|ed|es|s)$/, (m) => (m === "ies" ? "y" : ""));
+}
+
 export function tokenize(s: string): string[] {
   return s
     .toLowerCase()
     .replace(/[^a-z0-9$%. ]+/g, " ")
     .split(/\s+/)
     .map((t) => t.replace(/^\.+|\.+$/g, ""))
-    .filter((t) => t.length > 1 && !STOP.has(t));
+    .filter((t) => t.length > 1 && !STOP.has(t))
+    .map(stem);
 }
 
 export async function retrieve(question: string, k = 6): Promise<Chunk[]> {

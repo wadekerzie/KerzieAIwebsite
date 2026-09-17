@@ -2,13 +2,18 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   async rewrites() {
-    return [
+    return {
       // askwade.kerzie.ai is the Executive Legacy demo served as its own site.
-      {
-        source: "/",
-        has: [{ type: "host", value: "askwade.kerzie.ai" }],
-        destination: "/legacy/wade",
-      },
+      // beforeFiles, because the homepage route exists at "/" and an
+      // afterFiles rewrite would never run for it.
+      beforeFiles: [
+        {
+          source: "/",
+          has: [{ type: "host", value: "askwade.kerzie.ai" }],
+          destination: "/legacy/wade",
+        },
+      ],
+      afterFiles: [
       {
         source: "/nemoclaw",
         destination: "/nemoclaw/index.html",
@@ -21,7 +26,8 @@ const nextConfig: NextConfig = {
         source: "/nemoclaw/logistics",
         destination: "/nemoclaw/logistics/index.html",
       },
-    ];
+      ],
+    };
   },
   async redirects() {
     return [
