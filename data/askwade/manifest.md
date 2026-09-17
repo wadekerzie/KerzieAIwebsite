@@ -147,3 +147,6 @@ filename date:
   beehiiv issues around 550-590 words; a few thin site pages like `ai-operating-system` and `the-people`
   at 50-80 words). These are complete pieces, not truncated chunks: short newsletter issues stay
   as one chunk per the brief, and thin marketing pages were extracted honestly rather than padded.
+
+
+Excluded 9/17 by Fable review: the Fast-Track page chunk naming Kurt and Tana Nelson (standing rule: Kurt is never named in Kerzie AI content; the live page still carries the story, flagged to Wade separately).
