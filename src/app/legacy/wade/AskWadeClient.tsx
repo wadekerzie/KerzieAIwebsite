@@ -10,10 +10,15 @@ import { VIEWERS, type Viewer } from "@/lib/askwade-keys";
 // side (what Wade sees). The avatar clip at the bottom is the optional part.
 
 type Citation = { n: number; title: string; date: string; url: string; type: string };
+type Reason = { point: string; citations: Citation[] };
 type Result =
   | { kind: "answer"; answer: string; silent: boolean; citations: Citation[] }
+  | { kind: "take"; decision_type: string; take: string; reasons: Reason[]; ask_first: string[]; silent: string; citations: Citation[] }
   | { kind: "sealed"; topic: string; note: string }
   | { kind: "error"; message: string };
+
+const SAMPLE_SITUATION =
+  "A dealer we pitched last month came back and said yes, but only if we cut the setup fee in half and give them three months free. Their GM says two competitors are already doing something similar for less. Our seller wants to take it because it is the first dealer in that group and there are six more rooftops behind it. I am leaning toward saying yes to the free months and no to the fee cut. What would you do?";
 
 const SAMPLE_QUESTIONS = [
   "What do you refuse to publish without a receipt?",
@@ -37,6 +42,8 @@ const CONSOLE_SAMPLE = [
 
 export default function AskWadeClient() {
   const [viewer, setViewer] = useState<Viewer>("successor");
+  const [mode, setMode] = useState<"question" | "situation">("question");
+  const [situation, setSituation] = useState("");
   const [question, setQuestion] = useState("");
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
@@ -56,6 +63,28 @@ export default function AskWadeClient() {
       if (!r.ok) setResult({ kind: "error", message: j.error ?? "Something went wrong." });
       else if (j.sealed) setResult({ kind: "sealed", topic: j.topic, note: j.note });
       else setResult({ kind: "answer", answer: j.answer, silent: !!j.silent, citations: j.citations ?? [] });
+    } catch {
+      setResult({ kind: "error", message: "The record could not be reached just now." });
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function bring(text: string) {
+    const body = text.trim();
+    if (!body || busy) return;
+    setBusy(true);
+    setResult(null);
+    try {
+      const r = await fetch("/api/askwade", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mode: "situation", situation: body, viewer }),
+      });
+      const j = await r.json();
+      if (!r.ok) setResult({ kind: "error", message: j.error ?? "Something went wrong." });
+      else if (j.sealed) setResult({ kind: "sealed", topic: j.topic, note: j.note });
+      else setResult({ kind: "take", decision_type: j.decision_type ?? "", take: j.take ?? "", reasons: j.reasons ?? [], ask_first: j.ask_first ?? [], silent: j.silent ?? "", citations: j.citations ?? [] });
     } catch {
       setResult({ kind: "error", message: "The record could not be reached just now." });
     } finally {
@@ -140,44 +169,108 @@ export default function AskWadeClient() {
           <p className="k-label mb-3">
             <span className="idx">01</span>Ask Wade
           </p>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              void ask(question);
-            }}
-            className="flex flex-col gap-3 sm:flex-row"
-          >
-            <input
-              id="askwade-question"
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-              maxLength={300}
-              placeholder="Ask the way you would ask him in the hallway."
-              className="flex-1 rounded-lg border border-[#1A1B2E]/20 bg-[#FAF8F4] px-4 py-3 text-base outline-none focus:border-[#2B5D96]"
-            />
-            <button
-              type="submit"
-              disabled={busy}
-              className="rounded-lg bg-[#2B5D96] px-6 py-3 font-semibold text-[#FAF8F4] transition-colors hover:bg-[#4A7BB5] disabled:opacity-60"
-            >
-              {busy ? "Reading the record" : "Ask"}
-            </button>
-          </form>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {SAMPLE_QUESTIONS.map((q) => (
+          <div className="mb-5 flex gap-2">
+            {(["question", "situation"] as const).map((m) => (
               <button
-                key={q}
+                key={m}
                 type="button"
                 onClick={() => {
-                  setQuestion(q);
-                  void ask(q);
+                  setMode(m);
+                  setResult(null);
                 }}
-                className="rounded-full border border-[#1A1B2E]/15 px-3 py-1 text-sm text-[#262B3D] hover:bg-[#FAF8F4]"
+                className={
+                  m === mode
+                    ? "rounded-full bg-[#1A1B2E] px-4 py-1.5 text-sm font-medium text-[#FAF8F4]"
+                    : "rounded-full border border-[#1A1B2E]/20 px-4 py-1.5 text-sm text-[#262B3D] hover:bg-[#FAF8F4]"
+                }
               >
-                {q}
+                {m === "question" ? "Quick question" : "Bring a situation"}
               </button>
             ))}
           </div>
+
+          {mode === "question" && (
+            <>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  void ask(question);
+                }}
+                className="flex flex-col gap-3 sm:flex-row"
+              >
+                <input
+                  id="askwade-question"
+                  value={question}
+                  onChange={(e) => setQuestion(e.target.value)}
+                  maxLength={300}
+                  placeholder="Ask the way you would ask him in the hallway."
+                  className="flex-1 rounded-lg border border-[#1A1B2E]/20 bg-[#FAF8F4] px-4 py-3 text-base outline-none focus:border-[#2B5D96]"
+                />
+                <button
+                  type="submit"
+                  disabled={busy}
+                  className="rounded-lg bg-[#2B5D96] px-6 py-3 font-semibold text-[#FAF8F4] transition-colors hover:bg-[#4A7BB5] disabled:opacity-60"
+                >
+                  {busy ? "Reading the record" : "Ask"}
+                </button>
+              </form>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {SAMPLE_QUESTIONS.map((q) => (
+                  <button
+                    key={q}
+                    type="button"
+                    onClick={() => {
+                      setQuestion(q);
+                      void ask(q);
+                    }}
+                    className="rounded-full border border-[#1A1B2E]/15 px-3 py-1 text-sm text-[#262B3D] hover:bg-[#FAF8F4]"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+
+          {mode === "situation" && (
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                void bring(situation);
+              }}
+              className="flex flex-col gap-3"
+            >
+              <textarea
+                id="askwade-situation"
+                value={situation}
+                onChange={(e) => setSituation(e.target.value)}
+                maxLength={2500}
+                rows={7}
+                placeholder="What is happening. Who is involved. What is on the table. What you are leaning toward. What you need from Wade."
+                className="w-full rounded-lg border border-[#1A1B2E]/20 bg-[#FAF8F4] px-4 py-3 text-base leading-relaxed outline-none focus:border-[#2B5D96]"
+              />
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  type="submit"
+                  disabled={busy}
+                  className="rounded-lg bg-[#2B5D96] px-6 py-3 font-semibold text-[#FAF8F4] transition-colors hover:bg-[#4A7BB5] disabled:opacity-60"
+                >
+                  {busy ? "Reading the record" : "Get Wade's take"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSituation(SAMPLE_SITUATION);
+                    void bring(SAMPLE_SITUATION);
+                  }}
+                  className="rounded-full border border-[#1A1B2E]/15 px-3 py-1 text-sm text-[#262B3D] hover:bg-[#FAF8F4]"
+                >
+                  Try a sample situation
+                </button>
+                <span className="text-xs text-[#262B3D]/60">Public demo. Do not paste anything confidential. In the product this page is private behind your key.</span>
+              </div>
+            </form>
+          )}
 
           {result && (
             <div className="mt-8 border-t border-[#1A1B2E]/10 pt-6">
@@ -187,6 +280,50 @@ export default function AskWadeClient() {
                   <p className="k-mono text-[11px] tracking-[0.14em] text-[#B04E2B]">SEALED</p>
                   <p className="mt-2 text-lg font-semibold">{result.topic}</p>
                   <p className="mt-1 text-[#262B3D]">{result.note}. The key you are holding does not open it.</p>
+                </div>
+              )}
+              {result.kind === "take" && (
+                <div>
+                  {result.decision_type && <p className="k-mono text-[11px] tracking-[0.14em] text-[#262B3D]/60">{result.decision_type.toUpperCase()}</p>}
+                  <p className="mt-2 k-mono text-[11px] tracking-[0.14em] text-[#2B5D96]">WHAT I WOULD DO</p>
+                  <p className="mt-2 whitespace-pre-line text-lg leading-relaxed">{result.take}</p>
+                  {result.reasons.length > 0 && (
+                    <div className="mt-6">
+                      <p className="k-mono text-[11px] tracking-[0.14em] text-[#2B5D96]">WHY</p>
+                      <ul className="mt-2 space-y-3">
+                        {result.reasons.map((r) => (
+                          <li key={r.point} className="text-[#262B3D]">
+                            {r.point}
+                            {r.citations.length > 0 && (
+                              <span className="ml-2 inline-flex flex-wrap gap-1 align-middle">
+                                {r.citations.map((c) => (
+                                  <a key={c.n} href={c.url || "#"} target="_blank" rel="noopener" className="rounded-full border border-[#1A1B2E]/15 bg-[#FAF8F4] px-2 py-0.5 k-mono text-[11px] text-[#2B5D96]" title={c.title}>
+                                    [{c.n}] {c.title.length > 34 ? c.title.slice(0, 34) + "..." : c.title}
+                                  </a>
+                                ))}
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {result.ask_first.length > 0 && (
+                    <div className="mt-6">
+                      <p className="k-mono text-[11px] tracking-[0.14em] text-[#2B5D96]">WHAT I WOULD WANT TO KNOW FIRST</p>
+                      <ul className="mt-2 list-disc space-y-1 pl-5 text-[#262B3D]">
+                        {result.ask_first.map((a) => (
+                          <li key={a}>{a}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {result.silent && (
+                    <div className="mt-6 rounded-lg border border-[#B04E2B]/40 bg-[#FAF8F4] p-4">
+                      <p className="k-mono text-[11px] tracking-[0.14em] text-[#B04E2B]">WHERE THE RECORD IS SILENT</p>
+                      <p className="mt-1 text-[#262B3D]">{result.silent}</p>
+                    </div>
+                  )}
                 </div>
               )}
               {result.kind === "answer" && (
