@@ -100,7 +100,7 @@ const halfOne = [
 const halfTwo = [
   {
     lead: "We publish your llms.txt.",
-    body: "It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 57 Texas and Colorado trades this week, eighteen already publish one - in roofing it is already half. Your competitors have started. The window is closing, not closed.",
+    body: "It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 57 Texas and Colorado trades this week, eighteen already publish one - in roofing it is already half. Your competitors have started. The window is closing, not closed. We follow Chrome's developer guidelines: every page is built to the llms.txt specification and Chrome's Lighthouse audit, and you get the audit receipt.",
   },
   {
     lead: "This stage of AI search is already on.",
@@ -340,6 +340,14 @@ export default function BackCoverPage() {
                 gloss:
                   "Nearly a billion people a week asking an AI the questions they used to type into a search box.",
                 href: "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users",
+              },
+              {
+                src: "GOOGLE CHROME",
+                date: "MAY 2026",
+                stat: "Chrome's Lighthouse now audits websites for an llms.txt: \"a machine-readable summary of a website's content, specifically designed for LLMs and AI agents.\"",
+                gloss:
+                  "We build every Back Cover page to that audit and to the llms.txt specification, run the audit on your site, and hand you the receipt.",
+                href: "https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt",
               },
               {
                 src: "SQUARESPACE",

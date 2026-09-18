@@ -95,6 +95,10 @@ export default function RootLayout({
           href="/llms.txt"
           title="Kerzie AI for language models"
         />
+        {/* llms.txt v2 (llmstxt.org, Aug 2026): rel="describedby" points any
+            page at the llms.txt that covers it. The HTTP Link header form is
+            set in next.config.ts so non-HTML resources carry it too. */}
+        <link rel="describedby" href="/llms.txt" />
         {/* Structured data, generated from siteFacts so it cannot disagree
             with what the pages render. Added 2026-08-12 - before that, this
             site shipped 36 routes with zero schema.org markup, which is the

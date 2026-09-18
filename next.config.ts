@@ -111,6 +111,16 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async headers() {
+    // llms.txt v2 (llmstxt.org, Aug 2026): the HTTP Link header form of
+    // rel="describedby", so every response, HTML or not, points at /llms.txt.
+    return [
+      {
+        source: "/:path*",
+        headers: [{ key: "Link", value: '</llms.txt>; rel="describedby"' }],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
