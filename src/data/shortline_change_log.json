@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-18",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 9,
+      "removed": 2,
+      "price_changed": 0,
+      "total": 319,
+      "ran_at": "8:00 AM MT",
+      "note": "Nine vehicles joined the list and two came off, bringing the total to 319. New arrivals include a 2026 GMC Sierra 2500 AT4X, a 2026 GMC Sierra 1500 Elevation, and a 2027 Buick Enclave Avenir. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-17",
       "status": "ok",
       "kind": "refresh",
