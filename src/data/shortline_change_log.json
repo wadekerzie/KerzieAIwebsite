@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-19",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 11,
+      "removed": 2,
+      "price_changed": 51,
+      "total": 328,
+      "ran_at": "9:30 AM MT",
+      "note": "Eleven vehicles joined the list and two came off, bringing the total to 328. New arrivals include a 2027 GMC Acadia AWD Elevation, a 2026 GMC Sierra 1500 Elevation, and a 2025 Audi Q3 S line Premium. A broad round of repricing today: 51 vehicles came down, mostly new GMC trucks and SUVs. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-18",
       "status": "ok",
       "kind": "refresh",
