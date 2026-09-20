@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-20",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 4,
+      "removed": 5,
+      "price_changed": 11,
+      "total": 327,
+      "ran_at": "9:07 AM MT",
+      "note": "Four vehicles joined the list and five came off, bringing the total to 327. New arrivals include a 2015 Ford Explorer XLT, a 2026 GMC Sierra 1500 Elevation, and a 2025 Honda Accord Hybrid Touring. Eleven vehicles were repriced, mostly Buick Envision and Encore models, all reductions. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-19",
       "status": "ok",
       "kind": "refresh",
