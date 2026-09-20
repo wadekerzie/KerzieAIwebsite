@@ -79,6 +79,28 @@ export default function Home() {
           it works.
         </p>
 
+        {/* The bylines: two trade publications ran the thinking. Receipts, not claims. */}
+        <p className="k-rise k-rise-3 mt-6 k-mono text-xs tracking-[0.15em] text-[#262B3D]/60">
+          PUBLISHED IN{" "}
+          <a
+            href="https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore"
+            target="_blank"
+            rel="noopener"
+            className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
+          >
+            NATION&apos;S RESTAURANT NEWS
+          </a>{" "}
+          <span className="text-[#B04E2B]/60">/</span>{" "}
+          <a
+            href="https://www.lawfuel.com/the-traffic-meter-cant-see-the-clients-ai-never-sends-you/"
+            target="_blank"
+            rel="noopener"
+            className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
+          >
+            LAWFUEL
+          </a>
+        </p>
+
         {/* The index: what's on the bench */}
         <div className="k-rise k-rise-4 mt-20 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs tracking-[0.15em] text-[#262B3D]/50">
           {products.map((p, i) => (
