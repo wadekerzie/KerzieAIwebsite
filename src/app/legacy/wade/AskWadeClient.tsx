@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { VIEWERS, type Viewer } from "@/lib/askwade-keys";
+import VoiceReader, { takeScript, useVoiceEnabled } from "./VoiceReader";
 
 // The executive's page, as the people with a key see it. Four jobs on one
 // screen: the person (so it reads like a tribute), the ask (the tool), the
@@ -47,6 +48,22 @@ export default function AskWadeClient() {
   const [question, setQuestion] = useState("");
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
+  const [readAloud, setReadAloud] = useState(false);
+  const voiceEnabled = useVoiceEnabled();
+
+  useEffect(() => {
+    try {
+      setReadAloud(localStorage.getItem("askwade:readAloud") === "1");
+    } catch {}
+  }, []);
+  function toggleReadAloud() {
+    setReadAloud((v) => {
+      try {
+        localStorage.setItem("askwade:readAloud", v ? "0" : "1");
+      } catch {}
+      return !v;
+    });
+  }
 
   async function ask(q: string) {
     const text = q.trim();
@@ -169,7 +186,7 @@ export default function AskWadeClient() {
           <p className="k-label mb-3">
             <span className="idx">01</span>Ask Wade
           </p>
-          <div className="mb-5 flex gap-2">
+          <div className="mb-5 flex flex-wrap items-center gap-2">
             {(["question", "situation"] as const).map((m) => (
               <button
                 key={m}
@@ -187,6 +204,12 @@ export default function AskWadeClient() {
                 {m === "question" ? "Quick question" : "Bring a situation"}
               </button>
             ))}
+            {voiceEnabled && (
+              <label className="ml-auto inline-flex cursor-pointer items-center gap-2 text-sm text-[#262B3D]">
+                <input type="checkbox" checked={readAloud} onChange={toggleReadAloud} className="h-4 w-4 accent-[#2B5D96]" />
+                Read answers aloud in Wade&apos;s voice
+              </label>
+            )}
           </div>
 
           {mode === "question" && (
@@ -324,11 +347,13 @@ export default function AskWadeClient() {
                       <p className="mt-1 text-[#262B3D]">{result.silent}</p>
                     </div>
                   )}
+                  <VoiceReader text={takeScript(result)} autoplay={readAloud} />
                 </div>
               )}
               {result.kind === "answer" && (
                 <div>
                   <p className="whitespace-pre-line text-lg leading-relaxed">{result.answer}</p>
+                  <VoiceReader text={result.answer} autoplay={readAloud} />
                   {!result.silent && result.citations.length > 0 && (
                     <div className="mt-6">
                       <p className="k-mono text-[11px] tracking-[0.14em] text-[#262B3D]/60">FROM THE RECORD</p>
@@ -356,6 +381,7 @@ export default function AskWadeClient() {
           )}
           <p className="mt-6 text-xs leading-relaxed text-[#262B3D]/60">
             This answer set was built from Wade&apos;s published record only: his newsletter, his LinkedIn posts, and his essays. It answers in his words, cites the piece each answer came from, and says when the record is silent. It never improvises.
+            {voiceEnabled && " The voice is Wade's own, cloned with his permission; it reads the answer on the page and nothing else."}
           </p>
         </section>
 
