@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-21",
   "partner": "Danny Madigan",
   "terms": {
     "recurring": "$300/month per closed rooftop, for the life of the contract ($600/month on a Johnson close - four rooftops, one feed)",
@@ -22,7 +22,7 @@
       "contact": "Ryan / Phil McTaggart",
       "referred": "Sep 2",
       "stage": "Meeting held",
-      "note": "Wade and Phil talked by phone Sep 4 - great conversation. Phil took the proposal into his owners' meeting; his read: Ryan and Matt move slowly, so no quick verdict expected, callback on Wade's calendar for end of September. Sep 6: Wade sent Phil a follow-up laying out the full Kerzie AI picture (voice AI, text AI, AI-run marketing, AI search readiness) and offered a free hour walking Phil's vendor list as he pulls group spend in-house. Sep 9: Phil asked for more time - Wade is holding off on the next follow-up until the week of Sep 14. Four-rooftop proposal still with ownership - no verdict yet.",
+      "note": "Wade and Phil talked by phone Sep 4 - great conversation. Phil took the proposal into his owners' meeting; his read: Ryan and Matt move slowly, so no quick verdict expected, callback on Wade's calendar for end of September. Sep 6: Wade sent Phil a follow-up laying out the full Kerzie AI picture (voice AI, text AI, AI-run marketing, AI search readiness) and offered a free hour walking Phil's vendor list as he pulls group spend in-house. Sep 9: Phil asked for more time - Wade is holding off on the next follow-up until the week of Sep 14. Four-rooftop proposal still with ownership - no verdict yet. No verdict from Phil as of Sep 21.",
       "since": "2026-09-02"
     },
     {
@@ -30,7 +30,7 @@
       "contact": "Chris",
       "referred": "Sep 2",
       "stage": "Intro made",
-      "note": "Wade sent Chris a direct note Sep 11, offering a web call. It also pointed out that the dealer's current llms.txt is a Dealer Inspire pointer template with inventory links blocked by Cloudflare. Danny is in DC the week of Sep 14 for NADA, meeting with Chris and the Empire Lakewood owner in person.",
+      "note": "Wade sent Chris a direct note Sep 11, offering a web call. It also pointed out that the dealer's current llms.txt is a Dealer Inspire pointer template with inventory links blocked by Cloudflare. Danny is in DC the week of Sep 14 for NADA, meeting with Chris and the Empire Lakewood owner in person. No reply to the Sep 11 direct note as of Sep 21. Danny was with Chris in DC the week of Sep 14 (Danny 9/10).",
       "since": "2026-09-02"
     },
     {
@@ -38,7 +38,7 @@
       "contact": "Josh Frakes",
       "referred": "Sep 3",
       "stage": "Intro made",
-      "note": "Wade replied Sep 4 morning with findings on Josh's own llms.txt build (nine blocked links, missing dealership info) plus a bonus catch: the Mazin Automotive Group site is showing a suspended page in Google, offered to fix it free. Sep 4 afternoon: Josh asked to schedule for Wednesday or Thursday, Wade sent open time windows the same day. No reply since. Sep 9: Wade followed up asking for a 15-minute web call this afternoon or tomorrow - waiting to hear back.",
+      "note": "Wade replied Sep 4 morning with findings on Josh's own llms.txt build (nine blocked links, missing dealership info) plus a bonus catch: the Mazin Automotive Group site is showing a suspended page in Google, offered to fix it free. Sep 4 afternoon: Josh asked to schedule for Wednesday or Thursday, Wade sent open time windows the same day. No reply since. Sep 9: Wade followed up asking for a 15-minute web call this afternoon or tomorrow - waiting to hear back. Quiet since Sep 4 as of Sep 21.",
       "since": "2026-09-03"
     },
     {
@@ -46,7 +46,7 @@
       "contact": "Gabe Montano",
       "referred": "Sep 3",
       "stage": "Intro made",
-      "note": "Wade replied Sep 4 morning - proposal page live, one qualifying question out: how many rooftops and how many separate inventory feeds. Build scales by feed, not by store. 9/10: Danny: \"Keep working them your way. Gabe is pretty hard to get through to, I'll be with his owner and Chris next week in DC.\"",
+      "note": "Gabe replied Sep 18 4:03 PM MT, back from vacation: 'Is next week or the week after open for you all?' Aaron answered 5:20 PM, a call next week, asked Gabe for times. Waiting on Gabe's times.",
       "since": "2026-09-03"
     }
   ],
