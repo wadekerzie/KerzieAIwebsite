@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-21",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 5,
+      "removed": 1,
+      "price_changed": 8,
+      "total": 331,
+      "ran_at": "7:44 AM MT",
+      "note": "Five vehicles joined the list and one came off, bringing the total to 331. New arrivals include a 2021 Jeep Gladiator Overland, a 2026 GMC Yukon XL AT4 Ultimate, and a 2022 Chevrolet Tahoe RST. Eight 2026 GMC Sierra trucks were repriced, all reductions of about $1,000. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-20",
       "status": "ok",
       "kind": "refresh",
