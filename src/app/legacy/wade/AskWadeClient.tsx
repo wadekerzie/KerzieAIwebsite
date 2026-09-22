@@ -186,6 +186,15 @@ export default function AskWadeClient() {
           <p className="k-label mb-3">
             <span className="idx">01</span>Ask Wade
           </p>
+          {/* AI disclosure, added 2026-09-22. Written as a feature line rather than a
+              disclaimer, on Wade's point that this is a demo of the product and the
+              synthetic voice IS the thing being demonstrated. This is also the template
+              for every Executive Legacy client page - each "Ask <Name>" surface gets the
+              same sentence, in the same confident register. Never a warning banner. */}
+          <p className="mb-5 text-[15px] leading-relaxed text-[#262B3D]/70">
+            Answers come from Wade&rsquo;s own record, and the voice reading them is his,
+            built from it. Both are AI. That is the point.
+          </p>
           <div className="mb-5 flex flex-wrap items-center gap-2">
             {(["question", "situation"] as const).map((m) => (
               <button
