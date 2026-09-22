@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-22",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 3,
+      "price_changed": 5,
+      "total": 331,
+      "ran_at": "6:56 AM MT",
+      "note": "Three vehicles joined the list and three came off, holding the total at 331. New arrivals include a 2026 GMC Sierra 1500 AT4 and a 2026 Buick Encore GX Sport Touring. Five vehicles were repriced, all modest reductions. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-21",
       "status": "ok",
       "kind": "refresh",
