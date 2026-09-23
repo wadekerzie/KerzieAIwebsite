@@ -4,7 +4,7 @@
 
 import { NextResponse } from "next/server";
 import { botGuard, clientIp } from "@/lib/botGuard";
-import { subscribeToSubstack, notifySignupFailure } from "@/lib/substack";
+import { subscribeToSubstack, notifySignupFailure, copySignupToWade } from "@/lib/substack";
 
 // The magnet slug doubles as the signup source path (kerzie.ai/<slug>) that
 // Substack records as first_url. "capture-kit" stays as the slug even though
@@ -49,6 +49,10 @@ export async function POST(req: Request) {
     console.error("substack subscribe failed", result.detail);
     const name = [firstName, lastName].filter(Boolean).join(" ");
     await notifySignupFailure(email, `gate: ${magnet}`, result.detail || "unknown", name ? `Name: ${name}` : undefined);
+  }
+  else {
+    const name = [firstName, lastName].filter(Boolean).join(" ");
+    await copySignupToWade(email, `gate: ${magnet}`, name ? `Name: ${name}` : undefined);
   }
   return NextResponse.json({ ok: true, redirect });
 }
