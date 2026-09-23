@@ -45,6 +45,13 @@ export default function SchedulePage() {
           Whatever brought you here, this is the direct line to my calendar.
           Pick a time that works and let&apos;s talk.
         </p>
+        <p className="k-rise k-rise-3 mt-4 text-[#262B3D] text-lg max-w-xl">
+          Rather write first? Email me directly at{" "}
+          <a href="mailto:wade@kerzie.ai" className="k-link text-[#1A1B2E] font-medium">
+            wade@kerzie.ai
+          </a>
+          .
+        </p>
       </section>
 
       {/* Calendar embed */}
