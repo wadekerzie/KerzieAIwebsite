@@ -10,6 +10,24 @@ export default function Footer() {
           Life is best when technology just works<span className="text-[#B04E2B]">.</span>
         </p>
 
+        {/* Direct line (Wade 2026-09-23: "I don't want to be cryptic about
+            the email address"). On every page, where people look for it. */}
+        <div className="mt-10 flex flex-wrap items-baseline gap-x-8 gap-y-3">
+          <p className="k-label">Talk to Wade</p>
+          <a
+            href="mailto:wade@kerzie.ai"
+            className="k-link text-[#1A1B2E] text-xl lg:text-2xl font-medium hover:text-[#B04E2B] transition-colors duration-200"
+          >
+            wade@kerzie.ai
+          </a>
+          <Link
+            href="/schedule"
+            className="k-link text-[#2B5D96] text-base hover:text-[#1A1B2E] transition-colors duration-200"
+          >
+            Book 30 minutes &rarr;
+          </Link>
+        </div>
+
         <div className="k-hairline w-full mt-10 mb-8" />
 
         <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-4">
@@ -42,7 +60,7 @@ export default function Footer() {
               Terms of Service
             </Link>
             <span className="k-mono text-[#262B3D]/50 text-xs">
-              &copy; 2026 Kerzie Consulting LLC
+              &copy; 2026 Kerzie AI Solutions
             </span>
           </div>
         </div>
