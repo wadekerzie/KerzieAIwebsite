@@ -12,20 +12,19 @@ export default function Footer() {
 
         {/* Direct line (Wade 2026-09-23: "I don't want to be cryptic about
             the email address"). On every page, where people look for it. */}
-        <div className="mt-10 flex flex-wrap items-baseline gap-x-8 gap-y-3">
-          <p className="k-label">Talk to Wade</p>
-          <a
-            href="mailto:wade@kerzie.ai"
-            className="k-link text-[#1A1B2E] text-xl lg:text-2xl font-medium hover:text-[#B04E2B] transition-colors duration-200"
-          >
-            wade@kerzie.ai
-          </a>
-          <Link
-            href="/schedule"
-            className="k-link text-[#2B5D96] text-base hover:text-[#1A1B2E] transition-colors duration-200"
-          >
-            Book 30 minutes &rarr;
+        <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <Link href="/schedule" className="k-btn-solid k-focus inline-block">
+            Book 30 minutes with Wade <span className="k-arrow">&rarr;</span>
           </Link>
+          <p className="text-[#262B3D]/70 text-sm">
+            or email{" "}
+            <a
+              href="mailto:wade@kerzie.ai"
+              className="k-link text-[#262B3D] hover:text-[#1A1B2E] transition-colors duration-200"
+            >
+              wade@kerzie.ai
+            </a>
+          </p>
         </div>
 
         <div className="k-hairline w-full mt-10 mb-8" />

@@ -68,32 +68,6 @@ export default function SchedulePage() {
           id="WUgRL3oHU40oA05SIaVT_1767737997591"
           title="Schedule time with Wade"
         />
-        {/* SMS Consent Disclosure */}
-        <div className="mt-8 text-sm text-[#262B3D]/50 leading-relaxed max-w-2xl">
-          <p className="mb-2">
-            By providing your phone number, you consent to receive SMS messages
-            from Kerzie Consulting LLC (DBA Kerzie AI) regarding your scheduled
-            appointment and work status updates. Message frequency: up to 5
-            messages/month. Message and data rates may apply.
-          </p>
-          <p>
-            Reply STOP to unsubscribe. Reply HELP for help. View our{" "}
-            <Link
-              href="/privacy-policy"
-              className="hover:text-[#262B3D] transition-colors duration-150"
-            >
-              Privacy Policy
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="/terms-of-service"
-              className="hover:text-[#262B3D] transition-colors duration-150"
-            >
-              Terms of Service
-            </Link>
-            .
-          </p>
-        </div>
       </section>
 
     </div>
