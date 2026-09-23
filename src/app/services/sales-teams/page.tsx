@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "For Sales Teams | Kerzie AI",
   description:
-    "Your reps have AI licenses. That is not the same as using AI. Every seller runs their own AI operating system on the company laptop: the admin moves into it, the rep builds one habit, capture, and the hours go back to customers. Your whole team, scored from day one.",
+    "Selling is the job again. Every seller runs their own AI operating system on the company laptop: the prep, the reports and the CRM updates move into it, the rep builds one habit, capture, and the hours go back to customers. Your whole team, scored from day one.",
 };
 
 const adminJobs = [
@@ -53,7 +53,7 @@ const steps = [
   },
   {
     label: "Walk",
-    body: "Four weeks on live accounts building the one habit. Every call captured, every meeting briefed, the admin coming out of the OS instead of the rep. Real deals, not exercises.",
+    body: "Four weeks on live accounts building the one habit. Every call captured, every meeting briefed, the admin work coming out of the OS instead of the rep. Real deals, not exercises.",
   },
   {
     label: "Run",
@@ -86,14 +86,14 @@ export default function SalesTeamsPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
         <p className="k-rise k-rise-1 k-label mb-8">For Sales Teams</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          The admin job just collapsed. The selling job just got{" "}
-          <span className="k-serif font-normal">bigger</span>
+          Selling is the job{" "}
+          <span className="k-serif font-normal">again</span>
           <span className="text-[#B04E2B]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg lg:text-xl max-w-xl leading-relaxed">
           I spent 30 years leading enterprise sales teams. Now I put an AI
-          operating system in each seller&apos;s hands, so the admin runs itself
-          and the hours go back to customers.
+          operating system in each seller&apos;s hands, so the prep, the reports
+          and the CRM updates run themselves and the hours go back to customers.
         </p>
         <div className="k-rise k-rise-4 mt-10">
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
@@ -130,7 +130,7 @@ export default function SalesTeamsPage() {
       {/* The admin moves into the OS */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &middot; The Admin Moves Into the OS</p>
+          <p className="k-label mb-6">02 &middot; The Admin Work Moves Into the OS</p>
           <p className="text-[#1A1B2E] text-lg font-medium max-w-2xl mb-8 leading-relaxed">
             Each seller runs their own AI operating system on the company laptop,
             connected to the email, calendar, meeting notes and CRM your company
