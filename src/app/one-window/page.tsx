@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     description:
       "I talk. The work gets done. One paste of the Foundation into Claude installs your own AI operating system. Free, upgrades included. Mac.",
     url: "https://kerzie.ai/one-window",
-    images: [{ url: "/og/one-window-talk.jpg", width: 1200, height: 630, alt: "A man alone at his desk, speaking to his laptop, hands away from the keyboard." }],
+    images: [{ url: "/og/one-window-office.jpg", width: 1200, height: 630, alt: "A man alone at a clean desk in a modern office, one laptop and a coffee mug, the work handled." }],
   },
-  twitter: { card: "summary_large_image", images: ["/og/one-window-talk.jpg"] },
+  twitter: { card: "summary_large_image", images: ["/og/one-window-office.jpg"] },
 };
 
 const gets = [

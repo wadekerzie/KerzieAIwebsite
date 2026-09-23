@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: "For Sales Teams | Kerzie AI",
   description:
     "Selling is the job again. Each seller runs their own AI operating system: prep, reports and CRM updates move into it, and the hours go back to customers.",
+  openGraph: {
+    title: "For Sales Teams | Kerzie AI",
+    description:
+      "Selling is the job again. Each seller runs their own AI operating system, and the hours go back to customers.",
+    url: "https://kerzie.ai/services/sales-teams",
+    images: [{ url: "/og/sales-teams.jpg", width: 1200, height: 630, alt: "A salesperson with his laptop closed, listening across the table to a customer in a modern office." }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og/sales-teams.jpg"] },
 };
 
 const adminJobs = [

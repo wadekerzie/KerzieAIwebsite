@@ -132,8 +132,8 @@ export default function FastTrackPage() {
         <Reveal>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/evidence/fast-track.jpg"
-            alt="Three seasoned business owners at a kitchen table in warm morning light: a silver-haired woman with reading glasses at the laptop keyboard, two others leaning in over her shoulders, all smiling at the screen"
+            src="/evidence/fast-track-office.jpg"
+            alt="Three seasoned business owners side by side in a glass-walled office, each on their own laptop, one leaning over to see what the other built"
             className="k-photo"
           />
         </Reveal>

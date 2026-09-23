@@ -54,10 +54,10 @@ export const metadata: Metadata = {
     url: "https://kerzie.ai",
     images: [
       {
-        url: "/og/brand-card.jpg",
+        url: "/og/office-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Kerzie AI",
+        alt: "Kerzie AI: two business owners in a modern office looking at one laptop together",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kerzie AI",
     description: SITE_DESCRIPTION,
-    images: ["/og/brand-card.jpg"],
+    images: ["/og/office-default.jpg"],
   },
   icons: {
     icon: [
