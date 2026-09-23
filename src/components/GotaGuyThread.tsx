@@ -132,7 +132,7 @@ export default function GotaGuyThread() {
                     className={`inline-block px-4 py-2.5 text-[15px] leading-snug rounded-2xl ${
                       mine
                         ? "bg-[#2B5D96] text-[#F5F1EA] rounded-br-sm"
-                        : "bg-[#F2EEE6] text-[#F0ECE8] rounded-bl-sm"
+                        : "bg-[#E7E1D6] text-[#1A1B2E] rounded-bl-sm"
                     }`}
                   >
                     {b.text}
@@ -149,7 +149,7 @@ export default function GotaGuyThread() {
 
           {typing && (
             <div className="flex justify-start">
-              <div className="bg-[#F2EEE6] rounded-2xl rounded-bl-sm px-4 py-3 inline-flex gap-1.5">
+              <div className="bg-[#E7E1D6] rounded-2xl rounded-bl-sm px-4 py-3 inline-flex gap-1.5">
                 {[0, 1, 2].map((d) => (
                   <span
                     key={d}
