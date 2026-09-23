@@ -1,8 +1,9 @@
-// Newsletter signup for /subscribe. Same list as the lead-magnet gates, but
-// tagged so we can tell the subscribe page apart from the magnets in Beehiiv.
+// Newsletter signup for /subscribe. Goes to Substack (news.kerzie.ai), the same
+// list the lead-magnet gates feed. A Substack refusal emails Wade the address.
 
 import { NextResponse } from "next/server";
 import { botGuard, clientIp } from "@/lib/botGuard";
+import { subscribeToSubstack, notifySignupFailure } from "@/lib/substack";
 
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
@@ -19,37 +20,10 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const key = process.env.BEEHIIV_API_KEY;
-  const pub = process.env.BEEHIIV_PUBLICATION_ID;
-  if (!key || !pub) {
-    console.error("subscribe: Beehiiv env vars missing");
-    return NextResponse.json({ error: "unavailable" }, { status: 503 });
-  }
-
-  try {
-    const res = await fetch(
-      `https://api.beehiiv.com/v2/publications/${pub}/subscriptions`,
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${key}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          utm_source: "subscribe-page",
-          utm_medium: source || "kerzie.ai",
-          reactivate_existing: true,
-          send_welcome_email: true,
-        }),
-      }
-    );
-    if (!res.ok) {
-      console.error("beehiiv subscribe failed", res.status, await res.text());
-      return NextResponse.json({ error: "failed" }, { status: 502 });
-    }
-  } catch (err) {
-    console.error("beehiiv subscribe error", err);
+  const result = await subscribeToSubstack(email, "subscribe");
+  if (!result.ok) {
+    console.error("substack subscribe failed", result.detail);
+    await notifySignupFailure(email, `subscribe page (${source || "kerzie.ai"})`, result.detail || "unknown");
     return NextResponse.json({ error: "failed" }, { status: 502 });
   }
 
