@@ -3,7 +3,7 @@ import ProductStory from "@/components/ProductStory";
 export const metadata = {
   title: "TrueNorth | Kerzie AI",
   description:
-    "Everyone asking AI for life advice gets the same beige answer. TrueNorth interviews you about what you actually believe, then builds your personal board of history's wisest advisors — portable to whatever AI you already use.",
+    "Everyone asking AI for life advice gets the same beige answer. TrueNorth builds your personal board of history's wisest advisors, portable to any AI you use.",
 };
 
 export default function TrueNorthPage() {

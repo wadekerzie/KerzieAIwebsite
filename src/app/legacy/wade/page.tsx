@@ -9,7 +9,7 @@ import AskWadeClient from "./AskWadeClient";
 export const metadata: Metadata = {
   title: "Wade Kerzie, on the record",
   description:
-    "The Executive Legacy deliverable, shown on Wade Kerzie's own record: ask the answer set, every answer cited to what he actually published, sealed topics sealed, the executive's review on the other side.",
+    "The Executive Legacy deliverable, shown on Wade Kerzie's own record: ask thirty years of judgment, and every answer cites what he actually published.",
   alternates: { canonical: "https://askwade.kerzie.ai" },
   openGraph: {
     type: "profile",

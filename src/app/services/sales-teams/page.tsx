@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "For Sales Teams | Kerzie AI",
   description:
-    "Selling is the job again. Every seller runs their own AI operating system on the company laptop: the prep, the reports and the CRM updates move into it, the rep builds one habit, capture, and the hours go back to customers. Your whole team, scored from day one.",
+    "Selling is the job again. Each seller runs their own AI operating system: prep, reports and CRM updates move into it, and the hours go back to customers.",
 };
 
 const adminJobs = [

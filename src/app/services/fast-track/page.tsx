@@ -12,7 +12,7 @@ const FAST_TRACK = offer("fast-track");
 export const metadata: Metadata = {
   title: "AI Fast-Track Session | Kerzie AI",
   description:
-    "3 hours. 2 new habits. 1 window. 0 to-do list. One room, up to three people, each on your own machine, your own accounts, your own $20 AI subscription. Everyone ships one real piece of their own work before we are done. $999 flat for the room.",
+    "3 hours. 2 new habits. 1 window. 0 to-do list. Up to three people, each on their own machine and accounts, each shipping one real piece of work. $999 flat.",
 };
 
 const specs = [

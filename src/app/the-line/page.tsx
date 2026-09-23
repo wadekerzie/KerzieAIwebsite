@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "The Wrong Side Of The Line | Kerzie AI",
   description:
-    "The Kerzie effect has two preconditions: someone crosses the AI competency line, and they work from one window. If you finished the essay missing one of them, this is what to do about it.",
+    "The Kerzie Effect has two preconditions: cross the AI competency line, and work from one window. If you are missing one, this is what to do about it.",
   openGraph: {
     title: "The Wrong Side Of The Line",
     description:

@@ -3,7 +3,7 @@ import ProductStory from "@/components/ProductStory";
 export const metadata = {
   title: "Executive Legacy | Kerzie AI",
   description:
-    "What walks out the door with a retiring executive? Executive Legacy captures the judgment in recorded conversations and builds an answer set the successor can ask, every answer cited to what the executive actually said.",
+    "What walks out the door with a retiring executive? Executive Legacy captures that judgment in an answer set the successor can ask, every answer cited.",
 };
 
 // Rewritten 2026-09-17 on Wade's order ("beef up the offer page"): the

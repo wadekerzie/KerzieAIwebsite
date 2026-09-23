@@ -33,7 +33,7 @@ const watchIncludes = [
 export const metadata: Metadata = {
   title: "The Back Cover | Kerzie AI",
   description:
-    "Your customers stopped searching and started asking. We make your existing website readable to the AI that now decides which businesses get named. We do not build new websites.",
+    "Your customers stopped searching and started asking. We make your existing website readable to the AI that now decides which businesses get named.",
   openGraph: {
     title: "The Back Cover",
     description:
