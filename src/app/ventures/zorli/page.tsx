@@ -11,7 +11,7 @@ export default function ZorliPage() {
     <ProductStory
       clock="8 MIN"
       hook="Your teenager calls while you are watching a movie."
-      image="/evidence/zorli.jpg"
+      image="/evidence/zorli-v2.jpg"
       imageAlt="A living room at night with a movie paused on the television"
       problemBody="They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week."
       whyLabel="Why It Stays Broken"
@@ -19,8 +19,8 @@ export default function ZorliPage() {
       whyBody="Across apps, notes, texts, emails, browser bookmarks. The problem is not memory. It is retrieval. You have the answer. Finding it costs you more time than the answer is worth."
       builtHook="So we built Zorli."
       builtBody="One place for the information you actually need to find again. Not another note app. A retrieval system. You put it in once. You get it back instantly."
-      builtImage="/evidence/after-zorli.jpg"
-      builtImageAlt="A man on his sofa in afternoon light, finding what he needed on his phone straight away"
+      builtImage="/evidence/after-zorli-v2.jpg"
+      builtImageAlt="A man on his sofa at dusk, finding what he needed on his phone straight away"
       steps={[
         "Save it once.",
         "Search in plain language.",

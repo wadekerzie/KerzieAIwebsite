@@ -16,8 +16,8 @@ const products = [
     hook: "Your faucet has been dripping for three days.",
     body: "You Googled plumbers. First one: voicemail. Second one: booked until next Thursday. Third gave you a number over the phone that felt made up. You said you'd call back. You haven't. The faucet is still dripping.",
     href: "/ventures/gotaguy",
-    image: "/evidence/after-gotaguy.jpg",
-    imageAlt: "A homeowner smiling at her phone while a plumber fixes the kitchen faucet in daylight",
+    image: "/evidence/after-gotaguy-v2.jpg",
+    imageAlt: "A homeowner smiling at her phone in a bright kitchen while a plumber fixes the faucet behind her",
   },
   {
     name: "Unison",
@@ -25,8 +25,8 @@ const products = [
     hook: "Someone calls your law firm at 7:05pm.",
     body: "They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.",
     href: "/ventures/unison",
-    image: "/evidence/after-unison.jpg",
-    imageAlt: "A receptionist with a headset answering calls in a bright office",
+    image: "/evidence/after-unison-v2.jpg",
+    imageAlt: "An attorney at his desk the next morning, coffee in hand, reading the call that came in overnight",
   },
   {
     name: "Zorli",
@@ -34,7 +34,7 @@ const products = [
     hook: "Your teenager calls while you're watching a movie.",
     body: "They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.",
     href: "/ventures/zorli",
-    image: "/evidence/after-zorli.jpg",
+    image: "/evidence/after-zorli-v2.jpg",
     imageAlt: "A man relaxed on the couch, sending the password from his phone with a small smile",
   },
   {
@@ -43,8 +43,8 @@ const products = [
     hook: "You paid for the ad.",
     body: "Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.",
     href: "/ventures/ad2action",
-    image: "/evidence/after-ad2action.jpg",
-    imageAlt: "A man at a sunlit kitchen table replying on his phone the moment the lead comes in",
+    image: "/evidence/after-ad2action-v2.jpg",
+    imageAlt: "A showroom owner calling a new lead back the moment it comes in",
   },
 ];
 

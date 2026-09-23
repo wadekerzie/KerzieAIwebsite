@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     description:
       "A free 10-minute phone setup: talk your thoughts into your phone, two taps, and your AI processes them into next steps. Works with Claude, ChatGPT, or Gemini.",
     url: "https://kerzie.ai/free/mobile-capture-kit",
-    images: [{ url: "/og/mobile-capture-kit.jpg", width: 1200, height: 630, alt: "A man walking on a park path, talking into his phone." }],
+    images: [{ url: "/og/mobile-capture-kit-v2.jpg", width: 1200, height: 630, alt: "A salesman in his car after a meeting, recording a voice note on his phone." }],
   },
-  twitter: { card: "summary_large_image", images: ["/og/mobile-capture-kit.jpg"] },
+  twitter: { card: "summary_large_image", images: ["/og/mobile-capture-kit-v2.jpg"] },
 };
 
 export default function CaptureKitGatePage() {

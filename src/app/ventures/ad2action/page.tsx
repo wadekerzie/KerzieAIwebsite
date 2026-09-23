@@ -11,16 +11,16 @@ export default function Ad2ActionPage() {
     <ProductStory
       clock="+14 HRS"
       hook="You paid for the ad."
-      image="/evidence/ad2action.jpg"
-      imageAlt="An empty home office at night with a closed laptop on the desk"
+      image="/evidence/ad2action-v2.jpg"
+      imageAlt="An empty office after dark, a phone lit with a message nobody saw"
       problemBody="Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired a confirmation email. You followed up Friday morning. They did not remember why they clicked. You bought their attention at peak interest and responded at zero interest."
       whyLabel="Why It Stays Broken"
       whyHook="Ad platforms optimize for the click. Nobody optimizes for what happens after."
       whyBody="That window is where leads die. Not because your product is wrong. Because your response was late. Eight minutes after someone clicks is worth more than eight hours of follow up the next day."
       builtHook="So we built Ad2Action."
       builtBody="Instant lead response the moment someone converts on your ad. Not an autoresponder. A real conversation that starts while they still remember clicking."
-      builtImage="/evidence/after-ad2action.jpg"
-      builtImageAlt="A business owner at a sunlit desk reading a reply that came in while the lead was still warm"
+      builtImage="/evidence/after-ad2action-v2.jpg"
+      builtImageAlt="A business owner calling a new lead back while the interest is still warm"
       steps={[
         "Lead converts on your ad.",
         "Ad2Action fires immediately.",
