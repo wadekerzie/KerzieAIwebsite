@@ -3,7 +3,7 @@
 
 import { NextResponse } from "next/server";
 import { botGuard, clientIp } from "@/lib/botGuard";
-import { subscribeToSubstack, notifySignupFailure } from "@/lib/substack";
+import { subscribeToSubstack, notifySignupFailure, copySignupToWade } from "@/lib/substack";
 
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
@@ -27,5 +27,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "failed" }, { status: 502 });
   }
 
+  await copySignupToWade(email, `subscribe page (${source || "kerzie.ai"})`);
   return NextResponse.json({ ok: true });
 }

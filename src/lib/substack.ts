@@ -66,3 +66,30 @@ export async function notifySignupFailure(
     console.error("notifySignupFailure failed", err);
   }
 }
+
+// Until a kerzie.ai signup is seen landing in the Substack subscriber list
+// (unverified as of 2026-09-23: Substack answers the form with its welcome
+// redirect, but the test address did not appear in the list), every signup
+// also emails Wade a copy so nobody can be lost silently.
+export async function copySignupToWade(email: string, source: string, extra?: string) {
+  if (!process.env.RESEND_API_KEY) return;
+  try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    await resend.emails.send({
+      from: "Kerzie AI <onboarding@resend.dev>",
+      to: "wade@kerzie.ai",
+      subject: `New kerzie.ai signup: ${email}`,
+      text: [
+        `Someone signed up on kerzie.ai and was sent to Substack.`,
+        ``,
+        `Email: ${email}`,
+        `Source: ${source}`,
+        extra ? extra : "",
+        ``,
+        `Check news.kerzie.ai dashboard > Subscribers. If the address is missing, add it there by hand.`,
+      ].filter(Boolean).join("\n"),
+    });
+  } catch (err) {
+    console.error("copySignupToWade failed", err);
+  }
+}
