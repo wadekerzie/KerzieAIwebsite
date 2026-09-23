@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     url: "https://kerzie.ai/kerzie-effect",
     images: [
       {
-        url: "/og/kerzie-effect.jpg",
+        url: "/og/kerzie-effect-v2.jpg",
         width: 1200,
         height: 630,
-        alt: "A woman at a kitchen table reading a printed proposal beside an open laptop.",
+        alt: "A business owner in a modern office reading a printed proposal beside an open laptop.",
       },
     ],
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "The Kerzie Effect",
     description:
       "The most valuable thing you sell is the document you hand over for free to win the work.",
-    images: ["/og/kerzie-effect.jpg"],
+    images: ["/og/kerzie-effect-v2.jpg"],
   },
 };
 

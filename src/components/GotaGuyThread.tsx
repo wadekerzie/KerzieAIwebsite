@@ -18,7 +18,7 @@ const script: Bubble[] = [
     kind: "msg",
     from: "homeowner",
     text: "My kitchen faucet won't stop dripping. Can you fix it?",
-    photo: "/evidence/gotaguy.jpg",
+    photo: "/evidence/gotaguy-v2.jpg",
   },
   {
     kind: "msg",
