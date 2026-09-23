@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "The Blast Door | Kerzie AI",
   description:
-    "The era when a person plus a nearly-free intelligence can build something of their own is real, it is short, and it is closing from every direction at once. What to do while the deck still feels level.",
+    "A person plus a nearly-free intelligence can build something of their own. That era is real, it is short, and it is closing. What to do while it is open.",
   openGraph: {
     title: "The Blast Door",
     description:

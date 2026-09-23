@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "The Consequence Clock | Kerzie AI",
   description:
-    "How long can you be wrong before being wrong costs you money? Every business runs on a consequence clock, and every worker runs on their employer's clock, not their own. What happens when AI makes one of them faster than the building.",
+    "You work at the speed you are checked, not the speed you are capable of. Why AI's real disruption sits between a company's clock and its people.",
   openGraph: {
     title: "The Consequence Clock",
     description:

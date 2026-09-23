@@ -5,7 +5,7 @@ import SubscribeForm from "@/components/SubscribeForm";
 export const metadata: Metadata = {
   title: "The Kerzie AI Newsletter | Kerzie AI",
   description:
-    "Twice a week, what actually worked. Wade Kerzie writes up the real build notes from running AI inside his own businesses: what got made, what broke, what it cost. Tuesday and Thursday, 1:00 PM Central.",
+    "Once a week, what actually worked: Wade Kerzie's build notes from running AI inside his own businesses. What got made, what broke, what it cost. Tuesdays.",
 };
 
 const RECENT = [
@@ -37,7 +37,7 @@ export default function SubscribePage() {
         </h1>
 
         <p className="mt-6 text-[#262B3D] text-lg lg:text-xl max-w-xl leading-relaxed">
-          I run my businesses on AI. Twice a week I write down what I built,
+          I run my businesses on AI. Once a week I write down what I built,
           what broke, what it cost, and what I would do differently. If I have
           not done it myself, it does not go in.
         </p>
@@ -45,7 +45,7 @@ export default function SubscribePage() {
         <p className="mt-6 text-[#262B3D] text-lg max-w-xl leading-relaxed">
           No predictions. No tool roundups. No breathless take on whatever
           shipped that morning. Just the working notes of someone building in
-          public, sent Tuesday and Thursday at 1:00 PM Central.
+          public, sent Tuesdays at 1:00 PM Central.
         </p>
 
         <div className="mt-10">
@@ -78,7 +78,7 @@ export default function SubscribePage() {
             with the receipts.
           </p>
           <p className="text-[#262B3D] leading-relaxed mt-4">
-            Why I publish them: to prove, twice a week, that this technology is
+            Why I publish them: to prove, every week, that this technology is
             finally simple enough to actually help a regular person. The
             receipts just keep me honest.
           </p>

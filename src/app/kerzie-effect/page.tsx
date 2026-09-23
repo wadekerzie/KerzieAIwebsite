@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "The Kerzie Effect | Kerzie AI",
   description:
-    "The most valuable thing you sell is the document you hand over for free to win the work. Once a buyer has the seller's scope of work and their own context, an AI can synthesize, and now execute, what used to require paying for the seller's time.",
+    "The most valuable thing you sell is the document you hand over free to win the work. Once the buyer has it, an AI can do the work you used to be paid for.",
   openGraph: {
     title: "The Kerzie Effect",
     description:
