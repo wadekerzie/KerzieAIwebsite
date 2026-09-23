@@ -1,14 +1,15 @@
 // Email gate for free lead magnets: subscribes the email to the Kerzie AI
-// newsletter (Beehiiv), tagged by magnet, and returns the magnet's access
-// page. One list, many doors.
+// newsletter on Substack (news.kerzie.ai, since the 2026-09-22 cutover) and
+// returns the magnet's access page. One list, many doors.
 
 import { NextResponse } from "next/server";
 import { botGuard, clientIp } from "@/lib/botGuard";
+import { subscribeToSubstack, notifySignupFailure } from "@/lib/substack";
 
-// The magnet slug doubles as the Beehiiv utm_source, so it stays "capture-kit"
-// even though the product is now the Mobile Capture Kit. Renaming it would
-// split one lead magnet's subscriber attribution across two tags for a change
-// no subscriber ever sees. The public path moved; the tag did not.
+// The magnet slug doubles as the signup source path (kerzie.ai/<slug>) that
+// Substack records as first_url. "capture-kit" stays as the slug even though
+// the product is now the Mobile Capture Kit; the public path moved, the slug
+// did not.
 const MAGNETS: Record<string, string> = {
   "capture-kit": "/free/mobile-capture-kit/access",
   "first-reps": "/free/first-reps/access",
@@ -40,48 +41,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, redirect });
   }
 
-  const key = process.env.BEEHIIV_API_KEY;
-  const pub = process.env.BEEHIIV_PUBLICATION_ID;
-  if (key && pub) {
-    try {
-      const res = await fetch(
-        `https://api.beehiiv.com/v2/publications/${pub}/subscriptions`,
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${key}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email,
-            utm_source: magnet,
-            utm_medium: "gate",
-            reactivate_existing: true,
-            send_welcome_email: true,
-            // Name fields ride as Beehiiv custom fields when the gate collects
-            // them (the one-window door does; the older gates send none).
-            ...(firstName || lastName
-              ? {
-                  custom_fields: [
-                    ...(firstName ? [{ name: "First Name", value: firstName }] : []),
-                    ...(lastName ? [{ name: "Last Name", value: lastName }] : []),
-                  ],
-                }
-              : {}),
-          }),
-        }
-      );
-      if (!res.ok) {
-        console.error("beehiiv subscribe failed", res.status, await res.text());
-        // Deliberate: never strand a reader over a list hiccup. They still
-        // get the magnet; the subscribe failure is logged for follow-up.
-      }
-    } catch (err) {
-      console.error("beehiiv subscribe error", err);
-    }
-  } else {
-    console.error("gate: Beehiiv env vars missing; magnet delivered ungated");
+  // Deliberate: never strand a reader over a list hiccup. They still get the
+  // magnet; a Substack refusal emails Wade the address (with the name, which
+  // Substack's form does not take) so it can be added by hand.
+  const result = await subscribeToSubstack(email, magnet);
+  if (!result.ok) {
+    console.error("substack subscribe failed", result.detail);
+    const name = [firstName, lastName].filter(Boolean).join(" ");
+    await notifySignupFailure(email, `gate: ${magnet}`, result.detail || "unknown", name ? `Name: ${name}` : undefined);
   }
-
   return NextResponse.json({ ok: true, redirect });
 }
