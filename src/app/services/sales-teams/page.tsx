@@ -270,7 +270,13 @@ export default function SalesTeamsPage() {
                   alt="Example team view for a sales leader on Monday morning before the forecast call: customer meetings captured, meeting outcomes with the customer's own words, pipeline revisions with the reason for each change, the commit forecast, each rep's next action, next meetings with briefs ready, and the five yes or no questions per rep. Labeled example data."
                   caption="Example data. Built overnight from what each rep's OS captured."
                 />
-                <ul className="mt-12 grid gap-8 lg:grid-cols-2">
+                <h3 className="mt-14 mb-2 text-[#1A1B2E] text-[clamp(1.5rem,3vw,2.125rem)] font-bold tracking-[-0.02em] leading-[1.15] max-w-2xl">
+                  What you&rsquo;re thinking but won&rsquo;t say in the staff meeting.
+                </h3>
+                <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl">
+                  All four are fair. None of them is a reason to wait.
+                </p>
+                <ul className="mt-8 grid gap-8 lg:grid-cols-2">
                   {leaderThoughts.map((t) => (
                     <li key={t.thought} className="border-l border-[#B04E2B] pl-5">
                       <p className="k-serif text-[#1A1B2E] text-xl leading-snug mb-3">
