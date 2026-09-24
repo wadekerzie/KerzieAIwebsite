@@ -79,9 +79,12 @@ The Back Cover | Kerzie AI
 ← KERZIE . AI
 The Back Cover
 
-## Your customers stopped searching and started asking .
-The owners I talk to keep telling me the same thing: the website is not bringing in what it used to.
-You are not imagining it.
+## You're tired of talking about your website.
+Good. This isn't that .
+For 20 years, every pitch you've heard was about your website: redesign it, add video, add a quote tool, fix your SEO. You're tired of it, and you're right to be.
+Here's the good news. More than half of the traffic on the internet is now machines, not people, and 45% of your customers already ask ChatGPT who to call, up from 6% a year ago.
+The Back Cover is one page, written for the AI, that keeps itself current. We set it up once, and it's off your plate.
+It is not another website project. My bet is it's the last one of those you'll need for a long time.
 
 Schedule your deployment → See this site's llms.txt →
 

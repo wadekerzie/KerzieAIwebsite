@@ -32,8 +32,10 @@ const watchIncludes = [
 // brand/kerzie_ai/assets/og/.
 export const metadata: Metadata = {
   title: "The Back Cover | Kerzie AI",
+  // Description realigned 2026-09-24 with the fatigue opening (the old one
+  // was the retired headline). OG and Twitter share-card copy left as is.
   description:
-    "Your customers stopped searching and started asking. We make your existing website readable to the AI that now decides which businesses get named.",
+    "Tired of talking about your website? The Back Cover is one page, written for the AI, that keeps itself current. Set up once, off your plate.",
   openGraph: {
     title: "The Back Cover",
     description:
@@ -129,22 +131,54 @@ export default function BackCoverPage() {
           beside the header - portrait crop, fixed width, never a scroll
           interruption (Wade's correction, same day: the full-bleed 16:9
           version broke the hero). The 16:9 original still drives the og
-          share card. */}
+          share card.
+
+          OPENING REWRITTEN 2026-09-24 (Wade's own angle, approved same day):
+          owners are TIRED of website conversations - twenty years of pitches
+          about redesigns, photos, video, forms, quote tools and SEO. The Back
+          Cover wins by NOT being another website project: one page, written
+          for the AI, that keeps itself current, set up once and off the
+          owner's plate. The old hero ("Your customers stopped searching and
+          started asking" / "the website is not bringing in what it used to")
+          was retired here; do not bring it back. The two numbers in the hero
+          (Cloudflare "more than half" of traffic is machines, BrightLocal 45%
+          up from 6%) are the SAME numbers sourced and linked in section 03 -
+          never add a number here that section 03 does not carry. Claim
+          discipline still governs: PAGE never file, we AUTHOR what the AI
+          reads and never "control" what it says, no traffic or lead promise. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-14">
           <div className="lg:flex-1">
             <p className="k-rise k-rise-1 k-label mb-8">The Back Cover</p>
             <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)] max-w-4xl">
-              Your customers stopped searching and started{" "}
-              <span className="k-serif font-normal">asking</span>
+              You&apos;re tired of talking about your website.
+              <br />
+              Good. This isn&apos;t{" "}
+              <span className="k-serif font-normal">that</span>
               <span className="text-[#B04E2B]">.</span>
             </h1>
             <div className="k-rise k-rise-3 mt-6 max-w-xl space-y-4 text-[#262B3D] text-lg lg:text-xl leading-relaxed">
               <p>
-                The owners I talk to keep telling me the same thing: the website
-                is not bringing in what it used to.
+                For 20 years, every pitch you&apos;ve heard was about your
+                website: redesign it, add video, add a quote tool, fix your SEO.
+                You&apos;re tired of it, and you&apos;re right to be.
               </p>
-              <p className="text-[#1A1B2E]">You are not imagining it.</p>
+              <p>
+                Here&apos;s the good news. More than half of the traffic on the
+                internet is now machines, not people, and 45% of your customers
+                already ask ChatGPT who to call, up from 6% a year ago.
+              </p>
+              <p>
+                The Back Cover is one page, written for the AI, that keeps
+                itself current. We set it up once, and it&apos;s off your plate.
+              </p>
+              <p className="text-[#1A1B2E]">
+                <span className="font-medium">
+                  It is not another website project.
+                </span>{" "}
+                My bet is it&apos;s the last one of those you&apos;ll need for a
+                long time.
+              </p>
             </div>
             <div className="k-rise k-rise-4 mt-10 flex flex-wrap items-center gap-4">
               <Link href="/schedule" className="k-btn-solid k-focus inline-block">
