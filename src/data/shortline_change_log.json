@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-24",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 7,
+      "removed": 5,
+      "price_changed": 19,
+      "total": 333,
+      "ran_at": "6:53 AM MT",
+      "note": "Seven vehicles joined the list and five came off, bringing the total to 333. New arrivals include a 2027 GMC Acadia AWD Elevation, a 2021 Ram 2500 Laramie, and a 2026 GMC Sierra 1500 Elevation. Nineteen vehicles were repriced today, mostly modest adjustments on GMC trucks and SUVs. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-23",
       "status": "ok",
       "kind": "refresh",
