@@ -164,6 +164,7 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/ventures/trueseat", changeFrequency: "monthly", priority: 0.4 },
   { path: "/ventures/unison", changeFrequency: "monthly", priority: 0.4 },
   { path: "/ventures/zorli", changeFrequency: "monthly", priority: 0.4 },
+  { path: "/essays", changeFrequency: "monthly", priority: 0.6 },
   { path: "/kerzie-effect", changeFrequency: "monthly", priority: 0.6 },
   { path: "/blast-door", changeFrequency: "monthly", priority: 0.5 },
   { path: "/consequence-clock", changeFrequency: "monthly", priority: 0.5 },

@@ -28,7 +28,10 @@ export function EssaySheet({
 }) {
   return (
     <div className="bg-[#FAF8F4] min-h-screen pb-24">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 pb-6 p-noprint">
+      {/* Top bar: the back link on the left, the index of every essay on the
+          right (Wade 2026-09-24: readers who land on one essay from a link
+          should not have to dig through the menu to find the others). */}
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 pb-6 p-noprint flex items-baseline justify-between gap-6">
         <Link
           href={backHref}
           className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
@@ -39,6 +42,12 @@ export function EssaySheet({
               KERZIE<span className="text-[#B04E2B]">.</span>AI
             </>
           )}
+        </Link>
+        <Link
+          href="/essays"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus flex-shrink-0"
+        >
+          ALL ESSAYS &rarr;
         </Link>
       </div>
 

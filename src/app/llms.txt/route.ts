@@ -26,6 +26,7 @@ import { metadata as trueseat } from "@/app/ventures/trueseat/page";
 import { metadata as zorli } from "@/app/ventures/zorli/page";
 import { metadata as executiveLegacy } from "@/app/ventures/executive-legacy/page";
 import { metadata as truenorth } from "@/app/ventures/truenorth/page";
+import { metadata as essaysIndex } from "@/app/essays/page";
 import { metadata as kerzieEffect } from "@/app/kerzie-effect/page";
 import { metadata as consequenceClock } from "@/app/consequence-clock/page";
 import { metadata as packedHouse } from "@/app/packed-house/page";
@@ -82,6 +83,7 @@ const VENTURES: Array<[string, string, Described]> = [
 ];
 
 const WRITING: Array<[string, string, Described]> = [
+  ["/essays", "Essays (the index)", essaysIndex],
   ["/kerzie-effect", "The Kerzie Effect", kerzieEffect],
   ["/consequence-clock", "The Consequence Clock", consequenceClock],
   ["/blast-door", "The Blast Door", blastDoor],

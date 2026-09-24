@@ -240,7 +240,16 @@ export default function Header() {
 
           {/* The essays - one body of work, on its own sheet */}
           <div>
-            <SectionLabel>The Essays</SectionLabel>
+            <div className="flex items-baseline justify-between">
+              <SectionLabel>The Essays</SectionLabel>
+              <Link
+                href="/essays"
+                onClick={close}
+                className="k-mono text-[11px] lg:text-xs text-[#2B5D96] k-focus"
+              >
+                All essays &rarr;
+              </Link>
+            </div>
             <div className="mt-3 bg-[#FAF8F4] border border-[rgba(26,27,46,0.1)] rounded-lg px-4 py-1 shadow-[0_1px_2px_rgba(26,27,46,0.06)]">
               {essays.map((e, i) => (
                 <Link

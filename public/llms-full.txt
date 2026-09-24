@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 35
+Pages included: 36
 
 ---
 
@@ -238,7 +238,7 @@ The dashboards that only watch this start around $250 a month, and you run them 
 URL: https://kerzie.ai/blast-door
 
 The Blast Door | Kerzie AI
-← KERZIE . AI
+← KERZIE . AI ALL ESSAYS →
 Abstract
 Right now a person with judgment and an AI can spot a problem, build the solution, and get paid for it. That combination has a shelf life, because the labs are building toward systems that spot the problems too, and when that arrives a solution costs roughly the electricity it took to think of it. The opportunity is not a window sliding shut on one schedule. It is a blast door closing from every direction at once, and the last part goes fast. This essay is about the time before it closes: what to build, what to ignore, and why the urgency will only look obvious in the rearview.
 
@@ -349,7 +349,7 @@ Show my QR code Point any phone camera at the code. No app on either end.
 URL: https://kerzie.ai/consequence-clock
 
 The Consequence Clock | Kerzie AI
-← KERZIE . AI
+← KERZIE . AI ALL ESSAYS →
 Abstract
 Every business runs on a consequence clock: how long it can be wrong before being wrong costs it money. But people do not run on their own clock. They run on their employer’s, because accountability is a sampling rate, and nothing measures the speed between check-ins. AI is now accelerating individuals far past any organization’s cadence, the rational response inside slow companies is to throttle or hide the speed, and the spread resolves one of three ways: the fast people leave, the company re-clocks, or the parked surplus quietly funds the company’s future competitors.
 
@@ -452,6 +452,54 @@ Email address Send it to me
 
 ---
 
+# Essays | Kerzie AI
+URL: https://kerzie.ai/essays
+
+Essays | Kerzie AI
+← KERZIE . AI
+Essays
+
+## One argument, in three parts.
+Read them in the order I wrote them if you can. Each one stands on its own, but they build.
+
+July 24, 2026
+
+## The Kerzie Effect
+The firm-level argument
+The most valuable thing you sell is the document you hand over free to win the work. Once the buyer has it, an AI can do the work you used to be paid for.
+
+Read the essay →
+
+July 30, 2026
+
+## The Consequence Clock
+The person-level one
+You work at the speed you are checked, not the speed you are capable of.
+
+Read the essay →
+
+July 31, 2026
+
+## The Blast Door
+The time limit on both
+A person plus a nearly-free intelligence can build something of their own. That era is real, it is short, and it is closing.
+
+Read the essay →
+
+Appendix
+
+July 25, 2026
+
+## If you’re on the wrong side of the line
+Appendix to The Kerzie Effect
+The Kerzie Effect has two preconditions: cross the AI competency line, and work from one window. If you are missing one, this is what to do about it.
+
+Read the appendix →
+
+Coming next: The Blast Radius
+
+---
+
 # The First Reps Guide (Free) | Kerzie AI
 URL: https://kerzie.ai/free/first-reps
 
@@ -483,7 +531,7 @@ Send me the Voice Command Center You get it instantly plus the Kerzie AI newslet
 URL: https://kerzie.ai/kerzie-effect
 
 The Kerzie Effect | Kerzie AI
-← KERZIE . AI
+← KERZIE . AI ALL ESSAYS →
 Abstract
 Once a buyer has the seller’s scope of work and the buyer’s own context, an AI can synthesize, and now execute, what used to require paying for the seller’s time. Named here, walked through its two phases, demonstrated across three industries at real prices, and bounded by the places it does not reach. The mechanism cuts both ways. It strands anyone whose product is synthesis, and it elevates whoever inside a company picks it up first.
 
@@ -1759,7 +1807,7 @@ Return to Home
 URL: https://kerzie.ai/the-line
 
 The Wrong Side Of The Line | Kerzie AI
-← THE KERZIE EFFECT
+← THE KERZIE EFFECT ALL ESSAYS →
 
 ## The two preconditions
 The whole essay comes down to one sentence: once someone has crossed the competency line and is working from one window, the AI stops recommending and starts executing.
