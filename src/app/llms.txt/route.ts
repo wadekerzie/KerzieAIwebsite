@@ -33,6 +33,7 @@ import { metadata as packedHouse } from "@/app/packed-house/page";
 import { metadata as blastDoor } from "@/app/blast-door/page";
 import { metadata as thousand } from "@/app/thousand/page";
 import { metadata as team } from "@/app/team/page";
+import { metadata as teamJordan } from "@/app/team/jordan/page";
 import { metadata as speaking } from "@/app/speaking/page";
 
 // THE BACK COVER - /llms.txt
@@ -91,6 +92,7 @@ const WRITING: Array<[string, string, Described]> = [
 
 const ABOUT: Array<[string, string, Described]> = [
   ["/team", "The People", team],
+  ["/team/jordan", "Jordan Holzmiller", teamJordan],
   ["/thousand", "The First Thousand", thousand],
   ["/speaking", "Booking Wade to speak", speaking],
   ["/services", "Offers", offersHub],

@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 36
+Pages included: 37
 
 ---
 
@@ -1701,6 +1701,40 @@ Aaron Jones
 Technical Specialist. Colorado market. Making sure the work actually gets done.
 
 See more →
+
+JH
+Jordan Holzmiller
+Account Executive. North Texas market, The Back Cover. Earning trust before he earns the business.
+
+See more →
+
+---
+
+# Jordan Holzmiller | Kerzie AI
+URL: https://kerzie.ai/team/jordan
+
+Jordan Holzmiller | Kerzie AI
+← THE PEOPLE
+The People
+JH
+
+## Jordan Holzmiller
+Account Executive, Kerzie AI Solutions. Dallas, Texas.
+
+Jordan sells The Back Cover in North Texas: one page, written for the AI, that makes a business readable to the AI its customers now ask. His job is to ask that question plainly and answer it honestly.
+
+## Where he comes from .
+Jordan has spent six-plus years in quota-carrying sales, most of it in businesses where a promise has to survive contact with an operation. In freight, he was the sole point of contact for shippers ranging from $5 million companies to $1 billion-plus enterprises: location updates, issue resolution, transparency. In the Frisco area he launched and ran a 40,000-home print distribution network from the ground up, and negotiated the advertising contracts and pricing that paid for it.
+Most recently he managed 56 recurring accounts for a direct-mail company, each running monthly campaigns of up to 60,000 pieces. He coordinated data, production, finance and prepress teams to hit contractual timelines, and he was the escalation point when something slipped. Before that came construction tech, where he fielded inbound leads and ran deals to close, and a stretch running the sales department day to day at an insurance office.
+His own line for how he sells: he humanizes the sales process and earns trust before he earns the business. He is explicit about where AI tooling earns trust and where judgment still has to do the work.
+
+## He runs on the same kind of system Kerzie AI builds .
+Since July 2026 Jordan has run his own AI operating system on Claude Code: scheduled overnight routines, subagents built for research and scoring, standing rules the system has to follow, and a live dashboard fed by the underlying data. He holds it to two rules. Nothing goes out that cannot be traced to source data. Anything unknown is recorded as unknown, not filled in with something plausible. He has debugged its ugly failures too, like scheduled jobs that reported success while producing nothing.
+In one case study he took a 508-row carrier data export to a finished quarterly business review. Profiling every column first caught a duplicate load, a facility code that would have split one lane into two, and a sentinel value that would have wrecked the dwell medians. He found a correlation near -0.3 between destination dwell and next-day on-time delivery, and declined to claim causation on it. He put the question on an ask list for the customer instead.
+That is the discipline an owner is trusting when they hand Kerzie AI their website. Jordan practices it on his own work first.
+
+Want to know what the AI says about your business?
+See The Back Cover →
 
 ---
 

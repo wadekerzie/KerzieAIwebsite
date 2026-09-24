@@ -23,6 +23,16 @@ const people = [
     photo: "/aaron.jpg",
     initials: null,
   },
+  {
+    // Initials tile until Jordan sends a headshot (Wade 2026-09-24); set
+    // photo to "/jordan.jpg" when it lands. His background: /team/jordan.
+    name: "Jordan Holzmiller",
+    role: "Account Executive. North Texas market, The Back Cover. Earning trust before he earns the business.",
+    href: "/team/jordan",
+    external: false,
+    photo: null,
+    initials: "JH",
+  },
 ];
 
 export default function TeamPage() {
