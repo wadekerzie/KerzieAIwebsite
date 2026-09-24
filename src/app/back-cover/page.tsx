@@ -142,8 +142,9 @@ export default function BackCoverPage() {
           started asking" / "the website is not bringing in what it used to")
           was retired here; do not bring it back. The two numbers in the hero
           (Cloudflare "more than half" of traffic is machines, BrightLocal 45%
-          up from 6%) are the SAME numbers sourced and linked in section 03 -
-          never add a number here that section 03 does not carry. Claim
+          up from 6%) are the SAME numbers sourced and linked in the "Don't
+          Take Our Word For It" section - never add a number here that section
+          does not carry. Claim
           discipline still governs: PAGE never file, we AUTHOR what the AI
           reads and never "control" what it says, no traffic or lead promise. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
@@ -249,7 +250,7 @@ export default function BackCoverPage() {
           exact outputs. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; Prove It To Yourself</p>
+          <p className="k-label mb-6">Prove It To Yourself</p>
           <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             You do not need a sales call. You need sixty seconds and your own
             phone<span className="text-[#B04E2B]">.</span>
@@ -300,7 +301,7 @@ export default function BackCoverPage() {
       {/* What changed */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; What Changed</p>
+          <p className="k-label mb-6">What Changed</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             {/* The anti-conflation guard used to be its own defensive paragraph
                 ("half your customers are not robots"), added because two
@@ -336,7 +337,7 @@ export default function BackCoverPage() {
           verified by direct fetch 2026-08-14. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; Don&apos;t Take Our Word For It</p>
+          <p className="k-label mb-6">Don&apos;t Take Our Word For It</p>
           <p className="max-w-2xl mb-10 text-[#262B3D] text-lg leading-relaxed">
             None of these numbers are ours. Every one links to the people who
             published&nbsp;it.
@@ -420,7 +421,7 @@ export default function BackCoverPage() {
       {/* What we do */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; What We Do</p>
+          <p className="k-label mb-6">What We Do</p>
           <p className="text-[#1A1B2E] text-lg font-medium max-w-2xl mb-3 leading-relaxed">
             We do not build new websites. We get yours ready to be read by
             machines.
@@ -509,7 +510,7 @@ export default function BackCoverPage() {
       {/* The proof */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; See It On This Site</p>
+          <p className="k-label mb-6">See It On This Site</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               We did it to ourselves first. There is a page on this site written
@@ -558,7 +559,7 @@ export default function BackCoverPage() {
       {/* Honest section - this is the trust builder, do not cut it */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; What We Will Not Promise</p>
+          <p className="k-label mb-6">What We Will Not Promise</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Anyone who tells you they can guarantee an AI will recommend you is
@@ -591,7 +592,7 @@ export default function BackCoverPage() {
       {/* Price + CTA */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; The Price</p>
+          <p className="k-label mb-6">The Price</p>
           <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             {BACK_COVER.priceLabel}
             <span className="text-[#B04E2B]">.</span>
@@ -607,7 +608,7 @@ export default function BackCoverPage() {
             away from.
           </p>
           {/* The free diagnostic was retired 8/14 (Wade): the self-run test in
-              section 01 IS the assessment, run by the buyer for nothing. The
+              "Prove It To Yourself" IS the assessment, run by the buyer for nothing. The
               calendar is for the paid deployment meeting. */}
           <p className="text-[#262B3D] text-lg max-w-xl mb-4 leading-relaxed">
             No assessment call, no discovery dance. You already ran the test at
@@ -631,7 +632,7 @@ export default function BackCoverPage() {
           we send the exact clicks.) */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">08 &mdash; When You Say Yes</p>
+          <p className="k-label mb-6">When You Say Yes</p>
           <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-8">
             Four steps from calendar to walkthrough
             <span className="text-[#B04E2B]">.</span>
@@ -680,7 +681,7 @@ export default function BackCoverPage() {
       {/* The Watch - the ongoing half */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">09 &mdash; Staying Ready</p>
+          <p className="k-label mb-6">Staying Ready</p>
           <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             The Watch<span className="text-[#B04E2B]">.</span>{" "}
             <span className="text-[#2B5D96] font-normal">

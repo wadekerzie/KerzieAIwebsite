@@ -171,7 +171,7 @@ export default function OneWindowPage() {
       {/* The collapse */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; The Learning Curve Is Gone</p>
+          <p className="k-label mb-6">The Learning Curve Is Gone</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               For two years, using AI well meant studying it: which model for
@@ -203,7 +203,7 @@ export default function OneWindowPage() {
       {/* The 16,000 words */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; Your 16,000 Words</p>
+          <p className="k-label mb-6">Your 16,000 Words</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Researchers once wired people with recorders to settle how much
@@ -227,7 +227,7 @@ export default function OneWindowPage() {
       {/* What you get */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; What You Get</p>
+          <p className="k-label mb-6">What You Get</p>
           <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed mb-8">
             Built with you in the first sittings, from an interview about your
             actual work. Nothing generic.
@@ -249,7 +249,7 @@ export default function OneWindowPage() {
       {/* The three steps */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; The Whole Door Is Three Steps</p>
+          <p className="k-label mb-6">The Whole Door Is Three Steps</p>
           <div className="max-w-2xl space-y-6">
             {[
               {
@@ -283,7 +283,7 @@ export default function OneWindowPage() {
       {/* Why free */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; Why Free</p>
+          <p className="k-label mb-6">Why Free</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               This used to cost $99, with a $149 pass for the upgrade stream.
@@ -316,7 +316,7 @@ export default function OneWindowPage() {
       {/* The gate */}
       <section id="get" className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; Tell Me Where To Send It</p>
+          <p className="k-label mb-6">Tell Me Where To Send It</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed mb-8">
             <p>
               Your name and email are the whole price. You get the download
@@ -348,7 +348,7 @@ export default function OneWindowPage() {
       {/* Straight answers */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; Straight Answers</p>
+          <p className="k-label mb-6">Straight Answers</p>
           <div className="max-w-2xl space-y-5 text-[#262B3D] text-lg leading-relaxed">
             <p>
               <span className="text-[#1A1B2E] font-medium">Do I need to know AI?</span>{" "}

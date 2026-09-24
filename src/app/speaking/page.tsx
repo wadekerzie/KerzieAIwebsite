@@ -73,9 +73,6 @@ export default function SpeakingPage() {
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-10 max-w-4xl">
           {TOPICS.map((t, i) => (
             <div key={i}>
-              <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mb-2">
-                0{i + 1}
-              </p>
               <h2 className="text-[#1A1B2E] text-xl font-bold tracking-[-0.01em]">
                 {t.title}
               </h2>

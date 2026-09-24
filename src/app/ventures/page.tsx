@@ -87,10 +87,7 @@ export default function VenturesPage() {
               className="group block py-10 border-b border-[rgba(26,27,46,0.13)] k-focus"
             >
               <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-baseline">
-                <div className="lg:col-span-3 mb-3 lg:mb-0 flex items-baseline gap-5">
-                  <span className="k-mono text-[#B04E2B] text-xs lg:text-sm">
-                    0{i + 1}
-                  </span>
+                <div className="lg:col-span-3 mb-3 lg:mb-0">
                   <span className="k-mono text-[#262B3D]/40 text-sm lg:text-base tracking-tight">
                     {product.clock}
                   </span>

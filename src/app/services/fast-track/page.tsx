@@ -142,7 +142,7 @@ export default function FastTrackPage() {
       {/* The problem with AI demos */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; The Problem With AI Demos</p>
+          <p className="k-label mb-6">The Problem With AI Demos</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               You can watch a free AI demo any week of the year. Google runs
@@ -162,7 +162,7 @@ export default function FastTrackPage() {
       {/* What this is */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; What This Is</p>
+          <p className="k-label mb-6">What This Is</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>Not a class. Not a demo. Not a report you file away.</p>
             <p>
@@ -181,7 +181,7 @@ export default function FastTrackPage() {
       {/* The specifics */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; The Specifics</p>
+          <p className="k-label mb-6">The Specifics</p>
           <ul className="max-w-2xl space-y-4 mb-6">
             {specs.map((s) => (
               <li
@@ -209,7 +209,7 @@ export default function FastTrackPage() {
       {/* What you leave with */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; What You Leave With</p>
+          <p className="k-label mb-6">What You Leave With</p>
           <ul className="max-w-2xl space-y-4">
             {takeaways.map((t) => (
               <li
@@ -226,7 +226,7 @@ export default function FastTrackPage() {
       {/* The first one */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; The First One</p>
+          <p className="k-label mb-6">The First One</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Kurt and Tana Nelson run{" "}
@@ -270,7 +270,7 @@ export default function FastTrackPage() {
       {/* Before we book */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; Before We Book</p>
+          <p className="k-label mb-6">Before We Book</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Not everyone is a fit, and I would rather tell you that before you
@@ -303,7 +303,7 @@ export default function FastTrackPage() {
       {/* The price */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; The Price</p>
+          <p className="k-label mb-6">The Price</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p className="text-[#1A1B2E] text-xl font-semibold">
               ${FAST_TRACK.price}, flat. That is the room, not the seat.
@@ -349,7 +349,7 @@ export default function FastTrackPage() {
         className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]"
       >
         <Reveal>
-          <p className="k-label mb-6">08 &mdash; The Intake</p>
+          <p className="k-label mb-6">The Intake</p>
           <p className="text-[#1A1B2E] font-medium text-lg max-w-2xl mb-4">
             The test of the session is the test of everything we do: did
             technology just get simpler for you, and did something real ship

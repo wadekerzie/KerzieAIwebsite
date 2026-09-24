@@ -37,7 +37,7 @@ export default function NemoClawService() {
         <Reveal>
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-4 lg:mb-0">
-              <p className="k-label">01 &mdash; Install</p>
+              <p className="k-label">Install</p>
               <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-3">
                 $22,500 flat
               </p>
@@ -93,7 +93,7 @@ export default function NemoClawService() {
         <Reveal>
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-4 lg:mb-0">
-              <p className="k-label">02 &mdash; Strategy</p>
+              <p className="k-label">Strategy</p>
               <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-3">
                 Scoped per engagement
               </p>

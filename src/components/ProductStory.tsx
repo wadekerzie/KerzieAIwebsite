@@ -86,7 +86,7 @@ export default function ProductStory(props: ProductStoryProps) {
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-3 mb-8 lg:mb-0">
                 <p className="k-label">
-                  <span className="idx">01</span>{props.whyLabel}
+                  {props.whyLabel}
                 </p>
               </div>
               <div className="lg:col-span-9 border-l-2 border-[#B04E2B] pl-6 lg:pl-8">
@@ -108,7 +108,7 @@ export default function ProductStory(props: ProductStoryProps) {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
               <p className="k-label">
-                <span className="idx">02</span>What Got Built
+                What Got Built
               </p>
             </div>
             <div className="lg:col-span-9">
@@ -152,19 +152,14 @@ export default function ProductStory(props: ProductStoryProps) {
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-3 mb-10 lg:mb-0">
                 <p className="k-label">
-                  <span className="idx">03</span>How It Works
+                  How It Works
                 </p>
               </div>
               <div className="lg:col-span-9">
                 <ol className="space-y-6">
-                  {props.steps.map((step, i) => (
-                    <li key={step} className="flex items-baseline gap-5">
-                      <span className="k-mono text-[#B04E2B] text-xs lg:text-sm shrink-0 w-6">
-                        0{i + 1}
-                      </span>
-                      <span className="text-[#1A1B2E] text-lg lg:text-xl font-medium leading-snug">
-                        {step}
-                      </span>
+                  {props.steps.map((step) => (
+                    <li key={step} className="text-[#1A1B2E] text-lg lg:text-xl font-medium leading-snug">
+                      {step}
                     </li>
                   ))}
                 </ol>
@@ -181,7 +176,7 @@ export default function ProductStory(props: ProductStoryProps) {
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-3 mb-8 lg:mb-0">
                 <p className="k-label">
-                  <span className="idx">04</span>{props.extra.label}
+                  {props.extra.label}
                 </p>
               </div>
               <div className="lg:col-span-9 border-l-2 border-[#B04E2B] pl-6 lg:pl-8">
@@ -209,7 +204,7 @@ export default function ProductStory(props: ProductStoryProps) {
               <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div className="lg:col-span-3 mb-8 lg:mb-0">
                   <p className="k-label">
-                    <span className="idx">05</span>{props.pricing.label}
+                    {props.pricing.label}
                   </p>
                 </div>
                 <div className="lg:col-span-9">

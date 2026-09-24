@@ -27,36 +27,30 @@ We build products that fix things people stopped expecting to get fixed. No cour
 PUBLISHED IN NATION'S RESTAURANT NEWS / LAWFUEL / SMALL BUSINESS CURRENTS
 THE BACK COVER / FOR SALES TEAMS / UNISON / EXECUTIVE LEGACY
 
-01 What We Sell
+What We Sell
 All offers →
-
-01
 
 ## The Back Cover
 One page, written for the AI your customers now ask, that keeps itself current. Set up once, off your plate.
 Read the page →
 
-0 2
-
 ## For Sales Teams
 Every seller runs their own AI operating system, and the leader gets the view. An engagement, not a login.
 Read more →
-0 3
 
 ## Unison
 Someone calls your business after hours and you never knew they called. Unison answers immediately across every channel.
 Read more →
-0 4
 
 ## Executive Legacy
 Forty years of judgment retires at the end of the year. Executive Legacy captures it in an answer set the successor can ask, every answer cited.
 Read more →
 
-02 The Engines
+The Engines
 
 Anthropic, OpenAI, Google, and DeepSeek spent billions building the most powerful reasoning engines in history. We use them to fix a leaky faucet, answer your phone at 7pm, and find your Netflix password.
 
-03 Companies We Own and Run
+Companies We Own and Run
 All ventures →
 Not offers. Our own companies, each one started as a problem worth fixing.
 
@@ -86,7 +80,7 @@ Your reps have AI licenses. That is not the same as using them.
 
 For Sales Teams →
 
-04 The Question
+The Question
 
 ## What problem hurts the most?
 Everything above started as somebody's problem. That's the whole business: find where technology is failing a person, and make it simple enough to actually help.
@@ -117,7 +111,7 @@ Every business has a back cover. The AI reads it whether you wrote it or not.
 The Two-Minute Version
 The page mentioned in the video: our llms.txt → Schedule your deployment →
 
-01 — Prove It To Yourself
+Prove It To Yourself
 
 ## You do not need a sales call. You need sixty seconds and your own phone .
 
@@ -130,12 +124,12 @@ The page mentioned in the video: our llms.txt → Schedule your deployment →
 AI answers move around - no two runs come back identical. What you are comparing is not the wording. It is whether the AI had anything real to read.
 Saw the difference? Schedule your deployment →
 
-02 — What Changed
+What Changed
 Cloudflare reported this year that more than half of all traffic on the internet is now machines rather than people. Not customers. Traffic. Assistants, agents and crawlers now outnumber human eyeballs.
 Your website was built to be read by a person.
 We get it ready for the AI to read .
 
-03 — Don't Take Our Word For It
+Don't Take Our Word For It
 None of these numbers are ours. Every one links to the people who published it.
 CLOUDFLARE · JULY 2026
 Human traffic to some of the internet's most heavily crawled categories fell as much as 40% in under a year.
@@ -162,7 +156,7 @@ Squarespace now ships a built-in llms.txt - a page written for AI to read - on e
 Mainstream website platforms are already building for machine readers. It ships turned off, which is exactly where most businesses are standing today.
 READ THE SOURCE →
 
-04 — What We Do
+What We Do
 We do not build new websites. We get yours ready to be read by machines.
 Two halves. One job, one price.
 HALF ONE — WHAT THEY CAN READ TODAY
@@ -184,7 +178,7 @@ We add facts to your pages, a page for the AI tools, and markup that describes y
 Every change is additive and reversible to exactly what was there before. We work under our own login, so you can see what we did and when.
 When we are finished your website will look exactly the same to a human being. That is the point.
 
-05 — See It On This Site
+See It On This Site
 We did it to ourselves first. There is a page on this site written for machines rather than for you: every offer, every price, how to reach a human, in plain text with the design stripped out.
 It is deliberately not in the menu. No customer will ever navigate to it. Every AI that looks at this business will.
 It is generated from the same source the pages are built from, so it cannot quietly go stale and start quoting an old price. That is the part most people get wrong.
@@ -192,13 +186,13 @@ It is generated from the same source the pages are built from, so it cannot quie
 See what the llms.txt looks like for this website This is what the AI sees →
 When we finish, yours lives at your own address. We open it with you and read it together, so you can see exactly what an AI now gets told about your business. That is the whole deliverable, and you are looking at a working copy of it right now.
 
-06 — What We Will Not Promise
+What We Will Not Promise
 Anyone who tells you they can guarantee an AI will recommend you is guessing, and the honest answer is better than the confident one.
 Nobody outside those companies knows exactly how the AI tools decide who to name, or how long they take to notice a site has changed. We are not going to pretend otherwise, and we are not going to tell you an answer will change by Friday.
 What we do is the best-known practice available today, in the places the AI tools actually read, plus the page for the standard that is coming. Facts clear and current, nothing on your site contradicting itself, and your business described in the form machines take instructions from.
 And we show you all of it. Your own page, at your own address, the same way you just looked at ours. Plus what was missing, what is there now, and the markup with a validator confirming it is correct. That is a receipt you can open yourself the day we finish, instead of a result you have to take on faith.
 
-07 — The Price
+The Price
 
 ## $1,500 one time .
 One fee for the setup. Not a rebuild, and nothing you cannot walk away from.
@@ -206,7 +200,7 @@ No assessment call, no discovery dance. You already ran the test at the top of t
 The calendar is for your deployment: face to face or on a video call, your choice. That meeting is where we take payment and start the work, and delivery runs one to three days from it.
 Schedule your deployment →
 
-08 — When You Say Yes
+When You Say Yes
 
 ## Four steps from calendar to walkthrough .
 
@@ -220,7 +214,7 @@ Schedule your deployment →
 
 When you are done with us, remove our login. It takes one click, and everything we added stays yours.
 
-09 — Staying Ready
+Staying Ready
 
 ## The Watch . $99 a month
 The Back Cover gets you set up. The Watch keeps you there.
@@ -755,13 +749,13 @@ $420M+ career revenue closed
 
 - McKinney, Texas
 
-01 Ask Wade
+Ask Wade
 Answers come from Wade’s own record, and the voice reading them is his, built from it. Both are AI. That is the point.
 Quick question Bring a situation
 Ask What do you refuse to publish without a receipt? How do you think about pricing a new offer? What did the AT&T call-screening pilot teach you? What changed when the buyer stopped being a human?
 This answer set was built from Wade's published record only: his newsletter, his LinkedIn posts, and his essays. It answers in his words, cites the piece each answer came from, and says when the record is silent. It never improvises.
 
-02 Your Key
+Your Key
 
 ## You are holding the successor key. Wade set it.
 OPEN TO YOU
@@ -782,7 +776,7 @@ SEALED
 
 - Succession sessions . Opens on a trigger Wade set .
 
-03 What Wade Sees
+What Wade Sees
 
 ## Every question asked, every answer given, and a correct button. For as long as he wants the job.
 The executive's side of the record. The company pays him monthly to keep it true. This is what that looks like, with example rows.
@@ -791,7 +785,7 @@ Would you take a dealer at $999 a month if they asked for a discount? Approved T
 Why is Facebook not the audience? Corrected: added the 9/15 ruling Mon
 Who should run the Colorado market after Aaron? Sealed: succession sessions Sun
 
-04 The Avatar
+The Avatar
 
 ## If the executive wants it, the answer set can look and sound like them. Optional.
 This is an AI video clone of Wade, built from his own record. The words are his. What sits behind it, the cited record above, is the part that is not optional.
@@ -832,18 +826,18 @@ A countdown does not stop at one. It lands on zero .
 60 Seconds, And The Video Is The Demo
 That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
 
-01 — The Learning Curve Is Gone
+The Learning Curve Is Gone
 For two years, using AI well meant studying it: which model for what, which tools, prompt this, chain that. People built careers on explaining it. That curve is gone.
 Two skills are left, and you have had both for twenty-five years: create an account with a username and password, and follow instructions.
 The window gives the instructions now, not you. Connect your email: it walks you through it. Connect your calendar: it walks you through it. The hardest thing you will ever do is follow steps to create an account, and you have been doing that since the internet arrived.
 Prompt engineering did not get easier. It got done. It is inside the Foundation, written once, and you get it free. What is left for you is the only part that was ever really yours: knowing what needs to get done.
 
-02 — Your 16,000 Words
+Your 16,000 Words
 Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
 That is a 60 page document, every day, spoken into the air and gone by dinner. The idea you had in the car is in there. The commitment you made in the hallway is in there. The email you meant to send is in there. All of it said out loud, captured by nobody.
 One-Window exists to catch those words and turn them into finished work. Simpler, not additional.
 
-03 — What You Get
+What You Get
 Built with you in the first sittings, from an interview about your actual work. Nothing generic.
 
 - It remembers you. Your work, your people, your decisions - session to session. You never re-explain your business to your own AI.
@@ -862,7 +856,7 @@ Built with you in the first sittings, from an interview about your actual work. 
 
 - It cannot go rogue. Standing rules and approval gates are built into the foundation. Sending, spending, and publishing always wait for your yes.
 
-04 — The Whole Door Is Three Steps
+The Whole Door Is Three Steps
 1
 Get a Claude account and the desktop app.
 The $20 per month plan. If you have ever created an account online, you can do this.
@@ -875,13 +869,13 @@ Copied straight off the page, pasted once. The Foundation tells you exactly what
 Paste the Foundation.
 Your AI reads it and becomes the builder. It interviews you, then it builds. You answer questions and approve.
 
-05 — Why Free
+Why Free
 This used to cost $99, with a $149 pass for the upgrade stream. I retired both.
 Because I want a thousand operators more than I want anybody's $99. Kerzie AI's business is deploying AI for companies. One-Window running your work is the proof, and the proof is the megaphone.
 The upgrades come with it: the Living Pane, the Clean Handoff, the Weekly Tune-Up, the Nightly Dream, and the stream keeps coming as I keep building my own system. If I'm giving this away, I'm giving away the updates too.
 The first hundred operators are counted on the First Thousand page . The seat means what it always meant: you were here before the door was obvious.
 
-06 — Tell Me Where To Send It
+Tell Me Where To Send It
 Your name and email are the whole price. You get the download page now and the link by email, so it is there whenever you sit down to do the three hours.
 
 Send me One-Window You also land on the Kerzie AI newsletter: one operator to another, twice a week. Unsubscribe any time and keep everything.
@@ -889,7 +883,7 @@ RUNNING A BUSINESS?
 There is a door built for owners: follow-ups, quotes, the tracker, your marketing. Same OS, same price: free.
 The Small Business Setup →
 
-07 — Straight Answers
+Straight Answers
 Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt.
 What is the catch? There is not one. You join my newsletter list when you take the OS, and you can leave it the same day and keep everything. I am building a thousand operators, and this is how I count.
 Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; the first-week plan inside paces the rest.
@@ -938,28 +932,28 @@ Put in the three hours yourself, free, or have them done with you for $999 . Eit
 60 Seconds, And The Video Is The Demo
 That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
 
-01 — Your 16,000 Words
+Your 16,000 Words
 Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
 That is a 60 page document, every day, spoken into the air and gone by dinner. Your quotes are in there. The follow-up you meant to send is in there. The promise you made a customer in the driveway is in there. All of it said out loud, captured by nobody.
 One-Window exists to catch those words and turn them into finished work.
 
-02 — This Existed In 1965
+This Existed In 1965
 In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
 Talk went in. Action came out. That was the whole system. We deleted that layer because it cost a salary, and everybody below the corner office never had it at all.
 That layer is back. This time it is free, and everybody gets one.
 
-03 — The Job After The Job
+The Job After The Job
 You do the work all day. Then you do the second job at night: the quote you meant to send, the lead you meant to answer, the invoice you meant to chase, the post you meant to write.
 The standard answer is more software. Another app, another login, another monthly fee, and none of it talks to each other - so you become the integration, retyping the same customer into three systems.
 This is the opposite move: one window, one AI that knows the whole business, doing the office work with you. Simpler, not additional.
 
-04 — The Two Habits
+The Two Habits
 Here is what almost everyone gets wrong about AI: they picture a curriculum. Months of studying, keeping up with model releases, learning which tool does what. That imagined climb is why most people never start.
 The whole learning curve is two habits: record what you say, and give it one place to land.
 Talk to the window at your desk. Talk to your phone from the truck. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your business once, then it knows your customers, your prices, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
 And you do not need to wait for a better AI. I run my companies on today's models, and I honestly could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
 
-05 — What You Get
+What You Get
 Built in the first sittings, from an interview about your actual business. Nothing generic, and nothing goes out to a customer without your yes.
 
 - The Foundation. The OS installer: one paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.
@@ -975,12 +969,12 @@ Built in the first sittings, from an interview about your actual business. Nothi
 - The First Sitting. Your accounts connected click by click, and one painful thing from your own week done end to end before it is over.
 If I priced this at what it replaced for me, it would be thousands: this summer I deleted Outlook, Excel, and Notion off my machine because the window had taken over the parts I used. It is free because I want nothing beneath deciding - not even the price of one lost lead.
 
-06 — This Is How I Run Mine
+This Is How I Run Mine
 I am not selling a theory. This framework runs my own companies every day: a home repair business in two markets, an AI consultancy, a golf training brand, and the content that promotes all of them.
 The morning I drafted this page, I talked while setting up a camera, and by the time I stood up: a product release had shipped and gone live, an email was staged, a live ad campaign got its spending cap set, and the plan for this page was written into the record. I typed almost none of it.
 That is not a demo day. That is Tuesday.
 
-07 — The Offer
+The Offer
 One-Window: free. The whole operating system, every capability.
 The upgrades: free too. All of them.
 Every upgrade I build for my own OS, packaged and pushed to you: the Living Pane, the Clean Handoff, the Weekly Tune-Up, the Nightly Dream, and the stream keeps coming as I keep building. If I'm giving this away, I'm giving away the updates too.
@@ -989,19 +983,19 @@ Rather have it built WITH you: your machine, your accounts, one real workflow sh
 
 Get One-Window free →
 
-08 — Keep What Already Works
+Keep What Already Works
 Already run QuickBooks, a scheduling tool, a point of sale? Keep them. This is not another system to migrate into.
 The window sits in front of what you have. It drafts, chases, tracks, and remembers - and you stay the one who approves anything that touches a customer or a dollar.
 No new hardware either. It runs on the Mac you own and the AI subscription that costs less than one lost lead a month.
 
-09 — Straight Answers
+Straight Answers
 Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt. You will type one command into your Mac, once, copied straight off the page.
 Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; the first-week plan inside paces the rest.
 Will it send things to my customers? Not without you. Everything customer-facing is drafted for your review and sent by you. That rule is built into the setup itself.
 Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the Foundation walk you through the real install, the real click paths, and the real place it breaks.
 Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
 
-10 — Not Ready? Take The Habit For Free
+Not Ready? Take The Habit For Free
 Take the Voice Command Center free. Ten minutes of setup, one habit: talk into your phone, and the thought is waiting in your AI the next time you sit down. Works with whatever AI you already use.
 If the habit sticks, you will know exactly what the full window is worth before you spend a dollar.
 
@@ -1160,28 +1154,24 @@ Offers
 Four offers, in the order we would point you at them. Then the smaller ways in. Either way: shipping, not slide decks.
 The companies we own and run are on a separate page. See the ventures →
 
-01
 $1,500 one time
 
 ## The Back Cover
 Tired of talking about your website? The Back Cover is one page, written for the AI your customers now ask, that keeps itself current. Set up once, off your plate.
 Read the page →
 
-02
 Book a call
 
 ## For Sales Teams
 Your team was told to use AI. Here is what it looks like when it works: every seller runs their own AI operating system, and the leader gets the view.
 How the engagement runs →
 
-03
 Book a call
 
 ## Unison
 Someone calls your business after hours and you never knew they called. Unison answers immediately across every channel.
 Read the story →
 
-04
 Book a call
 
 ## Executive Legacy
@@ -1190,21 +1180,18 @@ Read the story →
 
 The smaller ways in
 Start small and leave with something working.
-05
 Free
 
 ## One-Window
 Your own AI operating system, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list.
 Get One-Window →
 
-06
 $999 flat for the room
 
 ## AI Fast-Track Session
 Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with One-Window. One person or three, same price.
 Read how it works →
 
-07
 Scoped per project
 
 ## AI Implementation
@@ -1247,17 +1234,17 @@ gone, replaced by a pane your AI keeps current for you.
 
 The same countdown as the $99 do-it-yourself setup . The difference is who is beside you for the three hours .
 
-01 — The Problem With AI Demos
+The Problem With AI Demos
 You can watch a free AI demo any week of the year. Google runs them. Intuit runs them. Your chamber of commerce runs them.
 You leave impressed. And nothing at your business changes.
 That is because a demo happens on someone else's screen, with someone else's business, solving someone else's problem.
 
-02 — What This Is
+What This Is
 Not a class. Not a demo. Not a report you file away.
 A working session. We sit down at your computers, in your accounts, and set up AI to do real work in your business. Then we do some of that work, together, before the session ends.
 By the end you are not "trained on AI." You have AI working, and you know how to keep it working tomorrow without me.
 
-03 — The Specifics
+The Specifics
 
 - Three hours, one sitting.
 
@@ -1271,7 +1258,7 @@ By the end you are not "trained on AI." You have AI working, and you know how to
 Bring the people who will actually use it.
 Three people set up beats one person set up, and the price is the same either way. The most common way a session like this gets wasted is one person learning it and then becoming the bottleneck for everyone else.
 
-04 — What You Leave With
+What You Leave With
 
 - A working Claude setup on your own machine, under your own $20 per month subscription.
 
@@ -1283,13 +1270,13 @@ Three people set up beats one person set up, and the price is the same either wa
 
 - A check-in from me 30 days later to see what stuck.
 
-05 — The First One
+The First One
 Kurt and Tana Nelson run Innovative Images , a McKinney professional photography studio. Husband and wife, 25 plus years in business. He shoots, she does the marketing. Neither had ever touched AI.
 One session: their own AI subscription set up, live changes shipped to their website, a marketing workflow started, and an action tracker built.
 Three hours after I left, he sat back down at the same window and kept working. Alone. That is the bar: not impressed, self-sufficient.
 When I sent him the next piece, a voice-capture setup for his phone, he texted me this on day one, unprompted: "I absolutely love this new voice memos to Claude so far. Done 4 items and a couple of them while doing other task." Typo his. Receipt real.
 
-06 — Before We Book
+Before We Book
 Not everyone is a fit, and I would rather tell you that before you pay me.
 You fill out a short intake first. Two things are non-negotiable:
 
@@ -1298,7 +1285,7 @@ You fill out a short intake first. Two things are non-negotiable:
 - Everyone coming shows up with an active $20 per month Claude subscription, their own machine, and their logins ready. If that feels like too much before we start, this session is not for you yet.
 If the intake tells me the session will not pay for itself, I will say so and point you somewhere free.
 
-07 — The Price
+The Price
 $ 999 , flat. That is the room, not the seat.
 It covers the intake review, the 3-hour working session, the 30-day check-in, and a $99 One-Window for every person who sits down.
 Run the comparison you are already running. You were going to buy the $99 One-Window anyway, so take it off the top. That puts the session itself at $900. Bring three people and that is $100 an hour, per person , to have it built with you instead of by you. And all three of you still walk out with the Setup.
@@ -1306,7 +1293,7 @@ The Setup is the same document either way. The difference is whether it gets rea
 Come alone and it is three hours of my time on the one workflow hurting you most. Same price either way, so the only real question is how many people you want working on the other side of it.
 If what we find during the session is bigger than three hours can hold, that is a different conversation, and we will have it straight.
 
-08 — The Intake
+The Intake
 The test of the session is the test of everything we do: did technology just get simpler for you, and did something real ship before you left the room.
 Five minutes. This tells us both whether the session is worth your $ 999 and my three hours. Tell me how many of you are coming.
 Name
@@ -1351,7 +1338,7 @@ AI Command Center
 ## NemoClaw and OpenClaw .
 AI command center installation and enterprise strategy. For companies ready to move now, not explore for 18 months.
 
-01 — Install
+Install
 $22,500 flat
 
 ## NemoClaw Install
@@ -1366,7 +1353,7 @@ A full AI agent infrastructure deployed inside your business in one week. On-sit
 - On-site installation in DFW.
 Full NemoClaw details → For construction → For logistics →
 
-02 — Strategy
+Strategy
 Scoped per engagement
 
 ## OpenClaw Strategy
@@ -1389,12 +1376,12 @@ For Sales Teams
 An engagement, not a login. Every seller runs their own AI operating system, and the leader gets the view.
 Book a call →
 
-01 · The Gap
+The Gap
 Most companies roll AI out to the sales floor the same way: buy the licenses, send a video, move on. A few sellers figure it out on their own. Most watched the video and went back to what they knew.
 Your reps have AI licenses. That is not the same as using it.
 A license upgrade is not an enablement plan. There is a difference between a tool you pick up and an engine you run the business on . That difference is where the pipeline is.
 
-02 · Two Views, One Engagement
+Two Views, One Engagement
 The leader and the seller look at different pages. Both are built overnight from the same captures, and nothing on either was typed in by a rep.
 
 For the leader For each seller
@@ -1449,7 +1436,7 @@ Your own AI operating system on the company laptop, connected to the email, cale
 
 - Follow-up. Drafted and waiting in the rep's inbox. Nothing leaves without the rep's yes.
 
-03 · Build Your Team View
+Build Your Team View
 Type your pipeline stages and a few account names. The Monday view rebuilds with your words in it.
 The reps, quotes and reasons are examples. The structure is what you would open every Monday.
 
@@ -1502,12 +1489,12 @@ Filled = yes. Outlined = where to coach this week.
 Want the real one, built from your team's actual calls?
 Book a call →
 
-04 · The One Habit
+The One Habit
 The OS only knows what the rep feeds it. A rep who installs the software and skips the habit gets an empty system and decides AI does not work.
 So the behavior change is one question, asked all day: how do I get this into my OS?
 Virtual calls come in from the Teams, Zoom or Meet transcript. In the field, it is a 60-second voice memo in the car after the meeting, in the rep's own words. Customers are recorded only with their consent, under your policy.
 
-05 · What the Hours Go To
+What the Hours Go To
 Not more calls. The work every great seller knows they should do and never had room for. It ships turned on, so the whole team gets it, not only the rep who would have found the time anyway.
 
 - An industry watch. Every morning, what moved in the rep's market and accounts, with the items that need action.
@@ -1516,7 +1503,7 @@ Not more calls. The work every great seller knows they should do and never had r
 
 - Time to think. Thirty minutes on one account instead of three. That used to be what separated the top rep from everybody else. It was never talent. It was bandwidth.
 
-06 · How It Works: Crawl, Walk, Run
+How It Works: Crawl, Walk, Run
 Your whole team, leaders included. A manager who does not run it cannot coach it.
 Crawl
 Every seller installs their OS on the company laptop, inside your rules, and sits for the interview that teaches it their territory, accounts, deals and competitors. It answers like a teammate from the first day, not a search box.
@@ -1532,7 +1519,7 @@ What you see The Monday team view and the honest forecast.
 
 Monday, with the forecast in hand. Illustration.
 
-07 · What You See Every Week
+What You See Every Week
 One page per rep, built from what the OS actually did, not from what anyone says they did. Five questions, yes or no.
 
 - Were the week's customer calls captured?
@@ -1549,7 +1536,7 @@ One page per rep, built from what the OS actually did, not from what anyone says
 
 Through the connections your company already approved. Where one doesn't exist, it works in the rep's own browser, as the rep.
 
-08 · The Receipt
+The Receipt
 
 ## My OS wrote this at 6:45 this morning .
 Brief (written 6:45 AM)
@@ -1562,7 +1549,7 @@ DO NOT pitch. Mention pricing. Re-offer help they already declined.
 
 Every outside meeting on my calendar gets one of these before I walk in, and I didn't write it.
 
-09 · Why Me
+Why Me
 Thirty years carrying a number and leading the people who carry theirs. I am not a technologist who read about sales. I ran sales.
 And I run my own company this way. Every weekday at 6:45 AM my OS writes the brief for my external meetings. When a call ends, the transcript turns into filed action items and a follow-up waiting in my drafts. Your reps will feel understood before they feel taught.
 
@@ -1585,22 +1572,15 @@ Wade Kerzie spent 30 years leading enterprise sales teams before rebuilding his 
 Book Wade →
 
 Topics
-0 1
 
 ## The model was never the bottleneck. You are.
 Why waiting for the next model release is costing operators the only advantage window they will get, and the five reps that close the gap this week.
 
-0 2
-
 ## One person, whole company.
 What it actually looks like to run marketing, sales ops, product, and finance through one AI working session a day. Live walkthrough available.
 
-0 3
-
 ## My own method died in six weeks.
 Wade built a two-AI workflow, taught it, then watched the tools make it obsolete. What that pace does to best practices, training budgets, and anyone selling AI advice.
-
-0 4
 
 ## Main Street AI.
 Home repair by text with no app and no AI talk to the customer. What adoption looks like when the technology hides completely.
@@ -1942,35 +1922,35 @@ Ventures
 Every one of them started as a problem worth fixing.
 Looking for Unison or Executive Legacy? Those are offers we sell to other businesses. See the offers →
 
-0 1 DAY 3
+DAY 3
 
 ## GotaGuy
 Finding a contractor is a part-time job. It should take a text message.
 
 Read the story →
 
-0 2 7 SEC
+7 SEC
 
 ## TrueSeat
 A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.
 
 Read the story →
 
-0 3 40/200
+40/200
 
 ## Packed House
 The show is booked, the night is paid for, and forty people came to a room that holds two hundred. Filling the Tuesday is nobody's job.
 
 Read the story →
 
-0 4 8 MIN
+8 MIN
 
 ## Zorli
 The information is there. Finding it costs more time than the answer is worth.
 
 Read the story →
 
-0 5 2 AM
+2 AM
 
 ## TrueNorth
 Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.
@@ -1989,12 +1969,12 @@ Executive Legacy | Kerzie AI
 ## Forty years of judgment retires at the end of the year. What walks out the door with it?
 Every retiring executive knows the scene: the successor is capable, the handoff binder exists, and six weeks in the calls still come. What do we do about this customer, would you take this deal, who do we trust for this job. The knowledge that built the business was never written down because it never had to be. It lives in one person's judgment, and that person is trying to leave. The company should be falling over itself to keep it. Most don't, because nobody knew how.
 
-01 Why It Stays Broken
+Why It Stays Broken
 
 ## Succession plans transfer ownership. Nobody transfers judgment.
 The consultants who do knowledge transfer bill Fortune 500 rates and leave behind binders and interviews on a shelf. The AI clone apps improvise plausible-sounding answers with nobody checking. A consulting retainer keeps the phone line open, and the bill scales with every question. None of it gives a successor what they need at a decision point: what the executive would really say, grounded in what the executive really said.
 
-02 What Got Built
+What Got Built
 
 ## Executive Legacy keeps it.
 A white-glove engagement across the executive's last months, and it is not a couple of interviews. We put the executive on the record. A recorder we buy and set up, worn every business day, with the transcripts coming to us. Every meeting, town hall, and board presentation captured. The emails where the decisions got made. And one-on-one sessions built around twelve questions the successor cannot answer today. From all of it we build a private, permission-gated answer set the successor can ask. Every answer traces to something the executive actually said, cited to the source. When the captured judgment does not cover a question, it says so and points to who to call. Sealed topics stay sealed. The executive reviews what their virtual self is asked and can correct any answer, for as long as they want the job. If the executive wants it, the answer set can look and sound like them: a video avatar, built from the same record. That part is optional. What sits behind it is not.
@@ -2002,17 +1982,17 @@ A white-glove engagement across the executive's last months, and it is not a cou
 Under Two Minutes, And The Clone Is The Demo
 This is an AI video clone of Wade Kerzie. The words are his. An executive who wants one can have their answer set delivered the same way; the part that matters is what sits behind it.
 
-03 How It Works
+How It Works
 
-- 0 1 Week one: the twelve questions. We map what the successor cannot answer today, the executive seals what stays sealed, the recorder goes on, and the first one-on-one session is recorded.
+- Week one: the twelve questions. We map what the successor cannot answer today, the executive seals what stays sealed, the recorder goes on, and the first one-on-one session is recorded.
 
-- 0 2 The last months: everything on the record. The recorder every business day, transcripts to us. Meetings, town halls, and board presentations pulled in. The decision emails. One-on-one sessions across operations, people, customers, and crises.
+- The last months: everything on the record. The recorder every business day, transcripts to us. Meetings, town halls, and board presentations pulled in. The decision emails. One-on-one sessions across operations, people, customers, and crises.
 
-- 0 3 The answer set. Built from the whole record, every answer cited to what the executive actually said. Nothing improvised. The executive reviews it before anyone else asks it a question.
+- The answer set. Built from the whole record, every answer cited to what the executive actually said. Nothing improvised. The executive reviews it before anyone else asks it a question.
 
-- 0 4 After the last day: the successor asks at the decision point, the executive sees every question and can correct any answer, and the record grows with each refresh session they choose to give.
+- After the last day: the successor asks at the decision point, the executive sees every question and can correct any answer, and the record grows with each refresh session they choose to give.
 
-04 Who Gets What
+Who Gets What
 
 ## The executive owns it. The company licenses it.
 Every person who inherits the judgment gets their own key, set by the executive at signing.
@@ -2037,12 +2017,12 @@ DAY 3
 ## Finding a contractor is a part-time job.
 You post on Nextdoor. You call three numbers. One voicemail. One quote that feels made up. One guy who never shows. The repair takes an hour. Finding someone takes a week.
 
-01 Why It Stays Broken
+Why It Stays Broken
 
 ## The existing platforms make money whether your job gets done or not.
 Angi, Thumbtack, HomeAdvisor charge contractors for leads. Whether the job gets done or not. They built a bidding war because bidding wars generate revenue. The homeowner experience being slow and frustrating is not a bug. It is the business model.
 
-02 What Got Built
+What Got Built
 
 ## So we built GotaGuy.
 You text. We scope it. A contractor shows up. You pay when it is done. No app. No account. No forms. No bidding. The whole thing happens in your text messages.
@@ -2053,17 +2033,17 @@ Text Message
 
 THE WHOLE PRODUCT. NO APP. NO ACCOUNT.
 
-03 How It Works
+How It Works
 
-- 0 1 Quote in 90 seconds.
+- Quote in 90 seconds.
 
-- 0 2 Confirm.
+- Confirm.
 
-- 0 3 Schedule on your timeframe.
+- Schedule on your timeframe.
 
-- 0 4 Contractor shows up when you said.
+- Contractor shows up when you said.
 
-- 0 5 Work gets done. Pay on your phone.
+- Work gets done. Pay on your phone.
 
 ## See GotaGuy in action.
 Live in McKinney/Dallas TX and Aurora/Denver CO. More markets coming.
@@ -2081,25 +2061,25 @@ TrueNorth | Kerzie AI
 ## At 2 AM with a real decision on the table, everyone asks the same AI and gets the same answer.
 Ask a chatbot whether to take the job, have the hard conversation, or make the move, and you get advice averaged from everyone and belonging to no one. It doesn't know what you believe about faith, family, money, or duty — so it can't tell you what the wisest version of you would do. Generic guidance for a specific life is no guidance at all.
 
-01 Why It Stays Broken
+Why It Stays Broken
 
 ## AI knows everything except what you stand for.
 The guidance apps ship one fixed personality for every user. The faith apps pick your tradition for you. Nobody starts where real counsel starts: with who you are and what you hold true. And every one of them wants to own the relationship — another subscription, another app, another place your inner life lives on someone else's server.
 
-02 What Got Built
+What Got Built
 
 ## So we're building TrueNorth.
 A twenty-minute interview about what you actually believe — then TrueNorth assembles your personal board of advisors from history's wisest voices, each seat matched to your principles and explained in your own words. You approve every seat, including the one or two you choose to challenge you. What you buy is yours to keep: your Principles Charter and your board, packaged to run in whatever AI you already use — ChatGPT, Claude, Grok, whatever comes next. One purchase. No app. No subscription.
 
-03 How It Works
+How It Works
 
-- 0 1 The interview finds your principles and reads them back until you say that's me.
+- The interview finds your principles and reads them back until you say that's me.
 
-- 0 2 Your board is proposed with reasons that quote your own words.
+- Your board is proposed with reasons that quote your own words.
 
-- 0 3 Historical voices only, grounded in what they actually wrote and said.
+- Historical voices only, grounded in what they actually wrote and said.
 
-- 0 4 Your charter and board install in the AI you already use. It's yours.
+- Your charter and board install in the AI you already use. It's yours.
 
 ## Counsel aligned to your compass, not the crowd's.
 In development. First cohort forming.
@@ -2117,25 +2097,25 @@ TrueSeat | Kerzie AI
 ## A recruiter reads your resume for about seven seconds.
 Thirty years of work, compressed to two pages, skimmed in the time it takes to sip coffee. Then software scores it by keyword and a stranger decides if you exist. The people who are great at the work are rarely the people who are great at describing the work — and the resume format punishes exactly that gap. Every week, the wrong person gets the seat because they had the better document.
 
-01 Why It Stays Broken
+Why It Stays Broken
 
 ## Resumes are claims. Hiring runs on them anyway.
 Nobody verifies. The interviewer asks about weaknesses, the candidate performs modesty, and both sides pretend the exercise produced information. Recruiters charge a quarter of a salary to pattern-match keywords with a phone call on top. What never gets captured: how someone actually operates, what they can prove they did, and what they truly need — the things that decide whether a hire works.
 
-02 What Got Built
+What Got Built
 
 ## So we're building TrueSeat.
 An AI interviewer that talks with you the way a great colleague would after six months of working together — then builds a sealed, evidence-backed dossier: what you can actually do, how you actually operate, what you actually need. Every claim carries a verification tier. You own every word, and nothing ships without your review.
 
-03 How It Works
+How It Works
 
-- 0 1 Talk, don't type. The interview is a conversation.
+- Talk, don't type. The interview is a conversation.
 
-- 0 2 Every number gets read back and confirmed — or marked unverified.
+- Every number gets read back and confirmed — or marked unverified.
 
-- 0 3 Your operating profile, written for your next manager.
+- Your operating profile, written for your next manager.
 
-- 0 4 Constraints stay sealed until you say otherwise.
+- Constraints stay sealed until you say otherwise.
 
 ## The right person in the right seat, proven instead of pitched.
 Launching August 2026. Built in public.
@@ -2153,25 +2133,25 @@ Unison | Kerzie AI
 ## Someone calls your business after hours.
 They get voicemail. They needed an answer tonight. They will call someone else in the morning. You never knew they called.
 
-01 Why It Stays Broken
+Why It Stays Broken
 
 ## Most businesses respond when it is convenient for them.
 The lead does not wait. The window between someone reaching out and someone else answering them is measured in minutes not hours. Every hour you wait cuts your odds of closing that lead in half.
 
-02 What Got Built
+What Got Built
 
 ## So we built Unison.
 Omnichannel lead response that answers immediately across every channel. Phone, text, web form, email. The lead gets a real response in seconds. You get the conversation in your inbox. Unison is also built as custom implementations for specific businesses.
 
-03 How It Works
+How It Works
 
-- 0 1 Lead comes in on any channel.
+- Lead comes in on any channel.
 
-- 0 2 Unison responds immediately.
+- Unison responds immediately.
 
-- 0 3 Qualifies and routes to you.
+- Qualifies and routes to you.
 
-- 0 4 You pick up a warm conversation. Not a cold inquiry.
+- You pick up a warm conversation. Not a cold inquiry.
 
 ## Ready to stop losing leads?
 Unison deploys in days. Not months.
@@ -2189,25 +2169,25 @@ Zorli | Kerzie AI
 ## Your teenager calls while you are watching a movie.
 They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.
 
-01 Why It Stays Broken
+Why It Stays Broken
 
 ## Information does not disappear. It scatters.
 Across apps, notes, texts, emails, browser bookmarks. The problem is not memory. It is retrieval. You have the answer. Finding it costs you more time than the answer is worth.
 
-02 What Got Built
+What Got Built
 
 ## So we built Zorli.
 One place for the information you actually need to find again. Not another note app. A retrieval system. You put it in once. You get it back instantly.
 
-03 How It Works
+How It Works
 
-- 0 1 Save it once.
+- Save it once.
 
-- 0 2 Search in plain language.
+- Search in plain language.
 
-- 0 3 Get it back in seconds.
+- Get it back in seconds.
 
-- 0 4 No folders. No tags. No organizing system to maintain.
+- No folders. No tags. No organizing system to maintain.
 
 ## Stop hunting for things you already know.
 Zorli is on the App Store. Free to try.

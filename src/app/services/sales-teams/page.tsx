@@ -220,10 +220,10 @@ export default function SalesTeamsPage() {
         </div>
       </section>
 
-      {/* 01 The gap */}
+      {/* The gap */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">01 &middot; The Gap</p>
+          <p className="k-label mb-6">The Gap</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Most companies roll AI out to the sales floor the same way: buy the
@@ -245,10 +245,10 @@ export default function SalesTeamsPage() {
         </Reveal>
       </section>
 
-      {/* 02 Two views */}
+      {/* Two views */}
       <section className={sectionClass} id="views">
         <Reveal>
-          <p className="k-label mb-6">02 &middot; Two Views, One Engagement</p>
+          <p className="k-label mb-6">Two Views, One Engagement</p>
           <p className="text-[#262B3D] text-lg max-w-2xl mb-8 leading-relaxed">
             The leader and the seller look at different pages. Both are built
             overnight from the same captures, and nothing on either was typed
@@ -380,10 +380,10 @@ export default function SalesTeamsPage() {
         />
       </section>
 
-      {/* 03 Build your team view */}
+      {/* Build your team view */}
       <section className={sectionClass} id="build">
         <Reveal>
-          <p className="k-label mb-6">03 &middot; Build Your Team View</p>
+          <p className="k-label mb-6">Build Your Team View</p>
           <p className="text-[#1A1B2E] text-lg font-medium max-w-2xl mb-3 leading-relaxed">
             Type your pipeline stages and a few account names. The Monday view
             rebuilds with your words in it.
@@ -396,10 +396,10 @@ export default function SalesTeamsPage() {
         <TeamViewBuilder />
       </section>
 
-      {/* 04 The one habit */}
+      {/* The one habit */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">04 &middot; The One Habit</p>
+          <p className="k-label mb-6">The One Habit</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               The OS only knows what the rep feeds it. A rep who installs the
@@ -420,10 +420,10 @@ export default function SalesTeamsPage() {
         </Reveal>
       </section>
 
-      {/* 05 The hours back */}
+      {/* The hours back */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">05 &middot; What the Hours Go To</p>
+          <p className="k-label mb-6">What the Hours Go To</p>
           <p className="text-[#1A1B2E] text-lg font-medium max-w-2xl mb-8 leading-relaxed">
             Not more calls. The work every great seller knows they should do and
             never had room for. It ships turned on, so the whole team gets it,
@@ -443,10 +443,10 @@ export default function SalesTeamsPage() {
         </Reveal>
       </section>
 
-      {/* 06 How it works: crawl, walk, run, with what the leader sees */}
+      {/* How it works: crawl, walk, run, with what the leader sees */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">06 &middot; How It Works: Crawl, Walk, Run</p>
+          <p className="k-label mb-6">How It Works: Crawl, Walk, Run</p>
           <p className="text-[#262B3D] text-lg max-w-2xl mb-10 leading-relaxed">
             Your whole team, leaders included. A manager who does not run it
             cannot coach it.
@@ -485,10 +485,10 @@ export default function SalesTeamsPage() {
         </Reveal>
       </section>
 
-      {/* 07 Scorecard */}
+      {/* Scorecard */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">07 &middot; What You See Every Week</p>
+          <p className="k-label mb-6">What You See Every Week</p>
           <p className="text-[#1A1B2E] text-lg font-medium max-w-2xl mb-8 leading-relaxed">
             One page per rep, built from what the OS actually did, not from what
             anyone says they did. Five questions, yes or no.
@@ -522,10 +522,10 @@ export default function SalesTeamsPage() {
         </div>
       </section>
 
-      {/* 08 Receipt: a real brief, names blurred */}
+      {/* Receipt: a real brief, names blurred */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">08 &middot; The Receipt</p>
+          <p className="k-label mb-6">The Receipt</p>
           <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-8">
             My OS wrote this at 6:45 this morning
             <span className="text-[#B04E2B]">.</span>
@@ -572,10 +572,10 @@ export default function SalesTeamsPage() {
         </section>
       ) : null}
 
-      {/* 09 Why me */}
+      {/* Why me */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">09 &middot; Why Me</p>
+          <p className="k-label mb-6">Why Me</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Thirty years carrying a number and leading the people who carry

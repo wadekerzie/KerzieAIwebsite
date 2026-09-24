@@ -22,7 +22,6 @@ const oneWindow = offer("one-window");
 // One line each, matching what the page itself says.
 const ranked = [
   {
-    label: "01",
     title: "The Back Cover",
     price: backCover.priceLabel,
     body: "Tired of talking about your website? The Back Cover is one page, written for the AI your customers now ask, that keeps itself current. Set up once, off your plate.",
@@ -30,7 +29,6 @@ const ranked = [
     cta: "Read the page",
   },
   {
-    label: "02",
     title: "For Sales Teams",
     price: "Book a call",
     body: "Your team was told to use AI. Here is what it looks like when it works: every seller runs their own AI operating system, and the leader gets the view.",
@@ -38,7 +36,6 @@ const ranked = [
     cta: "How the engagement runs",
   },
   {
-    label: "03",
     title: "Unison",
     price: "Book a call",
     body: "Someone calls your business after hours and you never knew they called. Unison answers immediately across every channel.",
@@ -46,7 +43,6 @@ const ranked = [
     cta: "Read the story",
   },
   {
-    label: "04",
     title: "Executive Legacy",
     price: "Book a call",
     body: "What walks out the door with a retiring executive? Executive Legacy captures that judgment in an answer set the successor can ask, every answer cited.",
@@ -57,7 +53,6 @@ const ranked = [
 
 const entryPoints = [
   {
-    label: "05",
     title: "One-Window",
     price: oneWindow.priceLabel,
     body: "Your own AI operating system, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list.",
@@ -65,7 +60,6 @@ const entryPoints = [
     cta: "Get One-Window",
   },
   {
-    label: "06",
     title: "AI Fast-Track Session",
     price: fastTrack.priceLabel,
     body: "Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with One-Window. One person or three, same price.",
@@ -73,7 +67,6 @@ const entryPoints = [
     cta: "Read how it works",
   },
   {
-    label: "07",
     title: "AI Implementation",
     price: "Scoped per project",
     body: "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept. And if you are already running an AI agent you are not sure you can trust, that is an implementation problem too. Bring it to us.",
@@ -89,8 +82,7 @@ function OfferRow({ o, i, lead }: { o: Row; i: number; lead?: boolean }) {
     <Reveal delay={i * 80}>
       <div className="border-t border-[rgba(26,27,46,0.13)] py-12 lg:py-10 lg:grid lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-3 mb-4 lg:mb-0">
-          <p className="k-label">{o.label}</p>
-          <p className="k-mono text-[#B04E2B] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-3">
+          <p className="k-mono text-[#B04E2B] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em]">
             {o.price}
           </p>
           {lead && (

@@ -84,7 +84,7 @@ export default function Home() {
       {/* ============ ACT ONE: THE BELIEF ============ */}
       {/* DESKTOP SPACING (Wade, 2026-09-24): the hero used to fill the whole
           first screen, so on a laptop the page looked finished at the fold.
-          From lg it stops short so "01 What We Sell" peeks in underneath.
+          From lg it stops short so "What We Sell" peeks in underneath.
           Phone sizing is untouched. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 min-h-[min(calc(100svh-4rem),50rem)] lg:min-h-[min(calc(100svh-16rem),40rem)] flex flex-col justify-center pt-16 pb-12 lg:pt-14 lg:pb-10">
         <h1 className="k-rise k-rise-1 text-[#1A1B2E] font-bold tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.5vw,5.5rem)]">
@@ -162,7 +162,7 @@ export default function Home() {
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-12 lg:mb-6">
               <p className="k-label">
-                <span className="idx">01</span>What We Sell
+                What We Sell
               </p>
               <Link
                 href="/services"
@@ -181,12 +181,11 @@ export default function Home() {
             >
               <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-start">
                 <div className="lg:col-span-3 mb-5 lg:mb-0">
-                  <span className="k-mono text-[#B04E2B] text-xs lg:text-sm block">01</span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/back-cover-book-tall.jpg"
                     alt="A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam"
-                    className="mt-4 w-28 sm:w-32 lg:w-full lg:max-w-[11rem] rounded-lg border border-[rgba(26,27,46,0.13)] shadow-xl shadow-black/30"
+                    className="w-28 sm:w-32 lg:w-full lg:max-w-[11rem] rounded-lg border border-[rgba(26,27,46,0.13)] shadow-xl shadow-black/30"
                   />
                 </div>
                 <div className="lg:col-span-9">
@@ -212,8 +211,7 @@ export default function Home() {
                   href={o.href}
                   className="group block border-t border-[rgba(26,27,46,0.13)] pt-6 pb-8 h-full k-focus"
                 >
-                  <span className="k-mono text-[#B04E2B] text-xs lg:text-sm">0{i + 2}</span>
-                  <h3 className="mt-3 text-[#1A1B2E] text-xl lg:text-2xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-3">
+                  <h3 className="text-[#1A1B2E] text-xl lg:text-2xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-3">
                     {o.name}
                   </h3>
                   <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed mb-4">
@@ -235,7 +233,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
               <p className="k-label">
-                <span className="idx">02</span>The Engines
+                The Engines
               </p>
             </div>
             <div className="lg:col-span-9">
@@ -260,7 +258,7 @@ export default function Home() {
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-4">
               <p className="k-label">
-                <span className="idx">03</span>Companies We Own and Run
+                Companies We Own and Run
               </p>
               <Link
                 href="/ventures"
@@ -360,7 +358,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
               <p className="k-label">
-                <span className="idx">04</span>The Question
+                The Question
               </p>
             </div>
             <div className="lg:col-span-9">

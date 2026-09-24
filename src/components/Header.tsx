@@ -178,17 +178,12 @@ export default function Header() {
                     i > 0 ? "border-t border-[rgba(26,27,46,0.06)]" : ""
                   }`}
                 >
-                  <span className="flex items-baseline gap-3">
-                    <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] flex-shrink-0">
-                      0{i + 1}
-                    </span>
-                    <span
-                      className={`text-[#1A1B2E] font-semibold ${
-                        i === 0 ? "text-[17px]" : "text-[15px]"
-                      }`}
-                    >
-                      {o.label}
-                    </span>
+                  <span
+                    className={`text-[#1A1B2E] font-semibold ${
+                      i === 0 ? "text-[17px]" : "text-[15px]"
+                    }`}
+                  >
+                    {o.label}
                   </span>
                   <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] tracking-[0.12em] flex-shrink-0">
                     {o.hint}
@@ -256,9 +251,6 @@ export default function Header() {
                     i > 0 ? "border-t border-[rgba(26,27,46,0.08)]" : ""
                   }`}
                 >
-                  <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] flex-shrink-0">
-                    0{i + 1}
-                  </span>
                   <span className="flex-1">
                     <span className="block text-[#1A1B2E] text-[16px] font-semibold leading-tight">
                       {e.label}

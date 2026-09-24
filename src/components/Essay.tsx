@@ -82,7 +82,7 @@ export function EssayMasthead({
           gutter is too narrow to break "Wade Kerzie · July 24, 2026"
           anywhere that looks deliberate. Inline on small screens. */}
       <p className="p-kicker">
-        <span className="idx">{kicker}</span>
+        <span className="kind">{kicker}</span>
         <span className="who">{author}</span>
         <span className="when">{date}</span>
         {revised ? <span className="revised">Revised {revised}</span> : null}

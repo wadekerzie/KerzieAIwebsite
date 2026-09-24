@@ -177,7 +177,7 @@ export default function OneWindowBusinessPage() {
       {/* The 16,000 words */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">01 &mdash; Your 16,000 Words</p>
+          <p className="k-label mb-6">Your 16,000 Words</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Researchers once wired people with recorders to settle how much
@@ -201,7 +201,7 @@ export default function OneWindowBusinessPage() {
       {/* 1965 */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">02 &mdash; This Existed In 1965</p>
+          <p className="k-label mb-6">This Existed In 1965</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               In 1965 an executive walked out of a meeting talking, and
@@ -226,7 +226,7 @@ export default function OneWindowBusinessPage() {
       {/* The owner's problem */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">03 &mdash; The Job After The Job</p>
+          <p className="k-label mb-6">The Job After The Job</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               You do the work all day. Then you do the second job at night: the
@@ -250,7 +250,7 @@ export default function OneWindowBusinessPage() {
       {/* The one habit */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">04 &mdash; The Two Habits</p>
+          <p className="k-label mb-6">The Two Habits</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Here is what almost everyone gets wrong about AI: they picture a
@@ -285,7 +285,7 @@ export default function OneWindowBusinessPage() {
       {/* The stack */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">05 &mdash; What You Get</p>
+          <p className="k-label mb-6">What You Get</p>
           <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed mb-8">
             Built in the first sittings, from an interview about your actual
             business. Nothing generic, and nothing goes out to a customer
@@ -317,7 +317,7 @@ export default function OneWindowBusinessPage() {
       {/* Receipts */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">06 &mdash; This Is How I Run Mine</p>
+          <p className="k-label mb-6">This Is How I Run Mine</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               I am not selling a theory. This framework runs my own companies
@@ -342,7 +342,7 @@ export default function OneWindowBusinessPage() {
       {/* The offer */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">07 &mdash; The Offer</p>
+          <p className="k-label mb-6">The Offer</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p className="text-[#1A1B2E] text-xl font-semibold">
               One-Window: free. The whole operating system, every capability.
@@ -384,7 +384,7 @@ export default function OneWindowBusinessPage() {
       {/* Keep your systems */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">08 &mdash; Keep What Already Works</p>
+          <p className="k-label mb-6">Keep What Already Works</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Already run QuickBooks, a scheduling tool, a point of sale? Keep
@@ -406,7 +406,7 @@ export default function OneWindowBusinessPage() {
       {/* Straight answers */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">09 &mdash; Straight Answers</p>
+          <p className="k-label mb-6">Straight Answers</p>
           <div className="max-w-2xl space-y-5 text-[#262B3D] text-lg leading-relaxed">
             <p>
               <span className="text-[#1A1B2E] font-medium">Do I need to know AI?</span>{" "}
@@ -444,7 +444,7 @@ export default function OneWindowBusinessPage() {
       {/* Free rung */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
-          <p className="k-label mb-6">10 &mdash; Not Ready? Take The Habit For Free</p>
+          <p className="k-label mb-6">Not Ready? Take The Habit For Free</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
               Take the <span className="text-[#1A1B2E] font-medium">Voice Command Center</span>{" "}

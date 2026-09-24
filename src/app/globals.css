@@ -510,7 +510,8 @@ html {
   letter-spacing: 0;
 }
 
-/* --- Rail label: mono, numbered, quiet --- */
+/* --- Rail label: mono, quiet. No index numbers (Wade, 2026-09-24:
+   "they're adding zero value and just confusion to the site") --- */
 .k-label {
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.6875rem;
@@ -518,11 +519,6 @@ html {
   text-transform: uppercase;
   color: var(--k-accent);
   font-weight: 500;
-}
-
-.k-label .idx {
-  color: var(--k-coral);
-  margin-right: 0.75em;
 }
 
 /* Desktop type pass (Wade, 2026-09-24: "these font sizes might look good on
@@ -826,7 +822,7 @@ a:focus-visible .k-arrow {
   color: var(--p-muted);
 }
 
-.p-kicker .idx { color: var(--p-coral); margin-right: 0.9em; }
+.p-kicker .kind { color: var(--p-coral); margin-right: 0.9em; }
 .p-kicker .when::before { content: "\00b7"; margin: 0 0.6em; }
 .p-kicker .revised { color: var(--p-faint); }
 .p-kicker .revised::before { content: "\00b7"; margin: 0 0.6em; }
@@ -867,7 +863,7 @@ a:focus-visible .k-arrow {
     line-height: 2;
   }
 
-  .p-kicker .idx,
+  .p-kicker .kind,
   .p-kicker .who,
   .p-kicker .when,
   .p-kicker .revised { display: block; margin-right: 0; }

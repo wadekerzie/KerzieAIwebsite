@@ -184,7 +184,7 @@ export default function AskWadeClient() {
         {/* The ask */}
         <section className="rounded-xl border border-[#1A1B2E]/10 bg-white p-6 lg:p-10">
           <p className="k-label mb-3">
-            <span className="idx">01</span>Ask Wade
+            Ask Wade
           </p>
           {/* AI disclosure, added 2026-09-22. Written as a feature line rather than a
               disclaimer, on Wade's point that this is a demo of the product and the
@@ -398,7 +398,7 @@ export default function AskWadeClient() {
         <section className="grid gap-8 py-14 lg:grid-cols-12 lg:py-20">
           <div className="lg:col-span-3">
             <p className="k-label">
-              <span className="idx">02</span>Your Key
+              Your Key
             </p>
           </div>
           <div className="lg:col-span-9">
@@ -432,7 +432,7 @@ export default function AskWadeClient() {
         <section className="grid gap-8 border-t border-[#1A1B2E]/10 py-14 lg:grid-cols-12 lg:py-20">
           <div className="lg:col-span-3">
             <p className="k-label">
-              <span className="idx">03</span>What Wade Sees
+              What Wade Sees
             </p>
           </div>
           <div className="lg:col-span-9">
@@ -469,7 +469,7 @@ export default function AskWadeClient() {
         <section className="grid gap-8 border-t border-[#1A1B2E]/10 py-14 lg:grid-cols-12 lg:py-20">
           <div className="lg:col-span-3">
             <p className="k-label">
-              <span className="idx">04</span>The Avatar
+              The Avatar
             </p>
           </div>
           <div className="lg:col-span-9">
