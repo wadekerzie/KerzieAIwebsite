@@ -336,7 +336,7 @@ export default function SalesTeamsPage() {
                 </div>
 
                 <h3 className="mt-14 mb-2 text-[#1A1B2E] text-[clamp(1.5rem,3vw,2.125rem)] font-bold tracking-[-0.02em] leading-[1.15] max-w-2xl">
-                  What you&rsquo;re thinking but won&rsquo;t say to your manager.
+                  What you&rsquo;re thinking (and only say at the bar).
                 </h3>
                 <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl">
                   Fair questions. Here are the straight answers.
