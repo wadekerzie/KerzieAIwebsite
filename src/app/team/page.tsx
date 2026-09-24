@@ -4,6 +4,21 @@ import Reveal from "@/components/Reveal";
 export const metadata = {
   title: "The People | Kerzie AI",
   description: "The people behind the work.",
+  alternates: { canonical: "https://kerzie.ai/team" },
+  // Own preview (Wade 9/24): without this, shared links inherited the
+  // site-wide "Kerzie AI" title and office photo. Image: ./opengraph-image.tsx
+  openGraph: {
+    type: "website",
+    siteName: "Kerzie AI",
+    title: "The People | Kerzie AI",
+    description: "Wade Kerzie, Aaron Jones and Jordan Holzmiller: the people behind the work.",
+    url: "https://kerzie.ai/team",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The People | Kerzie AI",
+    description: "Wade Kerzie, Aaron Jones and Jordan Holzmiller: the people behind the work.",
+  },
 };
 
 const people = [

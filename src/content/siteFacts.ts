@@ -156,6 +156,7 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   // card was added. The /show variants are noindex utility surfaces.
   { path: "/card", changeFrequency: "monthly", priority: 0.5 },
   { path: "/card/aaron", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/card/jordan", changeFrequency: "monthly", priority: 0.5 },
   { path: "/ventures", changeFrequency: "monthly", priority: 0.6 },
   // /ventures/ad2action is not listed: it redirects to /ventures/unison
   // (Wade 2026-09-24: Ad2Action is a custom implementation of Unison).
