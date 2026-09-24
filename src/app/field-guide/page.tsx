@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 const pitch = [
   {
-    lead: "The hook - two openers, and Wade wants both tested. Use the one that fits the room.",
-    body: "A: “45% of people now ask an AI instead of searching Google. When they ask about your business, what does the AI actually see?” B: “Are you seeing a drop in business coming through your website?” Almost every business says yes. Then: “We know why, and we can fix it.”",
+    lead: "The hook - three openers, and Wade wants them tested. Use the one that fits the room.",
+    body: "A: “45% of people now ask an AI instead of searching Google. When they ask about your business, what does the AI actually see?” B: “Are you seeing a drop in business coming through your website?” Almost every business says yes. Then: “We know why, and we can fix it.” C (Wade 9/24, for anyone tired of website pitches): “You’re probably tired of talking about your website. Good, because this isn’t that. 45% of your customers now ask ChatGPT who to call, up from 6% a year ago. We write one page for the AI, keep it current, and it’s off your plate.”",
   },
   {
     lead: "The demo they run themselves - this closes more than anything you say.",
@@ -259,6 +259,16 @@ export default function FieldGuidePage() {
               <li>
                 If &ldquo;my website guy can do that&rdquo;: &ldquo;Has he? It
                 has been out for a year.&rdquo;
+              </li>
+              <li>
+                If &ldquo;we just redid our website&rdquo; or &ldquo;I&apos;m
+                tired of website people&rdquo;: &ldquo;Good. This isn&apos;t a
+                website project. It&apos;s one page for the AI, and we keep it
+                current.&rdquo;
+              </li>
+              <li>
+                If they found a DIY audit tool: &ldquo;An audit hands you
+                homework. We do the work, and we keep it done.&rdquo;
               </li>
             </ul>
           </div>
