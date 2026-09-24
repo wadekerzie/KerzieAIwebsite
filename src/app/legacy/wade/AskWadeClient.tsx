@@ -172,7 +172,7 @@ export default function AskWadeClient() {
               ))}
             </dl>
             <ul className="mt-8 flex flex-wrap gap-2 text-xs text-[#262B3D]/80">
-              {["1998 Salesperson of the Year", "Published in Nation's Restaurant News", "Published in LawFuel", "Founder, Kerzie AI Solutions", "McKinney, Texas"].map((t) => (
+              {["1998 Salesperson of the Year", "Published in Nation's Restaurant News", "Published in LawFuel", "Published in Small Business Currents", "Founder, Kerzie AI Solutions", "McKinney, Texas"].map((t) => (
                 <li key={t} className="rounded-full border border-[#1A1B2E]/15 bg-white px-3 py-1">
                   {t}
                 </li>

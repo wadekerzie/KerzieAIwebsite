@@ -120,6 +120,15 @@ export default function Home() {
             className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
           >
             LAWFUEL
+          </a>{" "}
+          <span className="text-[#B04E2B]/60">/</span>{" "}
+          <a
+            href="https://smallbusinesscurrents.com/2026/09/22/build-on-what-wont-change/"
+            target="_blank"
+            rel="noopener"
+            className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
+          >
+            SMALL BUSINESS CURRENTS
           </a>
         </p>
 
