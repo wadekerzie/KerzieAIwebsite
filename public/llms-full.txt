@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 35
+Pages included: 37
 
 ---
 
@@ -24,6 +24,7 @@ The Back Cover If you're an AI agent, click here
 technology just works .
 The world's best tech feels the easiest.
 We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.
+PUBLISHED IN NATION'S RESTAURANT NEWS / LAWFUEL
 GOTAGUY / UNISON / ZORLI / AD2ACTION
 
 01 The Engines
@@ -125,6 +126,10 @@ OPENAI · FEBRUARY 2026
 ChatGPT now has 900 million weekly users.
 Nearly a billion people a week asking an AI the questions they used to type into a search box.
 READ THE SOURCE →
+GOOGLE CHROME · MAY 2026
+Chrome's Lighthouse now audits websites for an llms.txt: "a machine-readable summary of a website's content, specifically designed for LLMs and AI agents."
+We build every Back Cover page to that audit and to the llms.txt specification, run the audit on your site, and hand you the receipt.
+READ THE SOURCE →
 SQUARESPACE · JULY 2026
 Squarespace now ships a built-in llms.txt - a page written for AI to read - on every site it hosts.
 Mainstream website platforms are already building for machine readers. It ships turned off, which is exactly where most businesses are standing today.
@@ -142,7 +147,7 @@ HALF ONE — WHAT THEY CAN READ TODAY
 - We fix the plumbing while we are in there. Structured data that spells out what you sell, where you work and what it costs, plus whatever else your platform lets us reach.
 HALF TWO — WHAT THEY WILL READ NEXT
 
-- We publish your llms.txt. It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 57 Texas and Colorado trades this week, eighteen already publish one - in roofing it is already half. Your competitors have started. The window is closing, not closed.
+- We publish your llms.txt. It is the standard the industry is settling on for handing an AI a clean map of your business. Squarespace now builds it into every site it hosts, and when we checked 57 Texas and Colorado trades this week, eighteen already publish one - in roofing it is already half. Your competitors have started. The window is closing, not closed. We follow Chrome's developer guidelines: every page is built to the llms.txt specification and Chrome's Lighthouse audit, and you get the audit receipt.
 
 - This stage of AI search is already on. Ask an AI about our business: you get a real, current answer, because there is something real to read. How each AI weighs what it finds is not ours to promise - nobody outside those companies knows. What we deliver is simpler: you are ready for this stage of AI search, and your business is visible to the machines that answer.
 Then we hand you the list. Every fact that was missing, every one that is there now, and the address of the page the AI tools look for. You can check every line of it yourself, the day we finish.
@@ -302,6 +307,19 @@ Aaron Jones | Kerzie AI Solutions
 Technical Specialist, Kerzie AI Solutions
 Aurora, Colorado
 Save my contact Adds Aaron to your phone Visit aaronpjones.com Projects and background Call 720-749-9474 aaron@kerzie.ai
+Show my QR code Point any phone camera at the code. No app on either end.
+
+---
+
+# Jordan Holzmiller | Kerzie AI Solutions
+URL: https://kerzie.ai/card/jordan
+
+Jordan Holzmiller | Kerzie AI Solutions
+
+## Jordan Holzmiller
+Account Executive, Kerzie AI Solutions
+Dallas, Texas
+Save my contact Adds Jordan to your phone Visit jordanholzmiller.vercel.app Projects and background Call 214-862-1505 jordan@kerzie.ai
 Show my QR code Point any phone camera at the code. No app on either end.
 
 ---
@@ -686,6 +704,71 @@ Email address Send it to me
 
 ---
 
+# Wade Kerzie, on the record
+URL: https://kerzie.ai/legacy/wade
+
+Wade Kerzie, on the record
+
+## Thirty years of judgment. Still answering.
+Wade Kerzie spent three decades selling into carriers and enterprises, then built Kerzie AI Solutions and moved the whole company onto an operating system he runs with Claude. Everything he has published about how he decides is on this record. Ask it. Every answer comes back with the date and the piece it came from. When the record is silent, it says so.
+$420M+ career revenue closed
+9 deals over $12M each
+30+ years in enterprise sales
+8x / 5x Honor's Club / President's Club
+
+- 1998 Salesperson of the Year
+
+- Published in Nation's Restaurant News
+
+- Published in LawFuel
+
+- Founder, Kerzie AI Solutions
+
+- McKinney, Texas
+
+01 Ask Wade
+Answers come from Wade’s own record, and the voice reading them is his, built from it. Both are AI. That is the point.
+Quick question Bring a situation
+Ask What do you refuse to publish without a receipt? How do you think about pricing a new offer? What did the AT&T call-screening pilot teach you? What changed when the buyer stopped being a human?
+This answer set was built from Wade's published record only: his newsletter, his LinkedIn posts, and his essays. It answers in his words, cites the piece each answer came from, and says when the record is silent. It never improvises.
+
+02 Your Key
+
+## You are holding the successor key. Wade set it.
+OPEN TO YOU
+
+- Operating judgment
+
+- Customers and pricing philosophy
+
+- Crisis playbooks
+
+- The rules and why they exist
+
+SEALED
+
+- Compensation history . Opens to the successor January 2028 .
+
+- The people file . Sealed by Wade .
+
+- Succession sessions . Opens on a trigger Wade set .
+
+03 What Wade Sees
+
+## Every question asked, every answer given, and a correct button. For as long as he wants the job.
+The executive's side of the record. The company pays him monthly to keep it true. This is what that looks like, with example rows.
+ASKED STATUS WHEN
+Would you take a dealer at $999 a month if they asked for a discount? Approved Tue
+Why is Facebook not the audience? Corrected: added the 9/15 ruling Mon
+Who should run the Colorado market after Aaron? Sealed: succession sessions Sun
+
+04 The Avatar
+
+## If the executive wants it, the answer set can look and sound like them. Optional.
+This is an AI video clone of Wade, built from his own record. The words are his. What sits behind it, the cited record above, is the part that is not optional.
+
+---
+
 # One-Window | Kerzie AI
 URL: https://kerzie.ai/one-window
 
@@ -1033,9 +1116,7 @@ Schedule
 
 ## Let's put it on the calendar .
 A business problem, a podcast, a stage, or a question about AI. Whatever brought you here, this is the direct line to my calendar. Pick a time that works and let's talk.
-
-By providing your phone number, you consent to receive SMS messages from Kerzie Consulting LLC (DBA Kerzie AI) regarding your scheduled appointment and work status updates. Message frequency: up to 5 messages/month. Message and data rates may apply.
-Reply STOP to unsubscribe. Reply HELP for help. View our Privacy Policy and Terms of Service .
+Rather write first? Email me directly at wade@kerzie.ai .
 
 ---
 
@@ -1237,45 +1318,188 @@ For Sales Teams | Kerzie AI
 ← KERZIE . AI
 For Sales Teams
 
-## Your reps have AI licenses. That is not the same as using it .
-I spent 30 years leading enterprise sales teams. Now I help those teams turn AI from a login they forget into the way they run their accounts.
+## Your team was told to use AI. Here's what it looks like when it works .
+An engagement, not a login. Every seller runs their own AI operating system, and the leader gets the view.
 Book a call →
 
-01 — The Gap
-Most companies roll AI out to the sales floor the same way: buy the licenses, send a video, move on. About one in ten sellers figures it out on their own. The other nine watched the video and went back to what they knew.
-Budget without know-how is a gift the team cannot open.
-A license upgrade is not an enablement plan. And if your team is still calling AI a tool, they are not using it. There is a difference between a tool you pick up and an engine you run the business on . That difference is where the pipeline is.
+01 · The Gap
+Most companies roll AI out to the sales floor the same way: buy the licenses, send a video, move on. A few sellers figure it out on their own. Most watched the video and went back to what they knew.
+Your reps have AI licenses. That is not the same as using it.
+A license upgrade is not an enablement plan. There is a difference between a tool you pick up and an engine you run the business on . That difference is where the pipeline is.
 
-02 — What I Do
-I get your sellers hands-on-keyboard, on live accounts, scored from the first session.
+02 · Two Views, One Engagement
+The leader and the seller look at different pages. Both are built overnight from the same captures, and nothing on either was typed in by a rep.
 
-- Your whole team, leaders included. A manager who does not run it cannot coach it. The people who own the number are in the room doing the work, not reading a summary afterward.
+For the leader For each seller
+Monday morning, before the forecast call. This is the page you open.
+Example data. Built overnight from what each rep's OS captured.
 
-- Hands on the keyboard from day one. Watching a demo is not the same as doing the work.
+## What you’re thinking but won’t say in the staff meeting.
+All four are fair. None of them is a reason to wait.
 
-- A scorecard from the first session. So “this helped” is something you read, not something we argue about.
+- “ I can't teach it. I don't know it myself. ”
+You don't need to know AI. You need to know selling. Every seller sits for an interview about their territory, accounts, deals and competitors. Your sales motion is the input. The AI part is ours.
 
-03 — How It Works: Crawl, Walk, Run
+- “ I'm not pulling my team out of the field for a training day. ”
+Nobody leaves the field. A 60-second voice memo in the car after a meeting, and the CRM update, the follow-up and the deal notes are drafted before they're back at a desk. Nothing goes out without the rep's yes.
+
+- “ I've been told to use AI. I can't define it, so I can't measure it. ”
+Here's the definition: five questions, yes or no, per rep, every week, built from what the OS actually did. That's the number you report up.
+
+- “ There's probably something in this for me. ”
+Your forecast gets honest. Deal reviews without the interrogation. Every pipeline change carries its reason. Coaching from real conversations. The QBR and the pipeline review drafted from the record. New hires ramp on the playbook your best people run.
+
+## Selling is the job again.
+Tuesday, 7:05 AM. Your meetings are briefed, your follow-ups are drafted, and last night's admin is done. You said it in the car. It did the rest.
+Example data. Built overnight from yesterday's captures. The 60-second habit. Illustration. The whole habit is 60 seconds in the car.
+Meeting ends. You talk into your phone in your own words: what they said, what you promised, what changed. By the time you are back at a desk, the CRM update, the follow-up and the deal notes are drafted and waiting for your yes.
+
+- “ Another tool to learn. ”
+It learns you. One interview about your territory, your accounts and how you sell, then you talk and it drafts.
+
+- “ My manager's going to watch everything. ”
+Your manager sees what the CRM would show if you'd had time to fill it in: deal outcomes, next steps and five yes or no questions. No keystroke logging. Fewer "where are we on this deal?" messages.
+
+- “ It'll write to my customers like a robot. ”
+Drafts come from your own words, the ones you said in the car. You keep the send button.
+
+- “ I don't have time for this. ”
+60 seconds after a meeting. In return it takes the 9 PM admin hour off your plate.
+
+What moves into the OS
+Your own AI operating system on the company laptop, connected to the email, calendar, meeting notes and CRM your company already allows. It does the work nobody hired a salesperson to do.
+
+- Meeting prep. A one-page brief before every external meeting: who, why, last contact, the ask, what not to say.
+
+- The weekly report. Drafted from the week's calls and pipeline. The rep edits it instead of writing it.
+
+- CRM updates. Written from what the rep captured, not retyped from memory at 9 at night.
+
+- The QBR and the pipeline review. Built from the record the OS already keeps, deal by deal.
+
+- Follow-up. Drafted and waiting in the rep's inbox. Nothing leaves without the rep's yes.
+
+03 · Build Your Team View
+Type your pipeline stages and a few account names. The Monday view rebuilds with your words in it.
+The reps, quotes and reasons are examples. The structure is what you would open every Monday.
+
+Your pipeline stages Stage 1 Stage 2 Stage 3 Stage 4
+Up to three deals Deal 1 Deal 2 Deal 3
+Nothing you type leaves this page.
+Team view
+
+## Monday morning, before the forecast call
+
+Example, built from what you typed
+Pipeline revisions
+every change carries its reason
+
+Deal Change Why, from the capture
+Northwind Logistics Evaluation → to Proposal Why Sponsor named a path this quarter, gated on the security review
+Harbor Dental Group Commit → to Proposal Why Budget moved to next fiscal year, per the buyer on Wednesday's call
+Summit Credit Union New → to Discovery Why Referral from Northwind Logistics, first call booked
+
+Meeting outcomes
+what the customer actually said
+
+- Northwind Logistics
+Priya · sponsor meeting
+“ If security signs off by the 9th, we can do this this quarter. ”
+
+Advanced
+
+- Harbor Dental Group
+Marcus · pricing review
+“ Budget moved to next fiscal year. Keep us warm. ”
+
+Slipped
+
+- Summit Credit Union
+Dana · discovery
+“ We are also talking to two others. Timeline is loose. ”
+
+No change
+
+“Using AI,” per rep
+five questions, yes or no
+
+Rep Calls Briefs Report CRM Acted
+Priya
+Dana
+Marcus
+Filled = yes. Outlined = where to coach this week.
+
+Want the real one, built from your team's actual calls?
+Book a call →
+
+04 · The One Habit
+The OS only knows what the rep feeds it. A rep who installs the software and skips the habit gets an empty system and decides AI does not work.
+So the behavior change is one question, asked all day: how do I get this into my OS?
+Virtual calls come in from the Teams, Zoom or Meet transcript. In the field, it is a 60-second voice memo in the car after the meeting, in the rep's own words. Customers are recorded only with their consent, under your policy.
+
+05 · What the Hours Go To
+Not more calls. The work every great seller knows they should do and never had room for. It ships turned on, so the whole team gets it, not only the rep who would have found the time anyway.
+
+- An industry watch. Every morning, what moved in the rep's market and accounts, with the items that need action.
+
+- Competitor alerts. Announcements mapped to the deals they touch, with a copy routed to marketing so the next battle card is right.
+
+- Time to think. Thirty minutes on one account instead of three. That used to be what separated the top rep from everybody else. It was never talent. It was bandwidth.
+
+06 · How It Works: Crawl, Walk, Run
+Your whole team, leaders included. A manager who does not run it cannot coach it.
 Crawl
-
-Every seller builds a context brain — who they are, what they sell, how they work — so the AI answers like a teammate, not a search box.
+Every seller installs their OS on the company laptop, inside your rules, and sits for the interview that teaches it their territory, accounts, deals and competitors. It answers like a teammate from the first day, not a search box.
+What you see Every seller's OS installed and interviewed. The first briefs and captures appear.
 
 Walk
-
-We put it to work on live accounts. Prep, research, follow-up, the account plan. Real deals, not exercises.
+Four weeks on live accounts building the one habit. Every call captured, every meeting briefed, the admin work coming out of the OS instead of the rep. Real deals, not exercises.
+What you see The weekly five-question page per rep. You coach the no's.
 
 Run
+The hours go to selling. The first sellers to break through set the standard, and the rest of the team gets fast-laned into it.
+What you see The Monday team view and the honest forecast.
 
-The first sellers to break through set the standard, and the rest of the team gets fast-laned into it. Whoever reaches the next level first sets the bar everyone else has to meet.
+Monday, with the forecast in hand. Illustration.
 
-04 — Why Me
+07 · What You See Every Week
+One page per rep, built from what the OS actually did, not from what anyone says they did. Five questions, yes or no.
+
+- Were the week's customer calls captured?
+
+- Did every external meeting get a brief?
+
+- Did the weekly report come out of the OS?
+
+- Did CRM updates come from what was captured?
+
+- Did the rep act on something the watch or the alerts surfaced?
+
+## Runs on the AI your company already licensed: Claude or ChatGPT .
+
+Through the connections your company already approved. Where one doesn't exist, it works in the rep's own browser, as the rep.
+
+08 · The Receipt
+
+## My OS wrote this at 6:45 this morning .
+Brief (written 6:45 AM)
+WHO Host name redacted , title redacted , organization redacted . He hosts the call. You are a member since date redacted . You own this relationship.
+WHY THIS MEETING Bi-weekly member networking. Listen and connect.
+LAST CONTACT Yesterday, 4:11 PM. Their reminder names today's topic.
+OPEN BETWEEN US 1. You promised a short video this week. 2. Send the link before the call. 3. A second contact wrote last week about a follow-up. No reply on record.
+THE ASK TODAY Meet two members by name.
+DO NOT pitch. Mention pricing. Re-offer help they already declined.
+
+Every outside meeting on my calendar gets one of these before I walk in, and I didn't write it.
+
+09 · Why Me
 Thirty years carrying a number and leading the people who carry theirs. I am not a technologist who read about sales. I ran sales.
-Now I bring the AI layer on top of decades of knowing what a seller's day actually looks like: the meetings, the waiting, the prep that never ends. Your reps will feel understood before they feel taught.
+And I run my own company this way. Every weekday at 6:45 AM my OS writes the brief for my external meetings. When a call ends, the transcript turns into filed action items and a follow-up waiting in my drafts. Your reps will feel understood before they feel taught.
 
 ## Every rep, not just the one who figured it out .
-This holds the same promise we make everywhere: simpler, not additional. If AI adds a step to a rep's day, it is dead on arrival - so we build it into the way they already sell.
-Scored from day one. If it is working, you will see it in how your team runs its accounts. If it is not, you will know that too.
-Book a call →
+The sales edition of the OS comes with the engagement: I install it with your team and train the habit until it holds. It is not sold as a download.
+Simpler, not additional. If AI adds a step to a rep's day, it is dead on arrival, so it runs inside the way they already sell. Scored from day one. If it is working, you will see it. If it is not, you will know that too.
+Book a call → A seller on your own? The general OS is free: get One-Window .
 
 ---
 
@@ -1339,8 +1563,8 @@ The Kerzie AI Newsletter | Kerzie AI
 The Kerzie AI Newsletter
 
 ## What actually worked this week .
-I run my businesses on AI. Twice a week I write down what I built, what broke, what it cost, and what I would do differently. If I have not done it myself, it does not go in.
-No predictions. No tool roundups. No breathless take on whatever shipped that morning. Just the working notes of someone building in public, sent Tuesday and Thursday at 1:00 PM Central.
+I run my businesses on AI. Once a week I write down what I built, what broke, what it cost, and what I would do differently. If I have not done it myself, it does not go in.
+No predictions. No tool roundups. No breathless take on whatever shipped that morning. Just the working notes of someone building in public, sent Tuesdays at 1:00 PM Central.
 Email address Send it to me
 Free. Unsubscribe any time. I do not sell the list.
 
@@ -1356,7 +1580,7 @@ Recent issues
 
 Who writes it
 Wade Kerzie. Thirty years selling and leading enterprise sales teams, now building AI systems for my own companies and for clients. I am not reporting on this from the outside. I am the one with the receipts.
-Why I publish them: to prove, twice a week, that this technology is finally simple enough to actually help a regular person. The receipts just keep me honest.
+Why I publish them: to prove, every week, that this technology is finally simple enough to actually help a regular person. The receipts just keep me honest.
 
 ---
 
@@ -1539,9 +1763,9 @@ The First Thousand | Kerzie AI
 ← KERZIE . AI
 The First Thousand
 
-## 10 of 1,000
+## 11 of 1,000
 
-990 to go · count updated 2026-09-03 · an operator is counted only when their window is actually running, not when they buy
+989 to go · count updated 2026-09-22 · an operator is counted only when their window is actually running, not when they buy
 
 The mission: get 1,000 people through the blast door before it closes. Running their work, their business, or their job from one window, with an AI that actually knows their world.
 
@@ -1570,7 +1794,7 @@ WHAT FOUNDERS GIVE
 - Permission to use your first name, business type, and real numbers as receipts.
 
 - After thirty days of real use, a testimonial - only if we genuinely earned it.
-Seats 1 through 10 are taken. The founding wall goes up here as each founder says yes to being named.
+Seats 1 through 11 are taken. The founding wall goes up here as each founder says yes to being named.
 Claim a founding seat - One-Window →
 
 Why A Door, And Why A Clock
@@ -1767,32 +1991,44 @@ Executive Legacy | Kerzie AI
 ← KERZIE . AI
 40 YRS
 
-## Forty years of judgment retires at the end of the year. The phone keeps ringing anyway.
-Every retiring owner knows the scene: the successor is capable, the handoff binder exists, and six weeks in the calls still come — what do we do about this customer, would you take this deal, who do we trust for this job. The knowledge that built the business was never written down because it never had to be. It lives in one person's judgment, and that person is trying to leave.
+## Forty years of judgment retires at the end of the year. What walks out the door with it?
+Every retiring executive knows the scene: the successor is capable, the handoff binder exists, and six weeks in the calls still come. What do we do about this customer, would you take this deal, who do we trust for this job. The knowledge that built the business was never written down because it never had to be. It lives in one person's judgment, and that person is trying to leave. The company should be falling over itself to keep it. Most don't, because nobody knew how.
 
 01 Why It Stays Broken
 
 ## Succession plans transfer ownership. Nobody transfers judgment.
-The consultants who do knowledge transfer bill Fortune 500 rates and leave behind binders and interviews on a shelf. The AI clone apps improvise plausible-sounding answers with nobody checking. Neither gives a successor what they actually need at a decision point: what the founder would really say, grounded in what the founder really said.
+The consultants who do knowledge transfer bill Fortune 500 rates and leave behind binders and interviews on a shelf. The AI clone apps improvise plausible-sounding answers with nobody checking. A consulting retainer keeps the phone line open, and the bill scales with every question. None of it gives a successor what they need at a decision point: what the executive would really say, grounded in what the executive really said.
 
 02 What Got Built
 
-## So we're building Executive Legacy.
-A white-glove engagement: structured interview sessions capture the operating judgment, the people philosophy, the customer relationships, and the crisis playbooks — then we build a private, permission-gated AI version of the executive their successor can ask. Every answer traces to something the executive actually said, cited to the session. When the captured judgment doesn't cover a question, it says so honestly and points to who to call. The executive reviews what their virtual self is asked and can correct any answer, for as long as they want the job.
+## Executive Legacy keeps it.
+A white-glove engagement across the executive's last months, and it is not a couple of interviews. We put the executive on the record. A recorder we buy and set up, worn every business day, with the transcripts coming to us. Every meeting, town hall, and board presentation captured. The emails where the decisions got made. And one-on-one sessions built around twelve questions the successor cannot answer today. From all of it we build a private, permission-gated answer set the successor can ask. Every answer traces to something the executive actually said, cited to the source. When the captured judgment does not cover a question, it says so and points to who to call. Sealed topics stay sealed. The executive reviews what their virtual self is asked and can correct any answer, for as long as they want the job. If the executive wants it, the answer set can look and sound like them: a video avatar, built from the same record. That part is optional. What sits behind it is not.
+
+Under Two Minutes, And The Clone Is The Demo
+This is an AI video clone of Wade Kerzie. The words are his. An executive who wants one can have their answer set delivered the same way; the part that matters is what sits behind it.
 
 03 How It Works
 
-- 0 1 Multi-session capture across the domains that matter: operations, people, customers, crises.
+- 0 1 Week one: the twelve questions. We map what the successor cannot answer today, the executive seals what stays sealed, the recorder goes on, and the first one-on-one session is recorded.
 
-- 0 2 Every answer cites the session it came from. Nothing improvised, ever.
+- 0 2 The last months: everything on the record. The recorder every business day, transcripts to us. Meetings, town halls, and board presentations pulled in. The decision emails. One-on-one sessions across operations, people, customers, and crises.
 
-- 0 3 Sealed topics stay sealed — the executive controls who can ask what.
+- 0 3 The answer set. Built from the whole record, every answer cited to what the executive actually said. Nothing improvised. The executive reviews it before anyone else asks it a question.
 
-- 0 4 The successor asks at the decision point, not at the retirement dinner.
+- 0 4 After the last day: the successor asks at the decision point, the executive sees every question and can correct any answer, and the record grows with each refresh session they choose to give.
 
-## The business keeps its judgment. The founder keeps their retirement.
-Founding engagements by invitation, Fall 2026.
-Request an invitation
+04 Who Gets What
+
+## The executive owns it. The company licenses it.
+Every person who inherits the judgment gets their own key, set by the executive at signing.
+The successor asks it where the work happens: text, phone, or web, at the decision point. Every answer comes back with the date and the conversation it came from. When the record is silent, it says so and names who to call.
+Leadership and the board get the topics the executive opens to them, and nothing else. Comp history, the people file, and the succession sessions stay sealed until a date or a trigger the executive sets, or forever.
+The family gets the Dossier: a bound volume of the rules, the stories, and the people map.
+The executive sees every question asked and every answer given, and can correct any of them, for as long as they want the job.
+
+## The business keeps its judgment. The executive keeps their retirement.
+Founding engagements, Fall 2026. Twenty minutes on a screen is enough to see it.
+Book twenty minutes
 
 ---
 
