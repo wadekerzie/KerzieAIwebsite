@@ -525,6 +525,17 @@ html {
   margin-right: 0.75em;
 }
 
+/* Desktop type pass (Wade, 2026-09-24: "these font sizes might look good on
+   mobile, but they look like afterthoughts on desktop"). Phone sizes above
+   are untouched; from lg the rail label steps up to 14px with the tracking
+   eased so it reads as intentional next to the big headings. */
+@media (min-width: 1024px) {
+  .k-label {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+  }
+}
+
 /* --- Mono meta text (timestamps, footers, indices) --- */
 .k-mono {
   font-family: var(--font-geist-mono), monospace;
@@ -640,6 +651,14 @@ a:focus-visible .k-arrow {
 .k-btn-ghost:focus-visible {
   background: var(--k-accent);
   color: var(--k-canvas);
+}
+
+/* Desktop: the two buttons step up from 14px to 15px (same pass as .k-label). */
+@media (min-width: 1024px) {
+  .k-btn-ghost,
+  .k-btn-solid {
+    font-size: 0.9375rem;
+  }
 }
 
 /* --- Solid button --- */

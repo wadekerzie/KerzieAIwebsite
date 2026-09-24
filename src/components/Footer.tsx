@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#FAF8F4]">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-20 pb-12">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-20 lg:pt-16 pb-12">
 
         {/* The belief, in the human voice */}
         <p className="k-serif text-[#1A1B2E] text-xl lg:text-2xl">
@@ -16,7 +16,7 @@ export default function Footer() {
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Book 30 minutes with Wade <span className="k-arrow">&rarr;</span>
           </Link>
-          <p className="text-[#262B3D]/70 text-sm">
+          <p className="text-[#262B3D]/70 text-sm lg:text-base">
             or email{" "}
             <a
               href="mailto:wade@kerzie.ai"
@@ -30,48 +30,48 @@ export default function Footer() {
         <div className="k-hairline w-full mt-10 mb-8" />
 
         <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-4">
-          <span className="k-mono text-[#1A1B2E] text-sm">
+          <span className="k-mono text-[#1A1B2E] text-sm lg:text-base">
             kerzie<span className="text-[#B04E2B]">.</span>ai
           </span>
           <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3">
             {/* Offers and Ventures are two lists, never one (Wade + Aaron, 2026-09-24). */}
             <Link
               href="/services"
-              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+              className="k-link text-[#262B3D]/70 text-sm lg:text-base hover:text-[#1A1B2E] transition-colors duration-200"
             >
               Offers
             </Link>
             <Link
               href="/ventures"
-              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+              className="k-link text-[#262B3D]/70 text-sm lg:text-base hover:text-[#1A1B2E] transition-colors duration-200"
             >
               Ventures
             </Link>
             <Link
               href="/thousand"
-              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+              className="k-link text-[#262B3D]/70 text-sm lg:text-base hover:text-[#1A1B2E] transition-colors duration-200"
             >
               The First Thousand
             </Link>
             <Link
               href="/subscribe"
-              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+              className="k-link text-[#262B3D]/70 text-sm lg:text-base hover:text-[#1A1B2E] transition-colors duration-200"
             >
               Newsletter
             </Link>
             <Link
               href="/privacy-policy"
-              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+              className="k-link text-[#262B3D]/70 text-sm lg:text-base hover:text-[#1A1B2E] transition-colors duration-200"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms-of-service"
-              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+              className="k-link text-[#262B3D]/70 text-sm lg:text-base hover:text-[#1A1B2E] transition-colors duration-200"
             >
               Terms of Service
             </Link>
-            <span className="k-mono text-[#262B3D]/50 text-xs">
+            <span className="k-mono text-[#262B3D]/50 text-xs lg:text-sm">
               &copy; 2026 Kerzie AI Solutions
             </span>
           </div>

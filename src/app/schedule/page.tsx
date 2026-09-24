@@ -26,7 +26,7 @@ export default function SchedulePage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
@@ -34,7 +34,7 @@ export default function SchedulePage() {
 
       {/* Header */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
-        <p className="k-rise k-rise-1 k-label mb-8">Schedule</p>
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Schedule</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
           Let&apos;s put it{" "}
           <span className="k-serif font-normal">on the calendar</span>

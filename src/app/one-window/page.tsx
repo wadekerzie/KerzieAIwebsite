@@ -64,15 +64,15 @@ export default function OneWindowPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">
           One-Window &mdash; your own personal OS. Free.
         </p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.5vw,3.4rem)]">
@@ -91,7 +91,7 @@ export default function OneWindowPage() {
           Free<span className="text-[#B04E2B]">.</span> The whole operating
           system, and every upgrade.
         </p>
-        <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
+        <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/80 text-base lg:text-lg max-w-xl leading-relaxed">
           System requirements: a Mac, and a $20 per month Claude subscription.
           Windows is not supported yet.
         </p>
@@ -103,7 +103,7 @@ export default function OneWindowPage() {
       </section>
 
       {/* The countdown - 3-2-1-0 */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16 lg:pb-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-lg overflow-hidden border border-[rgba(26,27,46,0.2)] bg-[rgba(26,27,46,0.2)] max-w-4xl">
           {[
             {
@@ -135,14 +135,14 @@ export default function OneWindowPage() {
               >
                 {c.n}
               </p>
-              <p className="k-mono mt-2 text-[11px] tracking-[0.15em] uppercase text-[#262B3D]">
+              <p className="k-mono mt-2 text-[11px] lg:text-[13px] tracking-[0.15em] lg:tracking-[0.12em] uppercase text-[#262B3D]">
                 {c.t}
               </p>
-              <p className="mt-3 text-[#262B3D]/80 text-sm leading-relaxed">{c.d}</p>
+              <p className="mt-3 text-[#262B3D]/80 text-sm lg:text-base leading-relaxed">{c.d}</p>
             </div>
           ))}
         </div>
-        <p className="mt-5 text-[#262B3D]/70 text-sm">
+        <p className="mt-5 text-[#262B3D]/70 text-sm lg:text-base">
           A countdown does not stop at one. It lands on zero
           <span className="text-[#B04E2B]">.</span>
         </p>
@@ -160,7 +160,7 @@ export default function OneWindowPage() {
           >
             <source src="/videos/one-window-explainer.mp4" type="video/mp4" />
           </video>
-          <p className="mt-3 text-[#262B3D]/70 text-sm leading-relaxed">
+          <p className="mt-3 text-[#262B3D]/70 text-sm lg:text-base leading-relaxed">
             That is my AI avatar, built and scripted from my own spoken words by
             my operating system. Made the same way everything else here gets
             made: I talked, the work got done.
@@ -330,7 +330,7 @@ export default function OneWindowPage() {
               href="/one-window/business"
               className="k-focus block rounded-lg bg-white p-5 sm:p-6 hover:bg-[#F3F4F8] transition-colors duration-200"
             >
-              <p className="k-mono text-[11px] tracking-[0.15em] text-[#C4633F] font-bold mb-2">
+              <p className="k-mono text-[11px] lg:text-[13px] tracking-[0.15em] lg:tracking-[0.12em] text-[#C4633F] font-bold mb-2">
                 RUNNING A BUSINESS?
               </p>
               <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">

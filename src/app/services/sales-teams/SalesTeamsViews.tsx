@@ -128,7 +128,7 @@ export function ExampleShot({
         sizes="(min-width: 1152px) 1056px, calc(100vw - 48px)"
         className="k-photo h-auto"
       />
-      <figcaption className="k-mono mt-3 text-[11px] tracking-[0.12em] uppercase text-[#262B3D]/60">
+      <figcaption className="k-mono mt-3 text-[11px] lg:text-[13px] tracking-[0.12em] lg:tracking-[0.1em] uppercase text-[#262B3D]/60">
         {caption}
       </figcaption>
     </figure>

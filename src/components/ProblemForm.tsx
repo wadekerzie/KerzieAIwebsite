@@ -45,7 +45,7 @@ export default function ProblemForm() {
         placeholder="Describe the problem..."
         className="k-field"
       />
-      <p className="mt-3 text-[#262B3D]/60 text-sm k-serif">
+      <p className="mt-3 text-[#262B3D]/60 text-sm lg:text-base k-serif">
         If you want us to respond, tell us how to reach you.
       </p>
       <button type="submit" disabled={sending} className="k-btn-solid mt-6">

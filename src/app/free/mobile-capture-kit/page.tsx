@@ -23,13 +23,13 @@ export default function CaptureKitGatePage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <p className="k-label mb-8">The Voice Command Center &middot; Free</p>
         <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.5rem)]">
           You never have to remember what you were thinking{" "}

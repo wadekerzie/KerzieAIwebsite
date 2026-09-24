@@ -34,9 +34,9 @@ const steps = [
 export default function PackedHousePage() {
   return (
     <main className="min-h-screen bg-[#FAF8F4] text-[#262B3D]">
-      <div className="mx-auto max-w-3xl px-6 py-20">
+      <div className="mx-auto max-w-3xl px-6 py-20 lg:py-14">
         {/* Act 1 - the problem, out loud */}
-        <section className="mb-16">
+        <section className="mb-16 lg:mb-12">
           <p className="text-3xl font-semibold leading-snug text-[#1A1B2E] sm:text-4xl">
             The band is booked. The night is paid for.
             <br />
@@ -53,43 +53,43 @@ export default function PackedHousePage() {
         </section>
 
         {/* Act 2 - why it stays broken */}
-        <section className="mb-16">
-          <h2 className="mb-4 text-xl font-semibold text-[#2B5D96]">
+        <section className="mb-16 lg:mb-12">
+          <h2 className="mb-4 text-xl lg:text-2xl font-semibold text-[#2B5D96]">
             Nobody&apos;s job is the empty seat
           </h2>
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4 leading-relaxed lg:text-lg">
             Your ticketing company sells tickets to people who already decided
             to come. Your promotion is a post and an email blast, sent to the
             same list, the week of the show. Your booker fills the calendar,
             not the room. Everyone in the building has a job, and filling the
             Tuesday is nobody&apos;s.
           </p>
-          <p className="leading-relaxed">
+          <p className="leading-relaxed lg:text-lg">
             So the Tuesday stays soft, the bar stays quiet, and the math that
             decides whether your room survives gets made on the weekends alone.
           </p>
         </section>
 
         {/* Act 3 - what got built. Name lands after the problem. */}
-        <section className="mb-16">
-          <h2 className="mb-4 text-2xl font-semibold text-[#1A1B2E]">
+        <section className="mb-16 lg:mb-12">
+          <h2 className="mb-4 text-2xl lg:text-3xl font-semibold text-[#1A1B2E]">
             Packed House makes the empty seat somebody&apos;s job. Ours.
           </h2>
           <div className="space-y-8">
             {steps.map((s) => (
               <div key={s.title}>
-                <h3 className="mb-2 text-lg font-semibold text-[#2B5D96]">
+                <h3 className="mb-2 text-lg lg:text-xl font-semibold text-[#2B5D96]">
                   {s.title}
                 </h3>
-                <p className="leading-relaxed">{s.body}</p>
+                <p className="leading-relaxed lg:text-lg">{s.body}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* HeyGen explainer - generated 8/29, Wade's avatar, 77s */}
-        <section className="mb-16">
-          <p className="mb-4 text-sm uppercase tracking-wide text-[#2B5D96]">
+        <section className="mb-16 lg:mb-12">
+          <p className="mb-4 text-sm lg:text-base uppercase tracking-wide text-[#2B5D96]">
             Ninety seconds, plain language
           </p>
           <video
@@ -103,11 +103,11 @@ export default function PackedHousePage() {
         </section>
 
         {/* The money - plain, all-in, no asterisks */}
-        <section className="mb-16">
-          <h2 className="mb-4 text-xl font-semibold text-[#2B5D96]">
+        <section className="mb-16 lg:mb-12">
+          <h2 className="mb-4 text-xl lg:text-2xl font-semibold text-[#2B5D96]">
             What it costs
           </h2>
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4 leading-relaxed lg:text-lg">
             <span className="text-[#1A1B2E]">
               $99 a month, plus $1.50 for each ticket we demonstrably sold.
             </span>{" "}
@@ -116,7 +116,7 @@ export default function PackedHousePage() {
             nothing but a soft night we both already knew was coming.
           </p>
           <div className="border-l-2 border-[#B04E2B] pl-5">
-            <p className="leading-relaxed">
+            <p className="leading-relaxed lg:text-lg">
               You keep your ticketing. You keep your booker. You keep your
               door. We only add.
             </p>
@@ -125,7 +125,7 @@ export default function PackedHousePage() {
 
         {/* One CTA */}
         <section>
-          <p className="mb-6 text-lg leading-relaxed text-[#1A1B2E]">
+          <p className="mb-6 text-lg lg:text-xl leading-relaxed text-[#1A1B2E]">
             One conversation. Bring your calendar, we will bring the plan for
             your next soft night.
           </p>

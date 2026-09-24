@@ -87,10 +87,10 @@ type Row = (typeof ranked)[number];
 function OfferRow({ o, i, lead }: { o: Row; i: number; lead?: boolean }) {
   return (
     <Reveal delay={i * 80}>
-      <div className="border-t border-[rgba(26,27,46,0.13)] py-12 lg:grid lg:grid-cols-12 lg:gap-8">
+      <div className="border-t border-[rgba(26,27,46,0.13)] py-12 lg:py-10 lg:grid lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-3 mb-4 lg:mb-0">
           <p className="k-label">{o.label}</p>
-          <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-3">
+          <p className="k-mono text-[#B04E2B] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-3">
             {o.price}
           </p>
           {lead && (
@@ -108,7 +108,7 @@ function OfferRow({ o, i, lead }: { o: Row; i: number; lead?: boolean }) {
         <div className="lg:col-span-9">
           <h2
             className={`text-[#1A1B2E] font-bold tracking-tight mb-3 ${
-              lead ? "text-3xl lg:text-4xl" : "text-2xl"
+              lead ? "text-3xl lg:text-4xl" : "text-2xl lg:text-3xl"
             }`}
           >
             {o.title}
@@ -116,7 +116,7 @@ function OfferRow({ o, i, lead }: { o: Row; i: number; lead?: boolean }) {
           <p className="text-[#262B3D] text-lg leading-relaxed max-w-2xl mb-5">
             {o.body}
           </p>
-          <Link href={o.href} className="k-link k-focus text-[#2B5D96] font-medium">
+          <Link href={o.href} className="k-link k-focus text-[#2B5D96] lg:text-lg font-medium">
             {o.cta} <span className="k-arrow">&rarr;</span>
           </Link>
         </div>
@@ -132,15 +132,15 @@ export default function ServicesPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Header */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-14">
-        <p className="k-rise k-rise-1 k-label mb-8">Offers</p>
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-14 lg:pb-10">
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Offers</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,4.5vw,3.25rem)]">
           What we sell<span className="text-[#B04E2B]">.</span>
         </h1>
@@ -148,7 +148,7 @@ export default function ServicesPage() {
           Four offers, in the order we would point you at them. Then the
           smaller ways in. Either way: shipping, not slide decks.
         </p>
-        <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/70 text-base max-w-xl">
+        <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/70 text-base lg:text-lg max-w-xl">
           The companies we own and run are on a separate page.{" "}
           <Link href="/ventures" className="k-link text-[#2B5D96] k-focus">
             See the ventures <span className="k-arrow">&rarr;</span>
@@ -157,7 +157,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Evidence */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-14">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-14 lg:pb-10">
         <Reveal>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -180,7 +180,7 @@ export default function ServicesPage() {
       {/* The smaller ways in */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
         <p className="k-label mb-2">The smaller ways in</p>
-        <p className="text-[#262B3D]/70 text-base max-w-xl mb-6">
+        <p className="text-[#262B3D]/70 text-base lg:text-lg max-w-xl mb-6">
           Start small and leave with something working.
         </p>
         <div className="space-y-0">
@@ -191,9 +191,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Closer */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(26,27,46,0.13)] pt-14">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 lg:pb-20 border-t border-[rgba(26,27,46,0.13)] pt-14">
         <Reveal>
-          <p className="text-[#1A1B2E] text-xl font-medium mb-6 max-w-xl">
+          <p className="text-[#1A1B2E] text-xl lg:text-2xl font-medium mb-6 max-w-xl">
             Not sure which one fits?{" "}
             <span className="k-serif font-normal">Tell us what hurts</span> and
             we will point you at the smallest thing that fixes it.

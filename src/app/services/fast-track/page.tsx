@@ -45,15 +45,15 @@ export default function FastTrackPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">AI Fast-Track Session</p>
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">AI Fast-Track Session</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           You leave with it <span className="k-serif font-normal">working</span>
           <span className="text-[#B04E2B]">.</span>

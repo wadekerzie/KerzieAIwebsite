@@ -49,26 +49,26 @@ export default function ProductStory(props: ProductStoryProps) {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* The problem, before the product has a name */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-24 pb-20 lg:pb-28">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-16 pb-20 lg:pb-16">
         <p className="k-rise k-rise-1 k-mono text-[clamp(1.25rem,2.4vw,1.875rem)] text-[#262B3D]/40 leading-none tracking-tight mb-8">
           {props.clock}
         </p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5.5vw,4rem)] max-w-4xl">
           {props.hook}
         </h1>
-        <p className="k-rise k-rise-3 mt-8 text-[#262B3D] text-lg leading-relaxed max-w-2xl">
+        <p className="k-rise k-rise-3 mt-8 text-[#262B3D] text-lg lg:text-xl leading-relaxed max-w-2xl">
           {props.problemBody}
         </p>
 
         {props.image && (
-          <figure className="k-rise k-rise-4 mt-14 lg:mt-16">
+          <figure className="k-rise k-rise-4 mt-14 lg:mt-10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={props.image}
@@ -81,7 +81,7 @@ export default function ProductStory(props: ProductStoryProps) {
 
       {/* Why nothing fixed it */}
       <section className="bg-[#FFFFFF]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
           <Reveal>
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-3 mb-8 lg:mb-0">
@@ -93,7 +93,7 @@ export default function ProductStory(props: ProductStoryProps) {
                 <h2 className="text-[#1A1B2E] text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-4">
                   {props.whyHook}
                 </h2>
-                <p className="text-[#262B3D] text-base leading-relaxed max-w-2xl">
+                <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl">
                   {props.whyBody}
                 </p>
               </div>
@@ -103,7 +103,7 @@ export default function ProductStory(props: ProductStoryProps) {
       </section>
 
       {/* What got built */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
         <Reveal>
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
@@ -115,7 +115,7 @@ export default function ProductStory(props: ProductStoryProps) {
               <h2 className="text-[#1A1B2E] text-[clamp(1.5rem,2.8vw,2.125rem)] font-semibold leading-snug mb-4">
                 {props.builtHook}
               </h2>
-              <p className="text-[#262B3D] text-base leading-relaxed max-w-2xl">
+              <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl">
                 {props.builtBody}
               </p>
               {props.builtImage && (
@@ -135,9 +135,9 @@ export default function ProductStory(props: ProductStoryProps) {
 
       {/* The live demo, when the product can show itself */}
       {props.demo && (
-        <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20 lg:pb-28">
+        <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-20 lg:pb-16">
           <Reveal>
-            <p className="k-label text-center mb-10">
+            <p className="k-label text-center mb-10 lg:mb-8">
               {props.demoLabel ?? "Watch It Happen"}
             </p>
             {props.demo}
@@ -147,7 +147,7 @@ export default function ProductStory(props: ProductStoryProps) {
 
       {/* How it works */}
       <section className="bg-[#FFFFFF]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
           <Reveal>
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-3 mb-10 lg:mb-0">
@@ -159,10 +159,10 @@ export default function ProductStory(props: ProductStoryProps) {
                 <ol className="space-y-6">
                   {props.steps.map((step, i) => (
                     <li key={step} className="flex items-baseline gap-5">
-                      <span className="k-mono text-[#B04E2B] text-xs shrink-0 w-6">
+                      <span className="k-mono text-[#B04E2B] text-xs lg:text-sm shrink-0 w-6">
                         0{i + 1}
                       </span>
-                      <span className="text-[#1A1B2E] text-lg font-medium leading-snug">
+                      <span className="text-[#1A1B2E] text-lg lg:text-xl font-medium leading-snug">
                         {step}
                       </span>
                     </li>
@@ -176,7 +176,7 @@ export default function ProductStory(props: ProductStoryProps) {
 
       {/* Who gets what (optional) */}
       {props.extra && (
-        <section className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+        <section className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
           <Reveal>
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-3 mb-8 lg:mb-0">
@@ -190,7 +190,7 @@ export default function ProductStory(props: ProductStoryProps) {
                 </h2>
                 <div className="space-y-4">
                   {props.extra.paragraphs.map((para) => (
-                    <p key={para} className="text-[#262B3D] text-base leading-relaxed max-w-2xl">
+                    <p key={para} className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl">
                       {para}
                     </p>
                   ))}
@@ -204,7 +204,7 @@ export default function ProductStory(props: ProductStoryProps) {
       {/* The engagement and the price (optional) */}
       {props.pricing && (
         <section className="bg-[#FFFFFF]">
-          <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+          <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
             <Reveal>
               <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div className="lg:col-span-3 mb-8 lg:mb-0">
@@ -222,14 +222,14 @@ export default function ProductStory(props: ProductStoryProps) {
                         <dt className="k-mono text-[#1A1B2E] font-semibold text-base whitespace-nowrap">
                           {row.price}
                         </dt>
-                        <dd className="text-[#262B3D] text-base leading-relaxed">
+                        <dd className="text-[#262B3D] text-base lg:text-lg leading-relaxed">
                           {row.body}
                         </dd>
                       </div>
                     ))}
                   </dl>
                   {props.pricing.fineprint && (
-                    <p className="mt-6 text-[#262B3D]/70 text-sm leading-relaxed max-w-3xl">
+                    <p className="mt-6 text-[#262B3D]/70 text-sm lg:text-base leading-relaxed max-w-3xl">
                       {props.pricing.fineprint}
                     </p>
                   )}
@@ -241,13 +241,13 @@ export default function ProductStory(props: ProductStoryProps) {
       )}
 
       {/* The invitation */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32 text-center">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-20 text-center">
         <Reveal>
-          <div className="w-12 h-0.5 bg-[#B04E2B] mx-auto mb-10" />
+          <div className="w-12 h-0.5 bg-[#B04E2B] mx-auto mb-10 lg:mb-8" />
           <h2 className="text-[#1A1B2E] text-[clamp(1.5rem,3vw,2.25rem)] font-bold tracking-[-0.02em] mb-4">
             {props.ctaHook}
           </h2>
-          <p className="text-[#262B3D] mb-10">{props.ctaSub}</p>
+          <p className="text-[#262B3D] lg:text-lg mb-10 lg:mb-8">{props.ctaSub}</p>
           {props.ctaExternal ? (
             <a
               href={props.ctaHref}

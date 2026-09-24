@@ -121,7 +121,7 @@ export default function BackCoverPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
@@ -146,10 +146,10 @@ export default function BackCoverPage() {
           never add a number here that section 03 does not carry. Claim
           discipline still governs: PAGE never file, we AUTHOR what the AI
           reads and never "control" what it says, no traffic or lead promise. */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-14">
           <div className="lg:flex-1">
-            <p className="k-rise k-rise-1 k-label mb-8">The Back Cover</p>
+            <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">The Back Cover</p>
             <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)] max-w-4xl">
               You&apos;re tired of talking about your website.
               <br />
@@ -186,7 +186,7 @@ export default function BackCoverPage() {
               </Link>
               <a
                 href="/llms.txt"
-                className="k-focus rounded-md bg-[#2B5D96] hover:bg-[#4A7BB5] transition-colors duration-200 px-4 py-2.5 k-mono text-[#FAF8F4] text-[13px] font-semibold"
+                className="k-focus rounded-md bg-[#2B5D96] hover:bg-[#4A7BB5] transition-colors duration-200 px-4 py-2.5 k-mono text-[#FAF8F4] text-[13px] lg:text-sm font-semibold"
               >
                 See this site&apos;s llms.txt &rarr;
               </a>
@@ -199,7 +199,7 @@ export default function BackCoverPage() {
               alt="A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam"
               className="w-32 sm:w-40 lg:w-full rounded-lg border border-[rgba(26,27,46,0.13)] shadow-2xl shadow-black/40 flex-shrink-0"
             />
-            <p className="lg:mt-3 k-mono text-[#262B3D]/50 text-[11px] leading-relaxed max-w-[14rem]">
+            <p className="lg:mt-3 k-mono text-[#262B3D]/50 text-[11px] lg:text-[13px] leading-relaxed max-w-[14rem]">
               Every business has a back cover. The AI reads it whether you
               wrote it or not.
             </p>
@@ -227,7 +227,7 @@ export default function BackCoverPage() {
           <div className="mt-5 flex flex-wrap items-center gap-4">
             <a
               href="/llms.txt"
-              className="k-focus rounded-md bg-[#2B5D96] hover:bg-[#4A7BB5] transition-colors duration-200 px-4 py-2.5 k-mono text-[#FAF8F4] text-[13px] font-semibold"
+              className="k-focus rounded-md bg-[#2B5D96] hover:bg-[#4A7BB5] transition-colors duration-200 px-4 py-2.5 k-mono text-[#FAF8F4] text-[13px] lg:text-sm font-semibold"
             >
               The page mentioned in the video: our llms.txt &rarr;
             </a>
@@ -273,7 +273,7 @@ export default function BackCoverPage() {
               },
             ].map((s) => (
               <li key={s.n} className="flex gap-5">
-                <span className="k-mono text-[#B04E2B] text-sm font-semibold pt-1 flex-shrink-0">
+                <span className="k-mono text-[#B04E2B] text-sm lg:text-base font-semibold pt-1 flex-shrink-0">
                   {s.n}
                 </span>
                 <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -283,7 +283,7 @@ export default function BackCoverPage() {
               </li>
             ))}
           </ol>
-          <p className="max-w-2xl mt-8 text-[#262B3D]/80 text-base leading-relaxed">
+          <p className="max-w-2xl mt-8 text-[#262B3D]/80 text-base lg:text-lg leading-relaxed">
             AI answers move around - no two runs come back identical. What you
             are comparing is not the wording. It is whether the AI had anything
             real to read.
@@ -399,16 +399,16 @@ export default function BackCoverPage() {
                 rel="noopener noreferrer"
                 className="k-focus block rounded-lg border border-[rgba(26,27,46,0.15)] bg-[rgba(26,27,46,0.04)] p-6 hover:border-[rgba(26,27,46,0.35)] transition-colors duration-200"
               >
-                <p className="k-mono text-[#2B5D96] text-[11px] tracking-[0.14em] mb-3">
+                <p className="k-mono text-[#2B5D96] text-[11px] lg:text-[13px] tracking-[0.14em] lg:tracking-[0.12em] mb-3">
                   {c.src} <span className="text-[#262B3D]/40">&middot; {c.date}</span>
                 </p>
                 <p className="text-[#1A1B2E] text-lg font-medium leading-snug mb-3">
                   {c.stat}
                 </p>
-                <p className="text-[#262B3D] text-[15px] leading-relaxed mb-3">
+                <p className="text-[#262B3D] text-[15px] lg:text-base leading-relaxed mb-3">
                   {c.gloss}
                 </p>
-                <p className="k-mono text-[#B04E2B] text-[11px] tracking-[0.1em]">
+                <p className="k-mono text-[#B04E2B] text-[11px] lg:text-[13px] tracking-[0.1em]">
                   READ THE SOURCE &rarr;
                 </p>
               </a>
@@ -429,7 +429,7 @@ export default function BackCoverPage() {
             Two halves. One job, one price.
           </p>
 
-          <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mb-4">
+          <p className="k-mono text-[#B04E2B] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mb-4">
             HALF ONE &mdash; WHAT THEY CAN READ TODAY
           </p>
           <ul className="max-w-2xl space-y-5">
@@ -444,7 +444,7 @@ export default function BackCoverPage() {
             ))}
           </ul>
 
-          <p className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-12 mb-4">
+          <p className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-12 mb-4">
             HALF TWO &mdash; WHAT THEY WILL READ NEXT
           </p>
           <ul className="max-w-2xl space-y-5">
@@ -467,7 +467,7 @@ export default function BackCoverPage() {
             address of the page the AI tools look for. You can check every line
             of it yourself, the day we finish.
           </p>
-          <p className="max-w-2xl mt-8 text-[#262B3D]/80 text-base leading-relaxed">
+          <p className="max-w-2xl mt-8 text-[#262B3D]/80 text-base lg:text-lg leading-relaxed">
             It works on whatever you already have. Wix, Squarespace, GoDaddy,
             WordPress, a site someone built for you in 2019 and never touched
             again. Where it is hosted is not our problem to solve.
@@ -520,7 +520,7 @@ export default function BackCoverPage() {
               It is deliberately not in the menu. No customer will ever navigate
               to it. Every AI that looks at this business will.
             </p>
-            <p className="text-[#262B3D]/75 text-base">
+            <p className="text-[#262B3D]/75 text-base lg:text-lg">
               It is generated from the same source the pages are built from, so
               it cannot quietly go stale and start quoting an old price. That is
               the part most people get wrong.
@@ -531,10 +531,10 @@ export default function BackCoverPage() {
               href="/llms.txt"
               className="k-focus inline-block rounded-md bg-[#2B5D96] hover:bg-[#4A7BB5] transition-colors duration-200 px-5 py-3 shadow-lg shadow-black/20"
             >
-              <span className="block k-mono text-[#FAF8F4] text-sm font-semibold leading-tight">
+              <span className="block k-mono text-[#FAF8F4] text-sm lg:text-base font-semibold leading-tight">
                 See what the llms.txt looks like for this website
               </span>
-              <span className="block k-mono text-[#FAF8F4]/70 text-[11px] leading-tight mt-1">
+              <span className="block k-mono text-[#FAF8F4]/70 text-[11px] lg:text-[13px] leading-tight mt-1">
                 This is what the AI sees &rarr;
               </span>
             </a>
@@ -660,7 +660,7 @@ export default function BackCoverPage() {
               },
             ].map((s) => (
               <li key={s.n} className="flex gap-5">
-                <span className="k-mono text-[#B04E2B] text-sm font-semibold pt-1 flex-shrink-0">
+                <span className="k-mono text-[#B04E2B] text-sm lg:text-base font-semibold pt-1 flex-shrink-0">
                   {s.n}
                 </span>
                 <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -670,7 +670,7 @@ export default function BackCoverPage() {
               </li>
             ))}
           </ol>
-          <p className="max-w-2xl mt-10 text-[#262B3D]/80 text-base leading-relaxed">
+          <p className="max-w-2xl mt-10 text-[#262B3D]/80 text-base lg:text-lg leading-relaxed">
             When you are done with us, remove our login. It takes one click,
             and everything we added stays yours.
           </p>
@@ -739,7 +739,7 @@ export default function BackCoverPage() {
             AI tells your customers about you. The Watch is that missing
             column, priced like the rest of the column.
           </p>
-          <p className="max-w-2xl mt-6 text-[#262B3D]/80 text-base leading-relaxed">
+          <p className="max-w-2xl mt-6 text-[#262B3D]/80 text-base lg:text-lg leading-relaxed">
             The dashboards that only watch this start around $250 a month, and
             you run them yourself. This is a third of that with the work
             included.

@@ -56,7 +56,7 @@ const ventures = [
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="k-mono text-[10px] tracking-[0.28em] uppercase text-[#B04E2B] font-semibold">
+    <p className="k-mono text-[10px] lg:text-xs tracking-[0.28em] lg:tracking-[0.22em] uppercase text-[#B04E2B] font-semibold">
       {children}
     </p>
   );
@@ -140,7 +140,7 @@ export default function Header() {
       >
         {/* Sheet header */}
         <div className="flex items-center justify-between h-14 lg:h-16 px-6 border-b border-[rgba(26,27,46,0.08)] flex-shrink-0">
-          <p className="k-mono text-[10px] tracking-[0.28em] uppercase text-[#5B6B77]">
+          <p className="k-mono text-[10px] lg:text-xs tracking-[0.28em] lg:tracking-[0.22em] uppercase text-[#5B6B77]">
             Menu
           </p>
           <button
@@ -163,7 +163,7 @@ export default function Header() {
               <Link
                 href="/services"
                 onClick={close}
-                className="k-mono text-[11px] text-[#2B5D96] k-focus"
+                className="k-mono text-[11px] lg:text-xs text-[#2B5D96] k-focus"
               >
                 All offers &rarr;
               </Link>
@@ -179,7 +179,7 @@ export default function Header() {
                   }`}
                 >
                   <span className="flex items-baseline gap-3">
-                    <span className="k-mono text-[#B04E2B] text-[10px] flex-shrink-0">
+                    <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] flex-shrink-0">
                       0{i + 1}
                     </span>
                     <span
@@ -190,7 +190,7 @@ export default function Header() {
                       {o.label}
                     </span>
                   </span>
-                  <span className="k-mono text-[#B04E2B] text-[10px] tracking-[0.12em] flex-shrink-0">
+                  <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] tracking-[0.12em] flex-shrink-0">
                     {o.hint}
                   </span>
                 </Link>
@@ -207,7 +207,7 @@ export default function Header() {
                     <span className="text-[#262B3D] text-[14px] font-medium">
                       {o.label}
                     </span>
-                    <span className="k-mono text-[#5B6B77] text-[10px] tracking-[0.12em] flex-shrink-0">
+                    <span className="k-mono text-[#5B6B77] text-[10px] lg:text-[11px] tracking-[0.12em] flex-shrink-0">
                       {o.hint}
                     </span>
                   </Link>
@@ -223,12 +223,12 @@ export default function Header() {
               <Link
                 href="/ventures"
                 onClick={close}
-                className="k-mono text-[11px] text-[#2B5D96] k-focus"
+                className="k-mono text-[11px] lg:text-xs text-[#2B5D96] k-focus"
               >
                 All ventures &rarr;
               </Link>
             </div>
-            <p className="mt-1 text-[#5B6B77] text-[12px]">Companies we own and run.</p>
+            <p className="mt-1 text-[#5B6B77] text-[12px] lg:text-[13px]">Companies we own and run.</p>
             <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2.5">
               {ventures.map((v) => (
                 <Link
@@ -256,14 +256,14 @@ export default function Header() {
                     i > 0 ? "border-t border-[rgba(26,27,46,0.08)]" : ""
                   }`}
                 >
-                  <span className="k-mono text-[#B04E2B] text-[10px] flex-shrink-0">
+                  <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] flex-shrink-0">
                     0{i + 1}
                   </span>
                   <span className="flex-1">
                     <span className="block text-[#1A1B2E] text-[16px] font-semibold leading-tight">
                       {e.label}
                     </span>
-                    <span className="block text-[#5B6B77] text-[12px] mt-0.5">
+                    <span className="block text-[#5B6B77] text-[12px] lg:text-[13px] mt-0.5">
                       {e.deck}
                     </span>
                   </span>

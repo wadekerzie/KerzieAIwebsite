@@ -195,15 +195,15 @@ export default function SalesTeamsPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Hero: the mandate leads */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">For Sales Teams</p>
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">For Sales Teams</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)] max-w-4xl">
           Your team was told to use AI.{" "}
           <span className="k-serif font-normal">Here&apos;s what it looks like when it works</span>
@@ -318,7 +318,7 @@ export default function SalesTeamsPage() {
                       alt="A saleswoman in her fifties sits in her parked car right after a meeting, speaking a voice memo into her phone. Illustration."
                       className="k-photo h-auto"
                     />
-                    <figcaption className="k-mono mt-3 text-[11px] tracking-[0.12em] uppercase text-[#262B3D]/60">
+                    <figcaption className="k-mono mt-3 text-[11px] lg:text-[13px] tracking-[0.12em] lg:tracking-[0.1em] uppercase text-[#262B3D]/60">
                       The 60-second habit. Illustration.
                     </figcaption>
                   </figure>
@@ -355,7 +355,7 @@ export default function SalesTeamsPage() {
                 </ul>
 
                 <div className="mt-14">
-                  <p className="k-mono text-[#B04E2B] text-sm tracking-[0.15em] uppercase mb-4">
+                  <p className="k-mono text-[#B04E2B] text-sm lg:text-base tracking-[0.15em] lg:tracking-[0.12em] uppercase mb-4">
                     What moves into the OS
                   </p>
                   <p className="text-[#1A1B2E] text-lg font-medium max-w-2xl mb-8 leading-relaxed">
@@ -455,12 +455,12 @@ export default function SalesTeamsPage() {
             <div className="lg:col-span-7 space-y-10">
               {steps.map((step) => (
                 <div key={step.label}>
-                  <p className="k-mono text-[#B04E2B] text-sm tracking-[0.15em] uppercase mb-3">
+                  <p className="k-mono text-[#B04E2B] text-sm lg:text-base tracking-[0.15em] lg:tracking-[0.12em] uppercase mb-3">
                     {step.label}
                   </p>
                   <p className="text-[#262B3D] text-lg leading-relaxed">{step.body}</p>
                   <p className="mt-3 text-[#1A1B2E] text-lg leading-relaxed">
-                    <span className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] uppercase mr-2">
+                    <span className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] uppercase mr-2">
                       What you see
                     </span>
                     {step.leaderSees}
@@ -477,7 +477,7 @@ export default function SalesTeamsPage() {
                 alt="A sales leader works through printed pages with his team at a meeting table. Illustration."
                 className="k-photo h-auto"
               />
-              <figcaption className="k-mono mt-3 text-[11px] tracking-[0.12em] uppercase text-[#262B3D]/60">
+              <figcaption className="k-mono mt-3 text-[11px] lg:text-[13px] tracking-[0.12em] lg:tracking-[0.1em] uppercase text-[#262B3D]/60">
                 Monday, with the forecast in hand. Illustration.
               </figcaption>
             </figure>
@@ -531,13 +531,13 @@ export default function SalesTeamsPage() {
             <span className="text-[#B04E2B]">.</span>
           </h2>
           <div className="max-w-2xl bg-white border border-[rgba(26,27,46,0.13)] p-6 sm:p-8">
-            <p className="k-mono text-[#2B5D96] text-[11px] tracking-[0.2em] uppercase mb-5">
+            <p className="k-mono text-[#2B5D96] text-[11px] lg:text-[13px] tracking-[0.2em] lg:tracking-[0.16em] uppercase mb-5">
               Brief (written 6:45 AM)
             </p>
-            <dl className="space-y-4 text-[#262B3D] text-base leading-relaxed">
+            <dl className="space-y-4 text-[#262B3D] text-base lg:text-lg leading-relaxed">
               {brief.map((row) => (
                 <div key={row.label}>
-                  <dt className="k-mono text-[#B04E2B] text-[11px] tracking-[0.15em] uppercase mb-1">
+                  <dt className="k-mono text-[#B04E2B] text-[11px] lg:text-[13px] tracking-[0.15em] lg:tracking-[0.12em] uppercase mb-1">
                     {row.label}
                   </dt>
                   <dd>
@@ -615,7 +615,7 @@ export default function SalesTeamsPage() {
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Book a call <span className="k-arrow">&rarr;</span>
           </Link>
-          <p className="mt-8 text-[#262B3D]/80 text-base max-w-xl leading-relaxed">
+          <p className="mt-8 text-[#262B3D]/80 text-base lg:text-lg max-w-xl leading-relaxed">
             A seller on your own? The general OS is free:{" "}
             <Link href="/one-window" className="underline k-focus hover:text-[#1A1B2E]">
               get One-Window

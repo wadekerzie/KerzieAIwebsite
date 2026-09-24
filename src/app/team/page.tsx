@@ -33,15 +33,15 @@ export default function TeamPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* Header */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">The People</p>
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">The People</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           The people behind the work.
         </h1>
@@ -52,7 +52,7 @@ export default function TeamPage() {
       </section>
 
       {/* Profiles */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-28">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-28 lg:pb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
           {people.map((person, i) => (
             <Reveal key={person.name} delay={i * 100}>
@@ -75,7 +75,7 @@ export default function TeamPage() {
                   <p className="text-[#1A1B2E] text-xl font-medium mb-2">
                     {person.name}
                   </p>
-                  <p className="text-[#262B3D] text-[15px] leading-relaxed">
+                  <p className="text-[#262B3D] text-[15px] lg:text-base leading-relaxed">
                     {person.role}
                   </p>
                 </div>
@@ -84,14 +84,14 @@ export default function TeamPage() {
                     href={person.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="k-link self-start text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+                    className="k-link self-start text-[#2B5D96] text-sm lg:text-base font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                   >
                     See more <span className="k-arrow">&rarr;</span>
                   </a>
                 ) : (
                   <Link
                     href={person.href}
-                    className="k-link self-start text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+                    className="k-link self-start text-[#2B5D96] text-sm lg:text-base font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                   >
                     See more <span className="k-arrow">&rarr;</span>
                   </Link>

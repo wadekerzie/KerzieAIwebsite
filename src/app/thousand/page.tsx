@@ -23,15 +23,15 @@ export default function ThousandPage() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-10">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
       </div>
 
       {/* The counter is the hero */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-14">
-        <p className="k-rise k-rise-1 k-label mb-8">The First Thousand</p>
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-14 lg:pb-10">
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">The First Thousand</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.02] text-[clamp(3rem,9vw,6.5rem)]">
           {operators.count}
           <span className="text-[#262B3D]/50 font-normal text-[0.45em]"> of 1,000</span>

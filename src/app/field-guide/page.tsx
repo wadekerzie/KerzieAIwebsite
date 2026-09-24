@@ -64,12 +64,12 @@ export default function FieldGuidePage() {
       <div className="max-w-3xl mx-auto px-6 pt-10 pb-20">
         <Link
           href="/"
-          className="k-mono text-[#262B3D]/70 text-xs tracking-[0.15em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
+          className="k-mono text-[#262B3D]/70 text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] hover:text-[#1A1B2E] transition-colors duration-200 k-focus"
         >
           &larr; KERZIE<span className="text-[#B04E2B]">.</span>AI
         </Link>
 
-        <p className="k-label mt-12 mb-4">Seller Field Guide</p>
+        <p className="k-label mt-12 lg:mt-10 mb-4">Seller Field Guide</p>
         <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2rem,5vw,3rem)]">
           The Back Cover<span className="text-[#B04E2B]">.</span>
         </h1>
@@ -93,14 +93,14 @@ export default function FieldGuidePage() {
               className="rounded-lg border border-[rgba(26,27,46,0.2)] bg-[rgba(26,27,46,0.06)] px-4 py-2.5"
             >
               <span className="block text-[#1A1B2E] font-bold text-lg">{n}</span>
-              <span className="block k-mono text-[#262B3D]/70 text-[10px] tracking-[0.1em] uppercase">
+              <span className="block k-mono text-[#262B3D]/70 text-[10px] lg:text-xs tracking-[0.1em] uppercase">
                 {l}
               </span>
             </div>
           ))}
         </div>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-12 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-12 mb-4">
           STEP ZERO - KNOW THE PAGE BY HEART
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -118,7 +118,7 @@ export default function FieldGuidePage() {
           just walking them to the demo.
         </p>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           BEFORE YOU CALL ANYONE
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -137,13 +137,13 @@ export default function FieldGuidePage() {
           realistic.
         </p>
 
-        <h2 className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-10 mb-5">
+        <h2 className="k-mono text-[#B04E2B] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-5">
           THE SIX-STEP PITCH (THE ONE THAT WORKS)
         </h2>
         <ol className="space-y-5">
           {pitch.map((s, i) => (
             <li key={s.lead} className="flex gap-4">
-              <span className="k-mono text-[#B04E2B] text-sm font-semibold pt-1 flex-shrink-0">
+              <span className="k-mono text-[#B04E2B] text-sm lg:text-base font-semibold pt-1 flex-shrink-0">
                 {i + 1}
               </span>
               <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -154,7 +154,7 @@ export default function FieldGuidePage() {
           ))}
         </ol>
 
-        <h2 className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#B04E2B] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           SAY IT IN TWENTY SECONDS
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -170,7 +170,7 @@ export default function FieldGuidePage() {
         <ol className="mt-5 space-y-4">
           {build.map((s, i) => (
             <li key={s.lead} className="flex gap-4">
-              <span className="k-mono text-[#23784E] text-sm font-semibold pt-1 flex-shrink-0">
+              <span className="k-mono text-[#23784E] text-sm lg:text-base font-semibold pt-1 flex-shrink-0">
                 {i + 1}
               </span>
               <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -181,7 +181,7 @@ export default function FieldGuidePage() {
           ))}
         </ol>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           WHEN THEY SAY THEY ALREADY HAVE ONE
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -201,7 +201,7 @@ export default function FieldGuidePage() {
           </span>
         </p>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           FOR THE SKEPTIC - AND THE LINE YOU NEVER CROSS
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -225,7 +225,7 @@ export default function FieldGuidePage() {
           a ranking, a citation, or what any AI will say back.
         </p>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           THE SOFT CLOSE FOR THE KINDA-INTERESTED
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -239,10 +239,10 @@ export default function FieldGuidePage() {
 
         <div className="grid md:grid-cols-2 gap-5 mt-10">
           <div className="rounded-lg border border-[rgba(26,27,46,0.15)] border-t-2 border-t-[#23784E] bg-[rgba(26,27,46,0.04)] p-5">
-            <h3 className="k-mono text-[#23784E] text-xs tracking-[0.12em] mb-3">
+            <h3 className="k-mono text-[#23784E] text-xs lg:text-sm tracking-[0.12em] lg:tracking-[0.1em] mb-3">
               SAY THIS
             </h3>
-            <ul className="space-y-2.5 text-[#262B3D] text-[15px] leading-relaxed list-disc pl-5">
+            <ul className="space-y-2.5 text-[#262B3D] text-[15px] lg:text-base leading-relaxed list-disc pl-5">
               <li>
                 <span className="text-[#1A1B2E] font-medium">PAGE</span> - &ldquo;the
                 back cover page,&rdquo; &ldquo;the llms.txt page&rdquo;
@@ -273,10 +273,10 @@ export default function FieldGuidePage() {
             </ul>
           </div>
           <div className="rounded-lg border border-[rgba(26,27,46,0.15)] border-t-2 border-t-[#A8443C] bg-[rgba(26,27,46,0.04)] p-5">
-            <h3 className="k-mono text-[#A8443C] text-xs tracking-[0.12em] mb-3">
+            <h3 className="k-mono text-[#A8443C] text-xs lg:text-sm tracking-[0.12em] lg:tracking-[0.1em] mb-3">
               NEVER THIS
             </h3>
-            <ul className="space-y-2.5 text-[#262B3D] text-[15px] leading-relaxed list-disc pl-5">
+            <ul className="space-y-2.5 text-[#262B3D] text-[15px] lg:text-base leading-relaxed list-disc pl-5">
               <li>&ldquo;File.&rdquo; No one pays $1,500 for a file.</li>
               <li>&ldquo;Simple&rdquo; anything.</li>
               <li>
@@ -296,7 +296,7 @@ export default function FieldGuidePage() {
           </div>
         </div>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           WHO TO PITCH
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -309,7 +309,7 @@ export default function FieldGuidePage() {
           whole demo lives on the phone in their pocket.
         </p>
 
-        <h2 className="k-mono text-[#2B5D96] text-xs tracking-[0.15em] mt-10 mb-4">
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
           GUARDRAILS
         </h2>
         <p className="text-[#262B3D] text-lg leading-relaxed">
@@ -321,7 +321,7 @@ export default function FieldGuidePage() {
           Wade&apos;s conversation.
         </p>
 
-        <div className="mt-12 border-t border-[rgba(26,27,46,0.13)] pt-6 text-[#262B3D]/80 text-base leading-relaxed">
+        <div className="mt-12 border-t border-[rgba(26,27,46,0.13)] pt-6 text-[#262B3D]/80 text-base lg:text-lg leading-relaxed">
           <p>
             <span className="text-[#1A1B2E] font-medium">After the yes:</span> book
             the deployment meeting (in person or video) and hand it to Wade -
@@ -329,7 +329,7 @@ export default function FieldGuidePage() {
             walkthrough where the owner reads their new page with us.
             Commission terms with Wade directly.
           </p>
-          <p className="mt-4 k-mono text-[13px] text-[#262B3D]/60">
+          <p className="mt-4 k-mono text-[13px] lg:text-sm text-[#262B3D]/60">
             Wade Kerzie &middot; Kerzie AI Solutions &middot; McKinney, Texas
             &middot; 214-668-7986
           </p>

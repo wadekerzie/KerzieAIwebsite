@@ -82,7 +82,11 @@ export default function Home() {
       <BackCoverButton />
 
       {/* ============ ACT ONE: THE BELIEF ============ */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 min-h-[min(calc(100svh-4rem),50rem)] flex flex-col justify-center pt-16 pb-12">
+      {/* DESKTOP SPACING (Wade, 2026-09-24): the hero used to fill the whole
+          first screen, so on a laptop the page looked finished at the fold.
+          From lg it stops short so "01 What We Sell" peeks in underneath.
+          Phone sizing is untouched. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 min-h-[min(calc(100svh-4rem),50rem)] lg:min-h-[min(calc(100svh-16rem),40rem)] flex flex-col justify-center pt-16 pb-12 lg:pt-14 lg:pb-10">
         <h1 className="k-rise k-rise-1 text-[#1A1B2E] font-bold tracking-[-0.03em] leading-[1.02] text-[clamp(2.75rem,7.5vw,5.5rem)]">
           Life is best when
           <br />
@@ -102,7 +106,7 @@ export default function Home() {
         </p>
 
         {/* The bylines: two trade publications ran the thinking. Receipts, not claims. */}
-        <p className="k-rise k-rise-3 mt-6 k-mono text-xs tracking-[0.15em] text-[#262B3D]/60">
+        <p className="k-rise k-rise-3 mt-6 k-mono text-xs lg:text-[15px] tracking-[0.15em] lg:tracking-[0.1em] text-[#262B3D]/60">
           PUBLISHED IN{" "}
           <a
             href="https://www.nrn.com/expert-opinions/why-restaurants-don-t-need-an-11-000-consultant-to-fix-prime-cost-anymore"
@@ -133,7 +137,7 @@ export default function Home() {
         </p>
 
         {/* The index: the offers, in rank order */}
-        <div className="k-rise k-rise-4 mt-20 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs tracking-[0.15em] text-[#262B3D]/50">
+        <div className="k-rise k-rise-4 mt-20 lg:mt-12 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs lg:text-[15px] tracking-[0.15em] lg:tracking-[0.1em] text-[#262B3D]/50">
           {offers.map((p, i) => (
             <span key={p.name} className="flex items-baseline gap-x-3">
               <Link
@@ -154,15 +158,15 @@ export default function Home() {
       {/* First content section after the hero (Wade + Aaron, 2026-09-24):
           the four offers in rank order, Back Cover first and largest. */}
       <section id="offers" className="bg-[#FFFFFF] border-t border-[rgba(26,27,46,0.13)]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
           <Reveal>
-            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-12 lg:mb-16">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-12 lg:mb-6">
               <p className="k-label">
                 <span className="idx">01</span>What We Sell
               </p>
               <Link
                 href="/services"
-                className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+                className="k-link text-[#2B5D96] text-sm lg:text-base font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
               >
                 All offers <span className="k-arrow">&rarr;</span>
               </Link>
@@ -177,7 +181,7 @@ export default function Home() {
             >
               <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-start">
                 <div className="lg:col-span-3 mb-5 lg:mb-0">
-                  <span className="k-mono text-[#B04E2B] text-xs block">01</span>
+                  <span className="k-mono text-[#B04E2B] text-xs lg:text-sm block">01</span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/back-cover-book-tall.jpg"
@@ -189,10 +193,10 @@ export default function Home() {
                   <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.6vw,2.75rem)] font-bold tracking-[-0.02em] leading-[1.05] group-hover:text-[#2B5D96] transition-colors duration-200 mb-4">
                     {offers[0].name}
                   </h2>
-                  <p className="text-[#262B3D] text-lg leading-relaxed max-w-2xl mb-4">
+                  <p className="text-[#262B3D] text-lg lg:text-xl leading-relaxed max-w-2xl mb-4">
                     {offers[0].line}
                   </p>
-                  <span className="text-[#2B5D96] text-sm font-semibold">
+                  <span className="text-[#2B5D96] text-sm lg:text-base font-semibold">
                     Read the page <span className="k-arrow">&rarr;</span>
                   </span>
                 </div>
@@ -208,14 +212,14 @@ export default function Home() {
                   href={o.href}
                   className="group block border-t border-[rgba(26,27,46,0.13)] pt-6 pb-8 h-full k-focus"
                 >
-                  <span className="k-mono text-[#B04E2B] text-xs">0{i + 2}</span>
-                  <h3 className="mt-3 text-[#1A1B2E] text-xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-3">
+                  <span className="k-mono text-[#B04E2B] text-xs lg:text-sm">0{i + 2}</span>
+                  <h3 className="mt-3 text-[#1A1B2E] text-xl lg:text-2xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-3">
                     {o.name}
                   </h3>
-                  <p className="text-[#262B3D] text-base leading-relaxed mb-4">
+                  <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed mb-4">
                     {o.line}
                   </p>
-                  <span className="text-[#2B5D96] text-sm font-semibold">
+                  <span className="text-[#2B5D96] text-sm lg:text-base font-semibold">
                     Read more <span className="k-arrow">&rarr;</span>
                   </span>
                 </Link>
@@ -226,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* ============ THE ENGINES ============ */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 lg:pt-10 pb-24 lg:pb-32">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-8 lg:pt-14 pb-24 lg:pb-16">
         <Reveal>
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
@@ -252,7 +256,7 @@ export default function Home() {
       {/* Companies we own and run. A separate section, after the offers,
           never mixed with them (Wade + Aaron, 2026-09-24). */}
       <section id="what-we-built" className="bg-[#FFFFFF]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-16">
           <Reveal>
             <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-4">
               <p className="k-label">
@@ -260,18 +264,18 @@ export default function Home() {
               </p>
               <Link
                 href="/ventures"
-                className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+                className="k-link text-[#2B5D96] text-sm lg:text-base font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
               >
                 All ventures <span className="k-arrow">&rarr;</span>
               </Link>
             </div>
-            <p className="text-[#262B3D] text-base max-w-xl mb-16 lg:mb-20">
+            <p className="text-[#262B3D] text-base lg:text-lg max-w-xl mb-16 lg:mb-10">
               Not offers. Our own companies, each one started as a problem
               worth fixing.
             </p>
           </Reveal>
 
-          <div className="space-y-16 lg:space-y-24">
+          <div className="space-y-16">
             {products.map((product, i) => (
               <Reveal key={product.name} delay={i % 2 === 0 ? 0 : 100}>
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
@@ -294,12 +298,12 @@ export default function Home() {
                     <h3 className="text-[#1A1B2E] text-[clamp(1.375rem,2.3vw,1.75rem)] font-semibold leading-snug mb-4">
                       {product.hook}
                     </h3>
-                    <p className="text-[#262B3D] text-base leading-relaxed max-w-2xl mb-6">
+                    <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl mb-6">
                       {product.body}
                     </p>
                     <Link
                       href={product.href}
-                      className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+                      className="k-link text-[#2B5D96] text-sm lg:text-base font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                     >
                       {product.name} <span className="k-arrow">&rarr;</span>
                     </Link>
@@ -310,13 +314,13 @@ export default function Home() {
           </div>
 
           {/* The rest of the ventures, one line each */}
-          <div className="mt-16 lg:mt-24 border-t border-[rgba(26,27,46,0.13)] pt-8 grid gap-6 sm:grid-cols-3">
+          <div className="mt-16 border-t border-[rgba(26,27,46,0.13)] pt-8 grid gap-6 sm:grid-cols-3">
             {moreVentures.map((v) => (
               <Link key={v.name} href={v.href} className="group block k-focus">
-                <h3 className="text-[#1A1B2E] text-lg font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-2">
+                <h3 className="text-[#1A1B2E] text-lg lg:text-xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-2">
                   {v.name}
                 </h3>
-                <p className="text-[#262B3D] text-sm leading-relaxed">
+                <p className="text-[#262B3D] text-sm lg:text-base leading-relaxed">
                   {v.line}
                 </p>
               </Link>
@@ -327,7 +331,7 @@ export default function Home() {
 
       {/* ============ AUDIENCE DOOR: SALES TEAMS ============ */}
       <section className="border-t border-[rgba(26,27,46,0.13)] bg-[#FFFFFF]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-16 lg:py-14">
           <Reveal>
             <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
               <div className="lg:col-span-8">
@@ -340,7 +344,7 @@ export default function Home() {
               <div className="lg:col-span-4 mt-6 lg:mt-0 lg:text-right">
                 <Link
                   href="/services/sales-teams"
-                  className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+                  className="k-link text-[#2B5D96] text-sm lg:text-base font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
                 >
                   For Sales Teams <span className="k-arrow">&rarr;</span>
                 </Link>
@@ -351,7 +355,7 @@ export default function Home() {
       </section>
 
       {/* ============ ACT THREE: THE QUESTION ============ */}
-      <section id="whats-broken" className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+      <section id="whats-broken" className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-20">
         <Reveal>
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
@@ -363,12 +367,12 @@ export default function Home() {
               <h2 className="text-[#1A1B2E] text-[clamp(2rem,4.5vw,3.25rem)] font-bold tracking-[-0.02em] leading-[1.05] mb-5">
                 What problem hurts the most?
               </h2>
-              <p className="text-[#262B3D] text-base mb-4 max-w-xl">
+              <p className="text-[#262B3D] text-base lg:text-lg mb-4 max-w-xl">
                 Everything above started as somebody&apos;s problem. That&apos;s
                 the whole business: find where technology is failing a person,
                 and make it simple enough to actually help.
               </p>
-              <p className="text-[#262B3D] text-base mb-10 max-w-xl">
+              <p className="text-[#262B3D] text-base lg:text-lg mb-10 max-w-xl">
                 Don&apos;t worry about the solution. Just tell us the problem.
                 The longer the better.
               </p>
