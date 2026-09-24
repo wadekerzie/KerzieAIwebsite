@@ -9,6 +9,39 @@ export const metadata = {
     "Life is best when technology just works. We build products that fix things people stopped expecting to get fixed.",
 };
 
+// OFFERS versus VENTURES (Wade + Aaron, 2026-09-24): "draw the line between
+// what our offers are and what our ventures are, and stack rank what people
+// see first." Offers are sold to other businesses and come first, in Wade's
+// order: Back Cover at the top, then Sales Teams, then Unison, then Executive
+// Legacy. Ventures are companies we own and run and get their own section
+// further down. The two never share a list. One line each, matching what the
+// page itself says.
+const offers = [
+  {
+    name: "The Back Cover",
+    line: "One page, written for the AI your customers now ask, that keeps itself current. Set up once, off your plate.",
+    href: "/back-cover",
+  },
+  {
+    name: "For Sales Teams",
+    line: "Every seller runs their own AI operating system, and the leader gets the view. An engagement, not a login.",
+    href: "/services/sales-teams",
+  },
+  {
+    name: "Unison",
+    line: "Someone calls your business after hours and you never knew they called. Unison answers immediately across every channel.",
+    href: "/ventures/unison",
+  },
+  {
+    name: "Executive Legacy",
+    line: "Forty years of judgment retires at the end of the year. Executive Legacy captures it in an answer set the successor can ask, every answer cited.",
+    href: "/ventures/executive-legacy",
+  },
+];
+
+// The venture scenes. Unison left this list when it became an offer;
+// Ad2Action is a custom implementation of Unison and is not called out
+// separately (Wade, 2026-09-24).
 const products = [
   {
     name: "GotaGuy",
@@ -20,15 +53,6 @@ const products = [
     imageAlt: "A homeowner smiling at her phone in a bright kitchen while a plumber fixes the faucet behind her",
   },
   {
-    name: "Unison",
-    clock: "7:05 PM",
-    hook: "Someone calls your law firm at 7:05pm.",
-    body: "They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.",
-    href: "/ventures/unison",
-    image: "/evidence/after-unison-v2.jpg",
-    imageAlt: "An attorney at his desk the next morning, coffee in hand, reading the call that came in overnight",
-  },
-  {
     name: "Zorli",
     clock: "8 MIN",
     hook: "Your teenager calls while you're watching a movie.",
@@ -37,15 +61,13 @@ const products = [
     image: "/evidence/after-zorli-v2.jpg",
     imageAlt: "A man relaxed on the couch, sending the password from his phone with a small smile",
   },
-  {
-    name: "Ad2Action",
-    clock: "+14 HRS",
-    hook: "You paid for the ad.",
-    body: "Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.",
-    href: "/ventures/ad2action",
-    image: "/evidence/after-ad2action-v2.jpg",
-    imageAlt: "A showroom owner calling a new lead back the moment it comes in",
-  },
+];
+
+// The rest of the ventures, one line each, matching each page's own words.
+const moreVentures = [
+  { name: "TrueSeat", href: "/ventures/trueseat", line: "Resumes are claims. TrueSeat builds a sealed, evidence-backed dossier of what you can actually do." },
+  { name: "Packed House", href: "/packed-house", line: "Your show is booked. Your room is a quarter full. Packed House fills the seats." },
+  { name: "TrueNorth", href: "/ventures/truenorth", line: "Your personal board of history's wisest advisors, portable to any AI you use." },
 ];
 
 export default function Home() {
@@ -101,9 +123,9 @@ export default function Home() {
           </a>
         </p>
 
-        {/* The index: what's on the bench */}
+        {/* The index: the offers, in rank order */}
         <div className="k-rise k-rise-4 mt-20 flex flex-wrap items-baseline gap-x-3 gap-y-2 k-mono text-xs tracking-[0.15em] text-[#262B3D]/50">
-          {products.map((p, i) => (
+          {offers.map((p, i) => (
             <span key={p.name} className="flex items-baseline gap-x-3">
               <Link
                 href={p.href}
@@ -111,11 +133,80 @@ export default function Home() {
               >
                 {p.name.toUpperCase()}
               </Link>
-              {i < products.length - 1 && (
+              {i < offers.length - 1 && (
                 <span className="text-[#B04E2B]/60">/</span>
               )}
             </span>
           ))}
+        </div>
+      </section>
+
+      {/* ============ ACT ONE AND A HALF: THE OFFERS ============ */}
+      {/* First content section after the hero (Wade + Aaron, 2026-09-24):
+          the four offers in rank order, Back Cover first and largest. */}
+      <section id="offers" className="bg-[#FFFFFF] border-t border-[rgba(26,27,46,0.13)]">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
+          <Reveal>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-12 lg:mb-16">
+              <p className="k-label">
+                <span className="idx">01</span>What We Sell
+              </p>
+              <Link
+                href="/services"
+                className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+              >
+                All offers <span className="k-arrow">&rarr;</span>
+              </Link>
+            </div>
+          </Reveal>
+
+          {/* Back Cover leads: full width, the biggest type on the page below the hero */}
+          <Reveal>
+            <Link
+              href={offers[0].href}
+              className="group block border-t-2 border-[#B04E2B] pt-8 pb-10 k-focus"
+            >
+              <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-baseline">
+                <div className="lg:col-span-3 mb-3 lg:mb-0">
+                  <span className="k-mono text-[#B04E2B] text-xs">01</span>
+                </div>
+                <div className="lg:col-span-9">
+                  <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.6vw,2.75rem)] font-bold tracking-[-0.02em] leading-[1.05] group-hover:text-[#2B5D96] transition-colors duration-200 mb-4">
+                    {offers[0].name}
+                  </h2>
+                  <p className="text-[#262B3D] text-lg leading-relaxed max-w-2xl mb-4">
+                    {offers[0].line}
+                  </p>
+                  <span className="text-[#2B5D96] text-sm font-semibold">
+                    Read the page <span className="k-arrow">&rarr;</span>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </Reveal>
+
+          {/* Then the other three, in order */}
+          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
+            {offers.slice(1).map((o, i) => (
+              <Reveal key={o.name} delay={(i + 1) * 80}>
+                <Link
+                  href={o.href}
+                  className="group block border-t border-[rgba(26,27,46,0.13)] pt-6 pb-8 h-full k-focus"
+                >
+                  <span className="k-mono text-[#B04E2B] text-xs">0{i + 2}</span>
+                  <h3 className="mt-3 text-[#1A1B2E] text-xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-3">
+                    {o.name}
+                  </h3>
+                  <p className="text-[#262B3D] text-base leading-relaxed mb-4">
+                    {o.line}
+                  </p>
+                  <span className="text-[#2B5D96] text-sm font-semibold">
+                    Read more <span className="k-arrow">&rarr;</span>
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -125,7 +216,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
               <p className="k-label">
-                <span className="idx">01</span>The Engines
+                <span className="idx">02</span>The Engines
               </p>
             </div>
             <div className="lg:col-span-9">
@@ -142,12 +233,26 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ============ ACT TWO: THE PROBLEMS ============ */}
+      {/* ============ ACT TWO: THE VENTURES ============ */}
+      {/* Companies we own and run. A separate section, after the offers,
+          never mixed with them (Wade + Aaron, 2026-09-24). */}
       <section id="what-we-built" className="bg-[#FFFFFF]">
         <div className="max-w-6xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
           <Reveal>
-            <p className="k-label mb-16 lg:mb-20">
-              <span className="idx">02</span>What We Fixed
+            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 mb-4">
+              <p className="k-label">
+                <span className="idx">03</span>Companies We Own and Run
+              </p>
+              <Link
+                href="/ventures"
+                className="k-link text-[#2B5D96] text-sm font-semibold hover:text-[#1A1B2E] transition-colors duration-200"
+              >
+                All ventures <span className="k-arrow">&rarr;</span>
+              </Link>
+            </div>
+            <p className="text-[#262B3D] text-base max-w-xl mb-16 lg:mb-20">
+              Not offers. Our own companies, each one started as a problem
+              worth fixing.
             </p>
           </Reveal>
 
@@ -188,6 +293,20 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+
+          {/* The rest of the ventures, one line each */}
+          <div className="mt-16 lg:mt-24 border-t border-[rgba(26,27,46,0.13)] pt-8 grid gap-6 sm:grid-cols-3">
+            {moreVentures.map((v) => (
+              <Link key={v.name} href={v.href} className="group block k-focus">
+                <h3 className="text-[#1A1B2E] text-lg font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-2">
+                  {v.name}
+                </h3>
+                <p className="text-[#262B3D] text-sm leading-relaxed">
+                  {v.line}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -222,7 +341,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3 mb-8 lg:mb-0">
               <p className="k-label">
-                <span className="idx">03</span>The Question
+                <span className="idx">04</span>The Question
               </p>
             </div>
             <div className="lg:col-span-9">

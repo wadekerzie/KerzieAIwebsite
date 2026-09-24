@@ -1,10 +1,15 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
+// VENTURES ONLY (Wade + Aaron, 2026-09-24): companies Kerzie AI owns and
+// runs. Offers sold to other businesses (The Back Cover, For Sales Teams,
+// Unison, Executive Legacy) live on /services. Unison and Executive Legacy
+// keep their /ventures URLs so no inbound link breaks; they are simply not
+// listed here. Ad2Action is folded into Unison and redirects there.
 export const metadata = {
-  title: "Our Work | Kerzie AI",
+  title: "Ventures | Kerzie AI",
   description:
-    "Every product starts with a problem worth fixing. GotaGuy, Unison, Zorli, Ad2Action, TrueSeat.",
+    "Companies Kerzie AI owns and runs: GotaGuy, TrueSeat, Packed House, Zorli, TrueNorth.",
 };
 
 const products = [
@@ -15,10 +20,16 @@ const products = [
     href: "/ventures/gotaguy",
   },
   {
-    name: "Unison",
-    clock: "7:05 PM",
-    problem: "Someone calls your business after hours. They get voicemail. You never knew they called.",
-    href: "/ventures/unison",
+    name: "TrueSeat",
+    clock: "7 SEC",
+    problem: "A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.",
+    href: "/ventures/trueseat",
+  },
+  {
+    name: "Packed House",
+    clock: "40/200",
+    problem: "The show is booked, the night is paid for, and forty people came to a room that holds two hundred. Filling the Tuesday is nobody's job.",
+    href: "/packed-house",
   },
   {
     name: "Zorli",
@@ -27,34 +38,10 @@ const products = [
     href: "/ventures/zorli",
   },
   {
-    name: "Ad2Action",
-    clock: "+14 HRS",
-    problem: "You paid for the ad. You responded too late. They forgot they clicked.",
-    href: "/ventures/ad2action",
-  },
-  {
-    name: "TrueSeat",
-    clock: "7 SEC",
-    problem: "A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.",
-    href: "/ventures/trueseat",
-  },
-  {
-    name: "Executive Legacy",
-    clock: "40 YRS",
-    problem: "Forty years of judgment retires at the end of the year. The phone keeps ringing anyway.",
-    href: "/ventures/executive-legacy",
-  },
-  {
     name: "TrueNorth",
     clock: "2 AM",
     problem: "Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.",
     href: "/ventures/truenorth",
-  },
-  {
-    name: "Packed House",
-    clock: "40/200",
-    problem: "The show is booked, the night is paid for, and forty people came to a room that holds two hundred. Filling the Tuesday is nobody's job.",
-    href: "/packed-house",
   },
 ];
 
@@ -74,12 +61,19 @@ export default function VenturesPage() {
 
       {/* Header */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-16">
-        <p className="k-rise k-rise-1 k-label mb-8">The Work</p>
+        <p className="k-rise k-rise-1 k-label mb-8">Ventures</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          What we have built so far.
+          Companies we own and run.
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
-          Every product starts with a problem worth fixing.
+          Every one of them started as a problem worth fixing.
+        </p>
+        <p className="k-rise k-rise-3 mt-4 text-[#262B3D]/70 text-base max-w-xl">
+          Looking for Unison or Executive Legacy? Those are offers we sell to
+          other businesses.{" "}
+          <Link href="/services" className="k-link text-[#2B5D96] k-focus">
+            See the offers <span className="k-arrow">&rarr;</span>
+          </Link>
         </p>
       </section>
 

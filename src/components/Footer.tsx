@@ -34,6 +34,19 @@ export default function Footer() {
             kerzie<span className="text-[#B04E2B]">.</span>ai
           </span>
           <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3">
+            {/* Offers and Ventures are two lists, never one (Wade + Aaron, 2026-09-24). */}
+            <Link
+              href="/services"
+              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+            >
+              Offers
+            </Link>
+            <Link
+              href="/ventures"
+              className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"
+            >
+              Ventures
+            </Link>
             <Link
               href="/thousand"
               className="k-link text-[#262B3D]/70 text-sm hover:text-[#1A1B2E] transition-colors duration-200"

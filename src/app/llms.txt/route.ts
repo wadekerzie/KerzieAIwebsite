@@ -17,11 +17,13 @@ import {
 // string the page ships to a browser, so the two cannot disagree. Adding a
 // page means adding one line below; it never means writing new prose.
 import { metadata as ventures } from "@/app/ventures/page";
+import { metadata as offersHub } from "@/app/services/page";
+import { metadata as backCover } from "@/app/back-cover/page";
+import { metadata as salesTeams } from "@/app/services/sales-teams/page";
 import { metadata as gotaguy } from "@/app/ventures/gotaguy/page";
 import { metadata as unison } from "@/app/ventures/unison/page";
 import { metadata as trueseat } from "@/app/ventures/trueseat/page";
 import { metadata as zorli } from "@/app/ventures/zorli/page";
-import { metadata as ad2action } from "@/app/ventures/ad2action/page";
 import { metadata as executiveLegacy } from "@/app/ventures/executive-legacy/page";
 import { metadata as truenorth } from "@/app/ventures/truenorth/page";
 import { metadata as aiOs } from "@/app/ventures/ai-os/page";
@@ -60,15 +62,24 @@ function line(path: string, name: string, meta: Described): string {
   return `- [${name}](${SITE_URL}${path}): ${d}`;
 }
 
+// OFFERS versus VENTURES (Wade + Aaron, 2026-09-24). Offers are sold to other
+// businesses, ranked in Wade's order. Ventures are companies Kerzie AI owns
+// and runs. The two never share a list. Unison and Executive Legacy keep
+// their /ventures URLs; the URL is not the category. Ad2Action is a custom
+// implementation of Unison and is not listed (its URL redirects to Unison).
+const RANKED_OFFERS: Array<[string, string, Described]> = [
+  ["/back-cover", "The Back Cover", backCover],
+  ["/services/sales-teams", "For Sales Teams", salesTeams],
+  ["/ventures/unison", "Unison", unison],
+  ["/ventures/executive-legacy", "Executive Legacy", executiveLegacy],
+];
+
 const VENTURES: Array<[string, string, Described]> = [
   ["/ventures/gotaguy", "GotaGuy", gotaguy],
-  ["/ventures/unison", "Unison", unison],
   ["/ventures/trueseat", "TrueSeat", trueseat],
-  ["/ventures/zorli", "Zorli", zorli],
-  ["/ventures/ad2action", "Ad2Action", ad2action],
-  ["/ventures/executive-legacy", "Executive Legacy", executiveLegacy],
-  ["/ventures/truenorth", "TrueNorth", truenorth],
   ["/packed-house", "Packed House", packedHouse],
+  ["/ventures/zorli", "Zorli", zorli],
+  ["/ventures/truenorth", "TrueNorth", truenorth],
   ["/ventures/ai-os", "AI Operating System", aiOs],
 ];
 
@@ -82,7 +93,8 @@ const ABOUT: Array<[string, string, Described]> = [
   ["/team", "The People", team],
   ["/thousand", "The First Thousand", thousand],
   ["/speaking", "Booking Wade to speak", speaking],
-  ["/ventures", "All ventures", ventures],
+  ["/services", "Offers", offersHub],
+  ["/ventures", "Ventures", ventures],
 ];
 
 function offerBlock(): string {
@@ -114,7 +126,13 @@ The core idea is one window: three hours, two habits, one window, zero to-do lis
 - Book a call: ${SITE_URL}${BOOKING_PATH}
 - Email: ${CONTACT_EMAIL}
 
-## What Kerzie AI sells
+## What Kerzie AI sells (offers, in rank order)
+
+Offers are sold to other businesses. Ventures, further down, are companies Kerzie AI owns and runs.
+
+${RANKED_OFFERS.map(([p, n, m]) => line(p, n, m)).join("\n")}
+
+### Prices and entry points
 
 ${offerBlock()}
 
@@ -122,9 +140,9 @@ ${offerBlock()}
 
 ${FREE_RESOURCES.map((r) => `- [${r.name}](${SITE_URL}${r.path}): ${r.summary}`).join("\n")}
 
-## Ventures Kerzie AI builds and operates
+## Ventures Kerzie AI owns and runs
 
-These are real operating businesses and products, not case studies.
+These are real operating businesses and products, not case studies. They are not offers.
 
 ${VENTURES.map(([p, n, m]) => line(p, n, m)).join("\n")}
 

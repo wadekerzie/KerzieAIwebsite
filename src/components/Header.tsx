@@ -16,24 +16,42 @@ const essays = [
   { label: "The Blast Door", href: "/blast-door", deck: "The time limit on both" },
 ];
 
-const ventures = [
-  { label: "GotaGuy", href: "/ventures/gotaguy" },
-  { label: "Unison", href: "/ventures/unison" },
-  { label: "TrueSeat", href: "/ventures/trueseat" },
-  { label: "Zorli", href: "/ventures/zorli" },
-  { label: "Ad2Action", href: "/ventures/ad2action" },
-  { label: "Executive Legacy", href: "/ventures/executive-legacy" },
-  { label: "TrueNorth", href: "/ventures/truenorth" },
-  { label: "Packed House", href: "/packed-house" },
-  { label: "AI Operating System", href: "/ventures/ai-os" },
+// OFFERS versus VENTURES (Wade + Aaron, 2026-09-24): "draw the line between
+// what our offers are and what our ventures are." Offers are sold to other
+// businesses. Ventures are companies Kerzie AI owns and runs. The two never
+// share a list. Offers come first in the drawer and are stack-ranked in
+// Wade's order: Back Cover at the top, then Sales Teams, then Unison, then
+// Executive Legacy. Unison and Executive Legacy keep their /ventures URLs so
+// no inbound link breaks; the URL is not the category.
+const offers = [
+  { label: "The Back Cover", href: "/back-cover", hint: "$1,500 one time" },
+  { label: "For Sales Teams", href: "/services/sales-teams", hint: "Book a call" },
+  { label: "Unison", href: "/ventures/unison", hint: "Book a call" },
+  { label: "Executive Legacy", href: "/ventures/executive-legacy", hint: "Book a call" },
 ];
 
-const offers = [
+// The smaller entry points sit under a quiet divider in the same group. The
+// First Thousand stays here: it is the One-Window mission count, not a
+// company we run.
+const entryPoints = [
   { label: "One-Window", href: "/one-window", hint: "Free" },
   { label: "The First Thousand", href: "/thousand", hint: "The mission" },
   { label: "AI Fast-Track Session", href: "/services/fast-track", hint: "$999" },
   { label: "AI Implementation", href: "/services/implementation", hint: "Scoped" },
-  { label: "For Sales Teams", href: "/services/sales-teams", hint: "Book a call" },
+];
+
+// Only companies we own and run. AI Operating System stays here because its
+// page describes a product Kerzie AI is building, marked coming soon.
+// Ad2Action is not listed (Wade, 2026-09-24): "it's actually more of a custom
+// implementation of Unison and should not be called out separately." Its URL
+// redirects to /ventures/unison in next.config.ts.
+const ventures = [
+  { label: "GotaGuy", href: "/ventures/gotaguy" },
+  { label: "TrueSeat", href: "/ventures/trueseat" },
+  { label: "Packed House", href: "/packed-house" },
+  { label: "Zorli", href: "/ventures/zorli" },
+  { label: "TrueNorth", href: "/ventures/truenorth" },
+  { label: "AI Operating System", href: "/ventures/ai-os" },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -138,6 +156,93 @@ export default function Header() {
 
         {/* Scrollable body */}
         <nav className="flex-1 overflow-y-auto px-6 py-7 flex flex-col gap-8">
+          {/* Offers - what we sell, in Wade's rank order, first in the drawer */}
+          <div>
+            <div className="flex items-baseline justify-between">
+              <SectionLabel>Offers</SectionLabel>
+              <Link
+                href="/services"
+                onClick={close}
+                className="k-mono text-[11px] text-[#2B5D96] k-focus"
+              >
+                All offers &rarr;
+              </Link>
+            </div>
+            <div className="mt-3 flex flex-col">
+              {offers.map((o, i) => (
+                <Link
+                  key={o.href}
+                  href={o.href}
+                  onClick={close}
+                  className={`k-focus flex items-center justify-between gap-4 py-2.5 ${
+                    i > 0 ? "border-t border-[rgba(26,27,46,0.06)]" : ""
+                  }`}
+                >
+                  <span className="flex items-baseline gap-3">
+                    <span className="k-mono text-[#B04E2B] text-[10px] flex-shrink-0">
+                      0{i + 1}
+                    </span>
+                    <span
+                      className={`text-[#1A1B2E] font-semibold ${
+                        i === 0 ? "text-[17px]" : "text-[15px]"
+                      }`}
+                    >
+                      {o.label}
+                    </span>
+                  </span>
+                  <span className="k-mono text-[#B04E2B] text-[10px] tracking-[0.12em] flex-shrink-0">
+                    {o.hint}
+                  </span>
+                </Link>
+              ))}
+              {/* Quiet divider, then the smaller ways in */}
+              <div className="mt-2 pt-2 border-t border-[rgba(26,27,46,0.13)] flex flex-col">
+                {entryPoints.map((o) => (
+                  <Link
+                    key={o.href}
+                    href={o.href}
+                    onClick={close}
+                    className="k-focus flex items-center justify-between gap-4 py-2"
+                  >
+                    <span className="text-[#262B3D] text-[14px] font-medium">
+                      {o.label}
+                    </span>
+                    <span className="k-mono text-[#5B6B77] text-[10px] tracking-[0.12em] flex-shrink-0">
+                      {o.hint}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Ventures - companies we own and run */}
+          <div>
+            <div className="flex items-baseline justify-between">
+              <SectionLabel>Ventures</SectionLabel>
+              <Link
+                href="/ventures"
+                onClick={close}
+                className="k-mono text-[11px] text-[#2B5D96] k-focus"
+              >
+                All ventures &rarr;
+              </Link>
+            </div>
+            <p className="mt-1 text-[#5B6B77] text-[12px]">Companies we own and run.</p>
+            <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2.5">
+              {ventures.map((v) => (
+                <Link
+                  key={v.href}
+                  href={v.href}
+                  onClick={close}
+                  className="text-[#262B3D] text-[14px] font-medium hover:text-[#2B5D96] transition-colors duration-150 k-focus"
+                >
+                  {v.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {/* The essays - one body of work, on its own sheet */}
           <div>
             <SectionLabel>The Essays</SectionLabel>
@@ -165,58 +270,6 @@ export default function Header() {
                   <span className="k-arrow text-[#2B5D96] text-sm" aria-hidden="true">
                     &rarr;
                   </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Our work */}
-          <div>
-            <div className="flex items-baseline justify-between">
-              <SectionLabel>Our Work</SectionLabel>
-              <Link
-                href="/ventures"
-                onClick={close}
-                className="k-mono text-[11px] text-[#2B5D96] k-focus"
-              >
-                All ventures &rarr;
-              </Link>
-            </div>
-            <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2.5">
-              {ventures.map((v) => (
-                <Link
-                  key={v.href}
-                  href={v.href}
-                  onClick={close}
-                  className="text-[#262B3D] text-[14px] font-medium hover:text-[#2B5D96] transition-colors duration-150 k-focus"
-                >
-                  {v.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Work with us */}
-          <div>
-            <SectionLabel>Work With Us</SectionLabel>
-            <div className="mt-3 flex flex-col">
-              {offers.map((o, i) => (
-                <Link
-                  key={o.href}
-                  href={o.href}
-                  onClick={close}
-                  className={`k-focus flex items-center justify-between gap-4 py-2.5 ${
-                    i > 0 ? "border-t border-[rgba(26,27,46,0.06)]" : ""
-                  }`}
-                >
-                  <span className="text-[#262B3D] text-[15px] font-medium">
-                    {o.label}
-                  </span>
-                  {o.hint && (
-                    <span className="k-mono text-[#B04E2B] text-[10px] tracking-[0.12em] flex-shrink-0">
-                      {o.hint}
-                    </span>
-                  )}
                 </Link>
               ))}
             </div>

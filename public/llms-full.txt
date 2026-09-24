@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 37
+Pages included: 36
 
 ---
 
@@ -25,13 +25,40 @@ technology just works .
 The world's best tech feels the easiest.
 We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.
 PUBLISHED IN NATION'S RESTAURANT NEWS / LAWFUEL
-GOTAGUY / UNISON / ZORLI / AD2ACTION
+THE BACK COVER / FOR SALES TEAMS / UNISON / EXECUTIVE LEGACY
 
-01 The Engines
+01 What We Sell
+All offers →
+
+01
+
+## The Back Cover
+One page, written for the AI your customers now ask, that keeps itself current. Set up once, off your plate.
+Read the page →
+
+0 2
+
+## For Sales Teams
+Every seller runs their own AI operating system, and the leader gets the view. An engagement, not a login.
+Read more →
+0 3
+
+## Unison
+Someone calls your business after hours and you never knew they called. Unison answers immediately across every channel.
+Read more →
+0 4
+
+## Executive Legacy
+Forty years of judgment retires at the end of the year. Executive Legacy captures it in an answer set the successor can ask, every answer cited.
+Read more →
+
+02 The Engines
 
 Anthropic, OpenAI, Google, and DeepSeek spent billions building the most powerful reasoning engines in history. We use them to fix a leaky faucet, answer your phone at 7pm, and find your Netflix password.
 
-02 What We Fixed
+03 Companies We Own and Run
+All ventures →
+Not offers. Our own companies, each one started as a problem worth fixing.
 
 DAY 3
 
@@ -39,30 +66,27 @@ DAY 3
 You Googled plumbers. First one: voicemail. Second one: booked until next Thursday. Third gave you a number over the phone that felt made up. You said you'd call back. You haven't. The faucet is still dripping.
 GotaGuy →
 
-7:05 PM
-
-## Someone calls your law firm at 7:05pm.
-They get voicemail. They needed an answer tonight. They'll call someone else in the morning. You never knew they called.
-Unison →
-
 8 MIN
 
 ## Your teenager calls while you're watching a movie.
 They need the Netflix password. You know you saved it somewhere. Notes app, maybe. Or was it that email from three years ago. You pause the movie. You search. You try four things. You find it eight minutes later in a note called Misc. The movie is still paused. This happens every week.
 Zorli →
 
-+14 HRS
+## TrueSeat
+Resumes are claims. TrueSeat builds a sealed, evidence-backed dossier of what you can actually do.
 
-## You paid for the ad.
-Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired. By Friday morning when you followed up, they didn't remember why they clicked. You bought their attention at peak interest and responded at zero interest.
-Ad2Action →
+## Packed House
+Your show is booked. Your room is a quarter full. Packed House fills the seats.
+
+## TrueNorth
+Your personal board of history's wisest advisors, portable to any AI you use.
 
 Leading a sales team?
 Your reps have AI licenses. That is not the same as using them.
 
 For Sales Teams →
 
-03 The Question
+04 The Question
 
 ## What problem hurts the most?
 Everything above started as somebody's problem. That's the whole business: find where technology is failing a person, and make it simple enough to actually help.
@@ -1123,24 +1147,62 @@ Rather write first? Email me directly at wade@kerzie.ai .
 
 ---
 
-# Work With Us | Kerzie AI
+# Offers | Kerzie AI
 URL: https://kerzie.ai/services
 
-Work With Us | Kerzie AI
+Offers | Kerzie AI
 ← KERZIE . AI
-Work With Us
+Offers
 
-## Two ways in .
-Start small and leave with something working, or bring us a workflow worth rebuilding end-to-end. Either way: shipping, not slide decks.
+## What we sell .
+Four offers, in the order we would point you at them. Then the smaller ways in. Either way: shipping, not slide decks.
+The companies we own and run are on a separate page. See the ventures →
 
 01
+$1,500 one time
+
+## The Back Cover
+Tired of talking about your website? The Back Cover is one page, written for the AI your customers now ask, that keeps itself current. Set up once, off your plate.
+Read the page →
+
+02
+Book a call
+
+## For Sales Teams
+Your team was told to use AI. Here is what it looks like when it works: every seller runs their own AI operating system, and the leader gets the view.
+How the engagement runs →
+
+03
+Book a call
+
+## Unison
+Someone calls your business after hours and you never knew they called. Unison answers immediately across every channel.
+Read the story →
+
+04
+Book a call
+
+## Executive Legacy
+What walks out the door with a retiring executive? Executive Legacy captures that judgment in an answer set the successor can ask, every answer cited.
+Read the story →
+
+The smaller ways in
+Start small and leave with something working.
+05
+Free
+
+## One-Window
+Your own AI operating system, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list.
+Get One-Window →
+
+06
 $999 flat for the room
 
 ## AI Fast-Track Session
 Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with One-Window. One person or three, same price.
 Read how it works →
 
-02
+07
 Scoped per project
 
 ## AI Implementation
@@ -1867,15 +1929,16 @@ That's what Unison does for your business .
 
 ---
 
-# Our Work | Kerzie AI
+# Ventures | Kerzie AI
 URL: https://kerzie.ai/ventures
 
-Our Work | Kerzie AI
+Ventures | Kerzie AI
 ← KERZIE . AI
-The Work
+Ventures
 
-## What we have built so far.
-Every product starts with a problem worth fixing.
+## Companies we own and run.
+Every one of them started as a problem worth fixing.
+Looking for Unison or Executive Legacy? Those are offers we sell to other businesses. See the offers →
 
 0 1 DAY 3
 
@@ -1884,92 +1947,33 @@ Finding a contractor is a part-time job. It should take a text message.
 
 Read the story →
 
-0 2 7:05 PM
-
-## Unison
-Someone calls your business after hours. They get voicemail. You never knew they called.
-
-Read the story →
-
-0 3 8 MIN
-
-## Zorli
-The information is there. Finding it costs more time than the answer is worth.
-
-Read the story →
-
-0 4 +14 HRS
-
-## Ad2Action
-You paid for the ad. You responded too late. They forgot they clicked.
-
-Read the story →
-
-0 5 7 SEC
+0 2 7 SEC
 
 ## TrueSeat
 A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.
 
 Read the story →
 
-0 6 40 YRS
-
-## Executive Legacy
-Forty years of judgment retires at the end of the year. The phone keeps ringing anyway.
-
-Read the story →
-
-0 7 2 AM
-
-## TrueNorth
-Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.
-
-Read the story →
-
-0 8 40/200
+0 3 40/200
 
 ## Packed House
 The show is booked, the night is paid for, and forty people came to a room that holds two hundred. Filling the Tuesday is nobody's job.
 
 Read the story →
 
----
+0 4 8 MIN
 
-# Ad2Action | Kerzie AI
-URL: https://kerzie.ai/ventures/ad2action
+## Zorli
+The information is there. Finding it costs more time than the answer is worth.
 
-Ad2Action | Kerzie AI
-← KERZIE . AI
-+14 HRS
+Read the story →
 
-## You paid for the ad.
-Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired a confirmation email. You followed up Friday morning. They did not remember why they clicked. You bought their attention at peak interest and responded at zero interest.
+0 5 2 AM
 
-01 Why It Stays Broken
+## TrueNorth
+Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.
 
-## Ad platforms optimize for the click. Nobody optimizes for what happens after.
-That window is where leads die. Not because your product is wrong. Because your response was late. Eight minutes after someone clicks is worth more than eight hours of follow up the next day.
-
-02 What Got Built
-
-## So we built Ad2Action.
-Instant lead response the moment someone converts on your ad. Not an autoresponder. A real conversation that starts while they still remember clicking.
-
-03 How It Works
-
-- 0 1 Lead converts on your ad.
-
-- 0 2 Ad2Action fires immediately.
-
-- 0 3 Qualifies the lead in real time.
-
-- 0 4 Books the appointment or routes to your team.
-
-- 0 5 By the time your competitor follows up manually, you already have the meeting.
-
-## Stop losing leads you already paid for.
-Ad2Action deploys in days. Not months.
-Talk to Us About Ad2Action
+Read the story →
 
 ---
 
@@ -2172,7 +2176,7 @@ The lead does not wait. The window between someone reaching out and someone else
 02 What Got Built
 
 ## So we built Unison.
-Omnichannel lead response that answers immediately across every channel. Phone, text, web form, email. The lead gets a real response in seconds. You get the conversation in your inbox.
+Omnichannel lead response that answers immediately across every channel. Phone, text, web form, email. The lead gets a real response in seconds. You get the conversation in your inbox. Unison is also built as custom implementations for specific businesses.
 
 03 How It Works
 

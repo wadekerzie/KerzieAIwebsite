@@ -43,6 +43,9 @@ const EXCLUDE = [
   /\/access$/,
   /^\/one-window\/pass$/,
   /^\/downloads$/,
+  // Ad2Action redirects to /ventures/unison (Wade 2026-09-24); the page file
+  // stays on disk but its text must not ship as if it were a separate venture.
+  /^\/ventures\/ad2action$/,
   /^\/llms(-full)?\.txt$/,
   /^\/_/,
 ];

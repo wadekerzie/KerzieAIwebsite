@@ -156,7 +156,8 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/card", changeFrequency: "monthly", priority: 0.5 },
   { path: "/card/aaron", changeFrequency: "monthly", priority: 0.5 },
   { path: "/ventures", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/ventures/ad2action", changeFrequency: "monthly", priority: 0.4 },
+  // /ventures/ad2action is not listed: it redirects to /ventures/unison
+  // (Wade 2026-09-24: Ad2Action is a custom implementation of Unison).
   { path: "/ventures/ai-os", changeFrequency: "monthly", priority: 0.4 },
   { path: "/ventures/executive-legacy", changeFrequency: "monthly", priority: 0.4 },
   { path: "/ventures/gotaguy", changeFrequency: "monthly", priority: 0.4 },

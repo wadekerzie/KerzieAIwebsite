@@ -64,6 +64,15 @@ const nextConfig: NextConfig = {
         destination: "/ventures/unison",
         permanent: true,
       },
+      // Ad2Action folded into Unison (Wade, 2026-09-24): "it's actually more
+      // of a custom implementation of Unison and should not be called out
+      // separately." The page file stays on disk; this redirect makes it
+      // unreachable, so any pasted link lands on Unison.
+      {
+        source: "/ventures/ad2action",
+        destination: "/ventures/unison",
+        permanent: true,
+      },
       {
         source: "/services/app-development",
         destination: "/services",
