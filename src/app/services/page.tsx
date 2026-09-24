@@ -93,6 +93,17 @@ function OfferRow({ o, i, lead }: { o: Row; i: number; lead?: boolean }) {
           <p className="k-mono text-[#B04E2B] text-xs tracking-[0.15em] mt-3">
             {o.price}
           </p>
+          {lead && (
+            <>
+              {/* The Back Cover leads with its own image (Wade 9/24: the empty left column looked odd) */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/back-cover-book-tall.jpg"
+                alt="A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam"
+                className="mt-5 w-28 sm:w-32 lg:w-full lg:max-w-[11rem] rounded-lg border border-[rgba(26,27,46,0.13)] shadow-xl shadow-black/30"
+              />
+            </>
+          )}
         </div>
         <div className="lg:col-span-9">
           <h2

@@ -166,9 +166,15 @@ export default function Home() {
               href={offers[0].href}
               className="group block border-t-2 border-[#B04E2B] pt-8 pb-10 k-focus"
             >
-              <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-baseline">
-                <div className="lg:col-span-3 mb-3 lg:mb-0">
-                  <span className="k-mono text-[#B04E2B] text-xs">01</span>
+              <div className="lg:grid lg:grid-cols-12 lg:gap-8 lg:items-start">
+                <div className="lg:col-span-3 mb-5 lg:mb-0">
+                  <span className="k-mono text-[#B04E2B] text-xs block">01</span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/back-cover-book-tall.jpg"
+                    alt="A hardcover book seen from the back, its machine-readable metadata lit by a scanning beam"
+                    className="mt-4 w-28 sm:w-32 lg:w-full lg:max-w-[11rem] rounded-lg border border-[rgba(26,27,46,0.13)] shadow-xl shadow-black/30"
+                  />
                 </div>
                 <div className="lg:col-span-9">
                   <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.6vw,2.75rem)] font-bold tracking-[-0.02em] leading-[1.05] group-hover:text-[#2B5D96] transition-colors duration-200 mb-4">
