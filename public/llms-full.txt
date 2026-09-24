@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 36
+Pages included: 35
 
 ---
 
@@ -1974,23 +1974,6 @@ Read the story →
 Everyone asks the same AI for life advice and gets the same answer. Yours should know what you stand for.
 
 Read the story →
-
----
-
-# AI Operating System | Kerzie AI Ventures
-URL: https://kerzie.ai/ventures/ai-os
-
-AI Operating System | Kerzie AI Ventures
-← KERZIE . AI
-Coming Soon
-
-## AI Operating System .
-A small business AI operating system built AI-native from day one .
-Connecting your tools, your team, and your data into a single AI-native layer. Designed around how AI works, not how legacy software works.
-Get early access →
-
-While this one is still in the shop, see what we already have live today .
-See all ventures →
 
 ---
 

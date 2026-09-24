@@ -73,6 +73,13 @@ const nextConfig: NextConfig = {
         destination: "/ventures/unison",
         permanent: true,
       },
+      // The AI Operating System page was deleted (Wade, 2026-09-24): "redundant,
+      // and all of that functionality was basically the genesis of One-Window."
+      {
+        source: "/ventures/ai-os",
+        destination: "/one-window",
+        permanent: true,
+      },
       {
         source: "/services/app-development",
         destination: "/services",

@@ -40,8 +40,9 @@ const entryPoints = [
   { label: "AI Implementation", href: "/services/implementation", hint: "Scoped" },
 ];
 
-// Only companies we own and run. AI Operating System stays here because its
-// page describes a product Kerzie AI is building, marked coming soon.
+// Only companies we own and run. The AI Operating System page was deleted
+// (Wade, 2026-09-24: redundant, it was the genesis of One-Window); its URL
+// redirects to /one-window in next.config.ts.
 // Ad2Action is not listed (Wade, 2026-09-24): "it's actually more of a custom
 // implementation of Unison and should not be called out separately." Its URL
 // redirects to /ventures/unison in next.config.ts.
@@ -51,7 +52,6 @@ const ventures = [
   { label: "Packed House", href: "/packed-house" },
   { label: "Zorli", href: "/ventures/zorli" },
   { label: "TrueNorth", href: "/ventures/truenorth" },
-  { label: "AI Operating System", href: "/ventures/ai-os" },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
