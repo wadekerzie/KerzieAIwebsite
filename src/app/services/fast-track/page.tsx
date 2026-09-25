@@ -20,7 +20,7 @@ const specs = [
   "One to three people, in one room, in person.",
   "Each person on their own machine, with their own logins open.",
   "Each person on their own $20 per month Claude subscription, set up live.",
-  "The $99 One-Window included for every person in the room.",
+  "One-Window, the free OS, installed live for every person in the room.",
 ];
 
 const takeaways = [
@@ -120,7 +120,7 @@ export default function FastTrackPage() {
         <p className="mt-5 text-[#262B3D]/70 text-sm">
           The same countdown as the{" "}
           <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
-            $99 do-it-yourself setup
+            free do-it-yourself setup
           </Link>
           . The difference is who is beside you for the three hours
           <span className="text-[#B04E2B]">.</span>
@@ -310,22 +310,23 @@ export default function FastTrackPage() {
             </p>
             <p>
               It covers the intake review, the 3-hour working session, the
-              30-day check-in, and a $99 One-Window for every person who
-              sits down.
+              30-day check-in, and One-Window installed live for every person
+              who sits down.
             </p>
             <p>
-              Run the comparison you are already running. You were going to buy
-              the $99 One-Window anyway, so take it off the top. That puts
-              the session itself at $900. Bring three people and that is{" "}
+              Run the comparison you are already running. One-Window is free,
+              so the $999 is all for the session. Bring three people and that
+              is{" "}
               <span className="text-[#1A1B2E] font-medium">
-                $100 an hour, per person
+                about $111 an hour, per person
               </span>
               , to have it built with you instead of by you. And all three of
-              you still walk out with the Setup.
+              you walk out with One-Window running.
             </p>
             <p>
-              The Setup is the same document either way. The difference is
-              whether it gets read or whether it gets installed, in your
+              One-Window is the same operating system either way. The
+              difference is whether you install it alone or whether it gets
+              installed with you, in your
               accounts, on the workflow that is actually costing you money,
               before anyone leaves the room.
             </p>

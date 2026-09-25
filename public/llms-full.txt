@@ -1280,7 +1280,7 @@ one AI that knows your work, set up on your machine, in your accounts.
 to-do list
 gone, replaced by a pane your AI keeps current for you.
 
-The same countdown as the $99 do-it-yourself setup . The difference is who is beside you for the three hours .
+The same countdown as the free do-it-yourself setup . The difference is who is beside you for the three hours .
 
 The Problem With AI Demos
 You can watch a free AI demo any week of the year. Google runs them. Intuit runs them. Your chamber of commerce runs them.
@@ -1302,7 +1302,7 @@ The Specifics
 
 - Each person on their own $20 per month Claude subscription, set up live.
 
-- The $99 One-Window included for every person in the room.
+- One-Window, the free OS, installed live for every person in the room.
 Bring the people who will actually use it.
 Three people set up beats one person set up, and the price is the same either way. The most common way a session like this gets wasted is one person learning it and then becoming the bottleneck for everyone else.
 
@@ -1335,9 +1335,9 @@ If the intake tells me the session will not pay for itself, I will say so and po
 
 The Price
 $ 999 , flat. That is the room, not the seat.
-It covers the intake review, the 3-hour working session, the 30-day check-in, and a $99 One-Window for every person who sits down.
-Run the comparison you are already running. You were going to buy the $99 One-Window anyway, so take it off the top. That puts the session itself at $900. Bring three people and that is $100 an hour, per person , to have it built with you instead of by you. And all three of you still walk out with the Setup.
-The Setup is the same document either way. The difference is whether it gets read or whether it gets installed, in your accounts, on the workflow that is actually costing you money, before anyone leaves the room.
+It covers the intake review, the 3-hour working session, the 30-day check-in, and One-Window installed live for every person who sits down.
+Run the comparison you are already running. One-Window is free, so the $999 is all for the session. Bring three people and that is about $111 an hour, per person , to have it built with you instead of by you. And all three of you walk out with One-Window running.
+One-Window is the same operating system either way. The difference is whether you install it alone or whether it gets installed with you, in your accounts, on the workflow that is actually costing you money, before anyone leaves the room.
 Come alone and it is three hours of my time on the one workflow hurting you most. Same price either way, so the only real question is how many people you want working on the other side of it.
 If what we find during the session is bigger than three hours can hold, that is a different conversation, and we will have it straight.
 
@@ -1857,19 +1857,19 @@ Diagnostic
 
 - Your AI can see plenty, and the problem is that you don’t know what to hand it or how to tell when the answer is wrong. You’re missing the crossing.
 
-- Both. Start with the window. It is the cheaper half, and the session below includes it anyway.
+- Both. Start with the window. It is free, and the session below starts there anyway.
 
 ## If you’re missing the window
-The one-window setup is a document you load into the AI you already pay for. It asks you the questions and builds the working environment with you: the workspace, the operating manual, the tracker, the memory rules, the routines.
+One-Window is an operating system that runs inside the AI you already pay for. Paste the Foundation into Claude and it interviews you, then builds the working environment around your answers: the workspace, the operating manual, the tracker, the memory rules, the routines.
 It is the same framework my own businesses run on every day, which also means it is a synthesis of general knowledge, and I have priced it that way.
-$99, one time.
-One-Window →
+Free. Every upgrade too.
+Get One-Window free →
 
 ## If you’re missing the crossing
 Three hours at your desk, on your machine, with your accounts and your own AI subscription. Bring up to two more people and they do the same thing beside you, each on their own machine. We set it up together and every person ships one real piece of their own work before the session ends. Not a class, not a demo on someone else’s screen.
 The bar is not impressed. The bar is self-sufficient.
 Kurt Nelson runs a McKinney photography studio and had never touched AI. Three hours after I left, he sat back down at the same window and kept working, alone. That is the bar: not impressed, self-sufficient.
-$999 flat for up to three people, and the one-window document is included for each of them.
+$999 flat for up to three people, and each of them leaves with One-Window running.
 The AI Fast-Track Session →
 
 ## If you read it from the selling side
@@ -1881,7 +1881,7 @@ Have that conversation →
 ## The honest part
 The essay’s own test applies to me, so here it is run on my own offers.
 Same test, turned on myself. Synthesis is priced like synthesis.
-The $99 document is a synthesis of general knowledge. Someone patient enough could assemble most of it themselves, and the price reflects exactly that. The three hours at your desk, with your accounts, on the workflow that actually hurts, is the part that can’t be substituted. That’s the $999.
+One-Window is a synthesis of general knowledge. Someone patient enough could assemble most of it themselves, so I give it away. The three hours at your desk, with your accounts, on the workflow that actually hurts, is the part that can’t be substituted. That’s the $999.
 Neither one makes you immune to any of this. They put you on the side of the line where it works for you instead of on you.
 
 This page only makes sense alongside the argument it comes from: The Kerzie Effect .

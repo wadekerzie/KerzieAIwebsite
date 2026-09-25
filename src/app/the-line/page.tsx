@@ -94,26 +94,26 @@ export default function TheLinePage() {
         items={[
           "You can already describe what you want the AI to do, and the problem is that it can’t see anything. You’re missing the window.",
           "Your AI can see plenty, and the problem is that you don’t know what to hand it or how to tell when the answer is wrong. You’re missing the crossing.",
-          "Both. Start with the window. It is the cheaper half, and the session below includes it anyway.",
+          "Both. Start with the window. It is free, and the session below starts there anyway.",
         ]}
       />
 
       <Section>If you&rsquo;re missing the window</Section>
       <P>
-        The one-window setup is a document you load into the AI you already pay
-        for. It asks you the questions and builds the working environment with
-        you: the workspace, the operating manual, the tracker, the memory rules,
-        the routines.
+        One-Window is an operating system that runs inside the AI you already
+        pay for. Paste the Foundation into Claude and it interviews you, then
+        builds the working environment around your answers: the workspace, the
+        operating manual, the tracker, the memory rules, the routines.
       </P>
       <P>
         It is the same framework my own businesses run on every day, which also
         means it is a synthesis of general knowledge, and I have priced it that
         way.
       </P>
-      <p className="p-price">$99, one time.</p>
+      <p className="p-price">Free. Every upgrade too.</p>
       <p className="mt-6">
         <Link href="/one-window" className="p-btn k-focus">
-          One-Window <span className="k-arrow">&rarr;</span>
+          Get One-Window free <span className="k-arrow">&rarr;</span>
         </Link>
       </p>
 
@@ -132,8 +132,8 @@ export default function TheLinePage() {
         working, alone. That is the bar: not impressed, self-sufficient.
       </P>
       <p className="p-price">
-        $999 flat for up to three people, and the one-window document is
-        included for each of them.
+        $999 flat for up to three people, and each of them leaves with
+        One-Window running.
       </p>
       <p className="mt-6">
         <Link href="/services/fast-track" className="p-btn k-focus">
@@ -172,9 +172,8 @@ export default function TheLinePage() {
         Same test, turned on myself. Synthesis is priced like synthesis.
       </Note>
       <P>
-        The $99 document is a synthesis of general knowledge. Someone patient
-        enough could assemble most of it themselves, and the price reflects
-        exactly that. The three hours at your desk, with your accounts, on the
+        One-Window is a synthesis of general knowledge. Someone patient enough
+        could assemble most of it themselves, so I give it away. The three hours at your desk, with your accounts, on the
         workflow that actually hurts, is the part that can&rsquo;t be
         substituted. That&rsquo;s the $999.
       </P>
