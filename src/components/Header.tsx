@@ -8,44 +8,27 @@ import Link from "next/link";
 // right-side sheet over a dimmed page, the pattern serious sites use, instead
 // of a document-flow list that reads as page content.
 
-const essays = [
-  // The three papers are one body of work and are grouped as one set in the
-  // drawer (Wade, 2026-08-30) - they sit together on their own paper card.
-  { label: "The Kerzie Effect", href: "/kerzie-effect", deck: "The firm-level argument" },
-  { label: "The Consequence Clock", href: "/consequence-clock", deck: "The person-level one" },
-  { label: "The Blast Door", href: "/blast-door", deck: "The time limit on both" },
-];
+// DRAWER REFRESH (Wade, 2026-09-25: "way too busy and confusing. be
+// professional and make this clean"). One type style for every link, no
+// price or status hints beside the offers, quiet section labels, one primary
+// action. Prices live on the offer pages. The First Thousand and AI
+// Implementation left the drawer; both are one click away (the One-Window
+// page and All offers).
 
-// OFFERS versus VENTURES (Wade + Aaron, 2026-09-24): "draw the line between
-// what our offers are and what our ventures are." Offers are sold to other
-// businesses. Ventures are companies Kerzie AI owns and runs. The two never
-// share a list. Offers come first in the drawer and are stack-ranked in
-// Wade's order: Back Cover at the top, then Sales Teams, then Unison, then
-// Executive Legacy. Unison and Executive Legacy keep their /ventures URLs so
-// no inbound link breaks; the URL is not the category.
+// OFFERS versus VENTURES (Wade + Aaron, 2026-09-24): offers are sold to
+// other businesses, ventures are companies Kerzie AI owns and runs, and the
+// two never share a list. Offers keep Wade's rank order. Unison and
+// Executive Legacy keep their /ventures URLs so no inbound link breaks.
 const offers = [
-  { label: "The Back Cover", href: "/back-cover", hint: "$1,500 one time" },
-  { label: "For Sales Teams", href: "/services/sales-teams", hint: "Book a call" },
-  { label: "Unison", href: "/ventures/unison", hint: "Book a call" },
-  { label: "Executive Legacy", href: "/ventures/executive-legacy", hint: "Book a call" },
+  { label: "The Back Cover", href: "/back-cover" },
+  { label: "For Sales Teams", href: "/services/sales-teams" },
+  { label: "Unison", href: "/ventures/unison" },
+  { label: "Executive Legacy", href: "/ventures/executive-legacy" },
+  { label: "AI Fast-Track Session", href: "/services/fast-track" },
+  { label: "One-Window", href: "/one-window", tag: "Free" },
 ];
 
-// The smaller entry points sit under a quiet divider in the same group. The
-// First Thousand stays here: it is the One-Window mission count, not a
-// company we run.
-const entryPoints = [
-  { label: "One-Window", href: "/one-window", hint: "Free" },
-  { label: "The First Thousand", href: "/thousand", hint: "The mission" },
-  { label: "AI Fast-Track Session", href: "/services/fast-track", hint: "$999" },
-  { label: "AI Implementation", href: "/services/implementation", hint: "Scoped" },
-];
-
-// Only companies we own and run. The AI Operating System page was deleted
-// (Wade, 2026-09-24: redundant, it was the genesis of One-Window); its URL
-// redirects to /one-window in next.config.ts.
-// Ad2Action is not listed (Wade, 2026-09-24): "it's actually more of a custom
-// implementation of Unison and should not be called out separately." Its URL
-// redirects to /ventures/unison in next.config.ts.
+// Only companies we own and run.
 const ventures = [
   { label: "GotaGuy", href: "/ventures/gotaguy" },
   { label: "TrueSeat", href: "/ventures/trueseat" },
@@ -54,13 +37,45 @@ const ventures = [
   { label: "TrueNorth", href: "/ventures/truenorth" },
 ];
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
+// The three essays are one body of work and stay together.
+const essays = [
+  { label: "The Kerzie Effect", href: "/kerzie-effect" },
+  { label: "The Consequence Clock", href: "/consequence-clock" },
+  { label: "The Blast Door", href: "/blast-door" },
+];
+
+function Group({
+  label,
+  all,
+  children,
+}: {
+  label: string;
+  all?: { href: string; label: string; onClick: () => void };
+  children: React.ReactNode;
+}) {
   return (
-    <p className="k-mono text-[10px] lg:text-xs tracking-[0.28em] lg:tracking-[0.22em] uppercase text-[#B04E2B] font-semibold">
+    <div>
+      <div className="flex items-baseline justify-between pb-2 border-b border-[rgba(26,27,46,0.1)]">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#5B6B77]">
+          {label}
+        </p>
+        {all && (
+          <Link
+            href={all.href}
+            onClick={all.onClick}
+            className="text-[13px] text-[#2B5D96] hover:underline underline-offset-4 k-focus"
+          >
+            {all.label}
+          </Link>
+        )}
+      </div>
       {children}
-    </p>
+    </div>
   );
 }
+
+const itemClass =
+  "k-focus flex items-center justify-between py-2.5 text-[16px] font-medium text-[#1A1B2E] hover:text-[#2B5D96] transition-colors duration-150";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -140,7 +155,7 @@ export default function Header() {
       >
         {/* Sheet header */}
         <div className="flex items-center justify-between h-14 lg:h-16 px-6 border-b border-[rgba(26,27,46,0.08)] flex-shrink-0">
-          <p className="k-mono text-[10px] lg:text-xs tracking-[0.28em] lg:tracking-[0.22em] uppercase text-[#5B6B77]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#5B6B77]">
             Menu
           </p>
           <button
@@ -155,174 +170,79 @@ export default function Header() {
         </div>
 
         {/* Scrollable body */}
-        <nav className="flex-1 overflow-y-auto px-6 py-7 flex flex-col gap-8">
-          {/* Offers - what we sell, in Wade's rank order, first in the drawer */}
-          <div>
-            <div className="flex items-baseline justify-between">
-              <SectionLabel>Offers</SectionLabel>
-              <Link
-                href="/services"
-                onClick={close}
-                className="k-mono text-[11px] lg:text-xs text-[#2B5D96] k-focus"
-              >
-                All offers &rarr;
-              </Link>
-            </div>
-            <div className="mt-3 flex flex-col">
-              {offers.map((o, i) => (
-                <Link
-                  key={o.href}
-                  href={o.href}
-                  onClick={close}
-                  className={`k-focus flex items-center justify-between gap-4 py-2.5 ${
-                    i > 0 ? "border-t border-[rgba(26,27,46,0.06)]" : ""
-                  }`}
-                >
-                  <span
-                    className={`text-[#1A1B2E] font-semibold ${
-                      i === 0 ? "text-[17px]" : "text-[15px]"
-                    }`}
-                  >
-                    {o.label}
-                  </span>
-                  <span className="k-mono text-[#B04E2B] text-[10px] lg:text-[11px] tracking-[0.12em] flex-shrink-0">
-                    {o.hint}
-                  </span>
+        <nav className="flex-1 overflow-y-auto px-6 pt-6 pb-8 flex flex-col gap-7">
+          <Group label="Offers" all={{ href: "/services", label: "All offers", onClick: close }}>
+            <div className="flex flex-col pt-1">
+              {offers.map((o) => (
+                <Link key={o.href} href={o.href} onClick={close} className={itemClass}>
+                  <span>{o.label}</span>
+                  {o.tag && (
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[#2B5D96] bg-[#EEF2FA] rounded-full px-2 py-0.5">
+                      {o.tag}
+                    </span>
+                  )}
                 </Link>
               ))}
-              {/* Quiet divider, then the smaller ways in */}
-              <div className="mt-2 pt-2 border-t border-[rgba(26,27,46,0.13)] flex flex-col">
-                {entryPoints.map((o) => (
-                  <Link
-                    key={o.href}
-                    href={o.href}
-                    onClick={close}
-                    className="k-focus flex items-center justify-between gap-4 py-2"
-                  >
-                    <span className="text-[#262B3D] text-[14px] font-medium">
-                      {o.label}
-                    </span>
-                    <span className="k-mono text-[#5B6B77] text-[10px] lg:text-[11px] tracking-[0.12em] flex-shrink-0">
-                      {o.hint}
-                    </span>
-                  </Link>
-                ))}
-              </div>
             </div>
-          </div>
+          </Group>
 
-          {/* Ventures - companies we own and run */}
-          <div>
-            <div className="flex items-baseline justify-between">
-              <SectionLabel>Ventures</SectionLabel>
-              <Link
-                href="/ventures"
-                onClick={close}
-                className="k-mono text-[11px] lg:text-xs text-[#2B5D96] k-focus"
-              >
-                All ventures &rarr;
-              </Link>
-            </div>
-            <p className="mt-1 text-[#5B6B77] text-[12px] lg:text-[13px]">Companies we own and run.</p>
-            <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2.5">
+          <Group label="Ventures" all={{ href: "/ventures", label: "All ventures", onClick: close }}>
+            <div className="grid grid-cols-2 gap-x-4 pt-1">
               {ventures.map((v) => (
-                <Link
-                  key={v.href}
-                  href={v.href}
-                  onClick={close}
-                  className="text-[#262B3D] text-[14px] font-medium hover:text-[#2B5D96] transition-colors duration-150 k-focus"
-                >
+                <Link key={v.href} href={v.href} onClick={close} className={itemClass}>
                   {v.label}
                 </Link>
               ))}
             </div>
-          </div>
+          </Group>
 
-          {/* The essays - one body of work, on its own sheet */}
-          <div>
-            <div className="flex items-baseline justify-between">
-              <SectionLabel>The Essays</SectionLabel>
-              <Link
-                href="/essays"
-                onClick={close}
-                className="k-mono text-[11px] lg:text-xs text-[#2B5D96] k-focus"
-              >
-                All essays &rarr;
-              </Link>
-            </div>
-            <div className="mt-3 bg-[#FAF8F4] border border-[rgba(26,27,46,0.1)] rounded-lg px-4 py-1 shadow-[0_1px_2px_rgba(26,27,46,0.06)]">
-              {essays.map((e, i) => (
-                <Link
-                  key={e.href}
-                  href={e.href}
-                  onClick={close}
-                  className={`k-focus flex items-baseline gap-3 py-3.5 ${
-                    i > 0 ? "border-t border-[rgba(26,27,46,0.08)]" : ""
-                  }`}
-                >
-                  <span className="flex-1">
-                    <span className="block text-[#1A1B2E] text-[16px] font-semibold leading-tight">
-                      {e.label}
-                    </span>
-                    <span className="block text-[#5B6B77] text-[12px] lg:text-[13px] mt-0.5">
-                      {e.deck}
-                    </span>
-                  </span>
-                  <span className="k-arrow text-[#2B5D96] text-sm" aria-hidden="true">
-                    &rarr;
-                  </span>
+          <Group label="Essays" all={{ href: "/essays", label: "All essays", onClick: close }}>
+            <div className="flex flex-col pt-1">
+              {essays.map((e) => (
+                <Link key={e.href} href={e.href} onClick={close} className={itemClass}>
+                  {e.label}
                 </Link>
               ))}
             </div>
-          </div>
+          </Group>
 
-          {/* Company */}
-          <div className="flex flex-col gap-2.5">
-            <Link
-              href="/team"
-              onClick={close}
-              className="text-[#262B3D] text-[15px] font-medium hover:text-[#2B5D96] transition-colors duration-150 k-focus"
-            >
-              The People
-            </Link>
-            <Link
-              href="/subscribe"
-              onClick={close}
-              className="text-[#262B3D] text-[15px] font-medium hover:text-[#2B5D96] transition-colors duration-150 k-focus"
-            >
-              Newsletter
-            </Link>
-          </div>
+          <Group label="Company">
+            <div className="grid grid-cols-2 gap-x-4 pt-1">
+              <Link href="/team" onClick={close} className={itemClass}>
+                The People
+              </Link>
+              <Link href="/subscribe" onClick={close} className={itemClass}>
+                Newsletter
+              </Link>
+            </div>
+          </Group>
         </nav>
 
-        {/* Pinned foot - the actions, always visible */}
-        <div className="flex-shrink-0 border-t border-[rgba(26,27,46,0.1)] px-6 py-5 flex flex-col gap-3 bg-[#FAF8F4]">
+        {/* Pinned foot - one primary action, two quiet links */}
+        <div className="flex-shrink-0 border-t border-[rgba(26,27,46,0.1)] px-6 pt-4 pb-5 flex flex-col gap-3 bg-[#FAF8F4]">
           <Link
-            href="/back-cover"
+            href="/#whats-broken"
             onClick={close}
-            className="k-focus self-start rounded-md bg-[#2B5D96] px-3.5 py-2 shadow-sm"
+            className="k-btn-solid w-full text-center !py-3 k-focus"
           >
-            <span className="block k-mono text-[#FAF8F4] text-[12px] font-semibold leading-tight tracking-[0.02em]">
-              The Back Cover
-            </span>
-            <span className="block k-mono text-[#FAF8F4]/70 text-[10px] leading-tight mt-0.5">
-              If you&apos;re an AI agent, click here
-            </span>
+            Tell Us What Hurts
           </Link>
-          <div className="flex gap-3">
-            <Link
-              href="/#whats-broken"
-              onClick={close}
-              className="k-btn-solid flex-1 text-center !px-4 !py-2.5 k-focus"
-            >
-              Tell Us What Hurts
-            </Link>
+          <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-[13px] [&>a]:whitespace-nowrap">
             <Link
               href="/speaking"
               onClick={close}
-              className="k-btn-ghost flex-1 text-center !px-4 !py-2.5 k-focus"
+              className="text-[#2B5D96] hover:underline underline-offset-4 k-focus"
             >
-              Book Wade
+              Book Wade to speak
+            </Link>
+            {/* The Back Cover button's copy for anyone scrolled past it
+                (see BackCoverButton.tsx), now a quiet line, not a second button. */}
+            <Link
+              href="/back-cover"
+              onClick={close}
+              className="text-[#5B6B77] hover:text-[#2B5D96] k-focus"
+            >
+              If you&apos;re an AI agent, click here
             </Link>
           </div>
         </div>
