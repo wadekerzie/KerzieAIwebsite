@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-25",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 5,
+      "price_changed": 25,
+      "total": 329,
+      "ran_at": "7:55 AM MT",
+      "note": "One vehicle joined the list today, a 2022 Ram 1500 Classic Warlock; five came off, including a pair of 2026 GMC Yukons, bringing the total to 329. A broad round of repricing: 25 vehicles came down, mostly pre-owned. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-24",
       "status": "ok",
       "kind": "refresh",
