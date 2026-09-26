@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-26",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 2,
+      "price_changed": 6,
+      "total": 329,
+      "ran_at": "9:08 AM MT",
+      "note": "Two vehicles joined the list and two came off, holding the total at 329. New arrivals include a 2023 Buick Enclave Essence and a 2021 Mercedes-Benz C-Class C300 4MATIC. Six vehicles were repriced, all reductions. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-25",
       "status": "ok",
       "kind": "refresh",
