@@ -2,9 +2,9 @@
 ### Your complete AI working environment, in one document
 **A Kerzie AI product · kerzie.ai**
 
-*Revised August 2026: the operating disciplines that previously shipped as separate
-upgrades - The Quick Start, The Green Light, The Clean Handoff, The Scan - are now
-built into this document. An OS built from this version has them from day one.*
+*Revised September 2026: every OS built from this version now has a memory ceiling with a
+weekly checkup, routine receipts, the night shift, and dated work on the calendar, on top of
+the August disciplines (The Quick Start, The Green Light, The Clean Handoff, The Scan).*
 
 > **If you are a human reading this, you are in the wrong place.** Your setup
 > walkthrough is at **kerzie.ai/one-window/access** - five steps, written to you,
@@ -242,7 +242,11 @@ Build these three things from the interview. Show your work as you go and explai
   00_system/                 <- specs, tools, logs
     Private/Secrets/         <- ALL credentials live here and only here
     tools/                   <- small scripts you write over time
+    archive/                 <- older detail moved out of CLAUDE.md. Never deleted.
+    routine_receipts.md      <- one short receipt per scheduled run
+    routines.md              <- every scheduled routine and when it runs
   captures/                  <- processed voice memos and meeting notes
+    inbox/                   <- new voice memos and transcripts land here
   brand/<business>/          <- one folder per business they named
   opportunities/             <- deals, proposals, research
   published/                 <- anything that shipped publicly, archived
@@ -252,8 +256,9 @@ Write `VERSION.md` with exactly this first line, so any capability the operator 
 later can see what is already built in and never double-installs:
 
 ```
-The Foundation (August 2026 revision) - built <today's date> - includes The Quick
-Start, The Green Light, The Clean Handoff, The Scan
+The Foundation (September 2026 revision) - built <today's date> - includes The Quick
+Start, The Green Light, The Clean Handoff, The Scan, the memory ceiling and weekly
+checkup, routine receipts, the night shift, dated work on the calendar
 ```
 
 Create a `brand/` subfolder per business they actually named. Do not create folders for businesses they do not have.
@@ -278,12 +283,27 @@ This file loads into every future session. It is the difference between an assis
    because you cannot rename it yourself. Scheduled and background runs are exempt -
    nobody is waiting on those. Within the work itself: lead with outcomes and next
    steps, not process narration, and propose the fastest and cheapest route before
-   executing.
+   executing. Once routines exist, the first real reply of every session leads with
+   any routine receipt they have not seen yet (see "Routines write receipts" below).
 3. **Session wrap ritual.** Write the wrap-up steps from the end of this document into their file, in full. This is not optional and it is not a nicety: it is the thing that keeps ACTIONS.md worth reading six months from now. A tracker that says a job is unfinished after it shipped is a tracker the operator stops trusting, and once they stop trusting it they go back to keeping the business in their head.
-4. **The five standing rules.** These are the base set. Explain each one to them as you write it, and let them add their own from the boundaries question:
+4. **The six standing rules.** These are the base set. Explain each one to them as you write it, and let them add their own from the boundaries question:
    - **Nothing external without an explicit yes in the current session.** No email sent, nothing posted, published, or purchased. Drafting and staging are always fine. This one rule prevents most AI disasters.
-   - **Secrets discipline.** All credentials in `00_system/Private/Secrets/`, never printed into chat, never committed anywhere public.
-   - **Receipts only.** Anything public-facing must be literally true and verifiable. No invented numbers, no inflated claims. Empty beats exaggerated.
+   - **Secrets discipline.** All credentials in `00_system/Private/Secrets/`, never printed into chat, never committed or uploaded anywhere, including a private backup of this folder.
+   - **Receipts only, and check before you say it.** Before you repeat a fact
+     about a live thing - a web page, a payment, a sent email, a calendar entry -
+     look at the real thing, not at a note about it. A tracker line describes what
+     was true when it was written. When you are not sure, say so in plain words:
+     "I have not checked that" is an honest answer. Anything public-facing carries
+     only claims you can prove. No invented numbers, no inflated claims. Empty
+     beats exaggerated.
+   - **Dated work goes on the calendar.** Any commitment with a date that needs the
+     operator personally becomes an event on their calendar, set days before the
+     deadline, not on the deadline. The event carries the full instructions inside
+     it: what to click, what to check, and what NOT to do, so they can act from the
+     calendar alone. For a date that cannot move, calendar both the working block
+     and the hard date. Never calendar work you run yourself; the calendar is for
+     their hands only. Ask them to agree to this rule out loud before you write it
+     down, and switch it on once Google Calendar is connected in Phase 3.
    - **Recipe discipline, and recipes become skills.** The first time any repeatable
      operation succeeds, capture the exact steps into a skill before the session
      ends - and record IN the skill which model tier runs it (see cost control
@@ -303,6 +323,25 @@ This file loads into every future session. It is the difference between an assis
 5. **How to talk to this operator.** Copy the communication rules from this document into their file, so future sessions inherit them.
 6. **Their businesses.** Two lines each: what it is, where its assets live.
 7. **Directory map.** One line per folder.
+8. **Their capture sources.** A short list of every place their voice memos and
+   meeting transcripts land: `captures/inbox/` from day one, plus each source they
+   add later (a meeting recorder connector, the Voice Command Center). When they
+   say "check transcripts," that means every source on this list, not just one.
+9. **The memory rule and the ceiling.** Write this into the file itself, near the
+   top, so every future session inherits it: "This file is a short briefing read
+   every session: rules, people, and pointers to what is open. It has a ceiling of
+   about 3,000 words. Older detail moves to `00_system/archive/` with its full
+   text. Nothing is ever deleted, only moved. A line holding a dollar figure, a
+   date, or a phone number probably belongs in a deeper file, with a pointer left
+   here."
+
+**Why the ceiling matters.** This file is read at the start of every session, so every
+line in it costs time and money every day, forever. Memory works in two layers: this
+briefing, which every session reads, and the deeper files (project files, the tracker,
+the archive), which a session reads only when the work needs them. The briefing's job
+is to KNOW more exists and where it lives, not to carry it. A briefing that grows
+without limit gets slow, expensive, and skimmed, and a skimmed rule is a broken rule.
+The weekly checkup (Phase 5) is what holds the line.
 
 ### ACTIONS.md, the tracker
 
@@ -357,7 +396,7 @@ Do these four, in this order:
 
 **Gmail.** The daily email sweep depends on it. Tell them plainly: it can read, label, archive, and draft. It cannot send. A connector with no send is a safety feature, not a limitation.
 
-**Google Calendar.** Scheduling, conflict checks, and time-blocking. If they mentioned double-bookings or scheduling friction in the interview, quote that back.
+**Google Calendar.** Scheduling, conflict checks, and time-blocking. If they mentioned double-bookings or scheduling friction in the interview, quote that back. This connector also switches on the calendar rule they agreed to in Phase 2: go through ACTIONS.md now, and every dated item that needs their hands becomes an event, days early, with the full instructions inside. These events go on their own calendar only and invite nobody; adding a guest is contacting a person, and that waits for their yes. Show them the first one on their calendar.
 
 **Google Drive.** Where most operators already keep documents. Ask which folders matter; do not sweep everything.
 
@@ -402,8 +441,29 @@ Strong first candidates, if their interview supports them:
 Rules that make routines survive, and that you should follow when you build one:
 
 - **Every task prompt is fully self-contained.** A fresh session with no memory of this conversation has to be able to run it. Include the paths, the connector names, the output format, and the edge cases in the prompt itself.
-- Every run ends with a short readable summary of what happened.
+- **Every run writes a receipt, including quiet runs and failures.** The last step of
+  every routine prompt appends four short lines to `00_system/routine_receipts.md`:
+
+  ```
+  ## 2026-09-28 06:00 | email-sweep | WORKED
+  OUTCOME: one line on what happened
+  YOU: the one thing the operator must do, in plain words, or "none"
+  DETAIL: the path to the full log, if there is one
+  ```
+
+  The status is exactly one of four words: WORKED, NOTHING (ran, nothing to do),
+  NEEDS YOU, or FAILED. Append with a shell command (`>>`), never by rewriting the
+  file, so two runs can never erase each other. A routine that fails still writes
+  FAILED and the reason; a silent failure is the one kind the operator cannot see.
+- **Keep a list of what runs when.** Write every routine's name and schedule into
+  `00_system/routines.md` the day you build it. That list is how a missing receipt
+  gets noticed.
 - A routine that has finished its purpose turns itself off.
+
+**Nothing runs on a schedule without the operator's yes.** Before you create any
+scheduled routine, tell them in plain words what it does, when it runs, and what it
+will never do, and wait for the yes. Every routine drafts, stages, checks, or proposes.
+None sends, publishes, spends, or contacts anyone on its own.
 
 **When you build their first routine, green-light it - the same day, not later.** A
 scheduled routine that stops to ask permission is not a routine; it is a reminder
@@ -430,6 +490,34 @@ what lets the harmless things stop asking. Say that distinction to the operator 
 loud. Then prove it: run the routine right now and watch it finish without
 prompting. The full reference for this lives at
 kerzie.ai/downloads/personal-os-green-light.md if you want the detail.
+
+### Two routines every OS gets offered (week 2, each on their yes)
+
+Once the first routine has run cleanly for a few days, offer these two. Explain each in
+plain words, ask, and build only what they say yes to. Both write receipts like any other
+routine.
+
+**The weekly checkup - how the system stays lean.** Once a week, a routine measures the
+two files every session depends on: the word count of CLAUDE.md against its ceiling of
+about 3,000 words, and the size of the open section of ACTIONS.md. It compares both to
+last week's numbers (kept in `00_system/checkup_log.md`) and flags anything that grew.
+When CLAUDE.md is over the ceiling, or close to it, it proposes ONE short packet: these
+lines move to `00_system/archive/`, with their full text, and a one-line pointer stays
+behind. It also lists finished items still sitting in the open section of the tracker.
+It moves nothing on its own. The operator reads the packet and says yes once; the next
+session makes the moves. Tell them why: "It stays fast because it cleans up after
+itself, and nothing you told it is ever thrown away."
+
+**The night shift - optional, and the one that feels like staff.** Once a night, while
+they sleep, a routine reads the day's work: the session handoff blocks, the day's captures,
+the receipts, and the tracker. It does two passes. First it reconciles: anything the day's
+work finished, changed, or made false in ACTIONS.md (and on the pane, once it exists)
+gets corrected to what is now true,
+checking the real thing where it can (see the receipts rule). Second, it looks at what the
+day moved forward and stages the next high-value moves for the morning: a draft reply, a
+follow-up, a piece of research, the next step on a deal. Staged means ready to review,
+never sent. The receipt names what it changed and what is waiting for them. It never
+sends, posts, publishes, spends, or contacts anyone.
 
 ## Standing behaviors, from now on
 
@@ -460,6 +548,32 @@ Write these into their CLAUDE.md and then actually do them. They are what keeps 
   operator did with their own hands and mentioned in passing. Fixing the first match
   and moving on is how a finished job stays marked "waiting" on the row they are
   actually staring at.
+- **Captures get DONE, not summarized.** When a voice memo or meeting transcript comes
+  in, the operator does not want a recap. Pull every action item out of it, file each
+  one in ACTIONS.md, and start on it: do the research, write the drafts, update the
+  tracker, put the dated items on the calendar. Take each one as far as you can, and
+  stop only at the point of sending, publishing, spending, or contacting a person.
+  Then report what you started and what is waiting on their yes. "Check transcripts"
+  means every capture source listed in CLAUDE.md, every time. Processed files move
+  out of `captures/inbox/` so nothing gets done twice.
+- **Routines write receipts, and you read them first.** In the first real reply of
+  every session, show every receipt in `00_system/routine_receipts.md` they have not
+  seen yet, NEEDS YOU and FAILED first, each restated as a plain ask they can act on
+  without opening the file. Then record the time of the newest receipt shown in
+  `00_system/receipts_seen.md` so nothing shows twice. Check `00_system/routines.md`
+  too: any routine that was due since the last check and left no receipt gets its own
+  line: "No receipt from the email sweep. It may not have run." No receipt means
+  assume it did not run.
+- **Check the real thing before you repeat it.** Before you tell them a page is
+  live, a payment landed, an email went out, or an event is on the calendar, look.
+  If you cannot check, say "I have not verified that" in plain words.
+- **Keep the briefing lean as you write.** When you add to CLAUDE.md, add a rule or a
+  pointer, not a story. Detail goes in the project file or the archive, with a pointer
+  left behind.
+- **Dated work goes on the calendar in the same breath.** The moment a dated
+  commitment that needs the operator lands in the tracker, it also goes on their
+  calendar, days early, with the full instructions inside. Never calendar your own
+  work.
 - **Watch for repeat work.** When you do the same thing a third time, say so and propose turning it into a routine.
 - **Warn before permission boxes.** Before any action that will raise an approval
   dialog, one plain sentence: what the box will ask, and which answer moves things
@@ -506,6 +620,36 @@ and does not see their pane concludes the system stopped working.** Then change 
 on its own. That moment - their whole operation updating itself in front of them - is when this
 stops being a chat tool in their head and becomes their operating system.
 
+## Phase 7 - One place, every device (week 2, their choice)
+
+Right now the whole OS lives on one Mac. Offer them the option to fix that, and make it
+plainly their choice: back the folder up to a private GitHub repository (an online copy
+of the folder that only they can see, which keeps every past version of every file).
+With it, their laptop, an iPad, and a cloud session all read the same memory, and a lost
+or broken Mac costs them nothing. If they say no, write that down and move on.
+
+If they say yes, one step at a time:
+
+1. **Protect the secrets first, before anything uploads.** Create a `.gitignore` file (a
+   list of what must never be uploaded) in the OS folder containing `00_system/Private/`.
+   Then prove it: run `git status` and confirm nothing under `Private/` appears. Tell
+   them in one sentence: "Your passwords and keys stay on this Mac. They are excluded
+   by name and never leave it."
+2. **They create the account and the repository themselves.** Give the exact click
+   path at github.com: sign up if needed, then New repository, set it to **Private**,
+   add no files. Stop and wait. They type their own password; you never do.
+3. **Connect and push.** Link the folder to that repository, commit, and push. Warn them
+   first that a sign-in window or approval box will appear, and which answer moves
+   things forward. Then open the repository page with them and show that `Private/` is
+   not there.
+4. **Write the habit into CLAUDE.md:** pull at the start of every session, commit and
+   push at the end of every wrap-up. A session on another device reads only what was
+   pushed.
+
+Say one more thing while you are here, because it is true and it matters to an owner:
+their rules and memory are plain files in a folder, so another AI tool can run this same
+OS with small changes. They are not locked in.
+
 ## The wrap-up, and telling them it exists
 
 Every session ends. Most operators end one by saying "that's it for today" or "let's wrap up" or just "I'm done." **Treat any version of that as a command, not as small talk.**
@@ -523,7 +667,8 @@ When they say it, do all of this before you answer:
 3. **Update the tracker to match reality,** not to match what you set out to do this morning. Close what closed. Be specific about what stalled and why. And if a standing fact changed this session - a price, an offer name, a schedule, a status - search the record files for the old value and fix every copy, not just the one in front of you. A stale price sitting in a second file is next week's wrong answer.
 4. **Distill the handoff.** Write or REPLACE a short "NEXT SESSION STARTS HERE" block at the top of ACTIONS.md: where things stand in a few lines, the single next step, and any deadlines coming due. Small enough to read in thirty seconds. Replace it every wrap - never append to it. It is a state, not a journal, and if it grows it has failed.
 5. **Say what is waiting on them.** Their next session should open with a short list of the things only they can do: decisions, approvals, sends, signatures, payments.
-6. **Then give them the summary.** Short, readable, honest. What happened, what is live, what needs them. If the session touched nothing real, say so and skip the ceremony - an honest "nothing to reconcile" beats theater.
+6. **Back it up, if they chose the backup.** Commit and push the folder (Phase 7), so every other device starts the next session from today's state. Confirm the push landed.
+7. **Then give them the summary.** Short, readable, honest. What happened, what is live, what needs them. If the session touched nothing real, say so and skip the ceremony - an honest "nothing to reconcile" beats theater.
 
 **Why this matters more than it sounds.** An operating system does not fail loudly. It decays quietly, and it decays exactly here: the tracker says a job is unfinished, but it shipped two weeks ago. The operator notices once and lets it go. They notice again and start double-checking. Then they stop reading the file, and at that point the business is back in their head, which is the problem they bought this to solve.
 
@@ -535,7 +680,7 @@ When they say it, do all of this before you answer:
 - **Day 2:** The first routine, whichever one they picked. Watch one full run.
 - **Day 2 or 3:** The Single Pane (Phase 6). From this day on, their to-do list lives on one link.
 - **Day 3 to 5:** One real project through the system end to end.
-- **Week 2:** A second routine, and their first captured recipes. By now they should be able to tell you what they want automated without being asked.
+- **Week 2:** A second routine, and their first captured recipes. Offer the weekly checkup and the night shift (Phase 5) and the backup to every device (Phase 7), one at a time, each on their yes. By now they should be able to tell you what they want automated without being asked.
 
 ## The Voice Command Center - the pocket half of the habit
 
@@ -544,6 +689,8 @@ The whole system runs on one habit: the operator records what they say. At the d
 **This is part of the product, not a bonus.** Once the foundation is running (after week one, when the pane exists and the system has earned trust), raise it yourself: "there is a pocket half to this - want it?" Do not wait to be asked.
 
 **Tell them the truth about it before they try.** It is iPhone only, it is built on Apple Shortcuts, and the setup is fiddly. There are three places where the Shortcuts app auto-fills the wrong thing and the whole chain silently breaks. The kit documents every one of them, but it still takes patience. Nothing else in the setup depends on it - a failed Shortcut must never make the operator feel like the real thing is not working.
+
+When it works, add the folder it drops files into to the capture sources list in CLAUDE.md, so "check transcripts" includes it from then on.
 
 ## What "working" looks like
 
