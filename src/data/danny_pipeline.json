@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "partner": "Danny Madigan",
   "terms": {
     "recurring": "$300/month per closed rooftop, for the life of the contract ($600/month on a Johnson close - four rooftops, one feed)",
@@ -46,8 +46,16 @@
       "contact": "Gabe Montano",
       "referred": "Sep 3",
       "stage": "Intro made",
-      "note": "Gabe replied Sep 18 4:03 PM MT, back from vacation: 'Is next week or the week after open for you all?' Aaron answered 5:20 PM, a call next week, asked Gabe for times. Waiting on Gabe's times.",
+      "note": "Gabe's assistant set the time. 15-minute screen share on Thu 10/1 at 12:45 PM Mountain. Invite sent 9/26.",
       "since": "2026-09-03"
+    },
+    {
+      "rooftop": "Schomp Automotive Group",
+      "contact": "John Mathieson",
+      "referred": "Sep 24",
+      "stage": "Intro made",
+      "note": "John passed it to Schomp's group team for a first look. Waiting on their feedback.",
+      "since": "2026-09-24"
     }
   ],
   "payments": []
