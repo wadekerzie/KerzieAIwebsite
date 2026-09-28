@@ -105,7 +105,7 @@ export default function Home() {
           it works.
         </p>
 
-        {/* The bylines: two trade publications ran the thinking. Receipts, not claims. */}
+        {/* The bylines: the publications that ran the thinking. Receipts, not claims. */}
         <p className="k-rise k-rise-3 mt-6 k-mono text-xs lg:text-[15px] tracking-[0.15em] lg:tracking-[0.1em] text-[#262B3D]/60">
           PUBLISHED IN{" "}
           <a
@@ -133,6 +133,24 @@ export default function Home() {
             className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
           >
             SMALL BUSINESS CURRENTS
+          </a>{" "}
+          <span className="text-[#B04E2B]/60">/</span>{" "}
+          <a
+            href="https://www.pmmag.com/articles/107780-how-contractors-can-use-ai-to-avoid-a-9-500-consulting-bill"
+            target="_blank"
+            rel="noopener"
+            className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
+          >
+            PLUMBING &amp; MECHANICAL
+          </a>{" "}
+          <span className="text-[#B04E2B]/60">/</span>{" "}
+          <a
+            href="https://www.supplyht.com/articles/107487-how-ai-can-help-trade-contractors-replace-a-9-500-consulting-playbook"
+            target="_blank"
+            rel="noopener"
+            className="text-[#1A1B2E] underline underline-offset-4 decoration-[#B04E2B]/50 hover:decoration-[#B04E2B] k-focus"
+          >
+            SUPPLY HOUSE TIMES
           </a>
         </p>
 
