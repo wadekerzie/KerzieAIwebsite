@@ -2190,7 +2190,7 @@ Nobody verifies. The interviewer asks about weaknesses, the candidate performs m
 
 What Got Built
 
-## So we're building TrueSeat.
+## So we built TrueSeat.
 An AI interviewer that talks with you the way a great colleague would after six months of working together — then builds a sealed, evidence-backed dossier: what you can actually do, how you actually operate, what you actually need. Every claim carries a verification tier. You own every word, and nothing ships without your review.
 
 How It Works
@@ -2204,7 +2204,7 @@ How It Works
 - Constraints stay sealed until you say otherwise.
 
 ## The right person in the right seat, proven instead of pitched.
-Launching August 2026. Built in public.
+Live now. Built in public.
 See TrueSeat
 
 ---
