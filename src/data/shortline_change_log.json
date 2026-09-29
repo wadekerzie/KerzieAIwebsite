@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-29",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 5,
+      "price_changed": 1,
+      "total": 317,
+      "ran_at": "6:59 AM MT",
+      "note": "No new vehicles joined the list today; five came off, including a pair of 2026 GMC Sierra 1500 AT4Xs, bringing the total to 317. One price change today. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-28",
       "status": "ok",
       "kind": "refresh",
