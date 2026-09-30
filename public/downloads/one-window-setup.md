@@ -279,8 +279,9 @@ This file loads into every future session. It is the difference between an assis
    alongside it. Nobody should ever sit watching their AI read files. Offer each
    session a findable name (day of week plus full date, like "Monday, August 10th" -
    the app names threads after whatever was said first, and those names are useless
-   a week later); the operator renames the thread in the sidebar if they care to,
-   because you cannot rename it yourself. Scheduled and background runs are exempt -
+   a week later), and set that name on the session yourself in the same turn if your
+   tools can rename the current session (the Claude desktop app can); if they cannot,
+   say the name so the operator can rename it in the sidebar. Scheduled and background runs are exempt -
    nobody is waiting on those. Within the work itself: lead with outcomes and next
    steps, not process narration, and propose the fastest and cheapest route before
    executing. Once routines exist, the first real reply of every session leads with
@@ -317,7 +318,9 @@ This file loads into every future session. It is the difference between an assis
      not the workhorse. Rule of thumb for tiers: mechanical rule-following work runs
      on the smallest model; recipe-following work with some structure runs on the
      middle one; only judgment that touches money, relationships, or the operator's
-     own voice needs the top one. Also: in their AI billing settings, turn off
+     own voice needs the top one. Scheduled routines run on the middle tier at
+     minimum: the smallest model cannot run unattended and stops at the first
+     permission prompt. Also: in their AI billing settings, turn off
      usage-credit auto-reload and set a monthly cap, so a mistake pauses instead of
      billing.
 5. **How to talk to this operator.** Copy the communication rules from this document into their file, so future sessions inherit them.
