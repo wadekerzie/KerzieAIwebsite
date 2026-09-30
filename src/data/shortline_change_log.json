@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-09-30",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 7,
+      "removed": 3,
+      "price_changed": 2,
+      "total": 321,
+      "ran_at": "8:01 AM MT",
+      "note": "Seven vehicles joined the list and three came off, bringing the total to 321. New arrivals include a 2017 GMC Acadia Denali, a 2019 GMC Sierra 1500 Denali, and a 2019 Toyota 4Runner SR5 Premium. Two price changes today. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-29",
       "status": "ok",
       "kind": "refresh",
