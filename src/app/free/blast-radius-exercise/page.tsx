@@ -144,8 +144,8 @@ export default function BlastRadiusExercisePage() {
           <Link href="/blast-radius" className="k-link k-focus text-[#2B5D96]">
             read The Blast Radius
           </Link>
-          . I write one of these a week, in plain words, from inside the
-          businesses I run.
+          . Every Tuesday I publish a newsletter on Substack, in plain
+          words, from inside the businesses I run.
         </p>
         <div className="mt-8">
           <a
