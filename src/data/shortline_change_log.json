@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-01",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 11,
+      "removed": 0,
+      "price_changed": 99,
+      "total": 332,
+      "ran_at": "7:09 AM MT",
+      "note": "Eleven vehicles joined the list today, nothing came off, bringing the total to 332. New arrivals include a 2022 GMC Sierra 2500 SLE, a 2026 GMC Sierra 2500 Denali Ultimate, and a 2022 GMC Terrain SLT. A sweeping start-of-month round of repricing: 99 vehicles across the lot came down. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-09-30",
       "status": "ok",
       "kind": "refresh",
