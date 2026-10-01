@@ -71,8 +71,10 @@
     .said { margin: 12px 0; padding: 12px 18px; border-left: 3px solid var(--line); color: var(--ink); font-size: 16px; }
     .said cite { font-style: normal; color: var(--muted); font-size: 14px; display: block; margin-top: 4px; }
     .steps { counter-reset: s; margin: 0 0 8px; padding: 0; list-style: none; }
-    .steps li { counter-increment: s; position: relative; padding-left: 44px; margin-bottom: 14px; }
-    .steps li::before { content: counter(s); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; background: var(--blue-dark); color: #fff; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+    .steps > li { counter-increment: s; position: relative; padding-left: 44px; margin-bottom: 14px; }
+    .steps ul { margin: 8px 0 0; padding-left: 18px; list-style: disc; }
+    .steps ul li { padding-left: 0; margin-bottom: 6px; }
+    .steps > li::before { content: counter(s); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; background: var(--blue-dark); color: #fff; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
     table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; }
     th, td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
     th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
@@ -224,8 +226,23 @@
       </div>
       <p class="footnote">Setup is billed once when we start. The monthly starts per rooftop the morning that rooftop's pages go live, so the stores that come up first are the only ones billed first. Agreement and invoices are issued by Kerzie AI Solutions.</p>
 
-      <h2>Rollout, not a pilot</h2>
-      <p>The first rooftop is live within days of user access. The rest follow one store at a time once the feed arrives, each one billed only from the morning it is up. You watch the first store's tab fill in before the second store is touched, which is the proof a pilot would have given you, without a second decision.</p>
+      <h2>All eight, live in October</h2>
+      <p><strong>You don't pilot being findable.</strong> A pilot is for something you can score, and nobody can score AI answers cleanly yet. We won't invent a scorecard to make a test look good. What this does is get your stores ready, and a group is either ready or it isn't. If Chevrolet North is ready and Chevrolet South is not, a buyer asking ChatGPT about Chevy dealers in Colorado Springs hears about one Maroone store clearly and the other poorly.</p>
+      <p><strong>We are holding our October build calendar for Maroone.</strong> With user access on all eight sites by <strong>Friday, October 9</strong>, all eight rooftops are live by <strong>October 31</strong>. The first store goes live within days of access, the rest follow as each site is placed, and each rooftop is billed only from the morning its pages are up.</p>
+      <h3>Two stores to "see how it goes" costs more, per store</h3>
+      <div class="tablewrap">
+      <table>
+        <thead><tr><th></th><th>Two rooftops</th><th>All eight rooftops</th></tr></thead>
+        <tbody>
+          <tr><td>Setup</td><td>$3,000 ($1,500 per store)</td><td>$7,500 (about $938 per store)</td></tr>
+          <tr><td>Monthly, per rooftop</td><td>$849</td><td>$699</td></tr>
+          <tr><td>Monthly, total</td><td>$1,698</td><td>$5,592</td></tr>
+          <tr><td>Stores ready</td><td>2 of 8</td><td>8 of 8, by October 31</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><strong>The exit door, instead of a pilot.</strong> After setup, every rooftop is month to month. If one isn't worth it to you, drop that rooftop with 30 days' notice. What you get instead of a scorecard is proof of the work: a daily receipt for every store, showing its pages were rebuilt, placed, and read.</p>
+      <p>One decision, one invoice, done in October, and off your 2027 planning list before planning starts.</p>
 
       <h2>What we need from you</h2>
       <ol class="steps">
@@ -251,7 +268,7 @@
       <p style="font-size:14px;color:var(--muted)">Required: location_id, vin, year, make, model, price, vdp_url. Everything else makes the page better but does not block it. Send one day's feed as a sample and we confirm the mapping the same day.</p>
 
       <h2>Next step</h2>
-      <p>Reply to Wade's email with "yes" or with the one thing that needs to change on this page. Same day you get the agreement, the feed instructions, and the user-add request for the first store.</p>
+      <p>Reply to Wade's email with "yes" or with the one thing that needs to change on this page. Same day you get the agreement, the feed instructions, and the user-add request for all eight sites. User access by Friday, October 9 keeps all eight live by October 31.</p>
       <a class="cta" href="mailto:wade@kerzie.ai?subject=Maroone%20USA%20Back%20Cover%2C%20eight%20rooftops">Reply to Wade</a>
 
       <div class="footer">
