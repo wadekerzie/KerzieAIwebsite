@@ -37,11 +37,13 @@ const ventures = [
   { label: "TrueNorth", href: "/ventures/truenorth" },
 ];
 
-// The three essays are one body of work and stay together.
+// The essays are one body of work and stay together, in publication order.
+// (Three until 2026-10-01, when The Blast Radius became the fourth.)
 const essays = [
   { label: "The Kerzie Effect", href: "/kerzie-effect" },
   { label: "The Consequence Clock", href: "/consequence-clock" },
   { label: "The Blast Door", href: "/blast-door" },
+  { label: "The Blast Radius", href: "/blast-radius" },
 ];
 
 function Group({

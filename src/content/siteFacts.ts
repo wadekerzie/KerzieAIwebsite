@@ -115,6 +115,12 @@ export const FREE_RESOURCES = [
     summary:
       "The first things to actually do with AI once it is set up, so it becomes a habit instead of a login you forget.",
   },
+  {
+    name: "Run the Blast Radius exercise on your own job",
+    path: "/free/blast-radius-exercise",
+    summary:
+      "The two prompts from The Blast Radius, opened up for any function and any industry. Round one asks for the new jobs. Round two asks which ones actually need a person. Free, no form.",
+  },
 ] as const;
 
 export function offer(key: string): Offer {
@@ -147,6 +153,7 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/services/nemoclaw", changeFrequency: "monthly", priority: 0.6 },
   { path: "/free/first-reps", changeFrequency: "monthly", priority: 0.7 },
   { path: "/free/mobile-capture-kit", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/free/blast-radius-exercise", changeFrequency: "monthly", priority: 0.7 },
   { path: "/schedule", changeFrequency: "monthly", priority: 0.8 },
   { path: "/speaking", changeFrequency: "monthly", priority: 0.6 },
   { path: "/team", changeFrequency: "monthly", priority: 0.5 },
@@ -169,6 +176,7 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/essays", changeFrequency: "monthly", priority: 0.6 },
   { path: "/kerzie-effect", changeFrequency: "monthly", priority: 0.6 },
   { path: "/blast-door", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/blast-radius", changeFrequency: "monthly", priority: 0.5 },
   { path: "/consequence-clock", changeFrequency: "monthly", priority: 0.5 },
   { path: "/the-line", changeFrequency: "monthly", priority: 0.5 },
   { path: "/thousand", changeFrequency: "weekly", priority: 0.6 },

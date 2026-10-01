@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 37
+Pages included: 39
 
 ---
 
@@ -306,6 +306,110 @@ Email address Send it to me
 
 ---
 
+# The Blast Radius | Kerzie AI
+URL: https://kerzie.ai/blast-radius
+
+The Blast Radius | Kerzie AI
+← KERZIE . AI ALL ESSAYS →
+Abstract
+How far AI reaches from your desk depends on three things: whether you ask it or instruct it, what it’s connected to, and where you sit. Most people are using it in the one mode that keeps the blast straight down.
+
+Most people using AI at work today are getting better at it. I’m not discounting that. They write better prompts, they get better answers, they finish some things faster. But almost all of that impact lands in one place: their own desk. It helps them. It doesn’t reach anyone else.
+Not whether it works. How far it reaches.
+That’s what I mean by the blast radius. Not whether AI works for you, but how far its effect travels from where you sit. And the size of that radius isn’t set by how smart the model is. It’s set by three things you control, or your company controls for you: whether you ask AI questions or instruct it to do work, what it’s connected to, and where you sit in the organization.
+Get those three right and the radius stops going straight down. It goes sideways to your peers, across to other departments, down to the people who report to you, and, this is the part nobody is ready for, up.
+The definition
+Not how well AI works for you. How far its effect travels from where you sit.
+
+## Straight down to your desk
+Picture someone in a company of any size with a free or basic account on ChatGPT, Claude, Gemini or Perplexity. They use it the way most people do: ask and answer. They ask a question, get an answer, maybe have it do some research, and then take that information and do something with it themselves, by hand.
+Ask and answer: the blast lands on one desk.
+That’s useful. It might save them hours. It might make their work better or more timely. But the blast goes straight down. It impacts them, their productivity, their hours. It doesn’t go in any other direction. Nobody else in the building feels it.
+
+## Sideways to your peers
+The radius changes when someone crosses to the other side: from asking to instructing. On the ChatGPT side that’s Codex. On the Claude side it’s Claude Code, which I wish they’d named something else, because “code” makes people think it’s only for people who write software. It isn’t. It’s the side of the equation where you hand AI a complete task and it does the work.
+The AI stops at the send button and the pay button.
+I run my own company this way, and the rule in my operating system is simple: the AI does everything up to the point where a human has to be accountable. We stop at the send button. We stop at the pay button. The email gets drafted, I read it, I change a few words, and I hand it back with “this is how I write,” so next time there are fewer edits. The judgment is still mine. The work isn’t.
+Once you’re there, the blast radius widens. It goes horizontal. Your peers start seeing finished work arrive from your desk: the documentation, the summaries, the meeting recaps, the thing they needed before they asked for it. Your impact on the people next to you changes, and you didn’t add an hour to your day to do it.
+We stop at the send button. We stop at the pay button. The judgment is still mine. The work isn’t.
+
+## Across the building
+Now add connectors. In companies where someone has done the work of giving AI access, through APIs and MCP connections, to the company’s other systems, the radius gets wider again.
+Two people, three departments, one desk.
+Here’s a real one. Someone I know inside a large company needed an NDA for a customer. In the old world that’s a request to legal, a process owned by two individuals who handle NDAs, a wait, a back-and-forth. But his company had connected its internal systems. His own AI operating system already held the context on the account and the customer. The connectors gave it the company’s documented NDA process, plus the policies and guardrails that legal, accounting and policy live by. It generated the NDA exactly the way the company does it today with people, a hundred percent accurate to the process.
+The capability of two people and three departments collapsed into one person’s ability to deliver an end-to-end result. That’s not a productivity gain on his desk. That’s his work reaching across the whole building.
+
+## Down the pyramid
+Here’s where it starts to matter to the org chart. The higher up the person using this sits, the bigger the radius, because now they can direct work that used to belong to their direct reports.
+Take an accounting manager. Today she reviews work coming up the line from people doing it by hand. When she can direct that work herself, through her own AI with all of the company’s constraints and connectors built in, the work below her doesn’t necessarily need a person anymore. And she has a better view than anyone of what the output should be and when it’s due.
+Know-how moves up the pyramid. The headcount under it thins.
+Think of the reporting structure as a pyramid. The higher that know-how moves, the more people sit underneath it, and the more of their work gets orchestrated, directed and judged from above. That means fewer people performing the function.
+I want to be careful here. This is not me lobbying for job displacement. It’s me describing how it’s going to happen, whether we like it or not.
+
+## And then up
+This is the direction nobody is ready for.
+For about a hundred years, since the industrial revolution, we’ve run companies on an assumption: the people higher up have more information, better information, and in many cases, warranted or not, they’re smarter.
+That assumption is collapsing.
+It was never access. It was time.
+Most of the information was never actually secret. If you work at a public company, you can pull every quarterly report and every annual report. Even at private companies, a lot of it goes out in all-hands meetings and the decks sent around afterward. What stopped an individual contributor from using it was never access. It was time. Their day job didn’t leave room to go dig through all of it and figure out where management was right and where it had blind spots.
+AI removes the time cost of being informed. An individual contributor with their own operating system, one that knows their job and their context, can say: pull our last four quarterly earnings reports. Show me where the business is declining, where it’s expanding, and what’s underused. Now that person walks into the town hall with evidence, with receipts. Senior management is on notice.
+Or take the next open requisition on their team. An employee who can see the numbers might say: we don’t need that hire. This part of the function can be automated, or this segment is declining and projections say we won’t need it in three quarters. That headcount is wasted.
+That’s the blast radius going up. And at that point it goes in every direction, at the discretion of the person at the keyboard. You’ve taken the smarts, if you will, and collapsed them to everyone’s desk.
+It was never access. It was time. AI removes the time cost of being informed.
+
+## “What would you say you do here?”
+Managers are going to resist this, and I understand why.
+Everybody has worked with that layer. A lot of us have been it.
+There’s a scene in Office Space where two consultants interview a man about his job, and it turns out his whole job is carrying the specifications from the customers down to the engineers. He’s the layer in between. That scene is funny because everybody has worked with that layer. A lot of us have been that layer.
+I ran sales teams for thirty years. Here’s one example of how a sales manager’s week can break down: about 10% in front of customers, about 40% coaching the team, and the other 50% correlating, synthesizing, updating and refining information to send to upper management. In some cases that last part is 60% or more. The exact split isn’t the point. That last bucket is the part that collapses.
+Claudeforce, August 26: “giving every seller an AI CRO.”
+It’s already on the market. On August 26, Salesforce and Anthropic announced Claudeforce, and Salesforce describes it as “giving every seller an AI CRO.” Think about what that means for everyone between the chief revenue officer and the rep. The rep is the one in the customer’s meeting room with the real feedback. Now the rep also has everything needed for reporting upline and generating reports downline, under their own control. Every rep can run a deal health review and a pipeline analysis on the big deals for next quarter. What does the manager whose job was assembling that do on Monday?
+“Giving every seller an AI CRO.” Now ask what happens to everyone in between.
+
+## What the humans are for
+So what are the people for?
+Here’s something I’ve been saying for some time, mostly to make a point: even if we had exactly the same number of jobs three years from now, the job titles we have today would disappear. Titles that don’t exist yet would replace them.
+Cathie Wood’s exercise, from Moonshots episode 296.
+This week I heard an exercise on Moonshots that I had to try. Cathie Wood said she asks the AI to consult with futurists, scientists, engineers, science fiction writers, economists and strategists, and tell her what the new jobs will be. Her point was that in the early 90s nobody could have pictured influencers or Airbnb or Uber, and there are jobs coming that we can’t picture now.
+So I ran it for my world. I asked Claude what the new jobs inside a B2B sales organization will be by 2029, once agents do most of the prospecting, research, reporting, forecasting and follow-up, and buyers send their own AI agents to evaluate vendors.
+It came back with eight titles. Buyer Agent Relations Manager. Evidence Librarian. Revenue Agent Supervisor. Forecast Arbiter. Terms Architect. Buying Committee Navigator. Relationship Principal. Agent Conduct Auditor. Good names, each with a tidy description of what the person does all day.
+I didn’t buy it.
+I could point at every one of them and say an agent could do most of that today, with the models we already have. Watching what buyer agents ask about your company and fixing the gaps? That’s agent work. Keeping the proof current? Agent work. Reviewing what your agents told prospects? An agent can review every conversation. A person can review a sample.
+I asked for jobs, so it gave me jobs. I never asked if each one needed a person.
+And I noticed something. I asked the AI for new jobs, so it gave me jobs. I never asked whether each one needed a person.
+Round two: same model, fresh session, told to be honest.
+So I asked. Same model, fresh session. I gave it the eight titles and told it I was skeptical. For each one: what can an agent do today, what’s left for a person, and is that left because the AI can’t do it yet, or because someone has to answer for the result?
+It agreed with me. On the first title it said “nothing is left.” Three of the eight, it said, are duties, not jobs, and they fold into marketing, operations and legal. Three more are jobs that already exist under new names: the rev ops lead, the head of sales and the deal desk. What survived were two kinds of people. The account owner, who sits across the table from the buyer’s committee and gets held to the promise. And the revenue leader, who sets the rules for the agents, signs the forecast and approves the deals that break the rules.
+10 to 15 of 50: the model’s own judgment, not data.
+Then I asked how many people a 50-person sales team today would need for all of it. Its answer was about 10 to 15, and it labeled that its own judgment, not data. On deals under about $25,000, it said close to zero.
+I’m not handing you that number as a forecast. I’m telling you about it because the machine stopped being reassuring the moment I asked it to be honest.
+Here’s the part that stopped me. I asked for the one-line rule for which sales work stays human. It said:
+AI output, verbatim
+“Sales work stays human when a buyer needs a person across the table to trust, or when someone on your side has to sign for the outcome and lose their job if it’s wrong. Everything else goes to the agents.”
+
+I got there by running a company. The AI got there when I pushed it.
+That’s the send button. It’s the rule I built my own operating system on: the AI does everything up to the point where a human has to be accountable. I got there by running a company. The AI got there when I pushed it.
+So let me be plain about where I land. The titles will change. I’m sure of that. But I only used the “same number of jobs” line to make a point, and I don’t believe that part. Too many jobs today are task management, and task management is going to be agent work. From where I sit today, I can’t see a world with the same number of jobs, even with new titles coming. The humans aren’t for the work. They’re for the trust and the accountability. That’s a real job. It’s just not eight of them.
+Where I land
+The humans aren’t for the work. They’re for the trust and the accountability.
+
+## Who gets there first
+It spreads from the inside out, one desk at a time.
+I’m working with someone this week who is about to put his own operating system on his company laptop, wired into his company’s systems, and restructure how he works. He’s excited. He’s also rare. The people who make that leap are already following AI, already watching Moonshots and Nate B. Jones, already doing it in their own lives.
+Which tells me how this spreads. Not from a corporate directive. Not from the rare CEO willing to start over on a blank whiteboard. It spreads from the inside out, one person at a time, in companies that give their people real access: enterprise licenses and connectors. Each person who crosses from asking to instructing widens the radius a little more.
+
+## What to do on Monday
+If you’re an individual contributor: stop asking and start instructing. Pick one piece of recurring work, hand AI the whole task, and keep only the send button for yourself. Then ask what your company has connected and what you can reach.
+Find your 50%.
+If you’re a manager: find your 50%. The time you spend gathering and polishing information for the people above you is going away. Move toward the parts that don’t: coaching, judgment, and the customer.
+If you’re an executive: your connectors decide how wide your people’s blast radius can get. Give them real access with real guardrails, and expect questions at the next town hall. That’s the point.
+Over the next twelve months, we’ll start to see the blast radius show up, with impacts ranging from minor to major. The radius is already widening at the desks of the people who crossed over. The only real question is whether yours is still pointing straight down.
+
+This essay follows three others. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. The Blast Door is the time limit on both. This one is about how far the effect travels inside the building.
+Email address Send it to me
+
+---
+
 # Wade Kerzie | Kerzie AI Solutions
 URL: https://kerzie.ai/card
 
@@ -459,7 +563,7 @@ Essays | Kerzie AI
 ← KERZIE . AI
 Essays
 
-## One argument, in three parts.
+## One argument, in four parts.
 Read them in the order I wrote them if you can. Each one stands on its own, but they build.
 
 July 24, 2026
@@ -486,6 +590,14 @@ A person plus a nearly-free intelligence can build something of their own. That 
 
 Read the essay →
 
+October 1, 2026
+
+## The Blast Radius
+How far it reaches inside the building
+How far AI reaches from your desk depends on three things: whether you ask it or instruct it, what it is connected to, and where you sit.
+
+Read the essay →
+
 Appendix
 
 July 25, 2026
@@ -496,7 +608,41 @@ The Kerzie Effect has two preconditions: cross the AI competency line, and work 
 
 Read the appendix →
 
-Coming next: The Blast Radius
+---
+
+# Run the Blast Radius exercise on your own job (Free) | Kerzie AI
+URL: https://kerzie.ai/free/blast-radius-exercise
+
+Run the Blast Radius exercise on your own job (Free) | Kerzie AI
+← KERZIE . AI THE ESSAY →
+The Blast Radius · Free
+
+## Run the exercise on your own job .
+In The Blast Radius I ran an exercise I heard from Cathie Wood: ask the AI what the new jobs in your world will be. I ran it on Claude for a B2B sales organization. It came back with eight titles. Then I ran a second round and told it I was skeptical. The eight boiled down to two real jobs, and when I asked how many people a 50-person team would need, it said about 10 to 15 and labeled that its own judgment, not data.
+Here are both prompts, opened up so you can run them on your own function and your own industry. Fill in the brackets, paste round one into a fresh session, then paste round two into another fresh session with the eight titles it gave you. Nothing to sign up for.
+
+Round one
+
+## Ask for the new jobs.
+The question as Cathie Wood framed it. You will get eight tidy titles with a description of what each person does all day. Do not stop here.
+I want you to consult with futurists, scientists, engineers, science fiction writers, economists, and strategists, and tell me what the new jobs inside [your function, for example: a B2B sales organization] in [your industry] will be by 2029, once AI agents do most of [the recurring work in your function, for example: prospecting, research, reporting, forecasting, and follow-up], and [the people you serve, for example: buyers] increasingly send their own AI agents to deal with you. I want job titles that mostly do not exist today.
+
+Give me 8 job titles. For each: the title, one sentence on what the person actually does all day, and one sentence on which of today's jobs it replaces or absorbs. Then name 3 of today's [your function] titles you think are gone by 2029, and why, in one line each. Plain language, no hype words, no em dashes. Copy round one
+
+Round two
+
+## Make it tell you which ones need a person.
+The skeptic pass. For each title: what an agent can do today, what is left for a person, and whether that is left because the AI cannot do it yet or because someone has to answer for the result.
+Earlier I asked for the new jobs inside [your function] in [your industry] by 2029, once AI agents do most of [the recurring work in your function], and [the people you serve] send their own AI agents to deal with you. I got the 8 titles below. I'm skeptical. I think I can point at every one of them and say an AI agent could handle most of it, even with today's top models.
+
+[Paste the 8 titles and their one-line descriptions from round one here.]
+
+Be honest with me, not reassuring. For each of the 8: (a) what part of this job an AI agent could do with today's top models, (b) what part is left for a person, if any, and (c) whether what's left is left because the AI can't do it yet (capability), or because someone has to answer for the result: sign it, own it, get fired for it (accountability). Say "nothing is left" where that is true.
+
+Then tell me: of the 8, how many are really full-time human jobs by 2029, and how many people would a [size of your team today, for example: 50]-person [your function] team today actually need for all of this? Then give me the one-line rule for which [your function] work stays human. Plain language, no hype words, no em dashes. Copy round two
+
+If round two surprises you the way it surprised me, the essay is where I work out what it means: read The Blast Radius . I write one of these a week, in plain words, from inside the businesses I run.
+Subscribe on Substack →
 
 ---
 
