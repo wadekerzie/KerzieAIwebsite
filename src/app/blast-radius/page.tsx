@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: "https://kerzie.ai/blast-radius",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "The Blast Radius",
     description:
       "Not how well AI works for you. How far its effect travels from where you sit.",

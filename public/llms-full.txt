@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 38
+Pages included: 39
 
 ---
 
@@ -607,6 +607,42 @@ Appendix to The Kerzie Effect
 The Kerzie Effect has two preconditions: cross the AI competency line, and work from one window. If you are missing one, this is what to do about it.
 
 Read the appendix →
+
+---
+
+# Run the Blast Radius exercise on your own job (Free) | Kerzie AI
+URL: https://kerzie.ai/free/blast-radius-exercise
+
+Run the Blast Radius exercise on your own job (Free) | Kerzie AI
+← KERZIE . AI THE ESSAY →
+The Blast Radius · Free
+
+## Run the exercise on your own job .
+In The Blast Radius I ran an exercise I heard from Cathie Wood: ask the AI what the new jobs in your world will be. I ran it on Claude for a B2B sales organization. It came back with eight titles. Then I ran a second round and told it I was skeptical. The eight boiled down to two real jobs, and when I asked how many people a 50-person team would need, it said about 10 to 15 and labeled that its own judgment, not data.
+Here are both prompts, opened up so you can run them on your own function and your own industry. Fill in the brackets, paste round one into a fresh session, then paste round two into another fresh session with the eight titles it gave you. Nothing to sign up for.
+
+Round one
+
+## Ask for the new jobs.
+The question as Cathie Wood framed it. You will get eight tidy titles with a description of what each person does all day. Do not stop here.
+I want you to consult with futurists, scientists, engineers, science fiction writers, economists, and strategists, and tell me what the new jobs inside [your function, for example: a B2B sales organization] in [your industry] will be by 2029, once AI agents do most of [the recurring work in your function, for example: prospecting, research, reporting, forecasting, and follow-up], and [the people you serve, for example: buyers] increasingly send their own AI agents to deal with you. I want job titles that mostly do not exist today.
+
+Give me 8 job titles. For each: the title, one sentence on what the person actually does all day, and one sentence on which of today's jobs it replaces or absorbs. Then name 3 of today's [your function] titles you think are gone by 2029, and why, in one line each. Plain language, no hype words, no em dashes. Copy round one
+
+Round two
+
+## Make it tell you which ones need a person.
+The skeptic pass. For each title: what an agent can do today, what is left for a person, and whether that is left because the AI cannot do it yet or because someone has to answer for the result.
+Earlier I asked for the new jobs inside [your function] in [your industry] by 2029, once AI agents do most of [the recurring work in your function], and [the people you serve] send their own AI agents to deal with you. I got the 8 titles below. I'm skeptical. I think I can point at every one of them and say an AI agent could handle most of it, even with today's top models.
+
+[Paste the 8 titles and their one-line descriptions from round one here.]
+
+Be honest with me, not reassuring. For each of the 8: (a) what part of this job an AI agent could do with today's top models, (b) what part is left for a person, if any, and (c) whether what's left is left because the AI can't do it yet (capability), or because someone has to answer for the result: sign it, own it, get fired for it (accountability). Say "nothing is left" where that is true.
+
+Then tell me: of the 8, how many are really full-time human jobs by 2029, and how many people would a [size of your team today, for example: 50]-person [your function] team today actually need for all of this? Then give me the one-line rule for which [your function] work stays human. Plain language, no hype words, no em dashes. Copy round two
+
+If round two surprises you the way it surprised me, the essay is where I work out what it means: read The Blast Radius . I write one of these a week, in plain words, from inside the businesses I run.
+Subscribe on Substack →
 
 ---
 
