@@ -312,12 +312,12 @@ function proposalBody(opts: { approvedOn?: string }) {
   const scopeRows = data.scope.items
     .map(
       (it, i) =>
-        `<div class="r${i === 0 ? " one" : ""}"><div class="we"><strong><span class="o">${i + 1}</span>${esc(it.title)}</strong><p>${esc(it.we)}</p></div><div class="you"><span class="lbl">What you do</span><p>${it.dep ? '<span class="dep">We wait on this</span>' : ""}${esc(it.you)}</p></div></div>`,
+        `<div class="r${i === 0 ? " one" : ""}"><div class="we"><strong><span class="o">${i + 1}</span>${esc(it.title)}</strong><p>${esc(it.we)}</p></div><div class="you"><span class="lbl">Your part</span><p>${esc(it.you)}</p></div></div>`,
     )
     .join("");
   const scopeHtml = `
   <div class="scope">
-    <div class="hd"><div>What we do, in build order</div><div>What you do</div></div>
+    <div class="hd"><div>What we build, in order</div><div>Your part</div></div>
     ${scopeRows}
   </div>
   <p class="outscope">${esc(data.scope.out_of_scope)}</p>`;
