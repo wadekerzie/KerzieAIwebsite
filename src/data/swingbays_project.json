@@ -17,7 +17,9 @@
     "by": "Aaron Jones and Wade Kerzie, Kerzie AI Solutions"
   },
   "price": {
-    "build": 27500,
+    "back_cover": 2500,
+    "back_cover_terms": "your initial investment, under the agreement you already have",
+    "build": 25000,
     "build_terms": "half at signing, half when Parker goes live",
     "run_monthly": 2500,
     "run_months": 3,
@@ -86,9 +88,8 @@
       { "key": "signed", "label": "Signed", "date": "2026-09-08", "example": true },
       { "key": "parker_live", "label": "Parker go-live", "date": "2026-09-22", "example": true },
       { "key": "englewood", "label": "Englewood opening", "date": "2026-11-01" },
-      { "key": "day30", "label": "Day 30: Colter takes the wheel", "offset": 30 },
-      { "key": "day60", "label": "Day 60: Colter runs it, we watch", "offset": 60 },
-      { "key": "day90", "label": "Day 90: Colter signs off, handed over", "offset": 90 }
+      { "key": "day30", "label": "Day 30: handoff to Colter, we watch, oversee and guide", "offset": 30 },
+      { "key": "day90", "label": "Day 90: transfer, Colter signs off", "offset": 90 }
     ],
     "statuses": ["Not started", "Building", "Live at Parker", "Handed to Colter"],
     "areas": [

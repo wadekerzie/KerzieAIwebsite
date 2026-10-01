@@ -115,7 +115,14 @@ p{margin:0 0 14px}
 .bar.after i{background:#9bb6d3}
 .bar b{font-size:12px;color:var(--blue-dark);margin-bottom:6px;white-space:nowrap}
 .bar.after b{color:var(--muted)}
-.bar s{display:block;height:2.6em;text-decoration:none;font-size:11px;color:var(--muted);margin-top:6px;text-align:center;line-height:1.2}
+.bar s{display:block;height:3.9em;text-decoration:none;font-size:11px;color:var(--muted);margin-top:6px;text-align:center;line-height:1.2}
+.bar.stack{flex:1.6}
+.bar.stack i.seg{position:relative;overflow:hidden}
+.bar.stack i.top{border-radius:4px 4px 0 0;background:var(--blue-dark)}
+.bar.stack i.base{border-radius:0;background:var(--coral);border-top:2px solid var(--paper)}
+.bar.stack i em{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);font-style:normal;font-size:10px;line-height:1.15;color:#fff;text-align:center;padding:0 3px;font-weight:700}
+.bar.stack s{color:var(--blue-dark);font-weight:600}
+@media(max-width:420px){.bar.stack i em{font-size:9px}}
 .chart .cap{margin:12px 0 0;font-size:13px;color:var(--muted);text-align:center}
 .pricebox{margin-top:18px;border:2px solid var(--blue-dark);border-radius:8px;overflow:hidden}
 .pricebox .row{display:grid;grid-template-columns:1fr;gap:2px 14px;padding:14px 16px;border-top:1px solid var(--line)}
@@ -186,7 +193,7 @@ a{color:var(--blue);font-weight:600}
 .clock .fill{position:absolute;left:0;top:0;bottom:0;background:var(--blue);border-radius:7px}
 .clock .ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px}
 .clock .today{font-size:22px;font-weight:800;color:var(--blue-dark);margin:14px 0 2px}
-.phases{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:14px;font-size:12px;line-height:1.3}
+.phases{display:grid;grid-template-columns:1fr 2fr;gap:6px;margin-top:14px;font-size:12px;line-height:1.3}
 .phases div{border-top:3px solid #c9d6e4;padding-top:6px;color:var(--muted)}
 .phases div.on{border-top-color:var(--blue);color:var(--ink);font-weight:600}
 .phases div.done{border-top-color:var(--green)}
@@ -230,9 +237,12 @@ function proposalBody(opts: { approvedOn?: string }) {
   const ct = data.contacts;
 
   const runTotal = p.run_monthly * p.run_months;
-  // Year one at Parker, all in: build, the 90 days, then Right to Use for
-  // the rest of the twelve months.
-  const yearOne = p.build + runTotal + p.rtu_monthly * (12 - p.run_months);
+  // Year one at Parker, all in: the Back Cover, the build, the 90 days, then
+  // Right to Use for the rest of the twelve months. The Back Cover's monthly
+  // folds into the run and Right to Use fees (Wade 10/1), so this is the total.
+  const yearOne =
+    p.back_cover + p.build + runTotal + p.rtu_monthly * (12 - p.run_months);
+  const firstTotal = p.back_cover + p.build;
   const yearOnePct = (yearOne / v.parker_revenue) * 100;
   const pctLine =
     yearOnePct < 4 ? "under 4%" : `about ${Math.round(yearOnePct)}%`;
@@ -245,11 +255,14 @@ function proposalBody(opts: { approvedOn?: string }) {
         : "in line with";
 
   // Spend graphic: heights proportional to dollars, with a floor so the small
-  // bars stay visible on a phone. Labels carry the real numbers.
-  const max = p.build;
+  // bars stay visible on a phone. Labels carry the real numbers. The first bar
+  // is stacked: the Back Cover slice at its base, the build above, the total
+  // on top.
+  const max = firstTotal;
   const h = (n: number) => Math.max(5, Math.round((n / max) * 100));
   const bar = (cls: string, n: number, label: string, top?: string) =>
     `<div class="bar ${cls}"><b>${esc(top ?? money(n))}</b><i style="height:${h(n)}%"></i><s>${esc(label)}</s></div>`;
+  const stackedBar = `<div class="bar build stack"><b>${esc(money(firstTotal))}</b><i class="seg top" style="height:${h(p.build)}%"><em>Build ${esc(money(p.build))}</em></i><i class="seg base" style="height:${h(p.back_cover)}%" title="Back Cover ${esc(money(p.back_cover))}"></i><s>Back Cover ${esc(money(p.back_cover))} + Build</s></div>`;
 
   const approvedBlock = opts.approvedOn
     ? `<div class="approved"><p class="kicker">What you approved</p><p>Signed ${esc(opts.approvedOn)}. This is the offer as agreed, kept here so everyone works from the same page.</p></div>`
@@ -329,7 +342,7 @@ function proposalBody(opts: { approvedOn?: string }) {
   ${approvedBlock}
 
   <p class="lead">Every customer and member in one record, and everything else runs off it. The answering, the club repair texts, the posts, the follow-ups, the events, the booking. One place, every store.</p>
-  <p class="note">First, The Back Cover pages: the separate agreement you already have. Everything below runs on top of them.</p>
+  <p class="note">First, The Back Cover pages: the separate agreement you already have. It's your first investment, and everything below runs on top of it.</p>
   ${commandCenter}
 
   <h2><span class="num">2</span>What you get</h2>
@@ -352,8 +365,7 @@ function proposalBody(opts: { approvedOn?: string }) {
     <li><strong>Run it together for 90 days.</strong>
       <ul>
         <li>Days 1 to 30: we run it, ${esc(c.lead)} learns.</li>
-        <li>Days 31 to 60: ${esc(c.lead)} runs it, we watch.</li>
-        <li>Days 61 to 90: ${esc(c.lead)} runs it alone, we're on call.</li>
+        <li>Days 31 to 90: ${esc(c.lead)} runs it while we watch, oversee and guide.</li>
         <li>Day 90: ${esc(c.lead)} signs off and it's handed over.</li>
       </ul>
     </li>
@@ -361,7 +373,7 @@ function proposalBody(opts: { approvedOn?: string }) {
   </ol>
   <div class="chart" aria-label="What you pay over time">
     <div class="bars">
-      ${bar("build", p.build, "Build")}
+      ${stackedBar}
       ${bar("run", p.run_monthly, "Month 1")}
       ${bar("run", p.run_monthly, "Month 2")}
       ${bar("run", p.run_monthly, "Month 3")}
@@ -373,9 +385,10 @@ function proposalBody(opts: { approvedOn?: string }) {
 
   <h2><span class="num">4</span>The price</h2>
   <div class="pricebox">
+    <div class="row"><div class="amt">${esc(money(p.back_cover))}</div><div class="what"><strong>The Back Cover.</strong> ${esc(p.back_cover_terms[0].toUpperCase() + p.back_cover_terms.slice(1))}. Its monthly is included in the fees below.</div></div>
     <div class="row"><div class="amt">${esc(money(p.build))}</div><div class="what"><strong>Build everything.</strong> Once, ${esc(p.build_terms)}.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.run_monthly))}<small> a month</small></div><div class="what"><strong>Run it together for 90 days.</strong> ${esc(String(p.run_months))} months, the same each month.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.rtu_monthly))}<small> a month</small></div><div class="what"><strong>After hand-over: Right to Use and Updates.</strong> For ${esc(c.first_store)} and corporate, plus ${esc(money(p.rtu_per_store_monthly))} a month for each additional store on the system.</div></div>
+    <div class="row"><div class="amt">${esc(money(p.run_monthly))}<small> a month</small></div><div class="what"><strong>Run it together for 90 days.</strong> ${esc(String(p.run_months))} months, the same each month, and it includes the Back Cover monthly.</div></div>
+    <div class="row"><div class="amt">${esc(money(p.rtu_monthly))}<small> a month</small></div><div class="what"><strong>After hand-over: Right to Use and Updates.</strong> For ${esc(c.first_store)} and corporate, including The Back Cover, plus ${esc(money(p.rtu_per_store_monthly))} a month for each additional store on the system.</div></div>
     <div class="row"><div class="amt">${esc(money(p.new_store_template))}</div><div class="what"><strong>Each new store you open.</strong> The template, ${esc(p.new_store_run_note)}.</div></div>
   </div>
   <p class="value">${esc(c.first_store)} does about a million dollars a year (${esc(v.parker_revenue_source)} shows ${esc(money(v.parker_revenue))}). Year one at ${esc(c.first_store)}, all in, is ${esc(money(yearOne))}: ${esc(pctLine)} of that, and you own it. The ${esc(money(p.new_store_template))} template for each new store is ${esc(storeLine)} the ${esc(money(v.opening_ads_low))} to ${esc(money(v.opening_ads_high))} you already budget per store for opening ads.</p>
@@ -430,7 +443,9 @@ function dashboardBody() {
     : 0;
   const clamped = Math.min(Math.max(dayN, 0), total);
   const pct = Math.round((clamped / total) * 100);
-  const phase = dayN < 1 ? 0 : dayN <= 30 ? 1 : dayN <= 60 ? 2 : dayN <= 90 ? 3 : 4;
+  // Two phases: Days 1 to 30 (we run it), Days 31 to 90 (Colter runs it, we
+  // watch, oversee and guide). Day 90 is the transfer.
+  const phase = dayN < 1 ? 0 : dayN <= 30 ? 1 : dayN <= 90 ? 2 : 3;
 
   const todayLine = !start
     ? "The 90 days start when Parker goes live."
@@ -519,8 +534,7 @@ function dashboardBody() {
     <div class="ticks"><span>Day 1</span><span>Day 30</span><span>Day 60</span><span>Day 90</span></div>
     <div class="phases">
       ${phaseBox(1, "Days 1 to 30", `We run it, ${c.lead} learns`)}
-      ${phaseBox(2, "Days 31 to 60", `${c.lead} runs it, we watch`)}
-      ${phaseBox(3, "Days 61 to 90", `${c.lead} alone, we're on call`)}
+      ${phaseBox(2, "Days 31 to 90", `${c.lead} runs it, we watch, oversee and guide`)}
     </div>
   </div>
 
