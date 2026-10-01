@@ -96,7 +96,8 @@ p{margin:0 0 14px}
 .note{color:var(--muted);font-size:15px}
 .cards{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0 6px}
 @media(min-width:560px){.cards{grid-template-columns:1fr 1fr}}
-.card{border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:8px;padding:14px 16px;background:var(--soft)}
+.card{border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:8px;padding:14px 16px;background:var(--soft);min-width:0}
+.wrap,.sheet,.cards,.cc,.summary,.phases{min-width:0;max-width:100%}
 .card strong{display:block;color:var(--blue-dark);font-size:17px;margin-bottom:4px}
 .card p{margin:0;font-size:15px;color:#2b3038}
 .steps{list-style:none;padding:0;margin:14px 0 0;counter-reset:s}
@@ -133,9 +134,18 @@ p{margin:0 0 14px}
 .cc .card p+p{margin-top:8px}
 .cc .card ul{margin:8px 0 0;padding-left:18px;font-size:15px;color:#2b3038}
 .cc .card ul li{padding:0 0 3px}
-.phonewrap{margin:22px auto 0;max-width:340px}
-.phone{position:relative;background:var(--ink);border-radius:34px;padding:12px;box-shadow:0 10px 30px rgba(17,19,24,.18)}
-.phone .screen{background:var(--soft);border-radius:24px;padding:16px 14px 18px;overflow:hidden}
+.cc .card{min-width:0}
+.cc .card p,.cc .card li,.cc .card strong{overflow-wrap:anywhere}
+.phonewrap{margin:22px auto 0;max-width:340px;width:100%;min-width:0}
+.phone{position:relative;background:var(--ink);border-radius:34px;padding:12px;box-shadow:0 10px 30px rgba(17,19,24,.18);max-width:100%;min-width:0}
+.phone .screen{background:var(--soft);border-radius:24px;padding:16px 14px 18px;overflow:hidden;min-width:0}
+@media(max-width:360px){.phone{border-radius:26px;padding:8px}.phone .screen{padding:12px 10px 14px}.phone .tile b{font-size:19px}}
+.phone .tiles>.tile{min-width:0}
+.phone .tile b,.phone .tile span{overflow-wrap:anywhere}
+.phone .cal{min-width:0}
+.phone .days{min-width:0;overflow-x:auto}
+.phone .days>div{min-width:0}
+.phone .key{flex-wrap:wrap}
 .phone .sample{position:absolute;top:-10px;right:14px;background:var(--coral);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;padding:4px 10px;border-radius:12px}
 .phone .ttl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-dark);font-weight:800;margin:0}
 .phone .ttl small{display:block;font-size:11px;letter-spacing:.04em;text-transform:none;color:var(--muted);font-weight:600;margin-top:2px}
