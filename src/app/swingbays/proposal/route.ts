@@ -137,6 +137,39 @@ p{margin:0 0 14px}
 .pricebox .what strong{color:var(--blue-dark)}
 .pricebox .what{font-size:15px}
 .value{margin:14px 0 0;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:15px}
+.pricebox .row.first{background:var(--soft)}
+.pricebox .row.first .amt{font-size:24px}
+/* scope of work: two columns (what we do / what you do), one column on phones */
+.scope{margin:16px 0 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper);min-width:0;max-width:100%}
+.scope .hd{display:none}
+@media(min-width:640px){.scope .hd{display:grid;grid-template-columns:3fr 2fr;background:var(--blue-dark);color:#fff;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}.scope .hd div{padding:10px 16px}}
+.scope .r{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.scope .r.one{border-top:0}
+@media(min-width:640px){.scope .r{grid-template-columns:3fr 2fr}.scope .r.one{border-top:0}}
+.scope .we,.scope .you{padding:14px 16px;min-width:0;overflow-wrap:anywhere}
+.scope .you{background:var(--soft);font-size:15px;color:#2b3038}
+@media(min-width:640px){.scope .you{border-left:1px solid var(--line)}}
+.scope .we .o{display:inline-block;min-width:26px;height:26px;line-height:26px;border-radius:50%;background:var(--blue-dark);color:#fff;text-align:center;font-size:13px;font-weight:700;margin-right:8px;vertical-align:1px}
+.scope .we strong{color:var(--blue-dark);font-size:17px}
+.scope .we p{margin:6px 0 0;font-size:15px;color:#2b3038}
+.scope .you .lbl{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:4px}
+@media(min-width:640px){.scope .you .lbl{display:none}}
+.scope .dep{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:#8a6500;background:#fff1cc;border-radius:4px;padding:1px 6px;margin:0 6px 4px 0;vertical-align:1px}
+.scope .you p{margin:0}
+.outscope{margin:14px 0 0;padding:12px 16px;border-left:4px solid var(--line);background:var(--soft);border-radius:8px;font-size:15px;color:#2b3038}
+.due{display:inline-block;background:var(--coral);color:#fff;font-weight:800;border-radius:6px;padding:2px 10px}
+.contacts{display:grid;grid-template-columns:1fr;gap:12px;margin:12px 0 14px}
+@media(min-width:560px){.contacts{grid-template-columns:1fr 1fr}}
+.contacts .card{border-left-color:var(--blue-dark)}
+.contacts .card p{overflow-wrap:anywhere}
+.timeline{margin-top:22px;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:8px;padding:16px 18px;background:var(--soft)}
+.timeline .tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#8a6500;background:#fff1cc;border-radius:4px;padding:2px 8px;margin-bottom:8px}
+.timeline strong{color:var(--blue-dark);font-size:18px;display:block;margin-bottom:6px}
+.timeline .note{margin:0 0 10px}
+.tl{list-style:none;padding:0;margin:0}
+.tl li{display:grid;grid-template-columns:1fr;gap:2px 12px;padding:9px 0;border-top:1px solid var(--line);font-size:15px}
+@media(min-width:560px){.tl li{grid-template-columns:170px 1fr}}
+.tl .w{color:var(--blue-dark);font-weight:700}
 /* command center */
 .cc{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0 0}
 @media(min-width:640px){.cc{grid-template-columns:1fr 1fr}}
@@ -238,15 +271,16 @@ function proposalBody(opts: { approvedOn?: string }) {
   const c = data.client;
   const p = data.price;
   const v = data.value;
-  const ct = data.contacts;
+
 
   const runTotal = p.run_monthly * p.run_months;
-  // Year one at Parker, all in: the Back Cover, the build, the 90 days, then
-  // Right to Use for the rest of the twelve months. The Back Cover's monthly
-  // folds into the run and Right to Use fees (Wade 10/1), so this is the total.
-  const yearOne =
-    p.back_cover + p.build + runTotal + p.rtu_monthly * (12 - p.run_months);
+  // One up-front price (Wade 10/1 after the Aaron call): the Back Cover plus
+  // the build, paid in two equal halves. The Back Cover's monthly folds into
+  // the support and Right to Use fees, so year one at Parker, all in, is the
+  // up-front total, the 3 support months, then Right to Use for the other 9.
   const firstTotal = p.back_cover + p.build;
+  const half = firstTotal / 2;
+  const yearOne = firstTotal + runTotal + p.rtu_monthly * (12 - p.run_months);
   const yearOnePct = (yearOne / v.parker_revenue) * 100;
   const pctLine =
     yearOnePct < 4 ? "under 4%" : `about ${Math.round(yearOnePct)}%`;
@@ -271,7 +305,42 @@ function proposalBody(opts: { approvedOn?: string }) {
     `<b><span class="cur">$</span>${esc(n.toLocaleString("en-US"))}</b>`;
   const bar = (cls: string, n: number, label: string) =>
     `<div class="bar ${cls}">${amt(n)}<i style="height:${h(n)}%"></i><s>${esc(label)}</s></div>`;
-  const stackedBar = `<div class="bar build stack">${amt(firstTotal)}<i class="seg top" style="height:${h(p.build)}%"><em>Build ${esc(money(p.build))}</em></i><i class="seg base" style="height:${h(p.back_cover)}%" title="Back Cover ${esc(money(p.back_cover))}"></i><s>Back Cover ${esc(money(p.back_cover))} + Build</s></div>`;
+  const stackedBar = `<div class="bar build stack">${amt(firstTotal)}<i class="seg top" style="height:${h(p.build)}%"><em>Build ${esc(money(p.build))}</em></i><i class="seg base" style="height:${h(p.back_cover)}%" title="Back Cover ${esc(money(p.back_cover))}"></i><s>Up front, two halves</s></div>`;
+
+  // Scope of work, in build order: what we do on the left, what you do on
+  // the right, dependencies marked. One column on phones.
+  const scopeRows = data.scope.items
+    .map(
+      (it, i) =>
+        `<div class="r${i === 0 ? " one" : ""}"><div class="we"><strong><span class="o">${i + 1}</span>${esc(it.title)}</strong><p>${esc(it.we)}</p></div><div class="you"><span class="lbl">What you do</span><p>${it.dep ? '<span class="dep">We wait on this</span>' : ""}${esc(it.you)}</p></div></div>`,
+    )
+    .join("");
+  const scopeHtml = `
+  <div class="scope">
+    <div class="hd"><div>What we do, in build order</div><div>What you do</div></div>
+    ${scopeRows}
+  </div>
+  <p class="outscope">${esc(data.scope.out_of_scope)}</p>`;
+
+  // Contacts: Aaron and Jordan (Wade 10/1), Wade as one secondary line.
+  const contactCards = data.contacts.primary
+    .map(
+      (k) =>
+        `<div class="card"><strong>${esc(k.name)}</strong><p>${esc(k.title)}, Kerzie AI Solutions<br><a href="mailto:${esc(k.email)}">${esc(k.email)}</a><br><a href="${esc(k.card)}" target="_blank" rel="noopener">${esc(k.card_label)}</a></p></div>`,
+    )
+    .join("");
+  const sec = data.contacts.secondary;
+
+  // Tentative timeline (Wade 10/1): conditional on the signed agreement and
+  // down payment by the hard date. Labeled tentative on the page.
+  const tl = data.timeline;
+  const timelineBlock = `
+  <div class="timeline">
+    <span class="tag">${esc(tl.label)}</span>
+    <strong>${esc(tl.heading)}</strong>
+    <p class="note">${esc(tl.intro)}</p>
+    <ul class="tl">${tl.rows.map((r) => `<li><span class="w">${esc(r.when)}</span><span>${esc(r.what)}</span></li>`).join("")}</ul>
+  </div>`;
 
   const approvedBlock = opts.approvedOn
     ? `<div class="approved"><p class="kicker">What you approved</p><p>Signed ${esc(opts.approvedOn)}. This is the offer as agreed, kept here so everyone works from the same page.</p></div>`
@@ -351,26 +420,17 @@ function proposalBody(opts: { approvedOn?: string }) {
   ${approvedBlock}
 
   <p class="lead">Every customer and member in one record, and everything else runs off it. The answering, the club repair texts, the posts, the follow-ups, the events, the booking. One place, every store.</p>
-  <p class="note">First, The Back Cover pages: the separate agreement you already have. It's your first investment, and everything below runs on top of it.</p>
+  <p class="note">The Back Cover pages come first, and they are included in the one price below. Everything else runs on top of them.</p>
   ${commandCenter}
 
-  <h2><span class="num">2</span>What you get</h2>
-  <div class="cards">
-    <div class="card"><strong>The cockpit</strong><p>Where ${esc(c.lead)}, you or Brenna instruct the work, on the Swing Bays Mac.</p></div>
-    <div class="card"><strong>The dashboard</strong><p>One private address on your phone: posts, calls, DMs, repairs, bookings and new contacts, as they happen.</p></div>
-    <div class="card"><strong>Every call, text and DM answered</strong><p>After hours too. ${esc(c.next_store)}'s number is answered from opening day.</p></div>
-    <div class="card"><strong>Club repair off paper</strong><p>Orders come in on the website or the counter iPad. ${esc(c.lead)} works one queue. The customer gets the "your clubs are ready" text with a pay link.</p></div>
-    <div class="card"><strong>Your voice everywhere</strong><p>Scheduled posts for every store, plus your daily lesson videos turned into shorts, a Swing Bays YouTube channel and TikTok.</p></div>
-    <div class="card"><strong>Bring people back</strong><p>First visits, new members, renewals, failed payments and lapsed customers each get the right message at the right time.</p></div>
-    <div class="card"><strong>Corporate events found and followed up</strong><p>Local companies found, contacted and followed through to a booking. Your staff approves every send.</p></div>
-    <div class="card"><strong>Booking by text</strong><p>Book a bay or a lesson inside a text or DM. Switched on the day SimHouse is connected.</p></div>
-    <div class="card"><strong>Every new store opens with all of it</strong><p>Pages, number and outreach live before the doors open, plus the franchise playbook loaded and ready.</p></div>
-  </div>
+  <h2><span class="num">2</span>Scope of work, in build order</h2>
+  <p class="lead">One price, one decision. This is the order we build in: The Back Cover first, then the customer record and outreach, then club repair and after-hours answering, then the rest.</p>
+  ${scopeHtml}
   <p class="note" style="margin-top:12px">No ad budget needed to start. This is built to grow by word of mouth and your own channels.</p>
 
   <h2><span class="num">3</span>How it works</h2>
   <ol class="steps">
-    <li><strong>Build it all at once.</strong> We build everything on our side, prove it, then move it onto a Mac Swing Bays owns. ${esc(c.first_store)} goes live first.</li>
+    <li><strong>Build it all at once, in the order above.</strong> We build everything on our side, prove it, then move it onto the Swing Bays Mac server. ${esc(c.first_store)} goes live first.</li>
     <li><strong>Run it together for 90 days.</strong>
       <ul>
         <li>Days 1 to 30: we run it, ${esc(c.lead)} learns.</li>
@@ -389,44 +449,43 @@ function proposalBody(opts: { approvedOn?: string }) {
       ${bar("after", p.rtu_monthly, "Month 4")}
       ${bar("after", p.rtu_monthly, "and on")}
     </div>
-    <p class="cap"><span class="usd">In dollars. </span>Big once, then small, then smaller. You are never committing to something that grows.</p>
+    <p class="cap"><span class="usd">In dollars. </span>The first bar includes The Back Cover (${esc(money(p.back_cover))}). Big once, paid in two halves, then small, then smaller. You are never committing to something that grows.</p>
   </div>
 
   <h2><span class="num">4</span>The price</h2>
   <div class="pricebox">
-    <div class="row"><div class="amt">${esc(money(p.back_cover))}</div><div class="what"><strong>The Back Cover.</strong> ${esc(p.back_cover_terms[0].toUpperCase() + p.back_cover_terms.slice(1))}. Its monthly is included in the fees below.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.build))}</div><div class="what"><strong>Build everything.</strong> Once, ${esc(p.build_terms)}.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.run_monthly))}<small> a month</small></div><div class="what"><strong>Run it together for 90 days.</strong> ${esc(String(p.run_months))} months, the same each month, and it includes the Back Cover monthly.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.rtu_monthly))}<small> a month</small></div><div class="what"><strong>After hand-over: Right to Use and Updates.</strong> For ${esc(c.first_store)} and corporate, including The Back Cover, plus ${esc(money(p.rtu_per_store_monthly))} a month for each additional store on the system.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.new_store_template))}</div><div class="what"><strong>Each new store you open.</strong> The template, ${esc(p.new_store_run_note)}.</div></div>
+    <div class="row first"><div class="amt">${esc(money(firstTotal))}</div><div class="what"><strong>Up front, for everything in this proposal.</strong> The Back Cover included. Half at signing (${esc(money(half))}), half at the end of the first 30 days (${esc(money(half))}).</div></div>
+    <div class="row"><div class="amt">${esc(money(p.run_monthly))}<small> a month</small></div><div class="what"><strong>Support for the first ${esc(String(p.run_months))} months.</strong> We run it with you for the 90 days. The Back Cover monthly is included.</div></div>
+    <div class="row"><div class="amt">${esc(money(p.rtu_monthly))}<small> a month</small></div><div class="what"><strong>After hand-over.</strong> Covers your first ${esc(String(p.rtu_included_stores))} active stores, The Back Cover included.</div></div>
+    <div class="row"><div class="amt">${esc(money(p.rtu_per_store_monthly))}<small> a month</small></div><div class="what"><strong>Each additional store</strong> beyond the first ${esc(String(p.rtu_included_stores))}.</div></div>
+    <div class="row"><div class="amt">${esc(money(p.new_store_template))}</div><div class="what"><strong>Each new store you open.</strong> ${esc(p.new_store_includes[0].toUpperCase() + p.new_store_includes.slice(1))}.</div></div>
   </div>
-  <p class="value">${esc(c.first_store)} does about a million dollars a year (${esc(v.parker_revenue_source)} shows ${esc(money(v.parker_revenue))}). Year one at ${esc(c.first_store)}, all in, is ${esc(money(yearOne))}: ${esc(pctLine)} of that, and you own it. The ${esc(money(p.new_store_template))} template for each new store is ${esc(storeLine)} the ${esc(money(v.opening_ads_low))} to ${esc(money(v.opening_ads_high))} you already budget per store for opening ads.</p>
+  <p class="value">${esc(c.first_store)} does about a million dollars a year (${esc(v.parker_revenue_source)} shows ${esc(money(v.parker_revenue))}). Year one at ${esc(c.first_store)}, all in, is ${esc(money(yearOne))}: ${esc(pctLine)} of that, and you own it. The ${esc(money(p.new_store_template))} for each new store is ${esc(storeLine)} the ${esc(money(v.opening_ads_low))} to ${esc(money(v.opening_ads_high))} you already budget per store for opening ads.</p>
+  ${timelineBlock}
   ${optionalBlock}
 
   <h2><span class="num">5</span>Yours, in good faith</h2>
-  <p>Everything runs on a Mac Swing Bays owns, in accounts in Swing Bays' name. It's yours. There is no switch we can turn off.</p>
+  <p>Everything runs on the Swing Bays Mac server, bought in Swing Bays' name, in accounts in Swing Bays' name. It's yours. There is no switch we can turn off.</p>
   <p>The monthly after hand-over pays for the updates we roll out to every store, new pieces as we build them, and calling us when something breaks. Stop paying, and you keep everything you have; updates and support stop.</p>
   <p class="note">Use it at every Swing Bays location. It isn't for resale to other businesses.</p>
 
-  <h2><span class="num">6</span>${esc(c.next_store)}, ${esc(c.next_store_opens)}</h2>
-  <p>The first proof. ${esc(c.next_store)}'s number is answered by AI from opening day, and the opening invitations go out from the same record the store will run on.</p>
+  <h2><span class="num">6</span>${esc(data.nov1.heading)}</h2>
+  <p>${esc(data.nov1.body)}</p>
 
   <h2><span class="num">7</span>What we need from you</h2>
   <ol class="need">
-    <li>Sign.</li>
-    <li>The Mac and the Claude plan, bought in Swing Bays' name. We spec both.</li>
+    <li><strong>The signed agreement and the down payment (${esc(money(half))}) by <span class="due">${esc(p.deposit_due)}</span>.</strong></li>
+    <li>The Swing Bays Mac server and the Claude plan, bought in Swing Bays' name. We spec both.</li>
     <li>${esc(c.lead)} as the one point of contact.</li>
-    <li>A session with ${esc(c.sim_contact)} on SimHouse.</li>
+    <li>A session with ${esc(c.sim_contact)} on SimHouse, before Jordan's first visit.</li>
     <li>Add us as a user on the website and on Square. We do the connecting.</li>
   </ol>
 
   <div class="cta">
-    <p class="big">Next step: sign, and we start the build.</p>
-    <p>Aaron is your contact.<br>
-    Aaron Jones, Technical Specialist, Kerzie AI Solutions<br>
-    <a href="${esc(ct.aaron_card)}" target="_blank" rel="noopener">kerzie.ai/card/aaron</a><br>
-    Wade Kerzie, Kerzie AI Solutions, McKinney, Texas<br>
-    <a href="mailto:${esc(ct.wade_email)}">${esc(ct.wade_email)}</a></p>
+    <p class="big">Next step: the signed agreement and the down payment by ${esc(p.deposit_due)}, and we start the build.</p>
+    <p>Aaron and Jordan are your contacts.</p>
+    <div class="contacts">${contactCards}</div>
+    <p class="note">${esc(sec.name)}, ${esc(sec.line)}: <a href="mailto:${esc(sec.email)}">${esc(sec.email)}</a></p>
   </div>
 </div>`;
 }
