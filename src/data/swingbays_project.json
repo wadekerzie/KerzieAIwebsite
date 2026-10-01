@@ -1,0 +1,136 @@
+{
+  "_readme": "Drives kerzie.ai/swingbays/proposal (src/app/swingbays/proposal/route.ts). mode: 'proposal' shows the offer; 'project' puts the dashboard on top and keeps the proposal underneath as 'What you approved'. ?view=project previews project mode without changing this field. Recipe: Wade OS clients/swing_bays/README_project_page.md.",
+  "mode": "proposal",
+  "updated": "2026-10-01",
+  "client": {
+    "name": "The Swing Bays",
+    "tagline": "Indoor golf, every location",
+    "owner": "Dustin Miller",
+    "lead": "Colter",
+    "sim_contact": "Keegan",
+    "first_store": "Parker",
+    "next_store": "Englewood",
+    "next_store_opens": "November 1"
+  },
+  "prepared": {
+    "date": "October 1, 2026",
+    "by": "Aaron Jones and Wade Kerzie, Kerzie AI Solutions"
+  },
+  "price": {
+    "build": 27500,
+    "build_terms": "half at signing, half when Parker goes live",
+    "run_monthly": 2500,
+    "run_months": 3,
+    "rtu_monthly": 500,
+    "rtu_per_store_monthly": 150,
+    "new_store_template": 7500,
+    "new_store_run_note": "plus its own 90 days with that store's lead"
+  },
+  "value": {
+    "parker_revenue": 1013728,
+    "parker_revenue_source": "the FDD's Item 19, fiscal year ending June 30, 2025",
+    "opening_ads_low": 15000,
+    "opening_ads_high": 30000
+  },
+  "contacts": {
+    "aaron_card": "https://kerzie.ai/card/aaron",
+    "wade_email": "wade@kerzie.ai"
+  },
+  "project": {
+    "example_data": true,
+    "signed": "2026-09-08",
+    "clock_start": "2026-09-22",
+    "clock_days": 90,
+    "milestones": [
+      { "key": "signed", "label": "Signed", "date": "2026-09-08", "example": true },
+      { "key": "parker_live", "label": "Parker go-live", "date": "2026-09-22", "example": true },
+      { "key": "englewood", "label": "Englewood opening", "date": "2026-11-01" },
+      { "key": "day30", "label": "Day 30: Colter takes the wheel", "offset": 30 },
+      { "key": "day60", "label": "Day 60: Colter runs it, we watch", "offset": 60 },
+      { "key": "day90", "label": "Day 90: Colter signs off, handed over", "offset": 90 }
+    ],
+    "statuses": ["Not started", "Building", "Live at Parker", "Handed to Colter"],
+    "areas": [
+      {
+        "name": "One record",
+        "pieces": [
+          { "n": 3, "name": "Every customer and member in one record", "status": "Live at Parker", "example": true },
+          { "n": 4, "name": "Where each person came from, kept on the record", "status": "Live at Parker", "example": true },
+          { "n": 1, "name": "The Swing Bays OS on a Mac Swing Bays owns", "status": "Live at Parker", "example": true }
+        ]
+      },
+      {
+        "name": "Answered",
+        "pieces": [
+          { "n": 6, "name": "Calls and texts answered after hours", "status": "Live at Parker", "example": true },
+          { "n": 8, "name": "Instagram and Facebook messages answered", "status": "Building", "example": true },
+          { "n": 7, "name": "Englewood's number answered from opening day", "status": "Building", "example": true },
+          { "n": 35, "name": "Englewood opening invitations and RSVPs", "status": "Building", "example": true }
+        ]
+      },
+      {
+        "name": "Club repair",
+        "pieces": [
+          { "n": 10, "name": "Repair intake on the website and the counter iPad", "status": "Live at Parker", "example": true },
+          { "n": 11, "name": "Colter's repair queue and daily forecast", "status": "Live at Parker", "example": true },
+          { "n": 12, "name": "'Your clubs are ready' text with a pay link", "status": "Live at Parker", "example": true },
+          { "n": 13, "name": "Promised date and repair follow-up", "status": "Building", "example": true }
+        ]
+      },
+      {
+        "name": "Your voice",
+        "pieces": [
+          { "n": 15, "name": "Posts on schedule, every store", "status": "Building", "example": true },
+          { "n": 16, "name": "Daily lesson videos cut into shorts", "status": "Building", "example": true },
+          { "n": 16, "name": "Swing Bays YouTube channel and TikTok", "status": "Not started", "example": true },
+          { "n": 19, "name": "Email that goes out on a schedule", "status": "Not started", "example": true },
+          { "n": 18, "name": "Opt-in text list with offers", "status": "Not started", "example": true }
+        ]
+      },
+      {
+        "name": "Bring people back",
+        "pieces": [
+          { "n": 25, "name": "First visit to return visit", "status": "Not started", "example": true },
+          { "n": 26, "name": "New member welcome", "status": "Not started", "example": true },
+          { "n": 27, "name": "'We missed you' for members slipping away", "status": "Not started", "example": true },
+          { "n": 28, "name": "Renewals", "status": "Not started", "example": true },
+          { "n": 29, "name": "Failed payment recovery", "status": "Not started", "example": true },
+          { "n": 32, "name": "Lapsed customers invited back", "status": "Not started", "example": true },
+          { "n": 33, "name": "Outreach in waves to every store", "status": "Not started", "example": true }
+        ]
+      },
+      {
+        "name": "Corporate events",
+        "pieces": [
+          { "n": 34, "name": "Local companies found, contacted and followed up", "status": "Not started", "example": true },
+          { "n": 21, "name": "Corporate events page for each market", "status": "Live at Parker", "example": true }
+        ]
+      },
+      {
+        "name": "Booking by text",
+        "pieces": [
+          { "n": 22, "name": "SimHouse connected (session with Keegan first)", "status": "Not started", "example": true },
+          { "n": 23, "name": "Book a bay or lesson inside a text or DM", "status": "Not started", "example": true },
+          { "n": 24, "name": "'Is there a bay open tonight at seven?' answered live", "status": "Not started", "example": true }
+        ]
+      },
+      {
+        "name": "New stores and the playbook",
+        "pieces": [
+          { "n": 41, "name": "Coming-soon stores live from day one", "status": "Building", "example": true },
+          { "n": 14, "name": "Repair queue for every store", "status": "Not started", "example": true },
+          { "n": 36, "name": "New-location opening checklist and board", "status": "Not started", "example": true },
+          { "n": 37, "name": "Franchise onboarding playbook, loaded", "status": "Not started", "example": true },
+          { "n": 38, "name": "Staff training materials", "status": "Not started", "example": true },
+          { "n": 40, "name": "The Monday page for Dustin and partners", "status": "Not started", "example": true }
+        ]
+      }
+    ],
+    "log": [
+      { "date": "2026-09-08", "who": "Dustin Miller", "what": "Signed. First half of the build paid.", "effect": "Build starts. No change to scope or price.", "example": true },
+      { "date": "2026-09-22", "who": "Aaron Jones", "what": "Parker live: one record, after-hours answering, club repair intake and the ready text.", "effect": "Second half of the build due. The 90 days start today.", "example": true },
+      { "date": "2026-09-26", "who": "Colter", "what": "Asked for the ready text to go out between 9 AM and 7 PM only.", "effect": "Done the same day. No change to scope or price.", "example": true },
+      { "date": "2026-09-30", "who": "Dustin Miller", "what": "Approved the Swing Bays YouTube channel name and the TikTok handle.", "effect": "Channels open this week. No change to scope or price.", "example": true }
+    ]
+  }
+}
