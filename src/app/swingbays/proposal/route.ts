@@ -108,7 +108,8 @@ p{margin:0 0 14px}
 .steps ul li{padding:0 0 4px}
 .chart{margin:22px 0 8px;border:1px solid var(--line);border-radius:8px;padding:18px 12px 12px;background:var(--soft)}
 .bars{display:flex;align-items:flex-end;gap:6px;height:190px}
-@media(max-width:420px){.bars{gap:4px}.chart{padding:16px 8px 12px}.bar b{font-size:10px}.bar s{font-size:10px}}
+.chart .cap .usd{display:none}
+@media(max-width:420px){.bars{gap:4px}.chart{padding:16px 8px 12px}.bar b .cur{display:none}.chart .cap .usd{display:inline}}
 .bar{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
 .bar i{display:block;width:100%;max-width:64px;background:var(--blue-dark);border-radius:4px 4px 0 0}
 .bar.run i{background:var(--blue)}
@@ -122,6 +123,9 @@ p{margin:0 0 14px}
 .bar.stack i.base{border-radius:0;background:var(--coral);border-top:2px solid var(--paper)}
 .bar.stack i em{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);font-style:normal;font-size:10px;line-height:1.15;color:#fff;text-align:center;padding:0 3px;font-weight:700}
 .bar.stack s{color:var(--blue-dark);font-weight:600}
+/* narrow phones: these sit after the base .bar b / .bar s rules so they win */
+@media(max-width:420px){.bar b{font-size:9.5px;letter-spacing:-.01em}.bar s{font-size:10px}}
+@media(max-width:340px){.bar b{font-size:8.5px}}
 @media(max-width:420px){.bar.stack i em{font-size:9px}}
 .chart .cap{margin:12px 0 0;font-size:13px;color:var(--muted);text-align:center}
 .pricebox{margin-top:18px;border:2px solid var(--blue-dark);border-radius:8px;overflow:hidden}
@@ -260,9 +264,14 @@ function proposalBody(opts: { approvedOn?: string }) {
   // on top.
   const max = firstTotal;
   const h = (n: number) => Math.max(5, Math.round((n / max) * 100));
-  const bar = (cls: string, n: number, label: string, top?: string) =>
-    `<div class="bar ${cls}"><b>${esc(top ?? money(n))}</b><i style="height:${h(n)}%"></i><s>${esc(label)}</s></div>`;
-  const stackedBar = `<div class="bar build stack"><b>${esc(money(firstTotal))}</b><i class="seg top" style="height:${h(p.build)}%"><em>Build ${esc(money(p.build))}</em></i><i class="seg base" style="height:${h(p.back_cover)}%" title="Back Cover ${esc(money(p.back_cover))}"></i><s>Back Cover ${esc(money(p.back_cover))} + Build</s></div>`;
+  // The bar-value labels carry the "$" in its own span: under 420px it hides
+  // and the caption says "In dollars." once, so three "$2,500" labels never
+  // run together on a phone.
+  const amt = (n: number) =>
+    `<b><span class="cur">$</span>${esc(n.toLocaleString("en-US"))}</b>`;
+  const bar = (cls: string, n: number, label: string) =>
+    `<div class="bar ${cls}">${amt(n)}<i style="height:${h(n)}%"></i><s>${esc(label)}</s></div>`;
+  const stackedBar = `<div class="bar build stack">${amt(firstTotal)}<i class="seg top" style="height:${h(p.build)}%"><em>Build ${esc(money(p.build))}</em></i><i class="seg base" style="height:${h(p.back_cover)}%" title="Back Cover ${esc(money(p.back_cover))}"></i><s>Back Cover ${esc(money(p.back_cover))} + Build</s></div>`;
 
   const approvedBlock = opts.approvedOn
     ? `<div class="approved"><p class="kicker">What you approved</p><p>Signed ${esc(opts.approvedOn)}. This is the offer as agreed, kept here so everyone works from the same page.</p></div>`
@@ -380,7 +389,7 @@ function proposalBody(opts: { approvedOn?: string }) {
       ${bar("after", p.rtu_monthly, "Month 4")}
       ${bar("after", p.rtu_monthly, "and on")}
     </div>
-    <p class="cap">Big once, then small, then smaller. You are never committing to something that grows.</p>
+    <p class="cap"><span class="usd">In dollars. </span>Big once, then small, then smaller. You are never committing to something that grows.</p>
   </div>
 
   <h2><span class="num">4</span>The price</h2>
