@@ -73,7 +73,7 @@
     .steps { counter-reset: s; margin: 0 0 8px; padding: 0; list-style: none; }
     .steps > li { counter-increment: s; position: relative; padding-left: 44px; margin-bottom: 14px; }
     .steps ul { margin: 8px 0 0; padding-left: 18px; list-style: disc; }
-    .steps ul li { padding-left: 0; margin-bottom: 6px; }
+    .steps ul li { padding-left: 0; margin-bottom: 6px; overflow-wrap: anywhere; }
     .steps > li::before { content: counter(s); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; background: var(--blue-dark); color: #fff; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
     table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; }
     th, td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -111,7 +111,7 @@
       <p class="said">"At 11 websites, $1,500 setup and $1,000 a website is enough that I have to kind of think about that."<cite>Gabe, on the single-store rate</cite></p>
       <p class="said">"I have one inventory feed per rooftop, and I have eight rooftops. And I can also send them all as one combined."<cite>Gabe, on the feed</cite></p>
       <p class="said">"Do you have a file schema of what you would want and how it would be preferred?"<cite>Gabe, on what he needs from us</cite></p>
-      <p>Three answers below, in that order: a group rate priced per rooftop, not per website; one feed with a location ID is exactly how we want it; and the schema is on this page.</p>
+      <p>Three answers below, in that order: a group rate at half the published rate, priced per rooftop, not per website; one feed with a location ID is exactly how we want it; and the schema is on this page.</p>
 
       <h2>Where your pages stand today</h2>
       <a class="linkcard" href="https://www.mikemaroonecolorado.com/llms.txt" target="_blank" rel="noopener">
@@ -187,7 +187,7 @@
       <p>Standard. We follow <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Chrome's developer guidelines</a>. Each store's pages are built to the llms.txt specification (v2) and checked against Chrome's Lighthouse audit before and after placement. You get the audit receipt for every store with the handoff. Your robots.txt stays the gatekeeper; the pages sit behind it.</p>
 
       <h2>The package: priced per rooftop, not per website</h2>
-      <p>Eight rooftops on one shared feed is one job with eight outputs, so it is priced that way. Boulder's two sites count once. The single-store rate you heard on the call is shown for comparison.</p>
+      <p>Eight rooftops on one shared feed is one job with eight outputs, so it is priced that way: half the published rate, across the board, on setup and on the monthly. Boulder's two sites count once. The published single-store rate is shown for comparison.</p>
       <div class="pricing">
         <div class="price-card">
           <div class="name">Single rooftop, on its own</div>
@@ -200,43 +200,31 @@
         </div>
         <div class="price-card featured">
           <div class="name">Maroone USA group, eight rooftops</div>
-          <div class="amount">$7,500 <small>once</small></div>
-          <div class="per">group setup, all eight rooftops</div>
-          <div class="amount" style="margin-top:10px">$699 <small>per rooftop per month</small></div>
-          <div class="per">$5,592 a month for all eight</div>
+          <div class="amount">$6,000 <small>once</small></div>
+          <div class="per">group setup, all eight rooftops ($750 per rooftop)</div>
+          <div class="amount" style="margin-top:10px">$500 <small>per rooftop per month</small></div>
+          <div class="per">$4,000 a month for all eight</div>
           <ul>
+            <li>Half the published rate, on setup and on the monthly</li>
             <li>Setup covers the feed mapping, 8 identity pages, 9 inventory pages, placement on every site, the Chrome audit receipts, and the cleanup list for your website team, per store</li>
             <li>Monthly covers the daily rebuild, placement, read check, and your receipt page, for every rooftop</li>
             <li>A ninth rooftop joins at the same per-rooftop monthly</li>
           </ul>
         </div>
       </div>
-      <h3>Group rate by rooftop count</h3>
-      <div class="tablewrap">
-      <table>
-        <thead><tr><th>Rooftops on one feed</th><th>Monthly, per rooftop</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td>$999</td></tr>
-          <tr><td>2 to 3</td><td>$849</td></tr>
-          <tr><td>4 to 6</td><td>$749</td></tr>
-          <tr><td>7 to 10 (Maroone USA)</td><td>$699</td></tr>
-          <tr><td>11 or more</td><td>quoted</td></tr>
-        </tbody>
-      </table>
-      </div>
       <p class="footnote">Setup is billed once when we start. The monthly starts per rooftop the morning that rooftop's pages go live, so the stores that come up first are the only ones billed first. Agreement and invoices are issued by Kerzie AI Solutions.</p>
 
       <h2>All eight, live in October</h2>
       <p><strong>You don't pilot being findable.</strong> A pilot is for something you can score, and nobody can score AI answers cleanly yet. We won't invent a scorecard to make a test look good. What this does is get your stores ready, and a group is either ready or it isn't. If Chevrolet North is ready and Chevrolet South is not, a buyer asking ChatGPT about Chevy dealers in Colorado Springs hears about one Maroone store clearly and the other poorly.</p>
       <p><strong>We are holding our October build calendar for Maroone.</strong> With user access on all eight sites by <strong>Friday, October 9</strong>, all eight rooftops are live by <strong>October 31</strong>. The first store goes live within days of access, the rest follow as each site is placed, and each rooftop is billed only from the morning its pages are up.</p>
-      <h3>Two stores to "see how it goes" costs more, per store</h3>
+      <h3>Two stores to "see how it goes" costs twice as much, per store</h3>
       <div class="tablewrap">
       <table>
         <thead><tr><th></th><th>Two rooftops</th><th>All eight rooftops</th></tr></thead>
         <tbody>
-          <tr><td>Setup</td><td>$3,000 ($1,500 per store)</td><td>$7,500 (about $938 per store)</td></tr>
-          <tr><td>Monthly, per rooftop</td><td>$849</td><td>$699</td></tr>
-          <tr><td>Monthly, total</td><td>$1,698</td><td>$5,592</td></tr>
+          <tr><td>Setup</td><td>$3,000 ($1,500 per store)</td><td>$6,000 ($750 per store)</td></tr>
+          <tr><td>Monthly, per rooftop</td><td>$999</td><td>$500</td></tr>
+          <tr><td>Monthly, total</td><td>$1,998</td><td>$4,000</td></tr>
           <tr><td>Stores ready</td><td>2 of 8</td><td>8 of 8, by October 31</td></tr>
         </tbody>
       </table>
@@ -268,12 +256,13 @@
       <p style="font-size:14px;color:var(--muted)">Required: location_id, vin, year, make, model, price, vdp_url. Everything else makes the page better but does not block it. Send one day's feed as a sample and we confirm the mapping the same day.</p>
 
       <h2>Next step</h2>
-      <p>Reply to Wade's email with "yes" or with the one thing that needs to change on this page. Same day you get the agreement, the feed instructions, and the user-add request for all eight sites. User access by Friday, October 9 keeps all eight live by October 31.</p>
-      <a class="cta" href="mailto:wade@kerzie.ai?subject=Maroone%20USA%20Back%20Cover%2C%20eight%20rooftops">Reply to Wade</a>
+      <p>Reply to Aaron and Jordan with "yes" or with the one thing that needs to change on this page: <strong>aaron@kerzie.ai</strong> and <strong>jordan@kerzie.ai</strong>. Same day you get the agreement, the feed instructions, and the user-add request for all eight sites. User access by Friday, October 9 keeps all eight live by October 31.</p>
+      <a class="cta" href="mailto:aaron@kerzie.ai,jordan@kerzie.ai?subject=Maroone%20USA%20Back%20Cover%2C%20eight%20rooftops">Reply to Aaron and Jordan</a>
 
       <div class="footer">
-        <strong>Wade Kerzie</strong> &middot; Kerzie AI Solutions &middot; wade@kerzie.ai &middot; 214-668-7986<br>
-        With Aaron Jones, our technical specialist on the ground in Colorado.
+        <strong>Aaron Jones</strong> &middot; Technical Specialist, Colorado &middot; aaron@kerzie.ai<br>
+        <strong>Jordan Holzmiller</strong> &middot; Account Executive, The Back Cover &middot; jordan@kerzie.ai<br>
+        With Wade Kerzie, Kerzie AI Solutions.
       </div>
     </div>
   </div>
