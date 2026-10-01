@@ -36,6 +36,47 @@
     "aaron_card": "https://kerzie.ai/card/aaron",
     "wade_email": "wade@kerzie.ai"
   },
+  "command_center": {
+    "_note": "Wade memo 10/1 12:11 PM. Two parts: the cockpit (where work is instructed, in Claude on the Swing Bays Mac) and the dashboard (one private web address, phone or laptop, updated as things happen). The sample numbers below are placeholders shown as 'Sample' on the page; they are not real.",
+    "cockpit": "On the Swing Bays Mac, in Claude. This is where the work is instructed from: schedule the month's posts, change what the AI says on the phone, add a store, ask for the numbers. Colter, Dustin or Brenna sits here.",
+    "dashboard": "One private web address, open it on your phone or laptop. It updates as things happen, so you see how the business is running without asking anyone.",
+    "dashboard_shows": [
+      "The post calendar for every store, a calendar view like the one Kerzie AI runs its own on",
+      "Calls the AI answered and handled",
+      "DMs received across Instagram and Facebook",
+      "Club repairs in the queue and done",
+      "Bookings",
+      "New contacts in the customer record"
+    ],
+    "sample": {
+      "label": "Sample",
+      "calls_answered": 14,
+      "calls_handled": 11,
+      "dms": 9,
+      "repairs_queue": 6,
+      "repairs_done": 4,
+      "bookings": 23,
+      "new_contacts": 17,
+      "week": [
+        { "day": "Mon", "parker": 1, "englewood": 1 },
+        { "day": "Tue", "parker": 1, "englewood": 0 },
+        { "day": "Wed", "parker": 1, "englewood": 1 },
+        { "day": "Thu", "parker": 0, "englewood": 1 },
+        { "day": "Fri", "parker": 1, "englewood": 1 },
+        { "day": "Sat", "parker": 1, "englewood": 0 },
+        { "day": "Sun", "parker": 0, "englewood": 0 }
+      ]
+    }
+  },
+  "optional": {
+    "money_view": {
+      "name": "Money view",
+      "what": "A read-only connection to QuickBooks or Square, added to the dashboard: money in, money out, revenue and new members.",
+      "who": "Visible only to the people Dustin chooses, for example Dustin and Brenna.",
+      "promise": "We never move, change, or touch your money. It is a view, nothing more.",
+      "price": "Quoted if you want it. Not included in the prices above."
+    }
+  },
   "project": {
     "example_data": true,
     "signed": "2026-09-08",
@@ -52,11 +93,22 @@
     "statuses": ["Not started", "Building", "Live at Parker", "Handed to Colter"],
     "areas": [
       {
+        "name": "Command center",
+        "pieces": [
+          { "n": 1, "name": "The cockpit set up on the Swing Bays Mac, in Claude", "status": "Live at Parker", "example": true },
+          { "n": 42, "name": "The dashboard live at its private web address", "status": "Building", "example": true },
+          { "n": 3, "name": "Connected: the customer record (GHL)", "status": "Live at Parker", "example": true },
+          { "n": 22, "name": "Connected: SimHouse", "status": "Not started", "example": true },
+          { "n": 12, "name": "Connected: Square", "status": "Live at Parker", "example": true },
+          { "n": 15, "name": "Connected: Instagram, Facebook, TikTok, YouTube", "status": "Building", "example": true },
+          { "n": 6, "name": "Connected: the voice AI on the phones", "status": "Live at Parker", "example": true }
+        ]
+      },
+      {
         "name": "One record",
         "pieces": [
           { "n": 3, "name": "Every customer and member in one record", "status": "Live at Parker", "example": true },
-          { "n": 4, "name": "Where each person came from, kept on the record", "status": "Live at Parker", "example": true },
-          { "n": 1, "name": "The Swing Bays OS on a Mac Swing Bays owns", "status": "Live at Parker", "example": true }
+          { "n": 4, "name": "Where each person came from, kept on the record", "status": "Live at Parker", "example": true }
         ]
       },
       {

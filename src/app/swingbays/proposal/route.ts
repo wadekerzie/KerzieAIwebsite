@@ -125,6 +125,43 @@ p{margin:0 0 14px}
 .pricebox .what strong{color:var(--blue-dark)}
 .pricebox .what{font-size:15px}
 .value{margin:14px 0 0;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:15px}
+/* command center */
+.cc{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0 0}
+@media(min-width:640px){.cc{grid-template-columns:1fr 1fr}}
+.cc .card{border-left-color:var(--blue-dark)}
+.cc .card strong{font-size:18px}
+.cc .card p+p{margin-top:8px}
+.cc .card ul{margin:8px 0 0;padding-left:18px;font-size:15px;color:#2b3038}
+.cc .card ul li{padding:0 0 3px}
+.phonewrap{margin:22px auto 0;max-width:340px}
+.phone{position:relative;background:var(--ink);border-radius:34px;padding:12px;box-shadow:0 10px 30px rgba(17,19,24,.18)}
+.phone .screen{background:var(--soft);border-radius:24px;padding:16px 14px 18px;overflow:hidden}
+.phone .sample{position:absolute;top:-10px;right:14px;background:var(--coral);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;padding:4px 10px;border-radius:12px}
+.phone .ttl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-dark);font-weight:800;margin:0}
+.phone .ttl small{display:block;font-size:11px;letter-spacing:.04em;text-transform:none;color:var(--muted);font-weight:600;margin-top:2px}
+.phone .tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 0}
+.phone .tile{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:9px 10px}
+.phone .tile b{display:block;font-size:22px;line-height:1.05;color:var(--blue-dark);font-weight:800}
+.phone .tile b small{font-size:12px;color:var(--muted);font-weight:600;margin-left:4px}
+.phone .tile span{display:block;font-size:11px;color:var(--muted);margin-top:3px;line-height:1.25}
+.phone .cal{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:9px 10px;margin-top:8px}
+.phone .cal .h{display:flex;justify-content:space-between;align-items:baseline;font-size:11px;color:var(--muted);margin-bottom:6px}
+.phone .cal .h b{color:var(--blue-dark);font-size:12px}
+.phone .days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.phone .days div{font-size:10px;color:var(--muted);line-height:1.2}
+.phone .days i{display:block;height:18px;border-radius:4px;margin-top:3px;background:#e6ebf1}
+.phone .days i.p{background:var(--blue-dark)}
+.phone .days i.e{background:var(--coral)}
+.phone .days i.pe{background:linear-gradient(90deg,var(--blue-dark) 50%,var(--coral) 50%)}
+.phone .key{display:flex;gap:12px;font-size:10px;color:var(--muted);margin-top:6px}
+.phone .key i{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:-1px;margin-right:4px}
+.phone .foot{font-size:10px;color:var(--muted);margin:10px 0 0;text-align:center}
+.phonecap{text-align:center;font-size:13px;color:var(--muted);margin:12px 0 0}
+.optional{margin-top:22px;border:2px dashed var(--line);border-radius:8px;padding:16px 18px;background:#fff}
+.optional .tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#8a6500;background:#fff1cc;border-radius:4px;padding:2px 8px;margin-bottom:8px}
+.optional strong{color:var(--blue-dark);font-size:18px;display:block;margin-bottom:6px}
+.optional p{font-size:15px;margin:0 0 8px}
+.optional p:last-child{margin-bottom:0}
 .need{padding-left:20px;margin:10px 0}
 .need li{padding:0 0 8px}
 .cta{margin-top:40px;padding-top:24px;border-top:2px solid var(--blue-dark)}
@@ -208,6 +245,70 @@ function proposalBody(opts: { approvedOn?: string }) {
     ? `<div class="approved"><p class="kicker">What you approved</p><p>Signed ${esc(opts.approvedOn)}. This is the offer as agreed, kept here so everyone works from the same page.</p></div>`
     : "";
 
+  // Command center: the cockpit (where work is instructed) and the dashboard
+  // (one private address, phone or laptop). The phone mock carries sample
+  // numbers from the JSON, labeled "Sample" on the page.
+  const cc = data.command_center;
+  const sm = cc.sample;
+  const showsHtml = cc.dashboard_shows
+    .map((s) => `<li>${esc(s)}</li>`)
+    .join("");
+  const dayCell = (d: { day: string; parker: number; englewood: number }) => {
+    const cls =
+      d.parker && d.englewood ? "pe" : d.parker ? "p" : d.englewood ? "e" : "";
+    const title = [
+      d.parker ? c.first_store : "",
+      d.englewood ? c.next_store : "",
+    ]
+      .filter(Boolean)
+      .join(" and ");
+    return `<div>${esc(d.day)}<i class="${cls}" title="${esc(title || "No post")}"></i></div>`;
+  };
+  const phoneMock = `
+  <div class="phonewrap">
+    <div class="phone" role="img" aria-label="Sample of the Swing Bays dashboard on a phone">
+      <span class="sample">${esc(sm.label)}</span>
+      <div class="screen">
+        <p class="ttl">${esc(c.name)}<small>Today, every store. ${esc(sm.label)} numbers.</small></p>
+        <div class="tiles">
+          <div class="tile"><b>${sm.calls_answered}<small>${sm.calls_handled} handled</small></b><span>Calls the AI answered</span></div>
+          <div class="tile"><b>${sm.dms}</b><span>DMs received, Instagram and Facebook</span></div>
+          <div class="tile"><b>${sm.repairs_queue}<small>${sm.repairs_done} done</small></b><span>Club repairs in the queue</span></div>
+          <div class="tile"><b>${sm.bookings}</b><span>Bookings</span></div>
+          <div class="tile"><b>${sm.new_contacts}</b><span>New contacts in the record</span></div>
+          <div class="tile"><b>${sm.week.reduce((t, d) => t + d.parker + d.englewood, 0)}</b><span>Posts scheduled this week</span></div>
+        </div>
+        <div class="cal">
+          <div class="h"><b>Post calendar</b><span>this week</span></div>
+          <div class="days">${sm.week.map(dayCell).join("")}</div>
+          <div class="key"><span><i style="background:var(--blue-dark)"></i>${esc(c.first_store)}</span><span><i style="background:var(--coral)"></i>${esc(c.next_store)}</span></div>
+        </div>
+        <p class="foot">Updated as things happen</p>
+      </div>
+    </div>
+    <p class="phonecap">A sample of your dashboard. The numbers are placeholders; yours fill in as Parker runs.</p>
+  </div>`;
+
+  const commandCenter = `
+  <h2><span class="num">1</span>Your command center</h2>
+  <p class="lead">When it's all connected, there are two things you look at. One to run it, one to see it.</p>
+  <div class="cc">
+    <div class="card"><strong>The cockpit</strong><p>${esc(cc.cockpit)}</p></div>
+    <div class="card"><strong>The dashboard</strong><p>${esc(cc.dashboard)}</p><p>It shows:</p><ul>${showsHtml}</ul></div>
+  </div>
+  ${phoneMock}`;
+
+  const mv = data.optional.money_view;
+  const optionalBlock = `
+  <div class="optional">
+    <span class="tag">Optional add-on, not included above</span>
+    <strong>${esc(mv.name)}</strong>
+    <p>${esc(mv.what)}</p>
+    <p>${esc(mv.who)}</p>
+    <p><b>${esc(mv.promise)}</b></p>
+    <p class="note">${esc(mv.price)}</p>
+  </div>`;
+
   return `
 <div class="sheet">
   <p class="client">${esc(c.name)}<small>${esc(c.tagline)}</small></p>
@@ -219,9 +320,12 @@ function proposalBody(opts: { approvedOn?: string }) {
 
   <p class="lead">Every customer and member in one record, and everything else runs off it. The answering, the club repair texts, the posts, the follow-ups, the events, the booking. One place, every store.</p>
   <p class="note">First, The Back Cover pages: the separate agreement you already have. Everything below runs on top of them.</p>
+  ${commandCenter}
 
-  <h2><span class="num">1</span>What you get</h2>
+  <h2><span class="num">2</span>What you get</h2>
   <div class="cards">
+    <div class="card"><strong>The cockpit</strong><p>Where ${esc(c.lead)}, you or Brenna instruct the work, on the Swing Bays Mac.</p></div>
+    <div class="card"><strong>The dashboard</strong><p>One private address on your phone: posts, calls, DMs, repairs, bookings and new contacts, as they happen.</p></div>
     <div class="card"><strong>Every call, text and DM answered</strong><p>After hours too. ${esc(c.next_store)}'s number is answered from opening day.</p></div>
     <div class="card"><strong>Club repair off paper</strong><p>Orders come in on the website or the counter iPad. ${esc(c.lead)} works one queue. The customer gets the "your clubs are ready" text with a pay link.</p></div>
     <div class="card"><strong>Your voice everywhere</strong><p>Scheduled posts for every store, plus your daily lesson videos turned into shorts, a Swing Bays YouTube channel and TikTok.</p></div>
@@ -232,7 +336,7 @@ function proposalBody(opts: { approvedOn?: string }) {
   </div>
   <p class="note" style="margin-top:12px">No ad budget needed to start. This is built to grow by word of mouth and your own channels.</p>
 
-  <h2><span class="num">2</span>How it works</h2>
+  <h2><span class="num">3</span>How it works</h2>
   <ol class="steps">
     <li><strong>Build it all at once.</strong> We build everything on our side, prove it, then move it onto a Mac Swing Bays owns. ${esc(c.first_store)} goes live first.</li>
     <li><strong>Run it together for 90 days.</strong>
@@ -257,7 +361,7 @@ function proposalBody(opts: { approvedOn?: string }) {
     <p class="cap">Big once, then small, then smaller. You are never committing to something that grows.</p>
   </div>
 
-  <h2><span class="num">3</span>The price</h2>
+  <h2><span class="num">4</span>The price</h2>
   <div class="pricebox">
     <div class="row"><div class="amt">${esc(money(p.build))}</div><div class="what"><strong>Build everything.</strong> Once, ${esc(p.build_terms)}.</div></div>
     <div class="row"><div class="amt">${esc(money(p.run_monthly))}<small> a month</small></div><div class="what"><strong>Run it together for 90 days.</strong> ${esc(String(p.run_months))} months, the same each month.</div></div>
@@ -265,16 +369,17 @@ function proposalBody(opts: { approvedOn?: string }) {
     <div class="row"><div class="amt">${esc(money(p.new_store_template))}</div><div class="what"><strong>Each new store you open.</strong> The template, ${esc(p.new_store_run_note)}.</div></div>
   </div>
   <p class="value">${esc(c.first_store)} does about a million dollars a year (${esc(v.parker_revenue_source)} shows ${esc(money(v.parker_revenue))}). Year one at ${esc(c.first_store)}, all in, is ${esc(money(yearOne))}: ${esc(pctLine)} of that, and you own it. The ${esc(money(p.new_store_template))} template for each new store is ${esc(storeLine)} the ${esc(money(v.opening_ads_low))} to ${esc(money(v.opening_ads_high))} you already budget per store for opening ads.</p>
+  ${optionalBlock}
 
-  <h2><span class="num">4</span>Yours, in good faith</h2>
+  <h2><span class="num">5</span>Yours, in good faith</h2>
   <p>Everything runs on a Mac Swing Bays owns, in accounts in Swing Bays' name. It's yours. There is no switch we can turn off.</p>
   <p>The monthly after hand-over pays for the updates we roll out to every store, new pieces as we build them, and calling us when something breaks. Stop paying, and you keep everything you have; updates and support stop.</p>
   <p class="note">Use it at every Swing Bays location. It isn't for resale to other businesses.</p>
 
-  <h2><span class="num">5</span>${esc(c.next_store)}, ${esc(c.next_store_opens)}</h2>
+  <h2><span class="num">6</span>${esc(c.next_store)}, ${esc(c.next_store_opens)}</h2>
   <p>The first proof. ${esc(c.next_store)}'s number is answered by AI from opening day, and the opening invitations go out from the same record the store will run on.</p>
 
-  <h2><span class="num">6</span>What we need from you</h2>
+  <h2><span class="num">7</span>What we need from you</h2>
   <ol class="need">
     <li>Sign.</li>
     <li>The Mac and the Claude plan, bought in Swing Bays' name. We spec both.</li>
