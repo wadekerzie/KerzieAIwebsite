@@ -1,0 +1,1063 @@
+{
+  "_readme": "SAMPLE DATA ONLY. Maroone USA is a prospect, not a client (proposal 2026-10-01). Every count, model, and timestamp here is illustrative, built to show Gabe Montano what the daily receipt looks like with one tab per rooftop. Never present as Maroone's real inventory. Shape mirrors shortline_change_log.json; the real file replaces this one when the first rooftop goes live. STYLE RULE (Wade, 2026-09-06): customer-facing, outcomes only - cars in, cars out, prices, timestamps. No internal machinery.",
+  "group": "Maroone USA",
+  "sample": true,
+  "built": "2026-10-01",
+  "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Perplexity"
+  ],
+  "stores": [
+    {
+      "slug": "chevrolet-north",
+      "name": "Mike Maroone Chevrolet North",
+      "short": "Chevrolet North",
+      "city": "Colorado Springs, CO",
+      "brands": "Chevrolet",
+      "sites": [
+        "mikemaroonechevroletnorth.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 9,
+          "removed": 8,
+          "price_changed": 99,
+          "total": 342,
+          "ran_at": "7:03 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "9 vehicles joined the page; 8 came off, bringing the total to 342. New arrivals include 2022 Chevrolet Traverse LT, 2024 Chevrolet Tahoe Z71 and 2024 GMC Sierra 1500 SLE. A start-of-month round of repricing: 99 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 9,
+          "removed": 4,
+          "price_changed": 0,
+          "total": 341,
+          "ran_at": "8:55 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "9 vehicles joined the page; 4 came off, bringing the total to 341. New arrivals include 2024 Chevrolet Colorado Trail Boss, 2024 Toyota Tacoma TRD Off-Road and 2026 Chevrolet Silverado 1500 LT. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 8,
+          "price_changed": 9,
+          "total": 336,
+          "ran_at": "7:40 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2026 Chevrolet Equinox RS; 8 came off, bringing the total to 336. 9 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 7,
+          "removed": 2,
+          "price_changed": 6,
+          "total": 343,
+          "ran_at": "7:07 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "7 vehicles joined the page; 2 came off, bringing the total to 343. New arrivals include 2026 Chevrolet Blazer EV RS, 2026 GMC Sierra 1500 SLE and 2024 Chevrolet Silverado 1500 LT. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 4,
+          "removed": 4,
+          "price_changed": 9,
+          "total": 338,
+          "ran_at": "7:30 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "4 vehicles joined the page; 4 came off, bringing the total to 338. New arrivals include 2024 Chevrolet Tahoe Z71, 2025 Chevrolet Trax ACTIV and 2024 Chevrolet Silverado 1500 LT. 9 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 2,
+          "removed": 0,
+          "price_changed": 1,
+          "total": 338,
+          "ran_at": "7:36 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "2 vehicles joined the page; nothing came off, bringing the total to 338. New arrivals include 2024 Chevrolet Colorado Trail Boss and 2026 Chevrolet Blazer EV RS. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 3,
+          "removed": 5,
+          "price_changed": 6,
+          "total": 336,
+          "ran_at": "6:43 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "3 vehicles joined the page; 5 came off, bringing the total to 336. New arrivals include 2024 GMC Sierra 1500 SLE, 2023 Chevrolet Blazer EV RS and 2024 Chevrolet Silverado 2500HD LTZ. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "chevrolet-south",
+      "name": "Mike Maroone Chevrolet South",
+      "short": "Chevrolet South",
+      "city": "Colorado Springs, CO",
+      "brands": "Chevrolet",
+      "sites": [
+        "mikemaroonechevroletsouth.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 3,
+          "price_changed": 40,
+          "total": 293,
+          "ran_at": "8:25 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 3 came off, bringing the total to 293. A start-of-month round of repricing: 40 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 7,
+          "removed": 8,
+          "price_changed": 1,
+          "total": 296,
+          "ran_at": "7:50 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "7 vehicles joined the page; 8 came off, bringing the total to 296. New arrivals include 2025 Chevrolet Suburban Premier, 2026 Subaru Outback Premium and 2026 Jeep Grand Cherokee Limited. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 3,
+          "removed": 5,
+          "price_changed": 6,
+          "total": 297,
+          "ran_at": "7:06 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "3 vehicles joined the page; 5 came off, bringing the total to 297. New arrivals include 2025 Subaru Outback Premium, 2023 Jeep Grand Cherokee Limited and 2025 Chevrolet Malibu LT. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 2,
+          "removed": 1,
+          "price_changed": 2,
+          "total": 299,
+          "ran_at": "7:11 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "2 vehicles joined the page; one came off, bringing the total to 299. New arrivals include 2025 Chevrolet Suburban Premier and 2025 Ford F-150 XLT. 2 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 8,
+          "price_changed": 0,
+          "total": 298,
+          "ran_at": "7:28 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 8 came off, bringing the total to 298. New arrivals include 2025 Ford F-150 XLT, 2021 Chevrolet Malibu LT and 2025 Jeep Grand Cherokee Limited. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 7,
+          "removed": 8,
+          "price_changed": 14,
+          "total": 301,
+          "ran_at": "7:12 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "7 vehicles joined the page; 8 came off, bringing the total to 301. New arrivals include 2025 Jeep Grand Cherokee Limited, 2025 Chevrolet Camaro LT1 and 2025 Ford F-150 XLT. 14 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 11,
+          "removed": 5,
+          "price_changed": 2,
+          "total": 302,
+          "ran_at": "7:59 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "11 vehicles joined the page; 5 came off, bringing the total to 302. New arrivals include 2026 Ford F-150 XLT, 2024 Chevrolet Equinox LT and 2022 Chevrolet Camaro LT1. 2 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "honda",
+      "name": "Mike Maroone Honda",
+      "short": "Honda",
+      "city": "Colorado Springs, CO",
+      "brands": "Honda",
+      "sites": [
+        "mikemaroonehonda.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 4,
+          "price_changed": 70,
+          "total": 250,
+          "ran_at": "7:56 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 4 came off, bringing the total to 250. A start-of-month round of repricing: 70 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 3,
+          "removed": 2,
+          "price_changed": 0,
+          "total": 254,
+          "ran_at": "7:27 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "3 vehicles joined the page; 2 came off, bringing the total to 254. New arrivals include 2023 Mazda CX-5 Preferred, 2023 Honda Ridgeline RTL and 2026 Honda CR-V Hybrid Sport. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 11,
+          "removed": 2,
+          "price_changed": 0,
+          "total": 253,
+          "ran_at": "7:28 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "11 vehicles joined the page; 2 came off, bringing the total to 253. New arrivals include 2024 Honda Odyssey EX-L, 2023 Honda Civic Sport and 2026 Honda CR-V Hybrid Sport. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 6,
+          "removed": 8,
+          "price_changed": 1,
+          "total": 244,
+          "ran_at": "7:17 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "6 vehicles joined the page; 8 came off, bringing the total to 244. New arrivals include 2024 Toyota RAV4 XLE, 2023 Honda HR-V LX and 2023 Mazda CX-5 Preferred. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 6,
+          "removed": 3,
+          "price_changed": 6,
+          "total": 246,
+          "ran_at": "6:40 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "6 vehicles joined the page; 3 came off, bringing the total to 246. New arrivals include 2026 Honda Accord EX, 2024 Honda HR-V LX and 2026 Honda CR-V EX-L. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 7,
+          "removed": 2,
+          "price_changed": 25,
+          "total": 243,
+          "ran_at": "7:34 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "7 vehicles joined the page; 2 came off, bringing the total to 243. New arrivals include 2026 Honda Ridgeline RTL, 2026 Honda CR-V Hybrid Sport and 2025 Honda HR-V LX. 25 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 3,
+          "price_changed": 25,
+          "total": 238,
+          "ran_at": "7:55 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 3 came off, bringing the total to 238. 25 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "volkswagen",
+      "name": "Mike Maroone Volkswagen",
+      "short": "Volkswagen",
+      "city": "Colorado Springs, CO",
+      "brands": "Volkswagen",
+      "sites": [
+        "mikemaroonevw.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 4,
+          "removed": 1,
+          "price_changed": 70,
+          "total": 175,
+          "ran_at": "7:43 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "4 vehicles joined the page; one came off, bringing the total to 175. New arrivals include 2026 Volkswagen Golf GTI SE, 2023 Volkswagen Atlas SEL and 2022 Volkswagen ID.4 Pro S. A start-of-month round of repricing: 70 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 2,
+          "price_changed": 9,
+          "total": 172,
+          "ran_at": "7:59 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 2 came off, bringing the total to 172. New arrivals include 2025 Volkswagen ID. Buzz Pro S, 2026 Volkswagen Golf GTI SE and 2026 Volkswagen Taos S. 9 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 2,
+          "price_changed": 25,
+          "total": 169,
+          "ran_at": "6:46 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 2 came off, bringing the total to 169. 25 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 11,
+          "removed": 3,
+          "price_changed": 6,
+          "total": 171,
+          "ran_at": "6:31 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "11 vehicles joined the page; 3 came off, bringing the total to 171. New arrivals include 2024 Hyundai Tucson SEL, 2021 Kia Sportage LX and 2026 Volkswagen Taos S. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 2,
+          "price_changed": 0,
+          "total": 163,
+          "ran_at": "7:26 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 2 came off, bringing the total to 163. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 4,
+          "removed": 8,
+          "price_changed": 1,
+          "total": 165,
+          "ran_at": "6:39 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "4 vehicles joined the page; 8 came off, bringing the total to 165. New arrivals include 2022 Volkswagen Tiguan SE, 2024 Volkswagen ID. Buzz Pro S and 2023 Volkswagen Atlas Cross Sport SE. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 3,
+          "price_changed": 1,
+          "total": 169,
+          "ran_at": "7:17 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 3 came off, bringing the total to 169. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "chevrolet-gmc-longmont",
+      "name": "Mike Maroone Chevrolet GMC Longmont",
+      "short": "Chevrolet GMC Longmont",
+      "city": "Longmont, CO",
+      "brands": "Chevrolet, GMC",
+      "sites": [
+        "mikemaroonechevroletgmc.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 6,
+          "price_changed": 55,
+          "total": 304,
+          "ran_at": "7:29 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 6 came off, bringing the total to 304. New arrivals include 2023 Chevrolet Equinox EV LT, 2022 GMC Terrain SLE and 2025 GMC Canyon AT4. A start-of-month round of repricing: 55 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 0,
+          "price_changed": 6,
+          "total": 305,
+          "ran_at": "7:56 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; nothing came off, bringing the total to 305. New arrivals include 2025 Ram 1500 Big Horn, 2025 GMC Sierra 1500 AT4 and 2026 GMC Terrain SLE. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 7,
+          "removed": 2,
+          "price_changed": 2,
+          "total": 300,
+          "ran_at": "8:38 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "7 vehicles joined the page; 2 came off, bringing the total to 300. New arrivals include 2026 GMC Sierra 1500 AT4, 2025 Chevrolet Equinox EV LT and 2026 GMC Acadia Elevation. 2 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 4,
+          "price_changed": 14,
+          "total": 295,
+          "ran_at": "7:15 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 4 came off, bringing the total to 295. New arrivals include 2023 Chevrolet Traverse Z71, 2021 GMC Yukon Denali and 2026 GMC Terrain SLE. 14 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 5,
+          "price_changed": 1,
+          "total": 294,
+          "ran_at": "7:04 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2026 GMC Sierra 1500 AT4; 5 came off, bringing the total to 294. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 9,
+          "removed": 1,
+          "price_changed": 6,
+          "total": 298,
+          "ran_at": "8:45 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "9 vehicles joined the page; one came off, bringing the total to 298. New arrivals include 2022 GMC Terrain SLE, 2022 GMC Yukon Denali and 2025 GMC Canyon AT4. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 4,
+          "removed": 1,
+          "price_changed": 14,
+          "total": 290,
+          "ran_at": "7:08 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "4 vehicles joined the page; one came off, bringing the total to 290. New arrivals include 2026 GMC Sierra 1500 AT4, 2024 Chevrolet Silverado 1500 LT Trail Boss and 2024 GMC Acadia Elevation. 14 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "ford-longmont",
+      "name": "Mike Maroone Ford Longmont",
+      "short": "Ford Longmont",
+      "city": "Longmont, CO",
+      "brands": "Ford",
+      "sites": [
+        "mikemaroonefordlongmont.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 0,
+          "price_changed": 55,
+          "total": 330,
+          "ran_at": "7:11 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; nothing came off, bringing the total to 330. New arrivals include 2024 Ford Escape Active, 2024 Ford Mustang GT Premium and 2026 Ford F-150 XLT. A start-of-month round of repricing: 55 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 2,
+          "price_changed": 1,
+          "total": 325,
+          "ran_at": "7:33 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2025 Ford F-150 Lariat; 2 came off, bringing the total to 325. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 7,
+          "removed": 5,
+          "price_changed": 0,
+          "total": 326,
+          "ran_at": "7:31 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "7 vehicles joined the page; 5 came off, bringing the total to 326. New arrivals include 2024 Ford Explorer ST, 2025 Ford Bronco Outer Banks and 2026 Ford Escape Active. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 2,
+          "price_changed": 1,
+          "total": 324,
+          "ran_at": "7:33 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 2 came off, bringing the total to 324. New arrivals include 2024 Ford F-150 XLT, 2026 Ford Explorer ST and 2025 Ford F-250 Super Duty XL. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 11,
+          "removed": 3,
+          "price_changed": 1,
+          "total": 321,
+          "ran_at": "7:22 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "11 vehicles joined the page; 3 came off, bringing the total to 321. New arrivals include 2022 Ford Escape Active, 2022 Ford F-150 XLT and 2026 Ford Mustang GT Premium. One price change today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 3,
+          "price_changed": 3,
+          "total": 313,
+          "ran_at": "6:25 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 3 came off, bringing the total to 313. New arrivals include 2024 Ford F-150 XLT, 2021 Ford Maverick XLT Hybrid and 2025 Ford Bronco Sport Big Bend. 3 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 4,
+          "price_changed": 0,
+          "total": 311,
+          "ran_at": "8:51 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2026 Ford Mustang GT Premium; 4 came off, bringing the total to 311. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "gmc-cadillac-boulder",
+      "name": "Mike Maroone GMC and Cadillac, Boulder",
+      "short": "GMC + Cadillac Boulder",
+      "city": "Boulder, CO",
+      "brands": "GMC, Cadillac",
+      "sites": [
+        "mikemaroonegmc.com",
+        "mikemaroonecadillac.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 3,
+          "price_changed": 55,
+          "total": 209,
+          "ran_at": "6:53 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2025 GMC Hummer EV Pickup; 3 came off, bringing the total to 209. A start-of-month round of repricing: 55 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 4,
+          "price_changed": 25,
+          "total": 211,
+          "ran_at": "6:52 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2024 GMC Yukon XL SLT; 4 came off, bringing the total to 211. 25 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 5,
+          "price_changed": 0,
+          "total": 214,
+          "ran_at": "7:56 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 5 came off, bringing the total to 214. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 2,
+          "removed": 1,
+          "price_changed": 6,
+          "total": 219,
+          "ran_at": "8:18 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "2 vehicles joined the page; one came off, bringing the total to 219. New arrivals include 2026 Cadillac LYRIQ Luxury and 2026 GMC Yukon XL SLT. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 11,
+          "removed": 3,
+          "price_changed": 25,
+          "total": 218,
+          "ran_at": "7:39 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "11 vehicles joined the page; 3 came off, bringing the total to 218. New arrivals include 2026 GMC Hummer EV Pickup, 2026 GMC Yukon XL SLT and 2025 GMC Acadia AT4. 25 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 6,
+          "price_changed": 3,
+          "total": 210,
+          "ran_at": "7:22 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 6 came off, bringing the total to 210. New arrivals include 2026 Cadillac XT5 Premium Luxury, 2026 GMC Sierra 1500 Denali and 2022 Cadillac Escalade Sport. 3 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 2,
+          "price_changed": 9,
+          "total": 211,
+          "ran_at": "7:09 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 2 came off, bringing the total to 211. New arrivals include 2024 GMC Terrain Denali, 2023 GMC Sierra 1500 Denali and 2025 GMC Acadia AT4. 9 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    },
+    {
+      "slug": "chevrolet-west-palm-beach",
+      "name": "Mike Maroone Chevrolet",
+      "short": "Chevrolet West Palm Beach",
+      "city": "West Palm Beach, FL",
+      "brands": "Chevrolet",
+      "sites": [
+        "mikemaroonechevrolet.com"
+      ],
+      "entries": [
+        {
+          "date": "2026-10-01",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 0,
+          "removed": 3,
+          "price_changed": 70,
+          "total": 390,
+          "ran_at": "8:31 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "No new vehicles joined the page today; 3 came off, bringing the total to 390. A start-of-month round of repricing: 70 vehicles came down. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-30",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 8,
+          "price_changed": 14,
+          "total": 393,
+          "ran_at": "7:22 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2024 Chevrolet Tahoe RST; 8 came off, bringing the total to 393. 14 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-29",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 4,
+          "removed": 3,
+          "price_changed": 14,
+          "total": 400,
+          "ran_at": "8:25 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "4 vehicles joined the page; 3 came off, bringing the total to 400. New arrivals include 2025 Chevrolet Traverse RS, 2024 Chevrolet Colorado LT and 2026 Nissan Rogue SV. 14 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-28",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 1,
+          "price_changed": 25,
+          "total": 399,
+          "ran_at": "8:09 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; one came off, bringing the total to 399. New arrivals include 2025 Chevrolet Malibu RS, 2023 Chevrolet Tahoe RST and 2025 Chevrolet Corvette Stingray 2LT. 25 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-27",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 3,
+          "price_changed": 0,
+          "total": 395,
+          "ran_at": "7:26 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2023 Chevrolet Traverse RS; 3 came off, bringing the total to 395. No price changes today. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-26",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 1,
+          "removed": 6,
+          "price_changed": 6,
+          "total": 397,
+          "ran_at": "7:51 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "One vehicle joined the page today, a 2024 Chevrolet Traverse RS; 6 came off, bringing the total to 397. 6 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        },
+        {
+          "date": "2026-09-25",
+          "status": "ok",
+          "kind": "refresh",
+          "added": 5,
+          "removed": 5,
+          "price_changed": 2,
+          "total": 402,
+          "ran_at": "6:34 AM MT",
+          "engines": {
+            "ChatGPT": "ok",
+            "Claude": "ok",
+            "Gemini": "ok",
+            "Perplexity": "ok"
+          },
+          "note": "5 vehicles joined the page; 5 came off, bringing the total to 402. New arrivals include 2024 Chevrolet Corvette Stingray 2LT, 2026 Chevrolet Traverse RS and 2023 Chevrolet Tahoe RST. 2 vehicles were repriced, mostly reductions. Confirmed readable by ChatGPT, Claude, Gemini, and Perplexity and by a normal browser."
+        }
+      ]
+    }
+  ]
+}
