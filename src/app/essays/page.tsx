@@ -16,7 +16,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Essays | Kerzie AI",
   description:
-    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, and The Blast Door, plus the appendix on the line.",
+    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, and The Blast Radius, plus the appendix on the line.",
 };
 
 const essays = [
@@ -43,6 +43,14 @@ const essays = [
     argues:
       "A person plus a nearly-free intelligence can build something of their own. That era is real, it is short, and it is closing.",
     href: "/blast-door",
+  },
+  {
+    title: "The Blast Radius",
+    date: "October 1, 2026",
+    deck: "How far it reaches inside the building",
+    argues:
+      "How far AI reaches from your desk depends on three things: whether you ask it or instruct it, what it is connected to, and where you sit.",
+    href: "/blast-radius",
   },
 ];
 
@@ -108,7 +116,7 @@ export default function EssaysPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Essays</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          One argument, in three parts.
+          One argument, in four parts.
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
           Read them in the order I wrote them if you can. Each one stands on
@@ -125,17 +133,10 @@ export default function EssaysPage() {
       </section>
 
       {/* The appendix, after the essays and labeled as one */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-12 lg:pb-10">
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-28 lg:pb-20">
         <p className="k-label mb-2">Appendix</p>
         <div className="k-hairline w-full" />
         <EssayRow e={appendix} i={essays.length} cta="Read the appendix" />
-      </section>
-
-      {/* What is coming */}
-      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-28 lg:pb-20">
-        <p className="k-mono text-[#262B3D]/50 text-xs lg:text-sm tracking-[0.12em]">
-          Coming next: The Blast Radius
-        </p>
       </section>
 
     </div>
