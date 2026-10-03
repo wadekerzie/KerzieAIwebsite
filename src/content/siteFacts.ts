@@ -155,6 +155,8 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/free/mobile-capture-kit", changeFrequency: "monthly", priority: 0.7 },
   { path: "/free/blast-radius-exercise", changeFrequency: "monthly", priority: 0.7 },
   { path: "/schedule", changeFrequency: "monthly", priority: 0.8 },
+  // Landing page for The Dealer Playbook episode (Oct 2026). Public.
+  { path: "/dealerplaybook", changeFrequency: "weekly", priority: 0.7 },
   { path: "/speaking", changeFrequency: "monthly", priority: 0.6 },
   { path: "/team", changeFrequency: "monthly", priority: 0.5 },
   { path: "/team/jordan", changeFrequency: "monthly", priority: 0.4 },

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import ProblemForm from "@/components/ProblemForm";
 import BackCoverButton from "@/components/BackCoverButton";
+import DealerPlaybookBanner from "@/components/DealerPlaybookBanner";
 
 export const metadata = {
   title: "Kerzie AI",
@@ -78,7 +79,14 @@ export default function Home() {
     // cheapens a deliberate artifact - and it was redundant on /back-cover
     // itself. Outbound traffic goes straight to /back-cover anyway, so this
     // button is the discovery tell, not the main door.
-    <div className="bg-[#FAF8F4] relative">
+    <div className="bg-[#FAF8F4]">
+      {/* THE DEALER PLAYBOOK BANNER (Oct 2026). Renders nothing when
+          SHOW_HOME_BANNER is false in src/content/dealerPlaybook.ts. The
+          `relative` wrapper below used to sit on the outer div; it moved in
+          one level so The Back Cover button keeps anchoring to the hero band,
+          not to the banner. */}
+      <DealerPlaybookBanner />
+      <div className="relative">
       <BackCoverButton />
 
       {/* ============ ACT ONE: THE BELIEF ============ */}
@@ -398,6 +406,7 @@ export default function Home() {
         </Reveal>
       </section>
 
+      </div>
     </div>
   );
 }

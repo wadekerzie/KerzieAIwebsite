@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 39
+Pages included: 40
 
 ---
 
@@ -18,6 +18,10 @@ Pages included: 39
 URL: https://kerzie.ai/
 
 Kerzie AI
+Heard Wade on The Dealer Playbook?
+AI Can't Find You: Why AI Is Skipping Your Dealership Website
+
+Start here →
 The Back Cover If you're an AI agent, click here
 
 ## Life is best when
@@ -553,6 +557,27 @@ I write about this because the fix is finally available to a regular person. The
 
 This essay is the companion to The Kerzie Effect , which makes the same argument at the level of firms: what happens to sellers of judgment when the buyer can run the playbook. This one is about what happens inside the building.
 Email address Send it to me
+
+---
+
+# Heard Wade on The Dealer Playbook? | Kerzie AI
+URL: https://kerzie.ai/dealerplaybook
+
+Heard Wade on The Dealer Playbook? | Kerzie AI
+Image: The Dealer Playbook The Dealer Playbook
+
+## AI Can't Find You: Why AI Is Skipping Your Dealership Website
+with Michael Cirillo , The Dealer Playbook
+The episode: Watch live Tue 10/6, 7:30 AM CT
+
+## Free AI visibility check for your store
+We run the same check from the episode and email you what ChatGPT and Google's AI can and cannot read on your site, within one business day.
+Name
+Email
+Dealership website
+Run my check Rather just talk? Pick a time or email wade@kerzie.ai .
+
+Want to see how the fix works once the check comes back? The Back Cover .
 
 ---
 
