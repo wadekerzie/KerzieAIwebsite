@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-03",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 9,
+      "removed": 8,
+      "price_changed": 0,
+      "total": 333,
+      "ran_at": "7:34 AM MT",
+      "note": "Nine vehicles joined the list and eight came off, bringing the total to 333. New arrivals include a 2027 GMC Acadia AWD Denali, a 2026 GMC Sierra 1500 Denali, and a 2026 Buick Envision Avenir. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-02",
       "status": "ok",
       "kind": "refresh",
