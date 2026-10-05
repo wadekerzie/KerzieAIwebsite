@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-05",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 6,
+      "removed": 5,
+      "price_changed": 0,
+      "total": 334,
+      "ran_at": "7:30 AM MT",
+      "note": "Six vehicles joined the list and five came off, bringing the total to 334. New arrivals are mostly 2026 GMC Sierra trucks, including a Sierra 2500 AT4X and four Sierra 1500 Elevations. No price changes today. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-04",
       "status": "ok",
       "kind": "refresh",
