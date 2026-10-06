@@ -31,6 +31,11 @@ const nextConfig: NextConfig = {
         source: "/swingbays/plan",
         destination: "/swingbays-build-plan.html",
       },
+      {
+        // Sales OS explainer for Kyle's install (private, noindex). Wade 10/6.
+        source: "/salesos/kyle",
+        destination: "/salesos-kyle.html",
+      },
       ],
     };
   },
