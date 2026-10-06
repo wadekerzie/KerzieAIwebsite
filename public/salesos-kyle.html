@@ -45,6 +45,11 @@
   .prompt code { font-family:'IBM Plex Mono', monospace; font-size:16px; background:#F1ECE3; border-radius:10px; padding:12px 16px; flex:1 1 380px; }
   .btn.ghost { background:var(--navy); }
   .note { color:var(--muted); font-size:16px; }
+  .stops { max-width:1100px; margin:16px 0 0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px 28px; counter-reset:st; }
+  .stops li { position:relative; padding:14px 16px 14px 60px; background:#fff; border:1px solid var(--line); border-radius:14px; font-size:16px; line-height:1.5; color:var(--muted); }
+  .stops li::before { counter-increment:st; content:counter(st); position:absolute; left:16px; top:14px; width:30px; height:30px; border-radius:50%; background:var(--paper); border:1px solid var(--line); color:var(--navy); font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .stops li b { color:var(--navy); display:block; font-family:'Space Grotesk', sans-serif; font-size:17px; }
+  @media (max-width:900px) { .stops { grid-template-columns:minmax(0,1fr); } }
   @media (max-width:720px) {
     .wrap { padding:24px 16px 48px; }
     figure { border-radius:14px; }
@@ -236,6 +241,29 @@
     <div class="row"><svg viewBox="0 0 24 24"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8M10 12h4"/></svg><span class="name">archive/</span><span class="what">Older detail, moved out of the way, never deleted.</span><span class="tag build">Claude builds</span></div>
   </div>
   <p class="foot">It's all plain files on your Mac. Nothing in it goes to a personal cloud drive or a personal account.</p>
+
+  <h2>The 17 things your OS is built to do</h2>
+  <p class="sub" style="margin-bottom:0">A reference list. Some switch on in week one, the rest as you're ready.</p>
+  <ol class="stops">
+    <li><b>Setup</b>It interviews you about how you actually sell, then builds itself around your answers. You don't configure it.</li>
+    <li><b>Voice and meeting capture</b>Transcripts and voice memos land in your folder. It pulls the action items, files them, and starts the work. It stops at sending, posting, changing the CRM, spending, or contacting anyone.</li>
+    <li><b>Memory</b>Every session opens by reading one short briefing. Older detail moves to deeper folders. Nothing is deleted. You never re-explain your job.</li>
+    <li><b>Stays lean</b>The briefing has a size ceiling. A weekly checkup flags anything that grew and moves it down a tier.</li>
+    <li><b>Token efficiency</b>Routine work runs on smaller, cheaper models. Judgment and anything that goes up the chain gets the top model.</li>
+    <li><b>Skills</b>The first time something works, the steps get written down, and it runs the same way from then on.</li>
+    <li><b>Connectors</b>Email, calendar, CRM, meeting transcripts and documents: only what your company approves, each one added with your yes.</li>
+    <li><b>Secrets</b>Anything sensitive lives in one private folder. It's never printed into chat and never leaves your Mac.</li>
+    <li><b>Routines with receipts</b>Jobs run on a schedule. Each one writes a receipt: worked, nothing to do, needs you, or failed. A run with no receipt gets flagged.</li>
+    <li><b>Guardrails</b>It drafts and stages. Emails, CRM changes and anything that leaves your desk wait for your yes.</li>
+    <li><b>Receipts bias</b>It checks the real thing before telling you something is true. Forecasts and reports carry only what it can trace. When it isn't sure, it says so.</li>
+    <li><b>One place</b>The folder lives on your Mac, or only on storage your company approved. Company data never goes to a personal account.</li>
+    <li><b>Portable</b>Your rules and memory are plain files, so another AI tool your company approves can run the same OS with a few file names changed.</li>
+    <li><b>Speed</b>On the newest Claude models, the everyday work runs even faster.</li>
+    <li><b>The pane</b>One screen: your moves, its moves, what's scheduled, and your weekly rhythm.</li>
+    <li><b>The night shift</b>Optional, from week two. Each night it reconciles the day's work and lines up tomorrow's prep.</li>
+    <li><b>Dated work goes on the calendar</b>If you say yes, anything with a date that needs you becomes a calendar event with the full instructions inside.</li>
+  </ol>
+
 </div>
 <script>
 document.querySelectorAll('[data-copy]').forEach(function (b) {
