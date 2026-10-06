@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-06",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 8,
+      "removed": 0,
+      "price_changed": 47,
+      "total": 342,
+      "ran_at": "7:03 AM MT",
+      "note": "Eight vehicles joined the list and none came off, bringing the total to 342. New arrivals include six 2027 GMC Acadias, a 2026 GMC Yukon XL 1500 Denali, and a 2026 Buick Envision Sport Touring. Forty-seven vehicles were repriced, every one a reduction, averaging about $390 off. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-05",
       "status": "ok",
       "kind": "refresh",
