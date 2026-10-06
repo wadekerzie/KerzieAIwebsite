@@ -30,6 +30,18 @@
   .row .what { color:var(--muted); font-size:16px; }
   .root { font-family:'IBM Plex Mono', monospace; font-size:18px; font-weight:500; padding:14px 0 10px; border-bottom:1px solid var(--line); }
   .foot { margin:20px 0 0; color:var(--muted); font-size:16px; max-width:1100px; }
+  .start { background:#fff; border:2px solid var(--clay); border-radius:20px; padding:28px 32px; margin:0 0 36px; }
+  .start h2 { margin:0 0 4px; }
+  .start ol { margin:16px 0 0; padding-left:0; list-style:none; display:grid; gap:18px; counter-reset:s; }
+  .start li { display:grid; grid-template-columns:44px minmax(0,1fr); gap:14px; align-items:start; font-size:18px; line-height:1.5; }
+  .start li::before { counter-increment:s; content:counter(s); width:36px; height:36px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk', sans-serif; font-weight:700; }
+  .btn { display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:12px 22px; border-radius:12px; background:var(--clay); color:#fff; text-decoration:none; font-weight:600; font-size:17px; border:0; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:#8f3e22; }
+  .btn svg { width:20px; height:20px; stroke:#fff; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .prompt { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:10px; }
+  .prompt code { font-family:'IBM Plex Mono', monospace; font-size:16px; background:#F1ECE3; border-radius:10px; padding:12px 16px; flex:1 1 380px; }
+  .btn.ghost { background:var(--navy); }
+  .note { color:var(--muted); font-size:16px; }
   @media (max-width:720px) {
     .wrap { padding:24px 16px 48px; }
     figure { border-radius:14px; }
@@ -44,6 +56,20 @@
   <p class="kicker">Kerzie AI · The Sales OS</p>
   <h1>How Kyle's Sales OS works</h1>
   <p class="sub">Above the line runs for you in the background. Below the line is what you touch every day.</p>
+
+  <section class="start" aria-labelledby="start-h">
+    <h2 id="start-h">Start here</h2>
+    <p class="note" style="margin:0">Do these on this Mac, in order. About 15 minutes, plus a few for the Terminal install.</p>
+    <ol>
+      <li><div>Download your setup file.<div style="margin-top:10px"><a class="btn" href="/downloads/sales-os-setup.md" download="sales-os-setup.md"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download sales-os-setup.md</a></div></div></li>
+      <li><div>In <b>Documents</b>, make a folder named <b>Kyle's Sales OS</b>. Move the setup file into it. Inside it, make a folder named <b>my-notes</b> and put your voice memo transcripts there.</div></li>
+      <li><div>One command in Terminal, once. Press <b>Command + Space</b>, type <b>Terminal</b>, press Return. Paste this, press Return, then click <b>Install</b> in the window that appears. If it says the tools are already installed, that's fine.
+        <div class="prompt"><code id="xcode-cmd">xcode-select --install</code><button class="btn ghost" type="button" data-copy="xcode-cmd">Copy</button></div></div></li>
+      <li><div>Open <b>Claude</b>, click the <b>Code</b> tab, click <b>Select folder</b>, and pick <b>Kyle's Sales OS</b>. If it asks whether you trust the folder, say yes.</div></li>
+      <li><div>Copy this, paste it into Claude, and press Return. Then just answer its questions.
+        <div class="prompt"><code id="first-msg">Read sales-os-setup.md and set up my Sales OS. Start with Step 0.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
+    </ol>
+  </section>
 
   <figure aria-label="Diagram: what you don't see above a yellow line (the engine and your company's connectors), and what you see below it (your computer, your Sales OS folder, Claude as the command center, your views and drafts waiting for your yes).">
   <svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg" role="img">
@@ -206,5 +232,13 @@
   </div>
   <p class="foot">It's all plain files on your Mac. Nothing in it goes to a personal cloud drive or a personal account.</p>
 </div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var t = document.getElementById(b.getAttribute('data-copy')).textContent;
+    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'Copy'; }, 2000); }); } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>
