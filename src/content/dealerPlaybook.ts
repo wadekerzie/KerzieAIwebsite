@@ -31,19 +31,20 @@ export const EPISODE = {
   imageCredit: "Image: The Dealer Playbook",
 } as const;
 
-// EPISODE LINKS, all four in one place.
-//   - LinkedIn Live is real now: the episode streams Tue 10/6 at 7:30 AM CT.
-//     After Tuesday, change its label (or blank it) and fill in the replays.
-//   - YouTube, Spotify and Apple Podcasts are placeholders: the page HIDES any
-//     link whose href is blank. Paste the URL in and it appears.
+// EPISODE LINKS, all four in one place. The page HIDES any link whose href is
+// blank. Aired Tue 10/6 (LinkedIn Live 7:30 AM CT); replays filled the same
+// morning from the show's own YouTube, Spotify and Apple listings.
 export const EPISODE_LINKS: { label: string; href: string }[] = [
+  { label: "YouTube", href: "https://www.youtube.com/watch?v=j4hQTp-sW64" },
+  { label: "Spotify", href: "https://open.spotify.com/episode/6DK0nA3R3qBfebu8XLNaHV" },
   {
-    label: "Watch live Tue 10/6, 7:30 AM CT",
+    label: "Apple Podcasts",
+    href: "https://podcasts.apple.com/us/podcast/ai-cant-find-you-why-ai-is-skipping-your-dealership/id857094979?i=1000793421077",
+  },
+  {
+    label: "LinkedIn",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7511924342813851648/",
   },
-  { label: "YouTube", href: "" },
-  { label: "Spotify", href: "" },
-  { label: "Apple Podcasts", href: "" },
 ];
 
 // Home banner copy.
