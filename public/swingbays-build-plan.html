@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>The Swing Bays: Everything We'll Build | Kerzie AI</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kerzie AI">
+  <meta property="og:title" content="The Swing Bays: everything we'll build">
+  <meta property="og:description" content="Prepared by Kerzie AI Solutions for Colter Meek and Dustin Miller.">
+  <meta property="og:image" content="https://kerzie.ai/og/brand-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style>
+    :root { --ink:#111318; --muted:#5a606b; --line:#d9dde3; --blue:#1d5f9f; --navy:#123c64; --beige:#f3efe7; --paper:#fff; --coral:#E8896A; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color:var(--ink); background:var(--beige); font-size:15px; line-height:1.4; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+    .sheet { background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:36px 38px; }
+    @media (max-width: 700px) { .sheet { padding: 24px 16px; } }
+    header { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; border-bottom:3px solid var(--navy); padding-bottom:10px; margin-bottom:14px; }
+    .kicker { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--blue); font-weight:700; margin:0 0 4px; }
+    h1 { font-size:28px; line-height:1.15; margin:0; color:var(--navy); }
+    .meta { font-size:13px; color:var(--muted); text-align:right; }
+    .meta b { color:var(--navy); font-size:22px; display:block; line-height:1.1; }
+    .intro { margin:0 0 12px; font-size:15px; }
+    .rule { border-left:4px solid var(--coral); background:#f7f8fa; padding:10px 14px; margin:12px 0 14px; font-size:14.5px; }
+    .rule strong { color:var(--navy); }
+    .key { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12.5px; color:var(--muted); margin:0 0 12px; align-items:center; }
+    .cols { column-count:2; column-gap:28px; }
+    @media (max-width: 760px) { .cols { column-count:1; } }
+    section { break-inside:avoid; margin:0 0 14px; }
+    h3 { margin:0 0 2px; font-size:13px; letter-spacing:.06em; text-transform:uppercase; background:var(--navy); color:#fff; padding:4px 8px; border-radius:3px; }
+    ol { list-style:none; margin:0; padding:0; }
+    li { display:grid; grid-template-columns:16px 22px 1fr auto; gap:6px; align-items:start; padding:6px 2px; border-bottom:1px solid #e7e9ed; font-size:14px; }
+    .box { width:14px; height:14px; border:1.6px solid var(--navy); border-radius:2px; margin-top:2px; display:inline-block; background:#fff; }
+    .n { color:var(--muted); text-align:right; font-size:12px; padding-top:1px; }
+    .tag { font-size:10.5px; font-weight:700; letter-spacing:.03em; text-transform:uppercase; padding:2px 6px; border-radius:3px; white-space:nowrap; margin-top:1px; }
+    .d30 { background:#d9efe2; color:#1f6a46; }
+    .next { background:#dfe8f5; color:var(--navy); }
+    .sim { background:#f3e2cc; color:#7a4a12; }
+    .later { background:#ececec; color:#555; }
+    .opt { background:#fff; color:#555; border:1px dashed #999; }
+    h2 { font-size:18px; color:var(--navy); margin:24px 0 6px; border-bottom:2px solid var(--navy); padding-bottom:4px; }
+    .lede { color:var(--muted); font-size:13.5px; margin:0 0 8px; }
+    table.f30 { width:100%; border-collapse:collapse; font-size:14px; }
+    table.f30 td, table.f30 th { padding:7px 6px; border-bottom:1px solid #e7e9ed; vertical-align:top; text-align:left; }
+    table.f30 th { font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+    table.f30 td.cb { width:24px; }
+    table.f30 td.w { white-space:nowrap; color:var(--navy); font-weight:600; width:1%; }
+    table.f30 td.who { color:var(--muted); white-space:nowrap; width:1%; }
+    @media (max-width: 700px) { table.f30 td.w, table.f30 td.who { white-space:normal; } }
+    .heard { columns:2; column-gap:28px; margin:0; padding-left:18px; font-size:14px; }
+    .heard li { display:list-item; border:0; padding:2px 0; }
+    @media (max-width: 700px) { .heard { columns:1; } }
+    .foot { margin-top:22px; padding-top:10px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    a { color:var(--blue); }
+    @media print {
+      @page { size: Letter; margin: 0.4in; }
+      body { background:#fff; font-size:10pt; }
+      .wrap { padding:0; max-width:none; }
+      .sheet { border:0; padding:0; }
+      h1 { font-size:19pt; }
+      .cols { column-count:2; column-gap:0.25in; }
+      li { font-size:8.8pt; padding:3px 1px; grid-template-columns:11px 16px 1fr auto; gap:4px; }
+      .box { width:10px; height:10px; border-width:1.2px; }
+      .n { font-size:7.5pt; }
+      .tag { font-size:6.6pt; padding:1px 4px; }
+      h3 { font-size:8.5pt; padding:2px 6px; }
+      section { margin-bottom:8px; }
+      .rule, .intro, .heard { font-size:9.2pt; }
+      table.f30 { font-size:9pt; } table.f30 td { padding:4px; }
+      .f30wrap { break-inside: avoid; }
+      a { color:var(--ink); text-decoration:none; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap"><div class="sheet">
+
+  <header>
+    <div>
+      <p class="kicker">The Swing Bays · Prepared by Kerzie AI Solutions</p>
+      <h1>Everything we heard, and everything we'll build</h1>
+    </div>
+    <div class="meta"><b>66 items</b>30 in the first 30 days<br>For Colter Meek and Dustin Miller · October 6, 2026</div>
+  </header>
+
+  <p class="intro">Since September we've listened to Dustin, Brenna and Colter: the vision session, Dustin's written wish list, Aaron's time in the store, and Colter's walkthrough on October 5. Every item below came from those conversations. Each box gets checked as it goes live, so you always know exactly what you're getting and where it stands. Prices and terms are in the proposal: <a href="https://kerzie.ai/swingbays/proposal">kerzie.ai/swingbays/proposal</a>.</p>
+
+  <h2 style="margin-top:4px">What we heard</h2>
+  <ul class="heard">
+    <li>Calls nobody can pick up go to a voicemail box that rarely gets checked.</li>
+    <li>Instagram and Facebook messages don't get a follow-up.</li>
+    <li>Club repair runs on a paper card at the counter.</li>
+    <li>Square is the only view of the numbers, and it's light.</li>
+    <li>Dustin's lessons get recorded but don't reach every channel.</li>
+    <li>No single record of who came in, from where, and whether they came back.</li>
+    <li>New stores should open with the same playbook, without rebuilding it.</li>
+    <li>Everything already runs in the cloud, which makes connecting it simpler.</li>
+  </ul>
+
+  <div class="rule"><strong>Nothing gets replaced. Everything gets connected.</strong> Square, SimHouse and your website all stay. We connect them to one command center so the same playbook runs at every store, with less of it done by hand.</div>
+
+  <div class="key">
+    <span class="tag d30">First 30 days</span> at Parker
+    <span class="tag next">Next</span> once the first pieces are live
+    <span class="tag sim">With SimHouse</span> switched on when SimHouse is connected
+    <span class="tag later">Later</span> captured, not yet scheduled
+    <span class="tag opt">Optional</span> only if Dustin asks
+  </div>
+
+  <div class="cols">
+<section><h3>Foundation</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">1</span><span class="txt">The Back Cover: pages ChatGPT, Google's AI and Perplexity can read, for every store, Parker corporate and every coming-soon store</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">2</span><span class="txt">The command center: Claude on the Swing Bays Mac server, bought in Swing Bays' name (we spec it)</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">3</span><span class="txt">Seats for Dustin and Colter in the command center</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">4</span><span class="txt">Your sensitive numbers stay on the Swing Bays Mac server</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">5</span><span class="txt">Square, SimHouse and the website stay. Connected, never replaced</span><span class="tag d30">First 30 days</span></li></ol></section>
+<section><h3>One customer record</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">6</span><span class="txt">Every customer and member in one record, store by store</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">7</span><span class="txt">Fed by Square and the website now, SimHouse later</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">8</span><span class="txt">Where each person came from, kept from first contact through the sale</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">9</span><span class="txt">Instagram and Facebook handles captured with the customer</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">10</span><span class="txt">Members and non-members kept apart, so each gets the right message</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">11</span><span class="txt">A marketing spend map: every dollar out, with revenue against it</span><span class="tag later">Later</span></li></ol></section>
+<section><h3>Every call and message answered</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">12</span><span class="txt">After-hours calls and texts answered by the AI, from your own pages</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">13</span><span class="txt">Booking requests taken for staff</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">14</span><span class="txt">Daytime calls nobody can pick up roll to the AI, with a transcript and a notification, instead of voicemail</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">15</span><span class="txt">One local number per store; each line forwards after close</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">16</span><span class="txt">Englewood's main line answered from opening day</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">17</span><span class="txt">Instagram and Facebook messages answered in your voice, worded with Jordan</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">18</span><span class="txt">Every lead answered fast, any hour, any channel</span><span class="tag d30">First 30 days</span></li></ol></section>
+<section><h3>Club repair</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">19</span><span class="txt">Repair form on the website or a counter iPad, with a location dropdown</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">20</span><span class="txt">The paper card goes away</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">21</span><span class="txt">Colter works one queue, in his own time windows</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">22</span><span class="txt">A daily look at what's coming in</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">23</span><span class="txt">The customer gets a text with the ready date</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">24</span><span class="txt">"Your clubs are ready" text with a Square pay link</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">25</span><span class="txt">The same repair setup at every store after Parker</span><span class="tag next">Next</span></li></ol></section>
+<section><h3>Your dashboard</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">26</span><span class="txt">One private web address that opens on a phone and updates live</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">27</span><span class="txt">The post calendar for every store</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">28</span><span class="txt">Calls the AI answered and handled</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">29</span><span class="txt">Instagram and Facebook messages received</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">30</span><span class="txt">Club repairs in the queue and done</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">31</span><span class="txt">Bookings and new contacts in the customer record</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">32</span><span class="txt">Money view from Square or QuickBooks: read-only, seen only by the people Dustin chooses. We never touch the money</span><span class="tag opt">Optional</span></li></ol></section>
+<section><h3>Dustin's voice everywhere</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">33</span><span class="txt">Drop a photo, clip or a few words in a shared folder</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">34</span><span class="txt">Posts go out on an approved calendar, by store and by theme</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">35</span><span class="txt">Daily lesson videos cut into captioned shorts</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">36</span><span class="txt">Posted to Instagram, Facebook, a Swing Bays YouTube channel and TikTok</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">37</span><span class="txt">Email on a schedule</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">38</span><span class="txt">An opt-in text list for offers</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">39</span><span class="txt">The website and creative stay with the people who run them today; we feed and connect them</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">40</span><span class="txt">Lesson recap emails from the recording</span><span class="tag later">Later</span></li><li><span class="box" aria-hidden="true"></span><span class="n">41</span><span class="txt">Brands and merchandise by market</span><span class="tag later">Later</span></li></ol></section>
+<section><h3>Bring people back</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">42</span><span class="txt">First visit to second visit: a check-in and a reason to come back</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">43</span><span class="txt">New member welcome</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">44</span><span class="txt">Members who stop coming, flagged and contacted</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">45</span><span class="txt">Renewals</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">46</span><span class="txt">Failed payments: a link to your secure payment page, never card details in a text</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">47</span><span class="txt">Lapsed customers won back</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">48</span><span class="txt">"Would a membership save me money?" answered for the customer</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">49</span><span class="txt">Instructor follow-up after lessons, approved by the instructor</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">50</span><span class="txt">Outreach in waves across every store, members and non-members on separate schedules</span><span class="tag next">Next</span></li></ol></section>
+<section><h3>Corporate events</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">51</span><span class="txt">Local companies found and contacted</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">52</span><span class="txt">Followed through to a deposit and a confirmed date</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">53</span><span class="txt">Staff approves each send</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">54</span><span class="txt">A corporate events page for each market</span><span class="tag next">Next</span></li></ol></section>
+<section><h3>Booking inside the conversation</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">55</span><span class="txt">A session with Keegan to connect SimHouse. Enrich it, never replace it</span><span class="tag sim">With SimHouse</span></li><li><span class="box" aria-hidden="true"></span><span class="n">56</span><span class="txt">Book a bay or a lesson inside a text, a message or the website chat</span><span class="tag sim">With SimHouse</span></li><li><span class="box" aria-hidden="true"></span><span class="n">57</span><span class="txt">"Is there a bay open tonight at seven?" answered from live availability</span><span class="tag sim">With SimHouse</span></li><li><span class="box" aria-hidden="true"></span><span class="n">58</span><span class="txt">The after-hours line books directly</span><span class="tag sim">With SimHouse</span></li></ol></section>
+<section><h3>New stores and the franchise</h3><ol><li><span class="box" aria-hidden="true"></span><span class="n">59</span><span class="txt">November 1 invitations to your list, sent from the customer record, replies tracked</span><span class="tag d30">First 30 days</span></li><li><span class="box" aria-hidden="true"></span><span class="n">60</span><span class="txt">Coming-soon stores live from day one: pages, a phone number, opening invitations</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">61</span><span class="txt">One opening checklist, and one board showing where every opening stands</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">62</span><span class="txt">The franchise playbook loaded into the command center</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">63</span><span class="txt">Answers to the questions new franchise partners always ask</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">64</span><span class="txt">Staff training that sounds the same everywhere</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">65</span><span class="txt">The Monday page: one weekly view for Dustin and his partners</span><span class="tag next">Next</span></li><li><span class="box" aria-hidden="true"></span><span class="n">66</span><span class="txt">What works at one store, shared with the others</span><span class="tag later">Later</span></li></ol></section>
+  </div>
+
+
+
+  <div class="f30wrap">
+  <h2>The first 30 days: Colter and Jordan</h2>
+  <p class="lede">Tentative dates, so you can see the shape of it. They hold if the agreement is signed by Friday, October 9. Jordan is on site with Colter at least twice.</p>
+  <table class="f30">
+    <tr><th></th><th>When</th><th>What</th><th>Who</th></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Before Jordan's first visit</td><td>Virtual SimHouse walkthrough with Keegan</td><td class="who">Colter, Keegan, Jordan</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Before Jordan's first visit</td><td>Add us as a user on the website</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Before Jordan's first visit</td><td>Add us as a user on Square</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Before Jordan's first visit</td><td>Add us to Instagram and Facebook</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Before Jordan's first visit</td><td>The list of locations for the repair form</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Before Jordan's first visit</td><td>The Swing Bays Mac server and Claude plan, bought in Swing Bays' name (we spec both)</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Week of October 19</td><td>Jordan on site in Parker: Mac server set up, first training, November 1 invitations prepped</td><td class="who">Colter and Jordan</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Week of October 19</td><td>Each store's line forwarded after close (we give Colter the steps)</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">By late October</td><td>The November 1 invitation list</td><td class="who">Colter</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">November 1</td><td>Invitations go out to your list</td><td class="who">Jordan</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Week of November 16</td><td>Jordan back on site for the Day 30 hand-off</td><td class="who">Colter and Jordan</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Day 30 to Day 90</td><td>Colter runs the command center day to day; we watch, guide and adjust</td><td class="who">Colter, with Jordan</td></tr>
+<tr><td class="cb"><span class="box"></span></td><td class="w">Day 90</td><td>Colter signs off and it's handed over</td><td class="who">Colter</td></tr>
+  </table>
+  </div>
+
+  <div class="foot">
+    <span>Questions: Aaron Jones, <a href="mailto:aaron@kerzie.ai">aaron@kerzie.ai</a> · Jordan Holzmiller, <a href="mailto:jordan@kerzie.ai">jordan@kerzie.ai</a></span>
+    <span>Kerzie AI Solutions · kerzie.ai</span>
+  </div>
+
+</div></div>
+</body>
+</html>

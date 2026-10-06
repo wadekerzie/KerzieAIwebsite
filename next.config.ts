@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
         source: "/nemoclaw/logistics",
         destination: "/nemoclaw/logistics/index.html",
       },
+      {
+        // Swing Bays build plan for Colter (private, noindex). Wade 10/6.
+        source: "/swingbays/plan",
+        destination: "/swingbays-build-plan.html",
+      },
       ],
     };
   },
