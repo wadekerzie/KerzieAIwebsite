@@ -217,6 +217,53 @@ export default function FieldGuidePage() {
             monthly is for.&rdquo;
           </span>
         </p>
+
+        {/* The SEO parallel + the standard question (Wade, 2026-10-06, after the
+            Wade/Aaron skeptic call, cap_20261006_aaron_backcover_skeptic_call).
+            Source of record: Wade OS 00_system/wade_messaging_library.md, section
+            "The standard will change; your authorship should not". */}
+        <h2 className="k-mono text-[#2B5D96] text-xs lg:text-sm tracking-[0.15em] lg:tracking-[0.12em] mt-10 mb-4">
+          &ldquo;WHY PAY NOW? AI FOUND US ANYWAY.&rdquo; - THE SEO PARALLEL
+        </h2>
+        <p className="text-[#262B3D] text-lg leading-relaxed">
+          Some owners will run their own test, see their business come up, and
+          ask why they should pay now, and why monthly. Don&apos;t argue the
+          test. Agree with it, then draw the parallel they already live with.
+        </p>
+        <ol className="mt-5 space-y-4">
+          {[
+            {
+              lead: "SEO has been soft for twenty years.",
+              body: "“What did your SEO spend actually return? Where’s the receipt?” Nobody can show them one. They pay because their competitors do, and nobody gets to say “I scored 100, so I’m first on Google.” It was always a hedge.",
+            },
+            {
+              lead: "AI search will be soft for a while too. Say so.",
+              body: "“I can’t tell you which vehicle in the whole metro ChatGPT returns tomorrow. Nobody can, not even the AI companies. What I can tell you is that you’re not in the game if you don’t give AI something you wrote to read.” Your result today might be luck, or something the AI remembered. When do you get to author what it reads every time? When it’s on your own page.",
+            },
+            {
+              lead: "The standard is forming. It won’t arrive overnight.",
+              body: "Today the emerging convention is llms.txt, and Google’s Chrome team now tests for it. It may not be the last one. Whatever comes won’t happen all at once, and it won’t be one thing everyone does the same way. That is exactly why the monthly exists: the Watch keeps their page in whatever form the AI systems read, as that changes.",
+            },
+            {
+              lead: "The point: follow the people who search.",
+              body: "“Your customers are already asking AI instead of searching. We’re just moving your business to where they already are, and keeping it there.” For dealers, one word does the work: Carvana. They do this nationwide, every day. If the owner says they don’t compete with Carvana, thank them and move on.",
+            },
+            {
+              lead: "Then the size of the ask.",
+              body: "“This is a fraction of what you’ve spent on SEO and on every version of your website. It’s plain text on a white screen, written by us, kept current by us.”",
+            },
+          ].map((s, i) => (
+            <li key={s.lead} className="flex gap-4">
+              <span className="k-mono text-[#2B5D96] text-sm lg:text-base font-semibold pt-1 flex-shrink-0">
+                {i + 1}
+              </span>
+              <p className="text-[#262B3D] text-lg leading-relaxed">
+                <span className="text-[#1A1B2E] font-medium">{s.lead}</span>{" "}
+                {s.body}
+              </p>
+            </li>
+          ))}
+        </ol>
         <p className="mt-4 text-[#262B3D] text-lg leading-relaxed">
           <span className="text-[#A8443C] font-medium">One guardrail.</span>{" "}
           Never say AI &ldquo;looks up the answer&rdquo; in the index. It points,
