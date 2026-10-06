@@ -25,7 +25,7 @@ export default function GotaGuyPage() {
       demo={<GotaGuyThread />}
       demoLabel="Watch It Happen"
       steps={[
-        "Quote in 90 seconds.",
+        "Quote in under 2 minutes.",
         "Confirm.",
         "Schedule on your timeframe.",
         "Contractor shows up when you said.",
