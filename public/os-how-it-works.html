@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<title>How Your AI Operating System Works | Kerzie AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#1A1B2E; --clay:#B04E2B; --gold:#E8B830; --paper:#F7F5F0; --muted:#4A4840; --line:#D9D4C7; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--navy); font-family:'IBM Plex Sans', sans-serif; }
+  .wrap { max-width:1680px; margin:0 auto; padding:40px 40px 64px; }
+  .kicker { font-family:'Space Grotesk', sans-serif; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--clay); font-weight:700; margin:0 0 8px; }
+  h1 { font-family:'Space Grotesk', sans-serif; font-size:clamp(30px, 4vw, 52px); line-height:1.05; margin:0 0 10px; letter-spacing:-.5px; }
+  .sub { font-size:clamp(16px, 1.6vw, 21px); color:var(--muted); margin:0 0 28px; max-width:900px; }
+  figure { margin:0; border-radius:24px; overflow:hidden; box-shadow:0 12px 40px rgba(26,27,46,.12); background:#fff; }
+  figure svg { display:block; width:100%; height:auto; }
+  h2 { font-family:'Space Grotesk', sans-serif; font-size:clamp(24px, 2.6vw, 36px); margin:64px 0 8px; }
+  .legend { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0 20px; }
+  .tag { display:inline-block; padding:4px 12px; border-radius:999px; color:#fff; font-size:13px; font-weight:600; white-space:nowrap; }
+  .tag.bring { background:var(--clay); } .tag.kyle { background:#6E5410; } .tag.build { background:var(--navy); }
+  .tree { background:#fff; border:1px solid var(--line); border-radius:18px; padding:8px 28px; max-width:1100px; }
+  .row { display:grid; grid-template-columns:44px 210px minmax(0,1fr) auto; gap:16px; align-items:center; padding:14px 0; border-bottom:1px solid #EFEBE2; }
+  .row:last-child { border-bottom:0; }
+  .row svg { width:28px; height:28px; stroke:var(--navy); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+  .row .name { font-family:'IBM Plex Mono', monospace; font-size:16px; font-weight:500; }
+  .row .what { color:var(--muted); font-size:16px; }
+  .root { font-family:'IBM Plex Mono', monospace; font-size:18px; font-weight:500; padding:14px 0 10px; border-bottom:1px solid var(--line); }
+  .foot { margin:20px 0 0; color:var(--muted); font-size:16px; max-width:1100px; }
+  .start { background:#fff; border:2px solid var(--clay); border-radius:20px; padding:28px 32px; margin:0 0 36px; }
+  .start h2 { margin:0 0 4px; }
+  .start ol { margin:16px 0 0; padding-left:0; list-style:none; display:grid; gap:18px; counter-reset:s; }
+  .start li { display:grid; grid-template-columns:44px minmax(0,1fr); gap:14px; align-items:start; font-size:18px; line-height:1.5; }
+  .start li::before { counter-increment:s; content:counter(s); width:36px; height:36px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Space Grotesk', sans-serif; font-weight:700; }
+  .btn { display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:12px 22px; border-radius:12px; background:var(--clay); color:#fff; text-decoration:none; font-weight:600; font-size:17px; border:0; cursor:pointer; font-family:inherit; }
+  .btn:hover { background:#8f3e22; }
+  .btn svg { width:20px; height:20px; stroke:#fff; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .prompt { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:10px; }
+  .prompt code { font-family:'IBM Plex Mono', monospace; font-size:16px; background:#F1ECE3; border-radius:10px; padding:12px 16px; flex:1 1 380px; }
+  .btn.ghost { background:var(--navy); }
+  .note { color:var(--muted); font-size:16px; }
+  .stops { max-width:1100px; margin:16px 0 0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px 28px; counter-reset:st; }
+  .stops li { position:relative; padding:14px 16px 14px 60px; background:#fff; border:1px solid var(--line); border-radius:14px; font-size:16px; line-height:1.5; color:var(--muted); }
+  .stops li::before { counter-increment:st; content:counter(st); position:absolute; left:16px; top:14px; width:30px; height:30px; border-radius:50%; background:var(--paper); border:1px solid var(--line); color:var(--navy); font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .stops li b { color:var(--navy); display:block; font-family:'Space Grotesk', sans-serif; font-size:17px; }
+  @media (max-width:900px) { .stops { grid-template-columns:minmax(0,1fr); } }
+  @media (max-width:720px) {
+    .wrap { padding:24px 16px 48px; }
+    figure { border-radius:14px; }
+    .row { grid-template-columns:32px minmax(0,1fr); gap:6px 12px; }
+    .row .what { grid-column:2; }
+    .row .tag { grid-column:2; justify-self:start; }
+  }
+  .band { background:#1A1B2E; color:#fff; border-radius:24px 24px 0 0; padding:40px 48px 44px; background-image:radial-gradient(rgba(255,255,255,.07) 1.4px, transparent 1.4px); background-size:28px 28px; }
+  .band .k { font-family:'Space Grotesk', sans-serif; font-size:15px; letter-spacing:3px; font-weight:700; color:var(--gold); margin:0 0 8px; }
+  .band h3 { font-family:'Space Grotesk', sans-serif; font-size:clamp(22px, 2.2vw, 30px); margin:0 0 24px; }
+  .band h4 { font-family:'Space Grotesk', sans-serif; font-size:20px; margin:28px 0 14px; color:#fff; }
+  .grid { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; }
+  .grid.c4 { grid-template-columns:repeat(4, minmax(0,1fr)); }
+  .grp { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); border-radius:18px; padding:18px; }
+  .gh { display:flex; align-items:center; gap:10px; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:17px; margin-bottom:12px; }
+  .gi { width:30px; height:30px; padding:6px; border-radius:50%; background:rgba(232,184,48,.16); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; flex:none; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; }
+  .chip { background:rgba(255,255,255,.09); border-radius:999px; padding:5px 12px; font-size:14.5px; }
+  .yline { height:10px; background:var(--gold); }
+  .below { border-radius:0 0 24px 24px; overflow:hidden; box-shadow:0 12px 40px rgba(26,27,46,.12); }
+  .below svg { display:block; width:100%; height:auto; }
+  .stops { max-width:1100px; margin:16px 0 0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px 28px; counter-reset:st; }
+  .stops li { position:relative; padding:14px 16px 14px 60px; background:#fff; border:1px solid var(--line); border-radius:14px; font-size:16px; line-height:1.5; color:var(--muted); }
+  .stops li::before { counter-increment:st; content:counter(st); position:absolute; left:16px; top:14px; width:30px; height:30px; border-radius:50%; background:var(--paper); border:1px solid var(--line); color:var(--navy); font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .stops li b { color:var(--navy); display:block; font-family:'Space Grotesk', sans-serif; font-size:17px; }
+  @media (max-width:1100px) { .grid, .grid.c4 { grid-template-columns:repeat(2, minmax(0,1fr)); } }
+  @media (max-width:720px) { .grid, .grid.c4, .stops { grid-template-columns:minmax(0,1fr); } .band { padding:28px 20px; border-radius:16px 16px 0 0; } }
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></symbol>
+      <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+      <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M13 8H7M17 12H7"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+      <symbol id="i-dashboard" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></symbol>
+      <symbol id="i-mailcheck" viewBox="0 0 24 24"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="m16 19 2 2 4-4"/></symbol>
+      <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,0.07)"/></pattern>
+      <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6B675E"/></marker>
+      <marker id="headgold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#E8B830"/></marker>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1A1B2E" flood-opacity="0.10"/></filter>
+      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#B04E2B" flood-opacity="0.35"/></filter>
+    </defs></svg>
+<div class="wrap">
+  <p class="kicker">Kerzie AI · One-Window</p>
+  <h1>How your AI operating system works</h1>
+  <p class="sub">Above the line runs for you in the background. Below the line is what you touch every day.</p>
+
+  <div class="band">
+    <p class="k">WHAT YOU DON'T SEE</p>
+    <h3>The plumbing. Set up once, then it runs in the background.</h3>
+    <div class="grid"><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-sparkles"/></svg><span>The engine</span></div><div class="chips"><span class="chip">Claude (or the AI you choose)</span><span class="chip">Routines with receipts</span><span class="chip">Skills it writes as it learns</span><span class="chip">A history of every change</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-mail"/></svg><span>How you communicate</span></div><div class="chips"><span class="chip">Email</span><span class="chip">Calendar</span><span class="chip">Messaging</span><span class="chip">Phone and text</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-database"/></svg><span>How you run the work</span></div><div class="chips"><span class="chip">CRM</span><span class="chip">Accounting</span><span class="chip">Project tools</span><span class="chip">Shared documents</span><span class="chip">Spreadsheets</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-dashboard"/></svg><span>How the world sees you</span></div><div class="chips"><span class="chip">Website</span><span class="chip">Social channels</span><span class="chip">Newsletter</span><span class="chip">Business listings</span><span class="chip">Reviews</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-message"/></svg><span>What you capture</span></div><div class="chips"><span class="chip">Meeting transcripts</span><span class="chip">Voice memos</span><span class="chip">Notes and documents</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-shield"/></svg><span>The rules</span></div><div class="chips"><span class="chip">Your company's or your own policies</span><span class="chip">What it may never touch</span><span class="chip">Where data may live</span></div></div></div>
+    <h4>How Claude reaches them</h4>
+    <div class="grid c4"><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-history"/></svg><span>Built-in connectors</span></div><div class="chips"><span class="chip">Email</span><span class="chip">Calendar</span><span class="chip">Drive</span><span class="chip">Meeting notes</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-shield"/></svg><span>APIs (keys stay private)</span></div><div class="chips"><span class="chip">Payments</span><span class="chip">CRM</span><span class="chip">Your website host</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-laptop"/></svg><span>Through the browser</span></div><div class="chips"><span class="chip">Any site you're signed in to</span></div></div><div class="grp"><div class="gh"><svg class="gi" viewBox="0 0 24 24" style="stroke:#E8B830"><use href="#i-folder"/></svg><span>On your computer</span></div><div class="chips"><span class="chip">The folder</span><span class="chip">Files you drop in</span><span class="chip">Voice memo inbox</span></div></div></div>
+  </div>
+  <div class="yline"></div>
+  <div class="below">
+  <svg viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="What you see: your computer, your OS folder, Claude as the command center, your views, and drafts waiting for your yes.">
+    <defs>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></symbol>
+      <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+      <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M13 8H7M17 12H7"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+      <symbol id="i-dashboard" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></symbol>
+      <symbol id="i-mailcheck" viewBox="0 0 24 24"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="m16 19 2 2 4-4"/></symbol>
+      <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,0.07)"/></pattern>
+      <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#6B675E"/></marker>
+      <marker id="headgold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#E8B830"/></marker>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1A1B2E" flood-opacity="0.10"/></filter>
+      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#B04E2B" flood-opacity="0.35"/></filter>
+    </defs>
+    <rect x="0" y="0" width="1600" height="600" fill="#F7F5F0"/>
+    <text x="64" y="58" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#6B675E">WHAT YOU SEE</text>
+    <g fill="none" stroke="#6B675E" stroke-width="2.5" stroke-linecap="round">
+      <path d="M 268 240 L 322 240" marker-end="url(#head)"/>
+      <path d="M 554 240 L 630 240" marker-end="url(#head)"/>
+      <path d="M 440 388 L 440 350" marker-end="url(#head)"/>
+      <path d="M 1044 190 C 1088 190, 1086 150, 1124 150" marker-end="url(#head)"/>
+      <path d="M 1044 290 C 1088 290, 1086 340, 1124 340" marker-end="url(#head)"/>
+    </g>
+    <path d="M 840 56 L 840 6" fill="none" stroke="#E8B830" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#headgold)"/>
+    <text x="858" y="40" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#6B675E">Claude reaches everything above the line</text>
+
+    <rect x="64" y="140" width="204" height="200" rx="20" fill="#FFFFFF" stroke="#D9D4C7" filter="url(#shadow)"/>
+    <circle cx="166" cy="200" r="36" fill="#EFEAE0"/>
+    <use href="#i-laptop" x="146" y="180" width="40" height="40" fill="none" stroke="#1A1B2E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="166" y="274" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="21" font-weight="700" fill="#1A1B2E">Your computer</text>
+    <text x="166" y="302" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#4A4840">The one you use today.</text>
+    <text x="166" y="322" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#4A4840">Nothing new to buy</text>
+
+    <rect x="326" y="140" width="228" height="200" rx="20" fill="#FFFFFF" stroke="#D9D4C7" filter="url(#shadow)"/>
+    <circle cx="440" cy="200" r="36" fill="#EFEAE0"/>
+    <use href="#i-folder" x="420" y="180" width="40" height="40" fill="none" stroke="#1A1B2E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="440" y="274" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="21" font-weight="700" fill="#1A1B2E">Your OS</text>
+    <text x="440" y="302" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#4A4840">One folder you own: rules,</text>
+    <text x="440" y="322" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#4A4840">memory, tracker, skills</text>
+
+    <rect x="64" y="390" width="540" height="136" rx="24" fill="#FFFFFF" stroke="#B04E2B" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="124" cy="458" r="34" fill="#F6E3D9"/>
+    <use href="#i-mic" x="104" y="438" width="40" height="40" fill="none" stroke="#B04E2B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="180" y="428" font-family="Space Grotesk, sans-serif" font-size="21" font-weight="700" fill="#1A1B2E">Your voice: get it out of your head</text>
+    <text x="180" y="456" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">Transcribe every conversation you can.</text>
+    <text x="180" y="480" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">Talk your thinking into long voice memos.</text>
+    <text x="180" y="504" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">Capture it all now. Claude sorts it later.</text>
+
+    <rect x="636" y="56" width="408" height="368" rx="32" fill="#B04E2B" filter="url(#glow)"/>
+    <circle cx="840" cy="140" r="54" fill="rgba(255,255,255,0.14)"/>
+    <use href="#i-sparkles" x="808" y="108" width="64" height="64" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="840" y="252" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">Claude</text>
+    <text x="840" y="296" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="500" fill="#FFFFFF">Your one-window command center</text>
+    <text x="840" y="348" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="19" fill="rgba(255,255,255,0.88)">Ask in plain English.</text>
+    <text x="840" y="374" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="19" fill="rgba(255,255,255,0.88)">It does the work.</text>
+
+    <rect x="1128" y="64" width="408" height="172" rx="20" fill="#FFFFFF" stroke="#D9D4C7" filter="url(#shadow)"/>
+    <circle cx="1196" cy="150" r="36" fill="#E7E9F2"/>
+    <use href="#i-dashboard" x="1176" y="130" width="40" height="40" fill="none" stroke="#1A1B2E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1252" y="112" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700" fill="#1A1B2E">Your views</text>
+    <text x="1252" y="142" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">Morning brief, the one-screen pane,</text>
+    <text x="1252" y="164" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">reports in your format,</text>
+    <text x="1252" y="186" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">pages and dashboards it builds</text>
+
+    <rect x="1128" y="264" width="408" height="152" rx="20" fill="#FFFFFF" stroke="#D9D4C7" filter="url(#shadow)"/>
+    <circle cx="1196" cy="340" r="36" fill="#F6E3D9"/>
+    <use href="#i-mailcheck" x="1176" y="320" width="40" height="40" fill="none" stroke="#B04E2B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1252" y="318" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700" fill="#1A1B2E">Waiting for your yes</text>
+    <text x="1252" y="346" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">Email drafts, proposals, posts,</text>
+    <text x="1252" y="368" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#4A4840">anything with money</text>
+
+    <use href="#i-shield" x="684" y="476" width="32" height="32" fill="none" stroke="#B04E2B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="728" y="500" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700" fill="#B04E2B">Emails, payments and cancellations wait for your yes.</text>
+    <text x="728" y="530" font-family="IBM Plex Sans, sans-serif" font-size="17" fill="#4A4840">Routine work can run on its own, only under rules you approve.</text>
+  </svg>
+  </div>
+
+  <h2>The 17 things your OS is built to do</h2>
+  <p class="sub" style="margin-bottom:0">A reference list. Some switch on in week one, the rest as you're ready.</p>
+  <ol class="stops">
+    <li><b>Setup</b>It's built from an interview about how you actually work: business owner, solo professional, or someone running their own role inside a company. You don't configure it. It builds itself around your answers.</li>
+    <li><b>Voice and meeting capture</b>Voice memos and meeting transcripts land in a folder it watches. It pulls the action items, files them, and starts the work. It stops at sending, publishing, spending, or contacting anyone.</li>
+    <li><b>Memory</b>Every session opens by reading one short briefing. Older detail moves to deeper folders. Nothing is deleted. You never re-explain your work.</li>
+    <li><b>Stays lean</b>The briefing has a size ceiling. A weekly checkup flags anything that grew and moves it down a tier.</li>
+    <li><b>Token efficiency</b>Routine work runs on smaller, cheaper models. Judgment, your voice, and anything with money go to the top model.</li>
+    <li><b>Skills</b>The first time something works, the steps get written down, and it runs the same way from then on.</li>
+    <li><b>Connectors</b>Email, calendar, documents, meeting transcripts and the tools you already use, each added with your yes. It works in your real systems, not a chat window.</li>
+    <li><b>Secrets</b>Keys and passwords live in one private folder that never leaves your computer. It can use them. It never shows them and never ships them.</li>
+    <li><b>Routines with receipts</b>Jobs run on a schedule. Each one writes a receipt: worked, nothing to do, needs you, or failed. A run with no receipt gets flagged.</li>
+    <li><b>Guardrails</b>It drafts and stages. Emails, posts and payments wait for your yes.</li>
+    <li><b>Receipts bias</b>It checks the real thing before telling you something is true. Public content carries only claims it can prove. When it isn't sure, it says so.</li>
+    <li><b>One place, every device</b>The folder can sync to private storage you control, so every device reads the same memory. Or it stays on one computer. Your choice.</li>
+    <li><b>Portable</b>The memory and the rules are plain files in a folder, so another AI can run the same OS with a few file names changed.</li>
+    <li><b>Speed</b>On the newest models, the everyday work runs even faster.</li>
+    <li><b>The pane</b>One screen: your moves, its moves, what's scheduled, and your rhythm.</li>
+    <li><b>The night shift</b>Optional. Each night it reconciles the day's work into the record and lines up tomorrow.</li>
+    <li><b>Dated work goes on the calendar</b>If you say yes, anything with a date that needs you becomes a calendar event with the full instructions inside.</li>
+  </ol>
+  <p class="foot">Every OS is built for one person, from their own interview. Your connectors are the ones you and your company approve.</p>
+</div>
+</body>
+</html>

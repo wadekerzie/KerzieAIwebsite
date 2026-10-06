@@ -41,6 +41,11 @@ const nextConfig: NextConfig = {
         source: "/os/kerzie",
         destination: "/os-kerzie.html",
       },
+      {
+        // Generic AI OS explainer, not client- or Kerzie-specific (noindex for now). Wade 10/6.
+        source: "/os/how-it-works",
+        destination: "/os-how-it-works.html",
+      },
       ],
     };
   },
