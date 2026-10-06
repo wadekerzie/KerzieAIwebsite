@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-static-favicons.mjs",
     "build": "next build && node scripts/gen-llms-full.mjs",
     "start": "next start",
     "lint": "eslint",
