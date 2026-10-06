@@ -339,7 +339,7 @@ export default function BackCoverPage() {
               Today the emerging convention is a page called llms.txt, and{" "}
               <a
                 href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt"
-                className="k-link"
+                className="underline decoration-[#B04E2B] underline-offset-4 hover:text-[#1A1B2E]"
                 target="_blank"
                 rel="noopener"
               >
