@@ -36,6 +36,11 @@ const nextConfig: NextConfig = {
         source: "/salesos/kyle",
         destination: "/salesos-kyle.html",
       },
+      {
+        // Internal Kerzie AI OS explainer (private, noindex). Wade 10/6.
+        source: "/os/kerzie",
+        destination: "/os-kerzie.html",
+      },
       ],
     };
   },
