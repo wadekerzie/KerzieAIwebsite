@@ -328,6 +328,37 @@ export default function BackCoverPage() {
         </Reveal>
       </section>
 
+      {/* Convention-agnostic positioning (Wade, 2026-10-06, after the Wade/Aaron
+          skeptic call). The value is authorship that survives standard changes,
+          not one file format. Never claim llms.txt drives rankings today. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">Built For Whatever The AI Reads Next</p>
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
+            <p>
+              Today the emerging convention is a page called llms.txt, and{" "}
+              <a
+                href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt"
+                className="k-link"
+                target="_blank"
+                rel="noopener"
+              >
+                Google&apos;s Chrome team now tests for it
+              </a>
+              . It won&apos;t be the last one.
+            </p>
+            <p>
+              What stays the same is that AI needs something you wrote to read.
+            </p>
+            <p className="text-[#1A1B2E] font-medium">
+              You keep authoring your business. The Watch keeps it in whatever
+              form the AI systems read, as that changes
+              <span className="text-[#B04E2B]">.</span>
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* The receipts - every number sourced and linked (Wade, 8/14: "we need
           credibility for our claims - citing news articles, cloudflare's
           announcement, and others"). CLAIM DISCIPLINE: each stat carries its
