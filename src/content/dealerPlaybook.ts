@@ -35,6 +35,10 @@ export const EPISODE = {
 // blank. Aired Tue 10/6 (LinkedIn Live 7:30 AM CT); replays filled the same
 // morning from the show's own YouTube, Spotify and Apple listings.
 export const EPISODE_LINKS: { label: string; href: string }[] = [
+  {
+    label: "The Dealer Playbook",
+    href: "https://thedealerplaybook.com/episodes/why-ai-is-skipping-your-dealership-website-wade-kerzie",
+  },
   { label: "YouTube", href: "https://www.youtube.com/watch?v=j4hQTp-sW64" },
   { label: "Spotify", href: "https://open.spotify.com/episode/6DK0nA3R3qBfebu8XLNaHV" },
   {
