@@ -8,6 +8,7 @@
 <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 <title>What Kyle's Sales OS Does | Kerzie AI</title>
+<meta name="description" content="Talk through your deals; your Sales OS turns them into follow-ups, CRM updates and forecast notes, drafted and waiting for your yes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -49,7 +50,15 @@
   .stops li { position:relative; padding:14px 16px 14px 60px; background:#fff; border:1px solid var(--line); border-radius:14px; font-size:16px; line-height:1.5; color:var(--muted); }
   .stops li::before { counter-increment:st; content:counter(st); position:absolute; left:16px; top:14px; width:30px; height:30px; border-radius:50%; background:var(--paper); border:1px solid var(--line); color:var(--navy); font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; }
   .stops li b { color:var(--navy); display:block; font-family:'Space Grotesk', sans-serif; font-size:17px; }
-  @media (max-width:900px) { .stops { grid-template-columns:minmax(0,1fr); } }
+  .stops.cont { counter-reset:st 10; }
+  h3.group { font-family:'Space Grotesk', sans-serif; font-size:clamp(19px, 2vw, 24px); margin:36px 0 0; color:var(--navy); }
+  .outcomes { background:#fff; border:1px solid var(--line); border-left:6px solid var(--gold); border-radius:20px; padding:24px 28px; margin:0 0 28px; max-width:1100px; }
+  .outcomes h2 { margin:0 0 6px; font-size:clamp(20px, 2.2vw, 28px); }
+  .outcomes ul { margin:14px 0 0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px 28px; }
+  .outcomes li { position:relative; padding-left:30px; font-size:17px; line-height:1.5; color:var(--muted); }
+  .outcomes li::before { content:""; position:absolute; left:0; top:9px; width:16px; height:16px; border-radius:50%; background:var(--gold); }
+  .outcomes li b { color:var(--navy); }
+  @media (max-width:900px) { .stops { grid-template-columns:minmax(0,1fr); } .outcomes ul { grid-template-columns:minmax(0,1fr); } }
   @media (max-width:720px) {
     .wrap { padding:24px 16px 48px; }
     figure { border-radius:14px; }
@@ -63,7 +72,19 @@
 <div class="wrap">
   <p class="kicker">Kerzie AI · The Sales OS</p>
   <h1>What Kyle's Sales OS does</h1>
-  <p class="sub">Above the line runs for you in the background. Below the line is what you touch every day.</p>
+  <p class="sub">Talk through your deals; it turns them into follow-ups, CRM updates and forecast notes, drafted and waiting for your yes.</p>
+
+  <section class="outcomes" aria-labelledby="outcomes-h">
+    <h2 id="outcomes-h">What it does for you</h2>
+    <ul>
+      <li><b>Before a call:</b> prep on the account, ready when you sit down.</li>
+      <li><b>After a call:</b> the action items pulled out and the follow-up drafted.</li>
+      <li><b>Every morning:</b> a brief with your moves and the drafts waiting on you.</li>
+      <li><b>Every Monday:</b> a team view for your one-on-ones and roll-ups.</li>
+      <li><b>Forecast notes:</b> drafted from what it can trace, and it says so when it isn't sure.</li>
+      <li><b>Nothing leaves your desk without your yes.</b></li>
+    </ul>
+  </section>
 
   <section class="start" aria-labelledby="start-h">
     <h2 id="start-h">Start here</h2>
@@ -242,26 +263,29 @@
   </div>
   <p class="foot">It's all plain files on your Mac. Nothing in it goes to a personal cloud drive or a personal account.</p>
 
-  <h2>The 17 things your OS is built to do</h2>
-  <p class="sub" style="margin-bottom:0">A reference list. Some switch on in week one, the rest as you're ready.</p>
-  <ol class="stops">
+  <h2>The 16 things your OS is built to do</h2>
+  <p class="sub" style="margin-bottom:0">A reference list in two groups: what it does, and why it stays reliable. Some switch on in week one, the rest as you're ready.</p>
+  <h3 class="group" id="group-does">What it does</h3>
+  <ol class="stops" aria-labelledby="group-does">
     <li><b>Setup</b>It interviews you about how you actually sell, then builds itself around your answers. You don't configure it.</li>
     <li><b>Voice and meeting capture</b>Transcripts and voice memos land in your folder. It pulls the action items, files them, and starts the work. It stops at sending, posting, changing the CRM, spending, or contacting anyone.</li>
-    <li><b>Memory</b>Every session opens by reading one short briefing. Older detail moves to deeper folders. Nothing is deleted. You never re-explain your job.</li>
-    <li><b>Stays lean</b>The briefing has a size ceiling. A weekly checkup flags anything that grew and moves it down a tier.</li>
-    <li><b>Token efficiency</b>Routine work runs on smaller, cheaper models. Judgment and anything that goes up the chain gets the top model.</li>
-    <li><b>Skills</b>The first time something works, the steps get written down, and it runs the same way from then on.</li>
-    <li><b>Connectors</b>Email, calendar, CRM, meeting transcripts and documents: only what your company approves, each one added with your yes.</li>
-    <li><b>Secrets</b>Anything sensitive lives in one private folder. It's never printed into chat and never leaves your Mac.</li>
-    <li><b>Routines with receipts</b>Jobs run on a schedule. Each one writes a receipt: worked, nothing to do, needs you, or failed. A run with no receipt gets flagged.</li>
     <li><b>Guardrails</b>It drafts and stages. Emails, CRM changes and anything that leaves your desk wait for your yes.</li>
-    <li><b>Receipts bias</b>It checks the real thing before telling you something is true. Forecasts and reports carry only what it can trace. When it isn't sure, it says so.</li>
-    <li><b>One place</b>The folder lives on your Mac, or only on storage your company approved. Company data never goes to a personal account.</li>
-    <li><b>Portable</b>Your rules and memory are plain files, so another AI tool your company approves can run the same OS with a few file names changed.</li>
-    <li><b>Speed</b>On the newest Claude models, the everyday work runs even faster.</li>
     <li><b>The pane</b>One screen: your moves, its moves, what's scheduled, and your weekly rhythm.</li>
     <li><b>The night shift</b>Optional, from week two. Each night it reconciles the day's work and lines up tomorrow's prep.</li>
     <li><b>Dated work goes on the calendar</b>If you say yes, anything with a date that needs you becomes a calendar event with the full instructions inside.</li>
+    <li><b>Connectors</b>Email, calendar, CRM, meeting transcripts and documents: only what your company approves, each one added with your yes.</li>
+    <li><b>Routines with receipts</b>Jobs run on a schedule. Each one writes a receipt: worked, nothing to do, needs you, or failed. A run with no receipt gets flagged.</li>
+    <li><b>It checks before it tells you</b>It checks the real thing before telling you something is true. Forecasts and reports carry only what it can trace. When it isn't sure, it says so.</li>
+    <li><b>One place</b>The folder lives on your Mac, or only on storage your company approved. Company data never goes to a personal account.</li>
+  </ol>
+  <h3 class="group" id="group-reliable">Why it stays reliable</h3>
+  <ol class="stops cont" aria-labelledby="group-reliable">
+    <li><b>Memory</b>Every session opens by reading one short briefing. Older detail moves to deeper folders. Nothing is deleted. You never re-explain your job.</li>
+    <li><b>Stays lean</b>The briefing has a size ceiling. A weekly checkup flags anything that grew and moves it down a tier.</li>
+    <li><b>Costs stay low</b>Routine work runs on smaller, cheaper models. Judgment and anything that goes up the chain gets the top model.</li>
+    <li><b>Skills</b>The first time something works, the steps get written down, and it runs the same way from then on.</li>
+    <li><b>Secrets</b>Anything sensitive lives in one private folder. It's never printed into chat and never leaves your Mac.</li>
+    <li><b>Portable</b>Your rules and memory are plain files, so another AI tool your company approves can run the same OS with a few file names changed.</li>
   </ol>
 
 </div>
