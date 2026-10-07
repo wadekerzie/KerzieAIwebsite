@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-<title>What Kyle's Sales OS Does | Kerzie AI</title>
+<title>What Kyle's Sales OS Does (Windows) | Kerzie AI</title>
 <meta name="description" content="Talk through your deals; your Sales OS turns them into follow-ups, CRM updates and forecast notes, drafted and waiting for your yes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,7 +75,7 @@
   <p class="kicker">Kerzie AI · The Sales OS</p>
   <h1>What Kyle's Sales OS does</h1>
   <p class="sub">Talk through your deals; it turns them into follow-ups, CRM updates and forecast notes, drafted and waiting for your yes.</p>
-  <p class="note" style="margin:-16px 0 28px">On Windows? <a href="/salesos/kyle-windows" style="color:var(--clay)">Use the Windows setup</a>.</p>
+  <p class="note" style="margin:-16px 0 28px">On a Mac? <a href="/salesos/kyle" style="color:var(--clay)">Use the Mac setup</a>.</p>
 
   <section class="outcomes" aria-labelledby="outcomes-h">
     <h2 id="outcomes-h">What it does out of the box</h2>
@@ -93,15 +93,16 @@
 
   <section class="start" aria-labelledby="start-h">
     <h2 id="start-h">Start here</h2>
-    <p class="note" style="margin:0">Do these on this Mac, in order. About 15 minutes, plus a few for the Terminal install.</p>
+    <p class="note" style="margin:0">Do these on this PC, in order. About 15 minutes, plus a few for the optional Terminal install.</p>
     <ol>
-      <li><div>Download your setup file.<div style="margin-top:10px"><a class="btn" href="/downloads/sales-os-setup.md" download="sales-os-setup.md"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download sales-os-setup.md</a></div></div></li>
-      <li><div>In <b>Documents</b>, make a folder named <b>Kyle's Sales OS</b>. Move the setup file into it. Inside it, make a folder named <b>my-notes</b> and put your voice memo transcripts there.</div></li>
-      <li><div>One command in Terminal, once. Press <b>Command + Space</b>, type <b>Terminal</b>, press Return. Paste this, press Return, then click <b>Install</b> in the window that appears. If it says the tools are already installed, that's fine.
-        <div class="prompt"><code id="xcode-cmd">xcode-select --install</code><button class="btn ghost" type="button" data-copy="xcode-cmd">Copy</button></div></div></li>
-      <li><div>Open <b>Claude</b>, click the <b>Code</b> tab, click <b>Select folder</b>, and pick <b>Kyle's Sales OS</b>. If it asks whether you trust the folder, say yes.</div></li>
-      <li><div>Copy this, paste it into Claude, and press Return. It reads your transcripts first, then asks only what they don't answer.
-        <div class="prompt"><code id="first-msg">Read sales-os-setup.md and set up my Sales OS. Start with Step 0. My voice memo transcripts are in the my-notes folder: read them first and answer every question you can from them, then ask me only what they don't cover.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
+      <li><div>Open <b>Claude</b> (your WWT account) and check for the <b>Code</b> tab at the top. No Code tab? Stop here and tell Wade; it's a company setting.</div></li>
+      <li><div>Download your setup file.<div style="margin-top:10px"><a class="btn" href="/downloads/sales-os-setup-windows.md" download="sales-os-setup-windows.md"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download sales-os-setup-windows.md</a></div></div></li>
+      <li><div>In <b>File Explorer</b>, click the address bar, type <b>%USERPROFILE%</b> and press Enter. Make a folder named <b>Kyles Sales OS</b> (no apostrophe). Move the setup file into it. Inside it, make a folder named <b>my-notes</b> and put your voice memo transcripts there.</div></li>
+      <li><div>Optional, recommended: one command in Terminal, once. Press the <b>Windows key</b>, type <b>Terminal</b>, press Enter. Paste this, press Enter, and accept any prompts. If it's blocked, skip it; Claude still works.
+        <div class="prompt"><code id="git-cmd">winget install --id Git.Git -e --source winget</code><button class="btn ghost" type="button" data-copy="git-cmd">Copy</button></div></div></li>
+      <li><div>Back in <b>Claude</b>, click the <b>Code</b> tab, click <b>Select folder</b>, and pick <b>Kyles Sales OS</b>. If it asks whether you trust the folder, say yes.</div></li>
+      <li><div>Copy this, paste it into Claude, and press Enter. It reads your transcripts first, then asks only what they don't answer.
+        <div class="prompt"><code id="first-msg">Read sales-os-setup-windows.md and set up my Sales OS. Start with Step 0. My voice memo transcripts are in the my-notes folder: read them first and answer every question you can from them, then ask me only what they don't cover.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
     </ol>
   </section>
 
@@ -200,7 +201,7 @@
     <circle cx="166" cy="660" r="36" fill="#EFEAE0"/>
     <use href="#i-laptop" x="146" y="640" width="40" height="40" fill="none" stroke="#1A1B2E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="166" y="734" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="21" font-weight="700" fill="#1A1B2E">Your computer</text>
-    <text x="166" y="762" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#4A4840">Your Mac, as it is today</text>
+    <text x="166" y="762" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#4A4840">Your PC, as it is today</text>
 
     <!-- your sales os -->
     <rect x="326" y="600" width="228" height="200" rx="20" fill="#FFFFFF" stroke="#D9D4C7" filter="url(#shadow)"/>
@@ -253,8 +254,8 @@
   <p class="sub" style="margin-bottom:0">Wade brings the setup file. You bring your notes. Claude builds the rest during setup, in your words.</p>
   <div class="legend"><span class="tag bring">Wade brings</span><span class="tag kyle">Kyle brings</span><span class="tag build">Claude builds</span></div>
   <div class="tree">
-    <div class="root">Kyle's Sales OS/</div>
-    <div class="row"><svg viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg><span class="name">sales-os-setup.md</span><span class="what">The setup guide. Claude reads it and builds everything below.</span><span class="tag bring">Wade brings</span></div>
+    <div class="root">Kyles Sales OS/</div>
+    <div class="row"><svg viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg><span class="name">sales-os-setup-windows.md</span><span class="what">The setup guide. Claude reads it and builds everything below.</span><span class="tag bring">Wade brings</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg><span class="name">my-notes/</span><span class="what">Your voice memos and job documents. Read first, so you get fewer questions.</span><span class="tag kyle">Kyle brings</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg><span class="name">CLAUDE.md</span><span class="what">Your operating manual: how you sell and your rules, in your own words.</span><span class="tag build">Claude builds</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span class="name">ACTIONS.md</span><span class="what">Your one working list.</span><span class="tag build">Claude builds</span></div>
@@ -266,7 +267,7 @@
     <div class="row"><svg viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span class="name">dashboard/</span><span class="what">Your one-screen view of the week.</span><span class="tag build">Claude builds</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8M10 12h4"/></svg><span class="name">archive/</span><span class="what">Older detail, moved out of the way, never deleted.</span><span class="tag build">Claude builds</span></div>
   </div>
-  <p class="foot">It's all plain files on your Mac. Nothing in it goes to a personal cloud drive or a personal account.</p>
+  <p class="foot">It's all plain files on your PC. Nothing in it goes to a personal cloud drive or a personal account.</p>
 
   <h2>The 16 things your OS is built to do</h2>
   <p class="sub" style="margin-bottom:0">A reference list in two groups: what it does, and why it stays reliable. Some switch on in week one, the rest as you're ready.</p>
@@ -281,7 +282,7 @@
     <li><b>Connectors</b>Email, calendar, CRM, meeting transcripts and documents: only what your company approves, each one added with your yes.</li>
     <li><b>Routines with receipts</b>Jobs run on a schedule. Each one writes a receipt: worked, nothing to do, needs you, or failed. A run with no receipt gets flagged.</li>
     <li><b>It checks before it tells you</b>It checks the real thing before telling you something is true. Forecasts and reports carry only what it can trace. When it isn't sure, it says so.</li>
-    <li><b>One place</b>The folder lives on your Mac, or only on storage your company approved. Company data never goes to a personal account.</li>
+    <li><b>One place</b>The folder lives on your PC, or only on storage your company approved. Company data never goes to a personal account.</li>
   </ol>
   <h3 class="group" id="group-reliable">Why it stays reliable</h3>
   <ol class="stops cont" aria-labelledby="group-reliable">
@@ -289,7 +290,7 @@
     <li><b>Stays lean</b>The briefing has a size ceiling. A weekly checkup flags anything that grew and moves it down a tier.</li>
     <li><b>Costs stay low</b>Routine work runs on smaller, cheaper models. Judgment and anything that goes up the chain gets the top model.</li>
     <li><b>Skills</b>The first time something works, the steps get written down, and it runs the same way from then on.</li>
-    <li><b>Secrets</b>Anything sensitive lives in one private folder. It's never printed into chat and never leaves your Mac.</li>
+    <li><b>Secrets</b>Anything sensitive lives in one private folder. It's never printed into chat and never leaves your PC.</li>
     <li><b>Portable</b>Your rules and memory are plain files, so another AI tool your company approves can run the same OS with a few file names changed.</li>
   </ol>
 

@@ -37,6 +37,11 @@ const nextConfig: NextConfig = {
         destination: "/salesos-kyle.html",
       },
       {
+        // Windows edition of the Sales OS explainer for Kyle (private, noindex). Wade 10/7.
+        source: "/salesos/kyle-windows",
+        destination: "/salesos-kyle-windows.html",
+      },
+      {
         // Internal Kerzie AI OS explainer (private, noindex). Wade 10/6.
         source: "/os/kerzie",
         destination: "/os-kerzie.html",
