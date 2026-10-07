@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-07",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 3,
+      "price_changed": 10,
+      "total": 341,
+      "ran_at": "7:42 AM MT",
+      "note": "Two vehicles joined the list, a 2021 Toyota Tacoma TRD Off Road and a 2025 Nissan Rogue SV, and three came off, bringing the total to 341. Ten vehicles were repriced, nine of them reductions. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-06",
       "status": "ok",
       "kind": "refresh",
