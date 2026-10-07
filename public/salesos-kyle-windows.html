@@ -43,7 +43,7 @@
   .btn:hover { background:#8f3e22; }
   .btn svg { width:20px; height:20px; stroke:#fff; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
   .prompt { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:10px; }
-  .prompt code { font-family:'IBM Plex Mono', monospace; font-size:16px; background:#F1ECE3; border-radius:10px; padding:12px 16px; flex:1 1 380px; }
+  .prompt code { font-family:'IBM Plex Mono', monospace; font-size:16px; background:#F1ECE3; border-radius:10px; padding:12px 16px; flex:1 1 380px; min-width:0; overflow-wrap:anywhere; }
   .btn.ghost { background:var(--navy); }
   .note { color:var(--muted); font-size:16px; }
   .stops { max-width:1100px; margin:16px 0 0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px 28px; counter-reset:st; }
@@ -93,17 +93,17 @@
 
   <section class="start" aria-labelledby="start-h">
     <h2 id="start-h">Start here</h2>
-    <p class="note" style="margin:0">Do these on this PC, in order. About 15 minutes, plus a few for the optional Terminal install.</p>
+    <p class="note" style="margin:0">Do these on this PC, in order. About 15 minutes.</p>
     <ol>
       <li><div>Open <b>Claude</b> (your WWT account) and check for the <b>Code</b> tab at the top. No Code tab? Stop here and tell Wade; it's a company setting.</div></li>
-      <li><div>Download your setup file.<div style="margin-top:10px"><a class="btn" href="/downloads/sales-os-setup-windows.md" download="sales-os-setup-windows.md"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download sales-os-setup-windows.md</a></div></div></li>
-      <li><div>In <b>File Explorer</b>, click the address bar, type <b>%USERPROFILE%</b> and press Enter. Make a folder named <b>Kyles Sales OS</b> (no apostrophe). Move the setup file into it. Inside it, make a folder named <b>my-notes</b> and put your voice memo transcripts there.</div></li>
-      <li><div>Optional, recommended: one command in Terminal, once. Press the <b>Windows key</b>, type <b>Terminal</b>, press Enter. Paste this, press Enter, and accept any prompts. If it's blocked, skip it; Claude still works.
+      <li><div>Click the <b>Code</b> tab, then <b>Select folder</b>. In the window that opens, go to <b>This PC &gt; C: &gt; Users &gt; (your name)</b>. Click <b>New folder</b>, name it <b>Kyles Sales OS</b> (no apostrophe), open it, and click <b>Select folder</b>. If Claude asks whether you trust the folder, say yes.</div></li>
+      <li><div>Copy this, paste it into Claude, and press Enter.
+        <div class="prompt"><code id="first-msg">Set up my Sales OS. First, download https://kerzie.ai/downloads/sales-os-setup-windows.md into this folder and create a subfolder named my-notes. Then read sales-os-setup-windows.md and follow it, starting with Step 0. If my-notes has voice memo transcripts in it, read them first and answer every question you can from them, then ask me only what they don't cover.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
+      <li><div>Any time, drop your voice memo transcripts into <b>my-notes</b>, inside Kyles Sales OS. Claude reads them and asks fewer questions. You can start without them.</div></li>
+      <li><div>Optional, only if Claude asks for it: one command in Terminal. Press the <b>Windows key</b>, type <b>Terminal</b>, press Enter, paste this, press Enter, and click Yes on any prompt. If it's blocked, skip it; Claude still works.
         <div class="prompt"><code id="git-cmd">winget install --id Git.Git -e --source winget</code><button class="btn ghost" type="button" data-copy="git-cmd">Copy</button></div></div></li>
-      <li><div>Back in <b>Claude</b>, click the <b>Code</b> tab, click <b>Select folder</b>, and pick <b>Kyles Sales OS</b>. If it asks whether you trust the folder, say yes.</div></li>
-      <li><div>Copy this, paste it into Claude, and press Enter. It reads your transcripts first, then asks only what they don't answer.
-        <div class="prompt"><code id="first-msg">Read sales-os-setup-windows.md and set up my Sales OS. Start with Step 0. My voice memo transcripts are in the my-notes folder: read them first and answer every question you can from them, then ask me only what they don't cover.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
     </ol>
+    <p class="note" style="margin:18px 0 0">The setup guide itself: <a href="/downloads/sales-os-setup-windows.md" style="color:var(--clay)">sales-os-setup-windows.md</a></p>
   </section>
 
   <figure aria-label="Diagram: what you don't see above a yellow line (the engine and your company's connectors), and what you see below it (your computer, your Sales OS folder, Claude as the command center, your views and drafts waiting for your yes).">
@@ -255,7 +255,7 @@
   <div class="legend"><span class="tag bring">Wade brings</span><span class="tag kyle">Kyle brings</span><span class="tag build">Claude builds</span></div>
   <div class="tree">
     <div class="root">Kyles Sales OS/</div>
-    <div class="row"><svg viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg><span class="name">sales-os-setup-windows.md</span><span class="what">The setup guide. Claude reads it and builds everything below.</span><span class="tag bring">Wade brings</span></div>
+    <div class="row"><svg viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg><span class="name">sales-os-setup-windows.md</span><span class="what">The setup guide. Claude downloads it during setup, reads it, and builds everything below.</span><span class="tag bring">Wade brings</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg><span class="name">my-notes/</span><span class="what">Your voice memos and job documents. Read first, so you get fewer questions.</span><span class="tag kyle">Kyle brings</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg><span class="name">CLAUDE.md</span><span class="what">Your operating manual: how you sell and your rules, in your own words.</span><span class="tag build">Claude builds</span></div>
     <div class="row"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span class="name">ACTIONS.md</span><span class="what">Your one working list.</span><span class="tag build">Claude builds</span></div>
