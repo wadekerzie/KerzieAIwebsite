@@ -133,6 +133,11 @@ Cloudflare reported this year that more than half of all traffic on the internet
 Your website was built to be read by a person.
 We get it ready for the AI to read .
 
+Built For Whatever The AI Reads Next
+Today the emerging convention is a page called llms.txt, and Google's Chrome team now tests for it . It won't be the last one.
+What stays the same is that AI needs something you wrote to read.
+You keep authoring your business. The Watch keeps it in whatever form the AI systems read, as that changes .
+
 Don't Take Our Word For It
 None of these numbers are ours. Every one links to the people who published it.
 CLOUDFLARE · JULY 2026
@@ -568,7 +573,7 @@ Image: The Dealer Playbook The Dealer Playbook
 
 ## AI Can't Find You: Why AI Is Skipping Your Dealership Website
 with Michael Cirillo , The Dealer Playbook
-The episode: Watch live Tue 10/6, 7:30 AM CT
+The episode: The Dealer Playbook / YouTube / Spotify / Apple Podcasts / LinkedIn
 
 ## Free AI visibility check for your store
 We run the same check from the episode and email you what ChatGPT and Google's AI can and cannot read on your site, within one business day.
