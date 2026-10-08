@@ -160,6 +160,17 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: [{ key: "Link", value: '</llms.txt>; rel="describedby"' }],
       },
+      {
+        // Kyle's Sales OS setup guides save as files instead of opening as
+        // text in the tab (Wade 10/8: "a download function so we don't have
+        // to copy paste"). Scoped to these two files only.
+        source: "/downloads/sales-os-setup-windows.md",
+        headers: [{ key: "Content-Disposition", value: 'attachment; filename="sales-os-setup-windows.md"' }],
+      },
+      {
+        source: "/downloads/sales-os-setup.md",
+        headers: [{ key: "Content-Disposition", value: 'attachment; filename="sales-os-setup.md"' }],
+      },
     ];
   },
 };
