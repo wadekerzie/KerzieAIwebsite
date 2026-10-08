@@ -139,6 +139,18 @@ p{margin:0 0 14px}
 .value{margin:14px 0 0;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:15px}
 .pricebox .row.first{background:var(--soft)}
 .pricebox .row.first .amt{font-size:24px}
+/* payment schedule, months 1 to 4, inside the price box */
+.pricebox .row.schedrow{display:block;background:var(--soft);padding:0 16px 14px;border-top:0}
+.sched,.sched tbody{display:block;width:100%;font-size:14px}
+.sched tr{display:grid;grid-template-columns:100px 80px 1fr;gap:2px 14px;padding:8px 0;border-top:1px solid var(--line)}
+.sched td{display:block;padding:0;vertical-align:top;min-width:0}
+.sched td.m{white-space:nowrap;color:var(--blue-dark);font-weight:700}
+.sched td.a{white-space:nowrap;color:var(--blue-dark);font-weight:800}
+.sched td.w{color:#2b3038;overflow-wrap:anywhere}
+.sched tr.tot{border-top:2px solid var(--blue-dark)}
+.sched tr.tot td{font-weight:700}
+.sched tr.tot td.w{color:var(--muted);font-weight:600}
+@media(max-width:559px){.sched tr{grid-template-columns:100px 1fr}.sched td.w{grid-column:1/-1}.sched tr.tot td.w{display:none}}
 /* scope of work: two columns (what we do / what you do), one column on phones */
 .scope{margin:16px 0 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper);min-width:0;max-width:100%}
 .scope .hd{display:none}
@@ -274,13 +286,22 @@ function proposalBody(opts: { approvedOn?: string }) {
 
 
   const runTotal = p.run_monthly * p.run_months;
-  // One up-front price (Wade 10/1 after the Aaron call): the Back Cover plus
-  // the build, paid in two equal halves. The Back Cover's monthly folds into
-  // the support and Right to Use fees, so year one at Parker, all in, is the
-  // up-front total, the 3 support months, then Right to Use for the other 9.
+  // One price for the first four months (Wade 10/8 after the Aaron call, same
+  // total as the 10/1 offer): the Back Cover plus the build plus the three
+  // operate months, paid on the monthly schedule in the JSON (month 1 on
+  // signing, month 4 is the transfer month). The Back Cover's monthly folds
+  // into those months and the Right to Use fee, so year one at Parker, all in,
+  // is the four-month total plus Right to Use for the other 8 months.
   const firstTotal = p.back_cover + p.build;
-  const half = firstTotal / 2;
-  const yearOne = firstTotal + runTotal + p.rtu_monthly * (12 - p.run_months);
+  const fourMonth = firstTotal + runTotal;
+  const schedule = p.schedule;
+  const scheduleTotal = schedule.reduce((t, s) => t + s.amount, 0);
+  if (scheduleTotal !== fourMonth)
+    throw new Error(
+      `swingbays_project.json: price.schedule sums to ${scheduleTotal}, expected ${fourMonth}`,
+    );
+  const firstPayment = schedule[0].amount;
+  const yearOne = fourMonth + p.rtu_monthly * (12 - schedule.length);
   const yearOnePct = (yearOne / v.parker_revenue) * 100;
   const pctLine =
     yearOnePct < 4 ? "under 4%" : `about ${Math.round(yearOnePct)}%`;
@@ -292,20 +313,35 @@ function proposalBody(opts: { approvedOn?: string }) {
         ? "less than"
         : "in line with";
 
-  // Spend graphic: heights proportional to dollars, with a floor so the small
-  // bars stay visible on a phone. Labels carry the real numbers. The first bar
-  // is stacked: the Back Cover slice at its base, the build above, the total
-  // on top.
-  const max = firstTotal;
+  // Spend graphic: one bar per payment month, heights proportional to dollars,
+  // with a floor so the small bars stay visible on a phone. Labels carry the
+  // real numbers. Months 1 to 3 in the build/operate blue, the transfer month
+  // in the lighter run blue, Right to Use after that in the pale blue.
+  const max = Math.max(...schedule.map((s) => s.amount));
   const h = (n: number) => Math.max(5, Math.round((n / max) * 100));
   // The bar-value labels carry the "$" in its own span: under 420px it hides
-  // and the caption says "In dollars." once, so three "$2,500" labels never
+  // and the caption says "In dollars." once, so three "$10,000" labels never
   // run together on a phone.
   const amt = (n: number) =>
     `<b><span class="cur">$</span>${esc(n.toLocaleString("en-US"))}</b>`;
   const bar = (cls: string, n: number, label: string) =>
     `<div class="bar ${cls}">${amt(n)}<i style="height:${h(n)}%"></i><s>${esc(label)}</s></div>`;
-  const stackedBar = `<div class="bar build stack">${amt(firstTotal)}<i class="seg top" style="height:${h(p.build)}%"><em>Build ${esc(money(p.build))}</em></i><i class="seg base" style="height:${h(p.back_cover)}%" title="Back Cover ${esc(money(p.back_cover))}"></i><s>Up front, two halves</s></div>`;
+  const lastMonth = schedule[schedule.length - 1].month;
+  const scheduleBars = schedule
+    .map((s) =>
+      bar(
+        s.month === lastMonth ? "run" : "build",
+        s.amount,
+        `Month ${s.month}, ${s.what.split(".")[0].toLowerCase()}`,
+      ),
+    )
+    .join("\n      ");
+  const scheduleRows = schedule
+    .map(
+      (s) =>
+        `<tr><td class="m">${esc(s.when)}</td><td class="a">${esc(money(s.amount))}</td><td class="w">${esc(s.what)}</td></tr>`,
+    )
+    .join("");
 
   // Scope of work, in build order: what we do on the left, what you do on
   // the right, dependencies marked. One column on phones.
@@ -331,8 +367,8 @@ function proposalBody(opts: { approvedOn?: string }) {
     .join("");
   const sec = data.contacts.secondary;
 
-  // Tentative timeline (Wade 10/1): conditional on the signed agreement and
-  // down payment by the hard date. Labeled tentative on the page.
+  // Tentative timeline (Wade 10/1; hard date dropped 10/8): conditional on the
+  // signed agreement and the first payment. Labeled tentative on the page.
   const tl = data.timeline;
   const timelineBlock = `
   <div class="timeline">
@@ -442,21 +478,17 @@ function proposalBody(opts: { approvedOn?: string }) {
   </ol>
   <div class="chart" aria-label="What you pay over time">
     <div class="bars">
-      ${stackedBar}
-      ${bar("run", p.run_monthly, "Month 1")}
-      ${bar("run", p.run_monthly, "Month 2")}
-      ${bar("run", p.run_monthly, "Month 3")}
-      ${bar("after", p.rtu_monthly, "Month 4")}
-      ${bar("after", p.rtu_monthly, "and on")}
+      ${scheduleBars}
+      ${bar("after", p.rtu_monthly, `Month ${lastMonth + 1} and on`)}
     </div>
-    <p class="cap"><span class="usd">In dollars. </span>The first bar includes The Back Cover (${esc(money(p.back_cover))}). Big once, paid in two halves, then small, then smaller. You are never committing to something that grows.</p>
+    <p class="cap"><span class="usd">In dollars. </span>Four payments for the first four months, The Back Cover (${esc(money(p.back_cover))}) included, then small. You are never committing to something that grows.</p>
   </div>
 
   <h2><span class="num">4</span>The price</h2>
   <div class="pricebox">
-    <div class="row first"><div class="amt">${esc(money(firstTotal))}</div><div class="what"><strong>Up front, for everything in this proposal.</strong> The Back Cover included. Half at signing (${esc(money(half))}), half at the end of the first 30 days (${esc(money(half))}).</div></div>
-    <div class="row"><div class="amt">${esc(money(p.run_monthly))}<small> a month</small></div><div class="what"><strong>Support for the first ${esc(String(p.run_months))} months.</strong> We run it with you for the 90 days. The Back Cover monthly is included.</div></div>
-    <div class="row"><div class="amt">${esc(money(p.rtu_monthly))}<small> a month</small></div><div class="what"><strong>After hand-over.</strong> Covers your first ${esc(String(p.rtu_included_stores))} active stores, The Back Cover included.</div></div>
+    <div class="row first"><div class="amt">${esc(money(fourMonth))}</div><div class="what"><strong>The first four months, for everything in this proposal.</strong> The Back Cover and its monthly included. Build, operate and transfer, paid monthly on the schedule below. The total is the same whether we finish early or not; these are payment terms.</div></div>
+    <div class="row schedrow"><table class="sched" aria-label="Payment schedule, months 1 to 4">${scheduleRows}<tr class="tot"><td class="m">Total</td><td class="a">${esc(money(fourMonth))}</td><td class="w">The first four months</td></tr></table></div>
+    <div class="row"><div class="amt">${esc(money(p.rtu_monthly))}<small> a month</small></div><div class="what"><strong>After hand-over.</strong> Starts month ${esc(String(lastMonth + 1))}. Covers your first ${esc(String(p.rtu_included_stores))} active stores, The Back Cover included.</div></div>
     <div class="row"><div class="amt">${esc(money(p.rtu_per_store_monthly))}<small> a month</small></div><div class="what"><strong>Each additional store</strong> beyond the first ${esc(String(p.rtu_included_stores))}.</div></div>
     <div class="row"><div class="amt">${esc(money(p.new_store_template))}</div><div class="what"><strong>Each new store you open.</strong> ${esc(p.new_store_includes[0].toUpperCase() + p.new_store_includes.slice(1))}.</div></div>
   </div>
@@ -474,7 +506,7 @@ function proposalBody(opts: { approvedOn?: string }) {
 
   <h2><span class="num">7</span>What we need from you</h2>
   <ol class="need">
-    <li><strong>The signed agreement and the down payment (${esc(money(half))}) by <span class="due">${esc(p.deposit_due)}</span>.</strong></li>
+    <li><strong>The signed agreement and the first payment (${esc(money(firstPayment))}), due on signing.</strong></li>
     <li>The Swing Bays Mac server and the Claude plan, bought in Swing Bays' name. We spec both.</li>
     <li>${esc(c.lead)} as the one point of contact.</li>
     <li>A session with ${esc(c.sim_contact)} on SimHouse, before Jordan's first visit.</li>
@@ -482,7 +514,7 @@ function proposalBody(opts: { approvedOn?: string }) {
   </ol>
 
   <div class="cta">
-    <p class="big">Next step: the signed agreement and the down payment by ${esc(p.deposit_due)}, and we start the build.</p>
+    <p class="big">Next step: the signed agreement and the first payment (${esc(money(firstPayment))}), and we start the build.</p>
     <p>Aaron and Jordan are your contacts.</p>
     <div class="contacts">${contactCards}</div>
     <p class="note">${esc(sec.name)}, ${esc(sec.line)}: <a href="mailto:${esc(sec.email)}">${esc(sec.email)}</a></p>

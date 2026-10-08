@@ -1,7 +1,7 @@
 {
-  "_readme": "Drives kerzie.ai/swingbays/proposal (src/app/swingbays/proposal/route.ts). mode: 'proposal' shows the offer; 'project' puts the dashboard on top and keeps the proposal underneath as 'What you approved'. ?view=project previews project mode without changing this field. Recipe: Wade OS clients/swing_bays/README_project_page.md. Price and scope revised 2026-10-01 after the 3:04 PM Aaron call and Wade's rulings: one up-front price ($27,500, Back Cover included, half at signing and half at the end of the first 30 days), scope shown in build order as two columns, hard date Friday, October 9, 2026.",
+  "_readme": "Drives kerzie.ai/swingbays/proposal (src/app/swingbays/proposal/route.ts). mode: 'proposal' shows the offer; 'project' puts the dashboard on top and keeps the proposal underneath as 'What you approved'. ?view=project previews project mode without changing this field. Recipe: Wade OS clients/swing_bays/README_project_page.md. Price and scope revised 2026-10-01 after the 3:04 PM Aaron call and Wade's rulings: one up-front price ($27,500, Back Cover included, half at signing and half at the end of the first 30 days), scope shown in build order as two columns, hard date Friday, October 9, 2026. Payment terms revised 2026-10-08 after the 4:14 PM Wade/Aaron call (Dustin debrief): same total, monthly schedule (price.schedule), the October 9 hard date dropped; first payment is due on signing.",
   "mode": "proposal",
-  "updated": "2026-10-01",
+  "updated": "2026-10-08",
   "client": {
     "name": "The Swing Bays",
     "tagline": "Indoor golf, every location",
@@ -13,18 +13,41 @@
     "next_store_opens": "November 1"
   },
   "prepared": {
-    "date": "October 1, 2026",
+    "date": "October 1, 2026, payment terms revised October 8, 2026",
     "by": "Aaron Jones and Wade Kerzie, Kerzie AI Solutions"
   },
   "price": {
-    "_note": "The up-front total is back_cover + build ($27,500), paid in two equal halves; the page computes the total and the halves. rtu_monthly covers rtu_included_stores active stores; rtu_per_store_monthly is each store beyond that. deposit_due is the hard date for the signed agreement and the first half.",
+    "_note": "Wade 10/8 (Aaron call, Dustin debrief): same total, new schedule. The first four months total back_cover + build + run_months x run_monthly ($35,000) and are paid per `schedule` (month 1 on signing, then months 2, 3 and 4; month 4 is the transfer month). The page checks that the schedule sums to that total. rtu_monthly covers rtu_included_stores active stores and starts after month 4; rtu_per_store_monthly is each store beyond that. No hard date: the first payment is due on signing.",
     "back_cover": 2500,
     "build": 25000,
-    "upfront_split": "half at signing, half at the end of the first 30 days",
-    "deposit_due": "Friday, October 9, 2026",
-    "deposit_due_iso": "2026-10-09",
     "run_monthly": 2500,
     "run_months": 3,
+    "schedule": [
+      {
+        "month": 1,
+        "amount": 10000,
+        "when": "On signing",
+        "what": "Build. We build everything, in the order above, and Parker goes live."
+      },
+      {
+        "month": 2,
+        "amount": 10000,
+        "when": "Month 2",
+        "what": "Operate. We run it with Colter, shoulder to shoulder."
+      },
+      {
+        "month": 3,
+        "amount": 10000,
+        "when": "Month 3",
+        "what": "Operate. Colter runs it; we watch, oversee and guide."
+      },
+      {
+        "month": 4,
+        "amount": 5000,
+        "when": "Month 4",
+        "what": "Transfer. Colter signs off and it's handed over."
+      }
+    ],
     "rtu_monthly": 500,
     "rtu_included_stores": 4,
     "rtu_per_store_monthly": 150,
@@ -138,10 +161,10 @@
     "body": "Outbound invitations to a list you provide. They go out from the same record Englewood will run on, and Englewood's number is answered from opening day."
   },
   "timeline": {
-    "_note": "Wade 10/1: show we are thinking ahead. Every date here is TENTATIVE and conditional on the signed agreement and down payment by Friday, October 9. Mirrored as milestones in project mode.",
-    "heading": "If you sign by October 9",
+    "_note": "Wade 10/1: show we are thinking ahead. Every date here is TENTATIVE and conditional on the signed agreement and the first payment. The October 9 hard date was dropped 10/8 (Wade/Aaron call); nothing date-specific replaces it. Mirrored as milestones in project mode.",
+    "heading": "Once you sign",
     "label": "Tentative",
-    "intro": "Tentative dates, so you can see the shape of it. They hold if the signed agreement and the down payment land by Friday, October 9.",
+    "intro": "Tentative dates, so you can see the shape of it. They start from the day the signed agreement and the first payment land.",
     "rows": [
       {
         "when": "Before Jordan's first visit",
@@ -242,8 +265,9 @@
     "milestones": [
       {
         "key": "signed",
-        "label": "Agreement + down payment",
-        "date": "2026-10-09"
+        "label": "Agreement signed, first payment ($10,000), month 1 of 4",
+        "date": "2026-10-09",
+        "example": true
       },
       {
         "key": "keegan",
@@ -271,9 +295,22 @@
         "date": "2026-11-16"
       },
       {
-        "key": "day30_payment",
-        "label": "Second payment, Day 30",
-        "offset": 30
+        "key": "payment2",
+        "label": "Second payment ($10,000), month 2",
+        "offset": 30,
+        "example": true
+      },
+      {
+        "key": "payment3",
+        "label": "Third payment ($10,000), month 3",
+        "offset": 60,
+        "example": true
+      },
+      {
+        "key": "payment4",
+        "label": "Fourth payment ($5,000), month 4, the transfer month",
+        "offset": 90,
+        "example": true
       },
       {
         "key": "day30",
@@ -583,7 +620,7 @@
       {
         "date": "2026-10-09",
         "who": "Dustin Miller",
-        "what": "Signed. First half of the up-front price paid ($13,750).",
+        "what": "Signed. First payment made ($10,000), month 1 of 4.",
         "effect": "Build starts. No change to scope or price.",
         "example": true
       },
@@ -591,7 +628,7 @@
         "date": "2026-10-19",
         "who": "Aaron Jones",
         "what": "Parker live: one record, after-hours answering, the repair form and the ready text.",
-        "effect": "The 90 days start today. Second half ($13,750) due at Day 30.",
+        "effect": "The 90 days start today. Payments 2, 3 and 4 follow monthly ($10,000, $10,000, $5,000).",
         "example": true
       },
       {
