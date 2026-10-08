@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-08",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 4,
+      "removed": 1,
+      "price_changed": 23,
+      "total": 344,
+      "ran_at": "6:47 AM MT",
+      "note": "Four vehicles joined the list and one came off, bringing the total to 344. New arrivals include a 2027 GMC Acadia AWD Denali Ultimate, a 2027 Buick Enclave Sport Touring, and a 2023 GMC Yukon AT4. Twenty-three vehicles were repriced today, every one an increase, averaging about $1,260. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-07",
       "status": "ok",
       "kind": "refresh",
