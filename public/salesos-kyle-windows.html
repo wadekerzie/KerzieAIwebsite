@@ -95,16 +95,15 @@
     <h2 id="start-h">Start here</h2>
     <p class="note" style="margin:0">Do these on this PC, in order. About 15 minutes.</p>
     <ol>
+      <li><div>Download your setup file. It lands in <b>Downloads</b>.<div style="margin-top:10px"><a class="btn" href="/downloads/sales-os-setup-windows.md" download="sales-os-setup-windows.md"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download sales-os-setup-windows.md</a></div></div></li>
+      <li><div>Open <b>File Explorer</b> and go to <b>This PC &gt; C: &gt; Users &gt; (your name)</b>. Make a folder named <b>Kyles Sales OS</b> (no apostrophe). Move the setup file from Downloads into it. Inside it, make a folder named <b>my-notes</b> and put your voice memo transcripts there. You can start without them; Claude just asks more questions.</div></li>
       <li><div>Open <b>Claude</b> (your WWT account) and check for the <b>Code</b> tab at the top. No Code tab? Stop here and tell Wade; it's a company setting.</div></li>
-      <li><div>Click the <b>Code</b> tab, then <b>Select folder</b>. In the window that opens, go to <b>This PC &gt; C: &gt; Users &gt; (your name)</b>. Click <b>New folder</b>, name it <b>Kyles Sales OS</b> (no apostrophe), open it, and click <b>Select folder</b>. If Claude asks whether you trust the folder, say yes.</div></li>
-      <li><div>Copy this, paste it into Claude, and press Enter.
-        <div class="prompt"><code id="first-msg">Set up my Sales OS. First, download https://kerzie.ai/downloads/sales-os-setup-windows.md into this folder and create a subfolder named my-notes. Then read sales-os-setup-windows.md and follow it, starting with Step 0. If my-notes has voice memo transcripts in it, read them first and answer every question you can from them, then ask me only what they don't cover.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
-      <li><div>Any time, drop your voice memo transcripts into <b>my-notes</b>, inside Kyles Sales OS. Claude reads them and asks fewer questions. You can start without them.</div></li>
+      <li><div>Click the <b>Code</b> tab, then <b>Select folder</b>, and pick <b>Kyles Sales OS</b>. If Claude asks whether you trust the folder, say yes.</div></li>
+      <li><div>Copy this, paste it into Claude, and press Enter. It reads your transcripts first, then asks only what they don't answer.
+        <div class="prompt"><code id="first-msg">Read sales-os-setup-windows.md and set up my Sales OS. Start with Step 0. If the file isn't in this folder, download it from https://kerzie.ai/downloads/sales-os-setup-windows.md first. If my-notes has voice memo transcripts in it, read them first and answer every question you can from them, then ask me only what they don't cover.</code><button class="btn ghost" type="button" data-copy="first-msg">Copy</button></div></div></li>
       <li><div>Optional, only if Claude asks for it: one command in Terminal. Press the <b>Windows key</b>, type <b>Terminal</b>, press Enter, paste this, press Enter, and click Yes on any prompt. If it's blocked, skip it; Claude still works.
         <div class="prompt"><code id="git-cmd">winget install --id Git.Git -e --source winget</code><button class="btn ghost" type="button" data-copy="git-cmd">Copy</button></div></div></li>
     </ol>
-    <div style="margin:22px 0 0"><a class="btn" href="/downloads/sales-os-setup-windows.md" download="sales-os-setup-windows.md"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download the setup guide</a></div>
-    <p class="note" style="margin:10px 0 0">Only needed if Claude can't download it itself. Save it into <b>Kyles Sales OS</b>, then tell Claude it's there.</p>
   </section>
 
   <figure aria-label="Diagram: what you don't see above a yellow line (the engine and your company's connectors), and what you see below it (your computer, your Sales OS folder, Claude as the command center, your views and drafts waiting for your yes).">
