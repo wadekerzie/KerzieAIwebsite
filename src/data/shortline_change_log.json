@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-09",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 4,
+      "price_changed": 7,
+      "total": 341,
+      "ran_at": "8:50 AM MT",
+      "note": "One vehicle joined the list, a 2022 Subaru WRX Premium, and four came off, including a 2026 GMC Canyon 4WD Elevation and a 2026 Buick Envision Avenir, bringing the total to 341. Seven vehicles were repriced, five of them reductions. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-08",
       "status": "ok",
       "kind": "refresh",
