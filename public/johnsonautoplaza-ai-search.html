@@ -75,6 +75,15 @@
     .footer strong { color: var(--ink); }
     .shot { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; margin-top: 10px; }
     .shot-cap { font-size: 13px; color: var(--muted); margin-top: 6px; }
+    .scorecard { width: 100%; border-collapse: collapse; margin: 16px 0 8px; font-size: 15px; }
+    .scorecard th, .scorecard td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .scorecard th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); font-weight: 700; }
+    .scorecard th.num, .scorecard td.num { width: 1%; white-space: nowrap; text-align: center; }
+    .scorecard td.num { font-weight: 700; color: var(--blue-dark); font-size: 17px; }
+    .scorecard .site { font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+    .scorecard-cap { font-size: 13px; color: var(--muted); margin: 0 0 16px; }
+    .included { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 2px 8px; margin-left: 8px; vertical-align: middle; background: #e8f5ee; color: var(--green); }
+    @media (max-width: 480px) { .scorecard th, .scorecard td { padding: 8px 4px; font-size: 14px; } .scorecard .site { font-size: 12px; } }
   </style>
 </head>
 <body>
@@ -82,7 +91,7 @@
     <div class="sheet">
       <p class="kicker">Kerzie AI Solutions</p>
       <h1>AI Search Readiness for Johnson Auto Plaza</h1>
-      <p class="sub">Prepared for Phil McTaggart and the Johnson ownership team &middot; September 3, 2026 &middot; every link on this page is live - click them</p>
+      <p class="sub">Prepared for Phil McTaggart and the Johnson ownership team &middot; September 3, 2026 &middot; updated October 9, 2026 with the SEO scorecard &middot; every link on this page is live - click them</p>
 
       <h2>The moment that decides where a shopper goes</h2>
       <p>When someone asks ChatGPT, Gemini, or Perplexity for a used truck in the Denver metro, the AI reads a specific page on a dealership's website before it answers. A dealership that page describes well gets recommended. A dealership it can't read might not be found at all - and the shopper never knows you were an option.</p>
@@ -92,13 +101,13 @@
         <span class="url">johnsonautoplaza.com/llms.txt</span><span class="badge thin">exists - a link list</span>
         <div class="note">Your current llms.txt page - read in full today, all 509 lines. It is a genuine head start: it exists, and it lists your vehicles by year, make, model, and VIN. But every vehicle carries the same one sentence - no price, no mileage, no trim, no color - and the page has no answers about the store itself: no hours, no service, no financing, no reason to choose Brighton. When a shopper asks ChatGPT for "a used Ram 2500 under $40,000 near Denver," this page cannot answer the question. It is a phone book where the AI needs a salesperson.</div>
         <img class="shot" src="/back-cover-proposals/johnson-llms-thin.png" alt="Screenshot of johnsonautoplaza.com/llms.txt showing the current link-list format with no prices">
-        <div class="shot-cap">What loads right now - no click needed. Screenshot captured live, September 4, 2026.</div>
+        <div class="shot-cap">What loads right now - no click needed. Screenshot captured live, September 4, 2026. Re-checked October 9, 2026: still the same link list, and Chrome's own llms.txt audit fails it (the page is missing the title heading the standard requires).</div>
       </a>
       <a class="linkcard" href="https://www.johnsonautoplaza.com/llms-full.txt" target="_blank" rel="noopener">
         <span class="url">johnsonautoplaza.com/llms-full.txt</span><span class="badge miss">not found</span>
         <div class="note">The live-inventory page AI search looks for next. Click it - the error you get is the point. There is nothing there for the AI to read, so your inventory is invisible to the tools shoppers are asking.</div>
         <img class="shot" src="/back-cover-proposals/johnson-llms-full-404.png" alt="Screenshot of johnsonautoplaza.com/llms-full.txt returning HTTP 404 Not Found">
-        <div class="shot-cap">The actual error page, screenshotted so you don't have to click it. Captured live, September 4, 2026.</div>
+        <div class="shot-cap">The actual error page, screenshotted so you don't have to click it. Captured live, September 4, 2026. Re-checked October 9, 2026: still Not Found.</div>
       </a>
 
       <h2>What ready looks like - a rooftop 30 minutes away</h2>
@@ -111,21 +120,21 @@
       </a>
       <a class="linkcard" href="https://www.shortlinebuickgmc.com/llms-full.txt" target="_blank" rel="noopener">
         <span class="url">shortlinebuickgmc.com/llms-full.txt</span><span class="badge live">live - rebuilt this morning</span>
-        <div class="note">Shortline Buick GMC in Aurora. Full live inventory: 320 vehicles today, every one with its price. Rebuilt from their inventory feed and placed fresh every morning, then verified against both regular browsers and the AI crawlers ChatGPT uses. The date stamp inside the page is today's. That is the difference between a phone book and a salesperson.</div>
+        <div class="note">Shortline Buick GMC in Aurora. Full live inventory: 341 vehicles on October 9, 2026 (196 new, 145 pre-owned), every one with its price. Rebuilt from their inventory feed and placed fresh every morning, then verified against both regular browsers and the AI crawlers ChatGPT uses. The date stamp inside the page is always today's. That is the difference between a phone book and a salesperson.</div>
         <img class="shot" src="/back-cover-proposals/shortline-llms-full.png" alt="Screenshot of the top of shortlinebuickgmc.com/llms-full.txt showing priced inventory with VINs">
-        <div class="shot-cap">Top of the page. Screenshot captured live, September 4, 2026.</div>
+        <div class="shot-cap">Top of the page. Screenshot captured live, September 4, 2026 (320 vehicles that morning). Re-checked October 9, 2026: rebuilt that morning, 341 vehicles.</div>
       </a>
       <blockquote>
         "Every franchise dealer in the country has been looking for ways to combat the big box pre-owned disruptors and their online presence. Kerzie.ai has put us on the map for AI searches."
         <cite>Danny Madigan, Shortline Buick GMC</cite>
       </blockquote>
 
-      <h2>What you get every day - not just the raw file, the receipt</h2>
-      <p>The two pages above are what the AI reads. This is what <strong>you</strong> read: a plain-English dashboard that shows the refresh happened, every day, without logging into anything. Cars that came on the lot, cars that came off, and the time it ran. Danny bookmarks this page and glances at it; he never checks the raw file.</p>
+      <h2>What you get every day - not just the raw page, the receipt</h2>
+      <p>The two pages above are what the AI reads. This is what <strong>you</strong> read: a plain-English dashboard that shows the refresh happened, every day, without logging into anything. Cars that came on the lot, cars that came off, and the time it ran. Danny bookmarks this dashboard and glances at it; he never checks the raw page.</p>
       <a class="linkcard" href="https://kerzie.ai/shortline-log" target="_blank" rel="noopener">
         <span class="url">kerzie.ai/shortline-log</span><span class="badge live">Shortline's own daily dashboard</span>
-        <div class="note">This is the actual page Shortline uses today, branded for their dealership. Each of Johnson's four rooftops would get its own version of this, showing that rooftop's refresh - added, removed, total in the file, and when it ran.</div>
-        <img class="shot" src="/back-cover-proposals/shortline-log-branded-dashboard.png" alt="Screenshot of Shortline Buick GMC's branded daily AI file refresh dashboard">
+        <div class="note">This is the actual page Shortline uses today, branded for their dealership. Each of Johnson's four rooftops would get its own version of this, showing that rooftop's refresh - added, removed, total on the page, and when it ran.</div>
+        <img class="shot" src="/back-cover-proposals/shortline-log-branded-dashboard.png" alt="Screenshot of Shortline Buick GMC's branded daily AI page refresh dashboard">
         <div class="shot-cap">Shortline's branded dashboard. Screenshot captured live, September 4, 2026.</div>
       </a>
 
@@ -141,6 +150,7 @@
             <li>All four llms-full.txt inventory pages built and placed - the pages that are Not Found today</li>
             <li>Every page verified live against browser and AI crawlers before we call it done</li>
             <li>Standard. We follow <a href="https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt" target="_blank" rel="noopener">Chrome's developer guidelines</a>. Your page is built to the llms.txt specification (v2, August 2026) and checked against Chrome's Lighthouse Agentic Browsing audit before and after placement. You get the audit receipt with the handoff.</li>
+            <li>SEO scorecard, included: Chrome's Lighthouse SEO score for every store, before and after placement. Both receipts are yours.</li>
           </ul>
         </div>
         <div class="price-card featured">
@@ -152,18 +162,42 @@
             <li>Verified daily on every site, automatically</li>
             <li>An evening backstop check, every day, so a missed morning never goes unnoticed</li>
             <li>A receipt log you can check any time - the same discipline Shortline runs on today</li>
+            <li>SEO scorecard, included: every store re-scored every month at no added cost, and if a page edit or add-on ever knocks a store's score down, we fix it</li>
             <li>Deliberately not $999 x 4: one shared feed is shared work, and the savings are yours</li>
           </ul>
         </div>
       </div>
 
+      <h2>SEO scorecard - included<span class="included">no added cost</span></h2>
+      <p>Phil asked about SEO. The plain answer: Google already grades it, and the grade is free. Chrome's Lighthouse audit, run through Google's PageSpeed Insights, scores a website's search readiness from 0 to 100. We ran it on all four Johnson sites on October 9, 2026, on phone and on desktop. These are your starting numbers:</p>
+      <table class="scorecard">
+        <thead>
+          <tr><th>Store</th><th class="num">Phone</th><th class="num">Desktop</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Johnson Auto Plaza (group site)<div class="site">johnsonautoplaza.com</div></td><td class="num">85</td><td class="num">85</td></tr>
+          <tr><td>Colorado Dodge (Chrysler Dodge Jeep Ram)<div class="site">coloradododge.com</div></td><td class="num">100</td><td class="num">100</td></tr>
+          <tr><td>Johnson Chevrolet<div class="site">johnsonchevybuickgmc.com</div></td><td class="num">100</td><td class="num">100</td></tr>
+          <tr><td>Johnson Buick GMC<div class="site">johnsongmcbuick.com</div></td><td class="num">100</td><td class="num">100</td></tr>
+        </tbody>
+      </table>
+      <p class="scorecard-cap">Source: Google PageSpeed Insights, Lighthouse 13.5.0, SEO category, run October 9, 2026. Anyone can repeat the check at <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">pagespeed.web.dev</a>. The raw receipts come with the handoff.</p>
+      <p>Three stores already sit at 100. The group site sits at 85 for two reasons Google names outright: one link on the home page is coded so a search engine cannot follow it, and eight images carry no alt text (the brand logos among them). Both are fixes we make while we are already in there placing the pages.</p>
+      <p>What the scorecard means, in three lines:</p>
+      <ul>
+        <li><strong>Before and after.</strong> Every store is scored the day we start and the day the pages go live. You get both receipts.</li>
+        <li><strong>Every month after that.</strong> Every store is re-scored, at no charge, and the scorecard goes to Phil.</li>
+        <li><strong>If it drops.</strong> If a page edit, a plug-in, or a platform change ever knocks a store's score down, we fix it. That is part of the job, not a change order.</li>
+      </ul>
+      <p>It is inside the $3,000 setup and the $2,000 a month above. No separate SEO contract, no added line item.</p>
+
       <h2>Four rooftops, one feed - built for how Johnson actually runs</h2>
-      <p>Johnson runs four sites - JohnsonAutoplaza.com (the group), ColoradoDodge.com, the Chevrolet store site, and the GMC Buick site - off one vAuto feed and one DMS. The same gap repeats across them: ColoradoDodge.com has the same auto-generated link list (checked today, 178KB) and the same Not Found on its inventory page.</p>
+      <p>Johnson runs four sites - JohnsonAutoplaza.com (the group), ColoradoDodge.com, JohnsonChevyBuickGMC.com (the Chevrolet store), and JohnsonGMCBuick.com (the Buick GMC store) - off one vAuto feed and one DMS. The same gap repeats across them: ColoradoDodge.com has the same auto-generated link list (checked September 3, 2026, 178KB) and the same Not Found on its inventory page. On October 9, 2026, Chrome's own llms.txt audit failed all four sites for the same reason: the page has no title heading, so Chrome does not count it as a proper llms.txt page.</p>
       <p>Our automation works the way your inventory already does: we capture the master feed once, then filter by make and model to build each site's pages - the group site carries everything, each brand site carries its own, and the shared used inventory lands where it belongs. Every site gets both pages: a brief main page with the dealership's identity and rules, and the daily-refreshed full inventory page behind it.</p>
       <p>And it survives your platform decision: you are on Dealer.com today, and if you move to Dealer Inspire, only the placement step changes. The feed capture, the pages, and the daily refresh move with you - both platforms support the standard.</p>
 
       <h2>Turnkey, start to finish</h2>
-      <p>Once you say go, the agreement and payment are all digital. All we need is user access to your web host - the same access Danny gave us for Shortline - and we place everything: no platform migration, no new website, no agency handoff. All hands-off for your team, all our own work. Live in a number of days once the feed is connected. Just give us access. We&#39;ll take it from there.</p>
+      <p>Once you say go, the agreement and payment are all digital. All we need is user access to your web host - the same user access Shortline set up for us - and we place everything: no platform migration, no new website, no agency handoff. All hands-off for your team, all our own work. Live in a number of days once the feed is connected. That one access is the whole ask. We&#39;ll take it from there.</p>
 
       <div class="footer">
         <strong>Wade Kerzie</strong> &middot; Kerzie AI Solutions &middot; wade@kerzie.ai &middot; 214-668-7986<br>
