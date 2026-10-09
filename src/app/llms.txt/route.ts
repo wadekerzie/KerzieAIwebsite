@@ -32,7 +32,7 @@ import { metadata as consequenceClock } from "@/app/consequence-clock/page";
 import { metadata as packedHouse } from "@/app/packed-house/page";
 import { metadata as blastDoor } from "@/app/blast-door/page";
 import { metadata as blastRadius } from "@/app/blast-radius/page";
-import { metadata as websiteBreakingApart } from "@/app/website-breaking-apart/page";
+import { metadata as shrapnel } from "@/app/shrapnel/page";
 import { metadata as thousand } from "@/app/thousand/page";
 import { metadata as team } from "@/app/team/page";
 import { metadata as teamJordan } from "@/app/team/jordan/page";
@@ -91,7 +91,7 @@ const WRITING: Array<[string, string, Described]> = [
   ["/consequence-clock", "The Consequence Clock", consequenceClock],
   ["/blast-door", "The Blast Door", blastDoor],
   ["/blast-radius", "The Blast Radius", blastRadius],
-  ["/website-breaking-apart", "Your Website Is Breaking Apart", websiteBreakingApart],
+  ["/shrapnel", "The Shrapnel", shrapnel],
 ];
 
 const ABOUT: Array<[string, string, Described]> = [

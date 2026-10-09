@@ -2,19 +2,19 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
-// Link preview for /website-breaking-apart. Same pattern as /blast-radius:
+// Link preview for /shrapnel. Same pattern as /blast-radius:
 // canvas color, coral kicker, ink title, kerzie.ai path in coral, built from
 // a file in /public. The exploding-website graphic lives in Wade OS at
 // brand/kerzie_ai/assets/exploding_website (SVG is the source); regenerate
 // there, then copy here.
 export const alt =
-  "Your Website Is Breaking Apart: a website exploding into pieces, each job flying off to somewhere new";
+  "The Shrapnel: a website blown apart, every job it used to do flying off like shrapnel to somewhere new";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
   const buf = await readFile(
-    path.join(process.cwd(), "public", "og", "website-breaking-apart-exploding.png")
+    path.join(process.cwd(), "public", "og", "shrapnel-exploding.png")
   );
   const picture = `data:image/png;base64,${buf.toString("base64")}`;
   return new ImageResponse(
@@ -53,15 +53,15 @@ export default async function Image() {
           <div
             style={{
               display: "flex",
-              fontSize: 64,
+              fontSize: 84,
               fontWeight: 800,
               color: "#1A1B2E",
               letterSpacing: "-0.025em",
-              lineHeight: 1.05,
+              lineHeight: 1.02,
               marginTop: 18,
             }}
           >
-            Your Website Is Breaking Apart.
+            The Shrapnel.
           </div>
           <div
             style={{
@@ -73,8 +73,7 @@ export default async function Image() {
               maxWidth: 520,
             }}
           >
-            Six jobs the website used to do. Six places they&rsquo;re landing
-            now.
+            Your website is breaking apart.
           </div>
           <div
             style={{
@@ -85,7 +84,7 @@ export default async function Image() {
               fontWeight: 700,
             }}
           >
-            kerzie.ai/website-breaking-apart
+            kerzie.ai/shrapnel
           </div>
         </div>
         <img src={picture} width={518} height={518} alt="" />

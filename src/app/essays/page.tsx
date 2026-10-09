@@ -16,7 +16,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Essays | Kerzie AI",
   description:
-    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, The Blast Radius, and Your Website Is Breaking Apart, plus the appendix on the line.",
+    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, The Blast Radius, and The Shrapnel, plus the appendix on the line.",
 };
 
 const essays = [
@@ -53,12 +53,12 @@ const essays = [
     href: "/blast-radius",
   },
   {
-    title: "Your Website Is Breaking Apart",
+    title: "The Shrapnel",
     date: "October 9, 2026",
-    deck: "What the same force does to the website",
+    deck: "Your website is breaking apart",
     argues:
       "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
-    href: "/website-breaking-apart",
+    href: "/shrapnel",
   },
 ];
 

@@ -630,8 +630,8 @@ Read the essay →
 
 October 9, 2026
 
-## Your Website Is Breaking Apart
-What the same force does to the website
+## The Shrapnel
+Your website is breaking apart
 For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.
 
 Read the essay →
@@ -1796,6 +1796,89 @@ Book a call → A seller on your own? The general OS is free: get One-Window .
 
 ---
 
+# The Shrapnel | Kerzie AI
+URL: https://kerzie.ai/shrapnel
+
+The Shrapnel | Kerzie AI
+← KERZIE . AI ALL ESSAYS →
+Abstract
+For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.
+
+## The hub
+Think about what your website has turned into over the last twenty years.
+Put it on the website.
+It started as a brochure. Then it became the place everything went. Product descriptions and pricing. The documents your customers need. Customer support. Ordering. Booking. Videos. Reviews. Contact forms, chat bubbles, the careers page. Every time a new job came along, the answer was the same: put it on the website.
+That was the right call. The website was the commercial hub of the company, the one place a customer could go to learn, decide and buy. Everything lived in one place, built for a person to click through, read, watch and download.
+That held for two decades because the visitor was a person.
+More than half of the traffic on the internet is now machines.
+The visitor is changing. Cloudflare reported this summer that more than half of the traffic on the internet is now machines, not people. And the force pulling all those jobs back out of the website, one by one, is AI.
+I’ve had a picture in my head that I can’t shake. Your website, blown apart, and every job it used to do flying off like shrapnel to somewhere new.
+
+## Where the pieces are going
+Six jobs the website used to do. Six places they’re landing now.
+Being found is moving into AI answers, and it starts on Google itself. Type a question into Google today and the first thing on the screen is often Google’s own AI summary. It answers the question before you see a single link. Google says its newer AI Mode alone has more than a billion monthly users.
+8% vs 15%.
+When the answer is already on the screen, people stop clicking. In a randomized study of more than 1,000 people searching Google this year, clicks to websites dropped by about 38% when an AI summary appeared, and searches that ended with no click at all rose from 54% to 72%. Ahrefs found the number one result gets 58% fewer clicks when a summary sits above it. Pew saw the same pattern in a 2025 study: people clicked through to a website 8% of the time when a summary appeared, against 15% when it didn’t, and only 1% clicked a link inside the summary itself.
+Paying for the top spot doesn’t get you out from under it. On searches where a summary appears, ads still get clicked, but about a quarter less often than on searches without one, by Seer Interactive’s count. Add it all up and SparkToro found that more than two-thirds of U.S. Google searches this year ended without a click.
+And Google isn’t the only one answering. People ask ChatGPT, Gemini, Perplexity and Claude who to call, and they take the answer. BrightLocal found that 45% of consumers now use AI tools for local recommendations, up from 6% a year earlier.
+The summary gets people their answer. Whoever ranked first, and whoever paid to sit on top, gets the click less often.
+The summary gets people their answer. Whoever ranked first, and whoever paid to sit on top, gets the click less often.
+It wants a clean, current list.
+What you have is moving into live feeds the AI can read. Your products, your inventory, your hours, your prices. An AI answering a question doesn’t want to wander your menus. It wants a clean, current list. Google’s Chrome team now calls llms.txt, a plain page written for AI to read, “an emerging convention,” and Chrome’s Lighthouse audit checks for it. We run one for a client that rebuilds its entire inventory every morning, every item with its price and ID.
+People reserve “without leaving their chat.”
+Taking the booking is moving off the website entirely. In restaurants and hotels, it’s already happening inside the AI itself. ChatGPT books tables through OpenTable, Resy and Yelp; in Yelp’s words, people reserve “without leaving their chat.” Since late August, Google’s AI Mode lets people book select hotels right inside the search and pay with Google Pay, with partners like Booking.com, Expedia, Hilton and Marriott. Appointment businesses are next in line: Booksy says Google’s AI Mode books directly into its providers’ calendars. The scheduling still runs through a booking platform. It just isn’t happening on your website anymore.
+Taking the order is moving inside the AI. This summer Square turned on ordering in ChatGPT and Claude for U.S. restaurants and cafes that use Square Online Ordering. Someone asks for dinner, and the order goes in without your website ever loading.
+Answering the call is moving to AI, on both ends of the line. On the caller’s side, Google’s AI now calls local businesses on people’s behalf to check prices and availability, and Google has started rolling out a “Call for Me” feature in Gemini. I see it on my own phone too: my carrier’s AI screens my calls before I ever pick up.
+On the business side, AI receptionists are getting better fast. The voices sound more natural every month, and they’re taking on real work: answering, transferring the call, booking the appointment, taking the order. Every one of those conversations happens on the phone, not on the website. A calendar might show the booking afterward. Most of the time, nothing on the site changes at all.
+The chat bubble most people close without reading.
+That leaves the website one live channel: the chat bubble in the corner, the one most people I know close without reading.
+Your website is one witness among many.
+Proving you’re good is moving to the sources an AI checks before it recommends anyone: reviews, listings and citations. In BrightLocal’s study of nearly two million AI citations for local businesses, Google Business Profiles alone made up 28.5% of them. Your website is one witness among many, and the AI hears from all of them before it says your name.
+None of these pieces is the website anymore. Every one of them is still your business.
+
+## The danger is drift
+The explosion isn’t the risk. The drift is.
+The explosion isn’t the risk. The drift is.
+When everything lived on one site, it was all right or all wrong together. Once the pieces scatter, each one goes stale on its own schedule. Your hours say one thing on Google and another on Yelp. The AI quotes a price you stopped honoring in June. The booking platform thinks you’re open Sundays. The feed still lists the item you sold last week.
+No customer sees all of that at once. The AI does. It reads every piece, notices they don’t agree, and recommends whoever’s information it can trust.
+So the real job now isn’t redesigning the website. It’s keeping one source of truth, written by you, and feeding every piece from it. One source of truth keeps every piece in sync. If you don’t author it, the machines will assemble it from whatever they can find.
+The claim
+One source of truth keeps every piece in sync. If you don’t author it, the machines will assemble it from whatever they can find.
+
+## What’s left: a credibility stamp
+So what happens to the website itself?
+I don’t think it disappears. I think it gets a smaller job, and a more important one.
+Not to read it. To check it.
+Here’s how I see people using the web now, and it’s speeding up. Someone hears about a business, or their AI recommends one. They look it up. Not to read it. To check it. Is this a real company? Does it do what I need, where I need it? Does it look like someone’s minding the store?
+Yep. Then they go back to their AI and say, “Go find out more. Get me a quote. Book it.”
+They don’t scroll. They don’t click through the services pages. Their agent does that part, or already did.
+Five seconds, maybe less.
+That’s a credibility stamp. The front of your website has to pass the glance: who you are, where you are, proof you’re real, how to reach a person. Five seconds, maybe less. The depth, every service, every area, every answer to every question, gets read by machines first. More and more, only by machines.
+A site built to be read cover to cover is answering a question fewer people are asking.
+
+## The first expense to recover
+Here’s where it gets practical, and where the money is.
+For years, the people reading your website mostly found you through Google. That’s why the SEO bill made sense, and it’s why most companies stopped looking at it. It became a cost of doing business, a line item that renews itself.
+Picture the pie of who reads your site. Not long ago, nearly all of it was people arriving from search, and SEO was how you competed for them. Today more than half the traffic on the internet is machines. The slice where AI reads your site on someone’s behalf is already the bigger one, and I don’t know anyone who thinks it’s shrinking.
+I’m not saying SEO is dead. I’m saying the technical side of it changed. Google hands out the yardstick. Its PageSpeed Insights tool runs Chrome’s Lighthouse audit, scores a site’s search readiness from 0 to 100, and names exactly what’s broken. Anyone can run it.
+SEO score: 92. Monthly retainer required: zero.
+This week we ran it for a client we work with. SEO score: 92. The audit named the one line of code holding it back, an image tag missing its description. We wrote the fix word for word, ready to hand to their website company. Total time: minutes. Monthly retainer required: zero.
+You pay for the watch.
+That’s what SEO looks like now. Not a monthly line item you stopped reading years ago. A score you can check yourself, a list of what’s broken, and a fix when something drops. When a site already scores at or near 100, there’s no reason to pay every month to reach a score you already have. You pay for the watch.
+So as your website breaks apart, start with the line on your budget you haven’t looked at in years. The SEO bill is the first place to recover money. Put it toward the bigger half of the pie: making sure the machines reading about you get the right answer.
+
+## Who keeps the pieces straight
+Back to the picture. Six pieces flying off the website: being found, what you have, the booking, the order, the call, the proof. Each one landing somewhere you don’t control.
+Who’s keeping all the pieces straight?
+The question most owners are asking is, “Should we redo our website?” I think it’s the wrong question right now. The right one is: who’s keeping all the pieces straight?
+That starts with one page that tells AI exactly what your business is, in your own words, kept current. We call it the Back Cover. It’s the first piece. The rest are coming, and I’d rather our clients author them than chase them.
+See what AI reads about your business: kerzie.ai/back-cover
+
+This essay follows four others. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. The Blast Door is the time limit on both. The Blast Radius is how far the effect travels inside the building. This one is about what the same force does to the website.
+Email address Send it to me
+
+---
+
 # Speaking | Wade Kerzie | Kerzie AI
 URL: https://kerzie.ai/speaking
 
@@ -2462,88 +2545,5 @@ How It Works
 ## Stop hunting for things you already know.
 Zorli is on the App Store. Free to try.
 Download Zorli
-
----
-
-# Your Website Is Breaking Apart | Kerzie AI
-URL: https://kerzie.ai/website-breaking-apart
-
-Your Website Is Breaking Apart | Kerzie AI
-← KERZIE . AI ALL ESSAYS →
-Abstract
-The website was the commercial hub of the company, the one place a customer could go to learn, decide and buy. That held for two decades because the visitor was a person. The visitor is changing. Six jobs the website used to do, six places they’re landing now, and the real job isn’t redesigning the website. It’s keeping one source of truth, written by you, and feeding every piece from it.
-
-## The hub
-Think about what your website has turned into over the last twenty years.
-Put it on the website.
-It started as a brochure. Then it became the place everything went. Product descriptions and pricing. The documents your customers need. Customer support. Ordering. Booking. Videos. Reviews. Contact forms, chat bubbles, the careers page. Every time a new job came along, the answer was the same: put it on the website.
-That was the right call. The website was the commercial hub of the company, the one place a customer could go to learn, decide and buy. Everything lived in one place, built for a person to click through, read, watch and download.
-That held for two decades because the visitor was a person.
-More than half of the traffic on the internet is now machines.
-The visitor is changing. Cloudflare reported this summer that more than half of the traffic on the internet is now machines, not people. And the force pulling all those jobs back out of the website, one by one, is AI.
-I’ve had a picture in my head that I can’t shake. Your website, exploding into pieces, with each job flying off to somewhere new.
-
-## Where the pieces are going
-Six jobs the website used to do. Six places they’re landing now.
-Being found is moving into AI answers, and it starts on Google itself. Type a question into Google today and the first thing on the screen is often Google’s own AI summary. It answers the question before you see a single link. Google says its newer AI Mode alone has more than a billion monthly users.
-8% vs 15%.
-When the answer is already on the screen, people stop clicking. In a randomized study of more than 1,000 people searching Google this year, clicks to websites dropped by about 38% when an AI summary appeared, and searches that ended with no click at all rose from 54% to 72%. Ahrefs found the number one result gets 58% fewer clicks when a summary sits above it. Pew saw the same pattern in a 2025 study: people clicked through to a website 8% of the time when a summary appeared, against 15% when it didn’t, and only 1% clicked a link inside the summary itself.
-Paying for the top spot doesn’t get you out from under it. On searches where a summary appears, ads still get clicked, but about a quarter less often than on searches without one, by Seer Interactive’s count. Add it all up and SparkToro found that more than two-thirds of U.S. Google searches this year ended without a click.
-And Google isn’t the only one answering. People ask ChatGPT, Gemini, Perplexity and Claude who to call, and they take the answer. BrightLocal found that 45% of consumers now use AI tools for local recommendations, up from 6% a year earlier.
-The summary gets people their answer. Whoever ranked first, and whoever paid to sit on top, gets the click less often.
-The summary gets people their answer. Whoever ranked first, and whoever paid to sit on top, gets the click less often.
-It wants a clean, current list.
-What you have is moving into live feeds the AI can read. Your products, your inventory, your hours, your prices. An AI answering a question doesn’t want to wander your menus. It wants a clean, current list. Google’s Chrome team now calls llms.txt, a plain page written for AI to read, “an emerging convention,” and Chrome’s Lighthouse audit checks for it. We run one for a client that rebuilds its entire inventory every morning, every item with its price and ID.
-People reserve “without leaving their chat.”
-Taking the booking is moving off the website entirely. In restaurants and hotels, it’s already happening inside the AI itself. ChatGPT books tables through OpenTable, Resy and Yelp; in Yelp’s words, people reserve “without leaving their chat.” Since late August, Google’s AI Mode lets people book select hotels right inside the search and pay with Google Pay, with partners like Booking.com, Expedia, Hilton and Marriott. Appointment businesses are next in line: Booksy says Google’s AI Mode books directly into its providers’ calendars. The scheduling still runs through a booking platform. It just isn’t happening on your website anymore.
-Taking the order is moving inside the AI. This summer Square turned on ordering in ChatGPT and Claude for U.S. restaurants and cafes that use Square Online Ordering. Someone asks for dinner, and the order goes in without your website ever loading.
-Answering the call is moving to AI, on both ends of the line. On the caller’s side, Google’s AI now calls local businesses on people’s behalf to check prices and availability, and Google has started rolling out a “Call for Me” feature in Gemini. I see it on my own phone too: my carrier’s AI screens my calls before I ever pick up.
-On the business side, AI receptionists are getting better fast. The voices sound more natural every month, and they’re taking on real work: answering, transferring the call, booking the appointment, taking the order. Every one of those conversations happens on the phone, not on the website. A calendar might show the booking afterward. Most of the time, nothing on the site changes at all.
-The chat bubble most people close without reading.
-That leaves the website one live channel: the chat bubble in the corner, the one most people I know close without reading.
-Your website is one witness among many.
-Proving you’re good is moving to the sources an AI checks before it recommends anyone: reviews, listings and citations. In BrightLocal’s study of nearly two million AI citations for local businesses, Google Business Profiles alone made up 28.5% of them. Your website is one witness among many, and the AI hears from all of them before it says your name.
-None of these pieces is the website anymore. Every one of them is still your business.
-
-## The danger is drift
-The explosion isn’t the risk. The drift is.
-The explosion isn’t the risk. The drift is.
-When everything lived on one site, it was all right or all wrong together. Once the pieces scatter, each one goes stale on its own schedule. Your hours say one thing on Google and another on Yelp. The AI quotes a price you stopped honoring in June. The booking platform thinks you’re open Sundays. The feed still lists the item you sold last week.
-No customer sees all of that at once. The AI does. It reads every piece, notices they don’t agree, and recommends whoever’s information it can trust.
-So the real job now isn’t redesigning the website. It’s keeping one source of truth, written by you, and feeding every piece from it. One source of truth keeps every piece in sync. If you don’t author it, the machines will assemble it from whatever they can find.
-The claim
-One source of truth keeps every piece in sync. If you don’t author it, the machines will assemble it from whatever they can find.
-
-## What’s left: a credibility stamp
-So what happens to the website itself?
-I don’t think it disappears. I think it gets a smaller job, and a more important one.
-Not to read it. To check it.
-Here’s how I see people using the web now, and it’s speeding up. Someone hears about a business, or their AI recommends one. They look it up. Not to read it. To check it. Is this a real company? Does it do what I need, where I need it? Does it look like someone’s minding the store?
-Yep. Then they go back to their AI and say, “Go find out more. Get me a quote. Book it.”
-They don’t scroll. They don’t click through the services pages. Their agent does that part, or already did.
-Five seconds, maybe less.
-That’s a credibility stamp. The front of your website has to pass the glance: who you are, where you are, proof you’re real, how to reach a person. Five seconds, maybe less. The depth, every service, every area, every answer to every question, gets read by machines first. More and more, only by machines.
-A site built to be read cover to cover is answering a question fewer people are asking.
-
-## The first expense to recover
-Here’s where it gets practical, and where the money is.
-For years, the people reading your website mostly found you through Google. That’s why the SEO bill made sense, and it’s why most companies stopped looking at it. It became a cost of doing business, a line item that renews itself.
-Picture the pie of who reads your site. Not long ago, nearly all of it was people arriving from search, and SEO was how you competed for them. Today more than half the traffic on the internet is machines. The slice where AI reads your site on someone’s behalf is already the bigger one, and I don’t know anyone who thinks it’s shrinking.
-I’m not saying SEO is dead. I’m saying the technical side of it changed. Google hands out the yardstick. Its PageSpeed Insights tool runs Chrome’s Lighthouse audit, scores a site’s search readiness from 0 to 100, and names exactly what’s broken. Anyone can run it.
-SEO score: 92. Monthly retainer required: zero.
-This week we ran it for a client we work with. SEO score: 92. The audit named the one line of code holding it back, an image tag missing its description. We wrote the fix word for word, ready to hand to their website company. Total time: minutes. Monthly retainer required: zero.
-You pay for the watch.
-That’s what SEO looks like now. Not a monthly line item you stopped reading years ago. A score you can check yourself, a list of what’s broken, and a fix when something drops. When a site already scores at or near 100, there’s no reason to pay every month to reach a score you already have. You pay for the watch.
-So as your website breaks apart, start with the line on your budget you haven’t looked at in years. The SEO bill is the first place to recover money. Put it toward the bigger half of the pie: making sure the machines reading about you get the right answer.
-
-## Who keeps the pieces straight
-Back to the picture. Six pieces flying off the website: being found, what you have, the booking, the order, the call, the proof. Each one landing somewhere you don’t control.
-Who’s keeping all the pieces straight?
-The question most owners are asking is, “Should we redo our website?” I think it’s the wrong question right now. The right one is: who’s keeping all the pieces straight?
-That starts with one page that tells AI exactly what your business is, in your own words, kept current. We call it the Back Cover. It’s the first piece. The rest are coming, and I’d rather our clients author them than chase them.
-See what AI reads about your business: kerzie.ai/back-cover
-
-This essay follows four others. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. The Blast Door is the time limit on both. The Blast Radius is how far the effect travels inside the building. This one is about what the same force does to the website.
-Email address Send it to me
 
 ---

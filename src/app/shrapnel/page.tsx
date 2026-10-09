@@ -14,21 +14,21 @@ import {
 } from "@/components/Essay";
 
 export const metadata: Metadata = {
-  title: "Your Website Is Breaking Apart | Kerzie AI",
+  title: "The Shrapnel | Kerzie AI",
   description:
     "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
   openGraph: {
-    title: "Your Website Is Breaking Apart",
+    title: "The Shrapnel",
     description:
       "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
     type: "article",
     publishedTime: "2026-10-09",
     authors: ["Wade Kerzie"],
-    url: "https://kerzie.ai/website-breaking-apart",
+    url: "https://kerzie.ai/shrapnel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Website Is Breaking Apart",
+    title: "The Shrapnel",
     description:
       "Six jobs the website used to do. Six places they're landing now.",
   },
@@ -60,12 +60,12 @@ const afterMatter = (
       what the same force does to the website.
     </p>
     <div className="mt-10">
-      <SubscribeForm source="website-breaking-apart-essay" />
+      <SubscribeForm source="shrapnel-essay" />
     </div>
   </>
 );
 
-export default function WebsiteBreakingApartPage() {
+export default function ShrapnelPage() {
   return (
     <EssaySheet after={afterMatter}>
       <EssayMasthead
@@ -74,26 +74,16 @@ export default function WebsiteBreakingApartPage() {
         date="October 9, 2026"
         title={
           <>
-            Your Website Is Breaking Apart<span className="dot">.</span>
+            The Shrapnel<span className="dot">.</span>
           </>
         }
-        deck={
-          <>
-            For twenty years we packed every job a business has into its
-            website. AI is pulling those jobs back out, one at a time, and the
-            businesses that keep the pieces straight are the ones machines
-            will recommend.
-          </>
-        }
+        deck={<>Your website is breaking apart.</>}
       />
 
       <Abstract>
-        The website was the commercial hub of the company, the one place a
-        customer could go to learn, decide and buy. That held for two decades
-        because the visitor was a person. The visitor is changing. Six jobs the
-        website used to do, six places they&rsquo;re landing now, and the real
-        job isn&rsquo;t redesigning the website. It&rsquo;s keeping one source
-        of truth, written by you, and feeding every piece from it.
+        For twenty years we packed every job a business has into its website.
+        AI is pulling those jobs back out, one at a time, and the businesses
+        that keep the pieces straight are the ones machines will recommend.
       </Abstract>
 
       <Section>The hub</Section>
@@ -125,8 +115,8 @@ export default function WebsiteBreakingApartPage() {
       </P>
       <P>
         I&rsquo;ve had a picture in my head that I can&rsquo;t shake. Your
-        website, exploding into pieces, with each job flying off to somewhere
-        new.
+        website, blown apart, and every job it used to do flying off like
+        shrapnel to somewhere new.
       </P>
 
       <Section>Where the pieces are going</Section>
