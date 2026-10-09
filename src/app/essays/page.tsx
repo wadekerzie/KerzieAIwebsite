@@ -16,7 +16,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Essays | Kerzie AI",
   description:
-    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, and The Blast Radius, plus the appendix on the line.",
+    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, The Blast Radius, and Your Website Is Breaking Apart, plus the appendix on the line.",
 };
 
 const essays = [
@@ -51,6 +51,14 @@ const essays = [
     argues:
       "How far AI reaches from your desk depends on three things: whether you ask it or instruct it, what it is connected to, and where you sit.",
     href: "/blast-radius",
+  },
+  {
+    title: "Your Website Is Breaking Apart",
+    date: "October 9, 2026",
+    deck: "What the same force does to the website",
+    argues:
+      "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
+    href: "/website-breaking-apart",
   },
 ];
 
@@ -116,7 +124,7 @@ export default function EssaysPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Essays</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          One argument, in four parts.
+          One argument, in five parts.
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
           Read them in the order I wrote them if you can. Each one stands on

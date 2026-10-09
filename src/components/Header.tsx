@@ -38,12 +38,14 @@ const ventures = [
 ];
 
 // The essays are one body of work and stay together, in publication order.
-// (Three until 2026-10-01, when The Blast Radius became the fourth.)
+// (Three until 2026-10-01, when The Blast Radius became the fourth; five
+// since 2026-10-09, when Your Website Is Breaking Apart shipped.)
 const essays = [
   { label: "The Kerzie Effect", href: "/kerzie-effect" },
   { label: "The Consequence Clock", href: "/consequence-clock" },
   { label: "The Blast Door", href: "/blast-door" },
   { label: "The Blast Radius", href: "/blast-radius" },
+  { label: "Your Website Is Breaking Apart", href: "/website-breaking-apart" },
 ];
 
 function Group({
