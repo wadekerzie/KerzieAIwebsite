@@ -162,7 +162,6 @@ export default function ShrapnelPage() {
         The summary gets people their answer. Whoever ranked first, and
         whoever paid to sit on top, gets the click less often.
       </Callout>
-      <Note>It wants a clean, current list.</Note>
       <P>
         <strong>What you have</strong> is moving into live feeds the AI can
         read. Your products, your inventory, your hours, your prices. An AI
@@ -209,7 +208,7 @@ export default function ShrapnelPage() {
         phone, not on the website. A calendar might show the booking
         afterward. Most of the time, nothing on the site changes at all.
       </P>
-      <Note>The chat bubble most people close without reading.</Note>
+      <Note>The chat bubble most people I know close without reading.</Note>
       <P>
         That leaves the website one live channel: the chat bubble in the
         corner, the one most people I know close without reading.
