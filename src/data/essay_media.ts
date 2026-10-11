@@ -29,11 +29,11 @@ export type EssayMedia = {
 };
 
 export const ESSAY_MEDIA = {
-  "kerzie-effect": { buzzsproutEpisodeId: "19937614", youtubeId: null },
-  "consequence-clock": { buzzsproutEpisodeId: "19937622", youtubeId: null },
-  "blast-door": { buzzsproutEpisodeId: "19937850", youtubeId: null },
-  "blast-radius": { buzzsproutEpisodeId: "19937424", youtubeId: null },
-  shrapnel: { buzzsproutEpisodeId: "19938121", youtubeId: null },
+  "kerzie-effect": { buzzsproutEpisodeId: "19937614", youtubeId: "uhP73PJcTAU" },
+  "consequence-clock": { buzzsproutEpisodeId: "19937622", youtubeId: "M2v11EpyO9g" },
+  "blast-door": { buzzsproutEpisodeId: "19937850", youtubeId: "mdLV2F0rJcc" },
+  "blast-radius": { buzzsproutEpisodeId: "19937424", youtubeId: "ZwHjXFx0N9U" },
+  shrapnel: { buzzsproutEpisodeId: "19938121", youtubeId: "2ggCf8j1sLM" },
 } as const satisfies Record<string, EssayMedia>;
 
 export type EssaySlug = keyof typeof ESSAY_MEDIA;
