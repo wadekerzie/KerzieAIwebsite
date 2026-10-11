@@ -1226,6 +1226,150 @@ a:focus-visible .k-arrow {
   color: var(--p-faint);
 }
 
+/* --- Formats strip: read it, listen, watch --------------------------------
+   Sits under the deck, in the masthead's mono register. The page you are on
+   is inked and underlined in coral; the others are jump links. Never
+   printed. See src/components/EssayMedia.tsx. */
+
+.p-formats {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--p-muted);
+}
+
+.p-formats > * {
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid transparent;
+}
+
+.p-formats .is-active {
+  color: var(--p-ink);
+  border-bottom-color: var(--p-coral);
+}
+
+.p-formats a {
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.p-formats a:hover,
+.p-formats a:focus-visible {
+  color: var(--p-ink);
+  border-bottom-color: var(--p-rule);
+}
+
+/* --- Listen and Watch: the other two editions ----------------------------
+   Same rule and label as the colophon so they read as part of the document.
+   Both frames reserve their height before anything loads: the podcast
+   player is a fixed 200px, the video is 16:9. The site header is fixed, so
+   the anchors keep clear of it. */
+
+.p-media {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--p-ink);
+  scroll-margin-top: 6rem;
+}
+
+.p-media-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--p-coral);
+}
+
+.p-media-body {
+  margin-top: 0.9rem;
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  color: var(--p-muted);
+}
+
+.p-media-links {
+  margin-top: 1rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  line-height: 1.75;
+  color: var(--p-faint);
+}
+
+.p-listen-frame {
+  margin-top: 1.25rem;
+  height: 200px;
+  background: var(--p-inset);
+}
+
+.p-listen-frame iframe {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+.p-watch-frame {
+  position: relative;
+  margin-top: 1.25rem;
+  aspect-ratio: 16 / 9;
+  background: var(--p-ink);
+  overflow: hidden;
+}
+
+.p-watch-iframe,
+.p-watch-facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.p-watch-facade {
+  display: block;
+  padding: 0;
+  background: var(--p-ink);
+  cursor: pointer;
+}
+
+.p-watch-facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.92;
+  transition: opacity 0.25s ease;
+}
+
+.p-watch-facade:hover img,
+.p-watch-facade:focus-visible img { opacity: 1; }
+
+.p-watch-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--p-sheet);
+  color: var(--p-ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.p-watch-facade:hover .p-watch-play,
+.p-watch-facade:focus-visible .p-watch-play {
+  background: var(--p-coral);
+  color: var(--p-sheet);
+}
+
 /* --- Print: the sheet is already the document --------------------------- */
 
 @media print {

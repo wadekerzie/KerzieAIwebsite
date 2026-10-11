@@ -12,6 +12,7 @@ import {
   Callout,
   Colophon,
 } from "@/components/Essay";
+import { EssayFormats, EssayListen, EssayWatch } from "@/components/EssayMedia";
 
 export const metadata: Metadata = {
   title: "The Shrapnel | Kerzie AI",
@@ -79,6 +80,7 @@ export default function ShrapnelPage() {
         }
         deck={<>Your website is breaking apart.</>}
       />
+      <EssayFormats slug="shrapnel" />
 
       <Abstract>
         For twenty years we packed every job a business has into its website.
@@ -360,6 +362,9 @@ export default function ShrapnelPage() {
           kerzie.ai/back-cover
         </Link>
       </P>
+
+      <EssayListen slug="shrapnel" title="The Shrapnel" />
+      <EssayWatch slug="shrapnel" title="The Shrapnel" />
 
       <Colophon>
         Sources, each opened and checked on October 9, 2026: machine traffic,{" "}

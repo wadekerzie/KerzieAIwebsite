@@ -16,6 +16,7 @@ import {
   AiLine,
   Colophon,
 } from "@/components/Essay";
+import { EssayFormats, EssayListen, EssayWatch } from "@/components/EssayMedia";
 
 export const metadata: Metadata = {
   title: "The Kerzie Effect | Kerzie AI",
@@ -95,6 +96,7 @@ export default function KerzieEffectPage() {
           </>
         }
       />
+      <EssayFormats slug="kerzie-effect" />
 
       <Abstract>
         Once a buyer has the seller&rsquo;s scope of work and the buyer&rsquo;s
@@ -1019,6 +1021,9 @@ export default function KerzieEffectPage() {
           Helping people cross it is the business. Making the technology simple
           enough that you can - that&rsquo;s the whole job.
         </P>
+
+        <EssayListen slug="kerzie-effect" title="The Kerzie Effect" />
+        <EssayWatch slug="kerzie-effect" title="The Kerzie Effect" />
 
         <Colophon>
           Dell&rsquo;Acqua et al., &ldquo;Navigating the Jagged Technological

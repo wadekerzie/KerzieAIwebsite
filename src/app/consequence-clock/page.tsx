@@ -12,6 +12,7 @@ import {
   Callout,
   Colophon,
 } from "@/components/Essay";
+import { EssayFormats, EssayListen, EssayWatch } from "@/components/EssayMedia";
 
 export const metadata: Metadata = {
   title: "The Consequence Clock | Kerzie AI",
@@ -71,6 +72,7 @@ export default function ConsequenceClockPage() {
           </>
         }
       />
+      <EssayFormats slug="consequence-clock" />
 
       <Abstract>
         Every business runs on a consequence clock: how long it can be wrong
@@ -554,6 +556,9 @@ export default function ConsequenceClockPage() {
         person. The technology to run on your own clock is here, it is cheap,
         and my whole job is making it simple enough to use.
       </P>
+
+      <EssayListen slug="consequence-clock" title="The Consequence Clock" />
+      <EssayWatch slug="consequence-clock" title="The Consequence Clock" />
 
       <Colophon>
         Sources, each verified against the original before publication: Ethan

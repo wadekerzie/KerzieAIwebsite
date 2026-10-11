@@ -12,6 +12,7 @@ import {
   Callout,
   Colophon,
 } from "@/components/Essay";
+import { EssayFormats, EssayListen, EssayWatch } from "@/components/EssayMedia";
 
 export const metadata: Metadata = {
   title: "The Blast Door | Kerzie AI",
@@ -75,6 +76,7 @@ export default function BlastDoorPage() {
           </>
         }
       />
+      <EssayFormats slug="blast-door" />
 
       <Abstract>
         Right now a person with judgment and an AI can spot a problem, build
@@ -392,6 +394,9 @@ export default function BlastDoorPage() {
         I want a community of winners. That&rsquo;s what I want. The door is
         still open. Get your board in the water.
       </P>
+
+      <EssayListen slug="blast-door" title="The Blast Door" />
+      <EssayWatch slug="blast-door" title="The Blast Door" />
 
       <Colophon>
         Sources, each verified against the original before publication: Eric
