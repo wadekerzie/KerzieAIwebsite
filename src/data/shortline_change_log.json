@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-11",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 6,
+      "removed": 3,
+      "price_changed": 0,
+      "total": 347,
+      "ran_at": "9:10 AM MT",
+      "note": "Six vehicles joined the list and three came off, bringing the total to 347. New arrivals are mostly 2026 GMC Sierra 1500s, three Elevations and two Denalis, plus a 2020 Mazda CX-30 Premium Package. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-10",
       "status": "ok",
       "kind": "refresh",
