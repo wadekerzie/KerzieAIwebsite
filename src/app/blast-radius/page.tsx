@@ -14,6 +14,7 @@ import {
   AiLine,
   Colophon,
 } from "@/components/Essay";
+import { EssayFormats, EssayListen, EssayWatch } from "@/components/EssayMedia";
 
 export const metadata: Metadata = {
   title: "The Blast Radius | Kerzie AI",
@@ -80,6 +81,7 @@ export default function BlastRadiusPage() {
           </>
         }
       />
+      <EssayFormats slug="blast-radius" />
 
       <Abstract>
         How far AI reaches from your desk depends on three things: whether you
@@ -452,6 +454,9 @@ export default function BlastRadiusPage() {
         already widening at the desks of the people who crossed over. The only
         real question is whether yours is still pointing straight down.
       </P>
+
+      <EssayListen slug="blast-radius" title="The Blast Radius" />
+      <EssayWatch slug="blast-radius" title="The Blast Radius" />
 
       <Colophon>
         Sources, each checked against the original before publication:
