@@ -14,7 +14,7 @@
   "clock_start": null,
   "clock_days": 90,
   "milestones": [
-    { "key": "shawn_call", "label": "Call with Shawn (Smitten Labs): site, forms, DNS, brand files", "date": "2026-10-13" },
+    { "key": "shawn_call", "label": "Walkthrough with Dustin, Shawn, Colter and Jordan: the plan, the timeline, what to expect", "date": "2026-10-13" },
     { "key": "signing", "label": "Signing target: PSA signed, first payment, Day 1 of the build", "date": "2026-10-14" },
     { "key": "a2p", "label": "A2P texting registration submitted (Day 1 or 2; approval takes 1 to 3 weeks)", "date": "2026-10-15" },
     { "key": "jordan_onsite", "label": "Jordan on site in Parker with Colter: forwarding, training, invitations prepped", "date": "2026-10-19", "approx": true },

@@ -1,5 +1,3 @@
-import type { NextRequest } from "next/server";
-import { timingSafeEqual } from "crypto";
 import data from "@/data/swingbays_build.json";
 
 // kerzie.ai/swingbays/build
@@ -14,9 +12,8 @@ import data from "@/data/swingbays_build.json";
 // set answered + answer + source, add new ones, bump updated, redeploy.
 // Recipe: Wade OS clients/swing_bays/README_build_page.md.
 //
-// Gate: HTTP Basic Auth on this route only. Username "kerzie", password from
-// the env var SWINGBAYS_BUILD_PASSWORD. No env var = nobody gets in (fail
-// closed). Private page: noindex, nofollow, not in the sitemap, not in
+// No password (Wade 10/12: same as /swingbays/proposal and /swingbays/plan).
+// Unlisted page: noindex, nofollow, not in the sitemap, not in
 // llms.txt, skipped by gen-llms-full (route handlers emit no .html).
 
 export const dynamic = "force-dynamic";
@@ -39,7 +36,6 @@ type Item = {
   step_one: boolean;
 };
 
-const USER = "kerzie";
 const STATUSES = ["open", "asked", "answered", "done", "blocked"] as const;
 
 const esc = (s: unknown) =>
@@ -58,57 +54,6 @@ const fmtLong = (d: Date) =>
   d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/Chicago" });
 const todayChicago = () => parse(new Date().toLocaleDateString("en-CA", { timeZone: "America/Chicago" }));
 
-// ------------------------------------------------------------------ gate
-
-function denied(reason: "missing" | "unconfigured") {
-  if (reason === "unconfigured") {
-    return new Response("This page is not configured.", {
-      status: 403,
-      headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noindex, nofollow", "Cache-Control": "no-store" },
-    });
-  }
-  return new Response("Sign in to see this page.", {
-    status: 401,
-    headers: {
-      "WWW-Authenticate": 'Basic realm="Swing Bays build page", charset="UTF-8"',
-      "Content-Type": "text/plain; charset=utf-8",
-      "X-Robots-Tag": "noindex, nofollow",
-      "Cache-Control": "no-store",
-    },
-  });
-}
-
-function safeEqual(a: string, b: string) {
-  const ba = Buffer.from(a, "utf8");
-  const bb = Buffer.from(b, "utf8");
-  if (ba.length !== bb.length) {
-    // Compare against itself so the time taken does not reveal the length.
-    timingSafeEqual(ba, ba);
-    return false;
-  }
-  return timingSafeEqual(ba, bb);
-}
-
-function authorized(request: NextRequest): "ok" | "missing" | "unconfigured" {
-  const expected = process.env.SWINGBAYS_BUILD_PASSWORD;
-  if (!expected) return "unconfigured";
-  const header = request.headers.get("authorization") || "";
-  const [scheme, encoded] = header.split(" ");
-  if (!/^basic$/i.test(scheme || "") || !encoded) return "missing";
-  let decoded = "";
-  try {
-    decoded = Buffer.from(encoded, "base64").toString("utf8");
-  } catch {
-    return "missing";
-  }
-  const idx = decoded.indexOf(":");
-  if (idx < 0) return "missing";
-  const user = decoded.slice(0, idx);
-  const pass = decoded.slice(idx + 1);
-  const userOk = safeEqual(user, USER);
-  const passOk = safeEqual(pass, expected);
-  return userOk && passOk ? "ok" : "missing";
-}
 
 // ---------------------------------------------------------------- styles
 
@@ -414,9 +359,7 @@ function render() {
 </html>`;
 }
 
-export async function GET(request: NextRequest) {
-  const auth = authorized(request);
-  if (auth !== "ok") return denied(auth);
+export async function GET() {
   return new Response(render(), {
     headers: {
       "Content-Type": "text/html; charset=utf-8",
