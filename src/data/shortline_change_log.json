@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-12",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 10,
+      "removed": 6,
+      "price_changed": 0,
+      "total": 351,
+      "ran_at": "7:38 AM MT",
+      "note": "Ten vehicles joined the list and six came off, bringing the total to 351. New arrivals include a 2027 GMC Yukon AT4, a 2026 Buick Envision Avenir, and a pair of 2024 GMC Terrain SLTs. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-11",
       "status": "ok",
       "kind": "refresh",
