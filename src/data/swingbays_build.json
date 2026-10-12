@@ -148,39 +148,45 @@
     },
     {
       "key": "access",
-      "order": 2,
+      "order": 3,
       "title": "Accounts and access",
       "goal": "Every login, token, user seat and consent click we need, in whose name, by when."
     },
     {
       "key": "voice",
-      "order": 3,
+      "order": 4,
       "title": "Voice answering",
       "goal": "No call goes to voicemail again by Day 7: the Denver number, the knowledge base, the Voice AI, Comcast forwarding on no-answer and after hours."
     },
     {
       "key": "texting",
-      "order": 4,
+      "order": 5,
       "title": "DMs and texting (A2P)",
       "goal": "Instagram and Facebook DMs answered from the same knowledge base; texts join the moment the A2P registration clears."
     },
     {
       "key": "content",
-      "order": 5,
+      "order": 6,
       "title": "Content engine",
       "goal": "The shared video folder, the brand file, captions and the weekly social run in GHL's social planner."
     },
     {
       "key": "simhouse",
-      "order": 6,
+      "order": 7,
       "title": "SimHouse booking",
       "goal": "Three answers from Keegan pick the route. Until then the AI hands out the booking link and takes the request. Never lets this block launch."
     },
     {
       "key": "handover",
-      "order": 7,
+      "order": 8,
       "title": "Hand-over",
       "goal": "The Swing Bays Mac and Claude plan, the repo landing on their machine, training, the Day 30 and Day 90 steps."
+    },
+    {
+      "key": "offsets",
+      "order": 2,
+      "title": "What it replaces (cost offsets)",
+      "goal": "Standing question for every piece we build: what does it let Swing Bays stop paying for? Learn every current monthly cost from Dustin, Colter, Brenna, Shawn and Keegan, then show the dollars it displaces in the Day 30 report."
     }
   ],
   "items": [
@@ -1121,6 +1127,174 @@
       "source": "call 2026-10-12",
       "updated": "2026-10-12",
       "step_one": true
+    },
+    {
+      "id": "offsets-01",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Every monthly software subscription today: the tool, what it does, what it costs (email, texting, reviews, scheduling, forms, social, phone system, anything else).",
+      "from": "dustin",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-02",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Marketing retainers and ad spend: who is paid, for what, and how much a month (paid ads, boosted posts, agencies, promotions).",
+      "from": "dustin",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-03",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Englewood staffing plan: front desk hours planned, and how much of that time goes to phones, texts, DMs and booking requests.",
+      "from": "dustin",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-04",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "What opening a store cost last time (launch marketing, setup, outside help), so each new store can be compared against opening from the playbook.",
+      "from": "dustin",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-05",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Any answering service or after-hours phone coverage today, and its cost.",
+      "from": "dustin",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-06",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Hours a week Parker staff spend on phones, texts, DMs, booking requests and club repair follow-up calls.",
+      "from": "colter",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-07",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Club repair today: tickets lost or redone, and how many calls ask whether clubs are ready.",
+      "from": "colter",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-08",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "The technology costs she manages: phone lines (Comcast Business), Square add-ons, other systems, monthly cost of each.",
+      "from": "brenna",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-09",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "The tools behind the website and marketing: hosting, form tool, email or newsletter tool, social scheduler, design tools; monthly cost of each, and which ones GHL could take over so his budget goes further.",
+      "from": "shawn",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-10",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "Ad platforms in use and the monthly ad budget.",
+      "from": "shawn",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-11",
+      "workstream": "offsets",
+      "kind": "question",
+      "text": "SimHouse: the monthly plan, per-bay or per-booking fees, and any add-ons (reminder texts, emails, marketing) that the GHL build would duplicate.",
+      "from": "keegan",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-10-23",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
+    },
+    {
+      "id": "offsets-12",
+      "workstream": "offsets",
+      "kind": "task",
+      "text": "For every piece we build, record what it displaces and the monthly dollars; the Day 30 report totals it for Dustin.",
+      "from": "claude",
+      "owner": "jordan",
+      "status": "open",
+      "due": "2026-11-16",
+      "answer": "",
+      "source": "Wade 10/12",
+      "updated": "2026-10-12",
+      "step_one": false
     }
   ]
 }
