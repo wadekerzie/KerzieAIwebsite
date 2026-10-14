@@ -1,12 +1,8 @@
-import { readFile } from "fs/promises";
-import path from "path";
-
+// Moved 2026-10-14: the plan now lives on Wade's personal site.
+// Permanent redirect so any link already shared still lands on the plan.
 export async function GET() {
-  const html = await readFile(
-    path.join(process.cwd(), "public", "lumen45.html"),
-    "utf-8"
-  );
-  return new Response(html, {
-    headers: { "Content-Type": "text/html; charset=utf-8" },
+  return new Response(null, {
+    status: 308,
+    headers: { Location: "https://www.wadekerzie.com/lumen" },
   });
 }
