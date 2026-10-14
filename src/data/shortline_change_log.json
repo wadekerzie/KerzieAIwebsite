@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-14",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 4,
+      "price_changed": 11,
+      "total": 354,
+      "ran_at": "8:47 AM MT",
+      "note": "One vehicle joined the list, a 2026 Buick Envista Preferred, and four came off, including a 2026 Buick Envision Preferred and a 2026 GMC Sierra 2500 AT4X, bringing the total to 354. Eleven vehicles were repriced, a mix of increases and reductions. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-13",
       "status": "ok",
       "kind": "refresh",
