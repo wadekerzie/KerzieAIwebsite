@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-15",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 6,
+      "price_changed": 140,
+      "total": 349,
+      "ran_at": "11:06 AM MT",
+      "note": "One vehicle joined the list, a 2026 GMC Sierra 1500 Denali, and six came off, including a 2021 Ram 2500 Laramie and a 2019 Toyota 4Runner SR5 Premium, bringing the total to 349. A sweeping round of repricing today: 140 vehicles across the lot, nearly all reductions. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-14",
       "status": "ok",
       "kind": "refresh",
