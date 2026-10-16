@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-16",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 0,
+      "price_changed": 1,
+      "total": 352,
+      "ran_at": "5:39 AM MT",
+      "note": "Three vehicles joined the list and none came off, bringing the total to 352. New arrivals include a 2023 Ford F-150 Lightning LARIAT, a 2019 Ram 1500 Classic Big Horn, and a 2018 Honda CR-V EX. One price change today. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-15",
       "status": "ok",
       "kind": "refresh",
