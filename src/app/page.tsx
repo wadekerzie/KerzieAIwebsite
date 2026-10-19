@@ -103,13 +103,11 @@ export default function Home() {
           <span className="text-[#B04E2B]">.</span>
         </h1>
 
-        <p className="k-rise k-rise-2 mt-7 text-[#2B5D96] text-[clamp(1.25rem,2.2vw,1.625rem)] font-medium">
-          The world&apos;s best tech feels the easiest.
-        </p>
-
         {/* ONE WINDOW SUBHEAD (Wade, 2026-10-19): the MTP stays; the line
-            under it now names the product. */}
-        <p className="k-rise k-rise-3 mt-8 text-[#262B3D] text-lg leading-relaxed max-w-xl">
+            under it names the product. It took the slot and style of the old
+            blue tagline ("The world's best tech feels the easiest."), removed
+            the same day so nothing competes with it in the first five seconds. */}
+        <p className="k-rise k-rise-2 mt-7 text-[#2B5D96] text-[clamp(1.25rem,2.2vw,1.625rem)] font-medium leading-snug max-w-2xl">
           Whatever you run, run it from One Window. We set it up, teach you to
           drive it, and hand you the keys.
         </p>
