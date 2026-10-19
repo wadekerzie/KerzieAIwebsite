@@ -36,8 +36,9 @@ const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
+// Site-wide fallback copy (Wade, 2026-10-19): the MTP plus the One Window line.
 const SITE_DESCRIPTION =
-  "We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.";
+  "Life is best when technology just works. Whatever you run, run it from One Window. We set it up, teach you to drive it, and hand you the keys.";
 
 export const metadata: Metadata = {
   // Required for Next to emit absolute og:image URLs. Without it every card

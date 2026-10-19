@@ -7,7 +7,7 @@ import DealerPlaybookBanner from "@/components/DealerPlaybookBanner";
 export const metadata = {
   title: "Kerzie AI",
   description:
-    "Life is best when technology just works. We build products that fix things people stopped expecting to get fixed.",
+    "Life is best when technology just works. Whatever you run, run it from One Window.",
 };
 
 // OFFERS versus VENTURES (Wade + Aaron, 2026-09-24): "draw the line between
@@ -107,11 +107,33 @@ export default function Home() {
           The world&apos;s best tech feels the easiest.
         </p>
 
+        {/* ONE WINDOW SUBHEAD (Wade, 2026-10-19): the MTP stays; the line
+            under it now names the product. */}
         <p className="k-rise k-rise-3 mt-8 text-[#262B3D] text-lg leading-relaxed max-w-xl">
-          We build products that fix things people stopped expecting to get
-          fixed. No courses. No explanations. No consulting decks. We ship and
-          it works.
+          Whatever you run, run it from One Window. We set it up, teach you to
+          drive it, and hand you the keys.
         </p>
+
+        {/* THE TWO DOORS (Wade, 2026-10-19). One Window interviews an owner
+            about how they run the business and an employee about their role,
+            so the homepage offers the same two doors the product does.
+            /one-window/business is the owner setup; /one-window is the
+            personal setup. Equal buttons: stacked full-width on phones, side
+            by side from sm. */}
+        <div className="k-rise k-rise-3 mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-xl">
+          <Link
+            href="/one-window/business"
+            className="k-btn-solid k-focus flex-1 text-center"
+          >
+            For your business <span className="k-arrow">&rarr;</span>
+          </Link>
+          <Link
+            href="/one-window"
+            className="k-btn-solid k-focus flex-1 text-center"
+          >
+            For your role <span className="k-arrow">&rarr;</span>
+          </Link>
+        </div>
 
         {/* The bylines: the publications that ran the thinking. Receipts, not claims. */}
         <p className="k-rise k-rise-3 mt-6 k-mono text-xs lg:text-[15px] tracking-[0.15em] lg:tracking-[0.1em] text-[#262B3D]/60">
