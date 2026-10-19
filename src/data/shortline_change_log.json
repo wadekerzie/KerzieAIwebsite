@@ -3,6 +3,39 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-19",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 12,
+      "removed": 9,
+      "price_changed": 0,
+      "total": 355,
+      "ran_at": "8:54 AM MT",
+      "note": "Twelve vehicles joined the list and nine came off since the last update, bringing the total to 355. New arrivals include a 2026 GMC Sierra 1500 Denali, a 2027 GMC Yukon XL 1500 Denali, and a 2027 GMC Acadia AWD Denali Ultimate. No net price changes. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
+      "date": "2026-10-18",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "price_changed": null,
+      "total": 352,
+      "ran_at": null,
+      "note": "The file was built again but still not placed, so the 10-16 version stayed up a second day."
+    },
+    {
+      "date": "2026-10-17",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "price_changed": null,
+      "total": 352,
+      "ran_at": null,
+      "note": "The file was built on schedule but not placed, so the 10-16 version stayed up."
+    },
+    {
       "date": "2026-10-16",
       "status": "ok",
       "kind": "refresh",
