@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-20",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 3,
+      "price_changed": 74,
+      "total": 354,
+      "ran_at": "9:50 AM CT",
+      "note": "Two vehicles joined the list and three came off since the last update, bringing the total to 354. New arrivals include a 2020 Nissan Altima 2.5 S and a 2025 Volkswagen Jetta SEL. A broad round of price adjustments touched 74 listings. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-19",
       "status": "ok",
       "kind": "refresh",
