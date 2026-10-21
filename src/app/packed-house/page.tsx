@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Packed House | Kerzie AI",
   description:
-    "Your show is booked. Your room is a quarter full. Packed House fills the seats you were going to eat - and you only pay for tickets we demonstrably sold.",
+    "Your show is booked. Your room is 20% full. Packed House fills the seats you were going to eat - and you only pay for tickets we demonstrably sold.",
   robots: { index: true, follow: true },
 };
 
@@ -44,8 +44,8 @@ export default function PackedHousePage() {
           </p>
           <div className="mt-8 border-l-2 border-[#B04E2B] pl-5">
             <p className="text-lg leading-relaxed">
-              64% of independent venues lost money last year. Not because the
-              shows were bad. Because the seats were empty. Every empty seat on
+              64% of independent venues lost money in 2024 (NIVA, State of
+              Live, October 2025). Not because the shows were bad. Because the seats were empty. Every empty seat on
               a booked night is pure margin, sitting there, going home with
               nobody.
             </p>

@@ -41,9 +41,9 @@ export default function SchedulePage() {
           <span className="text-[#B04E2B]">.</span>
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
-          A business problem, a podcast, a stage, or a question about AI.
-          Whatever brought you here, this is the direct line to my calendar.
-          Pick a time that works and let&apos;s talk.
+          What&apos;s the biggest problem in your business right now? Pick a
+          time and we start there. Podcast and speaking asks go on the same
+          calendar.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D] text-lg max-w-xl">
           Rather write first? Email me directly at{" "}

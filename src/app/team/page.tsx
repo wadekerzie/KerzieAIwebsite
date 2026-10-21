@@ -24,7 +24,7 @@ export const metadata = {
 const people = [
   {
     name: "Wade Kerzie",
-    role: "Founder. Building AI-native products that fix real problems.",
+    role: "Founder. Builds AI products that fix real problems.",
     href: "https://pro.wadekerzie.com",
     external: true,
     photo: "/headshot.jpg",
@@ -32,7 +32,7 @@ const people = [
   },
   {
     name: "Aaron Jones",
-    role: "Technical Specialist. Colorado market. Making sure the work actually gets done.",
+    role: "Technical Specialist. Colorado market. Makes sure the work gets done.",
     href: "https://aaronpjones.com/",
     external: true,
     photo: "/aaron.jpg",

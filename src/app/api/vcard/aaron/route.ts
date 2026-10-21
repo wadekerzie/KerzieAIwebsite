@@ -21,7 +21,7 @@ export const AARON = {
   city: "Aurora",
   region: "CO",
   country: "USA",
-  note: "Making sure the work actually gets done. https://kerzie.ai/team",
+  note: "Makes sure the work gets done. https://kerzie.ai/team",
 };
 
 function buildVCard(): string {

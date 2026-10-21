@@ -193,7 +193,7 @@ export default function OneWindowPage() {
             <p>
               Prompt engineering did not get easier. It got done. It is inside
               the Foundation, written once, and you get it free. What is left
-              for you is the only part that was ever really yours: knowing
+              for you is the only part that was ever yours: knowing
               what needs to get done.
             </p>
           </div>
@@ -357,15 +357,15 @@ export default function OneWindowPage() {
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">What is the catch?</span>{" "}
-              There is not one. You join my newsletter list when you take the
-              OS, and you can leave it the same day and keep everything.
+              Your email. You join my newsletter list when you take the OS.
+              Leave the same day and keep everything.
               I am building a thousand operators, and this is how I count.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Is this a course?</span>{" "}
               No. It is a working operating system your own AI installs.
-              About an hour gets the foundation running; the first-week plan
-              inside paces the rest.
+              About an hour gets the foundation running; plan three hours for
+              the full setup, and the first-week plan inside paces the rest.
             </p>
             <p>
               <span className="text-[#1A1B2E] font-medium">Which AI?</span> Claude,

@@ -16,7 +16,7 @@ const products = [
   {
     name: "GotaGuy",
     clock: "DAY 3",
-    problem: "Finding a contractor is a part-time job. It should take a text message.",
+    problem: "Finding a contractor is a part-time job. With GotaGuy it takes a text message.",
     href: "/ventures/gotaguy",
   },
   {

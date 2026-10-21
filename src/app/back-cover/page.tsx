@@ -19,7 +19,7 @@ const THE_WATCH = offer("the-watch");
 // comparison survives below as a price WEAPON ("a third of the money, work
 // included") rather than an anchor.
 const watchIncludes = [
-  "We ask the major AI assistants the questions your customers actually ask, every month.",
+  "We ask the major AI assistants the questions your customers ask, every month.",
   "We check their answers against what is true, and correct whatever has drifted at the source.",
   "We keep your machine-readable pages current as the standards move.",
   "One page a month, in plain language, that you can read in five minutes.",
@@ -177,8 +177,8 @@ export default function BackCoverPage() {
                 <span className="font-medium">
                   It is not another website project.
                 </span>{" "}
-                My bet is it&apos;s the last one of those you&apos;ll need for a
-                long time.
+                It&apos;s the one website project you don&apos;t redo every
+                time the standard moves.
               </p>
             </div>
             <div className="k-rise k-rise-4 mt-10 flex flex-wrap items-center gap-4">
@@ -604,7 +604,7 @@ export default function BackCoverPage() {
             </p>
             <p>
               What we do is the best-known practice available today, in the
-              places the AI tools actually read, plus the page for the standard
+              places the AI tools read, plus the page for the standard
               that is coming. Facts clear and current, nothing on your site
               contradicting itself, and your business described in the form
               machines take instructions from.

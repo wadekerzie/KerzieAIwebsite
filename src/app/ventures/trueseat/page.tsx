@@ -10,7 +10,7 @@ export default function TrueSeatPage() {
   return (
     <ProductStory
       clock="7 SEC"
-      hook="A recruiter reads your resume for about seven seconds."
+      hook="A recruiter reads your resume for seven seconds."
       problemBody="Thirty years of work, compressed to two pages, skimmed in the time it takes to sip coffee. Then software scores it by keyword and a stranger decides if you exist. The people who are great at the work are rarely the people who are great at describing the work — and the resume format punishes exactly that gap. Every week, the wrong person gets the seat because they had the better document."
       whyLabel="Why It Stays Broken"
       whyHook="Resumes are claims. Hiring runs on them anyway."

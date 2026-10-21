@@ -67,7 +67,7 @@ const products = [
 // The rest of the ventures, one line each, matching each page's own words.
 const moreVentures = [
   { name: "TrueSeat", href: "/ventures/trueseat", line: "Resumes are claims. TrueSeat builds a sealed, evidence-backed dossier of what you can actually do." },
-  { name: "Packed House", href: "/packed-house", line: "Your show is booked. Your room is a quarter full. Packed House fills the seats." },
+  { name: "Packed House", href: "/packed-house", line: "Your show is booked. Your room is 20% full. Packed House fills the seats." },
   { name: "TrueNorth", href: "/ventures/truenorth", line: "Your personal board of history's wisest advisors, portable to any AI you use." },
 ];
 
@@ -411,14 +411,9 @@ export default function Home() {
               <h2 className="text-[#1A1B2E] text-[clamp(2rem,4.5vw,3.25rem)] font-bold tracking-[-0.02em] leading-[1.05] mb-5">
                 What problem hurts the most?
               </h2>
-              <p className="text-[#262B3D] text-base lg:text-lg mb-4 max-w-xl">
-                Everything above started as somebody&apos;s problem. That&apos;s
-                the whole business: find where technology is failing a person,
-                and make it simple enough to actually help.
-              </p>
               <p className="text-[#262B3D] text-base lg:text-lg mb-10 max-w-xl">
-                Don&apos;t worry about the solution. Just tell us the problem.
-                The longer the better.
+                Write it out. The longer the better, and you don&apos;t need
+                the fix.
               </p>
               <ProblemForm />
             </div>

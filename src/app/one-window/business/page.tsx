@@ -274,7 +274,7 @@ export default function OneWindowBusinessPage() {
             </p>
             <p>
               And you do not need to wait for a better AI. I run my companies
-              on today&apos;s models, and I honestly could not tell you what a
+              on today&apos;s models, and I could not tell you what a
               smarter one would add to this. The gap was never the model. The
               gap was that nobody built the window.
             </p>

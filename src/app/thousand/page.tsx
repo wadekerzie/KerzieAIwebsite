@@ -135,8 +135,8 @@ export default function ThousandPage() {
           <p className="k-label mb-6">Why A Door, And Why A Clock</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
-              I have written three essays that explain what I believe is
-              happening to work.{" "}
+              I have written three essays that explain what is happening to
+              work.{" "}
               <Link href="/kerzie-effect" className="k-link k-focus text-[#2B5D96]">
                 The Kerzie Effect
               </Link>{" "}
