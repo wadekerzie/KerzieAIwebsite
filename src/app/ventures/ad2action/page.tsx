@@ -16,7 +16,7 @@ export default function Ad2ActionPage() {
       problemBody="Someone clicked at 7pm on a Thursday. They filled out the form. Your autoresponder fired a confirmation email. You followed up Friday morning. They did not remember why they clicked. You bought their attention at peak interest and responded at zero interest."
       whyLabel="Why It Stays Broken"
       whyHook="Ad platforms optimize for the click. Nobody optimizes for what happens after."
-      whyBody="That window is where leads die. Not because your product is wrong. Because your response was late. Eight minutes after someone clicks is worth more than eight hours of follow up the next day."
+      whyBody="That window is where leads die. Not because your product is wrong. Because your response was late. In one study of web leads, the odds of qualifying a lead were 21 times higher when the first call came within five minutes than at thirty minutes (InsideSales.com and MIT, Lead Response Management Study, 2007)."
       builtHook="So we built Ad2Action."
       builtBody="Instant lead response the moment someone converts on your ad. Not an autoresponder. A real conversation that starts while they still remember clicking."
       builtImage="/evidence/after-ad2action-v2.jpg"

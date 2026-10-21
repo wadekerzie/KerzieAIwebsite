@@ -16,7 +16,7 @@ export default function UnisonPage() {
       problemBody="They get voicemail. They needed an answer tonight. They will call someone else in the morning. You never knew they called."
       whyLabel="Why It Stays Broken"
       whyHook="Most businesses respond when it is convenient for them."
-      whyBody="The lead does not wait. The window between someone reaching out and someone else answering them is measured in minutes not hours. Every hour you wait cuts your odds of closing that lead in half."
+      whyBody="The lead does not wait. The window between someone reaching out and someone else answering them is short. Be the one who answers."
       builtHook="So we built Unison."
       builtBody="Omnichannel lead response that answers immediately across every channel. Phone, text, web form, email. The lead gets a real response in seconds. You get the conversation in your inbox. Unison is also built as custom implementations for specific businesses."
       builtImage="/evidence/after-unison-v2.jpg"
