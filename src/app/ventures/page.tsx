@@ -22,7 +22,7 @@ const products = [
   {
     name: "TrueSeat",
     clock: "7 SEC",
-    problem: "A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.",
+    problem: "A recruiter reads your resume for 7.4 seconds. Your career deserves evidence, not a skim.",
     href: "/ventures/trueseat",
   },
   {
