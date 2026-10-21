@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-21",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 1,
+      "price_changed": 0,
+      "total": 356,
+      "ran_at": "12:09 PM CT",
+      "note": "Three vehicles joined the list and one came off since the last update, bringing the total to 356. New arrivals include a 2027 GMC Yukon Denali Ultimate, a 2026 GMC Sierra 1500 SLT, and a 2026 GMC Sierra 1500 Elevation. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-20",
       "status": "ok",
       "kind": "refresh",
