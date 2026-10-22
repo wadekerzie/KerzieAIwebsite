@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-22",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 5,
+      "removed": 8,
+      "price_changed": 3,
+      "total": 353,
+      "ran_at": "9:15 AM CT",
+      "note": "Five vehicles joined the list and eight came off since the last update, bringing the total to 353. New arrivals include a 2026 GMC Sierra 1500 SLT, a 2026 Buick Encore GX Sport Touring, and a 2021 Mercedes-Benz C300 4MATIC. Three price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-21",
       "status": "ok",
       "kind": "refresh",
