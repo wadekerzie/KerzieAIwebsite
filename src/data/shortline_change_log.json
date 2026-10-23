@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-23",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 5,
+      "removed": 5,
+      "price_changed": 6,
+      "total": 353,
+      "ran_at": "9:16 AM CT",
+      "note": "Five vehicles joined the list and five came off since the last update, keeping the total at 353. New arrivals include a 2016 Ram 1500 SLT, a 2022 GMC Terrain SLT, and a 2024 Kia Forte LXS. Six price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-22",
       "status": "ok",
       "kind": "refresh",
