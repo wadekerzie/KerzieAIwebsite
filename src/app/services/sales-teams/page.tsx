@@ -8,7 +8,7 @@ import VideoEmbed from "./VideoEmbed";
 
 // Rebuilt 2026-09-24 on Wade's eight approved changes: the mandate leads,
 // two views (leader / seller) on one page, a live "build your team view"
-// section, the leader's view of Crawl / Walk / Run, a real redacted brief
+// section, the leader's view of Build / Drive / Own, a real redacted brief
 // as the receipt, the licensed-AI strip, the two illustrations, and a video
 // slot that stays empty until a URL is set.
 
@@ -119,18 +119,18 @@ const hoursBack = [
 
 const steps = [
   {
-    label: "Crawl",
+    label: "Build",
     body: "Every seller installs their OS on the company laptop, inside your rules, and sits for the interview that teaches it their territory, accounts, deals and competitors. It answers like a teammate from the first day, not a search box.",
     leaderSees:
       "Every seller's OS installed and interviewed. The first briefs and captures appear.",
   },
   {
-    label: "Walk",
+    label: "Drive",
     body: "Four weeks on live accounts building the one habit. Every call captured, every meeting briefed, the admin work coming out of the OS instead of the rep. Real deals, not exercises.",
     leaderSees: "The weekly five-question page per rep. You coach the no's.",
   },
   {
-    label: "Run",
+    label: "Own",
     body: "The hours go to selling. The first sellers to break through set the standard, and the rest of the team gets fast-laned into it.",
     leaderSees: "The Monday team view and the honest forecast.",
   },
@@ -443,10 +443,10 @@ export default function SalesTeamsPage() {
         </Reveal>
       </section>
 
-      {/* How it works: crawl, walk, run, with what the leader sees */}
+      {/* How it works: Build, Drive, Own, with what the leader sees */}
       <section className={sectionClass}>
         <Reveal>
-          <p className="k-label mb-6">How It Works: Crawl, Walk, Run</p>
+          <p className="k-label mb-6">How It Works: Build, Drive, Own</p>
           <p className="text-[#262B3D] text-lg max-w-2xl mb-10 leading-relaxed">
             Your whole team, leaders included. A manager who does not run it
             cannot coach it.
