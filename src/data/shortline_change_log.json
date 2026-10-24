@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-24",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 1,
+      "price_changed": 7,
+      "total": 354,
+      "ran_at": "9:59 AM CT",
+      "note": "Two vehicles joined the list and one came off since the last update, bringing the total to 354. New arrivals include two 2026 GMC Sierra 1500 SLT crew cabs. Seven price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-23",
       "status": "ok",
       "kind": "refresh",
