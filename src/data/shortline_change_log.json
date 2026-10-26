@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-25",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "price_changed": null,
+      "total": 354,
+      "ran_at": null,
+      "note": "The file was built on schedule but not placed, so the 10-24 version stayed up."
+    },
+    {
       "date": "2026-10-24",
       "status": "ok",
       "kind": "refresh",
