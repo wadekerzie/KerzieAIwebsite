@@ -1,9 +1,10 @@
+import { headers } from "next/headers";
 import { SITE_URL } from "@/content/siteFacts";
 
 // Added 2026-08-12 with the sitemap (as robots.ts). Converted to a plain text
 // route 2026-10-26 for the agent-ready pilot, because Next's MetadataRoute.Robots
-// cannot emit a directive it does not know about. The text below is the
-// previous output byte for byte, plus one line.
+// cannot emit a directive it does not know about. The first seven lines are
+// the previous output byte for byte; the Agentmap line is the addition.
 //
 // Three jobs:
 //
@@ -16,10 +17,22 @@ import { SITE_URL } from "@/content/siteFacts";
 //    public directory of the private routes.
 // 3. `Agentmap:` (Agentic Resource Discovery, agenticresourcediscovery.org
 //    section 5.1) points agents and registries at the ARD manifest. Google
-//    Lighthouse reads this line before it probes the well-known path.
-export const dynamic = "force-static";
+//    Lighthouse reads this line before it probes the well-known path, and
+//    stops there if the URL does not load. So the Agentmap URL is built from
+//    the host serving this file (production, a Vercel preview, localhost),
+//    never hardcoded to production: a preview must point agents at its own
+//    manifest, not at a production file that may not exist yet. Host and
+//    Sitemap keep SITE_URL, exactly as before.
+export const dynamic = "force-dynamic";
 
 export async function GET() {
+  const h = await headers();
+  const siteHost = new URL(SITE_URL).host;
+  const host = h.get("x-forwarded-host") ?? h.get("host") ?? siteHost;
+  const proto =
+    h.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
+  const origin = host === siteHost ? SITE_URL : `${proto}://${host}`;
+
   const body = `User-Agent: *
 Allow: /
 Allow: /llms.txt
@@ -27,7 +40,7 @@ Allow: /llms-full.txt
 
 Host: ${SITE_URL}
 Sitemap: ${SITE_URL}/sitemap.xml
-Agentmap: ${SITE_URL}/.well-known/ard.json
+Agentmap: ${origin}/.well-known/ard.json
 `;
   return new Response(body, {
     headers: {
