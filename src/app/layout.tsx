@@ -101,6 +101,13 @@ export default function RootLayout({
             page at the llms.txt that covers it. The HTTP Link header form is
             set in next.config.ts so non-HTML resources carry it too. */}
         <link rel="describedby" href="/llms.txt" />
+        {/* Agentic Resource Discovery (ARD, draft v0.91): the agent-facing index
+            at /.well-known/ard.json, generated from siteFacts. rel="ard" is the
+            current relation; rel="ai-catalog" is the predecessor name that
+            PageSpeed Insights' Lighthouse still looks for (2026-10-26). Both
+            point at the one file. robots.txt carries the matching Agentmap line. */}
+        <link rel="ard" href="/.well-known/ard.json" type="application/json" />
+        <link rel="ai-catalog" href="/.well-known/ard.json" type="application/json" />
         {/* Structured data, generated from siteFacts so it cannot disagree
             with what the pages render. Added 2026-08-12 - before that, this
             site shipped 36 routes with zero schema.org markup, which is the
