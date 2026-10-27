@@ -5,7 +5,8 @@
    Buzzsprout, and a video on the Kerzie AI YouTube channel. This is the one
    place those ids live. To light up the Watch label and block on an essay
    page, replace its `youtubeId: null` with the id from the YouTube URL
-   (the part after `v=`). Nothing else changes.
+   (the part after `v=`). Same for Listen: replace `buzzsproutEpisodeId:
+   null` with the episode id from the Buzzsprout URL. Nothing else changes.
 
    Rendered by src/components/EssayMedia.tsx.
    ========================================================================== */
@@ -21,8 +22,10 @@ export const AITW_PODCAST = {
 } as const;
 
 export type EssayMedia = {
-  /* The episode id from the Buzzsprout URL. */
-  buzzsproutEpisodeId: string;
+  /* The episode id from the Buzzsprout URL. null until the episode exists;
+     while null the Listen label and block do not render, and while both ids
+     are null the formats strip does not render at all. */
+  buzzsproutEpisodeId: string | null;
   /* The YouTube video id. null until the video is uploaded; while null the
      Watch label and block do not render. */
   youtubeId: string | null;
@@ -34,6 +37,8 @@ export const ESSAY_MEDIA = {
   "blast-door": { buzzsproutEpisodeId: "19937850", youtubeId: "mdLV2F0rJcc" },
   "blast-radius": { buzzsproutEpisodeId: "19937424", youtubeId: "ZwHjXFx0N9U" },
   shrapnel: { buzzsproutEpisodeId: "19938121", youtubeId: "2ggCf8j1sLM" },
+  /* Publishes 2026-10-29. Fill both ids on release day. */
+  crossfire: { buzzsproutEpisodeId: null, youtubeId: null },
 } as const satisfies Record<string, EssayMedia>;
 
 export type EssaySlug = keyof typeof ESSAY_MEDIA;

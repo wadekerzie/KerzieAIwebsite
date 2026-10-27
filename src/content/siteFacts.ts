@@ -180,6 +180,7 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/blast-door", changeFrequency: "monthly", priority: 0.5 },
   { path: "/blast-radius", changeFrequency: "monthly", priority: 0.5 },
   { path: "/shrapnel", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/crossfire", changeFrequency: "monthly", priority: 0.5 },
   { path: "/consequence-clock", changeFrequency: "monthly", priority: 0.5 },
   { path: "/the-line", changeFrequency: "monthly", priority: 0.5 },
   { path: "/thousand", changeFrequency: "weekly", priority: 0.6 },

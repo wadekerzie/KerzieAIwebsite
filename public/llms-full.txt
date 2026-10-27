@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 41
+Pages included: 42
 
 ---
 
@@ -26,8 +26,8 @@ The Back Cover If you're an AI agent, click here
 
 ## Life is best when
 technology just works .
-The world's best tech feels the easiest.
-We build products that fix things people stopped expecting to get fixed. No courses. No explanations. No consulting decks. We ship and it works.
+Whatever you run, run it from One Window. We set it up, teach you to drive it, and hand you the keys.
+For your business → For your role →
 PUBLISHED IN NATION'S RESTAURANT NEWS / LAWFUEL / SMALL BUSINESS CURRENTS / PLUMBING & MECHANICAL / SUPPLY HOUSE TIMES
 THE BACK COVER / FOR SALES TEAMS / UNISON / EXECUTIVE LEGACY
 
@@ -74,7 +74,7 @@ Zorli →
 Resumes are claims. TrueSeat builds a sealed, evidence-backed dossier of what you can actually do.
 
 ## Packed House
-Your show is booked. Your room is a quarter full. Packed House fills the seats.
+Your show is booked. Your room is 20% full. Packed House fills the seats.
 
 ## TrueNorth
 Your personal board of history's wisest advisors, portable to any AI you use.
@@ -87,8 +87,7 @@ For Sales Teams →
 The Question
 
 ## What problem hurts the most?
-Everything above started as somebody's problem. That's the whole business: find where technology is failing a person, and make it simple enough to actually help.
-Don't worry about the solution. Just tell us the problem. The longer the better.
+Write it out. The longer the better, and you don't need the fix.
 If you want us to respond, tell us how to reach you.
 Send it
 
@@ -106,7 +105,7 @@ Good. This isn't that .
 For 20 years, every pitch you've heard was about your website: redesign it, add video, add a quote tool, fix your SEO. You're tired of it, and you're right to be.
 Here's the good news. More than half of the traffic on the internet is now machines, not people, and 45% of your customers already ask ChatGPT who to call, up from 6% a year ago.
 The Back Cover is one page, written for the AI, that keeps itself current. We set it up once, and it's off your plate.
-It is not another website project. My bet is it's the last one of those you'll need for a long time.
+It is not another website project. It's the one website project you don't redo every time the standard moves.
 
 Schedule your deployment → See this site's llms.txt →
 
@@ -198,7 +197,7 @@ When we finish, yours lives at your own address. We open it with you and read it
 What We Will Not Promise
 Anyone who tells you they can guarantee an AI will recommend you is guessing, and the honest answer is better than the confident one.
 Nobody outside those companies knows exactly how the AI tools decide who to name, or how long they take to notice a site has changed. We are not going to pretend otherwise, and we are not going to tell you an answer will change by Friday.
-What we do is the best-known practice available today, in the places the AI tools actually read, plus the page for the standard that is coming. Facts clear and current, nothing on your site contradicting itself, and your business described in the form machines take instructions from.
+What we do is the best-known practice available today, in the places the AI tools read, plus the page for the standard that is coming. Facts clear and current, nothing on your site contradicting itself, and your business described in the form machines take instructions from.
 And we show you all of it. Your own page, at your own address, the same way you just looked at ours. Plus what was missing, what is there now, and the markup with a validator confirming it is correct. That is a receipt you can open yourself the day we finish, instead of a result you have to take on faith.
 
 The Price
@@ -229,7 +228,7 @@ Staying Ready
 The Back Cover gets you set up. The Watch keeps you there.
 What an AI says about your business drifts. Your hours change, a price moves, a program ends, a competitor's detail gets attached to your name. Nobody sends you a report when that happens. The first sign is usually a customer showing up annoyed, or not showing up at all.
 
-- We ask the major AI assistants the questions your customers actually ask, every month.
+- We ask the major AI assistants the questions your customers ask, every month.
 
 - We check their answers against what is true, and correct whatever has drifted at the source.
 
@@ -248,6 +247,7 @@ URL: https://kerzie.ai/blast-door
 
 The Blast Door | Kerzie AI
 ← KERZIE . AI ALL ESSAYS →
+Read it Listen Watch
 Abstract
 Right now a person with judgment and an AI can spot a problem, build the solution, and get paid for it. That combination has a shelf life, because the labs are building toward systems that spot the problems too, and when that arrives a solution costs roughly the electricity it took to think of it. The opportunity is not a window sliding shut on one schedule. It is a blast door closing from every direction at once, and the last part goes fast. This essay is about the time before it closes: what to build, what to ignore, and why the urgency will only look obvious in the rearview.
 
@@ -309,6 +309,13 @@ Get across the competency line. Get good, at more than one thing. Get your board
 Lifeboats get built on warm, level decks or not at all.
 And here’s where I plan to be standing when the door closes. The measure of success I actually want is not a number. It’s a community. People who read these essays, took me up on the setup or the session or the full build, and got through the door while it was open. People who someday say thank you. Thank you for pointing it out. Thank you for making it simple. Thank you for taking the scary out of it. Thank you that the old projects got dusted off, the business grew, and the family is better for it.
 I want a community of winners. That’s what I want. The door is still open. Get your board in the water.
+Listen
+This essay as an episode of AI in the WILD .
+
+Also on Apple Podcasts and Spotify .
+
+Watch
+This essay as a video on the Kerzie AI channel.
 
 This essay completes a set. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. This one is about the time limit on both.
 Email address Send it to me
@@ -320,6 +327,7 @@ URL: https://kerzie.ai/blast-radius
 
 The Blast Radius | Kerzie AI
 ← KERZIE . AI ALL ESSAYS →
+Read it Listen Watch
 Abstract
 How far AI reaches from your desk depends on three things: whether you ask it or instruct it, what it’s connected to, and where you sit. Most people are using it in the one mode that keeps the blast straight down.
 
@@ -413,6 +421,13 @@ Find your 50%.
 If you’re a manager: find your 50%. The time you spend gathering and polishing information for the people above you is going away. Move toward the parts that don’t: coaching, judgment, and the customer.
 If you’re an executive: your connectors decide how wide your people’s blast radius can get. Give them real access with real guardrails, and expect questions at the next town hall. That’s the point.
 Over the next twelve months, we’ll start to see the blast radius show up, with impacts ranging from minor to major. The radius is already widening at the desks of the people who crossed over. The only real question is whether yours is still pointing straight down.
+Listen
+This essay as an episode of AI in the WILD .
+
+Also on Apple Podcasts and Spotify .
+
+Watch
+This essay as a video on the Kerzie AI channel.
 
 This essay follows three others. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. The Blast Door is the time limit on both. This one is about how far the effect travels inside the building.
 Email address Send it to me
@@ -463,6 +478,7 @@ URL: https://kerzie.ai/consequence-clock
 
 The Consequence Clock | Kerzie AI
 ← KERZIE . AI ALL ESSAYS →
+Read it Listen Watch
 Abstract
 Every business runs on a consequence clock: how long it can be wrong before being wrong costs it money. But people do not run on their own clock. They run on their employer’s, because accountability is a sampling rate, and nothing measures the speed between check-ins. AI is now accelerating individuals far past any organization’s cadence, the rational response inside slow companies is to throttle or hide the speed, and the spread resolves one of three ways: the fast people leave, the company re-clocks, or the parked surplus quietly funds the company’s future competitors.
 
@@ -559,8 +575,109 @@ The person who eventually gets the reply to my unanswered Teams message will not
 Whatever you choose, the principle underneath is the one I took thirty years to learn and one unanswered Teams message to finally see:
 Never let a building set your clock.
 I write about this because the fix is finally available to a regular person. The technology to run on your own clock is here, it is cheap, and my whole job is making it simple enough to use.
+Listen
+This essay as an episode of AI in the WILD .
+
+Also on Apple Podcasts and Spotify .
+
+Watch
+This essay as a video on the Kerzie AI channel.
 
 This essay is the companion to The Kerzie Effect , which makes the same argument at the level of firms: what happens to sellers of judgment when the buyer can run the playbook. This one is about what happens inside the building.
+Email address Send it to me
+
+---
+
+# The Crossfire | Kerzie AI
+URL: https://kerzie.ai/crossfire
+
+The Crossfire | Kerzie AI
+← KERZIE . AI ALL ESSAYS →
+Abstract
+When the people around you cross the AI line, the work between you gets done twice, then once, then by nobody. The people at risk aren’t the ones who failed to learn AI. They’re the ones standing where everyone around them already did.
+
+A sales leader I know called me a couple of weeks ago, and the first thing he said wasn’t about a deal.
+“It’s all because of AI.”
+He said his batteries are recharged. Twenty-plus years in, and he’s excited to sell again. Then he said the part that stuck with me: “It’s all because of AI. If it hadn’t been for this, I’d be dreading it every day.”
+He didn’t get a new territory. He didn’t get a new comp plan. He built his own operating system for his job, on the AI his company already pays for, and it took the weight off.
+I want to talk about what that weight actually is, because I think most companies have it backwards. And then I want to talk about what happens to the people standing next to him.
+
+## What actually burns people out
+I’ve led sales teams for thirty years. Here’s what I’ve seen, and it’s my read, not a study.
+Burnout in sales doesn’t come from selling. It doesn’t come from the meeting where you help a customer think through a hard problem, or the day you close the deal you’ve worked for six months. That part fills the tank.
+Five platforms, five minutes, every day, forever.
+The tank drains somewhere else. The CRM that has to be updated. The forecast call that needs a deck. The QBR that takes a week to build. The upline report that restates what you already said in the last upline report. The five platforms that each want five minutes, every day, forever.
+None of that is the job. All of it is the job’s paperwork. And for most of my career, there was no way around it. You just carried it.
+He talks, it drafts, he reviews, he sends.
+That’s what my friend put down. His operating system carries it now. He talks, it drafts, he reviews, he sends. The selling came back because the paperwork left.
+Burnout doesn’t come from the work. It comes from the work around the work.
+
+## Two circles
+In The Blast Radius , I wrote about how far AI’s effect travels from where you sit. Ask it questions and the blast goes straight down to your own desk. Instruct it, connect it, and it moves sideways to your peers, across the building, down the org chart, and eventually up.
+That essay was about one person’s radius. This one is about what happens when two of them overlap.
+A sales manager and a finance analyst.
+Picture two people in different parts of the same company. Say a sales manager and a finance analyst. Both have crossed the line. Both have built their own operating system around their own job. And both, every month, have been producing the same thing: a forecast of what’s going to close this quarter.
+The sales manager builds it from the pipeline. The analyst builds it from the pipeline, the bookings history and the billing system. Two desks, two versions, one meeting where somebody reconciles them by hand.
+Now both of them are doing it with AI. Each one hands the task to their own system, and each one gets a finished forecast back, without asking anyone for anything.
+Two desks, two versions, one meeting.
+That’s the overlap. Draw their two circles and the space where they cross is the crossfire.
+
+## What the overlap proves
+Here’s what most people miss about that overlap. It isn’t a turf fight. It’s a finding.
+Not in theory. In practice, twice.
+When two people on two different desks each get the same task done end to end, without handing it to anyone, they’ve proven something together: that task doesn’t need a human handoff anymore. Not in theory. In practice, twice.
+So the first time, the work gets done twice. The company notices, and it gets done once. And eventually somebody asks the obvious question: if two people’s systems can each do this without help, does it need a person at all?
+That’s the question every company is about to ask, function by function, and the overlaps are where it gets asked first. If I ran a company today, I’d go looking for them on purpose. Map the circles. Find where they cross. Each crossing is a task you’ve already proven can run without a handoff.
+The claim
+The first time, the work gets done twice. Then once. Then somebody asks if it needs a person at all.
+
+## Standing in the crossfire
+Now the hard part. Who’s standing in the overlap?
+Not the sales manager. Not the analyst. They’re the ones doing the work, and their circles just got bigger.
+The one whose whole day was the handoff.
+The person in the crossfire is the one who used to do the work in between. The one who took the two forecasts and reconciled them. The one who built the deck from both. The one whose whole day was the handoff.
+And here’s what makes it dangerous: their blast radius is zero. Not because they’re bad at their job. Because they haven’t crossed over. They’re standing in the space between two people who did, and they may not know it yet.
+Think of a Venn diagram.
+Here’s the test. If the task you do can now be done by more than one other person in the company, without needing you, you’re in the overlap. Think of a Venn diagram. Two circles cross, and you’re sitting in the middle while two other people do your job without asking you for anything.
+That’s the shift I want people to hear. The risk isn’t that you didn’t learn AI. The risk is that the people around you did. If you haven’t drawn your own circle, the one that shows what you’re worth, someone else will draw theirs right over you.
+I’m not cheering for that. I’m describing it. If someone’s entire job is a task that two other people’s systems now finish on their own, that job is at risk, and we’re lying to ourselves if we say it any other way.
+
+## Some tasks leave desks
+Let me be precise, because this is where people get scared, and fear makes for bad decisions.
+Most jobs are a bundle of tasks. Some of those tasks are about to leave your desk. That’s not the same as your job leaving. My friend didn’t lose his job when the paperwork left. He got his job back.
+The difference is whether you’re the one handing the task to the system, or the task that gets handed.
+It stops at the send button.
+And handing it over doesn’t mean letting go of the wheel. The rule in my own operating system is the same one I wrote about last time: the AI does everything up to the point where a human has to be accountable. It stops at the send button. It stops at the pay button. Nobody ever finds out after the fact that the AI sent something on their behalf. The judgment stays with the person. The work doesn’t.
+That’s not a limit on what the system can do. It’s the reason you can trust it with everything before that line.
+It stops at the send button. The judgment stays with the person. The work doesn’t.
+
+## Your circle is a force field
+There’s another side to the blast radius, and it’s the one that keeps you employed.
+Your circle isn’t only how far your work reaches. It’s a protective bubble. Call it a force field. Once you’ve built your own system, you don’t just do your job. You make a whole bunch of other people’s jobs easier, sideways, down and up. You’re better at what you do, you reach further into the company, and the people inside your circle need you to keep doing it.
+Not a title. Not tenure.
+That’s the protection. Not a title. Not tenure. The fact that removing you would make other people’s work slower.
+And if you’re the one standing in the middle today, there’s a version of this where you win. Cross over, and your circle can reach both sides of the overlap at once. The person who can work the left and the right beats the people who can only work one.
+Your circle is your force field. Take you out, and everyone inside it gets slower.
+
+## Sitting still isn’t an option
+So what do you do if you’re reading this and wondering where your own circle is?
+I see two roads, and both of them have some pain.
+The first: your job changes. You cross the line, you build your own system, some of your tasks leave your desk, and you spend the time on the part of the work that only you can do. That’s uncomfortable for a few weeks. My friend would tell you it was worth it.
+Slow. Then overloaded. Then the handoff nobody needs.
+The second: you wait. And the company’s clock speeds up around you. The people next to you start delivering in an afternoon what used to take a week, and you’re still doing it the old way. You don’t get fired for that, at first. You just start to look slow. Then overloaded. Then like the handoff nobody needs.
+There isn’t a third road where nothing changes. Sitting still isn’t an option anymore.
+A lot of people think they’re already there because they get great answers from AI. That’s still ask-and-answer. The blast goes straight down to your own desk and stops.
+Here’s the good news, and I mean it. You don’t have to learn AI. You don’t have to learn how the models work, or which app does what, or how to stitch five tools together. You have to learn to run your job with it. That’s a different thing, and it’s a much smaller thing than people think.
+
+## Find your circle
+What’s the paperwork in your week?
+Start with one question: what’s the paperwork in your week? Not the work. The work around the work. Write it down. That list is where your circle starts.
+Then look at the people next to you. Where would your circles cross? That’s where the crossfire is going to be. Better to be one of the people drawing the circles than the one standing between them.
+That’s what One Window is: your job, run from one place, with the AI doing the work around the work and you keeping the send button. The software is free.
+If you’re drawing your own circle, start there: kerzie.ai/one-window
+If you lead a sales team and want every circle on it drawn at once, we build that with you: kerzie.ai/services/sales-teams
+
+This essay follows five others. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. The Blast Door is the time limit on both. The Blast Radius is how far the effect travels inside the building. The Shrapnel is what the same force does to the website. This one is about what happens where two people’s circles cross.
 Email address Send it to me
 
 ---
@@ -593,7 +710,7 @@ Essays | Kerzie AI
 ← KERZIE . AI
 Essays
 
-## One argument, in five parts.
+## One argument, in six parts.
 Read them in the order I wrote them if you can. Each one stands on its own, but they build.
 
 July 24, 2026
@@ -633,6 +750,14 @@ October 9, 2026
 ## The Shrapnel
 Your website is breaking apart
 For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.
+
+Read the essay →
+
+October 29, 2026
+
+## The Crossfire
+Where two circles cross
+When the people around you cross the AI line, the work between you gets done twice, then once, then by nobody. The people at risk aren't the ones who failed to learn AI. They're the ones standing where everyone around them already did.
 
 Read the essay →
 
@@ -716,6 +841,7 @@ URL: https://kerzie.ai/kerzie-effect
 
 The Kerzie Effect | Kerzie AI
 ← KERZIE . AI ALL ESSAYS →
+Read it Listen Watch
 Abstract
 Once a buyer has the seller’s scope of work and the buyer’s own context, an AI can synthesize, and now execute, what used to require paying for the seller’s time. Named here, walked through its two phases, demonstrated across three industries at real prices, and bounded by the places it does not reach. The mechanism cuts both ways. It strands anyone whose product is synthesis, and it elevates whoever inside a company picks it up first.
 
@@ -949,6 +1075,13 @@ That doesn’t stop phase two. Nothing stops phase two, for the buyer who’s al
 I’ve spent the last few weeks watching that line move in real time, in my own business and in the ones I talk to. I’m going to keep writing about where it moves next.
 One closing thought, and it’s the one I’d want if I were reading this instead of writing it. Whether this lands on you as a threat or as an opening comes down to a single question, and it isn’t about your industry or your title. It’s whether you’re on the side of the competency line that gets synthesized, or the side that does the synthesizing. That line is not hard to cross anymore. That’s the entire point of this essay, and it’s the part that cuts both ways.
 Helping people cross it is the business. Making the technology simple enough that you can - that’s the whole job.
+Listen
+This essay as an episode of AI in the WILD .
+
+Also on Apple Podcasts and Spotify .
+
+Watch
+This essay as a video on the Kerzie AI channel.
 
 If you finished this on the wrong side of the line, I wrote a separate page on what to do about it .
 Follow where the line moves
@@ -1066,7 +1199,7 @@ The Learning Curve Is Gone
 For two years, using AI well meant studying it: which model for what, which tools, prompt this, chain that. People built careers on explaining it. That curve is gone.
 Two skills are left, and you have had both for twenty-five years: create an account with a username and password, and follow instructions.
 The window gives the instructions now, not you. Connect your email: it walks you through it. Connect your calendar: it walks you through it. The hardest thing you will ever do is follow steps to create an account, and you have been doing that since the internet arrived.
-Prompt engineering did not get easier. It got done. It is inside the Foundation, written once, and you get it free. What is left for you is the only part that was ever really yours: knowing what needs to get done.
+Prompt engineering did not get easier. It got done. It is inside the Foundation, written once, and you get it free. What is left for you is the only part that was ever yours: knowing what needs to get done.
 
 Your 16,000 Words
 Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
@@ -1121,8 +1254,8 @@ The Small Business Setup →
 
 Straight Answers
 Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt.
-What is the catch? There is not one. You join my newsletter list when you take the OS, and you can leave it the same day and keep everything. I am building a thousand operators, and this is how I count.
-Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; the first-week plan inside paces the rest.
+What is the catch? Your email. You join my newsletter list when you take the OS. Leave the same day and keep everything. I am building a thousand operators, and this is how I count.
+Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; plan three hours for the full setup, and the first-week plan inside paces the rest.
 Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the Foundation walk you through the real install, the real click paths, and the real place it breaks.
 Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
 Is this real? It is the literal framework my operating system runs on: the same tracker, rules, routines, and capture pipeline that run my ventures every day. Nothing in it is theoretical.
@@ -1187,7 +1320,7 @@ The Two Habits
 Here is what almost everyone gets wrong about AI: they picture a curriculum. Months of studying, keeping up with model releases, learning which tool does what. That imagined climb is why most people never start.
 The whole learning curve is two habits: record what you say, and give it one place to land.
 Talk to the window at your desk. Talk to your phone from the truck. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your business once, then it knows your customers, your prices, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
-And you do not need to wait for a better AI. I run my companies on today's models, and I honestly could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
+And you do not need to wait for a better AI. I run my companies on today's models, and I could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
 
 What You Get
 Built in the first sittings, from an interview about your actual business. Nothing generic, and nothing goes out to a customer without your yes.
@@ -1245,7 +1378,7 @@ URL: https://kerzie.ai/packed-house
 Packed House | Kerzie AI
 The band is booked. The night is paid for.
 Forty people came. The room holds two hundred.
-64% of independent venues lost money last year. Not because the shows were bad. Because the seats were empty. Every empty seat on a booked night is pure margin, sitting there, going home with nobody.
+64% of independent venues lost money in 2024 (NIVA, State of Live, October 2025). Not because the shows were bad. Because the seats were empty. Every empty seat on a booked night is pure margin, sitting there, going home with nobody.
 
 ## Nobody's job is the empty seat
 Your ticketing company sells tickets to people who already decided to come. Your promotion is a post and an email blast, sent to the same list, the week of the show. Your booker fills the calendar, not the room. Everyone in the building has a job, and filling the Tuesday is nobody's.
@@ -1374,7 +1507,7 @@ Kerzie AI
 Schedule
 
 ## Let's put it on the calendar .
-A business problem, a podcast, a stage, or a question about AI. Whatever brought you here, this is the direct line to my calendar. Pick a time that works and let's talk.
+What's the biggest problem in your business right now? Pick a time and we start there. Podcast and speaking asks go on the same calendar.
 Rather write first? Email me directly at wade@kerzie.ai .
 
 ---
@@ -1739,17 +1872,17 @@ Not more calls. The work every great seller knows they should do and never had r
 
 - Time to think. Thirty minutes on one account instead of three. That used to be what separated the top rep from everybody else. It was never talent. It was bandwidth.
 
-How It Works: Crawl, Walk, Run
+How It Works: Build, Drive, Own
 Your whole team, leaders included. A manager who does not run it cannot coach it.
-Crawl
+Build
 Every seller installs their OS on the company laptop, inside your rules, and sits for the interview that teaches it their territory, accounts, deals and competitors. It answers like a teammate from the first day, not a search box.
 What you see Every seller's OS installed and interviewed. The first briefs and captures appear.
 
-Walk
+Drive
 Four weeks on live accounts building the one habit. Every call captured, every meeting briefed, the admin work coming out of the OS instead of the rep. Real deals, not exercises.
 What you see The weekly five-question page per rep. You coach the no's.
 
-Run
+Own
 The hours go to selling. The first sellers to break through set the standard, and the rest of the team gets fast-laned into it.
 What you see The Monday team view and the honest forecast.
 
@@ -1801,6 +1934,7 @@ URL: https://kerzie.ai/shrapnel
 
 The Shrapnel | Kerzie AI
 ← KERZIE . AI ALL ESSAYS →
+Read it Listen Watch
 Abstract
 For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.
 
@@ -1872,6 +2006,13 @@ Who’s keeping all the pieces straight?
 The question most owners are asking is, “Should we redo our website?” I think it’s the wrong question right now. The right one is: who’s keeping all the pieces straight?
 That starts with one page that tells AI exactly what your business is, in your own words, kept current. We call it the Back Cover. It’s the first piece. The rest are coming, and I’d rather our clients author them than chase them.
 See what AI reads about your business: kerzie.ai/back-cover
+Listen
+This essay as an episode of AI in the WILD .
+
+Also on Apple Podcasts and Spotify .
+
+Watch
+This essay as a video on the Kerzie AI channel.
 
 This essay follows four others. The Kerzie Effect is the firm-level argument: what happens to sellers of judgment when the buyer can run the playbook. The Consequence Clock is the person-level one: you work at the speed you are checked. The Blast Door is the time limit on both. The Blast Radius is how far the effect travels inside the building. This one is about what the same force does to the website.
 Email address Send it to me
@@ -1963,12 +2104,12 @@ The People
 What we share: the belief that life is best when technology just works, and the stubbornness to make it that way for other people.
 
 Wade Kerzie
-Founder. Building AI-native products that fix real problems.
+Founder. Builds AI products that fix real problems.
 
 See more →
 
 Aaron Jones
-Technical Specialist. Colorado market. Making sure the work actually gets done.
+Technical Specialist. Colorado market. Makes sure the work gets done.
 
 See more →
 
@@ -2200,7 +2341,7 @@ Seats 1 through 11 are taken. The founding wall goes up here as each founder say
 Claim a founding seat - One-Window →
 
 Why A Door, And Why A Clock
-I have written three essays that explain what I believe is happening to work. The Kerzie Effect is why the door exists: once your buyer or your boss holds your scope of work plus an AI, they can execute it without you. The Consequence Clock is why now: the gap between what companies say they want and what they absorb has a clock running on it. The Blast Door is the honest part: the window to get good at this while it still counts as an advantage does not stay open.
+I have written three essays that explain what is happening to work. The Kerzie Effect is why the door exists: once your buyer or your boss holds your scope of work plus an AI, they can execute it without you. The Consequence Clock is why now: the gap between what companies say they want and what they absorb has a clock running on it. The Blast Door is the honest part: the window to get good at this while it still counts as an advantage does not stay open.
 I can write essays until the door closes, or I can count the people who got through it. This page counts.
 
 What Counts As Through The Door
@@ -2277,14 +2418,14 @@ Looking for Unison or Executive Legacy? Those are offers we sell to other busine
 DAY 3
 
 ## GotaGuy
-Finding a contractor is a part-time job. It should take a text message.
+Finding a contractor is a part-time job. With GotaGuy it takes a text message.
 
 Read the story →
 
 7 SEC
 
 ## TrueSeat
-A recruiter reads your resume for seven seconds. Your career deserves evidence, not a skim.
+A recruiter reads your resume for 7.4 seconds. Your career deserves evidence, not a skim.
 
 Read the story →
 
@@ -2446,7 +2587,7 @@ TrueSeat | Kerzie AI
 ← KERZIE . AI
 7 SEC
 
-## A recruiter reads your resume for about seven seconds.
+## A recruiter reads your resume for 7.4 seconds.
 Thirty years of work, compressed to two pages, skimmed in the time it takes to sip coffee. Then software scores it by keyword and a stranger decides if you exist. The people who are great at the work are rarely the people who are great at describing the work — and the resume format punishes exactly that gap. Every week, the wrong person gets the seat because they had the better document.
 
 Why It Stays Broken
@@ -2488,7 +2629,7 @@ They get voicemail. They needed an answer tonight. They will call someone else i
 Why It Stays Broken
 
 ## Most businesses respond when it is convenient for them.
-The lead does not wait. The window between someone reaching out and someone else answering them is measured in minutes not hours. Every hour you wait cuts your odds of closing that lead in half.
+The lead does not wait. The window between someone reaching out and someone else answering them is short. Be the one who answers.
 
 What Got Built
 

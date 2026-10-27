@@ -16,7 +16,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Essays | Kerzie AI",
   description:
-    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, The Blast Radius, and The Shrapnel, plus the appendix on the line.",
+    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, The Blast Radius, The Shrapnel, and The Crossfire, plus the appendix on the line.",
 };
 
 const essays = [
@@ -59,6 +59,14 @@ const essays = [
     argues:
       "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
     href: "/shrapnel",
+  },
+  {
+    title: "The Crossfire",
+    date: "October 29, 2026",
+    deck: "Where two circles cross",
+    argues:
+      "When the people around you cross the AI line, the work between you gets done twice, then once, then by nobody. The people at risk aren't the ones who failed to learn AI. They're the ones standing where everyone around them already did.",
+    href: "/crossfire",
   },
 ];
 
@@ -124,7 +132,7 @@ export default function EssaysPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Essays</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          One argument, in five parts.
+          One argument, in six parts.
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
           Read them in the order I wrote them if you can. Each one stands on
