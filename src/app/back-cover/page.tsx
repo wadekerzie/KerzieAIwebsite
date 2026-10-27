@@ -208,6 +208,37 @@ export default function BackCoverPage() {
         </div>
       </section>
 
+      {/* FRONT COVER / BACK COVER - the 41-second generic explainer (K56,
+          built 10/27, public on the Kerzie AI channel as SMwy7cYeauU). It
+          sits first, directly under the hero, because it is the fastest
+          route for a first-time visitor to understand the offer: the front
+          cover (SEO, ads, rankings, clicks) is built for people; the back
+          cover (AI readiness, LLMs pages, live details, agent-readable,
+          Google's AI readiness score) is built for AI; a website needs both.
+          SERVED FROM THIS REPO per Wade's 8/14 rule below (our file, our
+          domain; YouTube is distribution, not infrastructure). The file is
+          the same 1080p encode YouTube serves, remuxed with faststart so it
+          streams on a phone. Poster = the frame of the AI reading the back
+          of the laptop, no burned-in caption. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)]">
+        <Reveal>
+          <p className="k-label mb-6">Front Cover, Back Cover</p>
+          <video
+            controls
+            preload="metadata"
+            playsInline
+            poster="/videos/back-cover-front-back-poster.jpg"
+            className="w-full max-w-3xl rounded-lg border border-[rgba(26,27,46,0.13)] shadow-2xl shadow-black/40"
+          >
+            <source src="/videos/back-cover-front-back.mp4" type="video/mp4" />
+          </video>
+          <p className="mt-5 max-w-3xl text-[#262B3D] text-lg leading-relaxed">
+            Forty-one seconds on what the front cover and the back cover of a
+            website are, and why yours needs both.
+          </p>
+        </Reveal>
+      </section>
+
       {/* The explainer video - rendered 8/14 (HeyGen, Wade's avatar, the
           blazer look), SERVED FROM THIS REPO like the one-window video -
           never embedded from HeyGen or YouTube on the sales page (Wade's
