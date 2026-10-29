@@ -1,5 +1,5 @@
 import LiteYouTube from "@/components/LiteYouTube";
-import { AITW_PODCAST, ESSAY_MEDIA, type EssaySlug } from "@/data/essay_media";
+import { AITW_PODCAST, ESSAY_MEDIA, type EssayMedia, type EssaySlug } from "@/data/essay_media";
 
 /* ============================================================================
    Read it, listen to it, watch it (Wade, 2026-10-09).
@@ -22,7 +22,7 @@ import { AITW_PODCAST, ESSAY_MEDIA, type EssaySlug } from "@/data/essay_media";
    ========================================================================== */
 
 export function EssayFormats({ slug }: { slug: EssaySlug }) {
-  const media = ESSAY_MEDIA[slug];
+  const media: EssayMedia = ESSAY_MEDIA[slug];
   if (!media.buzzsproutEpisodeId && !media.youtubeId) return null;
   return (
     <nav className="p-formats p-noprint" aria-label="Formats">
@@ -51,7 +51,7 @@ export function EssayListen({
   /* The essay title, for the player's accessible name. */
   title: string;
 }) {
-  const media = ESSAY_MEDIA[slug];
+  const media: EssayMedia = ESSAY_MEDIA[slug];
   if (!media.buzzsproutEpisodeId) return null;
   /* Buzzsprout's official per-episode script (2121496/<id>.js?player=small)
      does nothing but write this iframe into the page, so the iframe is used
@@ -97,7 +97,7 @@ export function EssayWatch({
   slug: EssaySlug;
   title: string;
 }) {
-  const media = ESSAY_MEDIA[slug];
+  const media: EssayMedia = ESSAY_MEDIA[slug];
   if (!media.youtubeId) return null;
 
   return (

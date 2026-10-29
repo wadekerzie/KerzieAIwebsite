@@ -37,8 +37,8 @@ export const ESSAY_MEDIA = {
   "blast-door": { buzzsproutEpisodeId: "19937850", youtubeId: "mdLV2F0rJcc" },
   "blast-radius": { buzzsproutEpisodeId: "19937424", youtubeId: "ZwHjXFx0N9U" },
   shrapnel: { buzzsproutEpisodeId: "19938121", youtubeId: "2ggCf8j1sLM" },
-  /* Publishes 2026-10-29. Fill both ids on release day. */
-  crossfire: { buzzsproutEpisodeId: null, youtubeId: null },
+  /* Published 2026-10-29. */
+  crossfire: { buzzsproutEpisodeId: "20030148", youtubeId: "wG8-3DQXa-Y" },
 } as const satisfies Record<string, EssayMedia>;
 
 export type EssaySlug = keyof typeof ESSAY_MEDIA;
