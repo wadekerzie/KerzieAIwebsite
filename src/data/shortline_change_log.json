@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-29",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 5,
+      "price_changed": 39,
+      "total": 332,
+      "ran_at": "10:23 AM CT",
+      "note": "One vehicle joined the list, a 2002 Mercedes-Benz CLK 430 convertible, and five came off since the last update, bringing the total to 332. A sweeping round of repricing today touched 39 listings. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-28",
       "status": "ok",
       "kind": "refresh",
