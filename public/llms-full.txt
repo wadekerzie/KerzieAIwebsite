@@ -1418,7 +1418,7 @@ Kerzie AI
 Last Updated: January 2, 2026
 
 ## Introduction
-Kerzie Consulting LLC, doing business as Kerzie AI ("we," "us," or "our"), respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+Kerzie Consulting LLC, doing business as Kerzie AI Solutions ("we," "us," or "our"), respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
 By using our services, you consent to the data practices described in this policy.
 
 ## Information We Collect
@@ -1433,7 +1433,7 @@ We may collect the following types of information:
 ## SMS/Text Messaging Terms
 By providing your phone number and opting in to receive SMS messages from Kerzie AI, you agree to the following:
 
-- Consent: You consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI) regarding work status updates, appointment reminders, and service-related communications.
+- Consent: You consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI Solutions) regarding work status updates, appointment reminders, and service-related communications.
 
 - Message Frequency: You may receive up to 5 messages per month. Message frequency may vary based on your interaction with our services.
 
@@ -1489,11 +1489,11 @@ You have the right to:
 ## Contact Us
 If you have any questions about this Privacy Policy or our data practices, please contact us:
 Kerzie Consulting LLC
-DBA: Kerzie AI
+DBA: Kerzie AI Solutions
 6005 Autumn Way
 McKinney, Texas 75072
 Phone: +1 (214) 668-7986
-Email: wade@kerzieconsulting.com
+Email: wade@kerzie.ai
 
 ## Changes to This Privacy Policy
 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. Your continued use of our services after any changes constitutes acceptance of the updated policy.
@@ -2161,7 +2161,7 @@ Kerzie AI
 Last Updated: January 2, 2026
 
 ## Agreement to Terms
-These Terms of Service ("Terms") govern your access to and use of the services provided by Kerzie Consulting LLC, doing business as Kerzie AI ("Company," "we," "us," or "our").
+These Terms of Service ("Terms") govern your access to and use of the services provided by Kerzie Consulting LLC, doing business as Kerzie AI Solutions ("Company," "we," "us," or "our").
 By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services.
 
 ## Description of Services
@@ -2181,7 +2181,7 @@ Kerzie AI provides AI-powered customer communication solutions, including but no
 By providing your mobile phone number and opting in to receive SMS messages, you agree to the following terms:
 
 ## Consent to Receive SMS
-You expressly consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI) at the mobile phone number you provide. These messages may include work status updates, appointment reminders, and service-related communications.
+You expressly consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI Solutions) at the mobile phone number you provide. These messages may include work status updates, appointment reminders, and service-related communications.
 
 ## Message Frequency
 You may receive up to 5 SMS messages per month. Message frequency may vary based on your use of our services and your communication preferences.
@@ -2197,7 +2197,7 @@ Reply STOP to any message you receive from us. You will receive a one-time confi
 For help with SMS messages:
 Reply HELP to any message, or contact us at:
 Phone: +1 (214) 668-7986
-Email: wade@kerzieconsulting.com
+Email: wade@kerzie.ai
 
 ## SMS Data Privacy
 Your phone number and SMS consent information will not be shared with third parties for marketing purposes. For complete details on how we handle your data, please review our Privacy Policy .
@@ -2241,11 +2241,11 @@ We reserve the right to modify these Terms at any time. We will notify you of ma
 ## Contact Information
 For questions about these Terms of Service, please contact us:
 Kerzie Consulting LLC
-DBA: Kerzie AI
+DBA: Kerzie AI Solutions
 6005 Autumn Way
 McKinney, Texas 75072
 Phone: +1 (214) 668-7986
-Email: wade@kerzieconsulting.com
+Email: wade@kerzie.ai
 
 Return to Home
 

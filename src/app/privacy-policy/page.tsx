@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
                             <div className="bg-[#FFFFFF] border border-[rgba(26,27,46,0.13)] p-8 mb-8">
                                 <h2 className="text-[#1A1B2E] text-xl font-semibold mb-4">Introduction</h2>
                                 <p className="text-[#262B3D] mb-4">
-                                    Kerzie Consulting LLC, doing business as Kerzie AI (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;),
+                                    Kerzie Consulting LLC, doing business as Kerzie AI Solutions (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;),
                                     respects your privacy and is committed to protecting your personal information. This Privacy
                                     Policy explains how we collect, use, disclose, and safeguard your information when you visit
                                     our website or use our services.
@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
                                 </p>
                                 <ul className="list-disc pl-6 space-y-3 text-[#262B3D] mb-6">
                                     <li>
-                                        <strong>Consent:</strong> You consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI)
+                                        <strong>Consent:</strong> You consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI Solutions)
                                         regarding work status updates, appointment reminders, and service-related communications.
                                     </li>
                                     <li>
@@ -138,11 +138,11 @@ export default function PrivacyPolicy() {
                                 </p>
                                 <div className="bg-[#F2EEE6] rounded-lg p-6">
                                     <p className="text-[#1A1B2E] font-semibold mb-2">Kerzie Consulting LLC</p>
-                                    <p className="text-[#262B3D]">DBA: Kerzie AI</p>
+                                    <p className="text-[#262B3D]">DBA: Kerzie AI Solutions</p>
                                     <p className="text-[#262B3D]">6005 Autumn Way</p>
                                     <p className="text-[#262B3D]">McKinney, Texas 75072</p>
                                     <p className="text-[#262B3D] mt-2">Phone: +1 (214) 668-7986</p>
-                                    <p className="text-[#262B3D]">Email: wade@kerzieconsulting.com</p>
+                                    <p className="text-[#262B3D]">Email: wade@kerzie.ai</p>
                                 </div>
                             </div>
 
