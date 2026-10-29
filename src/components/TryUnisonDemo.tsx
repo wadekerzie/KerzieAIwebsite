@@ -2,10 +2,18 @@
 
 import { Instagram, MessageCircle, Phone, MessageSquare } from "lucide-react";
 
+// Globals the page may find on window: GA's gtag and the GHL chat widget loader.
+type DemoWindow = Window & {
+  gtag?: (...args: unknown[]) => void;
+  leadConnector?: { chatWidget?: { openWidget?: () => void } };
+  GHLChatWidget?: { open?: () => void };
+};
+
 // Track analytics events
 const trackDemoClick = (channel: string) => {
-  if (typeof window !== "undefined" && (window as any).gtag) {
-    (window as any).gtag("event", `demo_click_${channel}`, {
+  const w = typeof window !== "undefined" ? (window as DemoWindow) : undefined;
+  if (w?.gtag) {
+    w.gtag("event", `demo_click_${channel}`, {
       event_category: "Demo Interaction",
       event_label: `Try Demo - ${channel}`,
     });
@@ -13,22 +21,30 @@ const trackDemoClick = (channel: string) => {
   console.log(`Demo click tracked: ${channel}`);
 };
 
-// Open chatbot widget
+// Open the Unison chat widget (GHL loader, restored site-wide in Footer.tsx
+// 2026-10-28). Verified on the live loader: it exposes
+// window.leadConnector.chatWidget.openWidget(); there is no GHLChatWidget global.
 const openChatbot = (channel: string = "chat") => {
   trackDemoClick(channel);
-  // The GHL chat widget should be available globally
-  if (typeof window !== "undefined") {
-    const chatWidget = (window as any).GHLChatWidget;
-    if (chatWidget && typeof chatWidget.open === "function") {
-      chatWidget.open();
-    } else {
-      // Fallback: try to click the chat button if it exists
-      const chatButton = document.querySelector('[data-chat-widget]') as HTMLElement;
-      if (chatButton) {
-        chatButton.click();
-      }
-    }
+  if (typeof window === "undefined") return;
+  const w = window as DemoWindow;
+  const lc = w.leadConnector?.chatWidget;
+  if (lc && typeof lc.openWidget === "function") {
+    lc.openWidget();
+    return;
   }
+  // Older loader builds exposed GHLChatWidget.open()
+  const legacy = w.GHLChatWidget;
+  if (legacy && typeof legacy.open === "function") {
+    legacy.open();
+    return;
+  }
+  // Last resort: click the bubble button inside the <chat-widget> shadow root
+  const host = document.querySelector("chat-widget") as HTMLElement | null;
+  const bubble =
+    (host?.shadowRoot?.querySelector("button") as HTMLElement | null) ??
+    (document.querySelector("[data-chat-widget]") as HTMLElement | null);
+  bubble?.click();
 };
 
 export default function TryUnisonDemo() {
@@ -93,25 +109,36 @@ export default function TryUnisonDemo() {
                     Talk to us directly
                   </p>
                 </div>
-                <button
-                  onClick={() => openChatbot("phone")}
+                {/* 469-933-0930 is the GHL location's default number ("Sophie",
+                    voice AI inbound), confirmed via the GHL API 2026-10-28. */}
+                <a
+                  href="tel:+14699330930"
+                  onClick={() => trackDemoClick("phone")}
                   className="btn-primary w-full"
                 >
                   <span>469-933-0930</span>
-                </button>
+                </a>
               </div>
             </div>
 
             {/* Website Chat and Voice - Top right */}
-            <div className="card text-center">
-              <div className="flex flex-col items-center h-full">
-                <div className="icon-box w-20 h-20 mx-auto mb-4 rounded-2xl shadow-lg">
-                  <MessageSquare className="w-10 h-10" />
+            <div className="card card-hover text-center">
+              <div className="flex flex-col items-center justify-between h-full">
+                <div className="mb-6">
+                  <div className="icon-box w-20 h-20 mx-auto mb-4 rounded-2xl shadow-lg">
+                    <MessageSquare className="w-10 h-10" />
+                  </div>
+                  <h3 className="heading-md mb-2">Website Chat & Voice</h3>
+                  <p className="text-[var(--foreground-muted)]">
+                    Click the chat widget to the right to use either text or call us with your voice directly using the chat widget.
+                  </p>
                 </div>
-                <h3 className="heading-md mb-4">Website Chat & Voice</h3>
-                <p className="text-[var(--foreground)] text-lg leading-relaxed">
-                  Click the chat widget to the right to use either text or call us with your voice directly using the chat widget.
-                </p>
+                <button
+                  onClick={() => openChatbot("chat")}
+                  className="btn-primary w-full"
+                >
+                  <span>Open the chat widget</span>
+                </button>
               </div>
             </div>
 
