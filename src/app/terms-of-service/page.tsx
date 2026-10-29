@@ -17,7 +17,7 @@ export default function TermsOfService() {
                                 <h2 className="text-[#1A1B2E] text-xl font-semibold mb-4">Agreement to Terms</h2>
                                 <p className="text-[#262B3D] mb-4">
                                     These Terms of Service (&quot;Terms&quot;) govern your access to and use of the services provided by
-                                    Kerzie Consulting LLC, doing business as Kerzie AI (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
+                                    Kerzie Consulting LLC, doing business as Kerzie AI Solutions (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
                                 </p>
                                 <p className="text-[#262B3D]">
                                     By accessing our website or using our services, you agree to be bound by these Terms. If you do not agree
@@ -49,7 +49,7 @@ export default function TermsOfService() {
 
                                 <h3 className="text-lg font-semibold text-[#1A1B2E] mb-3">Consent to Receive SMS</h3>
                                 <p className="text-[#262B3D] mb-4">
-                                    You expressly consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI) at the mobile
+                                    You expressly consent to receive SMS text messages from Kerzie Consulting LLC (DBA Kerzie AI Solutions) at the mobile
                                     phone number you provide. These messages may include work status updates, appointment reminders, and
                                     service-related communications.
                                 </p>
@@ -83,7 +83,7 @@ export default function TermsOfService() {
                                         Reply <strong>HELP</strong> to any message, or contact us at:
                                     </p>
                                     <p className="text-[#262B3D] mt-2">Phone: +1 (214) 668-7986</p>
-                                    <p className="text-[#262B3D]">Email: wade@kerzieconsulting.com</p>
+                                    <p className="text-[#262B3D]">Email: wade@kerzie.ai</p>
                                 </div>
 
                                 <h3 className="text-lg font-semibold text-[#1A1B2E] mb-3">SMS Data Privacy</h3>
@@ -184,11 +184,11 @@ export default function TermsOfService() {
                                 </p>
                                 <div className="bg-[#F2EEE6] rounded-lg p-6">
                                     <p className="text-[#1A1B2E] font-semibold mb-2">Kerzie Consulting LLC</p>
-                                    <p className="text-[#262B3D]">DBA: Kerzie AI</p>
+                                    <p className="text-[#262B3D]">DBA: Kerzie AI Solutions</p>
                                     <p className="text-[#262B3D]">6005 Autumn Way</p>
                                     <p className="text-[#262B3D]">McKinney, Texas 75072</p>
                                     <p className="text-[#262B3D] mt-2">Phone: +1 (214) 668-7986</p>
-                                    <p className="text-[#262B3D]">Email: wade@kerzieconsulting.com</p>
+                                    <p className="text-[#262B3D]">Email: wade@kerzie.ai</p>
                                 </div>
                             </div>
 
