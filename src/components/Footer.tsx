@@ -21,18 +21,20 @@ export default function Footer() {
         </p>
 
         {/* Direct line (Wade 2026-09-23: "I don't want to be cryptic about
-            the email address"). On every page, where people look for it. */}
+            the email address"). On every page, where people look for it.
+            The number is the Unison line (Sophie, GHL voice AI), not Wade's
+            cell (Wade 2026-10-29: his cell drew spam; Aaron meant Unison). */}
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Book 30 minutes with Wade <span className="k-arrow">&rarr;</span>
           </Link>
           <p className="text-[#262B3D]/70 text-sm lg:text-base">
-            or call{" "}
+            or call or text{" "}
             <a
-              href="tel:+12146687986"
+              href="tel:+14699330930"
               className="k-link text-[#262B3D] hover:text-[#1A1B2E] transition-colors duration-200"
             >
-              214-668-7986
+              469-933-0930
             </a>
             {" "}&middot; email{" "}
             <a
