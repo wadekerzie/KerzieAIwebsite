@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-28",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 7,
+      "price_changed": 19,
+      "total": 336,
+      "ran_at": "8:33 AM CT",
+      "note": "Three vehicles joined the list and seven came off since the last update, bringing the total to 336. New arrivals include a 2023 Chevrolet Suburban Z71, a 2026 GMC Sierra 1500 Denali, and a 2006 Lexus ES 330. Nineteen price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-27",
       "status": "ok",
       "kind": "refresh",

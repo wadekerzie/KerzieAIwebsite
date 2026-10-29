@@ -1,8 +1,18 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Footer() {
   return (
     <footer className="bg-[#FAF8F4]">
+      {/* Unison chat + voice widget (GHL). Site-wide since 2026-01-12, dropped
+          by the 2026-06-14 footer redesign, restored 2026-10-28 (Wade: "put
+          them both back on the site now"). */}
+      <Script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="6963fcc35c8c5be17f8f0a9d"
+        strategy="lazyOnload"
+      />
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-20 lg:pt-16 pb-12">
 
         {/* The belief, in the human voice */}
@@ -17,7 +27,14 @@ export default function Footer() {
             Book 30 minutes with Wade <span className="k-arrow">&rarr;</span>
           </Link>
           <p className="text-[#262B3D]/70 text-sm lg:text-base">
-            or email{" "}
+            or call{" "}
+            <a
+              href="tel:+12146687986"
+              className="k-link text-[#262B3D] hover:text-[#1A1B2E] transition-colors duration-200"
+            >
+              214-668-7986
+            </a>
+            {" "}&middot; email{" "}
             <a
               href="mailto:wade@kerzie.ai"
               className="k-link text-[#262B3D] hover:text-[#1A1B2E] transition-colors duration-200"

@@ -46,7 +46,11 @@ export default function SchedulePage() {
           calendar.
         </p>
         <p className="k-rise k-rise-3 mt-4 text-[#262B3D] text-lg max-w-xl">
-          Rather write first? Email me directly at{" "}
+          Rather talk or write first? Call me at{" "}
+          <a href="tel:+12146687986" className="k-link text-[#1A1B2E] font-medium">
+            214-668-7986
+          </a>
+          , or email me directly at{" "}
           <a href="mailto:wade@kerzie.ai" className="k-link text-[#1A1B2E] font-medium">
             wade@kerzie.ai
           </a>
