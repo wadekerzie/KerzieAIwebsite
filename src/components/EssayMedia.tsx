@@ -1,5 +1,5 @@
 import LiteYouTube from "@/components/LiteYouTube";
-import { AITW_PODCAST, ESSAY_MEDIA, type EssaySlug } from "@/data/essay_media";
+import { AITW_PODCAST, ESSAY_MEDIA, type EssayMedia, type EssaySlug } from "@/data/essay_media";
 
 /* ============================================================================
    Read it, listen to it, watch it (Wade, 2026-10-09).
@@ -12,22 +12,28 @@ import { AITW_PODCAST, ESSAY_MEDIA, type EssaySlug } from "@/data/essay_media";
    - <EssayWatch>    the YouTube video, behind a click-to-load poster.
 
    While an essay's youtubeId is null, the Watch label and the Watch block
-   both render nothing. Fill the id in the data file and they appear.
+   both render nothing; the same for buzzsproutEpisodeId and Listen. While
+   both are null (a page published ahead of its episode and video) the
+   formats strip renders nothing too. Fill the ids in the data file and
+   they appear.
 
    Styles: the `.p-formats`, `.p-media`, `.p-listen`, `.p-watch` blocks in
    globals.css, scoped to `.paper`.
    ========================================================================== */
 
 export function EssayFormats({ slug }: { slug: EssaySlug }) {
-  const media = ESSAY_MEDIA[slug];
+  const media: EssayMedia = ESSAY_MEDIA[slug];
+  if (!media.buzzsproutEpisodeId && !media.youtubeId) return null;
   return (
     <nav className="p-formats p-noprint" aria-label="Formats">
       <span className="is-active" aria-current="page">
         Read it
       </span>
-      <a href="#listen" className="k-focus">
-        Listen
-      </a>
+      {media.buzzsproutEpisodeId ? (
+        <a href="#listen" className="k-focus">
+          Listen
+        </a>
+      ) : null}
       {media.youtubeId ? (
         <a href="#watch" className="k-focus">
           Watch
@@ -45,7 +51,8 @@ export function EssayListen({
   /* The essay title, for the player's accessible name. */
   title: string;
 }) {
-  const media = ESSAY_MEDIA[slug];
+  const media: EssayMedia = ESSAY_MEDIA[slug];
+  if (!media.buzzsproutEpisodeId) return null;
   /* Buzzsprout's official per-episode script (2121496/<id>.js?player=small)
      does nothing but write this iframe into the page, so the iframe is used
      directly: same player, no document.write, no render-blocking script. The
@@ -90,7 +97,7 @@ export function EssayWatch({
   slug: EssaySlug;
   title: string;
 }) {
-  const media = ESSAY_MEDIA[slug];
+  const media: EssayMedia = ESSAY_MEDIA[slug];
   if (!media.youtubeId) return null;
 
   return (
