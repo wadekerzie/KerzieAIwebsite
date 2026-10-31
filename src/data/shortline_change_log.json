@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-10-31",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 1,
+      "removed": 4,
+      "price_changed": 2,
+      "total": 332,
+      "ran_at": "7:55 AM CT",
+      "note": "One vehicle joined the list, a 2013 Chevrolet Spark LT, and four came off since the last update, bringing the total to 332. Two price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-10-30",
       "status": "ok",
       "kind": "refresh",
