@@ -3,6 +3,28 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-02",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 0,
+      "price_changed": 0,
+      "total": 331,
+      "ran_at": "8:58 AM CT",
+      "note": "Two vehicles joined the list and none came off since the last update, bringing the total to 331. New arrivals include a 2027 GMC Yukon Denali Ultimate and a 2026 Buick Envista Preferred. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
+      "date": "2026-11-01",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "price_changed": null,
+      "total": 332,
+      "ran_at": null,
+      "note": "The file was built on schedule but not placed, so the 10-31 version stayed up."
+    },
+    {
       "date": "2026-10-31",
       "status": "ok",
       "kind": "refresh",
