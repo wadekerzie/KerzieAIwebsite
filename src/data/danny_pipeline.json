@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "partner": "Danny Madigan",
   "terms": {
     "recurring": "$300/month per closed rooftop, for the life of the contract ($600/month on a Johnson close - four rooftops, one feed)",
@@ -56,6 +56,14 @@
       "stage": "Intro made",
       "note": "John passed it to Schomp's group team for a first look. Waiting on their feedback. Oct 6: John Mathieson is no longer at Schomp. Danny is finding a new contact for the group.",
       "since": "2026-09-24"
+    },
+    {
+      "rooftop": "GOJO Autos (Denver)",
+      "contact": "Amanda Gordon, owner",
+      "referred": "Nov 2",
+      "stage": "Intro made",
+      "note": "Danny introduced Amanda by email Nov 2 with the Dealer Playbook link. Wade is pulling GOJO's Google scores and checking how AI tools read the site today, so his first note to Amanda carries something useful.",
+      "since": "2026-11-02"
     }
   ],
   "payments": []
