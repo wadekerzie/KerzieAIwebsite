@@ -1307,7 +1307,7 @@ one AI that knows your customers, your jobs, and your voice.
 to-do list
 gone, replaced by a pane your AI keeps current for you.
 
-Put in the three hours yourself, free, or have them done with you for $999 . Either way the countdown lands on zero .
+Put in the three hours yourself, free, or have them done with you for $ 999 . Either way the countdown lands on zero .
 
 60 Seconds, And The Video Is The Demo
 That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
@@ -1359,9 +1359,18 @@ One-Window: free. The whole operating system, every capability.
 The upgrades: free too. All of them.
 Every upgrade I build for my own OS, packaged and pushed to you: the Living Pane, the Clean Handoff, the Weekly Tune-Up, the Nightly Dream, and the stream keeps coming as I keep building. If I'm giving this away, I'm giving away the updates too.
 Why free? Because I want a thousand operators more than I want anybody's $99. Kerzie AI's business is deploying AI for companies. One-Window running your business is the proof, and the proof is the megaphone.
-Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $999 for up to three people. The OS is free either way - the session is for having it installed beside you instead of alone.
+Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $ 999 for up to three people. The OS is free either way - the session is for having it installed beside you instead of alone.
 
 Get One-Window free →
+
+Want Us To Build It Into The Business?
+It starts with a two-hour working session. $1,000, invoiced only if you say no .
+In the two hours I learn how you run the business today: the platforms you are on, the tools you pay for, how marketing goes out and how customers reach you. Then I come back with a short recorded demo, about ten minutes in my own voice, showing how your business would run on One Window. That demo is your go or no-go.
+You agree to the $1,000 before we schedule. If you go ahead, it rolls into the implementation price. If you decide not to, that is the only invoice you will get from me.
+The implementation: thirty days, $15,000 . Founders rate $7,500 for commitments made in 2026 .
+We set it up, teach you to drive it, hand you the keys and get out of the car. Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited. No required monthly after that. If you want call-in help later, there is an optional retainer, and optional means optional.
+
+How the thirty days run → Book the working session →
 
 Keep What Already Works
 Already run QuickBooks, a scheduling tool, a point of sale? Keep them. This is not another system to migrate into.
@@ -1572,11 +1581,11 @@ $999 flat for the room
 Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with One-Window. One person or three, same price.
 Read how it works →
 
-Scoped per project
+$15,000. Founders rate $7,500 for 2026 commitments
 
-## AI Implementation
-We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept. And if you are already running an AI agent you are not sure you can trust, that is an implementation problem too. Bring it to us.
-What we build →
+## One Window Implementation
+Thirty days. We set One Window up inside your business, teach you to drive it, and hand you the keys. It starts with a two-hour working session at $1,000, invoiced only if you decide not to go ahead, and a ten-minute recorded demo of your business running on it. Anything you have already paid us is credited. No required monthly after.
+How it starts, and the price →
 
 Not sure which one fits? Tell us what hurts and we will point you at the smallest thing that fixes it.
 Pick a time →
@@ -1692,18 +1701,47 @@ Send the intake →
 
 ---
 
-# AI Implementation | Kerzie AI
+# One Window Implementation | Kerzie AI
 URL: https://kerzie.ai/services/implementation
 
-AI Implementation | Kerzie AI
+One Window Implementation | Kerzie AI
 ← WORK WITH US
-AI Implementation
+One Window Implementation
 
-## We build it inside your business .
-Workflow analysis, system design, build, and live production deployment. End-to-end. No slide decks. No proofs of concept. The deliverable is the thing, running.
+## We set it up, teach you to drive it, and hand you the keys .
+Thirty days. Your business running from One Window, in your own accounts, on your own machine. No slide decks, no pilot on the side. The deliverable is the thing, running, and you own it.
+
+How It Starts
+A two-hour working session. $1,000, invoiced only if you say no .
+Every One Window conversation starts the same way. We sit down for two hours and learn how you run the business today: the platforms you are on, the tools you pay for, how marketing goes out and how customers reach you.
+Then we go away and come back with a short recorded demo, about ten minutes, showing how your business would run on One Window. Wade records the voiceover himself. That demo is your go or no-go.
+You agree to the $1,000 before we put the session on the calendar. If you go ahead with the implementation, it rolls into the price. If you decide not to, that is the only invoice you will get from us.
+
+The Thirty Days
+Build, drive, own. Like driver's ed: we have the second brake pedal for a while, and the lessons end when you can drive.
+
+- Build. We connect the platforms you already run on and set One Window up around how your business actually works. Nothing generic, nothing you have to migrate into.
+
+- Drive. You run it with us beside you. The routines that chase, draft, track and report run on your business, and you approve anything that touches a customer or a dollar.
+
+- Own. We hand you the keys and get out of the car. It is your system, in your accounts, on your machine. There is nothing we can turn off.
+
+The Price
+$15,000 , one time. That is the market rate.
+Founders rate: $7,500 for commitments made in 2026 .
+Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward the implementation price. The $1,000 from the working session rolls in the same way.
+You are paying for our time and our know-how, up front, and then it is yours. There is no required monthly after the thirty days. The software is free; your only subscriptions are the platforms you already use and the AI model you pick. If you want call-in help later, there is an optional retainer. Optional means optional.
+
+Book the working session →
+
+Three Ways In
+Do it yourself, free. The starter One Window is free, and so is every upgrade. Paste the Foundation into Claude, answer its questions, and run it. Get One Window free .
+Done with you, $999 flat for the room . Three hours at your desk, on your machine, in your accounts, one real workflow shipped before we leave the room. The AI Fast-Track Session .
+Built into the business, thirty days. This page. It starts with the two-hour working session and the demo, and it ends with you holding the keys.
+Already have The Back Cover ? It stays a separate managed service with its own page. Inside a full implementation it becomes a routine in your own system, and what you paid for it is credited.
 
 We only build things that make the technology disappear into the work. If it needs a training course afterward, we built the wrong thing.
-Bring us the workflow that hurts. We will come back with what we would build, how long it takes, and what it costs.
+Two hours, then a ten-minute demo of your business on One Window. Decide from that.
 Pick a time →
 
 ---

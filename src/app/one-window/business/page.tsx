@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
+import { offer, ONE_WINDOW, usd } from "@/content/siteFacts";
+
+// Prices on this page come from siteFacts (Fast-Track, the working session,
+// the implementation) so they cannot drift from /services, /llms.txt or the
+// JSON-LD. Ladder ruled by Wade 2026-10-23; entry motion 2026-11-03.
+const FAST_TRACK = offer("fast-track");
+const WORKING_SESSION = offer("working-session");
 
 export const metadata: Metadata = {
   title: "One-Window for Small Business | Kerzie AI",
@@ -147,7 +154,7 @@ export default function OneWindowBusinessPage() {
         <p className="mt-5 text-[#262B3D]/70 text-sm">
           Put in the three hours yourself, free, or have them{" "}
           <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
-            done with you for $999
+            done with you for ${FAST_TRACK.price}
           </Link>
           . Either way the countdown lands on zero
           <span className="text-[#B04E2B]">.</span>
@@ -369,13 +376,62 @@ export default function OneWindowBusinessPage() {
               <Link href="/services/fast-track" className="k-link k-focus text-[#2B5D96]">
                 AI Fast-Track Session
               </Link>{" "}
-              at $999 for up to three people. The OS is free either way - the
+              at ${FAST_TRACK.price} for up to three people. The OS is free either way - the
               session is for having it installed beside you instead of alone.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/one-window#get" className="k-btn-solid k-focus inline-block">
               Get One-Window free <span className="k-arrow">&rarr;</span>
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* How a business starts: the entry motion and the implementation
+          (Wade, 2026-11-03). Numbers come from siteFacts. */}
+      <section
+        id="start"
+        className="max-w-6xl mx-auto px-6 lg:px-12 py-14 border-t border-[rgba(26,27,46,0.13)] scroll-mt-24"
+      >
+        <Reveal>
+          <p className="k-label mb-6">Want Us To Build It Into The Business?</p>
+          <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
+            <p className="text-[#1A1B2E] text-xl font-semibold">
+              It starts with a two-hour working session. {WORKING_SESSION.priceLabel}.
+            </p>
+            <p>
+              In the two hours I learn how you run the business today: the
+              platforms you are on, the tools you pay for, how marketing goes
+              out and how customers reach you. Then I come back with a short
+              recorded demo, about ten minutes in my own voice, showing how
+              your business would run on One Window. That demo is your go or
+              no-go.
+            </p>
+            <p>
+              You agree to the {usd(ONE_WINDOW.workingSessionPrice)} before we schedule. If you go ahead, it
+              rolls into the implementation price. If you decide not to, that
+              is the only invoice you will get from me.
+            </p>
+            <p className="text-[#1A1B2E] text-xl font-semibold">
+              The implementation: thirty days, {usd(ONE_WINDOW.marketPrice)}.
+              Founders rate {usd(ONE_WINDOW.foundersPrice)} for commitments
+              made in {ONE_WINDOW.foundersYear}.
+            </p>
+            <p>
+              We set it up, teach you to drive it, hand you the keys and get
+              out of the car. Anything you have already paid Kerzie AI, a Back
+              Cover setup for example, is credited. No required monthly after
+              that. If you want call-in help later, there is an optional
+              retainer, and optional means optional.
+            </p>
+          </div>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link href="/services/implementation" className="k-btn-solid k-focus inline-block">
+              How the thirty days run <span className="k-arrow">&rarr;</span>
+            </Link>
+            <Link href="/schedule" className="k-btn-ghost k-focus inline-block">
+              Book the working session <span className="k-arrow">&rarr;</span>
             </Link>
           </div>
         </Reveal>

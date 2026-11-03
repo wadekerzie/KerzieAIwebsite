@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import { offer } from "@/content/siteFacts";
+import { offer, ONE_WINDOW, usd } from "@/content/siteFacts";
 
 // THE OFFERS HUB (Wade + Aaron, 2026-09-24): "draw the line between what our
 // offers are and what our ventures are, and stack rank what people see
@@ -12,12 +12,13 @@ import { offer } from "@/content/siteFacts";
 export const metadata: Metadata = {
   title: "Offers | Kerzie AI",
   description:
-    "What Kerzie AI sells: The Back Cover, For Sales Teams, Unison, and Executive Legacy. Then the smaller ways in: One-Window, the AI Fast-Track Session, and AI Implementation.",
+    "What Kerzie AI sells: The Back Cover, For Sales Teams, Unison, and Executive Legacy. Then the ways into One Window: the free starter, the AI Fast-Track Session, and the thirty-day One Window Implementation, which starts with a two-hour working session.",
 };
 
 const backCover = offer("back-cover");
 const fastTrack = offer("fast-track");
 const oneWindow = offer("one-window");
+const implementation = offer("implementation");
 
 // One line each, matching what the page itself says.
 const ranked = [
@@ -67,11 +68,11 @@ const entryPoints = [
     cta: "Read how it works",
   },
   {
-    title: "AI Implementation",
-    price: "Scoped per project",
-    body: "We map, build, and deploy AI systems inside your business operations end-to-end. From workflow analysis to live production deployment. No slide decks. No proofs of concept. And if you are already running an AI agent you are not sure you can trust, that is an implementation problem too. Bring it to us.",
+    title: "One Window Implementation",
+    price: implementation.priceLabel,
+    body: `Thirty days. We set One Window up inside your business, teach you to drive it, and hand you the keys. It starts with a two-hour working session at ${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you decide not to go ahead, and a ten-minute recorded demo of your business running on it. Anything you have already paid us is credited. No required monthly after.`,
     href: "/services/implementation",
-    cta: "What we build",
+    cta: "How it starts, and the price",
   },
 ];
 

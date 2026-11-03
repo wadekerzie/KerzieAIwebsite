@@ -40,6 +40,22 @@ export type Offer = {
   summary: string;
 };
 
+/** "$15,000" style, for prose that quotes a number from this file. */
+export const usd = (n: number) => `$${n.toLocaleString("en-US")}`;
+
+// THE ONE WINDOW LADDER, business side (Wade: ladder 2026-10-23, entry motion
+// 2026-11-03). The working session is the entry step; the implementation is
+// thirty days; the Founders rate applies to commitments made in that year.
+// Pages that spell these out in prose read from here.
+export const ONE_WINDOW = {
+  workingSessionPrice: 1000,
+  workingSessionHours: 2,
+  implementationDays: 30,
+  marketPrice: 15000,
+  foundersPrice: 7500,
+  foundersYear: 2026,
+} as const;
+
 // Prices here are the ONLY place a price should be authored. Pages render
 // `priceLabel`; JSON-LD and /llms.txt read `price`.
 export const OFFERS: Offer[] = [
@@ -65,13 +81,28 @@ export const OFFERS: Offer[] = [
       "Three hours, done with you. One room, up to three people, each on your own machine and your own accounts. Everyone ships one real piece of their own work before we are done.",
   },
   {
-    key: "implementation",
-    name: "The Implementation Sprint",
-    path: "/services/implementation",
-    price: null,
-    priceLabel: "Book a call",
+    // THE ENTRY STEP (Wade, 2026-11-03 whiteboard): every One Window
+    // conversation starts here. The owner agrees to the $1,000 before we
+    // schedule; it is invoiced only if they decide not to go ahead. On a yes
+    // it rolls into the implementation price.
+    key: "working-session",
+    name: "The Working Session",
+    path: "/services/implementation#start",
+    price: ONE_WINDOW.workingSessionPrice,
+    priceLabel: `${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you say no`,
     summary:
-      "The flagship engagement. We build the operating system into how your business actually runs, not as a pilot on the side.",
+      `The entry step to One Window for your business. Two hours in which we learn how you run the business today: the platforms, the tools, how marketing and customer contact work. Then we come back with a recorded demo, about ten minutes, of your business running on One Window. That demo is your go or no-go. You agree to the ${usd(ONE_WINDOW.workingSessionPrice)} before we schedule. If you go ahead, it rolls into the implementation price. We only invoice it if you decide not to.`,
+  },
+  {
+    // LADDER RULED 2026-10-23 and ENTRY MOTION 2026-11-03 (Wade): 30 days,
+    // market rate $15,000, Founders rate $7,500 for commitments made in 2026,
+    // anything already paid to Kerzie AI credited, no required monthly after.
+    key: "implementation",
+    name: "One Window Implementation",
+    path: "/services/implementation",
+    price: ONE_WINDOW.marketPrice,
+    priceLabel: `${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for ${ONE_WINDOW.foundersYear} commitments`,
+    summary: `Thirty days. We set One Window up inside your business, teach you to drive it, hand you the keys and get out of the car. Market rate ${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for commitments made in ${ONE_WINDOW.foundersYear}. Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward it. No required monthly after that; an optional retainer for call-in help exists only if you want it.`,
   },
   {
     key: "sales-teams",
