@@ -38,33 +38,33 @@ export const metadata: Metadata = {
 const afterMatter = (
   <>
     <p className="text-[#262B3D]/80 leading-relaxed max-w-xl">
-      This essay follows six others.{" "}
+      This is the last of five essays.{" "}
+      <Link href="/consequence-clock" className="k-link k-focus text-[#2B5D96]">
+        The Consequence Clock
+      </Link>{" "}
+      is where it starts: you work at the speed you are checked.{" "}
+      <Link href="/blast-door" className="k-link k-focus text-[#2B5D96]">
+        The Blast Door
+      </Link>{" "}
+      is the time limit.{" "}
+      <Link href="/blast-radius" className="k-link k-focus text-[#2B5D96]">
+        The Blast Radius
+      </Link>{" "}
+      is how far your work reaches inside the building.{" "}
+      <Link href="/crossfire" className="k-link k-focus text-[#2B5D96]">
+        The Crossfire
+      </Link>{" "}
+      is what happens where two people&rsquo;s circles cross. This one is
+      about how you know you made it across. Two more stand alone.{" "}
       <Link href="/kerzie-effect" className="k-link k-focus text-[#2B5D96]">
         The Kerzie Effect
       </Link>{" "}
       is the firm-level argument: what happens to sellers of judgment when the
       buyer can run the playbook.{" "}
-      <Link href="/consequence-clock" className="k-link k-focus text-[#2B5D96]">
-        The Consequence Clock
-      </Link>{" "}
-      is the person-level one: you work at the speed you are checked.{" "}
-      <Link href="/blast-door" className="k-link k-focus text-[#2B5D96]">
-        The Blast Door
-      </Link>{" "}
-      is the time limit on both.{" "}
-      <Link href="/blast-radius" className="k-link k-focus text-[#2B5D96]">
-        The Blast Radius
-      </Link>{" "}
-      is how far the effect travels inside the building.{" "}
       <Link href="/shrapnel" className="k-link k-focus text-[#2B5D96]">
         The Shrapnel
       </Link>{" "}
-      is what the same force does to the website.{" "}
-      <Link href="/crossfire" className="k-link k-focus text-[#2B5D96]">
-        The Crossfire
-      </Link>{" "}
-      is what happens where two people&rsquo;s circles cross. This one is
-      about how you know you made it across.
+      is what the same force does to the website.
     </p>
     <div className="mt-10">
       <SubscribeForm source="second-language-essay" />
