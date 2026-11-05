@@ -344,16 +344,14 @@ export default function SecondLanguagePage() {
       <EssayWatch slug="second-language" title="The Second Language" />
 
       <Colophon>
-        This essay cites no outside sources. John is the author&rsquo;s cousin;
-        the dropped-into-a-country picture, the corner-store sentence, the
-        mile-wide river and the &ldquo;quibbling&rdquo; line are his, from a
-        one-hour phone call with the author on October 27, 2026, with
-        everything else about him left out. &ldquo;They say&rdquo; about
-        adults learning a second language is the common account, not a study,
-        and the essay says so. The hundred years of task-based work and the
-        Industrial Revolution are the author&rsquo;s framing, not a citation.
-        The Blast Door, The Blast Radius and The Crossfire are the
-        author&rsquo;s own earlier essays, linked above.
+        This essay cites no outside sources. John is the author&rsquo;s cousin; the
+        dropped-into-a-country picture, the corner-store sentence, the mile-wide
+        river and the &ldquo;quibbling&rdquo; line are his, from a call on
+        October 27, 2026. &ldquo;They say&rdquo; about adults learning a second
+        language is the common account, not a study. The hundred years of
+        task-based work and the Industrial Revolution are the author&rsquo;s
+        framing, not a citation. The Blast Door, The Blast Radius and The
+        Crossfire are the author&rsquo;s own earlier essays, linked above.
       </Colophon>
     </EssaySheet>
   );
