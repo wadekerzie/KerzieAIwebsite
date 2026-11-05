@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-05",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 3,
+      "price_changed": 109,
+      "total": 325,
+      "ran_at": "9:40 AM CT",
+      "note": "Three vehicles joined the list and three came off since the last update, keeping the total at 325. New arrivals include a 2026 GMC Canyon 4WD Denali, a 2027 GMC Terrain AWD AT4, and a used 2019 Chevrolet Tahoe Premier. A large batch of 109 vehicles had price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-04",
       "status": "ok",
       "kind": "refresh",
