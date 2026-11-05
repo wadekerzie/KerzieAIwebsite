@@ -8,26 +8,21 @@ import Reveal from "@/components/Reveal";
 // down to find the other essays. I think we need an essays page because
 // there's going to be more."
 //
-// Reading order is publication order. The decks are the same three lines the
-// header drawer uses. Each `argues` line is copied verbatim from the opening
-// of that essay page's own metadata description, so this page never claims
-// something the essay does not. /the-line is an Appendix (its masthead kicker
-// says so), so it sits after the essays, labeled as one.
+// Two groups since 2026-11-10 (Wade 11/5, the day The Second Language was
+// approved): the five-part series on the line, in reading order (which is
+// also the order they were published), and then the two that stand alone,
+// The Kerzie Effect and The Shrapnel, at the same weight as the series. Each
+// `argues` line is copied verbatim from the opening of that essay page's own
+// metadata description, so this page never claims something the essay does
+// not. /the-line is an Appendix (its masthead kicker says so), so it sits
+// last, labeled as one.
 export const metadata: Metadata = {
   title: "Essays | Kerzie AI",
   description:
-    "Wade Kerzie's essays on what AI does to knowledge work: The Kerzie Effect, The Consequence Clock, The Blast Door, The Blast Radius, The Shrapnel, and The Crossfire, plus the appendix on the line.",
+    "Wade Kerzie's essays on what AI does to knowledge work: The Consequence Clock, The Blast Door, The Blast Radius, The Crossfire, and The Second Language, plus The Kerzie Effect, The Shrapnel, and the appendix on the line.",
 };
 
-const essays = [
-  {
-    title: "The Kerzie Effect",
-    date: "July 24, 2026",
-    deck: "The firm-level argument",
-    argues:
-      "The most valuable thing you sell is the document you hand over free to win the work. Once the buyer has it, an AI can do the work you used to be paid for.",
-    href: "/kerzie-effect",
-  },
+const series = [
   {
     title: "The Consequence Clock",
     date: "July 30, 2026",
@@ -39,7 +34,7 @@ const essays = [
   {
     title: "The Blast Door",
     date: "July 31, 2026",
-    deck: "The time limit on both",
+    deck: "The time limit",
     argues:
       "A person plus a nearly-free intelligence can build something of their own. That era is real, it is short, and it is closing.",
     href: "/blast-door",
@@ -53,20 +48,39 @@ const essays = [
     href: "/blast-radius",
   },
   {
-    title: "The Shrapnel",
-    date: "October 9, 2026",
-    deck: "Your website is breaking apart",
-    argues:
-      "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
-    href: "/shrapnel",
-  },
-  {
     title: "The Crossfire",
     date: "October 29, 2026",
     deck: "Where two circles cross",
     argues:
       "When the people around you cross the AI line, the work between you gets done twice, then once, then by nobody. The people at risk aren't the ones who failed to learn AI. They're the ones standing where everyone around them already did.",
     href: "/crossfire",
+  },
+  {
+    title: "The Second Language",
+    date: "November 10, 2026",
+    deck: "You stopped translating",
+    argues:
+      "You don't know you've crossed the AI line when you learn the tools. You know when you stop translating, when you think in outcomes instead of steps and nobody had to teach you how.",
+    href: "/second-language",
+  },
+];
+
+const standalone = [
+  {
+    title: "The Kerzie Effect",
+    date: "July 24, 2026",
+    deck: "The firm-level argument",
+    argues:
+      "The most valuable thing you sell is the document you hand over free to win the work. Once the buyer has it, an AI can do the work you used to be paid for.",
+    href: "/kerzie-effect",
+  },
+  {
+    title: "The Shrapnel",
+    date: "October 9, 2026",
+    deck: "Your website is breaking apart",
+    argues:
+      "For twenty years we packed every job a business has into its website. AI is pulling those jobs back out, one at a time, and the businesses that keep the pieces straight are the ones machines will recommend.",
+    href: "/shrapnel",
   },
 ];
 
@@ -79,7 +93,7 @@ const appendix = {
   href: "/the-line",
 };
 
-type Entry = typeof essays[number];
+type Entry = typeof series[number];
 
 function EssayRow({ e, i, cta }: { e: Entry; i: number; cta: string }) {
   return (
@@ -132,27 +146,45 @@ export default function EssaysPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Essays</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
-          One argument, in six parts.
+          One argument, in five parts.
         </h1>
         <p className="k-rise k-rise-3 mt-6 text-[#262B3D] text-lg max-w-xl">
-          Read them in the order I wrote them if you can. Each one stands on
-          its own, but they build.
+          Read them in order if you can. Each one stands on its own, but they
+          build.
         </p>
       </section>
 
-      {/* The essays */}
+      {/* The series */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-12 lg:pb-10">
         <div className="k-hairline w-full" />
-        {essays.map((e, i) => (
+        {series.map((e, i) => (
           <EssayRow key={e.href} e={e} i={i} cta="Read the essay" />
         ))}
       </section>
 
-      {/* The appendix, after the essays and labeled as one */}
+      {/* The two that stand alone, at the same weight as the series */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-12 lg:pb-10">
+        <p className="k-label mb-2">Two that stand alone</p>
+        <div className="k-hairline w-full" />
+        {standalone.map((e, i) => (
+          <EssayRow
+            key={e.href}
+            e={e}
+            i={series.length + i}
+            cta="Read the essay"
+          />
+        ))}
+      </section>
+
+      {/* The appendix, last and labeled as one */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-28 lg:pb-20">
         <p className="k-label mb-2">Appendix</p>
         <div className="k-hairline w-full" />
-        <EssayRow e={appendix} i={essays.length} cta="Read the appendix" />
+        <EssayRow
+          e={appendix}
+          i={series.length + standalone.length}
+          cta="Read the appendix"
+        />
       </section>
 
     </div>
