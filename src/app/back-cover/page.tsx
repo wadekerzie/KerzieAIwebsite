@@ -806,15 +806,17 @@ export default function BackCoverPage() {
             .
           </p>
           {/* The two-sides framing (Wade's positioning, 8/14): the familiar
-              monthly website column next to the thing none of it covers. */}
+              monthly website column next to the thing none of it covers.
+              "Maybe the SEO work" dropped 11/5 (Wade): SEO upkeep now comes
+              with the Back Cover, see the Staying Found section below. */}
           <p className="max-w-2xl mt-6 text-[#262B3D] text-lg leading-relaxed">
             <span className="text-[#1A1B2E] font-medium">
               Think about what you already pay every month
             </span>{" "}
-            - the hosting, maybe a care plan, maybe the SEO work. All of it
-            keeps your website ready for people. None of it touches what the
-            AI tells your customers about you. The Watch is that missing
-            column, priced like the rest of the column.
+            - the hosting, maybe a care plan. All of it keeps your website
+            ready for people. None of it gives AI a current page to read about
+            you. The Watch is that missing column, priced like the rest of the
+            column.
           </p>
           <p className="max-w-2xl mt-6 text-[#262B3D]/80 text-base lg:text-lg leading-relaxed">
             The dashboards that only watch this start around $250 a month, and
@@ -825,10 +827,11 @@ export default function BackCoverPage() {
       </section>
 
       {/* SEO upkeep - the monthly checks that come with the Back Cover.
-          Copy is Wade's, word for word (seoChecks above). No eyebrow label:
-          the copy as given has none, and nothing was added to it. */}
+          Copy is Wade's, word for word (seoChecks above); the "Staying Found"
+          eyebrow was his add on approval, 11/5. */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]">
         <Reveal>
+          <p className="k-label mb-6">Staying Found</p>
           <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
             SEO is dying. We&apos;ll still take care of it for you, free
             <span className="text-[#B04E2B]">.</span>
