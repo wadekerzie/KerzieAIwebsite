@@ -25,6 +25,20 @@ const watchIncludes = [
   "One page a month, in plain language, that you can read in five minutes.",
 ];
 
+// SEO UPKEEP - added 2026-11-05 on a preview branch, Wade's copy word for
+// word. Do not rewrite these lines here. The two refresh tiers it names are
+// the same $99 / $999 tiers The Watch prices above. Rankings are never
+// promised (claim discipline rule 3 below).
+const seoChecks = [
+  "Google can find and read every page, and nothing is broken.",
+  "Your speed: the lab score and what real visitors get.",
+  "Every page has a proper title and description.",
+  "The code that tells Google and AI who you are, your hours and your prices.",
+  "Your name, address, phone and hours match across your listings.",
+  "You versus the business down the street, on the same tests.",
+  "Whether AI can read you. That's the Back Cover itself.",
+];
+
 // Share-card imagery added 2026-08-14 (Wade's call after an iMessage share
 // rendered a generic stock photo): the og:image is a generated hardcover seen
 // from its BACK, metadata mid-scan, coral bookmark - the offer in one picture.
@@ -806,6 +820,70 @@ export default function BackCoverPage() {
             The dashboards that only watch this start around $250 a month, and
             you run them yourself. This is a third of that with the work
             included.
+          </p>
+        </Reveal>
+      </section>
+
+      {/* SEO upkeep - the monthly checks that come with the Back Cover.
+          Copy is Wade's, word for word (seoChecks above). No eyebrow label:
+          the copy as given has none, and nothing was added to it. */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-[rgba(26,27,46,0.13)]">
+        <Reveal>
+          <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-5">
+            SEO is dying. We&apos;ll still take care of it for you, free
+            <span className="text-[#B04E2B]">.</span>
+          </h2>
+          <p className="max-w-2xl mb-10 text-[#262B3D] text-lg leading-relaxed">
+            SEO covers about ten things today. Most of them are monthly checks
+            against Google&apos;s own tests and the exact fix when something
+            breaks. That comes with the Back Cover at no extra charge.
+          </p>
+
+          <p className="text-[#1A1B2E] text-lg font-medium leading-relaxed mb-4">
+            What we check every month
+          </p>
+          <ul className="max-w-2xl space-y-4">
+            {seoChecks.map((line) => (
+              <li
+                key={line}
+                className="border-l border-[#2B5D96] pl-5 text-[#262B3D] text-lg leading-relaxed"
+              >
+                {line}
+              </li>
+            ))}
+          </ul>
+
+          <p className="text-[#1A1B2E] text-lg font-medium leading-relaxed mt-12 mb-4">
+            Who makes the fix
+          </p>
+          <ul className="max-w-2xl space-y-5">
+            <li className="border-l border-[#2B5D96] pl-5 text-[#262B3D] text-lg leading-relaxed">
+              <span className="text-[#1A1B2E] font-medium">
+                Daily refresh ($999 a month per location):
+              </span>{" "}
+              Give us admin access and we make the fix. If it lives with your
+              website company, they get the exact fix, not a vague report.
+            </li>
+            <li className="border-l border-[#2B5D96] pl-5 text-[#262B3D] text-lg leading-relaxed">
+              <span className="text-[#1A1B2E] font-medium">
+                Monthly refresh ($99 a month):
+              </span>{" "}
+              You get the monthly scorecard and the exact fix list, ready to
+              hand to whoever manages your site.
+            </li>
+          </ul>
+
+          <p className="text-[#1A1B2E] text-lg font-medium leading-relaxed mt-12 mb-4">
+            What&apos;s not included
+          </p>
+          <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed">
+            New content every month, links from other sites, and getting more
+            reviews. That&apos;s people work. If you need it, we&apos;ll say so.
+          </p>
+
+          <p className="max-w-2xl mt-10 text-[#1A1B2E] text-lg leading-relaxed">
+            Nobody honest promises rankings. You&apos;ll see the numbers every
+            month.
           </p>
         </Reveal>
       </section>
