@@ -34,6 +34,7 @@ import { metadata as blastDoor } from "@/app/blast-door/page";
 import { metadata as blastRadius } from "@/app/blast-radius/page";
 import { metadata as shrapnel } from "@/app/shrapnel/page";
 import { metadata as crossfire } from "@/app/crossfire/page";
+import { metadata as secondLanguage } from "@/app/second-language/page";
 import { metadata as thousand } from "@/app/thousand/page";
 import { metadata as team } from "@/app/team/page";
 import { metadata as teamJordan } from "@/app/team/jordan/page";
@@ -94,6 +95,7 @@ const WRITING: Array<[string, string, Described]> = [
   ["/blast-radius", "The Blast Radius", blastRadius],
   ["/shrapnel", "The Shrapnel", shrapnel],
   ["/crossfire", "The Crossfire", crossfire],
+  ["/second-language", "The Second Language", secondLanguage],
 ];
 
 const ABOUT: Array<[string, string, Described]> = [
