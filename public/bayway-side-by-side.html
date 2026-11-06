@@ -55,6 +55,12 @@ td.site { font-weight: 500; }
 .brand { justify-self: start; display: inline-block; background: #ffffff; border-radius: 8px; padding: 6px 10px; line-height: 0; }
 .brand img { display: block; width: 158px; height: 48px; }
 .brand:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+/* Two-tab nav between the side by side and the proposal. */
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 14px; padding: 8px 12px; margin-bottom: -1px; border-bottom: 2px solid transparent; }
+.tabs a:hover { color: var(--fg); }
+.tabs a[aria-current="page"] { color: var(--fg); border-bottom-color: var(--fg); }
+.tabs a:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; border-radius: 4px; }
 .prose { display: grid; gap: 10px; max-width: 76ch; padding-top: 14px; border-top: 1px solid var(--line); }
 .item { display: grid; gap: 6px; }
 h3 { font-size: 15px; font-weight: 600; margin: 4px 0 0; text-wrap: balance; }
@@ -64,6 +70,10 @@ ul, ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
 <body>
 <div class="wrap">
   <a class="brand" href="https://kerzie.ai"><img src="/kerzie-ai-logo-560.png" alt="Kerzie AI" width="158" height="48"></a>
+  <nav class="tabs" aria-label="Bayway pages">
+    <a href="/bayway" aria-current="page">Side by side</a>
+    <a href="/bayway/proposal">Proposal</a>
+  </nav>
   <header style="display:grid;gap:6px">
     <h1>Bayway Auto Group: side by side</h1>
     <p class="meta">Google PageSpeed, pulled Fri Nov 6, 2026, between 8:42 and 9:21 AM CT. Google scores the mobile and desktop versions of a site separately, each out of 100. Scores can move a little between runs. Anyone can run it free at pagespeed.web.dev.</p>
