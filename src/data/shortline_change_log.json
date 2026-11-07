@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-07",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 5,
+      "price_changed": 0,
+      "total": 326,
+      "ran_at": "9:35 AM CT",
+      "note": "Two vehicles joined the list and five came off since the last update, bringing the total to 326. New arrivals include a 2023 Buick Envision Essence and a 2024 GMC Sierra 1500 SLT. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-06",
       "status": "ok",
       "kind": "refresh",
