@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-08",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 0,
+      "removed": 4,
+      "price_changed": 11,
+      "total": 322,
+      "ran_at": "7:45 AM CT",
+      "note": "No new vehicles joined the list today; four came off since the last update, bringing the total to 322. Eleven GMC Sierra trucks received $2,000 price reductions. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-07",
       "status": "ok",
       "kind": "refresh",
