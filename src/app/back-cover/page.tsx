@@ -18,11 +18,13 @@ const THE_WATCH = offer("the-watch");
 // framing ($299 vs Scrunch/AthenaHQ/Profound) is superseded; the dashboards
 // comparison survives below as a price WEAPON ("a third of the money, work
 // included") rather than an anchor.
+// Watch copy rewritten 2026-11-08 on Wade's ruling: no AI answer checks;
+// promise only what we control.
 const watchIncludes = [
-  "We ask the major AI assistants the questions your customers ask, every month.",
-  "We check their answers against what is true, and correct whatever has drifted at the source.",
+  "We refresh your Back Cover page on schedule, so what AI reads matches what is true today.",
+  "We run Chrome's own checks on your site every month and fix what fails.",
   "We keep your machine-readable pages current as the standards move.",
-  "One page a month, in plain language, that you can read in five minutes.",
+  "One page a month, in plain language: what we refreshed, what passed, and what we fixed.",
 ];
 
 // SEO UPKEEP - added 2026-11-05 on a preview branch, Wade's copy word for
@@ -769,11 +771,10 @@ export default function BackCoverPage() {
               The Back Cover gets you set up. The Watch keeps you there.
             </p>
             <p>
-              What an AI says about your business drifts. Your hours change, a
-              price moves, a program ends, a competitor&apos;s detail gets
-              attached to your name. Nobody sends you a report when that
-              happens. The first sign is usually a customer showing up annoyed,
-              or not showing up at all.
+              Your business doesn&apos;t sit still. Your hours change, a price
+              moves, a program ends. If the page AI reads doesn&apos;t change
+              with it, AI is reading an old version of you. Nobody sends you a
+              report when that happens.
             </p>
           </div>
           <ul className="max-w-2xl mt-8 space-y-4">
