@@ -10,13 +10,13 @@ import CardClient from "./CardClient";
 export const metadata: Metadata = {
   title: "Aaron Jones | Kerzie AI Solutions",
   description:
-    "Contact card for Aaron Jones, Technical Specialist at Kerzie AI Solutions in Aurora, Colorado. Save his contact.",
+    "Contact card for Aaron Jones, Senior Executive Technical Consultant at Kerzie AI Solutions in Aurora, Colorado. Save his contact.",
   alternates: { canonical: "https://kerzie.ai/card/aaron" },
   openGraph: {
     type: "profile",
     title: "Aaron Jones | Kerzie AI Solutions",
     description:
-      "Technical Specialist, Kerzie AI Solutions. Aurora, Colorado. Save my contact.",
+      "Senior Executive Technical Consultant, Kerzie AI Solutions. Aurora, Colorado. Save my contact.",
     url: "https://kerzie.ai/card/aaron",
     images: [{ url: "/aaron-card.jpg", width: 321, height: 321, alt: "Aaron Jones" }],
   },
@@ -26,7 +26,7 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Aaron Jones",
-  jobTitle: "Technical Specialist",
+  jobTitle: "Senior Executive Technical Consultant",
   telephone: "+1-720-749-9474",
   email: "aaron@kerzie.ai",
   url: "https://kerzie.ai/card/aaron",

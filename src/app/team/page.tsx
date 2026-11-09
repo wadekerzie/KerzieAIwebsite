@@ -32,7 +32,7 @@ const people = [
   },
   {
     name: "Aaron Jones",
-    role: "Technical Specialist. Colorado market. Makes sure the work gets done.",
+    role: "Senior Executive Technical Consultant. Colorado market. Makes sure the work gets done.",
     href: "https://aaronpjones.com/",
     external: true,
     photo: "/aaron.jpg",

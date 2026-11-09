@@ -12,7 +12,7 @@ export const AARON = {
   first: "Aaron",
   last: "Jones",
   org: "Kerzie AI Solutions",
-  title: "Technical Specialist",
+  title: "Senior Executive Technical Consultant",
   // E.164 so international dialers and Android both parse it.
   tel: "+17207499474",
   telDisplay: "720-749-9474",
