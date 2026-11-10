@@ -1,0 +1,19 @@
+{
+  "serverInfo": {
+    "name": "kerzie-ai-open-times",
+    "title": "Kerzie AI open meeting times",
+    "version": "1.0.0",
+    "websiteUrl": "https://kerzie.ai"
+  },
+  "description": "Read-only MCP server. One tool, get_open_times, returns Kerzie AI's open meeting times (US Central) and the booking link where a person books. No account or key needed. It does not book.",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://kerzie.ai/api/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "documentationUrl": "https://kerzie.ai/schedule"
+}

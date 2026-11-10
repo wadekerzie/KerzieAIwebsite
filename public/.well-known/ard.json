@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:kerzie.ai:mcp:open-times",
+      "displayName": "Kerzie AI open meeting times",
+      "description": "Read-only MCP server that returns open times to meet with Kerzie AI (Wade Kerzie) and the booking link. No account or key needed.",
+      "type": "application/mcp-server-card+json",
+      "url": "https://kerzie.ai/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "when can I meet with Kerzie AI",
+        "find an open time to talk with Wade Kerzie",
+        "book a call with Kerzie AI about AI search for my business",
+        "is Kerzie AI free for a meeting this week"
+      ],
+      "capabilities": ["availability", "scheduling"],
+      "tags": ["scheduling", "ai-search", "small-business", "car-dealers"],
+      "version": "1.0.0",
+      "updatedAt": "2026-11-10T00:00:00Z"
+    }
+  ]
+}
