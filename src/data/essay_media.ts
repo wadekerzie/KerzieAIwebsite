@@ -40,7 +40,7 @@ export const ESSAY_MEDIA = {
   /* Published 2026-10-29. */
   crossfire: { buzzsproutEpisodeId: "20030148", youtubeId: "wG8-3DQXa-Y" },
   /* Publishes 2026-11-10. Fill both ids on release day. */
-  "second-language": { buzzsproutEpisodeId: null, youtubeId: null },
+  "second-language": { buzzsproutEpisodeId: "20081143", youtubeId: null },
 } as const satisfies Record<string, EssayMedia>;
 
 export type EssaySlug = keyof typeof ESSAY_MEDIA;
