@@ -90,10 +90,25 @@ async function handle(msg: Rpc) {
         const args = (msg.params?.arguments ?? {}) as Record<string, unknown>;
         const data = await openTimes(args.days);
         const count = Object.values(data.open_times).reduce((a, s) => a + s.length, 0);
+        // Spell the times out in the text too: many MCP clients pass only the
+        // text content to the model, not structuredContent (seen 11/10).
+        const lines = Object.entries(data.open_times).map(([date, slots]) => {
+          const day = new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
+            weekday: "short", month: "short", day: "numeric", timeZone: "UTC",
+          });
+          const times = slots.map((s) => {
+            const m = /T(\d{2}):(\d{2})/.exec(s);
+            if (!m) return s;
+            const h = Number(m[1]);
+            return `${h % 12 || 12}:${m[2]} ${h < 12 ? "AM" : "PM"}`;
+          });
+          return `${day}: ${times.join(", ")}`;
+        });
         const text =
           count === 0
             ? `No open times in the next ${data.days_checked} days. Book or ask at ${BOOKING_URL}.`
-            : `${count} open times in the next ${data.days_checked} days (US Central). Book at ${BOOKING_URL}.`;
+            : `Open times to meet with Kerzie AI, next ${data.days_checked} days, US Central:\n` +
+              `${lines.join("\n")}\nBook any of these at ${BOOKING_URL}.`;
         return ok(id, { content: [{ type: "text", text }], structuredContent: data, isError: false });
       } catch (e) {
         return ok(id, {
