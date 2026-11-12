@@ -3,6 +3,28 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-12",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 1,
+      "price_changed": 9,
+      "total": 317,
+      "ran_at": "11:20 AM CT",
+      "note": "Two vehicles joined the list and one came off since the last update, bringing the total to 317. New arrivals include a used 2012 Jeep Grand Cherokee Laredo and a used 2021 GMC Sierra 1500 Elevation. Nine vehicles had price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
+      "date": "2026-11-11",
+      "status": "missed",
+      "kind": "refresh",
+      "added": null,
+      "removed": null,
+      "price_changed": null,
+      "total": 317,
+      "ran_at": null,
+      "note": "The file was built on schedule but not placed, so the 11-10 version stayed up."
+    },
+    {
       "date": "2026-11-10",
       "status": "ok",
       "kind": "refresh",
