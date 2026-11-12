@@ -857,6 +857,29 @@ export default function BackCoverPage() {
             ))}
           </ul>
 
+          {/* ChatGPT business profile - added 2026-11-12 on Wade's order
+              (value add, folded into the price like SEO upkeep). Copy is
+              Wade's approved wording; do not rewrite. Claiming never promised
+              to change ranking. */}
+          <p className="text-[#1A1B2E] text-lg font-medium leading-relaxed mt-12 mb-4">
+            Your ChatGPT business profile
+          </p>
+          <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed">
+            ChatGPT now shows a profile card for local businesses, whether or
+            not the owner has seen it. The photo, rating and review count often
+            come from somewhere else. Where OpenAI offers it for your business,
+            we walk you through claiming the profile, write it from your Back
+            Cover page, and add OpenAI&apos;s own monthly numbers to your
+            report: how often ChatGPT showed you and how many people clicked
+            through. You do the ID check yourself. We never hold your ID or
+            your login. No extra charge.
+          </p>
+          <p className="max-w-2xl mt-5 text-[#262B3D] text-lg leading-relaxed">
+            Claiming doesn&apos;t move you up in ChatGPT&apos;s answers. It
+            makes what ChatGPT says about you accurate, and it lets us measure
+            it.
+          </p>
+
           <p className="text-[#1A1B2E] text-lg font-medium leading-relaxed mt-12 mb-4">
             Who makes the fix
           </p>
