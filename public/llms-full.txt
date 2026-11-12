@@ -262,6 +262,9 @@ What we check every month
 - You versus the business down the street, on the same tests.
 
 - Whether AI can read you. That's the Back Cover itself.
+Your ChatGPT business profile
+ChatGPT now shows a profile card for local businesses, whether or not the owner has seen it. The photo, rating and review count often come from somewhere else. Where OpenAI offers it for your business, we walk you through claiming the profile, write it from your Back Cover page, and add OpenAI's own monthly numbers to your report: how often ChatGPT showed you and how many people clicked through. You do the ID check yourself. We never hold your ID or your login. No extra charge.
+Claiming doesn't move you up in ChatGPT's answers. It makes what ChatGPT says about you accurate, and it lets us measure it.
 Who makes the fix
 
 - Daily refresh ($999 a month per location): Give us admin access and we make the fix. If it lives with your website company, they get the exact fix, not a vague report.
@@ -497,7 +500,7 @@ URL: https://kerzie.ai/card/jordan
 Jordan Holzmiller | Kerzie AI Solutions
 
 ## Jordan Holzmiller
-Account Executive, Kerzie AI Solutions
+Director of Operations & Growth, Kerzie AI Solutions
 Dallas, Texas
 Save my contact Adds Jordan to your phone Visit jordanholzmiller.vercel.app Projects and background Call 214-862-1505 jordan@kerzie.ai
 Show my QR code Point any phone camera at the code. No app on either end.
@@ -2291,7 +2294,7 @@ See more →
 
 JH
 Jordan Holzmiller
-Account Executive. North Texas market, The Back Cover. Earning trust before he earns the business.
+Director of Operations & Growth. Runs client builds and onboarding, and still sells The Back Cover himself. Earning trust before he earns the business.
 
 See more →
 
@@ -2306,9 +2309,9 @@ The People
 JH
 
 ## Jordan Holzmiller
-Account Executive, Kerzie AI Solutions. Dallas, Texas.
+Director of Operations & Growth, Kerzie AI Solutions. Dallas, Texas.
 
-Jordan sells The Back Cover in North Texas: one page, written for the AI, that makes a business readable to the AI its customers now ask. His job is to ask that question plainly and answer it honestly.
+Jordan runs operations for Kerzie AI: client builds and onboarding, from a signed agreement to go-live. He leads client working sessions on AI operating system implementations. And he still sells The Back Cover and drives deals himself: one page, written for the AI, that makes a business readable to the AI its customers now ask.
 
 ## Where he comes from .
 Jordan has spent six-plus years in quota-carrying sales, most of it in businesses where a promise has to survive contact with an operation. In freight, he was the sole point of contact for shippers ranging from $5 million companies to $1 billion-plus enterprises: location updates, issue resolution, transparency. In the Frisco area he launched and ran a 40,000-home print distribution network from the ground up, and negotiated the advertising contracts and pricing that paid for it.

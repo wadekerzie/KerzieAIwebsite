@@ -10,13 +10,13 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Jordan Holzmiller | Kerzie AI",
   description:
-    "Jordan Holzmiller sells The Back Cover for Kerzie AI in North Texas. Six-plus years in sales, and he runs his own AI operating system on Claude Code.",
+    "Jordan Holzmiller is Director of Operations & Growth at Kerzie AI Solutions. He runs client builds and onboarding and sells The Back Cover. Six-plus years in sales, and he runs his own AI operating system on Claude Code.",
   alternates: { canonical: "https://kerzie.ai/team/jordan" },
   openGraph: {
     type: "profile",
     title: "Jordan Holzmiller | Kerzie AI",
     description:
-      "Account Executive at Kerzie AI Solutions. North Texas. Earning trust before he earns the business.",
+      "Director of Operations & Growth at Kerzie AI Solutions. North Texas. Earning trust before he earns the business.",
     url: "https://kerzie.ai/team/jordan",
   },
 };
@@ -47,15 +47,17 @@ export default function JordanPage() {
               Jordan Holzmiller
             </h1>
             <p className="mt-3 text-[#262B3D] text-lg">
-              Account Executive, Kerzie AI Solutions. Dallas, Texas.
+              Director of Operations &amp; Growth, Kerzie AI Solutions. Dallas, Texas.
             </p>
           </div>
         </div>
         <p className="k-rise k-rise-3 mt-10 text-[#262B3D] text-lg lg:text-xl max-w-2xl leading-relaxed">
-          Jordan sells The Back Cover in North Texas: one page, written for
-          the AI, that makes a business readable to the AI its customers now
-          ask. His job is to ask that question plainly and answer it
-          honestly.
+          Jordan runs operations for Kerzie AI: client builds and
+          onboarding, from a signed agreement to go-live. He leads client
+          working sessions on AI operating system implementations. And he
+          still sells The Back Cover and drives deals himself: one page,
+          written for the AI, that makes a business readable to the AI its
+          customers now ask.
         </p>
       </section>
 

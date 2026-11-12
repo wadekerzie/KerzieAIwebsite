@@ -11,13 +11,13 @@ import CardClient from "./CardClient";
 export const metadata: Metadata = {
   title: "Jordan Holzmiller | Kerzie AI Solutions",
   description:
-    "Contact card for Jordan Holzmiller, Account Executive at Kerzie AI Solutions in Dallas, Texas. Save his contact.",
+    "Contact card for Jordan Holzmiller, Director of Operations & Growth at Kerzie AI Solutions in Dallas, Texas. Save his contact.",
   alternates: { canonical: "https://kerzie.ai/card/jordan" },
   openGraph: {
     type: "profile",
     title: "Jordan Holzmiller | Kerzie AI Solutions",
     description:
-      "Account Executive, Kerzie AI Solutions. Dallas, Texas. Save my contact.",
+      "Director of Operations & Growth, Kerzie AI Solutions. Dallas, Texas. Save my contact.",
     url: "https://kerzie.ai/card/jordan",
     images: [{ url: "/jordan-card.jpg", width: 321, height: 321, alt: "Jordan Holzmiller" }],
   },
@@ -27,7 +27,7 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Jordan Holzmiller",
-  jobTitle: "Account Executive",
+  jobTitle: "Director of Operations & Growth",
   telephone: "+1-214-862-1505",
   email: "jordan@kerzie.ai",
   url: "https://kerzie.ai/card/jordan",

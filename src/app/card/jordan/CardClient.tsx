@@ -57,7 +57,7 @@ export default function CardClient() {
         <h1 className="mt-5 text-3xl font-semibold tracking-tight text-[#262B3D]">
           Jordan Holzmiller
         </h1>
-        <p className="mt-1 text-[#262B3D]">Account Executive, Kerzie AI Solutions</p>
+        <p className="mt-1 text-[#262B3D]">Director of Operations &amp; Growth, Kerzie AI Solutions</p>
         <p className="mt-1 text-sm text-[#5B6B77]">Dallas, Texas</p>
 
         <nav className="mt-9 flex w-full flex-col gap-3">
