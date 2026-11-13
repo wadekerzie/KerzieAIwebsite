@@ -44,6 +44,40 @@
   "monitoring": "Until it is claimed, we check it every month and show it here as an open gap.",
   "numbers": null
  },
+ "googleListing": {
+  "checked": "2026-11-13",
+  "source": "Google Maps (Google Places API)",
+  "locations": [
+   {
+    "name": "Oak Tree Behavioral Services, Inc. - Lakewood",
+    "address": "274 Union Blvd Ste 430, Lakewood, CO 80228, USA",
+    "rating": 4.1,
+    "reviews": 38,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=3543499570311813596&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Oak Tree Behavioral Services, Inc. - Northglenn",
+    "address": "11990 Grant St Suit 550, Northglenn, CO 80233, USA",
+    "rating": null,
+    "reviews": 0,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=8452310313949188357&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Oak Tree Behavioral Services, Inc. - Centennial",
+    "address": "6841 S Yosemite St Unit 120, Centennial, CO 80112, USA",
+    "rating": null,
+    "reviews": 0,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=7380739471605525959&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   }
+  ],
+  "note": null
+ },
  "nextCheck": "After go-live, then monthly",
  "categories": [
   {
@@ -88,11 +122,5 @@
    }
   }
  ],
- "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown.",
- "googleListing": {
-  "checked": null,
-  "source": "Google Maps (Google Places API)",
-  "locations": [],
-  "note": "Checking soon."
- }
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
 }

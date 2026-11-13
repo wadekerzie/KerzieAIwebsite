@@ -44,6 +44,31 @@
   "monitoring": "Until it is claimed, we check it every month and show it here as an open gap.",
   "numbers": null
  },
+ "googleListing": {
+  "checked": "2026-11-13",
+  "source": "Google Maps (Google Places API)",
+  "locations": [
+   {
+    "name": "Colorado Golf Academy - Littleton",
+    "address": "8171 S Grant Way, Littleton, CO 80122, USA",
+    "rating": 5,
+    "reviews": 33,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=11251652054235170835&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Colorado Golf Academy - Saddle Rock",
+    "address": "6830 S Liverpool St D, Aurora, CO 80016, USA",
+    "rating": 5,
+    "reviews": 10,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=8748393121560540861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   }
+  ],
+  "note": null
+ },
  "nextCheck": "After go-live, then monthly",
  "categories": [
   {
@@ -88,11 +113,5 @@
    }
   }
  ],
- "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown.",
- "googleListing": {
-  "checked": null,
-  "source": "Google Maps (Google Places API)",
-  "locations": [],
-  "note": "Checking soon."
- }
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
 }
