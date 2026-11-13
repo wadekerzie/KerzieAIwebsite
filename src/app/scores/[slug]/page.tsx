@@ -74,6 +74,15 @@ type ScoresPage = {
     locations?: ListingLocation[] | null;
     note?: string | null;
   } | null;
+  // Added 2026-11-13 (Wade): the starting baseline, the new baseline once the
+  // work is live, then a short running view. When present it replaces
+  // \`columns\`, which stays only as the fallback for older files.
+  timeline?: {
+    before?: Column | null;
+    after?: Column | null;
+    monthly?: Column[] | null;
+    pendingLabel?: string | null;
+  } | null;
   nextCheck?: string | null;
   categories?: { key: string; label: string }[] | null;
   columns?: Column[] | null;
@@ -134,6 +143,16 @@ function pretty(d?: string | null, long = false): string {
   );
 }
 
+// "2026-11-13" -> "Nov". Falls back to the column's own label.
+function monthLabel(c: Column): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(c.date ?? "");
+  if (!m) return c.label;
+  return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3])).toLocaleDateString(
+    "en-US",
+    { month: "short" },
+  );
+}
+
 function score(v: number | null | undefined): string {
   return typeof v === "number" && Number.isFinite(v) ? String(Math.round(v)) : "-";
 }
@@ -187,6 +206,136 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 const CARD =
   "bg-white border border-[#e8e0d8] rounded-lg p-4 sm:p-5 print:p-3 print:rounded-md";
 
+// One slot of the before / with pair. A pending slot keeps the same footprint
+// so the pair reads as a pair even before go-live.
+function PairSlot({
+  title,
+  column,
+  catKey,
+  pending,
+  strong,
+}: {
+  title: string;
+  column?: Column | null;
+  catKey: string;
+  pending: string;
+  strong?: boolean;
+}) {
+  return (
+    <div>
+      <p className="text-[10px] leading-tight text-[#6b6560] print:text-[7.5px] whitespace-nowrap">
+        {title}
+      </p>
+      <div className="h-9 print:h-7 flex items-center">
+        {column ? (
+          <p
+            className={`tabular-nums leading-none tracking-[-0.03em] font-bold text-3xl print:text-[22px] ${
+              strong ? "text-[#1a1a2e]" : "text-[#6b6560]"
+            }`}
+          >
+            {score(column.phone?.[catKey])}
+          </p>
+        ) : (
+          <p className="max-w-[4.75rem] text-xs leading-tight text-[#6b6560]/80 print:text-[8.5px]">
+            {pending}
+          </p>
+        )}
+      </div>
+      <p className="text-[10px] leading-tight text-[#6b6560] print:text-[8px] min-h-[1.25em]">
+        {column?.date ? pretty(column.date) : ""}
+      </p>
+    </div>
+  );
+}
+
+function TimelineTiles({
+  timeline,
+  categories,
+}: {
+  timeline: NonNullable<ScoresPage["timeline"]>;
+  categories: { key: string; label: string }[];
+}) {
+  const before = timeline.before ?? null;
+  const after = timeline.after ?? null;
+  const monthly = (timeline.monthly ?? []).slice(-3);
+  const pending = timeline.pendingLabel || "To be completed";
+  const latest = after ?? before;
+  return (
+    <div className="mt-2 grid grid-cols-1 sm:grid-cols-5 print:grid-cols-5 gap-2 sm:gap-3 print:gap-2">
+      {categories.map((cat) => {
+        const b = before?.phone?.[cat.key];
+        const a = after?.phone?.[cat.key];
+        const now = latest?.phone?.[cat.key];
+        const pct = typeof now === "number" ? Math.max(0, Math.min(100, now)) : 0;
+        const delta =
+          typeof a === "number" && typeof b === "number" ? Math.round(a) - Math.round(b) : null;
+        const comp = latest?.computer?.[cat.key];
+        return (
+          <div key={cat.key} className={`${CARD} !p-3 print:!p-2.5`}>
+            <div className="flex items-baseline justify-between gap-2 mb-2 print:mb-1">
+              <p className="text-sm font-semibold whitespace-nowrap print:text-[10.5px]">
+                {cat.label}
+              </p>
+              {delta !== null ? (
+                /* Calm either way: brand blue for a gain, neutral for a dip. */
+                <p
+                  className={`tabular-nums text-xs font-semibold rounded-full py-0.5 print:text-[8.5px] ${
+                    delta > 0 ? "px-1.5 bg-[#eef2fa] text-[#1a1a2e]" : "text-[#6b6560]"
+                  }`}
+                >
+                  {delta > 0 ? `+${delta}` : delta === 0 ? "Same" : String(delta)}
+                </p>
+              ) : null}
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-[auto_auto] sm:justify-between print:grid-cols-[auto_auto] print:justify-between gap-x-1">
+              <PairSlot
+                title="Before Kerzie AI"
+                column={before}
+                catKey={cat.key}
+                pending={pending}
+                strong={!after}
+              />
+              <PairSlot
+                title="With Kerzie AI"
+                column={after}
+                catKey={cat.key}
+                pending={pending}
+                strong
+              />
+            </div>
+            {/* Brand blue, whatever the number is. No alarm colors. */}
+            <div className="mt-2 print:mt-1.5 h-1 rounded-full bg-[#e8e0d8]/70 overflow-hidden">
+              <div className="h-full rounded-full bg-[#7B9FE8]" style={{ width: `${pct}%` }} />
+            </div>
+            <p className="mt-2 print:mt-1.5 text-xs sm:text-[11px] leading-snug text-[#6b6560] print:text-[8.5px] tabular-nums">
+              <span className="block text-[10px] print:text-[8px]">Last 3 months</span>
+              {monthly.length === 0 ? (
+                <span className="text-[#6b6560]/80">{pending}</span>
+              ) : (
+                monthly.map((c, i) => (
+                  <span key={i} className="whitespace-nowrap">
+                    {i > 0 ? <span className="mx-0.5">&middot;</span> : null}
+                    {monthLabel(c)}{" "}
+                    <span className="text-[#1a1a2e] font-semibold">
+                      {score(c.phone?.[cat.key])}
+                    </span>
+                  </span>
+                ))
+              )}
+            </p>
+            {latest?.computer ? (
+              <p className="mt-1.5 print:mt-1 text-xs text-[#6b6560] print:text-[8.5px] tabular-nums">
+                On a computer:{" "}
+                <span className="text-[#1a1a2e] font-semibold">{score(comp)}</span>
+              </p>
+            ) : null}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default async function ScoresPage({
   params,
 }: {
@@ -197,7 +346,11 @@ export default async function ScoresPage({
   if (!data) notFound();
 
   const categories = data.categories?.length ? data.categories : DEFAULT_CATEGORIES;
-  const columns = data.columns ?? [];
+  const timeline = data.timeline ?? null;
+  // With a timeline, the footnote's Lighthouse versions come from its columns.
+  const columns = timeline
+    ? ([timeline.before, timeline.after, ...(timeline.monthly ?? [])].filter(Boolean) as Column[])
+    : (data.columns ?? []);
   const last = columns.length - 1;
   const multi = columns.length > 1;
   const hasComputer = columns.some((c) => c.computer);
@@ -258,7 +411,7 @@ export default async function ScoresPage({
         <section className="mt-5 print:mt-3">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <SectionTitle>Google&apos;s scores, on a phone</SectionTitle>
-            {columns.length ? (
+            {columns.length && !timeline ? (
               <p className="text-[#6b6560] text-xs print:text-[9.5px]">
                 {columns.map((c, i) => (
                   <span key={i}>
@@ -273,7 +426,9 @@ export default async function ScoresPage({
             ) : null}
           </div>
 
-          {columns.length === 0 ? (
+          {timeline ? (
+            <TimelineTiles timeline={timeline} categories={categories} />
+          ) : columns.length === 0 ? (
             <p className={`${CARD} mt-2 text-sm text-[#6b6560]`}>
               The first check has not run yet.
             </p>

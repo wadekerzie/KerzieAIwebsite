@@ -94,7 +94,7 @@
  ],
  "columns": [
   {
-   "label": "Before",
+   "label": "Before Kerzie AI",
    "date": "2026-11-13",
    "lighthouse": "13.6.0",
    "phone": {
@@ -113,5 +113,29 @@
    }
   }
  ],
+ "timeline": {
+  "before": {
+   "label": "Before Kerzie AI",
+   "date": "2026-11-13",
+   "lighthouse": "13.6.0",
+   "phone": {
+    "performance": 89,
+    "accessibility": 87,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   },
+   "computer": {
+    "performance": 100,
+    "accessibility": 84,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   }
+  },
+  "after": null,
+  "monthly": [],
+  "pendingLabel": "To be completed"
+ },
  "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
 }
