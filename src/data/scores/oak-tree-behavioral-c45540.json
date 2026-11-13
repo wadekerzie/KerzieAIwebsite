@@ -1,0 +1,88 @@
+{
+ "slug": "oak-tree-behavioral-c45540",
+ "business": "Oak Tree Behavioral Services",
+ "site": "oaktreebehavioral.com",
+ "updated": "2026-11-13",
+ "stage": "before",
+ "aiPages": [
+  {
+   "name": "Identity page",
+   "path": "/llms.txt",
+   "what": "Who you are: your offices, your clinicians, the insurance you take, how to book.",
+   "status": "Starts when setup is paid",
+   "lastRefresh": null
+  },
+  {
+   "name": "Services page",
+   "path": "/llms-full.txt",
+   "what": "Every service at each office, who it is for, and its page on your site.",
+   "status": "Starts when setup is paid",
+   "lastRefresh": null
+  }
+ ],
+ "logUrl": null,
+ "fixed": [],
+ "next": [
+  {
+   "what": "Replace your SEO plugin's basic link list with your full identity and services pages",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Add Google descriptions to the 45 pages that have none",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Correct your business type in the code Google reads (it says health club) and add your hours",
+   "who": "Kerzie AI"
+  }
+ ],
+ "chatgpt": {
+  "status": "Not claimed yet",
+  "numbers": null
+ },
+ "nextCheck": "After go-live, then monthly",
+ "categories": [
+  {
+   "key": "performance",
+   "label": "Speed"
+  },
+  {
+   "key": "accessibility",
+   "label": "Accessibility"
+  },
+  {
+   "key": "best-practices",
+   "label": "Best practices"
+  },
+  {
+   "key": "seo",
+   "label": "SEO"
+  },
+  {
+   "key": "agentic-browsing",
+   "label": "AI readiness"
+  }
+ ],
+ "columns": [
+  {
+   "label": "Before",
+   "date": "2026-11-13",
+   "lighthouse": "13.6.0",
+   "phone": {
+    "performance": 63,
+    "accessibility": 89,
+    "best-practices": 96,
+    "seo": 100,
+    "agentic-browsing": 67
+   },
+   "computer": {
+    "performance": 53,
+    "accessibility": 89,
+    "best-practices": 96,
+    "seo": 100,
+    "agentic-browsing": 46
+   }
+  }
+ ],
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
+}

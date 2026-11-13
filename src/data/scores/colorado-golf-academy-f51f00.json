@@ -1,0 +1,88 @@
+{
+ "slug": "colorado-golf-academy-f51f00",
+ "business": "Colorado Golf Academy",
+ "site": "coloradogolfacademy.com",
+ "updated": "2026-11-13",
+ "stage": "before",
+ "aiPages": [
+  {
+   "name": "Identity page",
+   "path": "/llms.txt",
+   "what": "Who you are: both locations, your PGA Professionals, how to book.",
+   "status": "In progress",
+   "lastRefresh": null
+  },
+  {
+   "name": "Programs page",
+   "path": "/llms-full.txt",
+   "what": "Every program at each location, with published prices.",
+   "status": "In progress",
+   "lastRefresh": null
+  }
+ ],
+ "logUrl": null,
+ "fixed": [],
+ "next": [
+  {
+   "what": "Replace your SEO plugin's automatic AI page with your full identity and programs pages",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Add Google descriptions to the 8 pages that have none, and shorten 7 page titles",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Add your address, hours and phone in the code Google reads (business details)",
+   "who": "Kerzie AI"
+  }
+ ],
+ "chatgpt": {
+  "status": "Not claimed yet",
+  "numbers": null
+ },
+ "nextCheck": "After go-live, then monthly",
+ "categories": [
+  {
+   "key": "performance",
+   "label": "Speed"
+  },
+  {
+   "key": "accessibility",
+   "label": "Accessibility"
+  },
+  {
+   "key": "best-practices",
+   "label": "Best practices"
+  },
+  {
+   "key": "seo",
+   "label": "SEO"
+  },
+  {
+   "key": "agentic-browsing",
+   "label": "AI readiness"
+  }
+ ],
+ "columns": [
+  {
+   "label": "Before",
+   "date": "2026-11-13",
+   "lighthouse": "13.6.0",
+   "phone": {
+    "performance": 89,
+    "accessibility": 87,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   },
+   "computer": {
+    "performance": 100,
+    "accessibility": 84,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   }
+  }
+ ],
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
+}
