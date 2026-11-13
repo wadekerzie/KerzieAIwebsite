@@ -1,0 +1,173 @@
+{
+ "slug": "shortline-buick-gmc-036667",
+ "business": "Shortline Buick GMC",
+ "site": "shortlinebuickgmc.com",
+ "updated": "2026-11-13",
+ "stage": "live",
+ "aiPages": [
+  {
+   "name": "Identity page",
+   "path": "/llms.txt",
+   "what": "Who you are: the dealership, hours, departments, the people customers work with.",
+   "status": "Live",
+   "lastRefresh": "2026-11-13"
+  },
+  {
+   "name": "Inventory page",
+   "path": "/llms-full.txt",
+   "what": "Every new and used vehicle with price and link, rebuilt every morning from your inventory feed.",
+   "status": "Live, rebuilt daily",
+   "lastRefresh": "2026-11-13"
+  }
+ ],
+ "logUrl": "https://kerzie.ai/shortline-log",
+ "fixed": [
+  {
+   "what": "Store hours links fixed; Google's SEO score on the home page back up from 83 to 92",
+   "date": "2026-11-12"
+  },
+  {
+   "what": "Team members added to your AI page",
+   "date": "2026-11-04"
+  },
+  {
+   "what": "Site-wide image alt text audit delivered (38 outdated model years on 12 pages)",
+   "date": "2026-11-13"
+  }
+ ],
+ "next": [
+  {
+   "what": "Update the 38 image descriptions with outdated model years (sent to DealerOn)",
+   "who": "DealerOn"
+  },
+  {
+   "what": "Fix the blog redirect loop (/blog to /blogs)",
+   "who": "DealerOn"
+  },
+  {
+   "what": "Give the ad pixel on the home page an empty image description, the last item between SEO 92 and 100",
+   "who": "DealerOn"
+  }
+ ],
+ "chatgpt": {
+  "status": "Not claimed yet",
+  "claimed": false,
+  "why": "ChatGPT now shows a business profile card for local businesses. It is part of your Back Cover.",
+  "yourStep": "Claim your free profile with our one-page steps, about 20 minutes, and add us as a teammate in the same sitting. Stuck? Send us a screenshot and we tell you what to click. The identity check is yours, so we never hold your ID or login.",
+  "monitoring": "Until it is claimed, we check it every month and show it here as an open gap.",
+  "numbers": null
+ },
+ "googleListing": {
+  "checked": "2026-11-13",
+  "source": "Google Maps (Google Places API)",
+  "locations": [
+   {
+    "name": "Shortline Buick GMC",
+    "address": "1301 S Havana St, Aurora, CO 80012, USA",
+    "rating": 4.2,
+    "reviews": 1717,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=10487302106885165879&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   }
+  ],
+  "note": null
+ },
+ "nextCheck": "Monthly (inventory page rebuilt every morning)",
+ "categories": [
+  {
+   "key": "performance",
+   "label": "Speed"
+  },
+  {
+   "key": "accessibility",
+   "label": "Accessibility"
+  },
+  {
+   "key": "best-practices",
+   "label": "Best practices"
+  },
+  {
+   "key": "seo",
+   "label": "SEO"
+  },
+  {
+   "key": "agentic-browsing",
+   "label": "AI readiness"
+  }
+ ],
+ "columns": [
+  {
+   "label": "With Kerzie AI",
+   "date": "2026-10-26",
+   "lighthouse": "13.5.0",
+   "phone": {
+    "performance": 34,
+    "accessibility": 84,
+    "best-practices": 69,
+    "seo": 92,
+    "agentic-browsing": 67
+   },
+   "computer": null
+  },
+  {
+   "label": "Nov 13",
+   "date": "2026-11-13",
+   "lighthouse": "13.6.0",
+   "phone": {
+    "performance": 32,
+    "accessibility": 83,
+    "best-practices": 69,
+    "seo": 92,
+    "agentic-browsing": 75
+   },
+   "computer": {
+    "performance": 37,
+    "accessibility": 83,
+    "best-practices": 69,
+    "seo": 92,
+    "agentic-browsing": 75
+   }
+  }
+ ],
+ "timeline": {
+  "before": null,
+  "after": {
+   "label": "With Kerzie AI",
+   "date": "2026-10-26",
+   "lighthouse": "13.5.0",
+   "phone": {
+    "performance": 34,
+    "accessibility": 84,
+    "best-practices": 69,
+    "seo": 92,
+    "agentic-browsing": 67
+   },
+   "computer": null
+  },
+  "monthly": [
+   {
+    "label": "Nov 13",
+    "date": "2026-11-13",
+    "lighthouse": "13.6.0",
+    "phone": {
+     "performance": 32,
+     "accessibility": 83,
+     "best-practices": 69,
+     "seo": 92,
+     "agentic-browsing": 75
+    },
+    "computer": {
+     "performance": 37,
+     "accessibility": 83,
+     "best-practices": 69,
+     "seo": 92,
+     "agentic-browsing": 75
+    }
+   }
+  ],
+  "pendingLabel": "To be completed",
+  "beforeNote": "Kerzie AI started here on Aug 20, 2026, before Google's full scores were being saved, so there is no before number."
+ },
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
+}

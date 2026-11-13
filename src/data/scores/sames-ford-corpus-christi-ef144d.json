@@ -1,0 +1,120 @@
+{
+ "slug": "sames-ford-corpus-christi-ef144d",
+ "business": "Sames Ford Corpus Christi",
+ "site": "samesfordcc.com",
+ "updated": "2026-11-13",
+ "stage": "before",
+ "aiPages": [
+  {
+   "name": "Identity page",
+   "path": "/llms.txt",
+   "what": "Who you are: the dealership, hours, departments, how to reach sales and service.",
+   "status": "Ready; goes live with your DealerOn launch",
+   "lastRefresh": null
+  },
+  {
+   "name": "Inventory page",
+   "path": "/llms-full.txt",
+   "what": "Every new and used vehicle with price and link, rebuilt every morning from your vAuto feed.",
+   "status": "Ready; goes live with your DealerOn launch",
+   "lastRefresh": null
+  }
+ ],
+ "logUrl": null,
+ "fixed": [],
+ "next": [
+  {
+   "what": "Place both AI pages the day your new DealerOn site launches",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Claim your ChatGPT business profile and add us as a teammate",
+   "who": "Arron"
+  },
+  {
+   "what": "Run Google's scores on your new DealerOn site at launch, then fix what it finds",
+   "who": "Kerzie AI"
+  }
+ ],
+ "chatgpt": {
+  "status": "In progress (Arron claiming)",
+  "claimed": false,
+  "why": "ChatGPT now shows a business profile card for local businesses. It is part of your Back Cover.",
+  "yourStep": "Claim your free profile with our steps and add us as a teammate in the same sitting. Stuck? Send us a screenshot and we tell you what to click.",
+  "monitoring": "Until it is claimed, we check it every month and show it here as an open gap.",
+  "numbers": null
+ },
+ "googleListing": {
+  "checked": "2026-11-13",
+  "source": "Google Maps (Google Places API)",
+  "locations": [
+   {
+    "name": "Sames Ford Corpus Christi",
+    "address": "4721 Ayers St, Corpus Christi, TX 78415, USA",
+    "rating": 4.3,
+    "reviews": 1064,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=16913556842426533863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   }
+  ],
+  "note": null
+ },
+ "nextCheck": "At your DealerOn launch, then monthly",
+ "categories": [
+  {
+   "key": "performance",
+   "label": "Speed"
+  },
+  {
+   "key": "accessibility",
+   "label": "Accessibility"
+  },
+  {
+   "key": "best-practices",
+   "label": "Best practices"
+  },
+  {
+   "key": "seo",
+   "label": "SEO"
+  },
+  {
+   "key": "agentic-browsing",
+   "label": "AI readiness"
+  }
+ ],
+ "columns": [
+  {
+   "label": "Before Kerzie AI",
+   "date": "2026-10-19",
+   "lighthouse": "13.5.0",
+   "phone": {
+    "performance": 49,
+    "accessibility": 89,
+    "best-practices": 50,
+    "seo": 100,
+    "agentic-browsing": 33
+   },
+   "computer": null
+  }
+ ],
+ "timeline": {
+  "before": {
+   "label": "Before Kerzie AI",
+   "date": "2026-10-19",
+   "lighthouse": "13.5.0",
+   "phone": {
+    "performance": 49,
+    "accessibility": 89,
+    "best-practices": 50,
+    "seo": 100,
+    "agentic-browsing": 33
+   },
+   "computer": null
+  },
+  "after": null,
+  "monthly": [],
+  "pendingLabel": "To be completed"
+ },
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
+}
