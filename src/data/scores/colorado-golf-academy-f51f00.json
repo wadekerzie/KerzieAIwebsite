@@ -88,5 +88,11 @@
    }
   }
  ],
- "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown.",
+ "googleListing": {
+  "checked": null,
+  "source": "Google Maps (Google Places API)",
+  "locations": [],
+  "note": "Checking soon."
+ }
 }

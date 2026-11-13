@@ -34,6 +34,15 @@ type AiPage = {
   status?: string | null;
   lastRefresh?: string | null;
 };
+type ListingLocation = {
+  name: string;
+  address?: string | null;
+  rating?: number | null;
+  reviews?: number | null;
+  status?: string | null;
+  hoursListed?: boolean | null;
+  mapsUrl?: string | null;
+};
 type Fixed = string | { what: string; date?: string | null };
 type Next = { what: string; who?: string | null };
 type ScoresPage = {
@@ -56,6 +65,14 @@ type ScoresPage = {
     yourStep?: string | null;
     monitoring?: string | null;
     numbers?: Record<string, string | number | null> | null;
+  } | null;
+  // Added 2026-11-13: Google's own listing facts, one entry per location.
+  // Optional. Files without it render no section at all.
+  googleListing?: {
+    checked?: string | null;
+    source?: string | null;
+    locations?: ListingLocation[] | null;
+    note?: string | null;
   } | null;
   nextCheck?: string | null;
   categories?: { key: string; label: string }[] | null;
@@ -121,6 +138,18 @@ function score(v: number | null | undefined): string {
   return typeof v === "number" && Number.isFinite(v) ? String(Math.round(v)) : "-";
 }
 
+// "4.8 stars from 132 Google reviews", in Google's numbers and plain words.
+function reviewLine(l: ListingLocation): string {
+  const n = typeof l.reviews === "number" ? l.reviews : 0;
+  if (n <= 0) return "No Google reviews yet";
+  const count = `${n.toLocaleString("en-US")} Google review${n === 1 ? "" : "s"}`;
+  return typeof l.rating === "number" ? `${l.rating.toFixed(1)} stars from ${count}` : count;
+}
+
+// The calm tag for anything we are still watching. Never red.
+const GAP_TAG =
+  "rounded-full bg-[#eef2fa] border border-[#7B9FE8]/50 text-[#1a1a2e] px-2 py-0.5 text-xs font-medium print:text-[9px]";
+
 const DEFAULT_CATEGORIES = [
   { key: "performance", label: "Speed" },
   { key: "accessibility", label: "Accessibility" },
@@ -179,6 +208,8 @@ export default async function ScoresPage({
     ? Object.entries(data.chatgpt.numbers).filter(([, v]) => v !== null && v !== "")
     : [];
   const live = data.stage === "live";
+  const listing = data.googleListing;
+  const locations = listing?.locations ?? [];
   const gpt = data.chatgpt;
   const gptNew = typeof gpt?.claimed === "boolean";
   const gptGap = gpt?.claimed === false;
@@ -318,6 +349,84 @@ export default async function ScoresPage({
           </p>
         </section>
 
+        {/* Your Google listing: Google's own facts per location. Optional. */}
+        {listing ? (
+          <section className="mt-5 print:mt-3">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <SectionTitle>Your Google listing</SectionTitle>
+              <p className="text-[#6b6560] text-xs print:text-[9.5px]">
+                Google&apos;s numbers, not ours.
+              </p>
+            </div>
+            {locations.length === 0 ? (
+              <p className={`${CARD} !py-3 print:!py-2 mt-2 text-sm text-[#6b6560] print:text-[10px]`}>
+                {listing.note || "Checking soon."}
+              </p>
+            ) : (
+              <>
+                <div
+                  className={`mt-2 grid grid-cols-1 gap-2 sm:gap-3 print:gap-2 ${
+                    locations.length > 1 ? "sm:grid-cols-2 print:grid-cols-2" : ""
+                  } ${locations.length > 2 ? "lg:grid-cols-3 print:grid-cols-3" : ""}`}
+                >
+                  {locations.map((l, i) => {
+                    const status = l.status || "Not found";
+                    const open = status.trim().toLowerCase() === "open";
+                    return (
+                      <div
+                        key={i}
+                        className={`${CARD} !p-3 sm:!p-4 print:!p-2.5 scores-keep text-sm leading-snug print:text-[10px]`}
+                      >
+                        <p className="font-semibold">{l.name}</p>
+                        {l.address ? (
+                          <p className="text-[#6b6560] text-xs print:text-[9px]">{l.address}</p>
+                        ) : null}
+                        <p className="mt-1.5 print:mt-1">{reviewLine(l)}</p>
+                        <p className="mt-1.5 print:mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs print:text-[9px]">
+                          {open ? (
+                            <span className="rounded-full bg-[#eef2fa] px-2 py-0.5 font-medium">
+                              Open
+                            </span>
+                          ) : (
+                            <>
+                              <span className="font-medium">{status}</span>
+                              <span className={GAP_TAG}>Open gap</span>
+                            </>
+                          )}
+                          {l.hoursListed === true ? (
+                            <span className="text-[#6b6560]">Hours listed</span>
+                          ) : l.hoursListed === false ? (
+                            <span className="font-medium">No hours on Google</span>
+                          ) : null}
+                          {l.mapsUrl ? (
+                            <a
+                              href={l.mapsUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-semibold underline decoration-[#7B9FE8] decoration-2 underline-offset-4 sm:ml-auto print:ml-auto"
+                            >
+                              See on Google Maps
+                            </a>
+                          ) : null}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+                {listing.note ? (
+                  <p className="mt-2 text-xs text-[#6b6560] print:text-[9px]">{listing.note}</p>
+                ) : null}
+              </>
+            )}
+            {listing.source || listing.checked ? (
+              <p className="mt-2 text-[11px] leading-snug text-[#6b6560] print:text-[8.5px] print:mt-1.5">
+                {listing.source ? <>Source: {listing.source}. </> : null}
+                {listing.checked ? <>Checked {pretty(listing.checked)}.</> : null}
+              </p>
+            ) : null}
+          </section>
+        ) : null}
+
         <div className="mt-5 print:mt-3 grid grid-cols-1 lg:grid-cols-3 print:grid-cols-3 gap-3 print:gap-2 items-start">
           {/* 3. Your AI pages */}
           <section className={CARD}>
@@ -433,7 +542,7 @@ export default async function ScoresPage({
               </SectionTitle>
               {gptGap ? (
                 /* Calm on purpose: an item we track, not a failure. */
-                <span className="rounded-full bg-[#eef2fa] border border-[#7B9FE8]/50 text-[#1a1a2e] px-2 py-0.5 text-xs font-medium print:text-[9px]">
+                <span className={GAP_TAG}>
                   Open gap
                 </span>
               ) : null}
