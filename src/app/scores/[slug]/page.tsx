@@ -206,6 +206,8 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 const CARD =
   "bg-white border border-[#e8e0d8] rounded-lg p-4 sm:p-5 print:p-3 print:rounded-md";
 
+// WITH_BLUE = #3F63C7: the Kerzie blue family, dark enough for text on a
+// white tile (5.5:1, WCAG AA). #7B9FE8 stays for bars and accents only.
 // One slot of the before / with pair. A pending slot keeps the same footprint
 // so the pair reads as a pair even before go-live.
 function PairSlot({
@@ -214,34 +216,46 @@ function PairSlot({
   catKey,
   pending,
   strong,
+  accent,
 }: {
   title: string;
   column?: Column | null;
   catKey: string;
   pending: string;
   strong?: boolean;
+  accent?: boolean;
 }) {
+  // The "With Kerzie AI" slot is set in WITH_BLUE end to end (label, number,
+  // date, pending text) so it stands apart from the navy/gray "Before" slot.
+  const small = accent ? "text-[#3F63C7]" : "text-[#6b6560]";
+  const big = accent ? "text-[#3F63C7]" : strong ? "text-[#1a1a2e]" : "text-[#6b6560]";
   return (
     <div>
-      <p className="text-[10px] leading-tight text-[#6b6560] print:text-[7.5px] whitespace-nowrap">
+      <p
+        className={`text-[10px] leading-tight print:text-[7.5px] whitespace-nowrap ${small} ${
+          accent ? "font-semibold" : ""
+        }`}
+      >
         {title}
       </p>
       <div className="h-9 print:h-7 flex items-center">
         {column ? (
           <p
-            className={`tabular-nums leading-none tracking-[-0.03em] font-bold text-3xl print:text-[22px] ${
-              strong ? "text-[#1a1a2e]" : "text-[#6b6560]"
-            }`}
+            className={`tabular-nums leading-none tracking-[-0.03em] font-bold text-3xl print:text-[22px] ${big}`}
           >
             {score(column.phone?.[catKey])}
           </p>
         ) : (
-          <p className="max-w-[4.75rem] text-xs leading-tight text-[#6b6560]/80 print:text-[8.5px]">
+          <p
+            className={`max-w-[4.75rem] text-xs leading-tight print:text-[8.5px] ${
+              accent ? "text-[#3F63C7]" : "text-[#6b6560]/80"
+            }`}
+          >
             {pending}
           </p>
         )}
       </div>
-      <p className="text-[10px] leading-tight text-[#6b6560] print:text-[8px] min-h-[1.25em]">
+      <p className={`text-[10px] leading-tight print:text-[8px] min-h-[1.25em] ${small}`}>
         {column?.date ? pretty(column.date) : ""}
       </p>
     </div>
@@ -280,7 +294,7 @@ function TimelineTiles({
                 /* Calm either way: brand blue for a gain, neutral for a dip. */
                 <p
                   className={`tabular-nums text-xs font-semibold rounded-full py-0.5 print:text-[8.5px] ${
-                    delta > 0 ? "px-1.5 bg-[#eef2fa] text-[#1a1a2e]" : "text-[#6b6560]"
+                    delta > 0 ? "px-1.5 bg-[#eef2fa] text-[#3F63C7]" : "text-[#6b6560]"
                   }`}
                 >
                   {delta > 0 ? `+${delta}` : delta === 0 ? "Same" : String(delta)}
@@ -300,7 +314,7 @@ function TimelineTiles({
                 column={after}
                 catKey={cat.key}
                 pending={pending}
-                strong
+                accent
               />
             </div>
             {/* Brand blue, whatever the number is. No alarm colors. */}
