@@ -78,7 +78,10 @@ type ScoresPage = {
   // work is live, then a short running view. When present it replaces
   // \`columns\`, which stays only as the fallback for older files.
   timeline?: {
+    // null when Kerzie AI started before scores were saved. The Before slot
+    // then reads "Not measured" and beforeNote (optional) explains why.
     before?: Column | null;
+    beforeNote?: string | null;
     after?: Column | null;
     monthly?: Column[] | null;
     pendingLabel?: string | null;
@@ -306,7 +309,7 @@ function TimelineTiles({
                 title="Before Kerzie AI"
                 column={before}
                 catKey={cat.key}
-                pending={pending}
+                pending="Not measured"
                 strong={!after}
               />
               <PairSlot
@@ -518,6 +521,9 @@ export default async function ScoresPage({
             </div>
           )}
           <p className="mt-2 text-[11px] leading-snug text-[#6b6560] print:text-[8.5px] print:mt-1.5">
+            {timeline && !timeline.before && timeline.beforeNote ? (
+              <>{timeline.beforeNote} </>
+            ) : null}
             Scores run from 0 to 100. Higher is better.
             {data.source ? <> {data.source}</> : null}
             {versions.length ? <> Lighthouse version {versions.join(", ")}.</> : null}
