@@ -169,8 +169,11 @@ const PRINT_CSS = `
   .scores-page { min-height: 0 !important; background: #fff !important; }
   .scores-page section, .scores-page .scores-keep { break-inside: avoid; page-break-inside: avoid; }
   .scores-page a { text-decoration: none; }
-  chat-widget, [data-chat-widget] { display: none !important; }
 }
+/* No chat bubble on a client report, on screen or in print. ChatWidget.tsx
+   does not load it here; this covers a widget already loaded on another page
+   before an in-app navigation. */
+chat-widget, [data-chat-widget] { display: none !important; }
 `;
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -220,14 +223,17 @@ export default async function ScoresPage({
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-10 print:p-0 print:max-w-none">
         {/* 1. Header. A div, not <header>: the site print CSS hides <header>. */}
         <div className="scores-keep">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-end print:justify-between gap-4">
+            {/* Print only: the site header (and its logo) is hidden in the
+                PDF, and a client deliverable carries the Kerzie AI brand. On
+                screen the site header already shows it. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/kerzie-ai-logo-transparent.png"
               alt="Kerzie AI"
               width={2800}
               height={850}
-              className="h-7 w-auto print:h-6"
+              className="hidden print:block print:h-6 w-auto"
             />
             <p className="text-[#6b6560] text-xs sm:text-sm print:text-[10px] text-right">
               {data.updated ? <>Updated {pretty(data.updated, true)}</> : null}

@@ -1,18 +1,12 @@
 import Link from "next/link";
-import Script from "next/script";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Footer() {
   return (
     <footer className="bg-[#FAF8F4]">
-      {/* Unison chat + voice widget (GHL). Site-wide since 2026-01-12, dropped
-          by the 2026-06-14 footer redesign, restored 2026-10-28 (Wade: "put
-          them both back on the site now"). */}
-      <Script
-        src="https://widgets.leadconnectorhq.com/loader.js"
-        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-        data-widget-id="6963fcc35c8c5be17f8f0a9d"
-        strategy="lazyOnload"
-      />
+      {/* Unison chat + voice widget (GHL). Lives in ChatWidget.tsx so the
+          /scores/* client reports can opt out; everywhere else is unchanged. */}
+      <ChatWidget />
       <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-20 lg:pt-16 pb-12">
 
         {/* The belief, in the human voice */}
