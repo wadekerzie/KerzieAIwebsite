@@ -48,6 +48,13 @@ type ScoresPage = {
   next?: Next[] | null;
   chatgpt?: {
     status?: string | null;
+    // Added 2026-11-13 (Wade, after the Aaron call): the profile shows even
+    // before it is claimed, as an open gap we keep watching. Older files
+    // without \`claimed\` fall back to status + numbers only.
+    claimed?: boolean | null;
+    why?: string | null;
+    yourStep?: string | null;
+    monitoring?: string | null;
     numbers?: Record<string, string | number | null> | null;
   } | null;
   nextCheck?: string | null;
@@ -172,6 +179,9 @@ export default async function ScoresPage({
     ? Object.entries(data.chatgpt.numbers).filter(([, v]) => v !== null && v !== "")
     : [];
   const live = data.stage === "live";
+  const gpt = data.chatgpt;
+  const gptNew = typeof gpt?.claimed === "boolean";
+  const gptGap = gpt?.claimed === false;
 
   return (
     <div className="scores-page bg-[#faf8f5] min-h-screen text-[#1a1a2e]">
@@ -412,13 +422,38 @@ export default async function ScoresPage({
 
         <div className="mt-3 print:mt-2 grid grid-cols-1 lg:grid-cols-3 print:grid-cols-3 gap-3 print:gap-2 items-start">
           {/* 5. ChatGPT profile */}
-          <section className={`${CARD} lg:col-span-2 print:col-span-2`}>
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <SectionTitle>ChatGPT profile</SectionTitle>
+          <section
+            className={`${CARD} ${
+              gptGap ? "lg:col-span-3 print:col-span-3" : "lg:col-span-2 print:col-span-2"
+            }`}
+          >
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+              <SectionTitle>
+                {gptNew ? "ChatGPT business profile" : "ChatGPT profile"}
+              </SectionTitle>
+              {gptGap ? (
+                /* Calm on purpose: an item we track, not a failure. */
+                <span className="rounded-full bg-[#eef2fa] border border-[#7B9FE8]/50 text-[#1a1a2e] px-2 py-0.5 text-xs font-medium print:text-[9px]">
+                  Open gap
+                </span>
+              ) : null}
               <p className="text-sm print:text-[10px]">
-                {data.chatgpt?.status || "Not claimed yet"}
+                {gpt?.status || (gpt?.claimed ? "Claimed" : "Not claimed yet")}
               </p>
             </div>
+            {gptGap ? (
+              <div className="mt-2 print:mt-1.5 space-y-1.5 print:space-y-1 text-sm leading-snug print:text-[10px] max-w-3xl print:max-w-none">
+                {gpt?.why ? <p>{gpt.why}</p> : null}
+                {gpt?.yourStep ? (
+                  <p>
+                    <span className="font-semibold">Your step:</span> {gpt.yourStep}
+                  </p>
+                ) : null}
+                {gpt?.monitoring ? (
+                  <p className="text-[#6b6560] text-xs print:text-[9px]">{gpt.monitoring}</p>
+                ) : null}
+              </div>
+            ) : null}
             {numbers.length ? (
               <div className="mt-2">
                 <p className="text-xs text-[#6b6560] print:text-[9px]">
@@ -434,14 +469,25 @@ export default async function ScoresPage({
                     </div>
                   ))}
                 </dl>
+                {gptNew ? (
+                  <p className="mt-1.5 text-xs text-[#6b6560] print:text-[9px]">
+                    These are ChatGPT&apos;s own numbers, not ours.
+                  </p>
+                ) : null}
               </div>
             ) : null}
           </section>
 
           {/* 6. Next check */}
-          <section className={CARD}>
+          <section
+            className={`${CARD} ${
+              gptGap
+                ? "lg:col-span-3 print:col-span-3 flex flex-wrap items-baseline gap-x-3 gap-y-1"
+                : ""
+            }`}
+          >
             <SectionTitle>Next check</SectionTitle>
-            <p className="mt-1 text-sm print:text-[10px]">
+            <p className={`text-sm print:text-[10px] ${gptGap ? "" : "mt-1"}`}>
               {data.nextCheck || "To be scheduled"}
             </p>
           </section>

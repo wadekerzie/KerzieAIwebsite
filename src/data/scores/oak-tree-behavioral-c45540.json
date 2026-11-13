@@ -38,6 +38,10 @@
  ],
  "chatgpt": {
   "status": "Not claimed yet",
+  "claimed": false,
+  "why": "ChatGPT now shows a business profile card for local businesses. It is part of your Back Cover.",
+  "yourStep": "Claim your free profile. We send you the steps and walk you through it on a short screen-share. The identity check is yours, so we never hold your ID or login.",
+  "monitoring": "Until it is claimed, we check it every month and show it here as an open gap.",
   "numbers": null
  },
  "nextCheck": "After go-live, then monthly",
