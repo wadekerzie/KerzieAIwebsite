@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-14",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 5,
+      "removed": 5,
+      "price_changed": 0,
+      "total": 318,
+      "ran_at": "9:15 AM CT",
+      "note": "Five vehicles joined the list and five came off since the last update, keeping the total at 318. New arrivals include a used 2022 Mercedes-Benz AMG GT and a 2025 Toyota Sienna LE, along with two new Mazda crossovers. No price changes today. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-13",
       "status": "ok",
       "kind": "refresh",
