@@ -2,37 +2,42 @@
  "slug": "colorado-golf-academy-f51f00",
  "business": "Colorado Golf Academy",
  "site": "coloradogolfacademy.com",
- "updated": "2026-11-13",
- "stage": "before",
+ "updated": "2026-11-14",
+ "stage": "live",
  "aiPages": [
   {
    "name": "Identity page",
    "path": "/llms.txt",
    "what": "Who you are: both locations, your PGA Professionals, how to book.",
-   "status": "In progress",
-   "lastRefresh": null
+   "status": "Live",
+   "lastRefresh": "2026-11-14"
   },
   {
    "name": "Programs page",
    "path": "/llms-full.txt",
    "what": "Every program at each location, with published prices.",
-   "status": "In progress",
-   "lastRefresh": null
+   "status": "Live",
+   "lastRefresh": "2026-11-14"
   }
  ],
  "logUrl": null,
- "fixed": [],
- "next": [
+ "fixed": [
   {
-   "what": "Replace your SEO plugin's automatic AI page with your full identity and programs pages",
+   "what": "Your identity and programs pages are live for ChatGPT and other AI assistants, replacing your SEO plugin's automatic link list",
    "who": "Kerzie AI"
-  },
+  }
+ ],
+ "next": [
   {
    "what": "Add Google descriptions to the 8 pages that have none, and shorten 7 page titles",
    "who": "Kerzie AI"
   },
   {
    "what": "Add your address, hours and phone in the code Google reads (business details)",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Add descriptions to images and names to links that Google's accessibility check flags",
    "who": "Kerzie AI"
   }
  ],
@@ -69,7 +74,7 @@
   ],
   "note": null
  },
- "nextCheck": "After go-live, then monthly",
+ "nextCheck": "Monthly; next check mid-December",
  "categories": [
   {
    "key": "performance",
@@ -111,6 +116,25 @@
     "seo": 92,
     "agentic-browsing": 67
    }
+  },
+  {
+   "label": "With Kerzie AI",
+   "date": "2026-11-14",
+   "lighthouse": "13.6.0",
+   "phone": {
+    "performance": 97,
+    "accessibility": 87,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   },
+   "computer": {
+    "performance": 100,
+    "accessibility": 84,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   }
   }
  ],
  "timeline": {
@@ -133,7 +157,25 @@
     "agentic-browsing": 67
    }
   },
-  "after": null,
+  "after": {
+   "label": "With Kerzie AI",
+   "date": "2026-11-14",
+   "lighthouse": "13.6.0",
+   "phone": {
+    "performance": 97,
+    "accessibility": 87,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   },
+   "computer": {
+    "performance": 100,
+    "accessibility": 84,
+    "best-practices": 100,
+    "seo": 92,
+    "agentic-browsing": 67
+   }
+  },
   "monthly": [],
   "pendingLabel": "To be completed"
  },
