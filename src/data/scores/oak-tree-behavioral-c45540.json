@@ -103,7 +103,7 @@
  ],
  "columns": [
   {
-   "label": "Before Back Cover",
+   "label": "Before",
    "date": "2026-11-13",
    "lighthouse": "13.6.0",
    "phone": {
@@ -124,7 +124,7 @@
  ],
  "timeline": {
   "before": {
-   "label": "Before Back Cover",
+   "label": "Before",
    "date": "2026-11-13",
    "lighthouse": "13.6.0",
    "phone": {

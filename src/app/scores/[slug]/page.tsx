@@ -87,6 +87,8 @@ type ScoresPage = {
     pendingLabel?: string | null;
   } | null;
   nextCheck?: string | null;
+  // How often the scores are rechecked, per the client's agreement (Wade 11/15).
+  cadence?: string | null;
   categories?: { key: string; label: string }[] | null;
   columns?: Column[] | null;
   source?: string | null;
@@ -228,7 +230,7 @@ function PairSlot({
   strong?: boolean;
   accent?: boolean;
 }) {
-  // The "With Back Cover" slot is set in WITH_BLUE end to end (label, number,
+  // The "Back Cover" slot is set in WITH_BLUE end to end (label, number,
   // date, pending text) so it stands apart from the navy/gray "Before" slot.
   const small = accent ? "text-[#3F63C7]" : "text-[#6b6560]";
   const big = accent ? "text-[#3F63C7]" : strong ? "text-[#1a1a2e]" : "text-[#6b6560]";
@@ -306,14 +308,14 @@ function TimelineTiles({
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-[auto_auto] sm:justify-between print:grid-cols-[auto_auto] print:justify-between gap-x-1">
               <PairSlot
-                title="Before Back Cover"
+                title="Before"
                 column={before}
                 catKey={cat.key}
                 pending="Not measured"
                 strong={!after}
               />
               <PairSlot
-                title="With Back Cover"
+                title="Back Cover"
                 column={after}
                 catKey={cat.key}
                 pending={pending}
@@ -428,6 +430,25 @@ export default async function ScoresPage({
         <section className="mt-5 print:mt-3">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <SectionTitle>Google&apos;s scores, on a phone</SectionTitle>
+            {/* Wade 11/15: the status lives here, so the tile labels stay short. */}
+            {timeline ? (
+              <p className="flex items-center gap-1.5 text-xs print:text-[9.5px] text-[#6b6560]">
+                <span
+                  aria-hidden
+                  className={`inline-block h-2 w-2 rounded-full ${
+                    live ? "bg-[#2e9e6b]" : "bg-[#e8e0d8]"
+                  }`}
+                />
+                {live ? (
+                  <span>
+                    <span className="font-semibold text-[#1a1a2e]">Back Cover is live.</span>{" "}
+                    Scores rechecked {data.cadence || "monthly"}, as agreed.
+                  </span>
+                ) : (
+                  <span>The Back Cover scores fill in at go-live.</span>
+                )}
+              </p>
+            ) : null}
             {columns.length && !timeline ? (
               <p className="text-[#6b6560] text-xs print:text-[9.5px]">
                 {columns.map((c, i) => (
