@@ -43,6 +43,30 @@ type ListingLocation = {
   hoursListed?: boolean | null;
   mapsUrl?: string | null;
 };
+// Added 2026-11-15: one row of the multi-rooftop table (dealer groups). Each
+// site carries its own timeline, its matched Google listing and its AI pages
+// line, so the page needs no separate listing cards.
+type Rooftop = {
+  name: string;
+  short?: string | null;
+  site?: string | null;
+  kind?: "rooftop" | "group" | string | null;
+  timeline?: Timeline | null;
+  listing?: ListingLocation | null;
+  aiPagesStatus?: string | null;
+  aiPagesChecked?: string | null;
+};
+// The starting baseline, the new baseline once the work is live, then a short
+// running view.
+type Timeline = {
+  // null when Kerzie AI started before scores were saved. The Before slot
+  // then reads "Not measured" and beforeNote (optional) explains why.
+  before?: Column | null;
+  beforeNote?: string | null;
+  after?: Column | null;
+  monthly?: Column[] | null;
+  pendingLabel?: string | null;
+};
 type Fixed = string | { what: string; date?: string | null };
 type Next = { what: string; who?: string | null };
 type ScoresPage = {
@@ -77,15 +101,10 @@ type ScoresPage = {
   // Added 2026-11-13 (Wade): the starting baseline, the new baseline once the
   // work is live, then a short running view. When present it replaces
   // \`columns\`, which stays only as the fallback for older files.
-  timeline?: {
-    // null when Kerzie AI started before scores were saved. The Before slot
-    // then reads "Not measured" and beforeNote (optional) explains why.
-    before?: Column | null;
-    beforeNote?: string | null;
-    after?: Column | null;
-    monthly?: Column[] | null;
-    pendingLabel?: string | null;
-  } | null;
+  timeline?: Timeline | null;
+  // Added 2026-11-15: multi-rooftop mode. When present, the scores section is
+  // ONE table (a row per site) and the Google listing folds into the rows.
+  rooftops?: Rooftop[] | null;
   nextCheck?: string | null;
   // How often the scores are rechecked, per the client's agreement (Wade 11/15).
   cadence?: string | null;
@@ -193,7 +212,12 @@ const PRINT_CSS = `
   .scores-page { min-height: 0 !important; background: #fff !important; }
   .scores-page section, .scores-page .scores-keep { break-inside: avoid; page-break-inside: avoid; }
   .scores-page a { text-decoration: none; }
+  /* Multi-rooftop table: the PDF shows the rows only, never the drill-down. */
+  .scores-page .roof-detail, .scores-page .roof-chevron { display: none !important; }
 }
+.scores-page summary.roof-row { list-style: none; }
+.scores-page summary.roof-row::-webkit-details-marker { display: none; }
+.scores-page details[open] > summary .roof-chevron { transform: rotate(90deg); }
 /* No chat bubble on a client report, on screen or in print. ChatWidget.tsx
    does not load it here; this covers a widget already loaded on another page
    before an in-app navigation. */
@@ -355,6 +379,254 @@ function TimelineTiles({
   );
 }
 
+// ---- Multi-rooftop mode (2026-11-15) --------------------------------------
+// One compact table instead of five tiles: a row per site, a column per
+// score. The cell tint is Google's own PageSpeed band (0-49, 50-89, 90-100),
+// kept soft so a low number reads as a fact, not an alarm.
+const BANDS = {
+  low: { bg: "bg-[#f8e6e1]", text: "text-[#9c3a2a]" },
+  mid: { bg: "bg-[#fbeeda]", text: "text-[#8a5a12]" },
+  high: { bg: "bg-[#e3f1e9]", text: "text-[#1f6b49]" },
+};
+function band(v: number | null | undefined) {
+  if (typeof v !== "number" || !Number.isFinite(v)) return null;
+  return v >= 90 ? BANDS.high : v >= 50 ? BANDS.mid : BANDS.low;
+}
+
+// Site label + five score columns + the expand arrow. The header, every row
+// and every drill-down line share it, so the numbers stay in their columns.
+const ROOF_GRID =
+  "grid grid-cols-[minmax(0,1fr)_repeat(5,2.75rem)_0.75rem] sm:grid-cols-[minmax(0,1fr)_repeat(5,5.75rem)_1rem] print:grid-cols-[minmax(0,1fr)_repeat(5,5.25rem)_0.25rem] gap-x-1 sm:gap-x-2 items-center";
+
+// Phone-width headers break on a soft hyphen instead of being abbreviated.
+const ROOF_HEAD: Record<string, React.ReactNode> = {
+  accessibility: <>Access&shy;ibility</>,
+};
+
+function BandCell({
+  value,
+  delta,
+  accent,
+  small,
+}: {
+  value: number | null | undefined;
+  delta?: number | null;
+  accent?: boolean;
+  small?: boolean;
+}) {
+  const b = band(value);
+  return (
+    <span
+      className={`mx-auto flex flex-col sm:flex-row print:flex-row items-center justify-center sm:gap-1 print:gap-1 rounded-md tabular-nums leading-none w-full sm:w-[4.5rem] print:w-[4rem] ${
+        small ? "py-1 print:py-0.5 text-xs print:text-[9px] font-semibold" : "py-1.5 print:py-[3px] text-[15px] sm:text-base print:text-[11px] font-bold"
+      } ${b ? b.bg : "bg-[#f3efe9]"} ${accent ? "text-[#3F63C7]" : b ? b.text : "text-[#6b6560]"}`}
+    >
+      {score(value)}
+      {typeof delta === "number" && delta !== 0 ? (
+        <span className="text-[9px] sm:text-[10px] print:text-[7.5px] font-semibold mt-0.5 sm:mt-0 print:mt-0">
+          {delta > 0 ? `+${delta}` : String(delta)}
+        </span>
+      ) : null}
+    </span>
+  );
+}
+
+function RoofLine({
+  label,
+  scores,
+  categories,
+}: {
+  label: React.ReactNode;
+  scores?: Scores | null;
+  categories: { key: string; label: string }[];
+}) {
+  return (
+    <div className={`${ROOF_GRID} py-0.5`}>
+      <p className="text-[11px] sm:text-xs leading-tight text-[#6b6560]">{label}</p>
+      {categories.map((cat) => (
+        <BandCell key={cat.key} value={scores?.[cat.key]} small />
+      ))}
+      <span />
+    </div>
+  );
+}
+
+function RooftopRow({
+  r,
+  categories,
+}: {
+  r: Rooftop;
+  categories: { key: string; label: string }[];
+}) {
+  const t = r.timeline ?? {};
+  const before = t.before ?? null;
+  const after = t.after ?? null;
+  const monthly = (t.monthly ?? []).slice(-3);
+  // The row shows the Back Cover number once there is one, else the Before.
+  const shown = after ?? before;
+  const l = r.listing ?? null;
+  const status = l ? l.status || "Not found" : "";
+  const open = status.trim().toLowerCase() === "open";
+  const runs = [
+    before?.date ? `Before: ${pretty(before.date)}` : null,
+    after?.date ? `Back Cover: ${pretty(after.date)}` : null,
+    ...monthly.map((c) => (c.date ? `Monthly check: ${pretty(c.date)}` : null)),
+  ].filter(Boolean) as string[];
+  return (
+    <details className="border-t border-[#e8e0d8]/80 first:border-t-0">
+      <summary
+        className={`roof-row ${ROOF_GRID} cursor-pointer select-none px-2 sm:px-4 print:px-2 py-1.5 sm:py-2 print:py-[3px] hover:bg-[#faf8f5]`}
+      >
+        <span className="min-w-0 pr-1">
+          <span className="block text-[13px] sm:text-sm print:text-[10.5px] font-semibold leading-tight">
+            <span className="sm:hidden print:hidden">{r.short || r.name}</span>
+            <span className="hidden sm:inline print:inline">{r.name}</span>
+          </span>
+          {r.site ? (
+            <span className="hidden sm:block print:block text-[11px] print:text-[8px] leading-tight text-[#6b6560] truncate">
+              {r.site}
+            </span>
+          ) : null}
+        </span>
+        {categories.map((cat) => {
+          const a = after?.phone?.[cat.key];
+          const b = before?.phone?.[cat.key];
+          const delta =
+            typeof a === "number" && typeof b === "number" ? Math.round(a) - Math.round(b) : null;
+          return (
+            <BandCell
+              key={cat.key}
+              value={shown?.phone?.[cat.key]}
+              delta={after ? delta : null}
+              accent={!!after}
+            />
+          );
+        })}
+        <span
+          aria-hidden
+          className="roof-chevron justify-self-end text-[#7B9FE8] text-sm leading-none transition-transform"
+        >
+          &rsaquo;
+        </span>
+      </summary>
+      <div className="roof-detail bg-[#faf8f5]/70 border-t border-[#e8e0d8]/60 px-2 sm:px-4 py-3 text-sm leading-snug">
+        <p className="sm:hidden text-xs mb-2">
+          <span className="font-semibold">{r.name}</span>
+          {r.site ? <span className="text-[#6b6560]"> &middot; {r.site}</span> : null}
+        </p>
+        {shown ? (
+          <div>
+            {after && before ? (
+              <RoofLine label="Before, on a phone" scores={before.phone} categories={categories} />
+            ) : null}
+            {shown.computer ? (
+              <RoofLine label="On a computer" scores={shown.computer} categories={categories} />
+            ) : null}
+            {monthly.map((c, i) => (
+              <RoofLine
+                key={i}
+                label={`${monthLabel(c)} check, phone`}
+                scores={c.phone}
+                categories={categories}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-xs text-[#6b6560]">The first check has not run yet.</p>
+        )}
+        <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+          {l ? (
+            <div>
+              <p className="text-[11px] text-[#6b6560]">Google listing</p>
+              <p className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                <span className="font-semibold">{reviewLine(l)}</span>
+                {open ? (
+                  <span className="rounded-full bg-[#eef2fa] px-2 py-0.5 text-xs font-medium">
+                    Open
+                  </span>
+                ) : (
+                  <>
+                    <span className="text-xs font-medium">{status}</span>
+                    <span className={GAP_TAG}>Open gap</span>
+                  </>
+                )}
+                {l.hoursListed === false ? (
+                  <span className="text-xs font-medium">No hours on Google</span>
+                ) : null}
+              </p>
+              {l.address ? <p className="mt-0.5 text-xs text-[#6b6560]">{l.address}</p> : null}
+              {l.mapsUrl ? (
+                <p className="mt-1 text-xs">
+                  <a
+                    href={l.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold underline decoration-[#7B9FE8] decoration-2 underline-offset-4"
+                  >
+                    See on Google Maps
+                  </a>
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+          {r.aiPagesStatus ? (
+            <div>
+              <p className="text-[11px] text-[#6b6560]">
+                AI pages
+                {r.aiPagesChecked ? <> &middot; checked {pretty(r.aiPagesChecked)}</> : null}
+              </p>
+              <p className="mt-0.5">{r.aiPagesStatus}</p>
+            </div>
+          ) : null}
+        </div>
+        {runs.length ? (
+          <p className="mt-3 text-[11px] text-[#6b6560]">Google score runs. {runs.join(" · ")}</p>
+        ) : null}
+      </div>
+    </details>
+  );
+}
+
+function RooftopTable({
+  rooftops,
+  categories,
+}: {
+  rooftops: Rooftop[];
+  categories: { key: string; label: string }[];
+}) {
+  const stores = rooftops.filter((r) => r.kind !== "group");
+  const group = rooftops.filter((r) => r.kind === "group");
+  return (
+    <div className="mt-2 bg-white border border-[#e8e0d8] rounded-lg print:rounded-md overflow-hidden">
+      <div
+        className={`${ROOF_GRID} !items-end px-2 sm:px-4 print:px-2 py-2 print:py-1 border-b border-[#e8e0d8] text-[9px] sm:text-xs print:text-[8.5px] font-semibold leading-tight text-[#6b6560]`}
+      >
+        <p>
+          Site
+          <span className="roof-chevron font-normal"> &middot; tap a row for more</span>
+        </p>
+        {categories.map((cat) => (
+          <p key={cat.key} className="text-center hyphens-manual">
+            {ROOF_HEAD[cat.key] ?? cat.label}
+          </p>
+        ))}
+        <span />
+      </div>
+      {stores.map((r, i) => (
+        <RooftopRow key={`s${i}`} r={r} categories={categories} />
+      ))}
+      {group.length ? (
+        <p className="px-2 sm:px-4 print:px-2 py-1 print:py-0.5 bg-[#faf8f5] border-y border-[#e8e0d8]/80 text-[10px] print:text-[8px] font-semibold uppercase tracking-[0.06em] text-[#6b6560]">
+          Group sites
+        </p>
+      ) : null}
+      {group.map((r, i) => (
+        <RooftopRow key={`g${i}`} r={r} categories={categories} />
+      ))}
+    </div>
+  );
+}
+
 export default async function ScoresPage({
   params,
 }: {
@@ -367,7 +639,14 @@ export default async function ScoresPage({
   const categories = data.categories?.length ? data.categories : DEFAULT_CATEGORIES;
   const timeline = data.timeline ?? null;
   // With a timeline, the footnote's Lighthouse versions come from its columns.
-  const columns = timeline
+  const rooftops = data.rooftops?.length ? data.rooftops : null;
+  const columns = rooftops
+    ? (rooftops.flatMap((r) => [
+        r.timeline?.before,
+        r.timeline?.after,
+        ...(r.timeline?.monthly ?? []),
+      ]).filter(Boolean) as Column[])
+    : timeline
     ? ([timeline.before, timeline.after, ...(timeline.monthly ?? [])].filter(Boolean) as Column[])
     : (data.columns ?? []);
   const last = columns.length - 1;
@@ -431,7 +710,7 @@ export default async function ScoresPage({
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <SectionTitle>Google&apos;s scores, on a phone</SectionTitle>
             {/* Wade 11/15: the status lives here, so the tile labels stay short. */}
-            {timeline ? (
+            {timeline || rooftops ? (
               <p className="flex items-center gap-1.5 text-xs print:text-[9.5px] text-[#6b6560]">
                 <span
                   aria-hidden
@@ -449,7 +728,7 @@ export default async function ScoresPage({
                 )}
               </p>
             ) : null}
-            {columns.length && !timeline ? (
+            {columns.length && !timeline && !rooftops ? (
               <p className="text-[#6b6560] text-xs print:text-[9.5px]">
                 {columns.map((c, i) => (
                   <span key={i}>
@@ -464,7 +743,9 @@ export default async function ScoresPage({
             ) : null}
           </div>
 
-          {timeline ? (
+          {rooftops ? (
+            <RooftopTable rooftops={rooftops} categories={categories} />
+          ) : timeline ? (
             <TimelineTiles timeline={timeline} categories={categories} />
           ) : columns.length === 0 ? (
             <p className={`${CARD} mt-2 text-sm text-[#6b6560]`}>
@@ -541,6 +822,31 @@ export default async function ScoresPage({
               })}
             </div>
           )}
+          {rooftops ? (
+            <p className="mt-2 print:mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] leading-snug text-[#6b6560] print:text-[8.5px]">
+              <span>The colors are Google&apos;s own bands:</span>
+              {(
+                [
+                  ["0-49", BANDS.low],
+                  ["50-89", BANDS.mid],
+                  ["90-100", BANDS.high],
+                ] as const
+              ).map(([label, b]) => (
+                <span
+                  key={label}
+                  className={`rounded px-1.5 py-0.5 font-semibold tabular-nums ${b.bg} ${b.text}`}
+                >
+                  {label}
+                </span>
+              ))}
+              {live ? (
+                <span>
+                  <span className="font-semibold text-[#3F63C7]">Blue numbers</span> are with the
+                  Back Cover, with the change from Before.
+                </span>
+              ) : null}
+            </p>
+          ) : null}
           <p className="mt-2 text-[11px] leading-snug text-[#6b6560] print:text-[8.5px] print:mt-1.5">
             {timeline && !timeline.before && timeline.beforeNote ? (
               <>{timeline.beforeNote} </>
@@ -548,11 +854,19 @@ export default async function ScoresPage({
             Scores run from 0 to 100. Higher is better.
             {data.source ? <> {data.source}</> : null}
             {versions.length ? <> Lighthouse version {versions.join(", ")}.</> : null}
+            {rooftops && listing?.locations?.length ? (
+              <span className="print:hidden">
+                {" "}
+                Each store&apos;s Google listing is inside its row
+                {listing.source ? <>, from {listing.source}</> : null}
+                {listing.checked ? <>, checked {pretty(listing.checked)}</> : null}.
+              </span>
+            ) : null}
           </p>
         </section>
 
         {/* Your Google listing: Google's own facts per location. Optional. */}
-        {listing ? (
+        {listing && !rooftops ? (
           <section className="mt-5 print:mt-3">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <SectionTitle>Your Google listing</SectionTitle>
