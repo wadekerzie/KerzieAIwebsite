@@ -98,7 +98,7 @@
  ],
  "columns": [
   {
-   "label": "With Kerzie AI",
+   "label": "With Back Cover",
    "date": "2026-10-26",
    "lighthouse": "13.5.0",
    "phone": {
@@ -133,7 +133,7 @@
  "timeline": {
   "before": null,
   "after": {
-   "label": "With Kerzie AI",
+   "label": "With Back Cover",
    "date": "2026-10-26",
    "lighthouse": "13.5.0",
    "phone": {

@@ -85,7 +85,7 @@
  ],
  "columns": [
   {
-   "label": "Before Kerzie AI",
+   "label": "Before Back Cover",
    "date": "2026-10-19",
    "lighthouse": "13.5.0",
    "phone": {
@@ -100,7 +100,7 @@
  ],
  "timeline": {
   "before": {
-   "label": "Before Kerzie AI",
+   "label": "Before Back Cover",
    "date": "2026-10-19",
    "lighthouse": "13.5.0",
    "phone": {

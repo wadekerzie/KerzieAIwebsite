@@ -228,7 +228,7 @@ function PairSlot({
   strong?: boolean;
   accent?: boolean;
 }) {
-  // The "With Kerzie AI" slot is set in WITH_BLUE end to end (label, number,
+  // The "With Back Cover" slot is set in WITH_BLUE end to end (label, number,
   // date, pending text) so it stands apart from the navy/gray "Before" slot.
   const small = accent ? "text-[#3F63C7]" : "text-[#6b6560]";
   const big = accent ? "text-[#3F63C7]" : strong ? "text-[#1a1a2e]" : "text-[#6b6560]";
@@ -306,14 +306,14 @@ function TimelineTiles({
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-[auto_auto] sm:justify-between print:grid-cols-[auto_auto] print:justify-between gap-x-1">
               <PairSlot
-                title="Before Kerzie AI"
+                title="Before Back Cover"
                 column={before}
                 catKey={cat.key}
                 pending="Not measured"
                 strong={!after}
               />
               <PairSlot
-                title="With Kerzie AI"
+                title="With Back Cover"
                 column={after}
                 catKey={cat.key}
                 pending={pending}
