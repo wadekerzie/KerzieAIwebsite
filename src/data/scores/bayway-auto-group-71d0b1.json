@@ -1,0 +1,447 @@
+{
+ "slug": "bayway-auto-group-71d0b1",
+ "business": "Bayway Auto Group",
+ "site": "8 sites, 6 rooftops",
+ "updated": "2026-11-15",
+ "stage": "before",
+ "aiPages": [
+  {
+   "name": "Identity page",
+   "path": "/llms.txt",
+   "what": "Who each store is: address, hours, departments, how to reach sales and service.",
+   "status": "Built for every site at signing",
+   "lastRefresh": null
+  },
+  {
+   "name": "Inventory page",
+   "path": "/llms-full.txt",
+   "what": "Every new and used vehicle with price, miles, color and link, rebuilt every morning from each store's vAuto feed.",
+   "status": "Built for every site at signing",
+   "lastRefresh": null
+  }
+ ],
+ "logUrl": null,
+ "fixed": [],
+ "next": [
+  {
+   "what": "Give Bayway Buys Cars its AI pages: it has none today, and Google's AI readiness reads 16",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Rebuild each store's inventory page from its vAuto feed with price, miles and color on every vehicle",
+   "who": "Kerzie AI"
+  },
+  {
+   "what": "Fix what Google flags on Cadillac Southwest and Chrysler Dodge Jeep Ram, the two rooftops lowest on AI readiness",
+   "who": "Kerzie AI, with DealerOn"
+  }
+ ],
+ "chatgpt": {
+  "status": "Not checked yet; we check each rooftop at kickoff",
+  "claimed": false,
+  "why": "ChatGPT now shows a business profile card for local businesses. It is part of your Back Cover.",
+  "yourStep": "Claim each store's free profile with our steps and add us as a teammate in the same sitting.",
+  "monitoring": "Until each one is claimed, we check it every month and show it here as an open gap.",
+  "numbers": null
+ },
+ "googleListing": {
+  "checked": "2026-11-15",
+  "source": "Google Maps (Google Places API)",
+  "locations": [
+   {
+    "name": "Bayway Chevrolet",
+    "address": "5719 W Broadway St, Pearland, TX 77581, USA",
+    "rating": 4.4,
+    "reviews": 2692,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=14033150231701453930&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Bayway Cadillac of The Woodlands",
+    "address": "16785 I-45 Suite 101, The Woodlands, TX 77385, USA",
+    "rating": 4.6,
+    "reviews": 2184,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=16222795035862031646&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Bayway Cadillac Southwest",
+    "address": "10150 Southwest Fwy, Houston, TX 77074, USA",
+    "rating": 4.5,
+    "reviews": 4235,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=4593712745372339301&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Bayway Lincoln",
+    "address": "12333 Gulf Fwy, Houston, TX 77034, USA",
+    "rating": 4.7,
+    "reviews": 3222,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=2799708627600091089&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Bayway Kia",
+    "address": "11711 Gulf Fwy, Houston, TX 77034, USA",
+    "rating": 4.1,
+    "reviews": 4545,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=12478487047796583823&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   {
+    "name": "Bayway Chrysler Dodge Jeep RAM",
+    "address": "4000 Pasadena Fwy, Pasadena, TX 77503, USA",
+    "rating": 4.7,
+    "reviews": 7076,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=5492720597652444644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   }
+  ],
+  "note": null
+ },
+ "nextCheck": "At signing, then monthly",
+ "cadence": "monthly",
+ "categories": [
+  {
+   "key": "performance",
+   "label": "Speed"
+  },
+  {
+   "key": "accessibility",
+   "label": "Accessibility"
+  },
+  {
+   "key": "best-practices",
+   "label": "Best practices"
+  },
+  {
+   "key": "seo",
+   "label": "SEO"
+  },
+  {
+   "key": "agentic-browsing",
+   "label": "AI readiness"
+  }
+ ],
+ "rooftops": [
+  {
+   "name": "Bayway Chevrolet",
+   "short": "Chevrolet",
+   "site": "baywaychevrolet.com",
+   "kind": "rooftop",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 57,
+      "accessibility": 99,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 100
+     },
+     "computer": {
+      "performance": 70,
+      "accessibility": 93,
+      "best-practices": 73,
+      "seo": 100,
+      "agentic-browsing": 75
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": {
+    "name": "Bayway Chevrolet",
+    "address": "5719 W Broadway St, Pearland, TX 77581, USA",
+    "rating": 4.4,
+    "reviews": 2692,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=14033150231701453930&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   "aiPagesStatus": "Found, made by your website platform. 618 vehicle links; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Cadillac of The Woodlands",
+   "short": "Cadillac Woodlands",
+   "site": "baywaycadillacofthewoodlands.com",
+   "kind": "rooftop",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 30,
+      "accessibility": 96,
+      "best-practices": 92,
+      "seo": 92,
+      "agentic-browsing": 100
+     },
+     "computer": {
+      "performance": 50,
+      "accessibility": 96,
+      "best-practices": 88,
+      "seo": 92,
+      "agentic-browsing": 100
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": {
+    "name": "Bayway Cadillac of The Woodlands",
+    "address": "16785 I-45 Suite 101, The Woodlands, TX 77385, USA",
+    "rating": 4.6,
+    "reviews": 2184,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=16222795035862031646&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   "aiPagesStatus": "Found, made by your website platform. 997 vehicle links; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Cadillac Southwest",
+   "short": "Cadillac Southwest",
+   "site": "baywaycadillacsouthwest.com",
+   "kind": "rooftop",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 12,
+      "accessibility": 99,
+      "best-practices": 92,
+      "seo": 100,
+      "agentic-browsing": 57
+     },
+     "computer": {
+      "performance": 40,
+      "accessibility": 96,
+      "best-practices": 88,
+      "seo": 100,
+      "agentic-browsing": 71
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": {
+    "name": "Bayway Cadillac Southwest",
+    "address": "10150 Southwest Fwy, Houston, TX 77074, USA",
+    "rating": 4.5,
+    "reviews": 4235,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=4593712745372339301&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   "aiPagesStatus": "Found, made by your website platform. 1,027 vehicle links; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Lincoln",
+   "short": "Lincoln",
+   "site": "baywaylincoln.com",
+   "kind": "rooftop",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 31,
+      "accessibility": 94,
+      "best-practices": 92,
+      "seo": 92,
+      "agentic-browsing": 100
+     },
+     "computer": {
+      "performance": 54,
+      "accessibility": 97,
+      "best-practices": 92,
+      "seo": 92,
+      "agentic-browsing": 100
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": {
+    "name": "Bayway Lincoln",
+    "address": "12333 Gulf Fwy, Houston, TX 77034, USA",
+    "rating": 4.7,
+    "reviews": 3222,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=2799708627600091089&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   "aiPagesStatus": "Found, made by your website platform. 457 vehicle links; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Kia",
+   "short": "Kia",
+   "site": "baywaykia.com",
+   "kind": "rooftop",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 28,
+      "accessibility": 99,
+      "best-practices": 96,
+      "seo": 92,
+      "agentic-browsing": 99
+     },
+     "computer": {
+      "performance": 48,
+      "accessibility": 96,
+      "best-practices": 92,
+      "seo": 92,
+      "agentic-browsing": 70
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": {
+    "name": "Bayway Kia",
+    "address": "11711 Gulf Fwy, Houston, TX 77034, USA",
+    "rating": 4.1,
+    "reviews": 4545,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=12478487047796583823&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   "aiPagesStatus": "Found, made by your website platform. 340 vehicle links; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Chrysler Dodge Jeep Ram",
+   "short": "CDJR",
+   "site": "baywaychryslerdodgejeepram.com",
+   "kind": "rooftop",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 27,
+      "accessibility": 93,
+      "best-practices": 54,
+      "seo": 100,
+      "agentic-browsing": 71
+     },
+     "computer": {
+      "performance": 38,
+      "accessibility": 82,
+      "best-practices": 50,
+      "seo": 100,
+      "agentic-browsing": 38
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": {
+    "name": "Bayway Chrysler Dodge Jeep RAM",
+    "address": "4000 Pasadena Fwy, Pasadena, TX 77503, USA",
+    "rating": 4.7,
+    "reviews": 7076,
+    "status": "Open",
+    "hoursListed": true,
+    "mapsUrl": "https://maps.google.com/?cid=5492720597652444644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+   },
+   "aiPagesStatus": "Found, made by your website platform. 558 vehicle links; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Buys Cars",
+   "short": "Buys Cars",
+   "site": "baywaybuyscars.com",
+   "kind": "group",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 53,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 83,
+      "agentic-browsing": 16
+     },
+     "computer": {
+      "performance": 69,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 83,
+      "agentic-browsing": 8
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": null,
+   "aiPagesStatus": "Missing: no identity page and no vehicle page.",
+   "aiPagesChecked": "2026-11-15"
+  },
+  {
+   "name": "Bayway Auto Group",
+   "short": "Group site",
+   "site": "baywayautogroup.com",
+   "kind": "group",
+   "timeline": {
+    "before": {
+     "label": "Before",
+     "date": "2026-11-15",
+     "lighthouse": "13.6.0",
+     "phone": {
+      "performance": 54,
+      "accessibility": 99,
+      "best-practices": 96,
+      "seo": 85,
+      "agentic-browsing": 100
+     },
+     "computer": {
+      "performance": 93,
+      "accessibility": 96,
+      "best-practices": 92,
+      "seo": 85,
+      "agentic-browsing": 75
+     }
+    },
+    "after": null,
+    "monthly": [],
+    "pendingLabel": "To be completed"
+   },
+   "listing": null,
+   "aiPagesStatus": "Found, made by your website platform. 2,842 vehicle links across the group; most list no price or miles.",
+   "aiPagesChecked": "2026-11-15"
+  }
+ ],
+ "source": "Google PageSpeed Insights (Lighthouse), run by Kerzie AI on the dates shown."
+}
