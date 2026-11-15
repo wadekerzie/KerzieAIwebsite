@@ -25,6 +25,10 @@
   {
    "what": "Your identity and programs pages are live for ChatGPT and other AI assistants, replacing your SEO plugin's automatic link list",
    "who": "Kerzie AI"
+  },
+  {
+   "what": "Gave your logo a description on all 21 places it appears, so AI agents and screen readers can name your home link (AI readiness and SEO now 100)",
+   "who": "Kerzie AI"
   }
  ],
  "next": [
@@ -37,8 +41,8 @@
    "who": "Kerzie AI"
   },
   {
-   "what": "Add descriptions to images and names to links that Google's accessibility check flags",
-   "who": "Kerzie AI"
+   "what": "Darken the text on some buttons and headings so it is easier to read (a color choice for you or your web person)",
+   "who": "your web person"
   }
  ],
  "chatgpt": {
@@ -123,17 +127,17 @@
    "lighthouse": "13.6.0",
    "phone": {
     "performance": 97,
-    "accessibility": 87,
+    "accessibility": 96,
     "best-practices": 100,
-    "seo": 92,
-    "agentic-browsing": 67
+    "seo": 100,
+    "agentic-browsing": 100
    },
    "computer": {
     "performance": 100,
-    "accessibility": 84,
+    "accessibility": 93,
     "best-practices": 100,
-    "seo": 92,
-    "agentic-browsing": 67
+    "seo": 100,
+    "agentic-browsing": 100
    }
   }
  ],
@@ -163,17 +167,17 @@
    "lighthouse": "13.6.0",
    "phone": {
     "performance": 97,
-    "accessibility": 87,
+    "accessibility": 96,
     "best-practices": 100,
-    "seo": 92,
-    "agentic-browsing": 67
+    "seo": 100,
+    "agentic-browsing": 100
    },
    "computer": {
     "performance": 100,
-    "accessibility": 84,
+    "accessibility": 93,
     "best-practices": 100,
-    "seo": 92,
-    "agentic-browsing": 67
+    "seo": 100,
+    "agentic-browsing": 100
    }
   },
   "monthly": [],
