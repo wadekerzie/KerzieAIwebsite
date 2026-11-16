@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-16",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 3,
+      "removed": 0,
+      "price_changed": 0,
+      "total": 317,
+      "ran_at": "7:40 AM CT",
+      "note": "Three vehicles joined the list today and none came off, bringing the total to 317. No price changes today. Confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-15",
       "status": "ok",
       "kind": "refresh",
