@@ -2,21 +2,21 @@
  "slug": "oak-tree-behavioral-c45540",
  "business": "Oak Tree Behavioral Services",
  "site": "oaktreebehavioral.com",
- "updated": "2026-11-13",
+ "updated": "2026-11-18",
  "stage": "before",
  "aiPages": [
   {
    "name": "Identity page",
    "path": "/llms.txt",
    "what": "Who you are: your offices, your clinicians, the insurance you take, how to book.",
-   "status": "Starts when setup is paid",
+   "status": "Starts when we have site access",
    "lastRefresh": null
   },
   {
    "name": "Services page",
    "path": "/llms-full.txt",
    "what": "Every service at each office, who it is for, and its page on your site.",
-   "status": "Starts when setup is paid",
+   "status": "Starts when we have site access",
    "lastRefresh": null
   }
  ],
