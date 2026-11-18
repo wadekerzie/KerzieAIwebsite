@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-18",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 4,
+      "price_changed": 31,
+      "total": 315,
+      "ran_at": "10:30 AM CT",
+      "note": "Two vehicles joined the list today and four came off, bringing the total to 315. New arrivals include a 2019 Chevrolet Silverado 1500 LT and a 2026 GMC Sierra HD 2500HD AT4. A batch of price changes landed today across 31 vehicles. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-17",
       "status": "ok",
       "kind": "refresh",
