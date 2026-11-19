@@ -3,6 +3,17 @@
   "dealer": "Shortline Buick GMC",
   "entries": [
     {
+      "date": "2026-11-19",
+      "status": "ok",
+      "kind": "refresh",
+      "added": 2,
+      "removed": 4,
+      "price_changed": 26,
+      "total": 313,
+      "ran_at": "11:00 AM CT",
+      "note": "Two vehicles joined the list today and four came off, bringing the total to 313. New arrivals include a 2021 Chevrolet Silverado 1500 LT Trail Boss and a 2021 Mercedes-Benz C-Class C300 4MATIC. A batch of price changes landed today across 26 vehicles. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
+    },
+    {
       "date": "2026-11-18",
       "status": "ok",
       "kind": "refresh",
