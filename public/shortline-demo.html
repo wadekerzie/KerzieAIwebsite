@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shortline Post Demo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: a top-to-bottom story. 1 the photos as they landed. 2 sorted and picked. 3 the car's facts. 4 what the OS did. 5 three channel drafts waiting for one tap. */
+:root{
+  --bg:#F5F6F9; --surface:#FFFFFF; --ink:#1A1B2E; --soft:#4A5068; --line:#D9DCE6;
+  --blue:#2B5D96; --coral:#B04E2B; --ok:#2E7D4F; --okbg:#E6F2EA; --flag:#B04E2B;
+  --display:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --text:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#13141F; --surface:#1D1F2E; --ink:#ECEEF5; --soft:#A8AEC4; --line:#33364A;
+  --blue:#7FA9DB; --coral:#E89A7C; --ok:#7FCB9C; --okbg:#1E3328; --flag:#E89A7C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#13141F; --surface:#1D1F2E; --ink:#ECEEF5; --soft:#A8AEC4; --line:#33364A;
+  --blue:#7FA9DB; --coral:#E89A7C; --ok:#7FCB9C; --okbg:#1E3328; --flag:#E89A7C; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--text);font-size:16px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-block:40px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:48px}
+header{display:flex;flex-direction:column;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+.brand img{width:28px;height:28px;border-radius:7px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin:0}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1.04;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,3.4vw,36px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{font-size:18px;color:var(--soft);max-width:64ch;margin:0}
+.band{display:flex;flex-direction:column;gap:20px}
+.band-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.band-head .step{font-family:var(--display);font-size:36px;color:var(--coral);line-height:1}
+.sub{margin:0;color:var(--soft);max-width:70ch}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.landed{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:4px}
+.landed img,.thumbs-s img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:4px}
+.grp{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:start;padding:14px 0;border-top:1px solid var(--line)}
+.grp:first-child{border-top:none;padding-top:0}
+.glabel{margin:0;font-size:15px;color:var(--soft)} .glabel b{display:block;color:var(--ink);font-size:16px}
+.thumbs-s{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:4px}
+.thumbs-s img.rep{outline:3px solid var(--flag);outline-offset:-3px;opacity:.75}
+.key{display:flex;gap:24px;flex-wrap:wrap;font-size:14px;color:var(--soft);margin:16px 0 0}
+.key span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px;vertical-align:-1px;border:3px solid var(--flag)}
+.picked{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.picked figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.picked img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block}
+.picked figcaption{font-size:14px;color:var(--soft)} .picked figcaption b{color:var(--ink)}
+.listing{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:center}
+.listing img{width:100%;border-radius:10px;display:block}
+.listing h3{font-size:22px;margin:0 0 6px;font-weight:600}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:16px 0;font-size:15px}
+.facts dt{color:var(--soft)} .facts dd{margin:0;font-variant-numeric:tabular-nums}
+.src{font-size:13px;color:var(--soft);margin:0} .src a{color:var(--blue)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.steps div{border-top:3px solid var(--blue);padding-top:14px}
+.steps b{display:block;font-size:16px;margin-bottom:4px}
+.steps p{margin:0;color:var(--soft);font-size:15px}
+.posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.chan{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);padding:12px 14px;border-bottom:1px solid var(--line)}
+.who{display:flex;align-items:center;gap:10px;padding:12px 14px 8px}
+.av{width:34px;height:34px;border-radius:50%;background:#C8102E;color:#fff;display:grid;place-items:center;font-weight:600;font-size:15px;flex:none}
+.who b{font-size:14px;display:block;line-height:1.2} .who span{font-size:12px;color:var(--soft)}
+.cap{padding:4px 14px 12px;font-size:14px;white-space:pre-line}
+.tags{color:var(--blue)}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.grid4 img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.wide{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.carousel{position:relative}
+.count{position:absolute;top:10px;right:10px;background:rgba(20,20,30,.72);color:#fff;font-size:12px;font-weight:600;border-radius:999px;padding:3px 9px}
+.dots{display:flex;justify-content:center;gap:5px;padding:10px 0 2px}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--line)} .dots i:first-child{background:var(--blue)}
+.linkcard{border-top:1px solid var(--line);padding:10px 14px;font-size:13px;color:var(--soft)}
+.linkcard b{display:block;color:var(--ink);font-size:14px}
+.cta{margin:4px 14px 12px;align-self:flex-start;border:1px solid var(--blue);color:var(--blue);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600}
+.approve{margin-top:auto;border-top:1px solid var(--line);padding:12px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.approve button{font:inherit;font-size:14px;font-weight:600;border-radius:999px;padding:8px 16px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--ink)}
+.approve button.yes{background:var(--blue);border-color:var(--blue);color:var(--surface)}
+.approve button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.approve .done{display:none;font-size:14px;font-weight:600;color:var(--ok);background:var(--okbg);border-radius:999px;padding:8px 14px}
+.post.is-approved .approve button{display:none} .post.is-approved .approve .done{display:inline-block}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;font-size:15px;color:var(--soft)}
+.note b{color:var(--ink)}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--soft);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:860px){.listing,.steps,.posts,.picked{grid-template-columns:minmax(0,1fr)}.grp{grid-template-columns:minmax(0,1fr);gap:8px}}
+@media (prefers-reduced-motion:no-preference){.post{transition:box-shadow .2s} .post.is-approved{box-shadow:0 0 0 2px var(--ok)}}
+</style>
+<style>
+html,body{margin:0}
+.backlink{max-width:1180px;margin:0 auto;padding-top:16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));font-size:14px}
+.backlink a{color:var(--blue);font-weight:600;text-decoration:none}
+.backlink a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<p class="backlink"><a href="/shortline#4">&#8592; Back to the presentation</a></p>
+
+<div class="wrap">
+<header>
+  <div class="brand"><img src="/shortline-demo/kerzie_icon.png" alt="">Oscar by Kerzie AI</div>
+  <p class="eyebrow">Prepared for Danny Madigan and Roger, Shortline Buick GMC</p>
+  <h1>61 photos in. Three posts out.</h1>
+  <p class="lede">We took one car from your website on Tuesday, November 17, the cherry red 2026 Enclave, and all 61 photos your team took of that one car. This is what Oscar by Kerzie AI would do with every car on your lot. It's a mock-up. Nothing was posted.</p>
+</header>
+
+<section class="band" aria-labelledby="landed">
+  <div class="band-head"><span class="step">1</span><h2 id="landed">The photos, as they landed</h2></div>
+  <p class="sub">All 61, in the order they sit on your site today. The outside shots don't start until photo 10. On go-live, these come from your lot person's phone into one shared folder.</p>
+  <div class="panel"><div class="landed"><img src="/shortline-demo/lot/t1.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t2.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t3.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t4.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t5.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t6.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t7.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t8.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t9.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t10.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t11.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t12.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t13.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t14.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t15.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t16.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t17.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t18.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t19.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t20.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t21.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t22.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t23.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t24.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t25.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t26.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t27.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t28.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t29.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t30.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t31.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t32.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t33.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t34.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t35.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t36.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t37.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t38.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t39.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t40.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t41.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t42.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t43.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t44.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t45.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t46.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t47.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t48.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t49.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t50.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t51.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t52.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t53.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t54.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t55.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t56.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t57.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t58.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t59.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t60.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t61.jpg" alt="" loading="lazy"></div></div>
+</section>
+
+<section class="band" aria-labelledby="sorted">
+  <div class="band-head"><span class="step">2</span><h2 id="sorted">Sorted, checked and picked</h2></div>
+  <p class="sub">Oscar by Kerzie AI puts every car's photos in the same order: outside first, then inside, then tech, then under the hood. It flags near-repeats for your team to keep or drop. It crops for each channel and never changes the car: no fake backgrounds, no retouching.</p>
+  <div class="panel">
+<div class="grp"><p class="glabel"><b>Outside</b> 10</p><div class="thumbs-s"><img src="/shortline-demo/lot/t10.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t11.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t12.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t13.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t15.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t14.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t16.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t17.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t18.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t19.jpg" alt="" loading="lazy"></div></div>
+<div class="grp"><p class="glabel"><b>Inside</b> 22</p><div class="thumbs-s"><img src="/shortline-demo/lot/t2.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t31.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t26.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t27.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t28.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t29.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t30.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t20.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t21.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t22.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t23.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t24.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t25.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t32.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t33.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t6.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t7.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t53.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t54.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t55.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t56.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t57.jpg" alt="" loading="lazy"></div></div>
+<div class="grp"><p class="glabel"><b>Tech and screens</b> 26</p><div class="thumbs-s"><img src="/shortline-demo/lot/t9.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t34.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t35.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t36.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t39.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t3.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t5.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t4.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t8.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t37.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t38.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t40.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t41.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t42.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t43.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t44.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t45.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t46.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t47.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t48.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t49.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t50.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t51.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t52.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t58.jpg" alt="" loading="lazy"><img class="rep" src="/shortline-demo/lot/t59.jpg" alt="" loading="lazy"></div></div>
+<div class="grp"><p class="glabel"><b>Under the hood</b> 2</p><div class="thumbs-s"><img src="/shortline-demo/lot/t60.jpg" alt="" loading="lazy"><img src="/shortline-demo/lot/t61.jpg" alt="" loading="lazy"></div></div>
+    <p class="key"><span>7 near-repeats flagged (the camera-view screens and two dash shots). Your team keeps or drops them.</span></p>
+  </div>
+  <div class="picked">
+    <figure><img src="/shortline-demo/lot/p10.jpg" alt="Cherry red Enclave, front three-quarter view on the Shortline lot"><figcaption><b>Leads every post.</b> The whole car, front three-quarter, on your lot.</figcaption></figure>
+    <figure><img src="/shortline-demo/lot/p12.jpg" alt="Enclave from the other front corner"><figcaption><b>Google profile.</b> Clean side view, the whole car in frame.</figcaption></figure>
+    <figure><img src="/shortline-demo/lot/p2.jpg" alt="Front leather seats"><figcaption><b>Inside.</b> The leather seats the write-up talks about.</figcaption></figure>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="car">
+  <div class="band-head"><span class="step">3</span><h2 id="car">The car, read from your inventory</h2></div>
+  <div class="panel listing">
+    <img src="/shortline-demo/lot/p11.jpg" alt="Enclave from the front, Shortline plate">
+    <div>
+      <h3>New 2026 Buick Enclave Sport Touring AWD</h3>
+      <dl class="facts">
+        <dt>Color</dt><dd>Cherry Red Tintcoat</dd>
+        <dt>Listed at</dt><dd>$55,799</dd>
+        <dt>Stock</dt><dd>260519</dd>
+        <dt>Engine</dt><dd>2.5L 4-cylinder, all-wheel drive</dd>
+        <dt>From your write-up</dt><dd>Leather seats, heated steering wheel, Bose sound, remote start, Apple CarPlay and Android Auto</dd>
+      </dl>
+      <p class="src">Source: <a href="https://www.shortlinebuickgmc.com/new-Aurora-2026-Buick-Enclave-Sport%20Touring-5GAEVBKS9TJ400169" target="_blank" rel="noopener">your vehicle page</a>, read November 17. Photos are your team's.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="built">
+  <div class="band-head"><span class="step">4</span><h2 id="built">What Oscar by Kerzie AI did with it</h2></div>
+  <div class="steps">
+    <div><b>Sorted the photos</b><p>Same order on every car, near-repeats flagged, the best shot picked to lead.</p></div>
+    <div><b>Read the car</b><p>Pulled the details and price straight from your inventory. No retyping.</p></div>
+    <div><b>Wrote for each channel</b><p>Facebook, Instagram and your Google profile, built only from your own write-up, in your own style.</p></div>
+    <div><b>Sent it to Roger</b><p>The drafts land on his phone. One tap sends, or he fixes a word first. Nothing goes out without a person.</p></div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="out">
+  <div class="band-head"><span class="step">5</span><h2 id="out">Ready for one tap</h2></div>
+  <div class="posts">
+    <article class="post" id="post-fb">
+      <div class="chan">Facebook post · draft</div>
+      <div class="who"><div class="av">S</div><div><b>Shortline Buick GMC</b><span>Draft for 9:00 AM</span></div></div>
+      <p class="cap">All-weather confidence meets premium comfort. ❄️
+
+This New 2026 Buick Enclave Sport Touring in Cherry Red Tintcoat pairs all-wheel drive with leather seats, a heated steering wheel, Bose sound and remote start, plus Apple CarPlay and Android Auto. From the commute through Aurora to a weekend in the mountains, it's ready for whatever Colorado brings.
+🔗 <span class="tags">shortlinebuickgmc.com</span>
+
+<span class="tags">#colorado #denver #aurora #auto #cars #buick #buickenclave #newcars</span></p>
+      <div class="grid4">
+        <img src="/shortline-demo/lot/p10.jpg" alt=""><img src="/shortline-demo/lot/p15.jpg" alt=""><img src="/shortline-demo/lot/p2.jpg" alt=""><img src="/shortline-demo/lot/p26.jpg" alt="">
+      </div>
+      <div class="linkcard">shortlinebuickgmc.com<b>New 2026 Buick Enclave Sport Touring AWD</b></div>
+      <div class="approve"><button class="yes" type="button">Approve</button><button type="button">Edit</button><span class="done">Approved · goes out at 9:00 AM</span></div>
+    </article>
+
+    <article class="post" id="post-ig">
+      <div class="chan">Instagram carousel · draft</div>
+      <div class="who"><div class="av">S</div><div><b>Shortline Buick GMC</b><span>Aurora, Colorado</span></div></div>
+      <div class="carousel"><img class="wide" src="/shortline-demo/lot/p10.jpg" alt=""><span class="count">1/8</span></div>
+      <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="cap">Take a look at the new 2026 Buick Enclave Sport Touring in Cherry Red at Shortline Buick. All-wheel drive, a heated steering wheel and Bose sound for the Colorado winter. We have something for everyone.
+<span class="tags">#buick #BuickEnclave #SUV</span>
+
+Shop Buick Enclave online at: <span class="tags">shortlinebuickgmc.com</span></p>
+      <div class="approve"><button class="yes" type="button">Approve</button><button type="button">Edit</button><span class="done">Approved · goes out at 12:00 PM</span></div>
+    </article>
+
+    <article class="post" id="post-gbp">
+      <div class="chan">Google Business Profile · draft</div>
+      <div class="who"><div class="av">S</div><div><b>Shortline Buick GMC</b><span>Update · New arrival</span></div></div>
+      <img class="wide" src="/shortline-demo/lot/p12.jpg" alt="">
+      <p class="cap">New arrival at Shortline Buick GMC: the 2026 Buick Enclave Sport Touring AWD in Cherry Red Tintcoat. Leather seats, heated steering wheel, Bose audio, remote start, Apple CarPlay and Android Auto. Listed at $55,799, stock 260519. We have something for everyone.</p>
+      <span class="cta">Learn more</span>
+      <div class="approve"><button class="yes" type="button">Approve</button><button type="button">Edit</button><span class="done">Approved · goes out at 9:00 AM</span></div>
+    </article>
+  </div>
+</section>
+
+<div class="note"><b>Written the way your pages already sound.</b> We read your recent Facebook and Instagram posts and matched them: the short headline with an emoji, the Colorado line, the link and your hashtags on Facebook; "Take a look at..." and "We have something for everyone." on Instagram. <b>Every fact comes from your own listing.</b> If your write-up doesn't say it, the post doesn't either. Your team's own posts, like the "Welcome to the Shortline Family" delivery photos, go through the same approval and schedule. Try the Approve buttons: that's the whole job for Roger.</div>
+
+<footer><span>Oscar by Kerzie AI · Kerzie AI Solutions · kerzie.ai</span><span>Mock-up, November 17, 2026. Nothing was posted.</span></footer>
+</div>
+
+<script>
+document.querySelectorAll('.post').forEach(function(post){
+  var yes = post.querySelector('button.yes');
+  var edit = post.querySelector('button:not(.yes)');
+  var cap = post.querySelector('.cap');
+  yes.addEventListener('click', function(){ post.classList.add('is-approved'); cap.removeAttribute('contenteditable'); });
+  edit.addEventListener('click', function(){ cap.setAttribute('contenteditable','true'); cap.focus(); edit.textContent = 'Editing…'; });
+});
+</script>
+</body>
+</html>
