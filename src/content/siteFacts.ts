@@ -47,6 +47,11 @@ export const usd = (n: number) => `$${n.toLocaleString("en-US")}`;
 // 2026-11-03). The working session is the entry step; the implementation is
 // thirty days; the Founders rate applies to commitments made in that year.
 // Pages that spell these out in prose read from here.
+//
+// RENAMED 2026-11-21 (Wade): the paid offer is "Oscar by Kerzie AI". Same
+// numbers. One Window stays as the windshield (the screen you drive it from)
+// and as the name of the free do-it-yourself download. The constant keeps its
+// name because the numbers did not change.
 export const ONE_WINDOW = {
   workingSessionPrice: 1000,
   workingSessionHours: 2,
@@ -87,22 +92,24 @@ export const OFFERS: Offer[] = [
     // it rolls into the implementation price.
     key: "working-session",
     name: "The Working Session",
-    path: "/services/implementation#start",
+    path: "/oscar#start",
     price: ONE_WINDOW.workingSessionPrice,
     priceLabel: `${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you say no`,
     summary:
-      `The entry step to One Window for your business. Two hours in which we learn how you run the business today: the platforms, the tools, how marketing and customer contact work. Then we come back with a recorded demo, about ten minutes, of your business running on One Window. That demo is your go or no-go. You agree to the ${usd(ONE_WINDOW.workingSessionPrice)} before we schedule. If you go ahead, it rolls into the implementation price. We only invoice it if you decide not to.`,
+      `The entry step to Oscar by Kerzie AI. Two hours in which we learn how you run the business today: the platforms, the tools, how marketing and customer contact work. Then we come back with a recorded demo, about ten minutes, of how your business would run with it. That demo is your go or no-go. You agree to the ${usd(ONE_WINDOW.workingSessionPrice)} before we schedule. If you go ahead, it rolls into the Oscar by Kerzie AI price. We only invoice it if you decide not to.`,
   },
   {
     // LADDER RULED 2026-10-23 and ENTRY MOTION 2026-11-03 (Wade): 30 days,
     // market rate $15,000, Founders rate $7,500 for commitments made in 2026,
     // anything already paid to Kerzie AI credited, no required monthly after.
-    key: "implementation",
-    name: "One Window Implementation",
-    path: "/services/implementation",
+    // RENAMED 2026-11-21 (Wade): "One Window Implementation" became "Oscar by
+    // Kerzie AI". Always the full name; the product is "it". The page is /oscar.
+    key: "oscar",
+    name: "Oscar by Kerzie AI",
+    path: "/oscar",
     price: ONE_WINDOW.marketPrice,
     priceLabel: `${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for ${ONE_WINDOW.foundersYear} commitments`,
-    summary: `Thirty days. We set One Window up inside your business, teach you to drive it, hand you the keys and get out of the car. Market rate ${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for commitments made in ${ONE_WINDOW.foundersYear}. Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward it. No required monthly after that; an optional retainer for call-in help exists only if you want it.`,
+    summary: `An AI operating system for your business. Thirty days. We set it up inside your business, teach you to drive it, hand you the keys and get out of the car. You drive it from One Window. Market rate ${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for commitments made in ${ONE_WINDOW.foundersYear}. Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward it. No required monthly after that; an optional retainer for call-in help exists only if you want it.`,
   },
   {
     key: "sales-teams",
@@ -176,10 +183,10 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/", changeFrequency: "weekly", priority: 1.0 },
   { path: "/back-cover", changeFrequency: "weekly", priority: 0.9 },
   { path: "/one-window", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/one-window/business", changeFrequency: "weekly", priority: 0.9 },
+  // /one-window/business is not listed: it redirects to /oscar (Wade 2026-11-21).
+  { path: "/oscar", changeFrequency: "weekly", priority: 0.9 },
   { path: "/services", changeFrequency: "monthly", priority: 0.8 },
   { path: "/services/fast-track", changeFrequency: "monthly", priority: 0.9 },
-  { path: "/services/implementation", changeFrequency: "monthly", priority: 0.8 },
   { path: "/services/sales-teams", changeFrequency: "monthly", priority: 0.8 },
   { path: "/services/nemoclaw", changeFrequency: "monthly", priority: 0.6 },
   { path: "/free/first-reps", changeFrequency: "monthly", priority: 0.7 },

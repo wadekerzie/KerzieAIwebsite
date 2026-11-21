@@ -12,13 +12,13 @@ import { offer, ONE_WINDOW, usd } from "@/content/siteFacts";
 export const metadata: Metadata = {
   title: "Offers | Kerzie AI",
   description:
-    "What Kerzie AI sells: The Back Cover, For Sales Teams, Unison, and Executive Legacy. Then the ways into One Window: the free starter, the AI Fast-Track Session, and the thirty-day One Window Implementation, which starts with a two-hour working session.",
+    "What Kerzie AI sells: The Back Cover, For Sales Teams, Unison, and Executive Legacy. Then the ways into One Window: the free starter, the AI Fast-Track Session, and Oscar by Kerzie AI, an AI operating system set up inside your business in thirty days, which starts with a two-hour working session.",
 };
 
 const backCover = offer("back-cover");
 const fastTrack = offer("fast-track");
 const oneWindow = offer("one-window");
-const implementation = offer("implementation");
+const oscar = offer("oscar");
 
 // One line each, matching what the page itself says.
 const ranked = [
@@ -68,10 +68,10 @@ const entryPoints = [
     cta: "Read how it works",
   },
   {
-    title: "One Window Implementation",
-    price: implementation.priceLabel,
-    body: `Thirty days. We set One Window up inside your business, teach you to drive it, and hand you the keys. It starts with a two-hour working session at ${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you decide not to go ahead, and a ten-minute recorded demo of your business running on it. Anything you have already paid us is credited. No required monthly after.`,
-    href: "/services/implementation",
+    title: oscar.name,
+    price: oscar.priceLabel,
+    body: `An AI operating system for your business. Thirty days. We set it up inside your business, teach you to drive it, and hand you the keys. It starts with a two-hour working session at ${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you decide not to go ahead, and a ten-minute recorded demo of your business running on it. Anything you have already paid us is credited. No required monthly after.`,
+    href: oscar.path,
     cta: "How it starts, and the price",
   },
 ];

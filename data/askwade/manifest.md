@@ -150,3 +150,5 @@ filename date:
 
 
 Excluded 9/17 by Fable review: the Fast-Track page chunk naming Kurt and Tana Nelson (standing rule: Kurt is never named in Kerzie AI content; the live page still carries the story, flagged to Wade separately).
+
+Updated 2026-11-21 (Wade's Oscar rollout): the paid offer "One Window Implementation" is renamed "Oscar by Kerzie AI" at /oscar. The old `ai-implementation-1` chunk is replaced by `oscar-by-kerzie-ai-1` (from `src/app/oscar/page.tsx`), and the offer lines inside `work-with-us-1` and `kerzieai-llmstxt-1` now name it with its published price. The three `one-window-for-small-business-*` chunks keep their text (the free do-it-yourself setup) but now point at /one-window, because /one-window/business redirects to /oscar and its page file was removed. No essay or newsletter chunk was touched.

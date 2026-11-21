@@ -43,6 +43,16 @@ const offers = [
 // The venture scenes. Unison left this list when it became an offer;
 // Ad2Action is a custom implementation of Unison and is not called out
 // separately (Wade, 2026-09-24).
+// OSCAR BY KERZIE AI (Wade, 2026-11-21): the paid offer that was the One
+// Window implementation. It gets its own row under the ranked four, with the
+// flat icon (image #1). Its character never shares a section image with the
+// Back Cover robot; the Back Cover row above uses the book, not the robot.
+const oscar = {
+  name: "Oscar by Kerzie AI",
+  line: "An AI operating system for your business. We set it up, teach you to drive it, and hand you the keys.",
+  href: "/oscar",
+};
+
 const products = [
   {
     name: "GotaGuy",
@@ -115,12 +125,12 @@ export default function Home() {
         {/* THE TWO DOORS (Wade, 2026-10-19). One Window interviews an owner
             about how they run the business and an employee about their role,
             so the homepage offers the same two doors the product does.
-            /one-window/business is the owner setup; /one-window is the
-            personal setup. Equal buttons: stacked full-width on phones, side
+            /oscar is the owner door (Oscar by Kerzie AI, Wade 2026-11-21;
+            it was /one-window/business); /one-window is the personal setup. Equal buttons: stacked full-width on phones, side
             by side from sm. */}
         <div className="k-rise k-rise-3 mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-xl">
           <Link
-            href="/one-window/business"
+            href="/oscar"
             className="k-btn-solid k-focus flex-1 text-center"
           >
             For your business <span className="k-arrow">&rarr;</span>
@@ -270,6 +280,35 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+
+          {/* Oscar by Kerzie AI: its own row, with the icon */}
+          <Reveal>
+            <Link
+              href={oscar.href}
+              className="group flex items-start gap-5 sm:gap-6 border-t border-[rgba(26,27,46,0.13)] pt-6 pb-2 mt-2 k-focus"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/oscar/oscar-icon-320.jpg"
+                width={320}
+                height={320}
+                loading="lazy"
+                alt="Flat illustration of Oscar spinning a car key on one finger"
+                className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-full border border-[rgba(26,27,46,0.13)]"
+              />
+              <div>
+                <h3 className="text-[#1A1B2E] text-xl lg:text-2xl font-semibold tracking-tight group-hover:text-[#2B5D96] transition-colors duration-200 mb-3">
+                  {oscar.name}
+                </h3>
+                <p className="text-[#262B3D] text-base lg:text-lg leading-relaxed max-w-2xl mb-4">
+                  {oscar.line}
+                </p>
+                <span className="text-[#2B5D96] text-sm lg:text-base font-semibold">
+                  Read more <span className="k-arrow">&rarr;</span>
+                </span>
+              </div>
+            </Link>
+          </Reveal>
         </div>
       </section>
 

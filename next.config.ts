@@ -145,6 +145,20 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Oscar by Kerzie AI (Wade, 2026-11-21): the paid offer that was called
+      // "One Window Implementation" is renamed and lives at /oscar. Both old
+      // pages are gone; these keep every pasted link working. Anchors such as
+      // #start survive a redirect in the browser, and /oscar has the same one.
+      {
+        source: "/one-window/business",
+        destination: "/oscar",
+        permanent: true,
+      },
+      {
+        source: "/services/implementation",
+        destination: "/oscar",
+        permanent: true,
+      },
       {
         source: "/services/training",
         destination: "/services/fast-track",

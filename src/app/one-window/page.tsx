@@ -327,18 +327,17 @@ export default function OneWindowPage() {
           <OneWindowGate />
           <div className="max-w-2xl mt-10">
             <Link
-              href="/one-window/business"
+              href="/oscar"
               className="k-focus block rounded-lg bg-white p-5 sm:p-6 hover:bg-[#F3F4F8] transition-colors duration-200"
             >
               <p className="k-mono text-[11px] lg:text-[13px] tracking-[0.15em] lg:tracking-[0.12em] text-[#C4633F] font-bold mb-2">
                 RUNNING A BUSINESS?
               </p>
               <p className="text-[#1A1B2E] text-lg font-semibold leading-snug">
-                There is a door built for owners: follow-ups, quotes, the
-                tracker, your marketing. Same OS, same price: free.
+                Want the whole car, set up with you?
               </p>
               <p className="mt-3 text-[#C4633F] font-semibold">
-                The Small Business Setup <span className="k-arrow">&rarr;</span>
+                Oscar by Kerzie AI <span className="k-arrow">&rarr;</span>
               </p>
             </Link>
           </div>

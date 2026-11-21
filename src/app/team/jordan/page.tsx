@@ -54,7 +54,7 @@ export default function JordanPage() {
         <p className="k-rise k-rise-3 mt-10 text-[#262B3D] text-lg lg:text-xl max-w-2xl leading-relaxed">
           Jordan runs operations for Kerzie AI: client builds and
           onboarding, from a signed agreement to go-live. He leads client
-          working sessions on AI operating system implementations. And he
+          working sessions on Oscar by Kerzie AI implementations. And he
           still sells The Back Cover and drives deals himself: one page,
           written for the AI, that makes a business readable to the AI its
           customers now ask.

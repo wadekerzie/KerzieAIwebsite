@@ -20,6 +20,7 @@ import { metadata as ventures } from "@/app/ventures/page";
 import { metadata as offersHub } from "@/app/services/page";
 import { metadata as backCover } from "@/app/back-cover/page";
 import { metadata as salesTeams } from "@/app/services/sales-teams/page";
+import { metadata as oscar } from "@/app/oscar/page";
 import { metadata as gotaguy } from "@/app/ventures/gotaguy/page";
 import { metadata as unison } from "@/app/ventures/unison/page";
 import { metadata as trueseat } from "@/app/ventures/trueseat/page";
@@ -77,6 +78,9 @@ const RANKED_OFFERS: Array<[string, string, Described]> = [
   ["/services/sales-teams", "For Sales Teams", salesTeams],
   ["/ventures/unison", "Unison", unison],
   ["/ventures/executive-legacy", "Executive Legacy", executiveLegacy],
+  // Added 2026-11-21 (Wade): the paid offer that was "One Window
+  // Implementation". Listed after the ranked four; the rank did not change.
+  ["/oscar", "Oscar by Kerzie AI", oscar],
 ];
 
 const VENTURES: Array<[string, string, Described]> = [
