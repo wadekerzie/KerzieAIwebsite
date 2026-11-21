@@ -4,14 +4,14 @@
   "entries": [
     {
       "date": "2026-11-21",
-      "status": "missed",
+      "status": "ok",
       "kind": "refresh",
-      "added": null,
-      "removed": null,
-      "price_changed": null,
-      "total": 313,
-      "ran_at": null,
-      "note": "Today's update did not run due to an internal data-check issue, so the 11-19 version stayed up."
+      "added": 5,
+      "removed": 2,
+      "price_changed": 49,
+      "total": 317,
+      "ran_at": "1:30 PM CT",
+      "note": "Five vehicles joined the list today and two came off, bringing the total to 317. New arrivals include a 2024 GMC Yukon XL 1500 Denali, a 2025 Nissan Sentra SV, and a 2002 Toyota Tacoma. A batch of price changes landed today across 49 vehicles. Placed later than the usual window; confirmed live to both a normal browser and an AI crawler."
     },
     {
       "date": "2026-11-20",
