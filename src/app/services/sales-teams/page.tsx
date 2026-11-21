@@ -618,7 +618,7 @@ export default function SalesTeamsPage() {
           <p className="mt-8 text-[#262B3D]/80 text-base lg:text-lg max-w-xl leading-relaxed">
             A seller on your own? The general OS is free:{" "}
             <Link href="/one-window" className="underline k-focus hover:text-[#1A1B2E]">
-              get One-Window
+              get Oscar by Kerzie AI
             </Link>
             .
           </p>

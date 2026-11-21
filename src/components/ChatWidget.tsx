@@ -9,7 +9,10 @@ import { usePathname } from "next/navigation";
 // can opt out: the Back Cover scores pages (/scores/*) are client reports and
 // carry no chat bubble (Wade 11/13). Every other page loads it exactly as
 // before.
-const NO_WIDGET_PREFIXES = ["/scores"];
+// /oscar and /clyra opted out 2026-11-21 (Wade: the bubble pops up and
+// disrupts the page load). /clyra is a raw HTML route with no Footer, so it
+// never loaded the widget; it is listed so that stays true if that changes.
+const NO_WIDGET_PREFIXES = ["/scores", "/oscar", "/clyra"];
 
 export default function ChatWidget() {
   const pathname = usePathname() || "";

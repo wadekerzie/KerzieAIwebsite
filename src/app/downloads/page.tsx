@@ -33,9 +33,9 @@ export default function DownloadsPage() {
         </h1>
         <div className="mt-6 max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
           <p>
-            This page is for people who own the{" "}
+            This page is for people who run{" "}
             <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
-              One-Window
+              Oscar by Kerzie AI
             </Link>
             , and it works differently than every download page you have ever
             used. <span className="text-[#1A1B2E]">There are no versions to fall
@@ -123,7 +123,7 @@ export default function DownloadsPage() {
             remove it, and it&apos;s gone.
           </p>
           <p className="text-[#262B3D]/70 text-base">
-            Bought One-Window and something here will not work? Email{" "}
+            Set up Oscar by Kerzie AI and something here will not work? Email{" "}
             <a href="mailto:wade@kerzie.ai" className="k-link k-focus text-[#2B5D96]">
               wade@kerzie.ai
             </a>{" "}

@@ -10,7 +10,7 @@ import { CopyButton, CopyBuilderButton } from "@/components/CopyButton";
 // AI rather than to him. The buyer should never open that file. Part 1 lives
 // here as steps; the file is plumbing his AI fetches for itself.
 export const metadata: Metadata = {
-  title: "Your One-Window | Kerzie AI",
+  title: "Your Oscar by Kerzie AI | Kerzie AI",
   robots: { index: false, follow: false },
 };
 

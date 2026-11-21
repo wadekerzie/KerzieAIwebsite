@@ -77,7 +77,7 @@ export default function OneWindowGate() {
         disabled={sending}
         className="k-btn-solid k-focus disabled:opacity-60 w-full sm:w-auto"
       >
-        {sending ? "One second..." : "Send me One-Window"}
+        {sending ? "One second..." : "Send me Oscar by Kerzie AI"}
       </button>
       <p className="text-[#262B3D]/70 text-sm leading-relaxed">
         You also land on the Kerzie AI newsletter: one operator to another,

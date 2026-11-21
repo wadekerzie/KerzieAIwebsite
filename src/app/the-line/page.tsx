@@ -100,7 +100,7 @@ export default function TheLinePage() {
 
       <Section>If you&rsquo;re missing the window</Section>
       <P>
-        One-Window is an operating system that runs inside the AI you already
+        Oscar by Kerzie AI is an operating system that runs inside the AI you already
         pay for. Paste the Foundation into Claude and it interviews you, then
         builds the working environment around your answers: the workspace, the
         operating manual, the tracker, the memory rules, the routines.
@@ -113,7 +113,7 @@ export default function TheLinePage() {
       <p className="p-price">Free. Every upgrade too.</p>
       <p className="mt-6">
         <Link href="/one-window" className="p-btn k-focus">
-          Get One-Window free <span className="k-arrow">&rarr;</span>
+          Get Oscar by Kerzie AI free <span className="k-arrow">&rarr;</span>
         </Link>
       </p>
 
@@ -133,7 +133,7 @@ export default function TheLinePage() {
       </P>
       <p className="p-price">
         $999 flat for up to three people, and each of them leaves with
-        One-Window running.
+        Oscar by Kerzie AI running.
       </p>
       <p className="mt-6">
         <Link href="/services/fast-track" className="p-btn k-focus">
@@ -172,7 +172,7 @@ export default function TheLinePage() {
         Same test, turned on myself. Synthesis is priced like synthesis.
       </Note>
       <P>
-        One-Window is a synthesis of general knowledge. Someone patient enough
+        Oscar by Kerzie AI is a synthesis of general knowledge. Someone patient enough
         could assemble most of it themselves, so I give it away. The three hours at your desk, with your accounts, on the
         workflow that actually hurts, is the part that can&rsquo;t be
         substituted. That&rsquo;s the $999.

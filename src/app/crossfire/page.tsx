@@ -376,7 +376,7 @@ export default function CrossfirePage() {
         the people drawing the circles than the one standing between them.
       </P>
       <P>
-        That&rsquo;s what One Window is: your job, run from one place, with the
+        That&rsquo;s what Oscar by Kerzie AI is: your job, run from one place, with the
         AI doing the work around the work and you keeping the send button. The
         software is free.
       </P>

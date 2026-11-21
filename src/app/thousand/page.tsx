@@ -122,7 +122,7 @@ export default function ThousandPage() {
           </p>
           <div className="mt-8">
             <Link href="/one-window" className="k-btn-solid k-focus inline-block">
-              Claim a founding seat - One-Window{" "}
+              Claim a founding seat - Oscar by Kerzie AI{" "}
               <span className="k-arrow">&rarr;</span>
             </Link>
           </div>
@@ -213,9 +213,9 @@ export default function ThousandPage() {
           <p className="k-label mb-6">Walk Through</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p>
-              The door is the{" "}
+              The door is{" "}
               <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
-                One-Window
+                Oscar by Kerzie AI
               </Link>
               : free, one paste of the Foundation, about three hours to a running system.
               Want just the pocket habit first? Take the free{" "}

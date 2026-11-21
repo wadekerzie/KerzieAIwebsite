@@ -20,7 +20,7 @@ const specs = [
   "One to three people, in one room, in person.",
   "Each person on their own machine, with their own logins open.",
   "Each person on their own $20 per month Claude subscription, set up live.",
-  "One-Window, the free OS, installed live for every person in the room.",
+  "Oscar by Kerzie AI, the free OS, installed live for every person in the room.",
 ];
 
 const takeaways = [
@@ -310,21 +310,21 @@ export default function FastTrackPage() {
             </p>
             <p>
               It covers the intake review, the 3-hour working session, the
-              30-day check-in, and One-Window installed live for every person
+              30-day check-in, and Oscar by Kerzie AI installed live for every person
               who sits down.
             </p>
             <p>
-              Run the comparison you are already running. One-Window is free,
+              Run the comparison you are already running. Oscar by Kerzie AI is free,
               so the $999 is all for the session. Bring three people and that
               is{" "}
               <span className="text-[#1A1B2E] font-medium">
                 about $111 an hour, per person
               </span>
               , to have it built with you instead of by you. And all three of
-              you walk out with One-Window running.
+              you walk out with Oscar by Kerzie AI running.
             </p>
             <p>
-              One-Window is the same operating system either way. The
+              Oscar by Kerzie AI is the same operating system either way. The
               difference is whether you install it alone or whether it gets
               installed with you, in your
               accounts, on the workflow that is actually costing you money,

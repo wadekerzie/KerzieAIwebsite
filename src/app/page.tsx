@@ -7,7 +7,7 @@ import DealerPlaybookBanner from "@/components/DealerPlaybookBanner";
 export const metadata = {
   title: "Kerzie AI",
   description:
-    "Life is best when technology just works. Whatever you run, run it from One Window.",
+    "Life is best when technology just works. Whatever you run, run it from Oscar by Kerzie AI.",
 };
 
 // OFFERS versus VENTURES (Wade + Aaron, 2026-09-24): "draw the line between
@@ -48,8 +48,8 @@ const offers = [
 // flat icon (image #1). Its character never shares a section image with the
 // Back Cover robot; the Back Cover row above uses the book, not the robot.
 const oscar = {
-  name: "Oscar by Kerzie AI",
-  line: "An AI operating system for your business. We set it up, teach you to drive it, and hand you the keys.",
+  name: "Oscar by Kerzie AI, set up with you",
+  line: "An AI operating system for your business. It is free to set up yourself. Or we fit the upgrades, teach you to drive it, and hand you the keys.",
   href: "/oscar",
 };
 
@@ -118,8 +118,8 @@ export default function Home() {
             blue tagline ("The world's best tech feels the easiest."), removed
             the same day so nothing competes with it in the first five seconds. */}
         <p className="k-rise k-rise-2 mt-7 text-[#2B5D96] text-[clamp(1.25rem,2.2vw,1.625rem)] font-medium leading-snug max-w-2xl">
-          Whatever you run, run it from One Window. We set it up, teach you to
-          drive it, and hand you the keys.
+          Whatever you run, run it from Oscar by Kerzie AI. We set it up,
+          teach you to drive it, and hand you the keys.
         </p>
 
         {/* THE TWO DOORS (Wade, 2026-10-19). One Window interviews an owner

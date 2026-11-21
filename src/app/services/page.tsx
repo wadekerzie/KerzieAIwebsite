@@ -12,7 +12,7 @@ import { offer, ONE_WINDOW, usd } from "@/content/siteFacts";
 export const metadata: Metadata = {
   title: "Offers | Kerzie AI",
   description:
-    "What Kerzie AI sells: The Back Cover, For Sales Teams, Unison, and Executive Legacy. Then the ways into One Window: the free starter, the AI Fast-Track Session, and Oscar by Kerzie AI, an AI operating system set up inside your business in thirty days, which starts with a two-hour working session.",
+    "What Kerzie AI sells: The Back Cover, For Sales Teams, Unison, and Executive Legacy. Then the ways into Oscar by Kerzie AI, an AI operating system for your business: free and do it yourself, the AI Fast-Track Session, or set up with you in thirty days, which starts with a two-hour working session.",
 };
 
 const backCover = offer("back-cover");
@@ -54,23 +54,23 @@ const ranked = [
 
 const entryPoints = [
   {
-    title: "One-Window",
+    title: oneWindow.name,
     price: oneWindow.priceLabel,
     body: "Your own AI operating system, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list.",
     href: "/one-window",
-    cta: "Get One-Window",
+    cta: "Get Oscar by Kerzie AI free",
   },
   {
     title: "AI Fast-Track Session",
     price: fastTrack.priceLabel,
-    body: "Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with One-Window. One person or three, same price.",
+    body: "Three hours, one room, up to three people. Each at your own machine, in your own business, on your own $20 AI subscription. Every person moves one painful workflow from manual to working, and every person leaves with Oscar by Kerzie AI running. One person or three, same price.",
     href: "/services/fast-track",
     cta: "Read how it works",
   },
   {
     title: oscar.name,
     price: oscar.priceLabel,
-    body: `An AI operating system for your business. Thirty days. We set it up inside your business, teach you to drive it, and hand you the keys. It starts with a two-hour working session at ${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you decide not to go ahead, and a ten-minute recorded demo of your business running on it. Anything you have already paid us is credited. No required monthly after.`,
+    body: `Thirty days. We fit the upgrades (your tech stack, the connectors, your dashboards), set it up inside your business, teach you to drive it, and hand you the keys. It starts with a two-hour working session at ${usd(ONE_WINDOW.workingSessionPrice)}, invoiced only if you decide not to go ahead, and a ten-minute recorded demo of your business running on it. Anything you have already paid us is credited. No required monthly after.`,
     href: oscar.path,
     cta: "How it starts, and the price",
   },

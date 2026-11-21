@@ -13,8 +13,10 @@ import { serviceJsonLd } from "@/content/jsonLd";
 // HOUSE RULES FOR THIS PAGE:
 // - Always the full name "Oscar by Kerzie AI" in headings, titles and the
 //   first mention. The product is "it". Only the drawing is a "he".
-// - One Window stays: it is the windshield, the screen you drive it from, and
-//   the name of the free do-it-yourself download.
+// - This page is the paid version: "Oscar by Kerzie AI, set up with you". The
+//   free do-it-yourself version is Oscar by Kerzie AI too (the car, no custom
+//   upgrades) and lives at /one-window. "One Window" is not an offer name; it
+//   survives only as the windshield, the screen you drive it from.
 // - One driver first. Nothing about how many people a business needs.
 // - The Oscar by Kerzie AI character never shares a section or an image with the Back
 //   Cover robot.
@@ -133,7 +135,7 @@ export default function OscarPage() {
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-14">
         <div className="lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
           <div className="lg:col-span-7">
-            <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Oscar by Kerzie AI</p>
+            <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Oscar by Kerzie AI, set up with you</p>
             <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
               The car is already built.{" "}
               <span className="k-serif font-normal">Here are the keys</span>
@@ -394,6 +396,11 @@ export default function OscarPage() {
               rolls in the same way.
             </p>
             <p>
+              The car itself is free. What you pay for is our help: your tech
+              stack connected, the connectors built, the custom parts of the
+              car fitted to your business, and the driving lessons.
+            </p>
+            <p>
               You are paying for our time and our know-how, up front, and then
               it is yours. There is no required monthly after the{" "}
               {ONE_WINDOW.implementationDays} days. The only required ongoing
@@ -416,11 +423,12 @@ export default function OscarPage() {
           <div className="max-w-2xl space-y-5 text-[#262B3D] text-lg leading-relaxed">
             <p>
               <span className="text-[#1A1B2E] font-medium">Do it yourself, free.</span>{" "}
-              One Window, the free starter, is still free, and so is every
-              upgrade. Paste the Foundation into Claude, answer its questions,
-              and run it.{" "}
+              Oscar by Kerzie AI is free, and so is every upgrade. Paste the
+              Foundation into Claude, answer its questions, and run it. You
+              get the car. What you don&apos;t get is our help fitting it to
+              your business.{" "}
               <Link href="/one-window/business" className="k-link k-focus text-[#2B5D96]">
-                Get One Window free
+                Get Oscar by Kerzie AI free
               </Link>
               .
             </p>
@@ -461,6 +469,10 @@ export default function OscarPage() {
           </Link>
         </Reveal>
       </section>
+      {/* No chat bubble on this page. ChatWidget.tsx does not load it here;
+          this covers a widget already loaded on another page before an in-app
+          navigation (same approach as the /scores pages). */}
+      <style>{`chat-widget, [data-chat-widget] { display: none !important; }`}</style>
     </div>
   );
 }

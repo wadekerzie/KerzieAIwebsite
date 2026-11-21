@@ -320,7 +320,7 @@ export default function SecondLanguagePage() {
       <P>It&rsquo;s our second nature now.</P>
       <P>
         If you want a place to start living in the language, that&rsquo;s what
-        One Window is: your job, run from one place, with the AI doing the work
+        Oscar by Kerzie AI is: your job, run from one place, with the AI doing the work
         around the work and you keeping the send button. The software is free.
       </P>
       <P>

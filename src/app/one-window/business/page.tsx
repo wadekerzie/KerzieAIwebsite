@@ -10,12 +10,12 @@ import { offer } from "@/content/siteFacts";
 const FAST_TRACK = offer("fast-track");
 
 export const metadata: Metadata = {
-  title: "One-Window for Small Business | Kerzie AI",
+  title: "Oscar by Kerzie AI for Small Business | Kerzie AI",
   description:
     "3 hours. 2 new habits. 1 window. 0 to-do list. One AI that knows your business drafts, chases, tracks, and stages it for your yes. Mac. Free.",
   openGraph: {
     type: "article",
-    title: "One-Window for Small Business",
+    title: "Oscar by Kerzie AI for Small Business",
     description:
       "I talk. The work gets done. 3 hours, 2 new habits, 1 window, 0 to-do list. One AI window that knows your business and carries the office work. Free.",
     url: "https://kerzie.ai/one-window/business",
@@ -68,7 +68,7 @@ export default function OneWindowBusinessPage() {
 
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
-        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">One-Window &mdash; For Small Business</p>
+        <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">Oscar by Kerzie AI: For Small Business</p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.75rem)]">
           I talk. <span className="k-serif font-normal">The work gets done</span>
           <span className="text-[#B04E2B]">.</span>
@@ -105,7 +105,7 @@ export default function OneWindowBusinessPage() {
         </div>
         <div className="k-rise k-rise-4 mt-10 flex flex-wrap gap-4">
           <Link href="/one-window#get" className="k-btn-solid k-focus inline-block">
-            Get One-Window free <span className="k-arrow">&rarr;</span>
+            Get Oscar by Kerzie AI free <span className="k-arrow">&rarr;</span>
           </Link>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function OneWindowBusinessPage() {
               nobody.
             </p>
             <p className="text-[#1A1B2E] font-medium">
-              One-Window exists to catch those words and turn them
+              Oscar by Kerzie AI exists to catch those words and turn them
               into finished work.
             </p>
           </div>
@@ -352,7 +352,7 @@ export default function OneWindowBusinessPage() {
           <p className="k-label mb-6">The Offer</p>
           <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
             <p className="text-[#1A1B2E] text-xl font-semibold">
-              One-Window: free. The whole operating system, every capability.
+              Oscar by Kerzie AI: free. The whole operating system, every capability.
             </p>
             <p className="text-[#1A1B2E] text-xl font-semibold">
               The upgrades: free too. All of them.
@@ -367,7 +367,7 @@ export default function OneWindowBusinessPage() {
             <p className="text-[#1A1B2E] font-medium">
               Why free? Because I want a thousand operators more than I want
               anybody&apos;s $99. Kerzie AI&apos;s business is deploying AI for
-              companies. One-Window running your business is the proof, and
+              companies. Oscar by Kerzie AI running your business is the proof, and
               the proof is the megaphone.
             </p>
             <p>
@@ -382,7 +382,7 @@ export default function OneWindowBusinessPage() {
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/one-window#get" className="k-btn-solid k-focus inline-block">
-              Get One-Window free <span className="k-arrow">&rarr;</span>
+              Get Oscar by Kerzie AI free <span className="k-arrow">&rarr;</span>
             </Link>
           </div>
         </Reveal>

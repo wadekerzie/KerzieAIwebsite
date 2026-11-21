@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 // Content is the five-step non-technical install walk-through captured from
 // the first real cohort-welcome email (8/22) - the first new-operator recipe.
 export const metadata: Metadata = {
-  title: "Start Here | Kerzie AI",
-  description: "Your own OS, all in one window. The whole setup, step by step.",
+  title: "Start Here: Oscar by Kerzie AI | Kerzie AI",
+  description: "Oscar by Kerzie AI: your own OS, all in one window. The whole setup, step by step.",
   robots: { index: false, follow: false },
 };
 
@@ -94,7 +94,7 @@ export default function StartPage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-10">
-        <p className="k-label mb-6">One-Window &middot; Start Here</p>
+        <p className="k-label mb-6">Oscar by Kerzie AI &middot; Start Here</p>
         <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.2rem,6vw,4rem)] max-w-3xl">
           Your own OS, all in one window.
         </h1>

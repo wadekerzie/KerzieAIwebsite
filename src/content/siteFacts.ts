@@ -49,9 +49,12 @@ export const usd = (n: number) => `$${n.toLocaleString("en-US")}`;
 // Pages that spell these out in prose read from here.
 //
 // RENAMED 2026-11-21 (Wade): the paid offer is "Oscar by Kerzie AI". Same
-// numbers. One Window stays as the windshield (the screen you drive it from)
-// and as the name of the free do-it-yourself download. The constant keeps its
-// name because the numbers did not change.
+// numbers. RULED LATER THE SAME DAY (Wade): the free do-it-yourself version
+// is Oscar by Kerzie AI too. Free = the car with no custom upgrades. Paid =
+// "set up with you": we fit the upgrades (tech stack, connectors,
+// dashboards). "One Window" is no longer an offer name; it survives only as
+// the windshield, the screen you drive it from. Keys, paths and this
+// constant keep their names so nothing that reads them breaks.
 export const ONE_WINDOW = {
   workingSessionPrice: 1000,
   workingSessionHours: 2,
@@ -66,7 +69,7 @@ export const ONE_WINDOW = {
 export const OFFERS: Offer[] = [
   {
     key: "one-window",
-    name: "One-Window",
+    name: "Oscar by Kerzie AI (free)",
     path: "/one-window",
     // Free since 2026-09-05 (Wade's ruling): the giveaway is the megaphone.
     // price 0 is a real published price, not a missing one - JSON-LD and
@@ -74,7 +77,7 @@ export const OFFERS: Offer[] = [
     price: 0,
     priceLabel: "Free",
     summary:
-      "Your own AI operating system, free, and every upgrade is free too. Three hours, two habits, one window, zero to-do list. Your own Claude installs it from one paste of the Foundation.",
+      "Your own AI operating system, free, and every upgrade is free too. You set it up yourself: the car, without the custom upgrades we fit when we set it up with you. Three hours, two habits, one window, zero to-do list. Your own Claude installs it from one paste of the Foundation.",
   },
   {
     key: "fast-track",
@@ -105,11 +108,11 @@ export const OFFERS: Offer[] = [
     // RENAMED 2026-11-21 (Wade): "One Window Implementation" became "Oscar by
     // Kerzie AI". Always the full name; the product is "it". The page is /oscar.
     key: "oscar",
-    name: "Oscar by Kerzie AI",
+    name: "Oscar by Kerzie AI, set up with you",
     path: "/oscar",
     price: ONE_WINDOW.marketPrice,
     priceLabel: `${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for ${ONE_WINDOW.foundersYear} commitments`,
-    summary: `An AI operating system for your business. Thirty days. We set it up inside your business, teach you to drive it, hand you the keys and get out of the car. You drive it from One Window. Market rate ${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for commitments made in ${ONE_WINDOW.foundersYear}. Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward it. No required monthly after that; an optional retainer for call-in help exists only if you want it.`,
+    summary: `An AI operating system for your business, set up with you. Thirty days. We fit the upgrades (your tech stack, the connectors, your dashboards), set it up inside your business, teach you to drive it, hand you the keys and get out of the car. You drive it from one window. Market rate ${usd(ONE_WINDOW.marketPrice)}. Founders rate ${usd(ONE_WINDOW.foundersPrice)} for commitments made in ${ONE_WINDOW.foundersYear}. Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward it. No required monthly after that; an optional retainer for call-in help exists only if you want it.`,
   },
   {
     key: "sales-teams",

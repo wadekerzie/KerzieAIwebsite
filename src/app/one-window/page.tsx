@@ -9,12 +9,12 @@ import OneWindowGate from "@/components/OneWindowGate";
 // operator to the newsletter and lands them on /one-window/welcome.
 
 export const metadata: Metadata = {
-  title: "One-Window | Kerzie AI",
+  title: "Oscar by Kerzie AI, free | Kerzie AI",
   description:
     "If you can create an account and follow instructions, you can run your work on AI. Your own AI operating system, free, every upgrade included. Mac.",
   openGraph: {
     type: "article",
-    title: "One-Window",
+    title: "Oscar by Kerzie AI, free",
     description:
       "I talk. The work gets done. One paste of the Foundation into Claude installs your own AI operating system. Free, upgrades included. Mac.",
     url: "https://kerzie.ai/one-window",
@@ -73,7 +73,7 @@ export default function OneWindowPage() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
         <p className="k-rise k-rise-1 k-label mb-8 lg:mb-6">
-          One-Window &mdash; your own personal OS. Free.
+          Oscar by Kerzie AI: your own personal OS. Free.
         </p>
         <h1 className="k-rise k-rise-2 text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.08] text-[clamp(2rem,4.5vw,3.4rem)]">
           If you can create an account
@@ -97,7 +97,7 @@ export default function OneWindowPage() {
         </p>
         <div className="k-rise k-rise-4 mt-10">
           <a href="#get" className="k-btn-solid k-focus inline-block">
-            Get One-Window free <span className="k-arrow">&rarr;</span>
+            Get Oscar by Kerzie AI free <span className="k-arrow">&rarr;</span>
           </a>
         </div>
       </section>
@@ -217,7 +217,7 @@ export default function OneWindowPage() {
               nobody.
             </p>
             <p className="text-[#1A1B2E] font-medium">
-              One-Window exists to catch those words and turn them into
+              Oscar by Kerzie AI exists to catch those words and turn them into
               finished work. Simpler, not additional.
             </p>
           </div>
@@ -292,7 +292,7 @@ export default function OneWindowPage() {
             <p className="text-[#1A1B2E] font-medium">
               Because I want a thousand operators more than I want
               anybody&apos;s $99. Kerzie AI&apos;s business is deploying AI for
-              companies. One-Window running your work is the proof, and the
+              companies. Oscar by Kerzie AI running your work is the proof, and the
               proof is the megaphone.
             </p>
             <p>

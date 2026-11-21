@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 // next. /downloads keeps serving the files - this page is the doorway to it.
 
 export const metadata: Metadata = {
-  title: "Welcome In | One-Window",
-  description: "Your One-Window Foundation is ready to download.",
+  title: "Welcome In | Oscar by Kerzie AI",
+  description: "Your Oscar by Kerzie AI Foundation is ready to download.",
   robots: { index: false, follow: false },
 };
 
@@ -24,7 +24,7 @@ export default function OneWindowWelcomePage() {
       </div>
 
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 lg:pt-14 pb-16 lg:pb-12">
-        <p className="k-label mb-8">One-Window &mdash; you&apos;re in</p>
+        <p className="k-label mb-8">Oscar by Kerzie AI: you&apos;re in</p>
         <h1 className="text-[#1A1B2E] font-bold tracking-[-0.025em] leading-[1.05] text-[clamp(2.25rem,5vw,3.5rem)]">
           Welcome in<span className="text-[#B04E2B]">.</span>
         </h1>
@@ -78,7 +78,7 @@ export default function OneWindowWelcomePage() {
         <p className="k-label mb-6">One More Thing</p>
         <div className="max-w-2xl space-y-4 text-[#262B3D] text-lg leading-relaxed">
           <p>
-            Operators running One-Window compare notes in a private community:
+            Operators running Oscar by Kerzie AI compare notes in a private community:
             wins, questions, and every release, answered once where everyone
             can see it.
           </p>

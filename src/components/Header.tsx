@@ -25,7 +25,7 @@ const offers = [
   { label: "Unison", href: "/ventures/unison" },
   { label: "Executive Legacy", href: "/ventures/executive-legacy" },
   { label: "AI Fast-Track Session", href: "/services/fast-track" },
-  { label: "One-Window", href: "/one-window", tag: "Free" },
+  { label: "Oscar by Kerzie AI", href: "/one-window", tag: "Free" },
 ];
 
 // Only companies we own and run.

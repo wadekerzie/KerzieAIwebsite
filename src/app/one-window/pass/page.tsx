@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "You're On The Upgrade Pass | Kerzie AI",
   description:
-    "Your six months of One-Window upgrades starts now. The first upgrade arrives by email within a day.",
+    "Your six months of Oscar by Kerzie AI upgrades starts now. The first upgrade arrives by email within a day.",
   robots: { index: false },
 };
 
@@ -57,7 +57,7 @@ export default function UpgradePassWelcomePage() {
         </div>
         <div className="mt-10">
           <Link href="/one-window" className="k-btn-solid k-focus inline-block">
-            Back to One-Window <span className="k-arrow">&rarr;</span>
+            Back to Oscar by Kerzie AI <span className="k-arrow">&rarr;</span>
           </Link>
         </div>
       </section>
