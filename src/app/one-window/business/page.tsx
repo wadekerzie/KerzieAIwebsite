@@ -396,9 +396,9 @@ export default function OneWindowBusinessPage() {
       >
         <Reveal>
           <p className="text-[#1A1B2E] text-xl font-semibold max-w-2xl">
-            Want the whole car, set up with you?{" "}
+            Want it fitted to your business, with our help?{" "}
             <Link href="/oscar" className="k-link k-focus text-[#2B5D96]">
-              Oscar by Kerzie AI <span className="k-arrow">&rarr;</span>
+              Oscar by Kerzie AI, set up with you <span className="k-arrow">&rarr;</span>
             </Link>
           </p>
         </Reveal>

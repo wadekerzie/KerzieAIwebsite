@@ -1307,7 +1307,7 @@ Send me Oscar by Kerzie AI You also land on the Kerzie AI newsletter: one operat
 RUNNING A BUSINESS?
 There is a door built for owners: follow-ups, quotes, the tracker, your marketing. Same OS, same price: free.
 The Small Business Setup →
-Want the whole car, set up with you? Oscar by Kerzie AI →
+Want it fitted to your business, with our help? Oscar by Kerzie AI, set up with you →
 
 Straight Answers
 Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt.
@@ -1409,7 +1409,7 @@ Rather have it built WITH you: your machine, your accounts, one real workflow sh
 
 Get Oscar by Kerzie AI free →
 
-Want the whole car, set up with you? Oscar by Kerzie AI →
+Want it fitted to your business, with our help? Oscar by Kerzie AI, set up with you →
 
 Keep What Already Works
 Already run QuickBooks, a scheduling tool, a point of sale? Keep them. This is not another system to migrate into.
@@ -1470,16 +1470,21 @@ From there, the driver decides who else gets keys.
 We don't try to turn a company that has run the same way for 20 years into an AI-native company overnight. That's too heavy a lift, and it fails.
 
 Driver's Ed
-A handful of habits. You learn them once and repeat them every time you get in.
 
-- “Good morning.” That's how every session starts. Get in, buckle up, start the engine.
+## Driver's ed: everything goes in
+You drive Oscar by Kerzie AI by talking to it, every way you already communicate about your business: the meeting you just finished, the idea you had on the drive in, the text thread with a customer, the email you need to answer, the note you would normally scribble and lose. If it's about the business, it lands in Oscar by Kerzie AI.
+A few habits drivers pick up in the first week:
 
-- Screenshot a text thread and hand it over. The back-and-forth with a customer is context. It goes in.
+- Record the meeting and hand over the transcript.
 
-- Screenshot a thread from your work chat and hand it over. Same habit, different window.
+- Talk through a voice memo instead of writing a to-do list.
 
-- “Check this email and draft a reply.” You read the draft. You decide what gets sent.
-The point of all of it: get your context in first, so every next step picks up where the last one left off, day after day.
+- Screenshot a text thread and drop it in.
+
+- Paste the email and say “draft a reply.”
+
+- Say “good morning” to start the day, so it picks up where yesterday left off.
+That's the first lap. Like any car, it does more than most people ever use. Some drivers stick with a handful of features for years. Others find every one, and the people riding along are surprised the car could do that. The more you put in, the more it does for you, day after day.
 
 First, A Documentary
 The first week or two is a documentary of your business.

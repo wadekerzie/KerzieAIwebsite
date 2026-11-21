@@ -343,9 +343,9 @@ export default function OneWindowPage() {
             </Link>
             {/* The one pointer to the paid offer (Wade, 2026-11-21). */}
             <p className="mt-5 text-[#262B3D] text-base lg:text-lg">
-              Want the whole car, set up with you?{" "}
+              Want it fitted to your business, with our help?{" "}
               <Link href="/oscar" className="k-link k-focus text-[#2B5D96] font-semibold">
-                Oscar by Kerzie AI <span className="k-arrow">&rarr;</span>
+                Oscar by Kerzie AI, set up with you <span className="k-arrow">&rarr;</span>
               </Link>
             </p>
           </div>

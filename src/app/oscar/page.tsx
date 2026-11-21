@@ -77,23 +77,13 @@ const carParts = [
   },
 ];
 
+// Driver's ed copy is Wade's, verbatim (2026-11-21). Do not paraphrase.
 const habits = [
-  {
-    say: "“Good morning.”",
-    body: "That's how every session starts. Get in, buckle up, start the engine.",
-  },
-  {
-    say: "Screenshot a text thread and hand it over.",
-    body: "The back-and-forth with a customer is context. It goes in.",
-  },
-  {
-    say: "Screenshot a thread from your work chat and hand it over.",
-    body: "Same habit, different window.",
-  },
-  {
-    say: "“Check this email and draft a reply.”",
-    body: "You read the draft. You decide what gets sent.",
-  },
+  "Record the meeting and hand over the transcript.",
+  "Talk through a voice memo instead of writing a to-do list.",
+  "Screenshot a text thread and drop it in.",
+  "Paste the email and say \u201Cdraft a reply.\u201D",
+  "Say \u201Cgood morning\u201D to start the day, so it picks up where yesterday left off.",
 ];
 
 const thirtyDays = [
@@ -254,24 +244,36 @@ export default function OscarPage() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-12 lg:items-start">
             <div className="lg:col-span-7">
               <p className="k-label mb-6">Driver&apos;s Ed</p>
-              <p className="max-w-2xl text-[#262B3D] text-lg leading-relaxed mb-8">
-                A handful of habits. You learn them once and repeat them every
-                time you get in.
-              </p>
-              <ul className="max-w-2xl space-y-4">
+              <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.4vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-6">
+                Driver&apos;s ed: everything goes in
+              </h2>
+              <div className={PROSE}>
+                <p>
+                  You drive Oscar by Kerzie AI by talking to it, every way you
+                  already communicate about your business: the meeting you
+                  just finished, the idea you had on the drive in, the text
+                  thread with a customer, the email you need to answer, the
+                  note you would normally scribble and lose. If it&apos;s
+                  about the business, it lands in Oscar by Kerzie AI.
+                </p>
+                <p>A few habits drivers pick up in the first week:</p>
+              </div>
+              <ul className="max-w-2xl space-y-4 mt-6">
                 {habits.map((h) => (
                   <li
-                    key={h.say}
+                    key={h}
                     className="border-l border-[#B04E2B] pl-5 text-[#262B3D] text-lg leading-relaxed"
                   >
-                    <span className="text-[#1A1B2E] font-medium">{h.say}</span>{" "}
-                    {h.body}
+                    {h}
                   </li>
                 ))}
               </ul>
-              <p className="max-w-2xl mt-8 text-[#1A1B2E] text-lg font-medium leading-relaxed">
-                The point of all of it: get your context in first, so every
-                next step picks up where the last one left off, day after day.
+              <p className="max-w-2xl mt-8 text-[#262B3D] text-lg leading-relaxed">
+                That&apos;s the first lap. Like any car, it does more than
+                most people ever use. Some drivers stick with a handful of
+                features for years. Others find every one, and the people
+                riding along are surprised the car could do that. The more you
+                put in, the more it does for you, day after day.
               </p>
             </div>
             <div className="lg:col-span-5 mt-10 lg:mt-0">
