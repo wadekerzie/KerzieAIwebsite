@@ -1442,11 +1442,19 @@ Oscar by Kerzie AI, set up with you
 Oscar by Kerzie AI is an AI operating system for your business. We set it up inside your business, teach you to drive it, hand you the keys and get out of the car.
 Book a call → See the price
 
-The Gap
+What Changes For You
 
-## Has anyone brought you an AI plan?
-It's the first question we ask an owner. On the Moonshots podcast, Dave Blundin said nine in ten people at midsize companies haven't had one credible AI upgrade meeting ( hear him say it ).
-Oscar by Kerzie AI is that meeting, and what comes after it: an AI operating system set up inside your business, with you driving it.
+- Nothing falls through. What you say, read and send lands in one place. Tomorrow starts where today stopped.
+
+- The work is done up to the send button. It drafts the reply. You read it and press send. Nothing reaches a customer without your yes.
+
+- Your tools connected, your numbers in front of you. We connect the tools you already use. Your dashboards sit on one screen you can check every morning.
+
+- It's yours. It lives on your machine and runs on your own AI account. If a company you pay disappeared tomorrow, you'd lose a subscription, not your operating system.
+
+- No monthly fee to us. You pay once. After that, the only bill you have to carry is your own AI subscription.
+
+- Fitted to how you already run. We start by learning how your business works today. What we build fits that, not a template.
 
 The Car, Part By Part
 Oscar by Kerzie AI is the car, and the car is already built. What changes from one business to the next is the upgrades: your tools, connected.
@@ -1461,13 +1469,7 @@ Oscar by Kerzie AI is the car, and the car is already built. What changes from o
 
 - The windshield. One Window: the screen you drive it from.
 
-- The fuel. Your AI subscription. It's the only required ongoing cost.
-
-One Driver First
-Step one is one person learning to drive.
-Ideally that's the owner, or the most senior person you can put in the seat. In a small company, the higher up the driver, the better. One person learning to drive it changes the business.
-From there, the driver decides who else gets keys.
-We don't try to turn a company that has run the same way for 20 years into an AI-native company overnight. That's too heavy a lift, and it fails.
+- The fuel. Your AI subscription.
 
 Driver's Ed
 
@@ -1486,16 +1488,16 @@ A few habits drivers pick up in the first week:
 - Say “good morning” to start the day, so it picks up where yesterday left off.
 That's the first lap. Like any car, it does more than most people ever use. Some drivers stick with a handful of features for years. Others find every one, and the people riding along are surprised the car could do that. The more you put in, the more it does for you, day after day.
 
+One Driver First
+Step one is one person learning to drive.
+Ideally that's the owner, or the most senior person you can put in the seat. In a small company, the higher up the driver, the better. One person learning to drive it changes the business.
+From there, the driver decides who else gets keys.
+We don't try to change how a 20-year company runs all at once. That's too heavy a lift. One driver, then the next.
+
 First, A Documentary
 The first week or two is a documentary of your business.
 A few one-hour sessions. We interview you and your people about how the business runs today.
 The upgrades come after that, fitted to what we heard.
-
-How It Starts
-A two-hour working session. $1,000, invoiced only if you say no .
-We sit down for two hours and learn how you run the business today: the platforms you are on, the tools you pay for, how marketing goes out and how customers reach you.
-Then we come back with a short recorded demo, about ten minutes, showing how your business would run with Oscar by Kerzie AI. Wade records the voiceover himself. That demo is your go or no-go.
-You agree to the $1,000 before we put the session on the calendar. If you go ahead, it rolls into the price. If you decide not to, that is the only invoice you will get from us.
 
 Build, Drive, Own: 30 Days
 Like driver's ed: we have the second brake pedal for a while, and the lessons end when you can drive.
@@ -1504,23 +1506,32 @@ Like driver's ed: we have the second brake pedal for a while, and the lessons en
 
 - Drive. You run it with us beside you. The routines that chase, draft, track and report run on your business, and you approve anything that touches a customer or a dollar.
 
-- Own. We hand you the keys and get out of the car. It is your system, in your accounts, on your machine. There is nothing we can turn off.
+- Own. We hand you the keys and get out of the car. There is nothing we can turn off.
 
 The Price
 $15,000. Founders rate $7,500 for 2026 commitments .
 One time. $15,000 is the market rate. The Founders rate is $7,500 for commitments made in 2026 .
 Anything you have already paid Kerzie AI, a Back Cover setup for example, is credited toward it. The $1,000 from the working session rolls in the same way.
 The car itself is free. What you pay for is our help: your tech stack connected, the connectors built, the custom parts of the car fitted to your business, and the driving lessons.
-You are paying for our time and our know-how, up front, and then it is yours. There is no required monthly after the 30 days. The only required ongoing cost is the fuel: your AI subscription. If you want call-in help later, there is an optional retainer. Optional means optional.
+You are paying for our time and our know-how, up front, and then it is yours. There is no required monthly after the 30 days. If you want call-in help later, there is an optional retainer. Optional means optional.
 
 Book a call →
+
+How It Starts
+A two-hour working session. $1,000, invoiced only if you say no .
+We sit down for two hours and learn how you run the business today: the platforms you are on, the tools you pay for, how marketing goes out and how customers reach you.
+Then we come back with a short recorded demo, about ten minutes, showing how your business would run with Oscar by Kerzie AI. Wade records the voiceover himself. That demo is your go or no-go.
+You agree to the $1,000 before we put the session on the calendar. If you go ahead, it rolls into the price. If you decide not to, that is the only invoice you will get from us.
 
 Other Ways In
 Do it yourself, free. Oscar by Kerzie AI is free, and so is every upgrade. Paste the Foundation into Claude, answer its questions, and run it. You get the car. What you don't get is our help fitting it to your business. Get Oscar by Kerzie AI free .
 Done with you, $999 flat for the room . Three hours at your desk, on your machine, in your accounts, one real workflow shipped before we leave the room. The AI Fast-Track Session .
 Already have The Back Cover ? It stays a separate managed service with its own page. Inside Oscar by Kerzie AI it becomes a routine in your own system, and what you paid for it is credited.
 
-Has anyone brought you an AI plan? Book a call and we will bring you one.
+## Has anyone brought you an AI plan?
+On the Moonshots podcast, Dave Blundin said nine in ten people at midsize companies haven't had one credible AI upgrade meeting ( hear him say it ). This is that meeting.
+
+Book a call and we will bring you the plan.
 Book a call →
 
 ---

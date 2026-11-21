@@ -50,6 +50,33 @@ export const metadata: Metadata = {
 
 const MOONSHOTS_URL = "https://www.youtube.com/watch?v=SMDmpHAWAck&t=3114s";
 
+const benefits = [
+  {
+    name: "Nothing falls through.",
+    body: "What you say, read and send lands in one place. Tomorrow starts where today stopped.",
+  },
+  {
+    name: "The work is done up to the send button.",
+    body: "It drafts the reply. You read it and press send. Nothing reaches a customer without your yes.",
+  },
+  {
+    name: "Your tools connected, your numbers in front of you.",
+    body: "We connect the tools you already use. Your dashboards sit on one screen you can check every morning.",
+  },
+  {
+    name: "It's yours.",
+    body: "It lives on your machine and runs on your own AI account. If a company you pay disappeared tomorrow, you'd lose a subscription, not your operating system.",
+  },
+  {
+    name: "No monthly fee to us.",
+    body: "You pay once. After that, the only bill you have to carry is your own AI subscription.",
+  },
+  {
+    name: "Fitted to how you already run.",
+    body: "We start by learning how your business works today. What we build fits that, not a template.",
+  },
+];
+
 const carParts = [
   {
     name: "The dashboard.",
@@ -73,7 +100,7 @@ const carParts = [
   },
   {
     name: "The fuel.",
-    body: "Your AI subscription. It's the only required ongoing cost.",
+    body: "Your AI subscription.",
   },
 ];
 
@@ -97,7 +124,7 @@ const thirtyDays = [
   },
   {
     name: "Own.",
-    body: "We hand you the keys and get out of the car. It is your system, in your accounts, on your machine. There is nothing we can turn off.",
+    body: "We hand you the keys and get out of the car. There is nothing we can turn off.",
   },
 ];
 
@@ -158,34 +185,23 @@ export default function OscarPage() {
         </div>
       </section>
 
-      {/* The gap */}
+      {/* What changes for you: the benefits, before any of the how
+          (Wade, 2026-11-21: "benefit, benefit, benefit"). Receipts only: every
+          line traces to Wade's own words. No numbers, no results claims. */}
       <section className={SECTION}>
         <Reveal>
-          <p className="k-label mb-6">The Gap</p>
-          <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.4vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-6">
-            Has anyone brought you an AI plan?
-          </h2>
-          <div className={PROSE}>
-            <p>
-              It&apos;s the first question we ask an owner. On the Moonshots
-              podcast, Dave Blundin said nine in ten people at midsize
-              companies haven&apos;t had one credible AI upgrade meeting (
-              <a
-                href={MOONSHOTS_URL}
-                target="_blank"
-                rel="noopener"
-                className="k-link k-focus text-[#2B5D96]"
+          <p className="k-label mb-6">What Changes For You</p>
+          <ul className="max-w-2xl space-y-5">
+            {benefits.map((item) => (
+              <li
+                key={item.name}
+                className="border-l border-[#B04E2B] pl-5 text-[#262B3D] text-lg leading-relaxed"
               >
-                hear him say it
-              </a>
-              ).
-            </p>
-            <p className="text-[#1A1B2E] font-medium">
-              Oscar by Kerzie AI is that meeting, and what comes after it: an
-              AI operating system set up inside your business, with you
-              driving it.
-            </p>
-          </div>
+                <span className="text-[#1A1B2E] font-semibold">{item.name}</span>{" "}
+                {item.body}
+              </li>
+            ))}
+          </ul>
         </Reveal>
       </section>
 
@@ -209,32 +225,6 @@ export default function OscarPage() {
               </li>
             ))}
           </ul>
-        </Reveal>
-      </section>
-
-      {/* One driver first */}
-      <section className={SECTION}>
-        <Reveal>
-          <p className="k-label mb-6">One Driver First</p>
-          <div className={PROSE}>
-            <p className="text-[#1A1B2E] text-xl font-semibold">
-              Step one is one person learning to drive.
-            </p>
-            <p>
-              Ideally that&apos;s the owner, or the most senior person you can
-              put in the seat. In a small company, the higher up the driver,
-              the better. One person learning to drive it changes the
-              business.
-            </p>
-            <p>
-              From there, the driver decides who else gets keys.
-            </p>
-            <p>
-              We don&apos;t try to turn a company that has run the same way
-              for 20 years into an AI-native company overnight. That&apos;s
-              too heavy a lift, and it fails.
-            </p>
-          </div>
         </Reveal>
       </section>
 
@@ -291,6 +281,31 @@ export default function OscarPage() {
         </Reveal>
       </section>
 
+      {/* One driver first */}
+      <section className={SECTION}>
+        <Reveal>
+          <p className="k-label mb-6">One Driver First</p>
+          <div className={PROSE}>
+            <p className="text-[#1A1B2E] text-xl font-semibold">
+              Step one is one person learning to drive.
+            </p>
+            <p>
+              Ideally that&apos;s the owner, or the most senior person you can
+              put in the seat. In a small company, the higher up the driver,
+              the better. One person learning to drive it changes the
+              business.
+            </p>
+            <p>
+              From there, the driver decides who else gets keys.
+            </p>
+            <p>
+              We don&apos;t try to change how a 20-year company runs all at
+              once. That&apos;s too heavy a lift. One driver, then the next.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* The documentary: image #4 */}
       <section className={SECTION}>
         <Reveal>
@@ -321,35 +336,6 @@ export default function OscarPage() {
                 </p>
               </div>
             </div>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* How it starts: the two-hour working session */}
-      <section id="start" className={`${SECTION} scroll-mt-24`}>
-        <Reveal>
-          <p className="k-label mb-6">How It Starts</p>
-          <div className={PROSE}>
-            <p className="text-[#1A1B2E] text-xl font-semibold">
-              A two-hour working session. {WORKING_SESSION.priceLabel}.
-            </p>
-            <p>
-              We sit down for two hours and learn how you run the business
-              today: the platforms you are on, the tools you pay for, how
-              marketing goes out and how customers reach you.
-            </p>
-            <p>
-              Then we come back with a short recorded demo, about ten minutes,
-              showing how your business would run with Oscar by Kerzie AI.
-              Wade records the voiceover himself. That demo is your go or
-              no-go.
-            </p>
-            <p>
-              You agree to the {usd(ONE_WINDOW.workingSessionPrice)} before we
-              put the session on the calendar. If you go ahead, it rolls into
-              the price. If you decide not to, that is the only invoice you
-              will get from us.
-            </p>
           </div>
         </Reveal>
       </section>
@@ -405,8 +391,7 @@ export default function OscarPage() {
             <p>
               You are paying for our time and our know-how, up front, and then
               it is yours. There is no required monthly after the{" "}
-              {ONE_WINDOW.implementationDays} days. The only required ongoing
-              cost is the fuel: your AI subscription. If you want call-in help
+              {ONE_WINDOW.implementationDays} days. If you want call-in help
               later, there is an optional retainer. Optional means optional.
             </p>
           </div>
@@ -414,6 +399,35 @@ export default function OscarPage() {
             <Link href="/schedule" className="k-btn-solid k-focus inline-block">
               Book a call <span className="k-arrow">&rarr;</span>
             </Link>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* How it starts: the two-hour working session */}
+      <section id="start" className={`${SECTION} scroll-mt-24`}>
+        <Reveal>
+          <p className="k-label mb-6">How It Starts</p>
+          <div className={PROSE}>
+            <p className="text-[#1A1B2E] text-xl font-semibold">
+              A two-hour working session. {WORKING_SESSION.priceLabel}.
+            </p>
+            <p>
+              We sit down for two hours and learn how you run the business
+              today: the platforms you are on, the tools you pay for, how
+              marketing goes out and how customers reach you.
+            </p>
+            <p>
+              Then we come back with a short recorded demo, about ten minutes,
+              showing how your business would run with Oscar by Kerzie AI.
+              Wade records the voiceover himself. That demo is your go or
+              no-go.
+            </p>
+            <p>
+              You agree to the {usd(ONE_WINDOW.workingSessionPrice)} before we
+              put the session on the calendar. If you go ahead, it rolls into
+              the price. If you decide not to, that is the only invoice you
+              will get from us.
+            </p>
           </div>
         </Reveal>
       </section>
@@ -458,13 +472,38 @@ export default function OscarPage() {
         </Reveal>
       </section>
 
+      {/* The gap question: a short closer above the CTA, not an opener
+          (Wade, 2026-11-21). */}
+      <section className={SECTION}>
+        <Reveal>
+          <h2 className="text-[#1A1B2E] text-[clamp(1.75rem,3.4vw,2.5rem)] font-bold tracking-[-0.02em] leading-[1.1] max-w-2xl mb-6">
+            Has anyone brought you an AI plan?
+          </h2>
+          <div className={PROSE}>
+            <p>
+              On the Moonshots podcast, Dave Blundin said nine in ten people
+              at midsize companies haven&apos;t had one credible AI upgrade
+              meeting (
+              <a
+                href={MOONSHOTS_URL}
+                target="_blank"
+                rel="noopener"
+                className="k-link k-focus text-[#2B5D96]"
+              >
+                hear him say it
+              </a>
+              ). This is that meeting.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
       {/* CTA */}
       <section className="max-w-6xl mx-auto px-6 lg:px-12 pb-24 border-t border-[rgba(26,27,46,0.13)] pt-14">
         <Reveal>
           <p className="text-[#1A1B2E] text-xl lg:text-2xl font-medium mb-6 max-w-xl">
-            Has anyone brought you an AI plan?{" "}
             <span className="k-serif font-normal">Book a call</span> and we
-            will bring you one.
+            will bring you the plan.
           </p>
           <Link href="/schedule" className="k-btn-solid k-focus inline-block">
             Book a call <span className="k-arrow">&rarr;</span>
