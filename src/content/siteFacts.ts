@@ -183,7 +183,7 @@ export const PUBLIC_ROUTES: RouteEntry[] = [
   { path: "/", changeFrequency: "weekly", priority: 1.0 },
   { path: "/back-cover", changeFrequency: "weekly", priority: 0.9 },
   { path: "/one-window", changeFrequency: "weekly", priority: 0.9 },
-  // /one-window/business is not listed: it redirects to /oscar (Wade 2026-11-21).
+  { path: "/one-window/business", changeFrequency: "weekly", priority: 0.9 },
   { path: "/oscar", changeFrequency: "weekly", priority: 0.9 },
   { path: "/services", changeFrequency: "monthly", priority: 0.8 },
   { path: "/services/fast-track", changeFrequency: "monthly", priority: 0.9 },

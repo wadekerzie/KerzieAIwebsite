@@ -125,12 +125,12 @@ export default function Home() {
         {/* THE TWO DOORS (Wade, 2026-10-19). One Window interviews an owner
             about how they run the business and an employee about their role,
             so the homepage offers the same two doors the product does.
-            /oscar is the owner door (Oscar by Kerzie AI, Wade 2026-11-21;
-            it was /one-window/business); /one-window is the personal setup. Equal buttons: stacked full-width on phones, side
+            /one-window/business is the owner setup; /one-window is the
+            personal setup. Equal buttons: stacked full-width on phones, side
             by side from sm. */}
         <div className="k-rise k-rise-3 mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-xl">
           <Link
-            href="/oscar"
+            href="/one-window/business"
             className="k-btn-solid k-focus flex-1 text-center"
           >
             For your business <span className="k-arrow">&rarr;</span>
@@ -293,7 +293,7 @@ export default function Home() {
                 width={320}
                 height={320}
                 loading="lazy"
-                alt="Flat illustration of Oscar spinning a car key on one finger"
+                alt="Flat illustration of the Oscar by Kerzie AI character spinning a car key on one finger"
                 className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-full border border-[rgba(26,27,46,0.13)]"
               />
               <div>

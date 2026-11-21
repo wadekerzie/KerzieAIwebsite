@@ -9,7 +9,7 @@ changed with it.
 
 The curated index, with offers and current prices, is at https://kerzie.ai/llms.txt
 
-Pages included: 42
+Pages included: 43
 
 ---
 
@@ -1305,8 +1305,9 @@ Your name and email are the whole price. You get the download page now and the l
 
 Send me One-Window You also land on the Kerzie AI newsletter: one operator to another, twice a week. Unsubscribe any time and keep everything.
 RUNNING A BUSINESS?
-Want the whole car, set up with you?
-Oscar by Kerzie AI →
+There is a door built for owners: follow-ups, quotes, the tracker, your marketing. Same OS, same price: free.
+The Small Business Setup →
+Want the whole car, set up with you? Oscar by Kerzie AI →
 
 Straight Answers
 Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt.
@@ -1316,6 +1317,117 @@ Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Clau
 Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
 Is this real? It is the literal framework my operating system runs on: the same tracker, rules, routines, and capture pipeline that run my ventures every day. Nothing in it is theoretical.
 Rather have it built WITH you? Your machine, your accounts, one real workflow shipped before I leave the room: the AI Fast-Track Session at $999 for up to three people. The OS is free either way - the session is for having it installed beside you instead of alone.
+
+---
+
+# One-Window for Small Business | Kerzie AI
+URL: https://kerzie.ai/one-window/business
+
+One-Window for Small Business | Kerzie AI
+← KERZIE . AI
+One-Window — For Small Business
+
+## I talk. The work gets done .
+One window. One AI that actually knows your business - your customers, your jobs, your voice. You say what needs to happen. It drafts, chases, tracks, and stages. You approve.
+Free . The whole operating system, and every upgrade.
+System requirements: a Mac, and a $20 per month Claude subscription. Windows is not supported yet.
+SETTING IT UP FOR YOURSELF?
+There is a door for running your own work: the job, the projects, the commitments. Same product, also free.
+The Personal Setup →
+
+Get One-Window free →
+
+3
+hours
+from one paste of the Foundation to running your business in one window.
+
+2
+new habits
+record what you say, and give it one place to land.
+
+1
+window
+one AI that knows your customers, your jobs, and your voice.
+
+0
+to-do list
+gone, replaced by a pane your AI keeps current for you.
+
+Put in the three hours yourself, free, or have them done with you for $ 999 . Either way the countdown lands on zero .
+
+60 Seconds, And The Video Is The Demo
+That is my AI avatar, built and scripted from my own spoken words by my operating system. Made the same way everything else here gets made: I talked, the work got done.
+
+Your 16,000 Words
+Researchers once wired people with recorders to settle how much the average person talks. The answer: about 16,000 words a day.
+That is a 60 page document, every day, spoken into the air and gone by dinner. Your quotes are in there. The follow-up you meant to send is in there. The promise you made a customer in the driveway is in there. All of it said out loud, captured by nobody.
+One-Window exists to catch those words and turn them into finished work.
+
+This Existed In 1965
+In 1965 an executive walked out of a meeting talking, and somebody wrote down every word. She checked it against what he had said before, threw out the repeats, and routed the rest: this goes to accounting, this becomes a letter, draft it for his signature.
+Talk went in. Action came out. That was the whole system. We deleted that layer because it cost a salary, and everybody below the corner office never had it at all.
+That layer is back. This time it is free, and everybody gets one.
+
+The Job After The Job
+You do the work all day. Then you do the second job at night: the quote you meant to send, the lead you meant to answer, the invoice you meant to chase, the post you meant to write.
+The standard answer is more software. Another app, another login, another monthly fee, and none of it talks to each other - so you become the integration, retyping the same customer into three systems.
+This is the opposite move: one window, one AI that knows the whole business, doing the office work with you. Simpler, not additional.
+
+The Two Habits
+Here is what almost everyone gets wrong about AI: they picture a curriculum. Months of studying, keeping up with model releases, learning which tool does what. That imagined climb is why most people never start.
+The whole learning curve is two habits: record what you say, and give it one place to land.
+Talk to the window at your desk. Talk to your phone from the truck. That is the first habit, and you already produce the raw material, 16,000 words at a time. The second habit is two clicks: your words land in a folder your window watches. The setup does the rest: it interviews you about your business once, then it knows your customers, your prices, and your voice, and it turns your talk into drafts, trackers, and follow-ups, staged for your yes.
+And you do not need to wait for a better AI. I run my companies on today's models, and I could not tell you what a smarter one would add to this. The gap was never the model. The gap was that nobody built the window.
+
+What You Get
+Built in the first sittings, from an interview about your actual business. Nothing generic, and nothing goes out to a customer without your yes.
+
+- The Foundation. The OS installer: one paste into Claude. It interviews you about your actual business and builds your operating system from your answers. Nothing generic.
+
+- The Follow-Up Engine. Yesterday's quote chased, last week's lead answered, in your words, staged for one-click send. Nothing reaches a customer without your yes.
+
+- The Tracker. Every open job, lead, and promise, seeded in the first sitting with the things already falling through your cracks.
+
+- The Single Pane. Your whole operation as tabs on one private page: what is true now, what happens next. The AI keeps it current. You just look.
+
+- The Voice Command Center. The pocket half of the habit: talk into your phone from the truck or the airport line, and the thought is waiting in the window, processed, when you sit down.
+
+- The First Sitting. Your accounts connected click by click, and one painful thing from your own week done end to end before it is over.
+If I priced this at what it replaced for me, it would be thousands: this summer I deleted Outlook, Excel, and Notion off my machine because the window had taken over the parts I used. It is free because I want nothing beneath deciding - not even the price of one lost lead.
+
+This Is How I Run Mine
+I am not selling a theory. This framework runs my own companies every day: a home repair business in two markets, an AI consultancy, a golf training brand, and the content that promotes all of them.
+The morning I drafted this page, I talked while setting up a camera, and by the time I stood up: a product release had shipped and gone live, an email was staged, a live ad campaign got its spending cap set, and the plan for this page was written into the record. I typed almost none of it.
+That is not a demo day. That is Tuesday.
+
+The Offer
+One-Window: free. The whole operating system, every capability.
+The upgrades: free too. All of them.
+Every upgrade I build for my own OS, packaged and pushed to you: the Living Pane, the Clean Handoff, the Weekly Tune-Up, the Nightly Dream, and the stream keeps coming as I keep building. If I'm giving this away, I'm giving away the updates too.
+Why free? Because I want a thousand operators more than I want anybody's $99. Kerzie AI's business is deploying AI for companies. One-Window running your business is the proof, and the proof is the megaphone.
+Rather have it built WITH you: your machine, your accounts, one real workflow shipped before I leave the room? That is the AI Fast-Track Session at $ 999 for up to three people. The OS is free either way - the session is for having it installed beside you instead of alone.
+
+Get One-Window free →
+
+Want the whole car, set up with you? Oscar by Kerzie AI →
+
+Keep What Already Works
+Already run QuickBooks, a scheduling tool, a point of sale? Keep them. This is not another system to migrate into.
+The window sits in front of what you have. It drafts, chases, tracks, and remembers - and you stay the one who approves anything that touches a customer or a dollar.
+No new hardware either. It runs on the Mac you own and the AI subscription that costs less than one lost lead a month.
+
+Straight Answers
+Do I need to know AI? If you can talk, you qualify. The setup interviews you; you never write a prompt. You will type one command into your Mac, once, copied straight off the page.
+Is this a course? No. It is a working operating system your own AI installs. About an hour gets the foundation running; the first-week plan inside paces the rest.
+Will it send things to my customers? Not without you. Everything customer-facing is drafted for your review and sent by you. That rule is built into the setup itself.
+Which AI? Claude, specifically the Code tab in the Claude desktop app, on a Claude Pro plan at $20 per month. Committing to one setup is what lets the Foundation walk you through the real install, the real click paths, and the real place it breaks.
+Mac or Windows? Mac today. Windows is a genuinely different install path and I am not going to ship instructions I have not done myself.
+
+Not Ready? Take The Habit For Free
+Take the Voice Command Center free. Ten minutes of setup, one habit: talk into your phone, and the thought is waiting in your AI the next time you sit down. Works with whatever AI you already use.
+If the habit sticks, you will know exactly what the full window is worth before you spend a dollar.
+
+Get the Voice Command Center free →
 
 ---
 

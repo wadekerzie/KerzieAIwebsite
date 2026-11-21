@@ -16,7 +16,7 @@ import { serviceJsonLd } from "@/content/jsonLd";
 // - One Window stays: it is the windshield, the screen you drive it from, and
 //   the name of the free do-it-yourself download.
 // - One driver first. Nothing about how many people a business needs.
-// - The Oscar character never shares a section or an image with the Back
+// - The Oscar by Kerzie AI character never shares a section or an image with the Back
 //   Cover robot.
 const OSCAR = offer("oscar");
 const WORKING_SESSION = offer("working-session");
@@ -159,7 +159,7 @@ export default function OscarPage() {
               src="/oscar/oscar-keys.jpg"
               width={1024}
               height={1024}
-              alt="Illustration of Oscar handing over car keys at an open car door"
+              alt="Illustration of the Oscar by Kerzie AI character handing over car keys at an open car door"
               className="k-rise k-rise-3 w-full h-auto max-w-md lg:max-w-none rounded-lg border border-[rgba(26,27,46,0.13)]"
             />
           </div>
@@ -279,7 +279,7 @@ export default function OscarPage() {
                 width={1024}
                 height={1024}
                 loading="lazy"
-                alt="Travel-poster illustration of Oscar leaning on a coral convertible beside a coastal road, keys in hand"
+                alt="Travel-poster illustration of the Oscar by Kerzie AI character leaning on a coral convertible beside a coastal road, keys in hand"
                 className="w-full h-auto max-w-md lg:max-w-none rounded-lg border border-[rgba(26,27,46,0.13)]"
               />
             </div>
@@ -298,7 +298,7 @@ export default function OscarPage() {
                 width={1024}
                 height={1024}
                 loading="lazy"
-                alt="Ink and watercolor illustration of Oscar relaxed in a leather chair, driving gloves on, car keys on the armrest"
+                alt="Ink and watercolor illustration of the Oscar by Kerzie AI character relaxed in a leather chair, driving gloves on, car keys on the armrest"
                 className="w-full h-auto max-w-md lg:max-w-none rounded-lg border border-[rgba(26,27,46,0.13)]"
               />
             </div>
@@ -419,7 +419,7 @@ export default function OscarPage() {
               One Window, the free starter, is still free, and so is every
               upgrade. Paste the Foundation into Claude, answer its questions,
               and run it.{" "}
-              <Link href="/one-window" className="k-link k-focus text-[#2B5D96]">
+              <Link href="/one-window/business" className="k-link k-focus text-[#2B5D96]">
                 Get One Window free
               </Link>
               .
